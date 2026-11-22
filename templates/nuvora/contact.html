@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Nuvora</title>
+  <meta name="description" content="Talk to the Nuvora team about a demo, a plan, or a question about the platform.">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Contact | Nuvora">
+  <meta property="og:description" content="Talk to the Nuvora team about a demo, a plan, or a question about the platform.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Nuvora template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Contact | Nuvora">
+  <meta name="twitter:description" content="Talk to the Nuvora team about a demo, a plan, or a question about the platform.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Nuvora template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#f4f2ec',
+            ink: '#17181c',
+            accent: '#5850ec',
+            'accent-soft': '#e8e6fd'
+          },
+          fontFamily: {
+            serif: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-paper font-sans text-ink antialiased">
+
+  <header class="sticky top-0 z-40 border-b border-black/10 bg-paper/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+      <a href="index.html" class="flex items-center gap-2 font-serif text-lg font-semibold">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-ink text-paper"><i class="fa-solid fa-diamond text-xs" aria-hidden="true"></i></span>
+        Nuvora
+      </a>
+      <div class="hidden items-center gap-10 md:flex">
+          <a href="features.html"  class="text-sm font-medium transition text-ink/70 hover:text-ink">Features</a>
+          <a href="pricing.html"  class="text-sm font-medium transition text-ink/70 hover:text-ink">Pricing</a>
+          <a href="index.html#testimonials"  class="text-sm font-medium transition text-ink/70 hover:text-ink">Testimonials</a>
+      </div>
+      <a href="pricing.html" class="hidden rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-paper transition hover:bg-black md:inline-flex">Sign up</a>
+      <button type="button" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/10 md:hidden">
+        <i class="fa-solid fa-bars text-sm" aria-hidden="true"></i>
+        <span class="sr-only">Toggle menu</span>
+      </button>
+    </nav>
+    <div id="mobile-menu" hidden class="border-t border-black/10 bg-paper px-6 pb-6 md:hidden">
+      <a href="features.html" class="block py-3 text-sm font-medium text-ink/70">Features</a>
+      <a href="pricing.html" class="block py-3 text-sm font-medium text-ink/70">Pricing</a>
+      <a href="index.html#testimonials" class="block py-3 text-sm font-medium text-ink/70">Testimonials</a>
+      <a href="pricing.html" class="mt-2 block rounded-full bg-ink px-5 py-2.5 text-center text-sm font-semibold text-paper">Sign up</a>
+    </div>
+  </header>
+
+  <main>
+    
+
+  <section class="px-6 py-16 lg:px-10">
+    <div class="mx-auto grid max-w-6xl gap-16 lg:grid-cols-2">
+      <div data-reveal>
+        <span class="inline-flex items-center rounded-md bg-accent px-3 py-1 text-xs font-semibold text-white">Contact</span>
+        <h1 class="mt-6 font-serif text-4xl tracking-tight md:text-6xl">Let's set up your demo.</h1>
+        <p class="mt-6 text-ink/60">Tell us about your team and we'll walk you through Nuvora live, with no pressure.</p>
+        <ul class="mt-10 space-y-4 text-sm">
+          <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-ink/40" aria-hidden="true"></i>hello@nuvora.example</li>
+          <li class="flex items-center gap-3"><i class="fa-solid fa-comment-dots text-ink/40" aria-hidden="true"></i>Live chat, weekdays 9am&ndash;6pm</li>
+        </ul>
+        <div class="mt-10 aspect-[16/10] overflow-hidden rounded-3xl">
+          <img src="https://images.unsplash.com/photo-1789386932786-c778ad0674c6?auto=format&fit=crop&w=900&q=80" alt="Two colleagues working in a glass-walled office" class="h-full w-full object-cover">
+        </div>
+      </div>
+      <form data-reveal style="--reveal-delay:80ms" class="h-fit space-y-5 rounded-3xl bg-white p-8" onsubmit="event.preventDefault();">
+        <div>
+          <label for="name" class="text-sm font-medium">Name</label>
+          <input id="name" name="name" type="text" required class="mt-2 w-full rounded-lg border border-black/10 px-4 py-3 text-sm focus:border-ink focus:outline-none">
+        </div>
+        <div>
+          <label for="email" class="text-sm font-medium">Work email</label>
+          <input id="email" name="email" type="email" required class="mt-2 w-full rounded-lg border border-black/10 px-4 py-3 text-sm focus:border-ink focus:outline-none">
+        </div>
+        <div>
+          <label for="team-size" class="text-sm font-medium">Team size</label>
+          <select id="team-size" name="team-size" class="mt-2 w-full rounded-lg border border-black/10 bg-white px-4 py-3 text-sm focus:border-ink focus:outline-none">
+            <option>1&ndash;5</option>
+            <option>6&ndash;20</option>
+            <option>21&ndash;50</option>
+            <option>50+</option>
+          </select>
+        </div>
+        <div>
+          <label for="message" class="text-sm font-medium">What are you hoping to solve?</label>
+          <textarea id="message" name="message" rows="4" required class="mt-2 w-full rounded-lg border border-black/10 px-4 py-3 text-sm focus:border-ink focus:outline-none"></textarea>
+        </div>
+        <button type="submit" class="w-full rounded-xl bg-ink px-7 py-3.5 text-sm font-semibold text-paper">Request a demo</button>
+      </form>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="bg-[#e6e5df] px-4 pb-6 pt-16 lg:px-6">
+    <div class="mx-auto max-w-7xl rounded-3xl bg-ink px-8 py-12 text-paper md:px-14">
+      <div class="grid gap-10 md:grid-cols-[1.6fr_1fr_1fr_1.4fr]">
+        <div>
+          <a href="index.html" class="flex items-center gap-2 font-serif text-xl font-semibold">
+            <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10"><i class="fa-solid fa-diamond text-xs" aria-hidden="true"></i></span>
+            Nuvora
+          </a>
+          <p class="mt-4 max-w-sm font-serif text-2xl text-white/80">Every conversation in one place. Pick your plan and start today.</p>
+        </div>
+        <div class="text-sm">
+          <p class="font-semibold">Socials</p>
+          <div class="mt-4 flex flex-col gap-3 text-white/60">
+            <a href="https://facebook.com" class="hover:text-white">Facebook</a>
+            <a href="https://linkedin.com" class="hover:text-white">LinkedIn</a>
+            <a href="https://instagram.com" class="hover:text-white">Instagram</a>
+            <a href="https://x.com" class="hover:text-white">X</a>
+          </div>
+        </div>
+        <div class="text-sm">
+          <p class="font-semibold">Product</p>
+          <div class="mt-4 flex flex-col gap-3 text-white/60">
+            <a href="features.html" class="hover:text-white">Features</a>
+            <a href="pricing.html" class="hover:text-white">Pricing</a>
+            <a href="contact.html" class="hover:text-white">Contact</a>
+          </div>
+        </div>
+        <div class="text-sm">
+          <p class="text-white/70">Get a free consultation and see how to simplify your customer relationships.</p>
+          <form class="mt-8 flex items-center gap-3 border-b border-white/30 pb-2" onsubmit="event.preventDefault();">
+            <label for="footer-email" class="sr-only">Email address</label>
+            <input id="footer-email" type="email" required placeholder="Your email" class="w-full bg-transparent placeholder:text-white/50 focus:outline-none">
+            <button type="submit" class="shrink-0 font-semibold">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <p class="mt-14 text-xs text-white/50">&copy; <span data-current-year>2026</span> Nuvora. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!expanded));
+        mobileMenu.hidden = expanded;
+      });
+    }
+
+    document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+      const track = carousel.querySelector('[data-carousel-track]');
+      const dots = carousel.querySelectorAll('[data-carousel-dot]');
+      const count = track.children.length;
+      let index = 0;
+      const goTo = (next) => {
+        index = (next + count) % count;
+        track.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('bg-ink', i === index);
+          dot.classList.toggle('bg-ink/20', i !== index);
+          dot.setAttribute('aria-current', String(i === index));
+        });
+      };
+      carousel.querySelector('[data-carousel-prev]').addEventListener('click', () => goTo(index - 1));
+      carousel.querySelector('[data-carousel-next]').addEventListener('click', () => goTo(index + 1));
+      dots.forEach((dot) => dot.addEventListener('click', () => goTo(Number(dot.dataset.carouselDot))));
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduceMotion && !navigator.webdriver && 'IntersectionObserver' in window) {
+      document.body.classList.add('reveal-ready');
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach((el) => revealObserver.observe(el));
+
+      const countObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const target = parseInt(el.dataset.countTo, 10);
+          const start = performance.now();
+          const step = (now) => {
+            const progress = Math.min((now - start) / 700, 1);
+            el.textContent = Math.round(progress * target).toLocaleString('en-US');
+            if (progress < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+          countObserver.unobserve(el);
+        });
+      }, { threshold: 0.4 });
+      document.querySelectorAll('[data-count-to]').forEach((el) => countObserver.observe(el));
+    }
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=nuvora&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

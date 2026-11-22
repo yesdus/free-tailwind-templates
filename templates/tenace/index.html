@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tenace | Tailwind CSS Education Template</title>
+  <meta name="description" content="Tenace is a bold, geometric Tailwind CSS education template for online bridge and card-game schools, with a shape mosaic hero, an interactive bidding quiz, a course spotlight, a weekly lesson calendar, progress rings and a searchable FAQ.">
+  <meta name="keywords" content="Tenace, Tailwind CSS template, HTML website template, education template, online course template, bridge school, card game lessons, e-learning platform, online academy">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Tenace | Tailwind CSS Education Template">
+  <meta property="og:description" content="A bold, geometric Tailwind CSS education template for online bridge schools, with an interactive bidding quiz, a course spotlight and a weekly lesson calendar.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Tenace template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Tenace | Tailwind CSS Education Template">
+  <meta name="twitter:description" content="A bold, geometric Tailwind CSS education template for online bridge schools, with an interactive bidding quiz, a course spotlight and a weekly lesson calendar.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Tenace template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { indigo: { DEFAULT: '#2f2fa2', deep: '#23238a', soft: '#6b5bd2' }, sun: '#fbbf3c', petal: '#f9b4c0', blush: '#f6e9e8', ink: '#141414', heart: '#d6324f' },
+          fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Unbounded', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-blush font-sans text-ink antialiased">
+  <!-- block:start navbar -->
+  <header class="relative z-40">
+    <nav class="mx-auto flex max-w-[1600px] items-center justify-between gap-6 px-5 py-6 md:px-12 lg:py-8" aria-label="Main">
+      <div class="flex items-center gap-12">
+        <a href="index.html" class="font-display text-2xl font-extrabold tracking-tight text-indigo">TENACE</a>
+        <ul class="hidden items-center gap-6 text-sm uppercase lg:flex">
+            <li><a href="contacts.html"  class="hover:text-indigo">Contacts</a></li>
+            <li><a href="pricing.html"  class="hover:text-indigo">Choose a plan</a></li>
+            <li><a href="about.html"  class="hover:text-indigo">About us</a></li>
+            <li><a href="courses.html"  class="hover:text-indigo">Courses</a></li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="login.html" class="hidden rounded-md bg-white px-8 py-3.5 text-sm font-semibold uppercase shadow-sm transition hover:bg-sun sm:inline-flex">Log in</a>
+        <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="grid h-11 w-11 place-items-center rounded-md bg-indigo text-white lg:hidden"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden px-5 pb-6 lg:hidden">
+      <ul class="grid gap-1 rounded-xl bg-white p-3 text-lg shadow-lg">
+          <li><a href="index.html" aria-current="page" class="block rounded-lg px-4 py-2.5 bg-indigo font-semibold text-white">Home</a></li>
+          <li><a href="courses.html"  class="block rounded-lg px-4 py-2.5 hover:bg-blush">Courses</a></li>
+          <li><a href="pricing.html"  class="block rounded-lg px-4 py-2.5 hover:bg-blush">Choose a plan</a></li>
+          <li><a href="about.html"  class="block rounded-lg px-4 py-2.5 hover:bg-blush">About us</a></li>
+          <li><a href="contacts.html"  class="block rounded-lg px-4 py-2.5 hover:bg-blush">Contacts</a></li>
+          <li><a href="login.html"  class="block rounded-lg px-4 py-2.5 hover:bg-blush">Log in</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section class="relative overflow-hidden lg:-mt-[7rem] lg:min-h-[52rem]">
+    <div class="relative mx-auto grid max-w-[1600px] lg:min-h-[52rem] lg:grid-cols-[1.1fr_1fr]">
+      <div class="flex flex-col justify-center px-5 pb-12 pt-6 md:px-12 lg:pb-24 lg:pt-40">
+        <h1 class="font-display text-[1.9rem] font-extrabold uppercase leading-[1.08] tracking-tight sm:text-4xl md:text-5xl xl:text-[3.4rem]">
+          Learn <span class="text-indigo">bridge</span> by<br>playing real hands
+        </h1>
+        <p class="mt-6 text-xl font-light md:text-2xl">Sharpen every bid, lead and play</p>
+        <a href="courses.html" class="mt-9 inline-flex w-fit items-center rounded-md bg-indigo px-10 py-4 text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-indigo-deep">Start learning</a>
+        <ul class="mt-16 flex gap-4 lg:mt-auto lg:pt-24">
+            <li><a href="https://www.whatsapp.com" aria-label="WhatsApp" class="grid h-10 w-10 place-items-center rounded-full bg-white text-indigo shadow-sm transition hover:bg-indigo hover:text-white"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com" aria-label="Facebook" class="grid h-10 w-10 place-items-center rounded-full bg-white text-indigo shadow-sm transition hover:bg-indigo hover:text-white"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com" aria-label="Twitter" class="grid h-10 w-10 place-items-center rounded-full bg-white text-indigo shadow-sm transition hover:bg-indigo hover:text-white"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div class="relative bg-indigo px-5 pb-8 pt-8 md:px-12 lg:pb-0 lg:pt-36">
+        <div class="mx-auto grid max-w-xl grid-cols-4 lg:-ml-24 lg:max-w-none">
+            <div data-tile style="--reveal-delay: 0ms" class="relative aspect-square">
+                <div class="h-full w-full overflow-hidden bg-sun rounded-full"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=600&q=80" alt="Young woman with auburn hair by a lake" class="h-full w-full object-cover" loading="lazy"></div>
+            </div>
+            <div data-tile style="--reveal-delay: 60ms" class="relative aspect-square">
+                <div class="h-full w-full bg-indigo-soft rounded-tl-full rounded-br-full" aria-hidden="true"></div>
+            </div>
+            <div data-tile style="--reveal-delay: 120ms" class="relative aspect-square">
+                <div class="grid h-full w-full place-items-center bg-indigo font-display text-6xl md:text-7xl text-sun" aria-hidden="true">♥</div>
+            </div>
+            <div data-tile style="--reveal-delay: 180ms" class="relative aspect-square">
+                <div class="h-full w-full overflow-hidden bg-petal rounded-t-full"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Smiling man with a beard" class="h-full w-full object-cover" loading="lazy"></div>
+            </div>
+            <div data-tile style="--reveal-delay: 240ms" class="relative aspect-square">
+                <div class="h-full w-full bg-indigo-soft rounded-br-full" aria-hidden="true"></div>
+            </div>
+            <div data-tile style="--reveal-delay: 300ms" class="relative aspect-square">
+                <div class="h-full w-full bg-sun rounded-tr-full rounded-bl-full" aria-hidden="true"></div>
+            </div>
+            <div data-tile style="--reveal-delay: 360ms" class="relative aspect-square">
+                <div class="h-full w-full bg-indigo-soft rounded-full" aria-hidden="true"></div>
+            </div>
+            <div data-tile style="--reveal-delay: 0ms" class="relative aspect-square">
+                <div class="h-full w-full bg-indigo-soft rounded-tl-full" aria-hidden="true"></div>
+            </div>
+            <div data-tile style="--reveal-delay: 60ms" class="relative aspect-square">
+                <div class="h-full w-full bg-[#4b3fc4] rounded-b-full" aria-hidden="true"></div>
+            </div>
+            <div data-tile style="--reveal-delay: 120ms" class="relative aspect-square">
+                <div class="flex h-full w-full flex-col items-center justify-end pb-[12%] bg-petal rounded-t-full">
+                  <span class="text-5xl leading-none text-indigo md:text-6xl" aria-hidden="true">♠</span>
+                  <span class="mt-2 font-display text-[0.6rem] font-extrabold text-indigo sm:text-xs">TENACE</span>
+                </div>
+            </div>
+            <div data-tile style="--reveal-delay: 180ms" class="relative aspect-square">
+                <div class="h-full w-full bg-indigo-soft rounded-tr-full" aria-hidden="true"></div>
+            </div>
+            <div data-tile style="--reveal-delay: 240ms" class="relative aspect-square">
+                <div class="grid h-full w-full place-items-center bg-indigo font-display text-6xl md:text-7xl text-petal" aria-hidden="true">♦</div>
+            </div>
+            <div data-tile style="--reveal-delay: 300ms" class="relative aspect-square">
+                <div class="h-full w-full overflow-hidden bg-petal rounded-full"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Man in a grey sweater smiling" class="h-full w-full object-cover" loading="lazy"></div>
+            </div>
+            <div data-tile style="--reveal-delay: 360ms" class="relative aspect-square">
+                <div class="h-full w-full bg-indigo-soft rounded-bl-full" aria-hidden="true"></div>
+            </div>
+            <div data-tile style="--reveal-delay: 0ms" class="relative aspect-square">
+                <div class="h-full w-full overflow-hidden bg-sun rounded-t-full"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Woman in a grey blazer smiling" class="h-full w-full object-cover" loading="lazy"></div>
+            </div>
+            <div data-tile style="--reveal-delay: 60ms" class="relative aspect-square">
+                <div class="h-full w-full bg-petal rounded-tl-full" aria-hidden="true"></div>
+            </div>
+            <div data-tile style="--reveal-delay: 120ms" class="relative aspect-square">
+                <div class="h-full w-full bg-indigo-soft rounded-t-full" aria-hidden="true"></div>
+            </div>
+            <div data-tile style="--reveal-delay: 180ms" class="relative aspect-square">
+                <div class="grid h-full w-full place-items-center bg-indigo font-display text-6xl md:text-7xl text-indigo-soft" aria-hidden="true">♣</div>
+            </div>
+            <div data-tile style="--reveal-delay: 240ms" class="relative aspect-square">
+                <div class="h-full w-full bg-indigo-soft rounded-t-full" aria-hidden="true"></div>
+            </div>
+            <div data-tile style="--reveal-delay: 300ms" class="relative aspect-square">
+                <div class="h-full w-full bg-petal rounded-t-full" aria-hidden="true"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start demo -->
+  <section class="bg-indigo text-white" data-quiz>
+    <div class="mx-auto grid max-w-7xl gap-12 px-5 py-20 md:px-12 md:py-28 lg:grid-cols-[1fr_1.5fr] lg:items-center">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-widest text-sun">Try it now</p>
+        <h2 class="mt-3 font-display text-3xl font-extrabold uppercase leading-tight md:text-4xl">You're the dealer. What do you open?</h2>
+        <p class="mt-5 max-w-md text-lg font-light text-white/80">This is how every Tenace lesson works: a real hand, one decision, and instant feedback that explains the why.</p>
+        <p class="mt-8 text-sm text-white/60">Hand <span data-quiz-index>1</span> of 3 · Score <span data-quiz-score>0</span></p>
+      </div>
+      <div>
+          <div data-quiz-hand  class="rounded-[2rem] bg-white/10 p-6 md:p-8">
+            <ul class="flex flex-wrap justify-center gap-1.5 sm:flex-nowrap sm:gap-0 sm:-space-x-6" aria-label="Your hand: K♠, Q♠, 5♠, A♥, J♥, 9♥, 8♥, 4♥, K♦, 6♦, 7♣, 3♣, 2♣">
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(-12deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">K<br>♠</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♠</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(-10deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">Q<br>♠</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♠</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(-8deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">5<br>♠</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♠</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(-6deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">A<br>♥</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♥</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(-4deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">J<br>♥</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♥</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(-2deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">9<br>♥</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♥</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(0deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">8<br>♥</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♥</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(2deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">4<br>♥</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♥</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(4deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">K<br>♦</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♦</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(6deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">6<br>♦</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♦</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(8deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">7<br>♣</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♣</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(10deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">3<br>♣</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♣</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(12deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">2<br>♣</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♣</span>
+                </li>
+            </ul>
+            <p class="mt-8 text-center text-white/80">13 high-card points. Pick your opening bid:</p>
+            <div class="mt-4 grid grid-cols-3 gap-3" role="group" aria-label="Opening bid options">
+                <button type="button" data-quiz-option data-correct="true" class="rounded-xl bg-white py-4 font-display text-xl font-extrabold text-indigo transition hover:bg-sun aria-pressed:ring-4 aria-pressed:ring-sun">1♥</button>
+                <button type="button" data-quiz-option data-correct="false" class="rounded-xl bg-white py-4 font-display text-xl font-extrabold text-indigo transition hover:bg-sun aria-pressed:ring-4 aria-pressed:ring-sun">1NT</button>
+                <button type="button" data-quiz-option data-correct="false" class="rounded-xl bg-white py-4 font-display text-xl font-extrabold text-indigo transition hover:bg-sun aria-pressed:ring-4 aria-pressed:ring-sun">Pass</button>
+            </div>
+            <div data-quiz-feedback class="mt-6 rounded-xl bg-white/10 p-5" role="status" aria-live="polite">
+              <p class="font-semibold"><span data-quiz-verdict>The answer is 1♥.</span></p>
+              <p class="mt-1 text-white/80">13 points and five hearts: open your longest suit. Five-card majors come first.</p>
+            </div>
+            <button type="button" data-quiz-next class="mt-6 inline-flex items-center gap-2 rounded-md bg-sun px-6 py-3 text-sm font-semibold uppercase text-ink transition hover:bg-white">Next hand<i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+          </div>
+          <div data-quiz-hand hidden class="rounded-[2rem] bg-white/10 p-6 md:p-8">
+            <ul class="flex flex-wrap justify-center gap-1.5 sm:flex-nowrap sm:gap-0 sm:-space-x-6" aria-label="Your hand: A♠, Q♠, 4♠, K♥, 10♥, 3♥, Q♦, J♦, 8♦, 2♦, K♣, 9♣, 5♣">
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(-12deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">A<br>♠</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♠</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(-10deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">Q<br>♠</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♠</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(-8deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">4<br>♠</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♠</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(-6deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">K<br>♥</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♥</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(-4deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">10<br>♥</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♥</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(-2deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">3<br>♥</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♥</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(0deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">Q<br>♦</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♦</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(2deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">J<br>♦</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♦</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(4deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">8<br>♦</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♦</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(6deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">2<br>♦</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♦</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(8deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">K<br>♣</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♣</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(10deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">9<br>♣</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♣</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(12deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">5<br>♣</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♣</span>
+                </li>
+            </ul>
+            <p class="mt-8 text-center text-white/80">15 high-card points. Pick your opening bid:</p>
+            <div class="mt-4 grid grid-cols-3 gap-3" role="group" aria-label="Opening bid options">
+                <button type="button" data-quiz-option data-correct="false" class="rounded-xl bg-white py-4 font-display text-xl font-extrabold text-indigo transition hover:bg-sun aria-pressed:ring-4 aria-pressed:ring-sun">1♥</button>
+                <button type="button" data-quiz-option data-correct="true" class="rounded-xl bg-white py-4 font-display text-xl font-extrabold text-indigo transition hover:bg-sun aria-pressed:ring-4 aria-pressed:ring-sun">1NT</button>
+                <button type="button" data-quiz-option data-correct="false" class="rounded-xl bg-white py-4 font-display text-xl font-extrabold text-indigo transition hover:bg-sun aria-pressed:ring-4 aria-pressed:ring-sun">Pass</button>
+            </div>
+            <div data-quiz-feedback class="mt-6 rounded-xl bg-white/10 p-5" role="status" aria-live="polite">
+              <p class="font-semibold"><span data-quiz-verdict>The answer is 1NT.</span></p>
+              <p class="mt-1 text-white/80">15 points and a balanced shape with no five-card major: that&#39;s a textbook 1NT.</p>
+            </div>
+            <button type="button" data-quiz-next class="mt-6 inline-flex items-center gap-2 rounded-md bg-sun px-6 py-3 text-sm font-semibold uppercase text-ink transition hover:bg-white">Next hand<i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+          </div>
+          <div data-quiz-hand hidden class="rounded-[2rem] bg-white/10 p-6 md:p-8">
+            <ul class="flex flex-wrap justify-center gap-1.5 sm:flex-nowrap sm:gap-0 sm:-space-x-6" aria-label="Your hand: J♠, 8♠, 6♠, 3♠, Q♥, 7♥, 2♥, K♦, 9♦, 4♦, J♣, 10♣, 5♣">
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(-12deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">J<br>♠</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♠</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(-10deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">8<br>♠</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♠</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(-8deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">6<br>♠</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♠</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(-6deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">3<br>♠</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♠</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(-4deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">Q<br>♥</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♥</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(-2deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">7<br>♥</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♥</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(0deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">2<br>♥</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♥</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(2deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">K<br>♦</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♦</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(4deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">9<br>♦</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♦</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-heart" style="transform: rotate(6deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">4<br>♦</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♦</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(8deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">J<br>♣</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♣</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(10deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">10<br>♣</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♣</span>
+                </li>
+                <li class="grid h-[4.5rem] w-12 shrink-0 rounded-lg bg-white px-1.5 py-1 font-semibold shadow-lg ring-1 ring-black/10 transition hover:-translate-y-2 sm:h-24 sm:w-16 text-ink" style="transform: rotate(12deg)" aria-hidden="true">
+                  <span class="text-sm leading-none sm:text-base">5<br>♣</span>
+                  <span class="self-end justify-self-end text-xl leading-none sm:text-3xl">♣</span>
+                </li>
+            </ul>
+            <p class="mt-8 text-center text-white/80">7 high-card points. Pick your opening bid:</p>
+            <div class="mt-4 grid grid-cols-3 gap-3" role="group" aria-label="Opening bid options">
+                <button type="button" data-quiz-option data-correct="false" class="rounded-xl bg-white py-4 font-display text-xl font-extrabold text-indigo transition hover:bg-sun aria-pressed:ring-4 aria-pressed:ring-sun">1♥</button>
+                <button type="button" data-quiz-option data-correct="false" class="rounded-xl bg-white py-4 font-display text-xl font-extrabold text-indigo transition hover:bg-sun aria-pressed:ring-4 aria-pressed:ring-sun">1NT</button>
+                <button type="button" data-quiz-option data-correct="true" class="rounded-xl bg-white py-4 font-display text-xl font-extrabold text-indigo transition hover:bg-sun aria-pressed:ring-4 aria-pressed:ring-sun">Pass</button>
+            </div>
+            <div data-quiz-feedback class="mt-6 rounded-xl bg-white/10 p-5" role="status" aria-live="polite">
+              <p class="font-semibold"><span data-quiz-verdict>The answer is Pass.</span></p>
+              <p class="mt-1 text-white/80">Only 7 points. Opening needs about 12, so pass and let partner speak.</p>
+            </div>
+            <button type="button" data-quiz-next class="mt-6 inline-flex items-center gap-2 rounded-md bg-sun px-6 py-3 text-sm font-semibold uppercase text-ink transition hover:bg-white">Next hand<i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end demo -->
+
+  <!-- block:start features -->
+  <section class="mx-auto max-w-7xl px-5 py-20 md:px-12 md:py-28">
+    <h2 class="max-w-3xl font-display text-3xl font-extrabold uppercase leading-tight md:text-4xl">One place to learn, practise and play</h2>
+    <div class="mt-12 grid gap-8 lg:grid-cols-[1fr_1.4fr] lg:items-center">
+      <div role="tablist" aria-label="How Tenace works" aria-orientation="vertical" data-tabs class="grid gap-3">
+          <button type="button" role="tab" id="tab-learn" aria-controls="panel-learn" aria-selected="true" tabindex="0" class="group flex gap-5 rounded-3xl p-5 text-left transition hover:bg-white/60 aria-selected:bg-white aria-selected:shadow-sm">
+            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-tl-full rounded-br-full text-xl bg-sun" aria-hidden="true">♠</span>
+            <span><span class="block font-display text-lg font-extrabold uppercase">Learn</span><span class="mt-1 block font-light text-ink/70">Bite-size video lessons with a teacher who explains the why, not just the rule.</span></span>
+          </button>
+          <button type="button" role="tab" id="tab-practise" aria-controls="panel-practise" aria-selected="false" tabindex="-1" class="group flex gap-5 rounded-3xl p-5 text-left transition hover:bg-white/60 aria-selected:bg-white aria-selected:shadow-sm">
+            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-tl-full rounded-br-full text-xl bg-petal" aria-hidden="true">♥</span>
+            <span><span class="block font-display text-lg font-extrabold uppercase">Practise</span><span class="mt-1 block font-light text-ink/70">Thousands of real deals with hints when you&#39;re stuck and replays when you&#39;re done.</span></span>
+          </button>
+          <button type="button" role="tab" id="tab-play" aria-controls="panel-play" aria-selected="false" tabindex="-1" class="group flex gap-5 rounded-3xl p-5 text-left transition hover:bg-white/60 aria-selected:bg-white aria-selected:shadow-sm">
+            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-tl-full rounded-br-full text-xl bg-indigo-soft text-white" aria-hidden="true">♦</span>
+            <span><span class="block font-display text-lg font-extrabold uppercase">Play live</span><span class="mt-1 block font-light text-ink/70">Weekly small-group sessions and friendly online club nights.</span></span>
+          </button>
+          <button type="button" role="tab" id="tab-track" aria-controls="panel-track" aria-selected="false" tabindex="-1" class="group flex gap-5 rounded-3xl p-5 text-left transition hover:bg-white/60 aria-selected:bg-white aria-selected:shadow-sm">
+            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-tl-full rounded-br-full text-xl bg-sun" aria-hidden="true">♣</span>
+            <span><span class="block font-display text-lg font-extrabold uppercase">Track progress</span><span class="mt-1 block font-light text-ink/70">Skill maps show what you&#39;ve mastered and what to practise next.</span></span>
+          </button>
+      </div>
+      <div>
+          <div id="panel-learn" role="tabpanel" aria-labelledby="tab-learn" >
+            <img src="https://images.unsplash.com/photo-1543269664-56d93c1b41a6?auto=format&fit=crop&w=1200&q=80" alt="Smiling woman following a lesson on her tablet" class="aspect-[4/3] w-full rounded-tl-[6rem] rounded-br-[6rem] object-cover" loading="lazy">
+          </div>
+          <div id="panel-practise" role="tabpanel" aria-labelledby="tab-practise" hidden>
+            <img src="https://images.unsplash.com/photo-1541278107931-e006523892df?auto=format&fit=crop&w=1200&q=80" alt="Playing cards spread across a table" class="aspect-[4/3] w-full rounded-tl-[6rem] rounded-br-[6rem] object-cover" loading="lazy">
+          </div>
+          <div id="panel-play" role="tabpanel" aria-labelledby="tab-play" hidden>
+            <img src="https://images.unsplash.com/photo-1511193311914-0346f16efe90?auto=format&fit=crop&w=1200&q=80" alt="Hand laying down cards on a green table" class="aspect-[4/3] w-full rounded-tl-[6rem] rounded-br-[6rem] object-cover" loading="lazy">
+          </div>
+          <div id="panel-track" role="tabpanel" aria-labelledby="tab-track" hidden>
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Students reviewing progress together on laptops" class="aspect-[4/3] w-full rounded-tl-[6rem] rounded-br-[6rem] object-cover" loading="lazy">
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start products -->
+  <section class="bg-white" data-switcher>
+    <div class="mx-auto max-w-7xl px-5 py-20 md:px-12 md:py-28">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <h2 class="font-display text-3xl font-extrabold uppercase md:text-4xl">Course spotlight</h2>
+        <a href="courses.html" class="text-sm font-semibold uppercase text-indigo underline underline-offset-4">All courses</a>
+      </div>
+      <div class="mt-12 grid gap-8 lg:grid-cols-[1.6fr_1fr]">
+        <div>
+            <article data-switch-panel="0"  class="grid overflow-hidden rounded-[2rem] bg-blush md:grid-cols-2">
+              <img src="https://images.unsplash.com/photo-1541278107931-e006523892df?auto=format&fit=crop&w=1200&q=80" alt="Playing cards spread across a table" class="aspect-[4/3] h-full w-full object-cover md:aspect-auto" loading="lazy">
+              <div class="flex flex-col p-8">
+                <span class="w-fit rounded-md px-3 py-1 text-xs font-semibold uppercase bg-sun">Beginner</span>
+                <h3 class="mt-5 font-display text-2xl font-extrabold uppercase">Bidding Basics</h3>
+                <p class="mt-2 text-sm text-ink/60">12 lessons · 4 weeks</p>
+                <p class="mt-4 flex-1 font-light text-ink/80">Count your points, open the bidding and find the right contract with your partner.</p>
+                <a href="bidding-basics.html" class="mt-8 inline-flex w-fit items-center rounded-md bg-indigo px-8 py-3.5 text-sm font-semibold uppercase text-white transition hover:bg-indigo-deep">View course</a>
+              </div>
+            </article>
+            <article data-switch-panel="1" hidden class="grid overflow-hidden rounded-[2rem] bg-blush md:grid-cols-2">
+              <img src="https://images.unsplash.com/photo-1511193311914-0346f16efe90?auto=format&fit=crop&w=1200&q=80" alt="Hand laying down cards on a green table" class="aspect-[4/3] h-full w-full object-cover md:aspect-auto" loading="lazy">
+              <div class="flex flex-col p-8">
+                <span class="w-fit rounded-md px-3 py-1 text-xs font-semibold uppercase bg-petal">Intermediate</span>
+                <h3 class="mt-5 font-display text-2xl font-extrabold uppercase">Defence That Wins</h3>
+                <p class="mt-2 text-sm text-ink/60">10 lessons · 4 weeks</p>
+                <p class="mt-4 flex-1 font-light text-ink/80">Opening leads, signals and counting: the skills that turn good players into partners people want.</p>
+                <a href="courses.html" class="mt-8 inline-flex w-fit items-center rounded-md bg-indigo px-8 py-3.5 text-sm font-semibold uppercase text-white transition hover:bg-indigo-deep">View course</a>
+              </div>
+            </article>
+            <article data-switch-panel="2" hidden class="grid overflow-hidden rounded-[2rem] bg-blush md:grid-cols-2">
+              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80" alt="Two players discussing a hand at a laptop" class="aspect-[4/3] h-full w-full object-cover md:aspect-auto" loading="lazy">
+              <div class="flex flex-col p-8">
+                <span class="w-fit rounded-md px-3 py-1 text-xs font-semibold uppercase bg-indigo-soft text-white">Intermediate</span>
+                <h3 class="mt-5 font-display text-2xl font-extrabold uppercase">Slam Bidding</h3>
+                <p class="mt-2 text-sm text-ink/60">9 lessons · 3 weeks</p>
+                <p class="mt-4 flex-1 font-light text-ink/80">Cue bids, key cards and the confidence to bid the big ones.</p>
+                <a href="courses.html" class="mt-8 inline-flex w-fit items-center rounded-md bg-indigo px-8 py-3.5 text-sm font-semibold uppercase text-white transition hover:bg-indigo-deep">View course</a>
+              </div>
+            </article>
+            <article data-switch-panel="3" hidden class="grid overflow-hidden rounded-[2rem] bg-blush md:grid-cols-2">
+              <img src="https://images.unsplash.com/photo-1576267423048-15c0040fec78?auto=format&fit=crop&w=1200&q=80" alt="Team celebrating a win around a table" class="aspect-[4/3] h-full w-full object-cover md:aspect-auto" loading="lazy">
+              <div class="flex flex-col p-8">
+                <span class="w-fit rounded-md px-3 py-1 text-xs font-semibold uppercase bg-sun">Advanced</span>
+                <h3 class="mt-5 font-display text-2xl font-extrabold uppercase">Squeezes &amp; Endplays</h3>
+                <p class="mt-2 text-sm text-ink/60">14 lessons · 6 weeks</p>
+                <p class="mt-4 flex-1 font-light text-ink/80">Make the defenders do your work for you in the final tricks.</p>
+                <a href="courses.html" class="mt-8 inline-flex w-fit items-center rounded-md bg-indigo px-8 py-3.5 text-sm font-semibold uppercase text-white transition hover:bg-indigo-deep">View course</a>
+              </div>
+            </article>
+        </div>
+        <div role="tablist" aria-label="Choose a course" class="grid gap-3">
+            <button type="button" role="tab" aria-selected="true" data-switch="0" class="flex items-center gap-4 rounded-2xl p-3 text-left transition hover:bg-blush aria-selected:bg-indigo aria-selected:text-white">
+              <img src="https://images.unsplash.com/photo-1541278107931-e006523892df?auto=format&fit=crop&w=300&q=80" alt="" class="h-16 w-16 shrink-0 rounded-tl-3xl rounded-br-3xl object-cover" loading="lazy">
+              <span><span class="block font-semibold">Bidding Basics</span><span class="text-sm opacity-70">Beginner · 12 lessons · 4 weeks</span></span>
+            </button>
+            <button type="button" role="tab" aria-selected="false" data-switch="1" class="flex items-center gap-4 rounded-2xl p-3 text-left transition hover:bg-blush aria-selected:bg-indigo aria-selected:text-white">
+              <img src="https://images.unsplash.com/photo-1511193311914-0346f16efe90?auto=format&fit=crop&w=300&q=80" alt="" class="h-16 w-16 shrink-0 rounded-tl-3xl rounded-br-3xl object-cover" loading="lazy">
+              <span><span class="block font-semibold">Defence That Wins</span><span class="text-sm opacity-70">Intermediate · 10 lessons · 4 weeks</span></span>
+            </button>
+            <button type="button" role="tab" aria-selected="false" data-switch="2" class="flex items-center gap-4 rounded-2xl p-3 text-left transition hover:bg-blush aria-selected:bg-indigo aria-selected:text-white">
+              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=300&q=80" alt="" class="h-16 w-16 shrink-0 rounded-tl-3xl rounded-br-3xl object-cover" loading="lazy">
+              <span><span class="block font-semibold">Slam Bidding</span><span class="text-sm opacity-70">Intermediate · 9 lessons · 3 weeks</span></span>
+            </button>
+            <button type="button" role="tab" aria-selected="false" data-switch="3" class="flex items-center gap-4 rounded-2xl p-3 text-left transition hover:bg-blush aria-selected:bg-indigo aria-selected:text-white">
+              <img src="https://images.unsplash.com/photo-1576267423048-15c0040fec78?auto=format&fit=crop&w=300&q=80" alt="" class="h-16 w-16 shrink-0 rounded-tl-3xl rounded-br-3xl object-cover" loading="lazy">
+              <span><span class="block font-semibold">Squeezes &amp; Endplays</span><span class="text-sm opacity-70">Advanced · 14 lessons · 6 weeks</span></span>
+            </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end products -->
+
+  <!-- block:start events -->
+  <section class="mx-auto max-w-7xl px-5 py-20 md:px-12 md:py-28">
+    <div class="flex flex-wrap items-end justify-between gap-6">
+      <h2 class="max-w-xl font-display text-3xl font-extrabold uppercase md:text-4xl">Live at the table this week</h2>
+      <p class="font-light text-ink/70">All times CET · 60 minutes · max 12 players</p>
+    </div>
+    <div class="mt-12 overflow-x-auto pb-2">
+      <ol class="grid min-w-[56rem] grid-cols-7 gap-3">
+          <li class="flex min-h-[16rem] flex-col rounded-3xl bg-white p-4 ">
+            <p class="flex items-baseline justify-between"><span class="text-xs font-semibold uppercase text-ink/50">Mon</span><span class="font-display text-2xl font-extrabold">14</span></p>
+            <ul class="mt-4 grid gap-2">
+                <li><a href="login.html" class="block rounded-2xl p-3 text-sm transition hover:-translate-y-0.5 hover:shadow-md bg-sun"><span class="block font-semibold">18:00</span>Opening leads that set traps</a></li>
+              
+            </ul>
+          </li>
+          <li class="flex min-h-[16rem] flex-col rounded-3xl bg-white p-4 ">
+            <p class="flex items-baseline justify-between"><span class="text-xs font-semibold uppercase text-ink/50">Tue</span><span class="font-display text-2xl font-extrabold">15</span></p>
+            <ul class="mt-4 grid gap-2">
+              <li class="rounded-2xl border-2 border-dashed border-indigo/15 p-3 text-sm text-ink/40">Self-study day</li>
+            </ul>
+          </li>
+          <li class="flex min-h-[16rem] flex-col rounded-3xl bg-white p-4 ring-2 ring-indigo">
+            <p class="flex items-baseline justify-between"><span class="text-xs font-semibold uppercase text-ink/50">Wed</span><span class="font-display text-2xl font-extrabold">16</span></p>
+            <ul class="mt-4 grid gap-2">
+                <li><a href="login.html" class="block rounded-2xl p-3 text-sm transition hover:-translate-y-0.5 hover:shadow-md bg-petal"><span class="block font-semibold">12:30</span>Lunch-break practice</a></li>
+                <li><a href="login.html" class="block rounded-2xl p-3 text-sm transition hover:-translate-y-0.5 hover:shadow-md bg-indigo-soft text-white"><span class="block font-semibold">19:30</span>Counting the hand</a></li>
+              
+            </ul>
+          </li>
+          <li class="flex min-h-[16rem] flex-col rounded-3xl bg-white p-4 ">
+            <p class="flex items-baseline justify-between"><span class="text-xs font-semibold uppercase text-ink/50">Thu</span><span class="font-display text-2xl font-extrabold">17</span></p>
+            <ul class="mt-4 grid gap-2">
+                <li><a href="login.html" class="block rounded-2xl p-3 text-sm transition hover:-translate-y-0.5 hover:shadow-md bg-petal"><span class="block font-semibold">18:00</span>Ask the teacher</a></li>
+              
+            </ul>
+          </li>
+          <li class="flex min-h-[16rem] flex-col rounded-3xl bg-white p-4 ">
+            <p class="flex items-baseline justify-between"><span class="text-xs font-semibold uppercase text-ink/50">Fri</span><span class="font-display text-2xl font-extrabold">18</span></p>
+            <ul class="mt-4 grid gap-2">
+                <li><a href="login.html" class="block rounded-2xl p-3 text-sm transition hover:-translate-y-0.5 hover:shadow-md bg-indigo-soft text-white"><span class="block font-semibold">18:00</span>Defending no-trump</a></li>
+              
+            </ul>
+          </li>
+          <li class="flex min-h-[16rem] flex-col rounded-3xl bg-white p-4 ">
+            <p class="flex items-baseline justify-between"><span class="text-xs font-semibold uppercase text-ink/50">Sat</span><span class="font-display text-2xl font-extrabold">19</span></p>
+            <ul class="mt-4 grid gap-2">
+              <li class="rounded-2xl border-2 border-dashed border-indigo/15 p-3 text-sm text-ink/40">Self-study day</li>
+            </ul>
+          </li>
+          <li class="flex min-h-[16rem] flex-col rounded-3xl bg-white p-4 ">
+            <p class="flex items-baseline justify-between"><span class="text-xs font-semibold uppercase text-ink/50">Sun</span><span class="font-display text-2xl font-extrabold">20</span></p>
+            <ul class="mt-4 grid gap-2">
+                <li><a href="login.html" class="block rounded-2xl p-3 text-sm transition hover:-translate-y-0.5 hover:shadow-md bg-sun"><span class="block font-semibold">11:00</span>Club night: duplicate</a></li>
+                <li><a href="login.html" class="block rounded-2xl p-3 text-sm transition hover:-translate-y-0.5 hover:shadow-md bg-petal"><span class="block font-semibold">17:00</span>Slam clinic</a></li>
+              
+            </ul>
+          </li>
+      </ol>
+    </div>
+  </section>
+  <!-- block:end events -->
+
+  <!-- block:start stats -->
+  <section class="bg-indigo text-white">
+    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-20 md:px-12 lg:grid-cols-[1fr_2fr] lg:items-center">
+      <h2 class="font-display text-3xl font-extrabold uppercase leading-tight md:text-4xl">Progress you can see</h2>
+      <dl class="grid gap-8 sm:grid-cols-3">
+          <div data-ring data-reveal style="--reveal-delay: 0ms" class="flex flex-col items-center text-center">
+            <dt class="order-2 mt-4 font-light text-white/80">pass their first level test</dt>
+            <dd class="relative order-1 h-36 w-36">
+              <svg viewBox="0 0 120 120" class="h-full w-full -rotate-90" aria-hidden="true">
+                <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="12"/>
+                <circle cx="60" cy="60" r="52" fill="none" stroke="#fbbf3c" stroke-width="12" stroke-linecap="round" pathLength="100" stroke-dasharray="100" class="ring-progress" style="stroke-dashoffset: 8; --ring-offset: 8"/>
+              </svg>
+              <span class="absolute inset-0 grid place-items-center font-display text-3xl font-extrabold">92%</span>
+            </dd>
+          </div>
+          <div data-ring data-reveal style="--reveal-delay: 120ms" class="flex flex-col items-center text-center">
+            <dt class="order-2 mt-4 font-light text-white/80">play at least weekly</dt>
+            <dd class="relative order-1 h-36 w-36">
+              <svg viewBox="0 0 120 120" class="h-full w-full -rotate-90" aria-hidden="true">
+                <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="12"/>
+                <circle cx="60" cy="60" r="52" fill="none" stroke="#f9b4c0" stroke-width="12" stroke-linecap="round" pathLength="100" stroke-dasharray="100" class="ring-progress" style="stroke-dashoffset: 22; --ring-offset: 22"/>
+              </svg>
+              <span class="absolute inset-0 grid place-items-center font-display text-3xl font-extrabold">78%</span>
+            </dd>
+          </div>
+          <div data-ring data-reveal style="--reveal-delay: 240ms" class="flex flex-col items-center text-center">
+            <dt class="order-2 mt-4 font-light text-white/80">average lesson rating</dt>
+            <dd class="relative order-1 h-36 w-36">
+              <svg viewBox="0 0 120 120" class="h-full w-full -rotate-90" aria-hidden="true">
+                <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="12"/>
+                <circle cx="60" cy="60" r="52" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" pathLength="100" stroke-dasharray="100" class="ring-progress" style="stroke-dashoffset: 2; --ring-offset: 2"/>
+              </svg>
+              <span class="absolute inset-0 grid place-items-center font-display text-3xl font-extrabold">4.9</span>
+            </dd>
+          </div>
+      </dl>
+    </div>
+  </section>
+  <!-- block:end stats -->
+
+  <!-- block:start reviews -->
+  <section class="mx-auto max-w-5xl px-5 py-20 text-center md:px-12 md:py-28" data-switcher>
+    <span class="font-display text-6xl text-indigo" aria-hidden="true">♥</span>
+      <figure data-switch-panel="0" >
+        <blockquote class="mx-auto mt-6 max-w-3xl font-display text-2xl font-extrabold uppercase leading-snug md:text-3xl">&ldquo;I&#39;d watched my parents play for years. Three months in, I&#39;m the one explaining squeezes at family dinners.&rdquo;</blockquote>
+        <figcaption class="mt-6"><span class="font-semibold">Clara Jensen</span> <span class="font-light text-ink/60">· Player plan · learning since 2025</span></figcaption>
+      </figure>
+      <figure data-switch-panel="1" hidden>
+        <blockquote class="mx-auto mt-6 max-w-3xl font-display text-2xl font-extrabold uppercase leading-snug md:text-3xl">&ldquo;The instant feedback is the magic. I finally understand why I lose tricks, not just that I lose them.&rdquo;</blockquote>
+        <figcaption class="mt-6"><span class="font-semibold">Omar Haddad</span> <span class="font-light text-ink/60">· Player plan · intermediate</span></figcaption>
+      </figure>
+      <figure data-switch-panel="2" hidden>
+        <blockquote class="mx-auto mt-6 max-w-3xl font-display text-2xl font-extrabold uppercase leading-snug md:text-3xl">&ldquo;Our club moved its beginner nights online with Tenace and membership doubled in a year.&rdquo;</blockquote>
+        <figcaption class="mt-6"><span class="font-semibold">Helen Price</span> <span class="font-light text-ink/60">· Club organiser, Bath</span></figcaption>
+      </figure>
+      <figure data-switch-panel="3" hidden>
+        <blockquote class="mx-auto mt-6 max-w-3xl font-display text-2xl font-extrabold uppercase leading-snug md:text-3xl">&ldquo;Live lessons are small enough that the teacher knows your name, and your bad habits.&rdquo;</blockquote>
+        <figcaption class="mt-6"><span class="font-semibold">Ravi Mehta</span> <span class="font-light text-ink/60">· Club plan · advanced</span></figcaption>
+      </figure>
+    <div role="tablist" aria-label="Choose a review" class="mt-10 flex justify-center gap-3">
+        <button type="button" role="tab" aria-selected="true" data-switch="0" aria-label="Review by Clara Jensen" class="h-16 w-16 overflow-hidden rounded-full opacity-50 ring-offset-4 ring-offset-blush transition hover:opacity-100 aria-selected:opacity-100 aria-selected:ring-4 aria-selected:ring-indigo bg-sun">
+          <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-full w-full object-cover" loading="lazy">
+        </button>
+        <button type="button" role="tab" aria-selected="false" data-switch="1" aria-label="Review by Omar Haddad" class="h-16 w-16 overflow-hidden rounded-full opacity-50 ring-offset-4 ring-offset-blush transition hover:opacity-100 aria-selected:opacity-100 aria-selected:ring-4 aria-selected:ring-indigo bg-petal">
+          <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-full w-full object-cover" loading="lazy">
+        </button>
+        <button type="button" role="tab" aria-selected="false" data-switch="2" aria-label="Review by Helen Price" class="h-16 w-16 overflow-hidden rounded-full opacity-50 ring-offset-4 ring-offset-blush transition hover:opacity-100 aria-selected:opacity-100 aria-selected:ring-4 aria-selected:ring-indigo bg-indigo-soft">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4MHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-full w-full object-cover" loading="lazy">
+        </button>
+        <button type="button" role="tab" aria-selected="false" data-switch="3" aria-label="Review by Ravi Mehta" class="h-16 w-16 overflow-hidden rounded-full opacity-50 ring-offset-4 ring-offset-blush transition hover:opacity-100 aria-selected:opacity-100 aria-selected:ring-4 aria-selected:ring-indigo bg-sun">
+          <img src="https://images.unsplash.com/photo-1601412436009-d964bd02edbc?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwZWxlbmF8ZW58MXx8fHwxNzk1Mzg2MTY2fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-full w-full object-cover" loading="lazy">
+        </button>
+    </div>
+  </section>
+  <!-- block:end reviews -->
+
+  <!-- block:start pricing -->
+  <section id="plans" class="bg-white">
+    <div class="mx-auto grid max-w-7xl gap-6 px-5 py-20 md:px-12 md:py-28 lg:grid-cols-[1fr_1.6fr]">
+      <div class="flex flex-col rounded-[2rem] bg-blush p-8">
+        <h2 class="font-display text-xl font-extrabold uppercase">Free</h2>
+        <p class="mt-2 font-light text-ink/70">Learn the rules and play your first hands.</p>
+        <p class="mt-8 font-display text-5xl font-extrabold">$0</p>
+        <ul class="mt-8 grid flex-1 content-start gap-3 text-sm">
+          <li class="flex items-center gap-3"><i class="fa-solid fa-check text-indigo" aria-hidden="true"></i>3 beginner courses</li><li class="flex items-center gap-3"><i class="fa-solid fa-check text-indigo" aria-hidden="true"></i>50 practice deals</li><li class="flex items-center gap-3"><i class="fa-solid fa-check text-indigo" aria-hidden="true"></i>Community forum</li>
+        </ul>
+        <a href="login.html" class="mt-10 rounded-md border-2 border-indigo px-6 py-3.5 text-center text-sm font-semibold uppercase text-indigo transition hover:bg-indigo hover:text-white">Start free</a>
+      </div>
+      <div class="relative overflow-hidden rounded-[2rem] bg-indigo p-8 text-white md:p-12">
+        <div class="absolute -right-10 -top-10 grid grid-cols-2" aria-hidden="true"><span class="h-24 w-24 rounded-tl-full bg-sun"></span><span class="h-24 w-24 rounded-full bg-petal"></span><span class="h-24 w-24 rounded-br-full bg-indigo-soft"></span><span class="h-24 w-24 rounded-t-full bg-sun"></span></div>
+        <div class="relative max-w-md">
+          <span class="rounded-md bg-sun px-3 py-1 text-xs font-semibold uppercase text-ink">Most players choose this</span>
+          <h2 class="mt-6 font-display text-3xl font-extrabold uppercase">Player</h2>
+          <p class="mt-2 font-light text-white/80">Everything you need to improve every single week.</p>
+          <p class="mt-8 flex items-baseline gap-2"><span class="font-display text-6xl font-extrabold">$12</span><span class="text-white/70">/ month · or $120 a year</span></p>
+          <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-sun" aria-hidden="true"></i>All courses</li><li class="flex items-center gap-3"><i class="fa-solid fa-check text-sun" aria-hidden="true"></i>Unlimited practice deals</li><li class="flex items-center gap-3"><i class="fa-solid fa-check text-sun" aria-hidden="true"></i>Weekly live lesson</li><li class="flex items-center gap-3"><i class="fa-solid fa-check text-sun" aria-hidden="true"></i>Progress reports</li><li class="flex items-center gap-3"><i class="fa-solid fa-check text-sun" aria-hidden="true"></i>Teacher Q&amp;A</li><li class="flex items-center gap-3"><i class="fa-solid fa-check text-sun" aria-hidden="true"></i>Offline hands</li>
+          </ul>
+          <a href="login.html" class="mt-10 inline-flex items-center rounded-md bg-sun px-10 py-4 text-sm font-semibold uppercase text-ink transition hover:bg-white">Choose Player</a>
+          <p class="mt-4 text-sm text-white/70">Running a club? <a href="pricing.html" class="font-semibold text-white underline underline-offset-4">Compare all plans</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end pricing -->
+
+  <!-- block:start faq -->
+  <section class="mx-auto max-w-3xl px-5 py-20 md:px-12 md:py-28">
+    <h2 class="text-center font-display text-3xl font-extrabold uppercase md:text-4xl">Got a question?</h2>
+    <label class="mt-8 flex items-center gap-3 rounded-2xl border-2 border-indigo/15 bg-white px-5 py-4 focus-within:border-indigo">
+      <i class="fa-solid fa-magnifying-glass text-indigo" aria-hidden="true"></i>
+      <span class="sr-only">Search questions</span>
+      <input type="search" data-search-target="#faq-list" placeholder="Search, e.g. partner, phone, club…" class="w-full bg-transparent focus:outline-none">
+    </label>
+    <div id="faq-list" class="mt-6 grid gap-3">
+        <details data-search-item class="group rounded-2xl bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-6 font-semibold">I&#39;ve never played bridge. Where do I start?<i class="fa-solid fa-plus shrink-0 text-indigo transition-transform group-open:rotate-45" aria-hidden="true"></i></summary>
+          <p class="mt-3 font-light text-ink/70">Begin with Bidding Basics. It assumes no experience and gets you playing full hands by the second week.</p>
+        </details>
+        <details data-search-item class="group rounded-2xl bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-6 font-semibold">Do I need a partner?<i class="fa-solid fa-plus shrink-0 text-indigo transition-transform group-open:rotate-45" aria-hidden="true"></i></summary>
+          <p class="mt-3 font-light text-ink/70">No. Practice deals pair you with a computer partner, and live lessons match you with other students.</p>
+        </details>
+        <details data-search-item class="group rounded-2xl bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-6 font-semibold">Can I learn on my phone?<i class="fa-solid fa-plus shrink-0 text-indigo transition-transform group-open:rotate-45" aria-hidden="true"></i></summary>
+          <p class="mt-3 font-light text-ink/70">Yes. Lessons and practice deals work on any phone, tablet or computer, and your progress syncs between them.</p>
+        </details>
+        <details data-search-item class="group rounded-2xl bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-6 font-semibold">Do you offer group rates for clubs?<i class="fa-solid fa-plus shrink-0 text-indigo transition-transform group-open:rotate-45" aria-hidden="true"></i></summary>
+          <p class="mt-3 font-light text-ink/70">The Club plan covers up to 30 members. Larger clubs can ask us for a custom quote.</p>
+        </details>
+        <details data-search-item class="group rounded-2xl bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-6 font-semibold">Which bidding system do you teach?<i class="fa-solid fa-plus shrink-0 text-indigo transition-transform group-open:rotate-45" aria-hidden="true"></i></summary>
+          <p class="mt-3 font-light text-ink/70">Standard American and Acol, so you can play comfortably at clubs on both sides of the Atlantic.</p>
+        </details>
+    </div>
+    <p data-search-empty hidden class="mt-6 rounded-2xl bg-white p-5 text-center">No matches yet. <a href="contacts.html" class="font-semibold text-indigo underline underline-offset-4">Ask a teacher directly</a>.</p>
+  </section>
+  <!-- block:end faq -->
+
+  <!-- block:start cta -->
+  <section class="overflow-hidden bg-sun py-10" aria-label="Start for free">
+    <div class="marquee font-display text-5xl font-extrabold uppercase text-ink md:text-7xl">
+        <p class="marquee-track whitespace-nowrap" >Play <span class="text-indigo">♠</span> Learn <span class="text-heart">♥</span> Win <span class="text-heart">♦</span> Repeat <span class="text-indigo">♣</span></p>
+        <p class="marquee-track whitespace-nowrap" aria-hidden="true">Play <span class="text-indigo">♠</span> Learn <span class="text-heart">♥</span> Win <span class="text-heart">♦</span> Repeat <span class="text-indigo">♣</span></p>
+    </div>
+    <div class="mt-8 text-center"><a href="login.html" class="inline-flex items-center rounded-md bg-indigo px-10 py-4 text-sm font-semibold uppercase text-white transition hover:bg-indigo-deep">Deal me in, it's free</a></div>
+  </section>
+  <!-- block:end cta -->
+
+  <!-- block:start footer -->
+  <footer class="bg-ink text-white">
+    <div class="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:px-12 lg:grid-cols-[1.2fr_1fr]">
+      <div>
+        <a href="index.html" class="font-display text-2xl font-extrabold">TENACE</a>
+        <p class="mt-4 max-w-sm font-light text-white/60">The friendliest way to learn bridge online, from your first bid to your first tournament.</p>
+        <ul class="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-white/70">
+          <li><a href="courses.html" class="hover:text-white">Courses</a></li>
+          <li><a href="pricing.html" class="hover:text-white">Plans</a></li>
+          <li><a href="about.html" class="hover:text-white">About us</a></li>
+          <li><a href="contacts.html" class="hover:text-white">Contacts</a></li>
+          <li><a href="login.html" class="hover:text-white">Log in</a></li>
+        </ul>
+      </div>
+      <form data-contact-form data-error="Please enter a valid email address." data-success="You're in! The weekly hand arrives every Sunday." class="rounded-3xl bg-white/5 p-6 md:p-8" novalidate>
+        <h2 class="font-display text-lg font-extrabold uppercase">The Sunday hand</h2>
+        <p class="mt-2 font-light text-white/60">One puzzle hand by email every week, with the answer on Monday.</p>
+        <div class="mt-5 flex flex-col gap-3 sm:flex-row">
+          <label class="sr-only" for="footer-email">Email address</label>
+          <input id="footer-email" type="email" name="email" required placeholder="you@example.com" autocomplete="email" class="min-w-0 flex-1 rounded-md bg-white px-4 py-3.5 text-ink focus:outline-none focus:ring-4 focus:ring-sun">
+          <button type="submit" class="rounded-md bg-sun px-6 py-3.5 text-sm font-semibold uppercase text-ink transition hover:bg-white">Subscribe</button>
+        </div>
+        <p data-form-status class="mt-3 text-sm text-white/80" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 border-t border-white/10 px-5 py-6 md:px-12">
+      <p class="text-sm text-white/50">&copy; <span data-current-year>2026</span> Tenace Bridge School. All rights reserved.</p>
+      <ul class="flex gap-3">
+          <li><a href="https://www.whatsapp.com" aria-label="WhatsApp" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 transition hover:bg-sun hover:text-ink"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.facebook.com" aria-label="Facebook" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 transition hover:bg-sun hover:text-ink"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com" aria-label="Twitter" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 transition hover:bg-sun hover:text-ink"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      if (!menu) return;
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-quiz]').forEach((quiz) => {
+      const hands = [...quiz.querySelectorAll('[data-quiz-hand]')];
+      let current = 0;
+      let score = 0;
+      hands.forEach((hand) => {
+        const feedback = hand.querySelector('[data-quiz-feedback]');
+        const verdict = hand.querySelector('[data-quiz-verdict]');
+        const answer = verdict.textContent;
+        feedback.hidden = true;
+        hand.querySelectorAll('[data-quiz-option]').forEach((option) => {
+          option.addEventListener('click', () => {
+            if (!feedback.hidden) return;
+            const right = option.dataset.correct === 'true';
+            option.setAttribute('aria-pressed', 'true');
+            if (right) score += 1;
+            verdict.textContent = right ? `Spot on: ${option.textContent.trim()} is right.` : `Not quite. ${answer}`;
+            feedback.hidden = false;
+            quiz.querySelector('[data-quiz-score]').textContent = score;
+          });
+        });
+        hand.querySelector('[data-quiz-next]')?.addEventListener('click', () => {
+          hand.hidden = true;
+          current = (current + 1) % hands.length;
+          if (current === 0) { score = 0; quiz.querySelector('[data-quiz-score]').textContent = 0; }
+          const next = hands[current];
+          next.hidden = false;
+          next.querySelector('[data-quiz-feedback]').hidden = true;
+          next.querySelectorAll('[data-quiz-option]').forEach((option) => option.removeAttribute('aria-pressed'));
+          quiz.querySelector('[data-quiz-index]').textContent = current + 1;
+          next.querySelector('[data-quiz-option]')?.focus();
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-tabs]').forEach((tablist) => {
+      const tabs = [...tablist.querySelectorAll('[role="tab"]')];
+      const select = (tab) => tabs.forEach((other) => {
+        const active = other === tab;
+        other.setAttribute('aria-selected', String(active));
+        other.tabIndex = active ? 0 : -1;
+        document.getElementById(other.getAttribute('aria-controls')).hidden = !active;
+      });
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => select(tab));
+        tab.addEventListener('keydown', (event) => {
+          const step = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[event.key];
+          if (!step) return;
+          event.preventDefault();
+          const next = tabs[(index + step + tabs.length) % tabs.length];
+          next.focus();
+          select(next);
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-switcher]').forEach((root) => {
+      root.addEventListener('click', (event) => {
+        const button = event.target.closest('[data-switch]');
+        if (!button) return;
+        root.querySelectorAll('[data-switch]').forEach((other) => other.setAttribute('aria-selected', String(other === button)));
+        root.querySelectorAll('[data-switch-panel]').forEach((panel) => { panel.hidden = panel.dataset.switchPanel !== button.dataset.switch; });
+      });
+    });
+
+    document.querySelectorAll('[data-search-target]').forEach((input) => {
+      const list = document.querySelector(input.dataset.searchTarget);
+      const empty = list?.parentElement.querySelector('[data-search-empty]');
+      input.addEventListener('input', () => {
+        const query = input.value.trim().toLowerCase();
+        let shown = 0;
+        list.querySelectorAll('[data-search-item]').forEach((item) => {
+          const match = !query || item.textContent.toLowerCase().includes(query);
+          item.hidden = !match;
+          if (match) shown += 1;
+        });
+        if (empty) empty.hidden = shown > 0;
+      });
+    });
+
+    document.querySelectorAll('[data-course-tools]').forEach((tools) => {
+      const grid = document.querySelector(tools.dataset.courseTools);
+      const search = tools.querySelector('[data-course-search]');
+      const sort = tools.querySelector('[data-course-sort]');
+      const count = tools.querySelector('[data-course-count]');
+      const apply = () => {
+        const query = search.value.trim().toLowerCase();
+        const items = [...grid.querySelectorAll('[data-course]')];
+        items.sort((a, b) => Number(a.dataset[sort.value]) - Number(b.dataset[sort.value])).forEach((item) => grid.append(item));
+        let shown = 0;
+        items.forEach((item) => {
+          const match = !query || item.textContent.toLowerCase().includes(query);
+          item.hidden = !match;
+          if (match) shown += 1;
+        });
+        count.textContent = shown;
+      };
+      search.addEventListener('input', apply);
+      sort.addEventListener('change', apply);
+    });
+
+    document.querySelectorAll('[data-booking]').forEach((form) => {
+      const summary = form.querySelector('[data-booking-summary]');
+      const update = () => {
+        const day = [...form.querySelectorAll('[name="day"]')].find((input) => input.checked);
+        const time = [...form.querySelectorAll('[name="time"]')].find((input) => input.checked);
+        summary.textContent = day && time ? `${day.value} at ${time.value}` : 'Pick a day and a time';
+      };
+      form.addEventListener('change', update);
+      update();
+    });
+
+    document.querySelectorAll('[data-contact-form], [data-booking]').forEach((form) => {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const status = form.querySelector('[data-form-status]');
+        const groups = [...form.querySelectorAll('[data-required-group]')].every((group) => [...group.querySelectorAll('[name]')].some((choice) => choice.checked));
+        if (!groups || !form.checkValidity()) {
+          status.textContent = form.dataset.error;
+          return;
+        }
+        status.textContent = form.dataset.success;
+        form.reset();
+        form.dispatchEvent(new Event('change'));
+      });
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    (() => {
+      const items = document.querySelectorAll('[data-reveal], [data-tile]');
+      const skip = navigator.webdriver || !('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=tenace&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

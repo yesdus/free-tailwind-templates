@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaiyo Bistro | Tailwind CSS Japanese Restaurant Template</title>
+    <meta name="description" content="Kaiyo Bistro is a refined Tailwind CSS template for Japanese restaurants, sushi bars, and izakayas with seasonal menus and an ocean-to-table story.">
+    <meta name="keywords" content="Kaiyo Bistro, Tailwind CSS template, HTML website template, Japanese restaurant website, sushi bar template, izakaya menu page, responsive restaurant website design">
+    <meta name="author" content="Let's templates">
+    <link rel="canonical" href="">
+
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Let's templates">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Kaiyo Bistro | Tailwind CSS Japanese Restaurant Template">
+    <meta property="og:description" content="A refined Tailwind CSS template for Japanese restaurants, sushi bars, and izakayas with seasonal menus and an ocean-to-table story.">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="Kaiyo Bistro template preview">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Kaiyo Bistro | Tailwind CSS Japanese Restaurant Template">
+    <meta name="twitter:description" content="A refined Tailwind CSS template for Japanese restaurants, sushi bars, and izakayas with seasonal menus and an ocean-to-table story.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:image:alt" content="Kaiyo Bistro template preview">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-[#f8f6f2] text-[#1a1a1a]">
+
+    <!-- block:start navbar -->
+    <nav id="header" class="japanese-pattern py-4 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center text-white/90 text-xs font-semibold tracking-widest uppercase">
+            <div class="flex gap-6 items-center">
+                <a href="#menu" class="hover:text-white">Menu</a>
+                <a href="#about" class="hover:text-white">About</a>
+                <a href="#booking" class="hover:text-white">Reserve</a>
+            </div>
+            <div class="absolute left-1/2 -translate-x-1/2 hidden lg:block">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-water text-xl"></i>
+                    <span class="text-lg font-serif tracking-normal">KAIYO BISTRO</span>
+                </div>
+            </div>
+            <div class="flex gap-6 items-center">
+                <a href="#hero" class="hover:text-white">EN</a>
+                <span>/</span>
+                <a href="#hero" class="hover:text-white">JP</a>
+                <a href="#menu" class="hover:text-white ml-4"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- block:end navbar -->
+
+    <!-- block:start hero -->
+    <section id="hero" class="japanese-pattern pt-12 pb-32 px-6 md:px-12 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <p class="text-white/70 text-xs font-semibold tracking-[0.3em] uppercase mb-4">Established 2012</p>
+            <h1 class="text-6xl md:text-8xl lg:text-[10rem] font-serif font-black text-white leading-none mb-12 drop-shadow-2xl">
+                KAIYO BISTRO
+            </h1>
+            <div class="max-w-lg mx-auto text-white/80 leading-relaxed text-sm md:text-base">
+                Discover the art of coastal Japanese dining. Where traditional flavors meet modern innovation in every dish, from our signature ramen to artisanal sake selections.
+            </div>
+        </div>
+
+        <div class="absolute right-12 md:right-32 bottom-20 z-20">
+            <div class="relative group cursor-pointer">
+                <div class="circle-badge bg-white text-[#7a0019] text-[10px] font-bold">
+                    RESERVE YOUR TABLE NOW
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center transform group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-calendar-check text-xl"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Image Overlay -->
+        <div class="max-w-6xl mx-auto mt-20 relative px-4">
+            <div class="rounded-2xl overflow-hidden shadow-2xl h-[400px] md:h-[600px]">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1777041097323-2f2ab6734a82?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHVwc2NhbGUlMjBqYXBhbmVzZSUyMHJlc3RhdXJhbnQlMjBpbnRlcmlvciUyMGRhcmslMjB3b29kfGVufDF8fHx8MTc5NTM4NjE2Nnww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="modern upscale japanese restaurant interior, dark wood furniture, warm moody lighting, people dining" />
+            </div>
+        </div>
+    </section>
+    <!-- block:end hero -->
+
+    <!-- block:start about -->
+    <section id="about" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="w-full md:w-1/3">
+                        <img class="w-full h-48 object-cover rounded-lg" src="https://images.unsplash.com/photo-1546638008-efbe0b62c730?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHRyYWRpdGlvbmFsJTIwamFwYW5lc2UlMjBjYWxsaWdyYXBoeSUyMGFydCUyMHRleHR1cmVkJTIwcGFwZXJ8ZW58MXx8fHwxNzk1Mzg2MTY3fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="traditional japanese calligraphy art on textured paper, close up" />
+                    </div>
+                    <div class="flex-1 text-sm leading-relaxed text-gray-600">
+                        <p class="mb-4">Kaiyo Bistro was born from a vision by Chef Hiroshi Sato to bring the soul of Hokkaido’s coastal cuisine to the city. Starting as a small noodle bar, it evolved into a sanctuary for food lovers seeking authenticity without compromise.</p>
+                        <p>Our commitment to seasonal ingredients and time-honored techniques ensures every visit is a journey through Japan's rich culinary landscape.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row-reverse gap-8">
+                    <div class="w-full md:w-1/2">
+                        <img class="w-full h-64 object-cover rounded-lg" src="https://images.unsplash.com/photo-1502364271109-0a9a75a2a9df?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGV4cGVydCUyMGphcGFuZXNlJTIwY2hlZiUyMHByZXBhcmluZyUyMHN1c2hpJTIwcHJlY2lzaW9ufGVufDF8fHx8MTc5NTM4NjE2N3ww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="expert japanese chef preparing sushi with precision, close up of hands, cinematic lighting" />
+                    </div>
+                    <div class="flex-1 text-sm leading-relaxed text-gray-600">
+                        <p class="mb-4">Over the decade, we have expanded our craft, blending traditional Edomae sushi styles with contemporary flavor profiles. Our kitchen is a theater of precision, where every slice and seasoning is deliberate.</p>
+                        <button class="mt-4 border-b-2 border-black pb-1 font-bold text-xs tracking-widest uppercase hover:text-[#7a0019] hover:border-[#7a0019] transition-colors">
+                            Read more <i class="fa-solid fa-arrow-right-long ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:block relative">
+                <div class="absolute -top-12 -left-12 opacity-5">
+                    <i class="fa-solid fa-fan text-[20rem]"></i>
+                </div>
+                <div class="relative z-10 p-12 bg-white rounded-2xl shadow-xl">
+                    <h2 class="text-4xl font-serif mb-6">Ocean to Table</h2>
+                    <p class="text-gray-500 mb-8">We source our seafood daily from local fishermen and premium international markets to ensure the highest quality sashimi grade experience.</p>
+                    <img class="w-full h-72 object-cover rounded-xl" src="https://images.unsplash.com/photo-1534482421-64566f976cfa?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGZyZXNoJTIwYXNzb3J0ZWQlMjBzYXNoaW1pJTIwcGxhdHRlciUyMGRhcmt8ZW58MXx8fHwxNzk1Mzg2MTk2fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="fresh assorted sashimi platter on dark stone plate, vibrant colors, professional food photography" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end about -->
+
+    <!-- block:start products -->
+    <section id="menu" class="bg-[#1a1a1a] text-white py-24 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                <div>
+                    <h2 class="text-5xl md:text-7xl font-serif uppercase leading-none mb-6">Seasonal<br>Curations</h2>
+                    <p class="text-white/50 max-w-md text-sm">Experience our chef's hand-picked selections for this season. Each dish is a masterpiece of balance and texture.</p>
+                </div>
+                <div class="relative group cursor-pointer">
+                    <div class="w-24 h-24 border border-white/20 rounded-full flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all">
+                        <span class="text-[10px] font-bold tracking-tighter text-center">SEE FULL<br>MENU</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="space-y-6 group">
+                    <div class="overflow-hidden rounded-xl h-[400px]">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1635379511574-bc167ca085c8?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHN0ZWFtaW5nJTIwaG90JTIwdG9ua290c3UlMjByYW1lbiUyMHBvcmslMjBiZWxseXxlbnwxfHx8fDE3OTUzODYxNjh8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="steaming hot tonkotsu ramen with pork belly and egg, top down view" />
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-serif mb-2">Black Garlic Tonkotsu</h3>
+                        <p class="text-white/40 text-xs tracking-widest uppercase">Signature Ramen</p>
+                    </div>
+                </div>
+                <div class="space-y-6 group">
+                    <div class="overflow-hidden rounded-xl h-[400px]">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1759277513239-3ebfc180f23c?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGRlbGljYXRlJTIwc3VzaGklMjByb2xscyUyMHRvcHBlZCUyMGdvbGQlMjBsZWFmfGVufDF8fHx8MTc5NTM4NjE2OXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="delicate sushi rolls topped with gold leaf and truffle, luxury plating" />
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-serif mb-2">Truffle Toro Maki</h3>
+                        <p class="text-white/40 text-xs tracking-widest uppercase">Premium Sushi</p>
+                    </div>
+                </div>
+                <div class="space-y-6 group">
+                    <div class="overflow-hidden rounded-xl h-[400px]">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1768162125959-8a35d4ede7dc?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGdyaWxsZWQlMjB5YWtpdG9yaSUyMHNrZXdlcnMlMjBncmVlbiUyMG9uaW9ucyUyMGdsb3NzeXxlbnwxfHx8fDE3OTUzODYxNjl8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="grilled yakitori skewers with green onions, glossy tare sauce, close up" />
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-serif mb-2">Tsukune Yakitori</h3>
+                        <p class="text-white/40 text-xs tracking-widest uppercase">Izakaya Grill</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end products -->
+
+    <section id="break" class="h-[400px] relative overflow-hidden flex items-center justify-center">
+        <img class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1625584733117-23a842650ff1?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGRhcmslMjBtb29keSUyMGphcGFuZXNlJTIwa2l0Y2hlbiUyMHN0ZWFtJTIwbG93fGVufDF8fHx8MTc5NTM4NjE3MHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="dark moody japanese kitchen with steam and low light, shadows of chefs" />
+        <div class="absolute inset-0 bg-[#7a0019]/80 backdrop-blur-[2px]"></div>
+        <div class="relative z-10 text-center px-6">
+            <div class="mb-8 flex justify-center">
+                <i class="fa-solid fa-water text-6xl text-white/90"></i>
+            </div>
+            <h2 class="text-2xl md:text-3xl text-white font-serif tracking-widest uppercase mb-4">Authenticity in every grain</h2>
+            <div class="h-px w-24 bg-white/30 mx-auto"></div>
+        </div>
+    </section>
+
+    <!-- block:start contact -->
+    <section id="locations" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="text-5xl md:text-6xl font-serif uppercase mb-4">Our Enclaves</h2>
+            <p class="text-gray-400 uppercase text-xs tracking-[0.4em]">Visit us across the globe</p>
+        </div>
+
+        <div class="space-y-4">
+            <!-- Location Item -->
+            <div class="group border-b border-gray-200 py-12 flex flex-col md:flex-row justify-between items-center cursor-pointer hover:bg-white transition-colors px-6">
+                <div class="text-gray-300 text-3xl md:text-5xl font-serif group-hover:text-gray-100 transition-colors uppercase">Hokkaido</div>
+                <div class="hidden group-hover:flex items-center gap-12 animate-fadeIn">
+                    <div class="text-right">
+                        <h4 class="text-xl font-bold uppercase tracking-widest">Sapporo Central</h4>
+                        <p class="text-gray-400 text-sm">122 North District, Sapporo</p>
+                    </div>
+                    <div class="w-32 h-20 overflow-hidden rounded-lg">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1680108485522-555e539ab8b7?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGV4dGVyaW9yJTIwcmVzdGF1cmFudCUyMHNub3d5JTIwamFwYW5lc2UlMjBjaXR5fGVufDF8fHx8MTc5NTM4NjE3MHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="exterior of a modern minimalist restaurant in a snowy japanese city" />
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-2xl"></i>
+                </div>
+            </div>
+
+            <!-- Location Item Active/Featured -->
+            <div class="group border-b border-gray-200 py-12 flex flex-col md:flex-row justify-between items-center bg-white px-6">
+                <div class="text-black text-3xl md:text-5xl font-serif uppercase">Kyoto Gion</div>
+                <div class="flex items-center gap-12">
+                    <div class="text-right">
+                        <h4 class="text-xl font-bold uppercase tracking-widest">Gion District</h4>
+                        <p class="text-gray-400 text-sm">456 Hanami Lane, Kyoto</p>
+                    </div>
+                    <div class="w-32 h-20 overflow-hidden rounded-lg shadow-lg rotate-3">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1574060275764-4e3e046ff29c?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHRyYWRpdGlvbmFsJTIwa3lvdG8lMjB3b29kZW4lMjBzdG9yZWZyb250JTIwbmlnaHQlMjBsYW50ZXJuc3xlbnwxfHx8fDE3OTUzODYxNzF8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="traditional kyoto wooden storefront at night with lanterns" />
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-2xl text-[#7a0019]"></i>
+                </div>
+            </div>
+
+            <!-- Location Item -->
+            <div class="group border-b border-gray-200 py-12 flex flex-col md:flex-row justify-between items-center cursor-pointer hover:bg-white transition-colors px-6">
+                <div class="text-gray-300 text-3xl md:text-5xl font-serif group-hover:text-gray-100 transition-colors uppercase">Tokyo</div>
+                <div class="hidden group-hover:flex items-center gap-12 animate-fadeIn">
+                    <div class="text-right">
+                        <h4 class="text-xl font-bold uppercase tracking-widest">Ginza Heights</h4>
+                        <p class="text-gray-400 text-sm">9-2-1 Ginza, Chuo City, Tokyo</p>
+                    </div>
+                    <div class="w-32 h-20 overflow-hidden rounded-lg">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1759274003856-1ad3e6f63283?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHNsZWVrJTIwYnVpbGRpbmclMjBnaW56YSUyMGRpc3RyaWN0JTIwbmlnaHR8ZW58MXx8fHwxNzk1Mzg2MTcxfDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="sleek modern building in Ginza district at night" />
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-2xl"></i>
+                </div>
+            </div>
+
+            <!-- Location Item -->
+            <div class="group border-b border-gray-200 py-12 flex flex-col md:flex-row justify-between items-center cursor-pointer hover:bg-white transition-colors px-6">
+                <div class="text-gray-300 text-3xl md:text-5xl font-serif group-hover:text-gray-100 transition-colors uppercase">Osaka</div>
+                <div class="hidden group-hover:flex items-center gap-12 animate-fadeIn">
+                    <div class="text-right">
+                        <h4 class="text-xl font-bold uppercase tracking-widest">Umeda Sky</h4>
+                        <p class="text-gray-400 text-sm">Kita-ku, Osaka City</p>
+                    </div>
+                    <div class="w-32 h-20 overflow-hidden rounded-lg">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1785010383537-e3f2d0623b1b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fG5lb24lMjBsaWdodHMlMjBvc2FrYSUyMGNpdHklMjBzdHJlZXQlMjBmb29kfGVufDF8fHx8MTc5NTM4NjE3Mnww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="vibrant neon lights of Osaka city street with food stalls" />
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-2xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end contact -->
+
+    <!-- block:start cta -->
+    <section id="booking" class="py-12 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto relative rounded-3xl overflow-hidden h-[500px] flex flex-col items-center justify-center text-center">
+            <img class="absolute inset-0 w-full h-full object-cover scale-110" src="https://images.unsplash.com/photo-1648977555232-99b5a8c8c897?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGRlbGljaW91cyUyMHdhZ3l1JTIwYmVlZiUyMHNsaWNlcyUyMGJlaW5nJTIwZ3JpbGxlZHxlbnwxfHx8fDE3OTUzODYxNzJ8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="delicious premium wagyu beef slices being grilled over charcoal, dramatic fire and smoke" />
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="relative z-10 px-4">
+                <h2 class="text-4xl md:text-6xl font-serif text-white uppercase mb-6 leading-tight">Secure Your<br>Culinary Experience</h2>
+                <p class="text-white/70 mb-10 text-lg max-w-xl mx-auto">Reservations are recommended 2 weeks in advance. Join our rewards program for priority booking.</p>
+                <button class="bg-white text-black px-12 py-5 rounded-full font-bold text-xs tracking-[0.2em] uppercase hover:bg-[#7a0019] hover:text-white transition-all transform hover:scale-105">
+                    Book a Table Now <i class="fa-solid fa-arrow-right-long ml-3"></i>
+                </button>
+                <p class="mt-6 text-white/40 text-xs font-semibold tracking-widest uppercase italic">Earn 15% cashback on your first visit</p>
+            </div>
+        </div>
+    </section>
+    <!-- block:end cta -->
+
+    <!-- block:start footer -->
+    <footer id="footer" class="bg-white pt-24 pb-12 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-20 border-b border-gray-100">
+                <div class="space-y-8">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-water text-3xl text-[#7a0019]"></i>
+                        <span class="text-2xl font-serif">KAIYO BISTRO</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">Crafting authentic Japanese experiences through sustainable sourcing and culinary mastery since 2012.</p>
+                    <div class="flex gap-4 text-gray-400">
+                        <a href="#" class="hover:text-[#7a0019] transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+                        <a href="#" class="hover:text-[#7a0019] transition-colors"><i class="fa-brands fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="hover:text-[#7a0019] transition-colors"><i class="fa-brands fa-x-twitter text-xl"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xs font-bold tracking-[0.3em] uppercase mb-8">Navigation</h4>
+                    <ul class="space-y-4 text-sm font-medium text-gray-500">
+                        <li><a href="#about" class="hover:text-black transition-colors">Our Story</a></li>
+                        <li><a href="#menu" class="hover:text-black transition-colors">Menu Selection</a></li>
+                        <li><a href="#booking" class="hover:text-black transition-colors">Private Events</a></li>
+                        <li><a href="#menu" class="hover:text-black transition-colors">Gift Cards</a></li>
+                        <li><a href="#footer" class="hover:text-black transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold tracking-[0.3em] uppercase mb-8">Menu Categories</h4>
+                    <ul class="space-y-4 text-sm font-medium text-gray-500">
+                        <li><a href="#menu" class="hover:text-black transition-colors">Signature Ramen</a></li>
+                        <li><a href="#menu" class="hover:text-black transition-colors">Edomae Sushi</a></li>
+                        <li><a href="#menu" class="hover:text-black transition-colors">Izakaya Small Plates</a></li>
+                        <li><a href="#menu" class="hover:text-black transition-colors">Premium Sake</a></li>
+                        <li><a href="#menu" class="hover:text-black transition-colors">Seasonal Desserts</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold tracking-[0.3em] uppercase mb-8">Legal & Careers</h4>
+                    <ul class="space-y-4 text-sm font-medium text-gray-500">
+                        <li><a href="#about" class="hover:text-black transition-colors">Join Our Team</a></li>
+                        <li><a href="#about" class="hover:text-black transition-colors">Sustainability</a></li>
+                        <li><a href="#footer" class="hover:text-black transition-colors">Privacy Policy</a></li>
+                        <li><a href="#footer" class="hover:text-black transition-colors">Terms of Service</a></li>
+                        <li><a href="#footer" class="hover:text-black transition-colors">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-bold text-gray-400 tracking-[0.2em] uppercase">
+                <p>© 2024 Kaiyo Bistro Group. Designed for excellence.</p>
+                <div class="flex gap-8">
+                    <span>Sapporo</span>
+                    <span>Kyoto</span>
+                    <span>Tokyo</span>
+                    <span>Osaka</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- block:end footer -->
+
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=kaiyo-bistro&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

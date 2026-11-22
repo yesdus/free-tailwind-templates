@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | Fernwise</title>
+  <meta name="description" content="Answers to common questions about Fernwise accounts, security, investing and fees. Search or browse by topic.">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="FAQ | Fernwise">
+  <meta property="og:description" content="Answers to common questions about Fernwise accounts, security, investing and fees. Search or browse by topic.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Fernwise template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="FAQ | Fernwise">
+  <meta name="twitter:description" content="Answers to common questions about Fernwise accounts, security, investing and fees. Search or browse by topic.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Fernwise template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Mulish:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { pine: { DEFAULT: '#1e3d36', light: '#2f6b5e' }, jade: '#4fa595', paper: '#f5f5f3', stone: '#ecece9', cream: '#ecebdc', mist: '#dde9e7', zest: '#e6e04a' },
+          fontFamily: { sans: ['Mulish', 'sans-serif'], brand: ['Archivo', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-paper font-sans text-pine antialiased">
+  <header class="relative z-40">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-6 md:px-10" aria-label="Main">
+      <a href="index.html" class="leading-none" aria-label="Fernwise Finance home">
+        <span class="block font-brand text-[1.7rem] font-extrabold tracking-tight">Fernwise</span>
+        <span class="block font-brand text-[10px] font-bold uppercase tracking-[0.35em]">Finance</span>
+      </a>
+      <ul class="hidden items-center gap-10 text-[15px] font-medium lg:flex">
+          <li><a href="index.html"  class="border-b-2 pb-1 transition border-transparent text-pine/70 hover:text-pine">Home</a></li>
+          <li><a href="about.html"  class="border-b-2 pb-1 transition border-transparent text-pine/70 hover:text-pine">About us</a></li>
+          <li><a href="services.html"  class="border-b-2 pb-1 transition border-transparent text-pine/70 hover:text-pine">Services</a></li>
+          <li><a href="pricing.html"  class="border-b-2 pb-1 transition border-transparent text-pine/70 hover:text-pine">Pricing</a></li>
+          <li><a href="faq.html" aria-current="page" class="border-b-2 pb-1 transition border-pine">FAQ</a></li>
+      </ul>
+      <div class="flex items-center gap-2">
+        <a href="signup.html"  class="hidden rounded-full bg-pine px-6 py-2.5 text-sm font-medium text-white transition hover:bg-pine-light sm:inline-block">Sign up</a>
+        <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="grid h-11 w-11 place-items-center rounded-full bg-pine text-white lg:hidden"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden px-5 pb-4 lg:hidden">
+      <ul class="grid gap-1 rounded-3xl bg-white p-3 font-medium shadow-lg">
+          <li><a href="index.html"  class="block rounded-2xl px-4 py-3 hover:bg-stone">Home</a></li>
+          <li><a href="about.html"  class="block rounded-2xl px-4 py-3 hover:bg-stone">About us</a></li>
+          <li><a href="services.html"  class="block rounded-2xl px-4 py-3 hover:bg-stone">Services</a></li>
+          <li><a href="pricing.html"  class="block rounded-2xl px-4 py-3 hover:bg-stone">Pricing</a></li>
+          <li><a href="faq.html" aria-current="page" class="block rounded-2xl px-4 py-3 bg-pine text-white">FAQ</a></li>
+          <li><a href="contact.html"  class="block rounded-2xl px-4 py-3 hover:bg-stone">Contact</a></li>
+          <li><a href="signup.html"  class="block rounded-2xl px-4 py-3 hover:bg-stone">Sign up</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    
+  <section class="mx-auto max-w-7xl px-5 pt-6 md:px-10">
+    <div class="arches-dark rounded-[2rem] px-6 py-16 text-white md:px-14 md:py-20">
+      <p class="text-sm text-white/60">[ FAQ ]</p>
+      <h1 class="mt-4 max-w-3xl text-5xl font-medium leading-[1.05] tracking-tight md:text-6xl">Questions, answered.</h1>
+      <p class="mt-5 max-w-xl leading-relaxed text-white/80">Search below or browse by topic. Still stuck? Our team replies within the hour.</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-5 py-20 md:px-10" data-faq-search>
+    <label class="relative block">
+      <span class="sr-only">Search questions</span>
+      <i class="fa-solid fa-magnifying-glass pointer-events-none absolute left-5 top-1/2 -translate-y-1/2 text-pine/50" aria-hidden="true"></i>
+      <input data-faq-input type="search" placeholder="Search, e.g. card, fees, joint" class="w-full rounded-full border border-pine/20 bg-white py-4 pl-12 pr-6 focus:border-jade focus:outline-none focus:ring-2 focus:ring-jade/30">
+    </label>
+    <div class="mt-5 flex flex-wrap items-center gap-2" role="group" aria-label="Filter by topic">
+        <button type="button" data-faq-topic="all" aria-pressed="true" class="rounded-full border border-pine/20 px-4 py-2 text-sm transition hover:border-pine aria-pressed:border-pine aria-pressed:bg-pine aria-pressed:text-white">All</button>
+        <button type="button" data-faq-topic="account" aria-pressed="false" class="rounded-full border border-pine/20 px-4 py-2 text-sm transition hover:border-pine aria-pressed:border-pine aria-pressed:bg-pine aria-pressed:text-white">Account</button>
+        <button type="button" data-faq-topic="security" aria-pressed="false" class="rounded-full border border-pine/20 px-4 py-2 text-sm transition hover:border-pine aria-pressed:border-pine aria-pressed:bg-pine aria-pressed:text-white">Security</button>
+        <button type="button" data-faq-topic="investing" aria-pressed="false" class="rounded-full border border-pine/20 px-4 py-2 text-sm transition hover:border-pine aria-pressed:border-pine aria-pressed:bg-pine aria-pressed:text-white">Investing</button>
+        <button type="button" data-faq-topic="fees" aria-pressed="false" class="rounded-full border border-pine/20 px-4 py-2 text-sm transition hover:border-pine aria-pressed:border-pine aria-pressed:bg-pine aria-pressed:text-white">Fees</button>
+      <p class="ml-auto text-sm text-pine/60" aria-live="polite"><span data-faq-count>8</span> questions</p>
+    </div>
+    <div class="mt-8 grid gap-3" data-accordion>
+        <div data-faq-item data-topic="account" class="rounded-3xl bg-stone">
+          <h2><button type="button" data-accordion-trigger aria-expanded="true" aria-controls="faq-0" class="group flex w-full items-center justify-between gap-4 p-6 text-left text-lg font-medium">How long does it take to open an account?<span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white transition group-aria-expanded:rotate-45" aria-hidden="true"><i class="fa-solid fa-plus text-xs"></i></span></button></h2>
+          <div id="faq-0"  class="px-6 pb-6 text-pine/80">About four minutes. You&#39;ll need a photo ID and a selfie, and most accounts are approved instantly.</div>
+        </div>
+        <div data-faq-item data-topic="account" class="rounded-3xl bg-stone">
+          <h2><button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-1" class="group flex w-full items-center justify-between gap-4 p-6 text-left text-lg font-medium">Can I open a joint account?<span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white transition group-aria-expanded:rotate-45" aria-hidden="true"><i class="fa-solid fa-plus text-xs"></i></span></button></h2>
+          <div id="faq-1" hidden class="px-6 pb-6 text-pine/80">Yes. Invite a partner or family member from the app and you&#39;ll share one balance and card set.</div>
+        </div>
+        <div data-faq-item data-topic="security" class="rounded-3xl bg-stone">
+          <h2><button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-2" class="group flex w-full items-center justify-between gap-4 p-6 text-left text-lg font-medium">Is my money protected?<span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white transition group-aria-expanded:rotate-45" aria-hidden="true"><i class="fa-solid fa-plus text-xs"></i></span></button></h2>
+          <div id="faq-2" hidden class="px-6 pb-6 text-pine/80">Cash is held with partner banks and covered by deposit insurance up to the legal limit.</div>
+        </div>
+        <div data-faq-item data-topic="security" class="rounded-3xl bg-stone">
+          <h2><button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-3" class="group flex w-full items-center justify-between gap-4 p-6 text-left text-lg font-medium">What happens if I lose my card?<span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white transition group-aria-expanded:rotate-45" aria-hidden="true"><i class="fa-solid fa-plus text-xs"></i></span></button></h2>
+          <div id="faq-3" hidden class="px-6 pb-6 text-pine/80">Freeze it in one tap, then order a replacement. Your virtual card keeps working in the meantime.</div>
+        </div>
+        <div data-faq-item data-topic="investing" class="rounded-3xl bg-stone">
+          <h2><button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-4" class="group flex w-full items-center justify-between gap-4 p-6 text-left text-lg font-medium">What&#39;s the minimum to start investing?<span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white transition group-aria-expanded:rotate-45" aria-hidden="true"><i class="fa-solid fa-plus text-xs"></i></span></button></h2>
+          <div id="faq-4" hidden class="px-6 pb-6 text-pine/80">Just $10. You can add more any time or set up a regular deposit.</div>
+        </div>
+        <div data-faq-item data-topic="investing" class="rounded-3xl bg-stone">
+          <h2><button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-5" class="group flex w-full items-center justify-between gap-4 p-6 text-left text-lg font-medium">Can I choose my own investments?<span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white transition group-aria-expanded:rotate-45" aria-hidden="true"><i class="fa-solid fa-plus text-xs"></i></span></button></h2>
+          <div id="faq-5" hidden class="px-6 pb-6 text-pine/80">Plus and Private members can tilt their portfolio toward themes like climate or dividends.</div>
+        </div>
+        <div data-faq-item data-topic="fees" class="rounded-3xl bg-stone">
+          <h2><button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-6" class="group flex w-full items-center justify-between gap-4 p-6 text-left text-lg font-medium">Are there any hidden fees?<span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white transition group-aria-expanded:rotate-45" aria-hidden="true"><i class="fa-solid fa-plus text-xs"></i></span></button></h2>
+          <div id="faq-6" hidden class="px-6 pb-6 text-pine/80">No. Your plan price and the fund costs shown in the app are all you&#39;ll ever pay.</div>
+        </div>
+        <div data-faq-item data-topic="fees" class="rounded-3xl bg-stone">
+          <h2><button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-7" class="group flex w-full items-center justify-between gap-4 p-6 text-left text-lg font-medium">Can I cancel at any time?<span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white transition group-aria-expanded:rotate-45" aria-hidden="true"><i class="fa-solid fa-plus text-xs"></i></span></button></h2>
+          <div id="faq-7" hidden class="px-6 pb-6 text-pine/80">Yes. Monthly plans end at the end of the month; yearly plans are refunded pro rata.</div>
+        </div>
+      <p data-faq-empty hidden class="rounded-3xl bg-cream p-6">No matches. <a href="contact.html" class="underline">Ask our team directly</a> and we'll reply within the hour.</p>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="arches mt-10 bg-stone">
+    <div class="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:px-10 lg:grid-cols-[1fr_1.6fr]">
+      <div>
+        <a href="index.html" class="inline-block leading-none" aria-label="Fernwise Finance home">
+          <span class="block font-brand text-6xl font-extrabold tracking-tight">Fernwise</span>
+          <span class="mt-1 block font-brand text-2xl font-bold uppercase tracking-[0.3em] text-pine/90">Finance</span>
+        </a>
+        <ul class="mt-8 flex gap-6 text-2xl">
+          <li><a href="mailto:hello@fernwise.finance" aria-label="Email"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.whatsapp.com" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
+          <div>
+            <p class="font-medium">Account</p>
+            <ul class="mt-4 grid gap-3 text-pine/60">
+              <li><a href="services.html" class="transition hover:text-pine">Savings</a></li><li><a href="services.html" class="transition hover:text-pine">Joint accounts</a></li><li><a href="services.html" class="transition hover:text-pine">Investing</a></li><li><a href="pricing.html" class="transition hover:text-pine">Freelancers</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-medium">Help</p>
+            <ul class="mt-4 grid gap-3 text-pine/60">
+              <li><a href="faq.html" class="transition hover:text-pine">Help center</a></li><li><a href="contact.html" class="transition hover:text-pine">Contact</a></li><li><a href="signup.html" class="transition hover:text-pine">Sign up</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-medium">Finance</p>
+            <ul class="mt-4 grid gap-3 text-pine/60">
+              <li><a href="services.html" class="transition hover:text-pine">Cards</a></li><li><a href="pricing.html" class="transition hover:text-pine">Plans</a></li><li><a href="services.html" class="transition hover:text-pine">Payments</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-medium">Company</p>
+            <ul class="mt-4 grid gap-3 text-pine/60">
+              <li><a href="about.html" class="transition hover:text-pine">About us</a></li><li><a href="services.html" class="transition hover:text-pine">Services</a></li><li><a href="about.html" class="transition hover:text-pine">Careers</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="mx-auto flex max-w-7xl flex-wrap justify-between gap-4 border-t border-pine/15 px-5 py-6 text-sm text-pine/60 md:px-10">
+      <p><span class="text-pine">&copy; Fernwise Finance <span data-current-year>2026</span></span> | All rights reserved.</p>
+      <ul class="flex gap-8"><li><a href="faq.html" class="hover:text-pine">Privacy</a></li><li><a href="faq.html" class="hover:text-pine">Terms of use</a></li><li><a href="faq.html" class="hover:text-pine">Disclosures</a></li></ul>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      if (!menu) return;
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const watchMotion = !reducedMotion && !navigator.webdriver && 'IntersectionObserver' in window;
+
+    document.querySelectorAll('[data-chart]').forEach((chart) => {
+      const line = chart.querySelector('[data-chart-line]');
+      chart.querySelectorAll('[data-period]').forEach((button) => {
+        button.addEventListener('click', () => {
+          chart.querySelectorAll('[data-period]').forEach((other) => other.setAttribute('aria-pressed', String(other === button)));
+          line.setAttribute('d', button.dataset.path);
+          chart.querySelector('[data-chart-value]').textContent = button.dataset.value;
+          chart.querySelector('[data-chart-change]').textContent = button.dataset.change;
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-word-reveal]').forEach((root) => {
+      const words = [...root.querySelectorAll('[data-word]')];
+      if (!watchMotion) return;
+      const muted = words.map((word) => word.classList.contains('text-pine/35'));
+      const paint = () => {
+        const rect = root.getBoundingClientRect();
+        const progress = Math.min(Math.max((innerHeight * 0.85 - rect.top) / (rect.height + innerHeight * 0.3), 0), 1);
+        const lit = Math.round(progress * words.length);
+        words.forEach((word, index) => {
+          if (!muted[index]) return;
+          word.classList.toggle('text-pine', index < lit);
+          word.classList.toggle('text-pine/35', index >= lit);
+        });
+      };
+      addEventListener('scroll', paint, { passive: true });
+      paint();
+    });
+
+    (() => {
+      if (!watchMotion) return;
+      const rings = document.querySelectorAll('[data-ring]');
+      const draws = document.querySelectorAll('.draw');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.querySelectorAll('[data-ring]').forEach((ring) => { ring.style.strokeDashoffset = ring.dataset.offset; });
+          entry.target.querySelectorAll('.draw').forEach((path) => path.classList.add('is-drawn'));
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.3 });
+      rings.forEach((ring) => { ring.dataset.offset = ring.getAttribute('stroke-dashoffset'); ring.style.strokeDashoffset = 100; });
+      document.querySelectorAll('[data-draw-group]').forEach((group) => observer.observe(group));
+      if (draws.length) document.documentElement.classList.add('reveal-ready');
+    })();
+
+    (() => {
+      const counters = document.querySelectorAll('[data-count-to]');
+      if (!counters.length || !watchMotion) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const target = Number(el.dataset.countTo);
+          const decimals = (el.dataset.countTo.split('.')[1] || '').length;
+          const start = performance.now();
+          const tick = (now) => {
+            const progress = Math.min((now - start) / 700, 1);
+            el.textContent = (target * progress).toFixed(decimals);
+            if (progress < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+          observer.unobserve(el);
+        });
+      }, { threshold: 0.6 });
+      counters.forEach((el) => observer.observe(el));
+    })();
+
+    document.querySelectorAll('[data-rail]').forEach((rail) => {
+      const track = rail.querySelector('[data-rail-track]');
+      const items = [...track.querySelectorAll('[data-rail-item]')];
+      const step = () => (items[0]?.getBoundingClientRect().width || 300) + 20;
+      const mark = () => {
+        const center = track.getBoundingClientRect().left + track.clientWidth / 2;
+        let best = items[0];
+        items.forEach((item) => {
+          const rect = item.getBoundingClientRect();
+          if (Math.abs(rect.left + rect.width / 2 - center) < Math.abs(best.getBoundingClientRect().left + best.getBoundingClientRect().width / 2 - center)) best = item;
+        });
+        items.forEach((item) => { item.dataset.active = String(item === best); });
+      };
+      let frame;
+      track.addEventListener('scroll', () => { cancelAnimationFrame(frame); frame = requestAnimationFrame(mark); }, { passive: true });
+      rail.querySelector('[data-rail-prev]')?.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: reducedMotion ? 'auto' : 'smooth' }));
+      rail.querySelector('[data-rail-next]')?.addEventListener('click', () => track.scrollBy({ left: step(), behavior: reducedMotion ? 'auto' : 'smooth' }));
+    });
+
+    document.querySelectorAll('[data-billing]').forEach((root) => {
+      root.addEventListener('change', (event) => {
+        if (event.target.name !== 'billing') return;
+        const yearly = event.target.value === 'yearly';
+        root.querySelectorAll('[data-monthly]').forEach((price) => { price.textContent = yearly ? price.dataset.yearly : price.dataset.monthly; });
+        root.querySelectorAll('[data-billing-note]').forEach((note) => { note.textContent = yearly ? 'per month, billed yearly' : 'per month'; });
+      });
+    });
+
+    document.querySelectorAll('[data-faq-search]').forEach((root) => {
+      const input = root.querySelector('[data-faq-input]');
+      const items = [...root.querySelectorAll('[data-faq-item]')];
+      const empty = root.querySelector('[data-faq-empty]');
+      const count = root.querySelector('[data-faq-count]');
+      let topic = 'all';
+      const apply = () => {
+        const query = String(input.value || '').trim().toLowerCase();
+        let shown = 0;
+        items.forEach((item) => {
+          const match = (topic === 'all' || item.dataset.topic === topic) && (!query || item.textContent.toLowerCase().includes(query));
+          item.hidden = !match;
+          if (match) shown += 1;
+        });
+        empty.hidden = shown > 0;
+        count.textContent = shown;
+      };
+      input.addEventListener('input', apply);
+      root.querySelectorAll('[data-faq-topic]').forEach((chip) => {
+        chip.addEventListener('click', () => {
+          topic = chip.dataset.faqTopic;
+          root.querySelectorAll('[data-faq-topic]').forEach((other) => { other.setAttribute('aria-pressed', String(other === chip)); other.selected = other === chip; });
+          apply();
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-accordion]').forEach((accordion) => {
+      accordion.addEventListener('click', (event) => {
+        const trigger = event.target.closest('[data-accordion-trigger]');
+        if (!trigger) return;
+        const open = trigger.getAttribute('aria-expanded') !== 'true';
+        trigger.setAttribute('aria-expanded', String(open));
+        document.getElementById(trigger.getAttribute('aria-controls')).hidden = !open;
+      });
+    });
+
+    document.querySelectorAll('[data-service-tabs]').forEach((root) => {
+      const tabs = [...root.querySelectorAll('[role="tab"]')];
+      const select = (tab) => tabs.forEach((other) => {
+        const active = other === tab;
+        other.setAttribute('aria-selected', String(active));
+        other.tabIndex = active ? 0 : -1;
+        document.getElementById(other.getAttribute('aria-controls')).hidden = !active;
+      });
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => select(tab));
+        tab.addEventListener('keydown', (event) => {
+          const move = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[event.key];
+          if (!move) return;
+          event.preventDefault();
+          const next = tabs[(index + move + tabs.length) % tabs.length];
+          next.focus();
+          select(next);
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-timeline]').forEach((timeline) => {
+      const fill = timeline.querySelector('[data-timeline-fill]');
+      if (!fill) return;
+      const update = () => {
+        const rect = timeline.getBoundingClientRect();
+        const progress = Math.min(Math.max((innerHeight * 0.6 - rect.top) / rect.height, 0), 1);
+        fill.style.transform = `scaleY(${watchMotion ? progress : 1})`;
+      };
+      addEventListener('scroll', update, { passive: true });
+      update();
+    });
+
+    document.querySelectorAll('[data-wizard]').forEach((wizard) => {
+      const steps = [...wizard.querySelectorAll('[data-wizard-step]')];
+      const bar = wizard.querySelector('[data-wizard-bar]');
+      const label = wizard.querySelector('[data-wizard-label]');
+      const status = wizard.querySelector('[data-form-status]');
+      let current = 0;
+      const show = (index) => {
+        current = index;
+        steps.forEach((step, i) => { step.hidden = i !== index; });
+        bar.style.width = `${((index + 1) / steps.length) * 100}%`;
+        bar.value = (index + 1) / steps.length;
+        label.textContent = `Step ${index + 1} of ${steps.length}`;
+        wizard.querySelectorAll('[data-wizard-dot]').forEach((dot, i) => dot.classList.toggle('step-primary', i <= index));
+      };
+      const valid = () => {
+        const fields = [...steps[current].querySelectorAll('[required]')];
+        const bad = fields.find((field) => !field.checkValidity());
+        if (bad) { status.textContent = wizard.dataset.error; bad.focus(); return false; }
+        status.textContent = '';
+        return true;
+      };
+      wizard.addEventListener('click', (event) => {
+        if (event.target.closest('[data-wizard-next]') && valid()) show(Math.min(current + 1, steps.length - 1));
+        if (event.target.closest('[data-wizard-back]')) show(Math.max(current - 1, 0));
+      });
+      wizard.addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (!valid()) return;
+        const plan = wizard.querySelector('[name="plan"]:checked')?.value || 'Starter';
+        status.textContent = `Account created on the ${plan} plan. Check your inbox to verify your email.`;
+      });
+      show(0);
+    });
+
+    document.querySelectorAll('[data-contact-form]').forEach((form) => {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const status = form.parentElement.querySelector('[data-form-status]');
+        if (!form.checkValidity()) {
+          status.textContent = form.dataset.error;
+          form.querySelector(':invalid')?.focus();
+          return;
+        }
+        status.textContent = form.dataset.success;
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    (() => {
+      const items = document.querySelectorAll('[data-reveal]');
+      if (!items.length || !watchMotion) return;
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=fernwise&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

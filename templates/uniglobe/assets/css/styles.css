@@ -1,0 +1,7 @@
+.hero-gradient {
+            background-size: cover;
+            background-position: center;
+        }
+        .scroll-hide::-webkit-scrollbar {
+            display: none;
+        }

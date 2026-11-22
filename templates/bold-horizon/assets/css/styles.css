@@ -1,0 +1,30 @@
+html {
+            overflow-x: hidden;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, .font-bold-title {
+            font-family: 'Archivo', sans-serif;
+            text-transform: uppercase;
+        }
+        .text-huge {
+            font-size: clamp(2.75rem, 11vw, 18rem);
+            line-height: 0.85;
+            letter-spacing: -0.04em;
+        }
+        .text-mega {
+            font-size: clamp(2rem, 7.5vw, 8rem);
+            line-height: 0.92;
+            letter-spacing: -0.03em;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Sterling | Tailwind CSS Digital Product Architect Portfolio Template</title>
+    <meta name="description" content="Julian Sterling is an elegant Tailwind CSS portfolio template for digital product architects, UX designers, and human-centric interface specialists.">
+    <meta name="keywords" content="Julian Sterling, Tailwind CSS template, HTML website template, digital product architect, designer portfolio, UX portfolio, responsive creative design">
+    <meta name="author" content="Let's templates">
+    <link rel="canonical" href="">
+
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Let's templates">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Julian Sterling | Tailwind CSS Digital Product Architect Portfolio Template">
+    <meta property="og:description" content="An elegant Tailwind CSS portfolio template for digital product architects, UX designers, and human-centric interface specialists.">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="Julian Sterling template preview">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Julian Sterling | Tailwind CSS Digital Product Architect Portfolio Template">
+    <meta name="twitter:description" content="An elegant Tailwind CSS portfolio template for digital product architects, UX designers, and human-centric interface specialists.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:image:alt" content="Julian Sterling template preview">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- block:start navbar -->
+    <header id="header" class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-neutral-100/80">
+        <div class="px-4 sm:px-6 md:px-12 py-4 md:py-6 flex items-center justify-between gap-3">
+            <nav class="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.2em] font-semibold text-neutral-500">
+                <a href="#projects" class="hover:text-black transition-colors">Portfolios</a>
+                <a href="#contact" class="hover:text-black transition-colors">Connect</a>
+            </nav>
+
+            <a href="#hero" class="md:absolute md:left-1/2 md:-translate-x-1/2 flex items-center gap-2 md:flex-col md:items-center shrink-0">
+                <div class="w-9 h-9 md:w-10 md:h-10 border-2 border-black flex items-center justify-center">
+                    <span class="font-bold text-base md:text-lg">JS</span>
+                </div>
+                <span class="text-[8px] uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold">Julian Sterling</span>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-6 text-sm text-neutral-400">
+                <a href="#contact" class="hover:text-black transition-colors" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#contact" class="hover:text-black transition-colors" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#contact" class="hover:text-black transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#contact" class="hover:text-black transition-colors" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+            </div>
+
+            <button
+                id="mobile-menu-button"
+                type="button"
+                class="md:hidden ml-auto w-10 h-10 border border-neutral-200 flex items-center justify-center"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="mobile-navigation"
+            >
+                <span id="mobile-menu-icon-open" aria-hidden="true"><i class="fa-solid fa-bars text-sm"></i></span>
+                <span id="mobile-menu-icon-close" class="hidden" aria-hidden="true"><i class="fa-solid fa-xmark text-sm"></i></span>
+            </button>
+        </div>
+
+        <nav
+            id="mobile-navigation"
+            class="md:hidden border-t border-neutral-100 px-4 py-4"
+            aria-label="Mobile navigation"
+            hidden
+        >
+            <div class="flex flex-col text-[10px] uppercase tracking-[0.2em] font-semibold text-neutral-500">
+                <a href="#projects" class="mobile-nav-link py-3 hover:text-black transition-colors">Portfolios</a>
+                <a href="#experience" class="mobile-nav-link py-3 hover:text-black transition-colors">Experience</a>
+                <a href="#contact" class="mobile-nav-link py-3 hover:text-black transition-colors">Connect</a>
+            </div>
+            <div class="flex items-center gap-5 pt-3 text-sm text-neutral-400">
+                <a href="#contact" class="hover:text-black transition-colors" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#contact" class="hover:text-black transition-colors" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#contact" class="hover:text-black transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#contact" class="hover:text-black transition-colors" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </nav>
+    </header>
+    <!-- block:end navbar -->
+
+    <!-- block:start hero -->
+    <section id="hero" class="pt-28 sm:pt-36 md:pt-40 pb-12 md:pb-20 px-4 sm:px-6 md:px-12 overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center mb-10 md:mb-16">
+            <h1 class="serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-tight text-neutral-800 px-1">
+                Julian Sterling<br>
+                Digital Product Architect<br>
+                Based in Stockholm
+            </h1>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12 items-center relative">
+
+            <!-- Left Info Column -->
+            <div class="lg:col-span-3 order-2 lg:order-1 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-8 sm:gap-6 lg:gap-16 lg:space-y-0">
+                <div class="space-y-3 sm:space-y-4">
+                    <h3 class="text-[10px] uppercase tracking-[0.3em] font-bold text-neutral-300">Biography</h3>
+                    <p class="text-sm leading-relaxed text-neutral-600 max-w-xs">
+                        Designing for purpose and aesthetics. I'm Julian, an architect of human-centric interfaces based in the heart of Sweden.
+                    </p>
+                </div>
+
+                <div class="space-y-3 sm:space-y-4">
+                    <h3 class="text-[10px] uppercase tracking-[0.3em] font-bold text-neutral-300">Contact</h3>
+                    <p class="text-sm leading-relaxed text-neutral-600 break-words">
+                        Stockholm, SE<br>
+                        hello@juliansterling.design<br>
+                        +46 8 123 45 67
+                    </p>
+                </div>
+
+                <div class="space-y-3 sm:space-y-4">
+                    <h3 class="text-[10px] uppercase tracking-[0.3em] font-bold text-neutral-300">Expertise</h3>
+                    <ul class="text-sm leading-relaxed text-neutral-600 space-y-1">
+                        <li>Systems Architecture</li>
+                        <li>Interface Design</li>
+                        <li>Motion Strategy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Central Portrait -->
+            <div class="lg:col-span-6 order-1 lg:order-2 flex justify-center relative px-2 sm:px-0">
+                <!-- Decorative waves in background -->
+                <div class="absolute left-0 top-1/2 -translate-y-1/2 w-32 h-64 opacity-20 hidden lg:block">
+                   <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0,20 Q25,0 50,20 T100,20 M0,60 Q25,40 50,60 T100,60 M0,100 Q25,80 50,100 T100,100 M0,140 Q25,120 50,140 T100,140" stroke="currentColor" fill="none" class="text-neutral-300" stroke-width="1"/>
+                   </svg>
+                </div>
+                <div class="absolute right-0 top-1/2 -translate-y-1/2 w-32 h-64 opacity-20 hidden lg:block scale-x-[-1]">
+                   <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0,20 Q25,0 50,20 T100,20 M0,60 Q25,40 50,60 T100,60 M0,100 Q25,80 50,100 T100,100 M0,140 Q25,120 50,140 T100,140" stroke="currentColor" fill="none" class="text-neutral-300" stroke-width="1"/>
+                   </svg>
+                </div>
+
+                <div class="w-full max-w-[280px] sm:max-w-[380px] md:max-w-[500px] oval-container border-[6px] sm:border-[10px] md:border-[12px] border-neutral-50 shadow-inner">
+                    <img class="w-full aspect-[4/5] object-cover grayscale brightness-110" src="https://images.unsplash.com/photo-1782830791542-c11c587b03af?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIwbWFuJTIwZ2xhc3NlcyUyMGNhdHxlbnwxfHx8fDE3OTUzODYxODd8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="professional studio portrait of a man in glasses with a cat, minimalist neutral background, high-end" />
+                </div>
+            </div>
+
+            <!-- Right Stats Column -->
+            <div class="lg:col-span-3 order-3 lg:order-3 grid grid-cols-2 lg:grid-cols-1 gap-6 sm:gap-8 lg:gap-12 lg:text-right">
+                <div class="space-y-1">
+                    <h3 class="text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.3em] font-bold text-neutral-300">Years of Experience</h3>
+                    <p class="serif text-4xl sm:text-5xl md:text-7xl font-light text-neutral-800">10</p>
+                </div>
+                <div class="space-y-1">
+                    <h3 class="text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.3em] font-bold text-neutral-300">Global Partners</h3>
+                    <p class="serif text-4xl sm:text-5xl md:text-7xl font-light text-neutral-800">120+</p>
+                </div>
+                <div class="space-y-1">
+                    <h3 class="text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.3em] font-bold text-neutral-300">User Satisfaction</h3>
+                    <p class="serif text-4xl sm:text-5xl md:text-7xl font-light text-neutral-800">100%</p>
+                </div>
+                <div class="space-y-1">
+                    <h3 class="text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.3em] font-bold text-neutral-300">Completed Artifacts</h3>
+                    <p class="serif text-4xl sm:text-5xl md:text-7xl font-light text-neutral-800">500</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end hero -->
+
+    <!-- block:start clients -->
+    <section id="partners" class="py-12 md:py-20 border-t border-neutral-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 sm:gap-x-10 sm:gap-y-6 md:gap-20 opacity-40 grayscale">
+                <span class="text-[10px] sm:text-xs md:text-sm font-bold tracking-wider sm:tracking-widest uppercase text-center">Badische Landes-Bibliothek</span>
+                <span class="text-[10px] sm:text-xs md:text-sm font-bold tracking-wider sm:tracking-widest uppercase text-center">Christopher Willis</span>
+                <span class="text-[10px] sm:text-xs md:text-sm font-bold tracking-wider sm:tracking-widest uppercase text-center">Serenity Hotel</span>
+                <span class="text-[10px] sm:text-xs md:text-sm font-bold tracking-wider sm:tracking-widest uppercase text-center">Artchive Crafts</span>
+                <span class="text-[10px] sm:text-xs md:text-sm font-bold tracking-wider sm:tracking-widest uppercase text-center">Creative Space</span>
+            </div>
+        </div>
+    </section>
+    <!-- block:end clients -->
+
+    <!-- block:start about -->
+    <section id="experience" class="py-16 md:py-32 px-4 sm:px-6 md:px-12 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="serif text-3xl sm:text-4xl md:text-5xl text-center mb-12 md:mb-24 px-2">Education & Experience</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
+                <!-- 2014 -->
+                <div class="space-y-6 md:space-y-12 border-b md:border-b-0 border-neutral-100 pb-8 md:pb-0">
+                    <div class="text-[10px] uppercase tracking-[0.3em] font-bold text-neutral-300 mb-4 md:mb-8">2014</div>
+                    <div class="space-y-6 md:space-y-8">
+                        <div>
+                            <h4 class="serif text-lg sm:text-xl mb-1">Bachelor Degree of Design</h4>
+                            <p class="text-xs text-neutral-400 uppercase tracking-widest">RMIT University</p>
+                        </div>
+                        <div>
+                            <h4 class="serif text-lg sm:text-xl mb-1">UI/UX Design Certificate</h4>
+                            <p class="text-xs text-neutral-400 uppercase tracking-widest">University of Houston, US</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2015 - 2019 -->
+                <div class="space-y-6 md:space-y-12 border-b md:border-b-0 border-neutral-100 pb-8 md:pb-0">
+                    <div class="text-[10px] uppercase tracking-[0.3em] font-bold text-neutral-300 mb-4 md:mb-8">2015 - 2019</div>
+                    <div class="space-y-6 md:space-y-8">
+                        <div>
+                            <h4 class="serif text-lg sm:text-xl mb-1">Design Internship</h4>
+                            <p class="text-xs text-neutral-400 uppercase tracking-widest">CMC Corporation, UK</p>
+                        </div>
+                        <div>
+                            <h4 class="serif text-lg sm:text-xl mb-1">Graphic Designer</h4>
+                            <p class="text-xs text-neutral-400 uppercase tracking-widest">Tripadvisor Ltd, UK</p>
+                        </div>
+                        <div>
+                            <h4 class="serif text-lg sm:text-xl mb-1">Leader Graphic Design</h4>
+                            <p class="text-xs text-neutral-400 uppercase tracking-widest">New Century Media JSC, UK</p>
+                        </div>
+                        <div>
+                            <h4 class="serif text-lg sm:text-xl mb-1">Web Designer</h4>
+                            <p class="text-xs text-neutral-400 uppercase tracking-widest">Freelancer</p>
+                        </div>
+                        <div>
+                            <h4 class="serif text-lg sm:text-xl mb-1">Web Designer / Author</h4>
+                            <p class="text-xs text-neutral-400 uppercase tracking-widest">Envato Market</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2020 - PRESENT -->
+                <div class="space-y-6 md:space-y-12">
+                    <div class="text-[10px] uppercase tracking-[0.3em] font-bold text-neutral-300 mb-4 md:mb-8">2020 - PRESENT</div>
+                    <div class="space-y-6 md:space-y-8">
+                        <div>
+                            <h4 class="serif text-lg sm:text-xl mb-1">Product Design Management</h4>
+                            <p class="text-xs text-neutral-400 uppercase tracking-widest">Dribbble LLC, US</p>
+                        </div>
+                        <div>
+                            <h4 class="serif text-lg sm:text-xl mb-1">Art Director / Co-Founder</h4>
+                            <p class="text-xs text-neutral-400 uppercase tracking-widest">Spotify</p>
+                        </div>
+                        <div>
+                            <h4 class="serif text-lg sm:text-xl mb-1">Founder</h4>
+                            <p class="text-xs text-neutral-400 uppercase tracking-widest">iDesign Magazine</p>
+                        </div>
+                        <div>
+                            <h4 class="serif text-lg sm:text-xl mb-1">Author of The Book</h4>
+                            <p class="text-xs text-neutral-400 uppercase tracking-widest">Work for Money, Design for Love</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end about -->
+
+    <!-- block:start gallery -->
+    <section id="projects" class="py-16 md:py-32 px-4 sm:px-6 md:px-12 border-t border-neutral-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="serif text-3xl sm:text-4xl md:text-5xl text-center mb-12 md:mb-24 px-2">My Latest Projects</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+                <!-- Project 1 -->
+                <div class="group relative aspect-[4/3] overflow-hidden bg-neutral-100">
+                    <img class="w-full h-full object-cover grayscale" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIwd29tYW4lMjBibGFjayUyMHQtc2hpcnQlMjBib2xkJTIwc3Vwcm98ZW58MXx8fHwxNzk1Mzg2MDc4fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="portrait of a woman in a black t-shirt with bold Supro text, minimalist studio setting" />
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative aspect-[4/3] overflow-hidden bg-neutral-100">
+                    <img class="w-full h-full object-cover grayscale" src="https://images.unsplash.com/photo-1486365227551-f3f90034a57c?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGtpbmdmaXNoZXIlMjBiaXJkJTIwbGFyZ2UlMjBsZXR0ZXJzfGVufDF8fHx8MTc5NTM4NjA3OXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="close up of a kingfisher bird with large LW letters in the background, editorial photography" />
+                    <div class="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-black/20 flex flex-col items-center justify-center bg-white/10 backdrop-blur-sm group-hover:scale-110 transition-transform cursor-pointer">
+                        <span class="text-[8px] font-bold uppercase tracking-widest text-center leading-tight">Hold<br>And Drag</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group relative aspect-[4/3] overflow-hidden bg-neutral-100 sm:col-span-2 md:col-span-1">
+                    <img class="w-full h-full object-cover grayscale" src="https://images.unsplash.com/photo-1547612403-81da6259bdaf?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGFyY2hpdGVjdHVyYWwlMjBhcmNod2F5JTIwYmFubmVyJTIwdGV4dCUyMGhpZ2gtY29udHJhc3R8ZW58MXx8fHwxNzk1Mzg2MDc5fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="architectural archway with minimalist banner mockup text, high-contrast photography" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end gallery -->
+
+    <!-- block:start features -->
+    <section id="skills-languages" class="py-16 md:py-32 px-4 sm:px-6 md:px-12 border-t border-neutral-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+            <!-- Skills -->
+            <div class="space-y-8 md:space-y-12">
+                <h3 class="text-[10px] uppercase tracking-[0.3em] font-bold text-neutral-300">Skills</h3>
+                <div class="grid grid-cols-2 gap-y-6 sm:gap-y-8 gap-x-3 sm:gap-x-4">
+                    <div class="space-y-2 min-w-0">
+                        <h4 class="serif text-base sm:text-xl">Product Strategy</h4>
+                        <p class="text-[10px] uppercase tracking-widest text-neutral-400">Advanced</p>
+                    </div>
+                    <div class="space-y-2 min-w-0">
+                        <h4 class="serif text-base sm:text-xl">Visual Design</h4>
+                        <p class="text-[10px] uppercase tracking-widest text-neutral-400">Expert</p>
+                    </div>
+                    <div class="space-y-2 min-w-0">
+                        <h4 class="serif text-base sm:text-xl">User Research</h4>
+                        <p class="text-[10px] uppercase tracking-widest text-neutral-400">Intermediate</p>
+                    </div>
+                    <div class="space-y-2 min-w-0">
+                        <h4 class="serif text-base sm:text-xl">Systems Thinking</h4>
+                        <p class="text-[10px] uppercase tracking-widest text-neutral-400">Advanced</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="space-y-8 md:space-y-12">
+                <h3 class="text-[10px] uppercase tracking-[0.3em] font-bold text-neutral-300">Languages</h3>
+                <div class="space-y-6 md:space-y-8">
+                    <div class="flex justify-between items-end border-b border-neutral-100 pb-2 gap-4">
+                        <h4 class="serif text-base sm:text-xl">Swedish</h4>
+                        <p class="text-[10px] uppercase tracking-widest text-neutral-400 shrink-0">Native</p>
+                    </div>
+                    <div class="flex justify-between items-end border-b border-neutral-100 pb-2 gap-4">
+                        <h4 class="serif text-base sm:text-xl">English</h4>
+                        <p class="text-[10px] uppercase tracking-widest text-neutral-400 shrink-0">Fluent</p>
+                    </div>
+                    <div class="flex justify-between items-end border-b border-neutral-100 pb-2 gap-4">
+                        <h4 class="serif text-base sm:text-xl">German</h4>
+                        <p class="text-[10px] uppercase tracking-widest text-neutral-400 shrink-0">Professional</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end features -->
+
+    <!-- block:start contact -->
+    <section id="contact" class="py-16 md:py-32 px-4 sm:px-6 md:px-12 border-t border-neutral-100 bg-neutral-50/50 overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center space-y-8 md:space-y-12">
+            <h2 class="serif text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-neutral-800 px-1">Let's create something<br>meaningful together.</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 pt-6 md:pt-12">
+                <div class="space-y-2 w-full max-w-sm md:max-w-none md:w-auto px-2">
+                    <p class="text-[10px] uppercase tracking-widest font-bold text-neutral-300">Email Me</p>
+                    <a href="mailto:hello@juliansterling.design" class="serif text-lg sm:text-2xl md:text-3xl hover:opacity-50 transition-opacity break-all">hello@juliansterling.design</a>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-[10px] uppercase tracking-widest font-bold text-neutral-300">Call Me</p>
+                    <a href="tel:+4681234567" class="serif text-lg sm:text-2xl md:text-3xl hover:opacity-50 transition-opacity">+46 8 123 45 67</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end contact -->
+
+    <!-- block:start footer -->
+    <footer id="footer" class="py-10 md:py-12 px-4 sm:px-6 md:px-12 border-t border-neutral-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
+            <div class="flex flex-col items-center md:items-start">
+                <div class="w-8 h-8 border-2 border-black flex items-center justify-center mb-1">
+                    <span class="font-bold text-sm">JS</span>
+                </div>
+                <span class="text-[8px] uppercase tracking-[0.2em] sm:tracking-[0.3em] font-bold text-center">© 2024 Julian Sterling</span>
+            </div>
+
+            <nav class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-[10px] uppercase tracking-[0.2em] font-semibold text-neutral-500">
+                <a href="#contact" class="hover:text-black transition-colors">LinkedIn</a>
+                <a href="#contact" class="hover:text-black transition-colors">GitHub</a>
+                <a href="#contact" class="hover:text-black transition-colors">Dribbble</a>
+                <a href="#contact" class="hover:text-black transition-colors">Behance</a>
+            </nav>
+
+            <div class="text-[8px] uppercase tracking-[0.2em] sm:tracking-[0.3em] font-bold text-neutral-300 text-center">
+                Based in Stockholm, SE
+            </div>
+        </div>
+    </footer>
+    <!-- block:end footer -->
+
+    <script>
+        (function () {
+            var button = document.getElementById('mobile-menu-button');
+            var navigation = document.getElementById('mobile-navigation');
+            var iconOpen = document.getElementById('mobile-menu-icon-open');
+            var iconClose = document.getElementById('mobile-menu-icon-close');
+            if (!button || !navigation) return;
+
+            function setMenu(open) {
+                navigation.hidden = !open;
+                button.setAttribute('aria-expanded', String(open));
+                button.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+                if (iconOpen && iconClose) {
+                    iconOpen.classList.toggle('hidden', open);
+                    iconClose.classList.toggle('hidden', !open);
+                }
+            }
+
+            button.addEventListener('click', function (event) {
+                event.stopPropagation();
+                setMenu(navigation.hidden);
+            });
+
+            navigation.querySelectorAll('.mobile-nav-link').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    setMenu(false);
+                });
+            });
+
+            document.addEventListener('click', function (event) {
+                if (!navigation.hidden && !navigation.contains(event.target) && !button.contains(event.target)) {
+                    setMenu(false);
+                }
+            });
+        })();
+    </script>
+
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=julian-sterling&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

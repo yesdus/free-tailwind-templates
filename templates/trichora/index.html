@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trichora | Tailwind CSS Health Template</title>
+  <meta name="description" content="Trichora is a warm, data-led Tailwind CSS health template for an AI scalp and hair analysis app, with a tagged portrait hero, scan and density cards, a step ruler, a live analysis demo, plan tabs, a testimonial slider and platform, programs, insights, pricing and contact pages.">
+  <meta name="keywords" content="Trichora, Tailwind CSS template, HTML website template, health template, hair health, scalp analysis, hair app, trichology, hair care routine, beauty tech">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Trichora | Tailwind CSS Health Template">
+  <meta property="og:description" content="A warm Tailwind CSS scalp and hair analysis app template with a live analysis demo, density map, plan tabs and testimonials.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Trichora template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Trichora | Tailwind CSS Health Template">
+  <meta name="twitter:description" content="A warm Tailwind CSS scalp and hair analysis app template with a live analysis demo, density map, plan tabs and testimonials.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Trichora template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { bark: '#2a2016', coal: '#151310', umber: { DEFAULT: '#8d6a3f', light: '#b48c5c' }, linen: '#ece6dc', fog: '#f4f3f1' },
+          fontFamily: { sans: ['"Hanken Grotesk"', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-bark font-sans text-coal antialiased">
+  <div class="mx-auto max-w-[1360px] bg-white">
+  <!-- block:start navbar -->
+  <header id="top" class="relative z-30">
+    <nav class="grid grid-cols-3 items-center px-5 py-5 md:px-10" aria-label="Main">
+      <a href="index.html" class="w-fit"><svg viewBox="0 0 24 28" class="h-7 w-auto" aria-hidden="true"><path d="M12 2c0 6-4 8-4 13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M12 2c0 6 4 8 4 13" fill="none" stroke="#8d6a3f" stroke-width="2.5" stroke-linecap="round"/><circle cx="12" cy="21" r="5.5" fill="none" stroke="currentColor" stroke-width="2.5"/></svg><span class="sr-only">Trichora home</span></a>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="mx-auto grid h-10 w-14 place-items-center" aria-label="Open menu"><span class="grid gap-1.5" aria-hidden="true"><span class="block h-px w-8 bg-coal"></span><span class="block h-px w-8 bg-coal"></span></span></button>
+      <a href="pricing.html" class="ml-auto bg-umber px-4 py-2 text-sm text-white transition hover:bg-coal">Sign up</a>
+    </nav>
+    <div id="mobile-menu" class="absolute inset-x-0 top-full hidden border-y border-coal/10 bg-white px-5 py-6 shadow-xl md:px-10">
+      <ul class="grid gap-1 md:grid-cols-6">
+          <li><a href="index.html" aria-current="page" class="block py-2 text-2xl transition hover:text-umber text-umber">Home</a></li>
+          <li><a href="platform.html"  class="block py-2 text-2xl transition hover:text-umber ">Platform</a></li>
+          <li><a href="programs.html"  class="block py-2 text-2xl transition hover:text-umber ">Programs</a></li>
+          <li><a href="insights.html"  class="block py-2 text-2xl transition hover:text-umber ">Insights</a></li>
+          <li><a href="pricing.html"  class="block py-2 text-2xl transition hover:text-umber ">Pricing</a></li>
+          <li><a href="contact.html"  class="block py-2 text-2xl transition hover:text-umber ">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section class="relative overflow-hidden px-5 pb-16 pt-6 md:px-10">
+    <div class="grid gap-8 lg:grid-cols-[1fr_1.1fr_.7fr] lg:items-start">
+      <div class="relative z-10 flex flex-col">
+        <h1 class="text-5xl font-medium leading-[1.02] tracking-tight md:text-6xl">Your scalp <span class="text-umber">keeps a record.</span> Now <span class="text-umber">you can</span> read it.</h1>
+        <p class="mt-10 max-w-xs text-sm text-coal/70 lg:mt-24">Scalp analysis from a phone photo, follicle tracking and routines built around what your hair actually needs, not what is trending.</p>
+        <div class="mt-6 flex flex-wrap items-center gap-5 text-sm">
+          <a href="pricing.html" class="bg-umber px-5 py-3 text-white transition hover:bg-coal">Scan your scalp</a>
+          <a href="#demo" class="flex items-center gap-2 font-medium underline underline-offset-4"><i class="fa-solid fa-play text-xs" aria-hidden="true"></i>See how it works</a>
+        </div>
+      </div>
+      <figure class="relative mx-auto h-[26rem] w-full max-w-md md:h-[32rem]">
+        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&h=1000&q=75" alt="Young woman with full natural curly hair looking to the side" class="h-full w-full object-cover [mask-image:linear-gradient(to_bottom,black_70%,transparent)]">
+          <figcaption class="absolute top-10 right-4 w-32 bg-coal/25 p-3 text-sm leading-tight text-white backdrop-blur-md"><span class="block">Scalp moisture</span><span class="text-xs text-white/80">Low</span></figcaption>
+          <figcaption class="absolute top-1/2 left-4 w-32 bg-coal/25 p-3 text-sm leading-tight text-white backdrop-blur-md"><span class="block">Curl pattern</span><span class="text-xs text-white/80">4A</span></figcaption>
+          <figcaption class="absolute bottom-28 right-6 w-32 bg-coal/25 p-3 text-sm leading-tight text-white backdrop-blur-md"><span class="block">Breakage risk</span><span class="text-xs text-white/80">Mild</span></figcaption>
+      </figure>
+      <div class="text-sm lg:pt-28">
+        <p class="flex items-center gap-2"><span class="flex -space-x-2"><img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-7 w-7 rounded-full border-2 border-white object-cover"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4MHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-7 w-7 rounded-full border-2 border-white object-cover"><img src="https://images.unsplash.com/photo-1533933269825-da140ad3132f?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-7 w-7 rounded-full border-2 border-white object-cover"><img src="https://images.unsplash.com/photo-1684598273417-2d07e1429a6c?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIweXVpJTIwdGFuYWthfGVufDF8fHx8MTc5NTM4NjE3N3ww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-7 w-7 rounded-full border-2 border-white object-cover"></span><span class="font-semibold">4.8 / 5</span></p>
+        <p class="mt-2 font-medium">More than <span class="text-umber">140,000</span> scalps analysed</p>
+        <p class="text-coal/60">Read by people who wanted answers, not another bottle.</p>
+      </div>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start about -->
+  <section class="px-5 py-20 text-center md:px-10">
+    <p class="text-xs font-medium uppercase tracking-widest text-umber">— Why scan</p>
+    <p class="relative mx-auto mt-6 max-w-3xl text-3xl font-medium leading-tight tracking-tight md:text-4xl">Healthy hair is less about what you put on it and more about knowing <span class="relative inline-block">what happens below<img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=400&h=400&q=70" alt="" class="absolute left-1/2 top-1/2 -z-10 hidden h-40 w-32 -translate-x-1/2 -translate-y-1/3 object-cover md:block"></span> the surface.</p>
+    <dl class="mx-auto mt-16 grid max-w-5xl grid-cols-2 gap-x-8 gap-y-10 text-left md:grid-cols-4">
+        <div class="border-b border-coal/10 pb-4" data-reveal style="--reveal-delay: 0ms"><dt class="sr-only">Scalps analysed</dt><dd class="text-2xl font-medium">140K+</dd><dd class="text-sm text-umber">Scalps analysed</dd></div>
+        <div class="border-b border-coal/10 pb-4" data-reveal style="--reveal-delay: 80ms"><dt class="sr-only">Average scan</dt><dd class="text-2xl font-medium">25 sec</dd><dd class="text-sm text-umber">Average scan</dd></div>
+        <div class="border-b border-coal/10 pb-4" data-reveal style="--reveal-delay: 160ms"><dt class="sr-only">Members hydrating better</dt><dd class="text-2xl font-medium">71%</dd><dd class="text-sm text-umber">Members hydrating better</dd></div>
+        <div class="border-b border-coal/10 pb-4" data-reveal style="--reveal-delay: 240ms"><dt class="sr-only">Follicle strength in 8 weeks</dt><dd class="text-2xl font-medium">+16%</dd><dd class="text-sm text-umber">Follicle strength in 8 weeks</dd></div>
+    </dl>
+  </section>
+  <!-- block:end about -->
+
+  <!-- block:start features -->
+  <section class="px-5 py-20 md:px-10">
+    <p class="text-xs font-medium uppercase tracking-widest text-umber">— Features</p>
+    <div class="mt-4 grid gap-6 lg:grid-cols-[1.3fr_1fr] lg:items-end">
+      <h2 class="text-4xl font-medium leading-tight tracking-tight md:text-5xl">Everything your scalp <span class="text-umber">has been trying to tell you</span></h2>
+      <p class="text-sm text-coal/70">From a quick photo to months of progress, the app turns what is happening at the hairline into a routine you can actually follow.</p>
+    </div>
+    <div class="mt-12 grid gap-4 md:grid-cols-3">
+      <article class="relative h-96 overflow-hidden border border-coal/10" data-reveal>
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&h=800&q=75" alt="Woman seen from behind running her hands through long wavy hair" class="h-full w-full object-cover">
+        <span class="absolute left-1/2 top-1/3 h-24 w-36 -translate-x-1/2 border-[3px] border-white [clip-path:polygon(0_0,25%_0,25%_3px,75%_3px,75%_0,100%_0,100%_25%,calc(100%-3px)_25%,calc(100%-3px)_75%,100%_75%,100%_100%,75%_100%,75%_calc(100%-3px),25%_calc(100%-3px),25%_100%,0_100%,0_75%,3px_75%,3px_25%,0_25%)]" aria-hidden="true"></span>
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white/90 to-transparent p-6 pt-16"><h3 class="font-medium">Photo scalp scan</h3><p class="mt-1 text-sm text-coal/60">Spots dryness, build-up, redness and uneven oil from one close-up.</p></div>
+      </article>
+      <article class="flex h-96 flex-col bg-linen p-6" data-reveal style="--reveal-delay: 80ms">
+        <svg viewBox="0 0 48 48" class="h-12 w-12 text-umber" aria-hidden="true"><path d="M24 4v40M10 10l28 28M38 10L10 38M4 24h40" stroke="currentColor" stroke-width="3"/><circle cx="24" cy="24" r="8" fill="#ece6dc" stroke="currentColor" stroke-width="3"/></svg>
+        <h3 class="mt-6 font-medium">Scalp balance holding steady</h3>
+        <p class="mt-auto border-t border-coal/15 pt-4 text-sm text-coal/60">Hydration and oil levels stayed in range across your last six scans.</p>
+        <p class="mt-4 flex items-end justify-between text-4xl font-medium">93.1% <a href="platform.html" class="text-lg text-umber" aria-label="Open the platform page"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></p>
+      </article>
+      <article class="relative h-96 overflow-hidden border border-coal/10" data-reveal style="--reveal-delay: 160ms">
+        <img src="https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?auto=format&fit=crop&w=700&h=800&q=75" alt="Woman with long hair seen from behind against a blue sea" class="h-full w-full object-cover">
+        <span class="absolute left-[38%] top-[38%] h-40 w-40 rounded-full opacity-70 mix-blend-multiply [background:radial-gradient(circle,#d93a2b_0%,#e8a43a_35%,#7cbf4a_60%,transparent_72%)]" aria-hidden="true"></span>
+        <p class="absolute inset-x-4 top-4 flex items-center gap-2 text-[10px] font-medium"><span>Thin</span><span class="h-1 flex-1 bg-gradient-to-r from-[#d93a2b] via-[#e8a43a] to-[#7cbf4a]"></span><span>Dense</span></p>
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white/90 to-transparent p-6 pt-16"><h3 class="font-medium">Density mapping</h3><p class="mt-1 text-sm text-coal/60">See thinning zones and follicle strength across the whole scalp.</p></div>
+      </article>
+    </div>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start process -->
+  <section class="px-5 py-20 md:px-10" data-steps>
+    <p class="text-center text-xs font-medium uppercase tracking-widest text-umber">— How it works</p>
+    <h2 class="mt-4 text-center text-4xl font-medium tracking-tight md:text-5xl">From scan <span class="text-umber">to a smarter routine</span></h2>
+    <div class="relative mt-14 grid gap-6 md:grid-cols-4">
+      <span class="ticks absolute inset-x-0 top-1/2 hidden h-3 -translate-y-1/2 text-coal/20 md:block" aria-hidden="true"></span>
+        <button type="button" data-step="0" aria-pressed="true" class="group relative flex gap-4 border-l border-coal/15 bg-white pl-4 text-left transition aria-pressed:border-umber md:mb-40">
+          <span class="text-4xl font-light text-coal/30 transition group-aria-pressed:text-coal">01</span>
+          <span><span class="block font-medium text-coal/40 transition group-aria-pressed:text-umber">Capture what&#39;s below the surface</span><span class="mt-2 block text-sm text-coal/40 transition group-aria-pressed:text-coal/70">A guided phone photo of your scalp picks up dryness, oil balance and sensitivity in seconds.</span><span class="mt-3 block text-xs font-medium text-coal/40 group-aria-pressed:text-umber">25 seconds</span></span>
+        </button>
+        <button type="button" data-step="1" aria-pressed="false" class="group relative flex gap-4 border-l border-coal/15 bg-white pl-4 text-left transition aria-pressed:border-umber md:mt-40">
+          <span class="text-4xl font-light text-coal/30 transition group-aria-pressed:text-coal">02</span>
+          <span><span class="block font-medium text-coal/40 transition group-aria-pressed:text-umber">Turn photos into insight</span><span class="mt-2 block text-sm text-coal/40 transition group-aria-pressed:text-coal/70">The model compares hydration, follicle strength and scalp condition with 140,000 others.</span><span class="mt-3 block text-xs font-medium text-coal/40 group-aria-pressed:text-umber">Model-based analysis</span></span>
+        </button>
+        <button type="button" data-step="2" aria-pressed="false" class="group relative flex gap-4 border-l border-coal/15 bg-white pl-4 text-left transition aria-pressed:border-umber md:mb-40">
+          <span class="text-4xl font-light text-coal/30 transition group-aria-pressed:text-coal">03</span>
+          <span><span class="block font-medium text-coal/40 transition group-aria-pressed:text-umber">See what your hair needs</span><span class="mt-2 block text-sm text-coal/40 transition group-aria-pressed:text-coal/70">Clear scores and plain explanations: no jargon, just what matters this month.</span><span class="mt-3 block text-xs font-medium text-coal/40 group-aria-pressed:text-umber">Clear, visual scores</span></span>
+        </button>
+        <button type="button" data-step="3" aria-pressed="false" class="group relative flex gap-4 border-l border-coal/15 bg-white pl-4 text-left transition aria-pressed:border-umber md:mt-40">
+          <span class="text-4xl font-light text-coal/30 transition group-aria-pressed:text-coal">04</span>
+          <span><span class="block font-medium text-coal/40 transition group-aria-pressed:text-umber">Track progress, not guesses</span><span class="mt-2 block text-sm text-coal/40 transition group-aria-pressed:text-coal/70">Rescan weekly and adjust your routine based on real numbers.</span><span class="mt-3 block text-xs font-medium text-coal/40 group-aria-pressed:text-umber">Weekly tracking</span></span>
+        </button>
+    </div>
+  </section>
+  <!-- block:end process -->
+
+  <!-- block:start demo -->
+  <section id="demo" class="relative overflow-hidden bg-coal text-white" data-demo>
+    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1600&h=1000&q=70" alt="" class="absolute inset-0 h-full w-full object-cover opacity-40">
+    <div class="relative grid min-h-[36rem] gap-10 px-5 py-14 md:px-10">
+      <span class="ticks absolute inset-x-5 top-6 h-3 text-white/30 md:inset-x-10" aria-hidden="true"></span>
+      <div class="flex flex-wrap items-start justify-between gap-6">
+        <p class="flex items-center gap-3 text-sm"><span class="font-mono"><span data-demo-time>00:00</span> / 03:00</span><span aria-hidden="true">•</span><span class="text-white/70" data-demo-phase>Ready</span></p>
+        <p class="max-w-xs text-right text-lg">No guesswork. Real scalp data, shown plainly.</p>
+      </div>
+      <button type="button" data-demo-play class="mx-auto flex flex-col items-center gap-3 self-center text-sm underline underline-offset-4" aria-label="Run the analysis demo"><span class="grid h-14 w-14 place-items-center rounded-full bg-white/20 backdrop-blur"><i class="fa-solid fa-play" aria-hidden="true"></i></span><span data-demo-label>Run the demo</span></button>
+      <div class="flex flex-wrap items-end justify-between gap-8 self-end">
+        <div class="max-w-xs"><p class="text-xs uppercase tracking-widest text-white/70">— Demo</p><h2 class="mt-3 text-4xl font-medium leading-tight tracking-tight">Every strand sends a signal</h2><p class="mt-3 text-sm text-white/70">A three-minute look at how a scalp photo becomes four numbers you can act on.</p></div>
+        <dl class="grid grid-cols-2 gap-2">
+            <div class="w-36 border border-white/30 p-3 transition" data-reading="0"><i class="fa-solid fa-droplet" aria-hidden="true"></i><dt class="mt-4 text-xs text-white/70">Scalp hydration</dt><dd class="text-lg" data-reading-value data-value="68%">—</dd></div>
+            <div class="w-36 border border-white/30 p-3 transition" data-reading="1"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i><dt class="mt-4 text-xs text-white/70">Oil balance</dt><dd class="text-lg" data-reading-value data-value="Normal">—</dd></div>
+            <div class="w-36 border border-white/30 p-3 transition" data-reading="2"><i class="fa-solid fa-seedling" aria-hidden="true"></i><dt class="mt-4 text-xs text-white/70">Follicle strength</dt><dd class="text-lg" data-reading-value data-value="+12%">—</dd></div>
+            <div class="w-36 border border-white/30 p-3 transition" data-reading="3"><i class="fa-solid fa-wind" aria-hidden="true"></i><dt class="mt-4 text-xs text-white/70">Hair density</dt><dd class="text-lg" data-reading-value data-value="142 / cm²">—</dd></div>
+        </dl>
+      </div>
+      <span class="ticks absolute inset-x-5 bottom-6 h-3 text-white/30 md:inset-x-10" aria-hidden="true"></span>
+    </div>
+  </section>
+  <!-- block:end demo -->
+
+  <!-- block:start pricing -->
+  <section class="px-5 py-20 md:px-10" data-plans>
+    <p class="text-center text-xs font-medium uppercase tracking-widest text-umber">— Pricing</p>
+    <h2 class="mx-auto mt-4 max-w-2xl text-center text-4xl font-medium leading-tight tracking-tight md:text-5xl">Choose how closely <span class="text-umber">you want to look</span></h2>
+    <div class="mt-12 grid gap-8 lg:grid-cols-[18rem_1fr]">
+      <div class="grid h-fit" role="tablist" aria-label="Plans" aria-orientation="vertical">
+          <button type="button" role="tab" id="plan-tab-essential" aria-controls="plan-essential" aria-selected="true" tabindex="0" class="flex items-center gap-3 border-b border-coal/10 px-4 py-3.5 text-left text-sm transition hover:bg-fog aria-selected:bg-fog aria-selected:text-umber"><i class="fa-solid fa-crown" aria-hidden="true"></i>Essential Scan</button>
+          <button type="button" role="tab" id="plan-tab-growth" aria-controls="plan-growth" aria-selected="false" tabindex="-1" class="flex items-center gap-3 border-b border-coal/10 px-4 py-3.5 text-left text-sm transition hover:bg-fog aria-selected:bg-fog aria-selected:text-umber"><i class="fa-solid fa-chart-simple" aria-hidden="true"></i>Growth Track</button>
+          <button type="button" role="tab" id="plan-tab-clinical" aria-controls="plan-clinical" aria-selected="false" tabindex="-1" class="flex items-center gap-3 border-b border-coal/10 px-4 py-3.5 text-left text-sm transition hover:bg-fog aria-selected:bg-fog aria-selected:text-umber"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i>Clinical Insight</button>
+          <button type="button" role="tab" id="plan-tab-custom" aria-controls="plan-custom" aria-selected="false" tabindex="-1" class="flex items-center gap-3 border-b border-coal/10 px-4 py-3.5 text-left text-sm transition hover:bg-fog aria-selected:bg-fog aria-selected:text-umber"><i class="fa-solid fa-sliders" aria-hidden="true"></i>Salon &amp; Clinic</button>
+      </div>
+        <div id="plan-essential" role="tabpanel" aria-labelledby="plan-tab-essential" class="border border-coal/10 p-6 md:p-8" >
+          <div class="grid gap-6 md:grid-cols-[1fr_16rem]">
+            <div>
+              <h3 class="text-xl font-medium">Essential Scan</h3>
+              <p class="mt-1 text-sm text-coal/60">For anyone who wants a quick read on their scalp.</p>
+              <p class="mt-8 text-3xl font-medium">$11<span class="text-lg text-coal/60"> / month</span></p>
+              <a href="pricing.html" class="mt-4 inline-block bg-umber px-5 py-2.5 text-sm text-white transition hover:bg-coal">Choose plan</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=600&h=440&q=70" alt="Long wavy lavender hair close up" class="h-44 w-full object-cover">
+          </div>
+          <p class="mt-8 border-t border-coal/10 pt-6 text-sm text-coal/60">What's included:</p>
+          <ul class="mt-3 grid gap-2 text-sm sm:grid-cols-2"><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>Weekly scalp scans</li><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>Density tracking</li><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>Follicle strength score</li><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>Hydration &amp; oil trends</li></ul>
+        </div>
+        <div id="plan-growth" role="tabpanel" aria-labelledby="plan-tab-growth" class="border border-coal/10 p-6 md:p-8" hidden>
+          <div class="grid gap-6 md:grid-cols-[1fr_16rem]">
+            <div>
+              <h3 class="text-xl font-medium">Growth Track</h3>
+              <p class="mt-1 text-sm text-coal/60">For thinning or shedding you want to measure closely.</p>
+              <p class="mt-8 text-3xl font-medium">$24<span class="text-lg text-coal/60"> / month</span></p>
+              <a href="pricing.html" class="mt-4 inline-block bg-umber px-5 py-2.5 text-sm text-white transition hover:bg-coal">Choose plan</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1503104834685-7205e8607eb9?auto=format&fit=crop&w=600&h=440&q=70" alt="Woman with very long straight hair on a forest road" class="h-44 w-full object-cover">
+          </div>
+          <p class="mt-8 border-t border-coal/10 pt-6 text-sm text-coal/60">What's included:</p>
+          <ul class="mt-3 grid gap-2 text-sm sm:grid-cols-2"><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>Everything in Essential</li><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>Shedding counter</li><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>Monthly trichologist review</li><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>Routine adjustments</li></ul>
+        </div>
+        <div id="plan-clinical" role="tabpanel" aria-labelledby="plan-tab-clinical" class="border border-coal/10 p-6 md:p-8" hidden>
+          <div class="grid gap-6 md:grid-cols-[1fr_16rem]">
+            <div>
+              <h3 class="text-xl font-medium">Clinical Insight</h3>
+              <p class="mt-1 text-sm text-coal/60">For dermatology clinics and serious hair-loss cases.</p>
+              <p class="mt-8 text-3xl font-medium">$59<span class="text-lg text-coal/60"> / month</span></p>
+              <a href="pricing.html" class="mt-4 inline-block bg-umber px-5 py-2.5 text-sm text-white transition hover:bg-coal">Choose plan</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=600&h=440&q=70" alt="Hairdresser blow-drying a client&#39;s hair in a salon" class="h-44 w-full object-cover">
+          </div>
+          <p class="mt-8 border-t border-coal/10 pt-6 text-sm text-coal/60">What's included:</p>
+          <ul class="mt-3 grid gap-2 text-sm sm:grid-cols-2"><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>Everything in Growth</li><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>Dermatologist video call</li><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>Lab-ready PDF reports</li><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>Priority support</li></ul>
+        </div>
+        <div id="plan-custom" role="tabpanel" aria-labelledby="plan-tab-custom" class="border border-coal/10 p-6 md:p-8" hidden>
+          <div class="grid gap-6 md:grid-cols-[1fr_16rem]">
+            <div>
+              <h3 class="text-xl font-medium">Salon &amp; Clinic</h3>
+              <p class="mt-1 text-sm text-coal/60">For teams who scan clients in person.</p>
+              <p class="mt-8 text-3xl font-medium">Custom</p>
+              <a href="contact.html" class="mt-4 inline-block bg-umber px-5 py-2.5 text-sm text-white transition hover:bg-coal">Talk to sales</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&h=440&q=70" alt="Stylist drying a client&#39;s hair in a bright salon" class="h-44 w-full object-cover">
+          </div>
+          <p class="mt-8 border-t border-coal/10 pt-6 text-sm text-coal/60">What's included:</p>
+          <ul class="mt-3 grid gap-2 text-sm sm:grid-cols-2"><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>Unlimited client profiles</li><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>Branded reports</li><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>Staff accounts</li><li class="flex gap-2"><span class="text-umber" aria-hidden="true">+</span>API access</li></ul>
+        </div>
+    </div>
+  </section>
+  <!-- block:end pricing -->
+
+  <!-- block:start reviews -->
+  <section class="relative overflow-hidden bg-coal px-5 py-20 text-white md:px-10" data-quotes>
+    <p class="text-center text-xs font-medium uppercase tracking-widest text-umber-light">— Testimonials</p>
+    <div class="mt-10 grid gap-10 md:grid-cols-[10rem_1fr]">
+      <svg viewBox="0 0 40 32" class="h-12 w-auto text-umber-light" aria-hidden="true"><path d="M2 2h14v14H8v14H2zM24 2h14v14h-8v14h-6z" fill="currentColor"/></svg>
+      <div>
+          <figure data-quote="0" >
+            <blockquote class="max-w-2xl text-2xl leading-snug md:text-3xl">I used to change products every month without knowing what worked. Now I can watch my scalp improve week by week, and the numbers made it obvious.</blockquote>
+            <p class="mt-8 flex items-center gap-2 text-sm text-umber-light"><i class="fa-solid fa-angles-up text-[#7cbf4a]" aria-hidden="true"></i>+16% follicle strength in 8 weeks</p>
+            <span class="ticks mt-10 block h-3 text-white/20" aria-hidden="true"></span>
+            <figcaption class="mt-8 flex items-center gap-4"><img src="https://images.unsplash.com/photo-1509460913899-515f1df34fea?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDh8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-14 w-14 object-cover"><span><span class="block">Jonah Reyes</span><span class="text-sm text-white/60">Product designer, 29</span></span></figcaption>
+          </figure>
+          <figure data-quote="1" hidden>
+            <blockquote class="max-w-2xl text-2xl leading-snug md:text-3xl">The density map showed my thinning was in one spot, not everywhere. My dermatologist used the report straight away.</blockquote>
+            <p class="mt-8 flex items-center gap-2 text-sm text-umber-light"><i class="fa-solid fa-angles-up text-[#7cbf4a]" aria-hidden="true"></i>Diagnosis in one visit</p>
+            <span class="ticks mt-10 block h-3 text-white/20" aria-hidden="true"></span>
+            <figcaption class="mt-8 flex items-center gap-4"><img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-14 w-14 object-cover"><span><span class="block">Priya Natarajan</span><span class="text-sm text-white/60">Teacher, 41</span></span></figcaption>
+          </figure>
+          <figure data-quote="2" hidden>
+            <blockquote class="max-w-2xl text-2xl leading-snug md:text-3xl">I run a curly-hair salon. Scanning clients at the chair changed how we sell treatments: we show, not tell.</blockquote>
+            <p class="mt-8 flex items-center gap-2 text-sm text-umber-light"><i class="fa-solid fa-angles-up text-[#7cbf4a]" aria-hidden="true"></i>3× treatment rebookings</p>
+            <span class="ticks mt-10 block h-3 text-white/20" aria-hidden="true"></span>
+            <figcaption class="mt-8 flex items-center gap-4"><img src="https://images.unsplash.com/photo-1674932668403-33398b81c92f?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDZ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-14 w-14 object-cover"><span><span class="block">Aisha Mensah</span><span class="text-sm text-white/60">Salon owner, 35</span></span></figcaption>
+          </figure>
+      </div>
+    </div>
+    <div class="mt-8 flex gap-2">
+      <button type="button" data-quote-prev class="grid h-9 w-9 place-items-center border border-white/30 text-sm transition hover:border-umber-light hover:text-umber-light" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+      <button type="button" data-quote-next class="grid h-9 w-9 place-items-center border border-umber-light text-sm text-umber-light transition hover:bg-umber-light hover:text-coal" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+      <p class="ml-4 self-center text-sm text-white/60"><span data-quote-index>1</span> / 3</p>
+    </div>
+  </section>
+  <!-- block:end reviews -->
+
+  <!-- block:start faq -->
+  <section class="px-5 py-20 md:px-10" data-faq>
+    <p class="text-xs font-medium uppercase tracking-widest text-umber">— FAQ</p>
+    <h2 class="mt-4 text-4xl font-medium leading-tight tracking-tight md:text-5xl">Still curious? <br><span class="text-umber">Let's clear it up</span></h2>
+    <div class="mt-12 grid gap-10 lg:grid-cols-[1fr_1.4fr]">
+      <div class="max-w-xs">
+        <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?auto=format&fit=crop&w=500&h=340&q=70" alt="Stylist rinsing a client's hair at a salon basin" class="h-28 w-44 object-cover">
+        <p class="mt-5 font-medium">Not sure what your scalp needs?</p>
+        <p class="mt-2 text-sm text-coal/60">Guessing is what got you here. One scan gives you somewhere to start.</p>
+        <a href="pricing.html" class="mt-5 inline-block bg-umber px-5 py-2.5 text-sm text-white transition hover:bg-coal">Scan your scalp</a>
+        <p class="mt-5 text-sm text-coal/60">Prefer a person?</p>
+        <a href="contact.html" class="text-sm text-umber underline underline-offset-4">care@trichora.app <i class="fa-solid fa-arrow-up rotate-45 text-xs" aria-hidden="true"></i></a>
+      </div>
+      <div class="divide-y divide-coal/10 border-b border-coal/10">
+          <div>
+            <h3><button type="button" id="faq-q-0" aria-controls="faq-a-0" aria-expanded="true" data-faq-toggle class="flex w-full items-center justify-between gap-4 py-4 text-left font-medium">How does the scalp scan work?<i class="fa-solid fa-plus text-umber transition" aria-hidden="true"></i></button></h3>
+            <p id="faq-a-0" role="region" aria-labelledby="faq-q-0" class="pb-4 text-sm text-coal/60" >You take a guided close-up with your phone. The model reads oil, dryness, redness, build-up and follicle density from the image in about 25 seconds.</p>
+          </div>
+          <div>
+            <h3><button type="button" id="faq-q-1" aria-controls="faq-a-1" aria-expanded="false" data-faq-toggle class="flex w-full items-center justify-between gap-4 py-4 text-left font-medium">Do I need special equipment?<i class="fa-solid fa-plus text-umber transition" aria-hidden="true"></i></button></h3>
+            <p id="faq-a-1" role="region" aria-labelledby="faq-q-1" class="pb-4 text-sm text-coal/60" hidden>No. Any phone from the last five years works. A clip-on macro lens sharpens results but is optional.</p>
+          </div>
+          <div>
+            <h3><button type="button" id="faq-q-2" aria-controls="faq-a-2" aria-expanded="false" data-faq-toggle class="flex w-full items-center justify-between gap-4 py-4 text-left font-medium">What data do you track?<i class="fa-solid fa-plus text-umber transition" aria-hidden="true"></i></button></h3>
+            <p id="faq-a-2" role="region" aria-labelledby="faq-q-2" class="pb-4 text-sm text-coal/60" hidden>Hydration, oil balance, sensitivity, follicle strength, density and shedding, plus the products you log.</p>
+          </div>
+          <div>
+            <h3><button type="button" id="faq-q-3" aria-controls="faq-a-3" aria-expanded="false" data-faq-toggle class="flex w-full items-center justify-between gap-4 py-4 text-left font-medium">Does it work for every hair type?<i class="fa-solid fa-plus text-umber transition" aria-hidden="true"></i></button></h3>
+            <p id="faq-a-3" role="region" aria-labelledby="faq-q-3" class="pb-4 text-sm text-coal/60" hidden>Yes. The model was trained on straight, wavy, curly and coily hair, and on every skin tone.</p>
+          </div>
+          <div>
+            <h3><button type="button" id="faq-q-4" aria-controls="faq-a-4" aria-expanded="false" data-faq-toggle class="flex w-full items-center justify-between gap-4 py-4 text-left font-medium">How accurate is it?<i class="fa-solid fa-plus text-umber transition" aria-hidden="true"></i></button></h3>
+            <p id="faq-a-4" role="region" aria-labelledby="faq-q-4" class="pb-4 text-sm text-coal/60" hidden>Scores agree with trichologist assessments 91% of the time in our published validation study.</p>
+          </div>
+          <div>
+            <h3><button type="button" id="faq-q-5" aria-controls="faq-a-5" aria-expanded="false" data-faq-toggle class="flex w-full items-center justify-between gap-4 py-4 text-left font-medium">How often should I scan?<i class="fa-solid fa-plus text-umber transition" aria-hidden="true"></i></button></h3>
+            <p id="faq-a-5" role="region" aria-labelledby="faq-q-5" class="pb-4 text-sm text-coal/60" hidden>Once a week is enough. Scanning more often adds noise, not insight.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end faq -->
+
+  <!-- block:start footer -->
+  <footer class="relative overflow-hidden bg-fog px-5 pb-10 pt-16 md:px-10">
+    <div class="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
+      <p class="text-7xl font-semibold leading-none tracking-tighter md:text-9xl">Trichora<sup class="text-3xl">®</sup></p>
+      <div>
+        <p class="text-3xl font-medium leading-tight">Keep your hair <br>on your radar</p>
+        <p class="mt-3 max-w-xs text-sm text-coal/60">Monthly scalp tips and data-led routines, straight to your inbox.</p>
+        <form class="mt-6 flex max-w-xs border-b border-coal/30" data-news-form novalidate>
+          <label for="news-email" class="sr-only">Email</label>
+          <input id="news-email" name="email" type="email" required autocomplete="email" placeholder="Email" class="min-w-0 flex-1 bg-transparent py-2 text-sm placeholder:text-coal/50 focus:outline-none">
+          <button type="submit" class="px-2 text-umber" aria-label="Subscribe"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+        </form>
+        <p class="mt-2 min-h-[1.25rem] text-sm" data-form-status role="status"></p>
+      </div>
+    </div>
+    <a href="#top" class="mt-10 inline-flex items-center gap-2 text-umber" data-back-top><i class="fa-solid fa-arrow-up" aria-hidden="true"></i>Back to top</a>
+    <span class="ticks mt-10 block h-3 text-umber/40" aria-hidden="true"></span>
+    <div class="mt-12 grid gap-8 md:grid-cols-[1fr_auto_auto] md:items-end md:gap-16">
+      <div><p class="text-sm">+1 (800) 555 0127</p><p class="text-2xl font-medium md:text-3xl">care@trichora.app</p></div>
+      <ul class="grid gap-1 text-sm"><li><a href="platform.html" class="hover:text-umber">Platform</a></li><li><a href="programs.html" class="hover:text-umber">Programs</a></li><li><a href="insights.html" class="hover:text-umber">Insights</a></li><li><a href="pricing.html" class="hover:text-umber">Pricing</a></li></ul>
+      <ul class="grid gap-1 text-sm"><li><a href="contact.html" class="hover:text-umber">Instagram</a></li><li><a href="contact.html" class="hover:text-umber">TikTok</a></li><li><a href="contact.html" class="hover:text-umber">YouTube</a></li><li><a href="contact.html" class="hover:text-umber">LinkedIn</a></li></ul>
+    </div>
+    <p class="mt-10 text-xs text-coal/50">&copy; 2026 Trichora Labs. Not a medical diagnosis.</p>
+  </footer>
+  <!-- block:end footer -->
+  </div>
+
+  <script>
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const watchMotion = !reducedMotion && !navigator.webdriver && 'IntersectionObserver' in window;
+
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-steps]').forEach((root) => {
+      const steps = [...root.querySelectorAll('[data-step]')];
+      steps.forEach((step) => step.addEventListener('click', () => steps.forEach((other) => other.setAttribute('aria-pressed', String(other === step)))));
+    });
+
+    document.querySelectorAll('[data-demo]').forEach((root) => {
+      const readings = [...root.querySelectorAll('[data-reading-value]')];
+      const time = root.querySelector('[data-demo-time]');
+      const phase = root.querySelector('[data-demo-phase]');
+      const label = root.querySelector('[data-demo-label]');
+      const phases = ['Capturing image', 'Mapping follicles', 'Reading oil balance', 'Scoring density'];
+      let timer;
+      const show = (count) => readings.forEach((value, i) => { value.textContent = i < count ? value.dataset.value : '—'; value.parentElement.classList.toggle('border-umber-light', i < count); });
+      const finish = () => { clearInterval(timer); time.textContent = '03:00'; phase.textContent = 'Analysis complete'; label.textContent = 'Run again'; show(readings.length); };
+      root.querySelector('[data-demo-play]').addEventListener('click', () => {
+        clearInterval(timer);
+        show(0);
+        if (reducedMotion || navigator.webdriver) { finish(); return; }
+        let seconds = 0;
+        label.textContent = 'Analysing…';
+        timer = setInterval(() => {
+          seconds += 15;
+          const step = Math.min(3, Math.floor(seconds / 45));
+          time.textContent = `0${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`;
+          phase.textContent = phases[step];
+          show(Math.floor(seconds / 45));
+          if (seconds >= 180) finish();
+        }, 250);
+      });
+    });
+
+    document.querySelectorAll('[data-plans]').forEach((root) => {
+      const tabs = [...root.querySelectorAll('[role="tab"]')];
+      const select = (tab, focus) => {
+        tabs.forEach((other) => { const on = other === tab; other.setAttribute('aria-selected', String(on)); other.tabIndex = on ? 0 : -1; document.getElementById(other.getAttribute('aria-controls')).hidden = !on; });
+        if (focus) tab.focus();
+      };
+      tabs.forEach((tab, i) => {
+        tab.addEventListener('click', () => select(tab));
+        tab.addEventListener('keydown', (event) => {
+          if (event.key === 'ArrowDown') { event.preventDefault(); select(tabs[(i + 1) % tabs.length], true); }
+          if (event.key === 'ArrowUp') { event.preventDefault(); select(tabs[(i - 1 + tabs.length) % tabs.length], true); }
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-quotes]').forEach((root) => {
+      const quotes = [...root.querySelectorAll('[data-quote]')];
+      let current = 0;
+      const show = (index) => {
+        current = (index + quotes.length) % quotes.length;
+        quotes.forEach((quote, i) => { quote.hidden = i !== current; });
+        root.querySelector('[data-quote-index]').textContent = current + 1;
+      };
+      root.querySelector('[data-quote-prev]').addEventListener('click', () => show(current - 1));
+      root.querySelector('[data-quote-next]').addEventListener('click', () => show(current + 1));
+    });
+
+    document.querySelectorAll('[data-faq-toggle]').forEach((button) => button.addEventListener('click', () => {
+      const open = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!open));
+      document.getElementById(button.getAttribute('aria-controls')).hidden = open;
+      button.querySelector('svg, i')?.classList.toggle('rotate-45', !open);
+    }));
+
+    document.querySelectorAll('[data-back-top]').forEach((link) => link.addEventListener('click', (event) => { event.preventDefault(); scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' }); }));
+
+    document.querySelectorAll('[data-news-form]').forEach((form) => {
+      const status = form.parentElement.querySelector('[data-form-status]');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = form.querySelector('[name="email"]');
+        if (!email.value.trim() || !email.checkValidity()) { status.textContent = 'Please enter a valid email address.'; email.focus(); return; }
+        status.textContent = `Subscribed. The next letter goes to ${email.value}.`;
+        form.reset();
+      });
+    });
+
+    if (watchMotion) {
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+      }), { threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach((el) => observer.observe(el));
+    }
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=trichora&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

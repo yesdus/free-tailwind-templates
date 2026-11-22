@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Physiotech | Tailwind CSS Healthcare &amp; Fitness Template</title>
+  <meta name="description" content="Physiotech is a responsive Tailwind CSS healthcare website template for fitness tracking, nutrition tools, workout scheduling, and digital health services." />
+  <meta name="keywords" content="Physiotech, Tailwind CSS template, HTML website template, healthcare website template, fitness landing page, digital health, responsive medical design" />
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Physiotech | Tailwind CSS Healthcare &amp; Fitness Template">
+  <meta property="og:description" content="A responsive Tailwind CSS healthcare website template for fitness tracking, nutrition tools, workout scheduling, and digital health services.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Physiotech template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Physiotech | Tailwind CSS Healthcare &amp; Fitness Template">
+  <meta name="twitter:description" content="A responsive Tailwind CSS healthcare website template for fitness tracking, nutrition tools, workout scheduling, and digital health services.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Physiotech template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white overflow-x-hidden">
+
+  <!-- block:start hero -->
+  <section id="hero" class="relative w-full min-h-[600px] md:h-[700px] overflow-hidden">
+    <!-- Hero Background Image -->
+    <img class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1762341116897-921e2a52f7ff?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGZlbWFsZSUyMGRvY3RvciUyMHdoaXRlJTIwY29hdCUyMHNpdHRpbmclMjBkZXNrfGVufDF8fHx8MTc5NTM4NjEwNnww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="female doctor in white coat sitting at desk working on computer monitor, tropical green plants surro" />
+    <!-- Dark overlay at bottom -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+    
+    <!-- NAVBAR -->
+    <nav class="absolute top-0 left-0 w-full flex items-center justify-between px-4 sm:px-8 py-5 z-20">
+      <a href="index.html" class="flex items-center gap-2 text-white">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 6 L14 2 L22 6 L22 14 L14 26 L6 14 Z" stroke="white" stroke-width="2" fill="none"/>
+          <circle cx="14" cy="10" r="3" fill="white"/>
+        </svg>
+        <span class="text-white font-medium text-lg tracking-wide">Physiotech</span>
+      </a>
+      
+      <!-- Desktop Nav Links -->
+      <div class="hidden md:flex items-center gap-1 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-2 py-1">
+        <a href="index.html" class="px-4 py-2 rounded-full bg-white/20 text-white text-sm font-medium">Home</a>
+        <a href="#team" class="px-4 py-2 text-white/80 text-sm hover:text-white transition">Members</a>
+        <a href="#benefits" class="px-4 py-2 text-white/80 text-sm hover:text-white transition">Benefits</a>
+        <a href="about.html" class="px-4 py-2 text-white/80 text-sm hover:text-white transition">About</a>
+        <a href="contact.html" class="px-4 py-2 text-white/80 text-sm hover:text-white transition">Contact</a>
+        <a href="#footer" class="px-4 py-2 text-white/80 text-sm hover:text-white transition flex items-center gap-1">
+          <i class="fa-solid fa-bars text-xs"></i> Menu
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden relative">
+        <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="mobile-menu" class="hidden absolute right-0 top-full mt-3 w-52 p-2 rounded-2xl bg-gray-900/95 backdrop-blur-md border border-white/10 shadow-xl">
+          <a href="index.html" class="block px-4 py-2.5 rounded-xl text-white/80 text-sm hover:bg-white/10 hover:text-white transition">Home</a>
+          <a href="#team" class="block px-4 py-2.5 rounded-xl text-white/80 text-sm hover:bg-white/10 hover:text-white transition">Members</a>
+          <a href="#benefits" class="block px-4 py-2.5 rounded-xl text-white/80 text-sm hover:bg-white/10 hover:text-white transition">Benefits</a>
+          <a href="about.html" class="block px-4 py-2.5 rounded-xl text-white/80 text-sm hover:bg-white/10 hover:text-white transition">About</a>
+          <a href="contact.html" class="block px-4 py-2.5 rounded-xl text-white/80 text-sm hover:bg-white/10 hover:text-white transition">Contact</a>
+          <a href="#pricing" class="block px-4 py-2.5 rounded-xl text-white/80 text-sm hover:bg-white/10 hover:text-white transition">Try for Free</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Content -->
+    <div class="absolute bottom-0 left-0 w-full px-4 sm:px-8 pb-32 md:pb-24 z-10">
+      <div class="max-w-xl">
+        <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-4">
+          Your Personal<br class="hidden sm:block" />Health Companion
+        </h1>
+        <p class="text-white/70 text-sm md:text-base leading-relaxed max-w-sm">
+          Meet your personal online health companion - a comprehensive platform offering tools for tracking your fitness goals, monitoring your nutrition, and scheduling your workouts.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom Bar (Desktop/Tablet) -->
+    <div class="absolute bottom-0 left-0 w-full hidden sm:flex items-center justify-between px-8 py-4 z-10 border-t border-white/10">
+      <span class="text-white/50 text-[10px] md:text-xs tracking-widest uppercase truncate max-w-[200px] md:max-w-none">Enterprise Management Applications</span>
+      
+      <div class="flex items-center gap-2 text-white text-xs tracking-widest">
+        <span>01 / 04</span>
+        <span class="ml-2 uppercase tracking-widest font-medium text-[10px] md:text-xs">NEXT</span>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="#pricing" class="bg-white text-black text-[10px] md:text-sm font-medium px-4 md:px-5 py-2 md:py-2.5 rounded-full hover:bg-gray-100 transition flex items-center gap-1">
+          Try for Free <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-1"></i>
+        </a>
+        <a href="contact.html" class="text-white text-[10px] md:text-sm font-medium hover:text-white/70 transition flex items-center gap-1">
+          Schedule Demo <i class="fa-solid fa-arrow-up-right text-[10px] ml-1"></i>
+        </a>
+      </div>
+
+      <span class="text-white/50 text-[10px] md:text-xs tracking-widest uppercase">Scroll To Explore</span>
+    </div>
+
+    <!-- Bottom Bar (Mobile) -->
+    <div class="absolute bottom-0 left-0 w-full flex sm:hidden flex-col items-center gap-4 px-4 py-6 z-10">
+      <div class="flex items-center gap-3 w-full">
+        <a href="#pricing" class="flex-1 bg-white text-black text-sm font-medium py-3 rounded-full flex items-center justify-center gap-1">
+          Try Free <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+        </a>
+        <a href="contact.html" class="flex-1 bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-medium py-3 rounded-full flex items-center justify-center gap-1">
+          Demo <i class="fa-solid fa-arrow-up-right text-[10px]"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Progress Line -->
+    <div class="absolute bottom-0 left-0 w-full h-px bg-white/10 z-10"></div>
+    <div class="absolute bottom-0 left-0 w-1/4 h-px bg-white/60 z-10"></div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start team -->
+  <section id="team" class="bg-gray-50 w-full px-4 sm:px-8 py-16 md:py-24">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex items-center gap-4 md:gap-6 mb-6 overflow-x-auto no-scrollbar">
+        <span class="text-[10px] md:text-xs text-gray-400 tracking-widest uppercase font-medium whitespace-nowrap">Physiotech</span>
+        <span class="text-[10px] md:text-xs text-gray-400 tracking-widest uppercase font-medium whitespace-nowrap">Our Team</span>
+      </div>
+      
+      <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-8 md:mb-12 gap-6">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 leading-tight max-w-xl">
+          Get to Know the People<br class="hidden md:block" />that Get It All Done
+        </h2>
+        <!-- Nav Arrows -->
+        <div class="flex items-center gap-2">
+          <button type="button" id="team-prev" class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-gray-300 bg-white flex items-center justify-center text-gray-500 hover:bg-gray-100 transition shadow-sm" aria-controls="team-grid" aria-label="Previous team members">
+            <i class="fa-solid fa-chevron-left text-xs"></i>
+          </button>
+          <button type="button" id="team-next" class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-gray-300 bg-white flex items-center justify-center text-gray-500 hover:bg-gray-100 transition shadow-sm" aria-controls="team-grid" aria-label="Next team members">
+            <i class="fa-solid fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+      </div>
+
+      <script type="application/json" id="team-members-data">[["https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGZlbWFsZSUyMGRvY3RvciUyMHdoaXRlJTIwY29hdCUyMGRhcmslMjB2ZXN0fGVufDF8fHx8MTc5NTM4NjEwNnww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop","female doctor in white coat with dark vest standing confidently, tropical green plants background","Amara Cole","Clinical Director"],["https://images.unsplash.com/photo-1792990693909-968d215c887a?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fG1hbGUlMjBkb2N0b3IlMjBkYXJrJTIwZ3JlZW4lMjBzY3J1YnMlMjBzdGV0aG9zY29wZXxlbnwxfHx8fDE3OTUzODYxMDd8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop","male doctor in dark green scrubs with stethoscope smiling, indoor plants and bright window background","James Okonkwo","Sports Medicine"],["https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHlvdW5nJTIwbWFsZSUyMGRvY3RvciUyMHdoaXRlJTIwY29hdCUyMHN0ZXRob3Njb3BlfGVufDF8fHx8MTc5NTM4NjEwN3ww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop","young male doctor in white coat with stethoscope standing by large window, indoor plants background","Leo Hart","Digital Health"],["https://images.unsplash.com/photo-1762341116897-921e2a52f7ff?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGZlbWFsZSUyMGRvY3RvciUyMHdoaXRlJTIwY29hdCUyMHNpdHRpbmclMjBkZXNrfGVufDF8fHx8MTc5NTM4NjEwNnww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop","female doctor in white coat sitting at desk working on a computer, tropical green plants surrounding","Priya Shah","Preventive Care"],["https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format\u0026fit=crop\u0026w=800\u0026q=80","female physician in a white coat smiling in a bright clinic","Elena Voss","Nutrition Science"],["https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format\u0026fit=crop\u0026w=800\u0026q=80","male physician in a white coat standing in a modern hospital corridor","Noah Blake","Physiotherapy"]]</script>
+      <div class="flex flex-col md:flex-row gap-8 lg:gap-12">
+        <!-- Sidebar Info -->
+        <div class="w-full md:w-44 flex-shrink-0">
+          <p class="text-gray-500 text-sm md:text-base leading-relaxed">
+            On our platform, our devoted team works ceaselessly to enhance our online presence and ensure the best possible customer experience.
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div id="team-grid" class="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article data-team-slot class="rounded-3xl overflow-hidden h-80 relative group shadow-sm">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGZlbWFsZSUyMGRvY3RvciUyMHdoaXRlJTIwY29hdCUyMGRhcmslMjB2ZXN0fGVufDF8fHx8MTc5NTM4NjEwNnww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="female doctor in white coat with dark vest standing confidently, tropical green plants background" />
+              <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 via-black/30 to-transparent">
+                <p data-team-name class="text-white font-semibold">Amara Cole</p>
+                <p data-team-role class="text-white/70 text-xs tracking-widest uppercase">Clinical Director</p>
+              </div>
+            </article>
+            <article data-team-slot class="rounded-3xl overflow-hidden h-80 relative group shadow-sm">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1792990693909-968d215c887a?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fG1hbGUlMjBkb2N0b3IlMjBkYXJrJTIwZ3JlZW4lMjBzY3J1YnMlMjBzdGV0aG9zY29wZXxlbnwxfHx8fDE3OTUzODYxMDd8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="male doctor in dark green scrubs with stethoscope smiling, indoor plants and bright window background" />
+              <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 via-black/30 to-transparent">
+                <p data-team-name class="text-white font-semibold">James Okonkwo</p>
+                <p data-team-role class="text-white/70 text-xs tracking-widest uppercase">Sports Medicine</p>
+              </div>
+            </article>
+            <article data-team-slot class="hidden lg:block rounded-3xl overflow-hidden h-80 relative group shadow-sm">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHlvdW5nJTIwbWFsZSUyMGRvY3RvciUyMHdoaXRlJTIwY29hdCUyMHN0ZXRob3Njb3BlfGVufDF8fHx8MTc5NTM4NjEwN3ww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="young male doctor in white coat with stethoscope standing by large window, indoor plants background" />
+              <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 via-black/30 to-transparent">
+                <p data-team-name class="text-white font-semibold">Leo Hart</p>
+                <p data-team-role class="text-white/70 text-xs tracking-widest uppercase">Digital Health</p>
+              </div>
+            </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end team -->
+
+  <!-- block:start about -->
+  <section id="information" class="bg-white w-full px-4 sm:px-8 py-16 md:py-24">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="order-2 lg:order-1">
+          <span class="text-xs text-gray-400 tracking-widest uppercase font-medium mb-4 block">Information</span>
+          <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight mb-8">
+            Comprehensive Tools for Your Wellness Journey
+          </h2>
+          <div class="space-y-6 md:space-y-8">
+            <div class="flex gap-4 md:gap-5">
+              <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-green-50 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-heart-pulse text-green-600 text-lg md:text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 md:text-lg mb-1">Vital Monitoring</h4>
+                <p class="text-gray-500 text-sm md:text-base leading-relaxed">Keep a close watch on your heart rate, sleep quality, and daily activity levels with seamless integration.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 md:gap-5">
+              <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-blue-50 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-utensils text-blue-600 text-lg md:text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 md:text-lg mb-1">Nutrition Tracking</h4>
+                <p class="text-gray-500 text-sm md:text-base leading-relaxed">Log your meals and get personalized dietary insights based on your health goals and preferences.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative order-1 lg:order-2">
+          <div class="rounded-[2rem] overflow-hidden shadow-2xl">
+            <img class="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover" src="https://images.unsplash.com/photo-1603539947678-cd3954ed515d?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fG1lZGljYWwlMjBtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBzaG93aW5nJTIwaGVhbHRofGVufDF8fHx8MTc5NTM4NjEwOHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="modern clean medical mobile app interface showing health statistics and charts, soft green and white" />
+          </div>
+          <div class="absolute -bottom-6 -left-4 md:-left-6 bg-white p-5 md:p-6 rounded-2xl shadow-xl max-w-[180px] md:max-w-[220px] border border-gray-100">
+            <div class="flex items-center gap-2 mb-2">
+              <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+              <span class="text-[10px] md:text-xs font-bold text-gray-900 uppercase tracking-wider">Live Health Sync</span>
+            </div>
+            <p class="text-[10px] md:text-[11px] text-gray-400 leading-tight">Your data is being updated in real-time across all your connected devices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end about -->
+
+  <!-- block:start features -->
+  <section id="benefits" class="bg-gray-900 w-full px-4 sm:px-8 py-16 md:py-24 text-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-16 gap-8">
+        <div class="max-w-2xl">
+          <span class="text-xs text-white/40 tracking-widest uppercase font-medium mb-4 block">Benefits</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">Designed to Move<br class="hidden md:block" />With Your Life</h2>
+        </div>
+        <a href="#pricing" class="bg-white text-black text-sm font-medium px-8 py-4 rounded-full hover:bg-gray-100 transition whitespace-nowrap w-full md:w-auto text-center">Discover All Benefits</a>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div class="p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 transition group">
+          <i class="fa-solid fa-cloud-bolt text-green-400 text-3xl mb-6 group-hover:scale-110 transition duration-300 block"></i>
+          <h4 class="text-lg font-semibold mb-3">Instant Insights</h4>
+          <p class="text-white/50 text-sm leading-relaxed">Receive immediate feedback on your health metrics with AI-driven analysis.</p>
+        </div>
+        <div class="p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 transition group">
+          <i class="fa-solid fa-shield-halved text-blue-400 text-3xl mb-6 group-hover:scale-110 transition duration-300 block"></i>
+          <h4 class="text-lg font-semibold mb-3">Secure Privacy</h4>
+          <p class="text-white/50 text-sm leading-relaxed">Your data is encrypted and protected with industry-leading security protocols.</p>
+        </div>
+        <div class="p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 transition group">
+          <i class="fa-solid fa-users-gear text-purple-400 text-3xl mb-6 group-hover:scale-110 transition duration-300 block"></i>
+          <h4 class="text-lg font-semibold mb-3">Team Sync</h4>
+          <p class="text-white/50 text-sm leading-relaxed">Collaborate with your medical team by sharing real-time health data effortlessly.</p>
+        </div>
+        <div class="p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 transition group">
+          <i class="fa-solid fa-wand-magic-sparkles text-yellow-400 text-3xl mb-6 group-hover:scale-110 transition duration-300 block"></i>
+          <h4 class="text-lg font-semibold mb-3">Personalized</h4>
+          <p class="text-white/50 text-sm leading-relaxed">Get health recommendations tailored specifically to your genetic profile and habits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start reviews -->
+  <section id="reviews" class="bg-gray-50 w-full px-4 sm:px-8 py-16 md:py-24">
+    <div class="max-w-6xl mx-auto text-center mb-12 md:mb-16">
+      <span class="text-xs text-gray-400 tracking-widest uppercase font-medium mb-4 block">Reviews</span>
+      <h2 class="text-3xl md:text-4xl font-semibold text-gray-900">Trusted by Thousands of Users</h2>
+    </div>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div class="flex gap-1 text-yellow-400 mb-6">
+          <i class="fa-solid fa-star text-[10px]"></i><i class="fa-solid fa-star text-[10px]"></i><i class="fa-solid fa-star text-[10px]"></i><i class="fa-solid fa-star text-[10px]"></i><i class="fa-solid fa-star text-[10px]"></i>
+        </div>
+        <p class="text-gray-600 text-sm md:text-base italic mb-8 leading-relaxed">"Physiotech has completely changed how I manage my chronic condition. The tracking tools are intuitive and powerful."</p>
+        <div class="flex items-center gap-4">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4MHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-12 h-12 rounded-full border-2 border-gray-50 shadow-sm" alt="User avatar" />
+          <div>
+            <h5 class="text-sm font-bold text-gray-900">Sarah Jenkins</h5>
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest font-semibold mt-0.5">Premium Member</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div class="flex gap-1 text-yellow-400 mb-6">
+          <i class="fa-solid fa-star text-[10px]"></i><i class="fa-solid fa-star text-[10px]"></i><i class="fa-solid fa-star text-[10px]"></i><i class="fa-solid fa-star text-[10px]"></i><i class="fa-solid fa-star text-[10px]"></i>
+        </div>
+        <p class="text-gray-600 text-sm md:text-base italic mb-8 leading-relaxed">"As a professional athlete, I need precision. Physiotech delivers exactly that with its deep metric integration."</p>
+        <div class="flex items-center gap-4">
+          <img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-12 h-12 rounded-full border-2 border-gray-50 shadow-sm" alt="User avatar" />
+          <div>
+            <h5 class="text-sm font-bold text-gray-900">Marcus Thorne</h5>
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest font-semibold mt-0.5">Elite Member</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div class="flex gap-1 text-yellow-400 mb-6">
+          <i class="fa-solid fa-star text-[10px]"></i><i class="fa-solid fa-star text-[10px]"></i><i class="fa-solid fa-star text-[10px]"></i><i class="fa-solid fa-star text-[10px]"></i><i class="fa-solid fa-star text-[10px]"></i>
+        </div>
+        <p class="text-gray-600 text-sm md:text-base italic mb-8 leading-relaxed">"Finally an app that makes health tracking feel like a part of my lifestyle rather than a daily chore."</p>
+        <div class="flex items-center gap-4">
+          <img src="https://images.unsplash.com/photo-1533933269825-da140ad3132f?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-12 h-12 rounded-full border-2 border-gray-50 shadow-sm" alt="User avatar" />
+          <div>
+            <h5 class="text-sm font-bold text-gray-900">Elena Rodriguez</h5>
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest font-semibold mt-0.5">Standard Member</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end reviews -->
+
+  <!-- block:start pricing -->
+  <section id="pricing" class="bg-white w-full px-4 sm:px-8 py-16 md:py-24 border-t border-gray-100">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12 md:mb-16">
+        <span class="text-xs text-gray-400 tracking-widest uppercase font-medium mb-4 block">Pricing</span>
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900">A Plan for Every Goal</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Basic -->
+        <div class="p-8 md:p-10 rounded-[2.5rem] border border-gray-200 flex flex-col hover:border-gray-900 transition duration-300">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Basic</h3>
+          <div class="mb-8 flex items-baseline gap-1">
+            <span class="text-4xl md:text-5xl font-bold text-gray-900">$0</span>
+            <span class="text-gray-400 font-medium">/mo</span>
+          </div>
+          <ul class="space-y-4 mb-12 flex-1">
+            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-green-500"></i> Fitness Tracking</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-green-500"></i> Daily Logs</li>
+            <li class="flex items-center gap-3 text-sm text-gray-300"><i class="fa-solid fa-xmark"></i> Advanced Analytics</li>
+          </ul>
+          <a href="contact.html" class="w-full py-4 px-6 rounded-2xl border border-gray-900 text-gray-900 font-bold hover:bg-gray-900 hover:text-white transition duration-300 block text-center">Get Started</a>
+        </div>
+        <!-- Pro -->
+        <div class="p-8 md:p-10 rounded-[2.5rem] bg-gray-900 text-white flex flex-col relative overflow-hidden shadow-xl shadow-gray-200">
+          <div class="absolute top-6 right-6 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest border border-white/10">Most Popular</div>
+          <h3 class="text-xl font-bold mb-2">Pro</h3>
+          <div class="mb-8 flex items-baseline gap-1">
+            <span class="text-4xl md:text-5xl font-bold">$19</span>
+            <span class="text-white/40 font-medium">/mo</span>
+          </div>
+          <ul class="space-y-4 mb-12 flex-1">
+            <li class="flex items-center gap-3 text-sm text-white/80"><i class="fa-solid fa-check text-green-400"></i> Nutrition Analysis</li>
+            <li class="flex items-center gap-3 text-sm text-white/80"><i class="fa-solid fa-check text-green-400"></i> AI Meal Planning</li>
+            <li class="flex items-center gap-3 text-sm text-white/80"><i class="fa-solid fa-check text-green-400"></i> Smart Reports</li>
+          </ul>
+          <a href="contact.html" class="w-full py-4 px-6 rounded-2xl bg-white text-gray-900 font-bold hover:bg-gray-100 transition duration-300 block text-center">Go Pro Now</a>
+        </div>
+        <!-- Elite -->
+        <div class="p-8 md:p-10 rounded-[2.5rem] border border-gray-200 flex flex-col hover:border-gray-900 transition duration-300 md:col-span-2 lg:col-span-1">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Elite</h3>
+          <div class="mb-8 flex items-baseline gap-1">
+            <span class="text-4xl md:text-5xl font-bold text-gray-900">$49</span>
+            <span class="text-gray-400 font-medium">/mo</span>
+          </div>
+          <ul class="space-y-4 mb-12 flex-1">
+            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-green-500"></i> Weekly Expert Calls</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-green-500"></i> Priority Support</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-green-500"></i> Custom API Access</li>
+          </ul>
+          <a href="contact.html" class="w-full py-4 px-6 rounded-2xl border border-gray-900 text-gray-900 font-bold hover:bg-gray-900 hover:text-white transition duration-300 block text-center">Select Elite</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end pricing -->
+
+  <!-- block:start cta -->
+  <section id="cta" class="bg-white w-full px-4 sm:px-8 py-16 md:py-24">
+    <div class="max-w-6xl mx-auto">
+      <div class="bg-gray-50 rounded-[3rem] p-8 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-12 overflow-hidden relative">
+        <div class="relative z-10 max-w-xl text-center lg:text-left">
+          <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 leading-tight mb-6">Stay Ahead in Your Health Journey</h2>
+          <p class="text-gray-500 mb-10 md:text-lg">Join our community and receive the latest insights on wellness, fitness, and medical technology directly in your inbox.</p>
+          <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto lg:mx-0">
+            <input type="email" placeholder="Enter your email address" class="flex-1 px-6 py-4 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-900 transition bg-white" />
+            <button type="button" data-demo-action="Subscribed" class="bg-gray-900 text-white px-8 py-4 rounded-full font-bold hover:bg-black transition whitespace-nowrap">Subscribe</button>
+          </form>
+        </div>
+        <div class="relative z-10 w-full lg:w-1/3 flex justify-center">
+           <img class="w-full max-w-[300px] md:max-w-none h-auto rounded-3xl shadow-2xl transform lg:rotate-3" src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fG1lZGljYWwlMjB0ZWNoJTIwZ2FkZ2V0JTIwbmV1dHJhbHxlbnwxfHx8fDE3OTUzODYxMDh8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="minimalist medical tech gadget close up, soft lighting, neutral background, professional photography" />
+        </div>
+        <!-- Decorative blob -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-green-100 rounded-full blur-3xl opacity-40"></div>
+        <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-40"></div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end cta -->
+
+  <!-- block:start footer -->
+  <footer id="footer" class="bg-gray-50 w-full px-4 sm:px-8 pt-16 md:pt-24 pb-8 md:pb-12">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 md:mb-20">
+        <div class="col-span-1 sm:col-span-2 lg:col-span-1">
+          <div class="flex items-center gap-2 mb-6 text-gray-900">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 6 L14 2 L22 6 L22 14 L14 26 L6 14 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <circle cx="14" cy="10" r="3" fill="currentColor"/>
+            </svg>
+            <span class="font-bold text-xl tracking-wide">Physiotech</span>
+          </div>
+          <p class="text-gray-500 text-sm leading-relaxed mb-8 max-w-xs">Empowering your health journey with modern technology and expert guidance.</p>
+          <div class="flex gap-4">
+            <a href="https://x.com/" target="_blank" rel="noopener" aria-label="Twitter" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-400 hover:text-gray-900 hover:border-gray-900 transition shadow-sm"><i class="fa-brands fa-twitter text-sm"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-400 hover:text-gray-900 hover:border-gray-900 transition shadow-sm"><i class="fa-brands fa-instagram text-sm"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-400 hover:text-gray-900 hover:border-gray-900 transition shadow-sm"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+          </div>
+        </div>
+        
+        <div class="lg:pl-8">
+          <h6 class="font-bold text-gray-900 mb-6 uppercase text-[10px] tracking-widest">Platform</h6>
+          <ul class="space-y-4">
+            <li><a href="#benefits" class="text-sm text-gray-500 hover:text-gray-900 transition font-medium">Features</a></li>
+            <li><a href="#information" class="text-sm text-gray-500 hover:text-gray-900 transition font-medium">Health tools</a></li>
+            <li><a href="#pricing" class="text-sm text-gray-500 hover:text-gray-900 transition font-medium">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:pl-8">
+          <h6 class="font-bold text-gray-900 mb-6 uppercase text-[10px] tracking-widest">Company</h6>
+          <ul class="space-y-4">
+            <li><a href="about.html" class="text-sm text-gray-500 hover:text-gray-900 transition font-medium">About Us</a></li>
+            <li><a href="#team" class="text-sm text-gray-500 hover:text-gray-900 transition font-medium">Our Team</a></li>
+            <li><a href="contact.html" class="text-sm text-gray-500 hover:text-gray-900 transition font-medium">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:pl-8">
+          <h6 class="font-bold text-gray-900 mb-6 uppercase text-[10px] tracking-widest">Support</h6>
+          <ul class="space-y-4">
+            <li><a href="contact.html#faq" class="text-sm text-gray-500 hover:text-gray-900 transition font-medium">Help Center</a></li>
+            <li><a href="legal.html#privacy" class="text-sm text-gray-500 hover:text-gray-900 transition font-medium">Privacy Policy</a></li>
+            <li><a href="legal.html#terms" class="text-sm text-gray-500 hover:text-gray-900 transition font-medium">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-6">
+        <p class="text-[10px] md:text-xs text-gray-400 font-medium tracking-wide">&copy; 2024 Physiotech Inc. All rights reserved.</p>
+        <div class="flex flex-wrap justify-center gap-6">
+          <span class="text-[10px] md:text-xs text-gray-400 font-medium tracking-wide">Built with Wellness in Mind</span>
+          <span class="text-[10px] md:text-xs text-gray-400 font-medium tracking-wide flex items-center gap-2">
+            System Status: <span class="flex items-center gap-1.5 text-green-500"><span class="w-1.5 h-1.5 rounded-full bg-green-500"></span> Operational</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    (function () {
+      var data = document.getElementById("team-members-data");
+      var members = data ? JSON.parse(data.textContent) : [];
+      var prev = document.getElementById("team-prev");
+      var next = document.getElementById("team-next");
+      var slots = document.querySelectorAll("[data-team-slot]");
+      var index = 0;
+      if (!prev || !next || !slots.length || !members.length) return;
+
+      function render() {
+        slots.forEach(function (slot, offset) {
+          var member = members[(index + offset) % members.length];
+          var image = slot.querySelector("img");
+          var name = slot.querySelector("[data-team-name]");
+          var role = slot.querySelector("[data-team-role]");
+          image.style.opacity = "0";
+          window.setTimeout(function () {
+            image.src = member[0];
+            image.alt = member[1];
+            name.textContent = member[2];
+            role.textContent = member[3];
+            image.style.opacity = "1";
+          }, 160);
+        });
+      }
+
+      function step(direction) {
+        index = (index + direction + members.length) % members.length;
+        render();
+      }
+
+      prev.addEventListener("click", function () { step(-1); });
+      next.addEventListener("click", function () { step(1); });
+    })();
+  </script>
+  <script>
+    (function () {
+      var button = document.querySelector('[data-menu-toggle]');
+      var menu = document.getElementById('mobile-menu');
+      if (!button || !menu) return;
+      button.addEventListener('click', function () {
+        var open = menu.classList.toggle('hidden');
+        button.setAttribute('aria-expanded', String(!open));
+      });
+      menu.addEventListener('click', function (event) {
+        if (event.target.closest('a')) { menu.classList.add('hidden'); button.setAttribute('aria-expanded', 'false'); }
+      });
+    })();
+  </script>
+  <script>
+    document.querySelectorAll('[data-demo-action]').forEach(function(button) {
+      button.addEventListener('click', function(event) {
+        event.preventDefault();
+        var scope = button.closest('form') || button.parentElement;
+        var fields = scope.querySelectorAll('input, textarea, md-outlined-text-field, md-filled-text-field');
+        var empty = Array.prototype.find.call(fields, function(field) { return !String(field.value || '').trim(); });
+        if (empty) { empty.focus(); return; }
+        var invalid = Array.prototype.find.call(fields, function(field) { return field.checkValidity && !field.checkValidity(); });
+        if (invalid) { invalid.reportValidity(); return; }
+        button.textContent = button.getAttribute('data-demo-action');
+        button.disabled = true;
+      });
+    });
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=physiotech&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

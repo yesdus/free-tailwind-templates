@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tressa | Tailwind CSS Health & Fitness Template</title>
+  <meta name="description" content="Tressa is a clean, minimal Tailwind CSS hair salon template with numbered services, a work gallery, stylist profiles, service packages, client reviews and booking.">
+  <meta name="keywords" content="Tressa, Tailwind CSS template, HTML website template, hair salon template, hair studio, hairdresser website, balayage, keratin treatment, salon booking">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Tressa | Tailwind CSS Health & Fitness Template">
+  <meta property="og:description" content="A clean, minimal Tailwind CSS hair salon template with numbered services, a work gallery, stylist profiles and service packages.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Tressa template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Tressa | Tailwind CSS Health & Fitness Template">
+  <meta name="twitter:description" content="A clean, minimal Tailwind CSS hair salon template with numbered services, a work gallery, stylist profiles and service packages.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Tressa template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink: '#111827', mist: '#f8f9fb', line: '#e5e7eb' },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white font-sans text-ink antialiased">
+  <!-- block:start navbar -->
+  <header class="sticky top-0 z-40 border-b border-line/70 bg-white/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-5 py-5 md:px-8" aria-label="Main">
+      <div class="flex items-center gap-12">
+        <a href="index.html" class="text-xl font-medium tracking-tight">Tressa Studio</a>
+        <ul class="hidden items-center gap-10 text-[15px] text-ink/70 lg:flex">
+            <li><a href="services.html"  class="hover:text-ink">Services</a></li>
+            <li><a href="work.html"  class="hover:text-ink">Work</a></li>
+            <li><a href="team.html"  class="hover:text-ink">Team</a></li>
+            <li><a href="contact.html"  class="hover:text-ink">Contact</a></li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" class="hidden border border-ink px-5 py-2.5 text-[15px] font-medium transition hover:bg-ink hover:text-white sm:inline-block">Book Appointment</a>
+        <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="grid h-11 w-11 place-items-center border border-line lg:hidden"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-line px-5 pb-6 lg:hidden">
+      <ul class="grid gap-1 pt-3 text-lg">
+          <li><a href="index.html" aria-current="page" class="block px-2 py-2 bg-mist font-medium">Home</a></li>
+          <li><a href="services.html"  class="block px-2 py-2 text-ink/70">Services</a></li>
+          <li><a href="work.html"  class="block px-2 py-2 text-ink/70">Work</a></li>
+          <li><a href="team.html"  class="block px-2 py-2 text-ink/70">Team</a></li>
+          <li><a href="pricing.html"  class="block px-2 py-2 text-ink/70">Pricing</a></li>
+          <li><a href="contact.html"  class="block px-2 py-2 text-ink/70">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section id="intro" class="mx-auto grid max-w-6xl gap-12 px-5 pb-20 pt-14 md:px-8 lg:grid-cols-2 lg:items-center lg:pb-28">
+    <div>
+      <p class="text-sm uppercase tracking-[0.15em] text-ink/60">Calm hair studio</p>
+      <h1 data-reveal class="mt-6 text-5xl font-medium leading-[1.08] tracking-tight md:text-6xl lg:text-7xl">Thoughtful Cuts, Colour &amp; Care</h1>
+      <p data-reveal class="mt-8 max-w-lg text-lg leading-relaxed text-ink/70">Unhurried hair care in a bright, quiet space. Our stylists listen first, then shape a look that suits your hair and your routine.</p>
+      <div data-reveal class="mt-10 flex flex-wrap items-center gap-6">
+        <a href="contact.html" class="inline-block bg-ink px-8 py-4 font-medium text-white transition hover:bg-black">Book Now</a>
+        <a href="services.html" class="inline-flex items-center gap-2 font-medium hover:underline">View Services <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a>
+      </div>
+      <dl class="mt-12 flex gap-12 border-t border-line pt-8">
+          <div class="flex flex-col"><dt class="order-2 mt-1 text-sm text-ink/60">Years</dt><dd class="order-1 text-3xl font-light"><span data-count-to="12" data-count-suffix="+">12+</span></dd></div>
+          <div class="flex flex-col"><dt class="order-2 mt-1 text-sm text-ink/60">Guests</dt><dd class="order-1 text-3xl font-light"><span data-count-to="6" data-count-suffix="K+">6K+</span></dd></div>
+          <div class="flex flex-col"><dt class="order-2 mt-1 text-sm text-ink/60">Rating</dt><dd class="order-1 text-3xl font-light"><span >4.9</span></dd></div>
+      </dl>
+    </div>
+    <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?auto=format&fit=crop&w=1000&h=1040&q=80" alt="Stylist rinsing a client's long hair at a backwash basin" class="aspect-[25/26] w-full object-cover">
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start features -->
+  <section id="services" class="bg-mist">
+    <div class="mx-auto max-w-6xl px-5 py-24 md:px-8">
+      <p class="text-sm uppercase tracking-[0.15em] text-ink/60">Our services</p>
+      <h2 data-reveal class="mt-4 text-4xl font-medium tracking-tight md:text-5xl">What We Do Best</h2>
+      <div class="mt-14 grid divide-y divide-line bg-white sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4">
+          <a href="services.html" data-reveal style="--reveal-delay: 0ms" class="group block border-b-4 border-transparent p-10 transition hover:border-ink">
+            <span class="block text-6xl font-extralight text-ink/15">01</span>
+            <span class="mt-8 block text-2xl font-medium">Haircut</span>
+            <span class="mt-4 block leading-relaxed text-ink/70">Precise cuts shaped around your face and hair type.</span>
+            <span class="mt-8 block text-lg">From $80</span>
+          </a>
+          <a href="balayage.html" data-reveal style="--reveal-delay: 80ms" class="group block border-b-4 border-transparent p-10 transition hover:border-ink">
+            <span class="block text-6xl font-extralight text-ink/15">02</span>
+            <span class="mt-8 block text-2xl font-medium">Colour</span>
+            <span class="mt-4 block leading-relaxed text-ink/70">Natural colour, glosses and hand-painted balayage.</span>
+            <span class="mt-8 block text-lg">From $140</span>
+          </a>
+          <a href="services.html" data-reveal style="--reveal-delay: 160ms" class="group block border-b-4 border-transparent p-10 transition hover:border-ink">
+            <span class="block text-6xl font-extralight text-ink/15">03</span>
+            <span class="mt-8 block text-2xl font-medium">Styling</span>
+            <span class="mt-4 block leading-relaxed text-ink/70">Blow-dries and occasion styles that hold all day.</span>
+            <span class="mt-8 block text-lg">From $60</span>
+          </a>
+          <a href="keratin-treatment.html" data-reveal style="--reveal-delay: 240ms" class="group block border-b-4 border-transparent p-10 transition hover:border-ink">
+            <span class="block text-6xl font-extralight text-ink/15">04</span>
+            <span class="mt-8 block text-2xl font-medium">Treatment</span>
+            <span class="mt-4 block leading-relaxed text-ink/70">Keratin smoothing and deep repair for tired hair.</span>
+            <span class="mt-8 block text-lg">From $90</span>
+          </a>
+      </div>
+    </div>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start gallery -->
+  <section id="work" class="mx-auto grid max-w-6xl gap-5 px-5 py-24 md:px-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.4fr)]">
+    <div class="flex flex-col justify-center bg-mist p-10 md:p-14">
+      <p class="text-sm uppercase tracking-[0.15em] text-ink/60">Our work</p>
+      <h2 data-reveal class="mt-4 text-3xl font-medium leading-tight tracking-tight md:text-4xl">Changes You'll Love to Wear</h2>
+      <p data-reveal class="mt-6 leading-relaxed text-ink/70">Every guest gets our full attention and a plan built around their hair, so the result feels like you on your best day.</p>
+      <a href="work.html" class="mt-8 inline-flex items-center gap-2 font-medium hover:underline">View Gallery <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a>
+    </div>
+    <div class="grid grid-cols-2 gap-5">
+        <img data-reveal style="--reveal-delay: 0ms" src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?auto=format&fit=crop&w=700&h=640&q=80" alt="Stylist pinning soft curls into an elegant updo" class="aspect-[11/10] w-full object-cover">
+        <img data-reveal style="--reveal-delay: 70ms" src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=700&h=640&q=80" alt="Bright modern salon with round mirrors and styling chairs" class="aspect-[11/10] w-full object-cover">
+        <img data-reveal style="--reveal-delay: 140ms" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=700&h=640&q=80" alt="Stylist blow-drying a guest&#39;s shoulder-length hair" class="aspect-[11/10] w-full object-cover">
+        <img data-reveal style="--reveal-delay: 210ms" src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=700&h=640&q=80" alt="Long wavy lavender-toned hair" class="aspect-[11/10] w-full object-cover">
+    </div>
+  </section>
+  <!-- block:end gallery -->
+
+  <!-- block:start team -->
+  <section id="team" class="bg-mist">
+    <div class="mx-auto max-w-6xl px-5 py-24 md:px-8">
+      <p class="text-sm uppercase tracking-[0.15em] text-ink/60">The team</p>
+      <h2 data-reveal class="mt-4 text-4xl font-medium tracking-tight md:text-5xl">Meet Our Stylists</h2>
+      <div class="mt-14 grid gap-8 sm:grid-cols-3">
+          <figure data-reveal style="--reveal-delay: 0ms">
+            <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?auto=format&fit=crop&w=700&h=930&q=80" alt="Updo in progress by Clara" class="aspect-[3/4] w-full object-cover">
+            <figcaption class="mt-5"><span class="block text-xl font-medium">Clara Moreau</span><span class="text-ink/60">Creative Director</span></figcaption>
+          </figure>
+          <figure data-reveal style="--reveal-delay: 80ms">
+            <img src="https://images.unsplash.com/photo-1554519515-242161756769?auto=format&fit=crop&w=700&h=930&q=80" alt="Vivid multi-tone colour by Owen" class="aspect-[3/4] w-full object-cover">
+            <figcaption class="mt-5"><span class="block text-xl font-medium">Owen Hart</span><span class="text-ink/60">Colour Specialist</span></figcaption>
+          </figure>
+          <figure data-reveal style="--reveal-delay: 160ms">
+            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=700&h=930&q=80" alt="Mei washing a guest&#39;s hair before a cut" class="aspect-[3/4] w-full object-cover">
+            <figcaption class="mt-5"><span class="block text-xl font-medium">Mei Tanaka</span><span class="text-ink/60">Senior Stylist</span></figcaption>
+          </figure>
+      </div>
+    </div>
+  </section>
+  <!-- block:end team -->
+
+  <!-- block:start about -->
+  <section id="why" class="mx-auto grid max-w-6xl gap-12 px-5 py-24 md:px-8 lg:grid-cols-2 lg:items-center">
+    <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1000&h=860&q=80" alt="Salon interior with black walls, round mirrors and styling chairs" class="aspect-[50/43] w-full object-cover">
+    <div>
+      <p class="text-sm uppercase tracking-[0.15em] text-ink/60">Why Tressa</p>
+      <h2 data-reveal class="mt-4 text-4xl font-medium tracking-tight">Small Details, Big Difference</h2>
+      <ul class="mt-10 space-y-8">
+          <li data-reveal style="--reveal-delay: 0ms" class="flex gap-5"><i class="fa-solid fa-check mt-1 text-lg" aria-hidden="true"></i><div><h3 class="text-xl font-medium">Salon-grade products</h3><p class="mt-1 text-ink/70">Gentle, professional formulas chosen for each hair type.</p></div></li>
+          <li data-reveal style="--reveal-delay: 70ms" class="flex gap-5"><i class="fa-solid fa-check mt-1 text-lg" aria-hidden="true"></i><div><h3 class="text-xl font-medium">Always learning</h3><p class="mt-1 text-ink/70">Our team trains every season in new cuts and colour.</p></div></li>
+          <li data-reveal style="--reveal-delay: 140ms" class="flex gap-5"><i class="fa-solid fa-check mt-1 text-lg" aria-hidden="true"></i><div><h3 class="text-xl font-medium">Made for you</h3><p class="mt-1 text-ink/70">A real consultation before every service, never a script.</p></div></li>
+          <li data-reveal style="--reveal-delay: 210ms" class="flex gap-5"><i class="fa-solid fa-check mt-1 text-lg" aria-hidden="true"></i><div><h3 class="text-xl font-medium">A calm space</h3><p class="mt-1 text-ink/70">Natural light, quiet music and no rushing between guests.</p></div></li>
+      </ul>
+    </div>
+  </section>
+  <!-- block:end about -->
+
+  <!-- block:start pricing -->
+  <section id="packages" class="bg-mist">
+    <div class="mx-auto max-w-6xl px-5 py-24 md:px-8">
+      <p class="text-sm uppercase tracking-[0.15em] text-ink/60">Packages</p>
+      <h2 data-reveal class="mt-4 text-4xl font-medium tracking-tight md:text-5xl">Bundled for Better Hair</h2>
+      <div class="mt-14 grid gap-6 md:grid-cols-3">
+          <article data-reveal style="--reveal-delay: 0ms" class="relative flex flex-col bg-white p-10 border border-line">
+            
+            <h3 class="text-xl font-medium">Essential</h3>
+            <p class="mt-4 text-5xl font-light">$189</p>
+            <ul class="mt-8 flex-1 space-y-3 text-ink/80">
+              <li class="flex items-center gap-3"><span class="h-1 w-1 rounded-full bg-ink"></span>Haircut</li><li class="flex items-center gap-3"><span class="h-1 w-1 rounded-full bg-ink"></span>Repair treatment</li><li class="flex items-center gap-3"><span class="h-1 w-1 rounded-full bg-ink"></span>Simple styling</li><li class="flex items-center gap-3"><span class="h-1 w-1 rounded-full bg-ink"></span>Consultation</li>
+            </ul>
+            <a href="contact.html" class="mt-10 block py-3.5 text-center font-medium transition border border-ink hover:bg-ink hover:text-white">Choose Package</a>
+          </article>
+          <article data-reveal style="--reveal-delay: 80ms" class="relative flex flex-col bg-white p-10 border border-ink">
+            <span class="absolute -top-3 left-10 bg-ink px-4 py-1 text-xs font-medium uppercase tracking-wider text-white">Popular</span>
+            <h3 class="text-xl font-medium">Signature</h3>
+            <p class="mt-4 text-5xl font-light">$379</p>
+            <ul class="mt-8 flex-1 space-y-3 text-ink/80">
+              <li class="flex items-center gap-3"><span class="h-1 w-1 rounded-full bg-ink"></span>Haircut</li><li class="flex items-center gap-3"><span class="h-1 w-1 rounded-full bg-ink"></span>Colour service</li><li class="flex items-center gap-3"><span class="h-1 w-1 rounded-full bg-ink"></span>Repair treatment</li><li class="flex items-center gap-3"><span class="h-1 w-1 rounded-full bg-ink"></span>Finish styling</li><li class="flex items-center gap-3"><span class="h-1 w-1 rounded-full bg-ink"></span>Take-home kit</li>
+            </ul>
+            <a href="contact.html" class="mt-10 block py-3.5 text-center font-medium transition bg-ink text-white hover:bg-black">Choose Package</a>
+          </article>
+          <article data-reveal style="--reveal-delay: 160ms" class="relative flex flex-col bg-white p-10 border border-line">
+            
+            <h3 class="text-xl font-medium">Complete</h3>
+            <p class="mt-4 text-5xl font-light">$569</p>
+            <ul class="mt-8 flex-1 space-y-3 text-ink/80">
+              <li class="flex items-center gap-3"><span class="h-1 w-1 rounded-full bg-ink"></span>Haircut</li><li class="flex items-center gap-3"><span class="h-1 w-1 rounded-full bg-ink"></span>Full colour</li><li class="flex items-center gap-3"><span class="h-1 w-1 rounded-full bg-ink"></span>Keratin smoothing</li><li class="flex items-center gap-3"><span class="h-1 w-1 rounded-full bg-ink"></span>Event styling</li><li class="flex items-center gap-3"><span class="h-1 w-1 rounded-full bg-ink"></span>Take-home kit</li><li class="flex items-center gap-3"><span class="h-1 w-1 rounded-full bg-ink"></span>Priority booking</li>
+            </ul>
+            <a href="contact.html" class="mt-10 block py-3.5 text-center font-medium transition border border-ink hover:bg-ink hover:text-white">Choose Package</a>
+          </article>
+      </div>
+    </div>
+  </section>
+  <!-- block:end pricing -->
+
+  <!-- block:start reviews -->
+  <section id="reviews" class="mx-auto max-w-6xl px-5 py-24 md:px-8">
+    <p class="text-sm uppercase tracking-[0.15em] text-ink/60">Testimonials</p>
+    <h2 data-reveal class="mt-4 text-4xl font-medium tracking-tight md:text-5xl">What Guests Say</h2>
+    <div class="mt-14 grid gap-6 md:grid-cols-2">
+        <figure data-reveal style="--reveal-delay: 0ms" class="border border-line p-10">
+          <p class="flex gap-1 text-sm" aria-label="5 out of 5 stars"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
+          <blockquote class="mt-6 leading-relaxed text-ink/75">“Clara gave me the cut I&#39;ve been describing to stylists for years. I finally feel like myself again.”</blockquote>
+          <figcaption class="mt-6 font-medium">Hannah Brooks</figcaption>
+        </figure>
+        <figure data-reveal style="--reveal-delay: 80ms" class="border border-line p-10">
+          <p class="flex gap-1 text-sm" aria-label="5 out of 5 stars"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
+          <blockquote class="mt-6 leading-relaxed text-ink/75">“Fair prices and real listening. They talked me out of a colour that would have washed me out.”</blockquote>
+          <figcaption class="mt-6 font-medium">Daniel Reyes</figcaption>
+        </figure>
+        <figure data-reveal style="--reveal-delay: 0ms" class="border border-line p-10">
+          <p class="flex gap-1 text-sm" aria-label="5 out of 5 stars"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
+          <blockquote class="mt-6 leading-relaxed text-ink/75">“Bright, calm and spotless. My balayage grew out beautifully and still looks soft months later.”</blockquote>
+          <figcaption class="mt-6 font-medium">Priya Sharma</figcaption>
+        </figure>
+        <figure data-reveal style="--reveal-delay: 80ms" class="border border-line p-10">
+          <p class="flex gap-1 text-sm" aria-label="5 out of 5 stars"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
+          <blockquote class="mt-6 leading-relaxed text-ink/75">“I book every visit now. The whole team is kind, skilled and never rushes you out of the chair.”</blockquote>
+          <figcaption class="mt-6 font-medium">Ethan Walsh</figcaption>
+        </figure>
+    </div>
+  </section>
+  <!-- block:end reviews -->
+
+  <section id="recent" class="bg-mist">
+    <div class="mx-auto max-w-6xl px-5 py-24 md:px-8">
+      <p class="text-sm uppercase tracking-[0.15em] text-ink/60">Gallery</p>
+      <h2 data-reveal class="mt-4 text-4xl font-medium tracking-tight md:text-5xl">Latest Looks</h2>
+      <div class="mt-14 grid grid-cols-2 gap-5 md:grid-cols-4">
+          <img data-reveal style="--reveal-delay: 0ms" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&h=600&q=80" alt="Long glossy waves seen from behind" class="aspect-square w-full object-cover">
+          <img data-reveal style="--reveal-delay: 60ms" src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?auto=format&fit=crop&w=600&h=600&q=80" alt="Soft updo pinned in place" class="aspect-square w-full object-cover">
+          <img data-reveal style="--reveal-delay: 120ms" src="https://images.unsplash.com/photo-1554519515-242161756769?auto=format&fit=crop&w=600&h=600&q=80" alt="Vivid rainbow colour" class="aspect-square w-full object-cover">
+          <img data-reveal style="--reveal-delay: 180ms" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&h=600&q=80" alt="Smooth blow-dry finish" class="aspect-square w-full object-cover">
+          <img data-reveal style="--reveal-delay: 0ms" src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=600&h=600&q=80" alt="Lavender-toned waves" class="aspect-square w-full object-cover">
+          <img data-reveal style="--reveal-delay: 60ms" src="https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=600&h=600&q=80" alt="Three smiling stylists with their tools" class="aspect-square w-full object-cover">
+          <img data-reveal style="--reveal-delay: 120ms" src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?auto=format&fit=crop&w=600&h=600&q=80" alt="Relaxing hair wash at the basin" class="aspect-square w-full object-cover">
+          <img data-reveal style="--reveal-delay: 180ms" src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=600&h=600&q=80" alt="Stylist laughing with a guest during a wash" class="aspect-square w-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- block:start cta -->
+  <section class="mx-auto max-w-3xl px-5 py-24 text-center md:px-8">
+    <h2 data-reveal class="text-4xl font-medium tracking-tight md:text-5xl">Ready for a Fresh Start?</h2>
+    <p class="mx-auto mt-6 max-w-xl text-lg text-ink/70">Book your visit today and enjoy expert hair care in a space that feels like a deep breath.</p>
+    <ul class="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3 text-ink/70">
+      <li class="flex items-center gap-2"><i class="fa-regular fa-clock" aria-hidden="true"></i>Tue–Sat · 9:00–19:00</li>
+      <li class="flex items-center gap-2"><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+13125550194" class="hover:text-ink">(312) 555-0194</a></li>
+      <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>West Loop, Chicago</li>
+    </ul>
+    <a href="contact.html" class="mt-10 inline-block bg-ink px-12 py-4 font-medium text-white transition hover:bg-black">Book Appointment</a>
+  </section>
+  <!-- block:end cta -->
+
+  <!-- block:start footer -->
+  <footer class="border-t border-line bg-mist">
+    <div class="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-[minmax(0,2fr)_minmax(0,1fr)_minmax(0,1fr)] md:px-8">
+      <div>
+        <a href="index.html" class="text-2xl font-medium tracking-tight">Tressa Studio</a>
+        <p class="mt-5 max-w-sm leading-relaxed text-ink/70">A calm hair studio for precise cuts, natural colour and treatments that keep hair healthy.</p>
+        <ul class="mt-6 flex gap-3">
+          <li><a href="https://instagram.com" aria-label="Instagram" class="grid h-11 w-11 place-items-center border border-line bg-white hover:border-ink"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://facebook.com" aria-label="Facebook" class="grid h-11 w-11 place-items-center border border-line bg-white hover:border-ink"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-sm font-medium uppercase tracking-[0.15em]">Links</h2>
+        <ul class="mt-5 space-y-3 text-ink/70">
+            <li><a href="services.html" class="hover:text-ink">Services</a></li>
+            <li><a href="work.html" class="hover:text-ink">Work</a></li>
+            <li><a href="team.html" class="hover:text-ink">Team</a></li>
+            <li><a href="pricing.html" class="hover:text-ink">Pricing</a></li>
+            <li><a href="contact.html" class="hover:text-ink">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-sm font-medium uppercase tracking-[0.15em]">Contact</h2>
+        <ul class="mt-5 space-y-3 text-ink/70">
+          <li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1" aria-hidden="true"></i><address class="not-italic">905 W Fulton St<br>Chicago, IL 60607</address></li>
+          <li class="flex gap-3"><i class="fa-solid fa-phone mt-1" aria-hidden="true"></i><a href="tel:+13125550194" class="hover:text-ink">(312) 555-0194</a></li>
+          <li class="flex gap-3"><i class="fa-regular fa-clock mt-1" aria-hidden="true"></i>Tue–Sat · 9:00–19:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 border-t border-line px-5 py-6 text-sm text-ink/60 md:flex-row md:items-center md:justify-between md:px-8">
+      <p>&copy; <span data-current-year>2026</span> Tressa Studio. All rights reserved.</p>
+      <a href="contact.html" class="hover:text-ink">Privacy &amp; terms</a>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      if (!menu) return;
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-filter-group]').forEach((group) => {
+      const buttons = group.querySelectorAll('[data-filter]');
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          buttons.forEach((other) => {
+            const active = other === button;
+            other.setAttribute('aria-pressed', String(active));
+            other.classList.toggle('bg-ink', active);
+            other.classList.toggle('text-white', active);
+          });
+          document.querySelectorAll('[data-filter-item]').forEach((item) => {
+            item.hidden = button.dataset.filter !== 'all' && item.dataset.category !== button.dataset.filter;
+          });
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-accordion]').forEach((accordion) => {
+      const triggers = accordion.querySelectorAll('[data-accordion-trigger]');
+      triggers.forEach((trigger) => {
+        trigger.addEventListener('click', () => {
+          const willOpen = trigger.getAttribute('aria-expanded') !== 'true';
+          triggers.forEach((other) => {
+            const open = other === trigger && willOpen;
+            other.setAttribute('aria-expanded', String(open));
+            document.getElementById(other.getAttribute('aria-controls')).classList.toggle('hidden', !open);
+            other.querySelector('[data-accordion-icon]')?.classList.toggle('rotate-45', open);
+          });
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-contact-form]').forEach((form) => {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const status = form.querySelector('[data-form-status]');
+        if (!form.checkValidity()) {
+          status.textContent = form.dataset.error || 'Please complete the required fields.';
+          return;
+        }
+        status.textContent = form.dataset.success || 'Thanks! We will be in touch soon.';
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    (() => {
+      const counters = document.querySelectorAll('[data-count-to]');
+      if (!counters.length || navigator.webdriver || matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(({ isIntersecting, target }) => {
+          if (!isIntersecting) return;
+          observer.unobserve(target);
+          const end = Number(target.dataset.countTo);
+          const suffix = target.dataset.countSuffix || '';
+          const start = performance.now();
+          const tick = (now) => {
+            const progress = Math.min((now - start) / 700, 1);
+            target.textContent = Math.round(end * progress) + suffix;
+            if (progress < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        });
+      }, { threshold: 0.6 });
+      counters.forEach((counter) => observer.observe(counter));
+    })();
+
+    (() => {
+      const items = document.querySelectorAll('[data-reveal]');
+      const skip = navigator.webdriver || !('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=tressa&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

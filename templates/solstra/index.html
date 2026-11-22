@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solstra | Tailwind CSS SaaS Template</title>
+  <meta name="description" content="Solstra is a dark, geometric Tailwind CSS SaaS template with a light serif headline over angular planes, a red sun and a green beam. It has a scroll story, a brief composer demo, integrations, result quotes, and features, pricing and contact pages.">
+  <meta name="keywords" content="Solstra, Tailwind CSS template, HTML website template, SaaS template, software landing page, startup template, dark template, geometric design, pricing page, free template">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Solstra | Tailwind CSS SaaS Template">
+  <meta property="og:description" content="A dark, geometric Tailwind CSS SaaS template with a light serif headline, a brief composer demo, integrations, and features, pricing and contact pages.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Solstra template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Solstra | Tailwind CSS SaaS Template">
+  <meta name="twitter:description" content="A dark, geometric Tailwind CSS SaaS template with a light serif headline, a brief composer demo, integrations, and features, pricing and contact pages.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Solstra template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            coal: { DEFAULT: '#1b1b1b', soft: '#242424', line: '#343434' },
+            pitch: '#000000',
+            bone: { DEFAULT: '#ece8df', dim: '#9a968d' },
+            sun: { DEFAULT: '#d42027', deep: '#8f1318' },
+            leaf: { DEFAULT: '#86b92c', deep: '#0f8a5f' }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['Jost', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-coal font-sans font-light text-bone antialiased">
+  <!-- block:start navbar -->
+  <header class="absolute inset-x-0 top-0 z-40">
+    <div class="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-7 md:px-14">
+      <a href="index.html" class="flex items-center gap-4" aria-label="Solstra home">
+        <span class="h-px w-6 bg-bone"></span>
+        <span class="font-serif text-xl tracking-wide">Solstra</span>
+      </a>
+      <nav class="hidden items-center gap-10 md:flex" aria-label="Main">
+        <a href="index.html" aria-current="page" class="label border-b border-sun pb-1 text-bone">Index</a>
+          <a href="features.html" class="label border-b border-transparent pb-1 text-bone/60 hover:text-bone">Features</a>
+          <a href="pricing.html" class="label border-b border-transparent pb-1 text-bone/60 hover:text-bone">Pricing</a>
+          <a href="contact.html" class="label border-b border-transparent pb-1 text-bone/60 hover:text-bone">Contact</a>
+        <a href="pricing.html" class="label rounded-full border border-bone/40 px-5 py-2.5 hover:border-bone hover:bg-bone hover:text-coal">Start free</a>
+      </nav>
+      <button type="button" class="label flex items-center gap-3 md:hidden" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">
+        <span data-menu-label>Menu</span><span class="h-px w-6 bg-bone"></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="border-y border-coal-line bg-pitch px-6 py-8 md:hidden" hidden>
+      <nav class="grid gap-3 font-serif text-4xl" aria-label="Mobile">
+        <a href="index.html" aria-current="page">Index</a>
+          <a href="features.html" class="text-bone/60 hover:text-bone">Features</a>
+          <a href="pricing.html" class="text-bone/60 hover:text-bone">Pricing</a>
+          <a href="contact.html" class="text-bone/60 hover:text-bone">Contact</a>
+      </nav>
+      <a href="pricing.html" class="label mt-8 inline-block rounded-full border border-bone/40 px-5 py-3">Start free</a>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <main>
+    <!-- block:start hero -->
+    <section id="top" class="relative flex min-h-[54rem] items-end overflow-hidden md:min-h-screen md:items-center">
+      <div class="plane-a absolute inset-0 bg-pitch" aria-hidden="true"></div>
+      <div class="beam beam-a absolute inset-0" aria-hidden="true"></div>
+      <div class="disc absolute left-[14%] top-[11%] h-24 w-24 md:left-[13%] md:top-[30%] md:h-[13vw] md:max-h-56 md:w-[13vw] md:max-w-56" aria-hidden="true"></div>
+      <div class="relative mx-auto w-full max-w-[1500px] px-6 pb-16 md:px-14 md:pb-0 md:pt-24">
+        <div class="max-w-xl md:ml-auto md:mr-[4%]">
+          <h1 class="font-serif text-4xl font-light leading-[1.1] md:text-6xl md:leading-[1.08] lg:text-[4.2rem]"><span class="label mb-5 mr-6 block align-middle font-sans text-bone/60 md:mb-0 md:inline-block md:-translate-y-3">The morning brief</span>Forty alerts arrive overnight. You wake up to one calm page.</h1>
+          <p class="mt-8 max-w-md text-lg leading-relaxed text-bone/70">Solstra reads your team's tools overnight and writes one calm brief: what changed, what is stuck and what needs you today.</p>
+          <div class="mt-10 flex flex-wrap items-center gap-8">
+            <a href="pricing.html" class="label rounded-full bg-bone px-7 py-4 font-normal text-coal hover:bg-sun hover:text-bone">Start free</a>
+            <a href="#composer" class="label flex items-center gap-4 text-bone/80 hover:text-bone"><span class="h-px w-8 bg-bone/60"></span>Compose a sample</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- block:end hero -->
+
+    <!-- block:start clients -->
+    <section class="border-y border-coal-line" aria-label="Teams that read Solstra">
+      <div class="mx-auto flex max-w-[1500px] flex-wrap items-center gap-x-12 gap-y-4 px-6 py-8 md:px-14">
+        <p class="label text-bone/50">Read before coffee at</p>
+          <span class="font-serif text-2xl text-bone/70">Halvorsen</span>
+          <span class="font-serif text-2xl text-bone/70">Atelier Nord</span>
+          <span class="font-serif text-2xl text-bone/70">Quietworks</span>
+          <span class="font-serif text-2xl text-bone/70">Brightmoor</span>
+          <span class="font-serif text-2xl text-bone/70">Pellam &amp; Roe</span>
+          <span class="font-serif text-2xl text-bone/70">Ostrava Labs</span>
+      </div>
+    </section>
+    <!-- block:end clients -->
+
+    <!-- block:start features -->
+    <section id="how" class="mx-auto max-w-[1500px] px-6 py-24 md:px-14 md:py-36" data-scroll-story>
+      <div class="grid gap-14 lg:grid-cols-12">
+        <div class="lg:col-span-5">
+          <div class="lg:sticky lg:top-24">
+            <p class="label text-bone/50">While you sleep</p>
+            <h2 class="mt-6 font-serif text-4xl font-light leading-tight md:text-6xl">Three quiet things happen before you wake.</h2>
+            <ol class="mt-12 hidden gap-4 lg:grid">
+                <li><a href="#story-1" data-story-link aria-current class="label flex items-center gap-4 text-bone/40 transition"><span class="story-rule h-px w-6 bg-bone/40 transition-all"></span>01 Gather</a></li>
+                <li><a href="#story-2" data-story-link  class="label flex items-center gap-4 text-bone/40 transition"><span class="story-rule h-px w-6 bg-bone/40 transition-all"></span>02 Weigh</a></li>
+                <li><a href="#story-3" data-story-link  class="label flex items-center gap-4 text-bone/40 transition"><span class="story-rule h-px w-6 bg-bone/40 transition-all"></span>03 Write</a></li>
+            </ol>
+          </div>
+        </div>
+        <div class="grid gap-20 lg:col-span-6 lg:col-start-7">
+            <article id="story-1" data-story-step class="scroll-mt-28 border-t border-coal-line pt-10" data-reveal>
+              <p class="label text-sun">01 Gather</p>
+              <h3 class="mt-5 font-serif text-3xl font-light leading-snug md:text-[2.6rem]">It reads everything, so you do not have to.</h3>
+              <p class="mt-5 max-w-lg text-lg leading-relaxed text-bone/70">From midnight, Solstra collects what moved in your calendar, code, tickets, pipeline and inbox. Nothing is copied out of your tools, and nothing is kept longer than a day.</p>
+              <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+                  <li class="flex items-center gap-3 text-sm text-bone/80"><span class="h-2 w-2 rounded-full bg-leaf"></span>2,400 events on a typical night</li>
+                  <li class="flex items-center gap-3 text-sm text-bone/80"><span class="h-2 w-2 rounded-full bg-leaf"></span>Read-only access, always</li>
+              </ul>
+            </article>
+            <article id="story-2" data-story-step class="scroll-mt-28 border-t border-coal-line pt-10" data-reveal>
+              <p class="label text-sun">02 Weigh</p>
+              <h3 class="mt-5 font-serif text-3xl font-light leading-snug md:text-[2.6rem]">It decides what deserves a sentence.</h3>
+              <p class="mt-5 max-w-lg text-lg leading-relaxed text-bone/70">Most of what happens overnight is noise. Solstra ranks each change by who it blocks, how late it is and whether it is new, and drops the rest without ceremony.</p>
+              <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+                  <li class="flex items-center gap-3 text-sm text-bone/80"><span class="h-2 w-2 rounded-full bg-leaf"></span>Nine in ten events never reach you</li>
+                  <li class="flex items-center gap-3 text-sm text-bone/80"><span class="h-2 w-2 rounded-full bg-leaf"></span>You can see what was left out</li>
+              </ul>
+            </article>
+            <article id="story-3" data-story-step class="scroll-mt-28 border-t border-coal-line pt-10" data-reveal>
+              <p class="label text-sun">03 Write</p>
+              <h3 class="mt-5 font-serif text-3xl font-light leading-snug md:text-[2.6rem]">It writes like a colleague, not a dashboard.</h3>
+              <p class="mt-5 max-w-lg text-lg leading-relaxed text-bone/70">The brief is plain prose with three headings: changed, stuck, yours. It takes two minutes to read and arrives at the time you choose, by email, in Slack or on your phone.</p>
+              <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+                  <li class="flex items-center gap-3 text-sm text-bone/80"><span class="h-2 w-2 rounded-full bg-leaf"></span>About 240 words</li>
+                  <li class="flex items-center gap-3 text-sm text-bone/80"><span class="h-2 w-2 rounded-full bg-leaf"></span>One brief per person, not per team</li>
+              </ul>
+            </article>
+        </div>
+      </div>
+    </section>
+    <!-- block:end features -->
+
+    <!-- block:start demo -->
+    <section id="composer" class="bg-pitch">
+      <div class="mx-auto grid max-w-[1500px] gap-14 px-6 py-24 md:px-14 md:py-32 lg:grid-cols-12">
+        <div class="lg:col-span-5">
+          <p class="label text-bone/50">Try it</p>
+          <h2 class="mt-6 font-serif text-4xl font-light leading-tight md:text-6xl">Compose tomorrow's brief.</h2>
+          <p class="mt-6 max-w-md text-lg leading-relaxed text-bone/70">Pick what Solstra should read and when the brief should land. The page on the right is what you would open.</p>
+
+          <fieldset class="mt-12">
+            <legend class="label text-bone/50">Sources</legend>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <button type="button" data-source="calendar" aria-pressed="true" class="rounded-full border border-bone/30 px-5 py-2.5 text-sm transition hover:border-bone aria-pressed:border-bone aria-pressed:bg-bone aria-pressed:text-coal">Calendar</button>
+                <button type="button" data-source="code" aria-pressed="true" class="rounded-full border border-bone/30 px-5 py-2.5 text-sm transition hover:border-bone aria-pressed:border-bone aria-pressed:bg-bone aria-pressed:text-coal">Pull requests</button>
+                <button type="button" data-source="incidents" aria-pressed="true" class="rounded-full border border-bone/30 px-5 py-2.5 text-sm transition hover:border-bone aria-pressed:border-bone aria-pressed:bg-bone aria-pressed:text-coal">Incidents</button>
+                <button type="button" data-source="pipeline" aria-pressed="false" class="rounded-full border border-bone/30 px-5 py-2.5 text-sm transition hover:border-bone aria-pressed:border-bone aria-pressed:bg-bone aria-pressed:text-coal">Pipeline</button>
+                <button type="button" data-source="support" aria-pressed="false" class="rounded-full border border-bone/30 px-5 py-2.5 text-sm transition hover:border-bone aria-pressed:border-bone aria-pressed:bg-bone aria-pressed:text-coal">Support</button>
+                <button type="button" data-source="weather" aria-pressed="false" class="rounded-full border border-bone/30 px-5 py-2.5 text-sm transition hover:border-bone aria-pressed:border-bone aria-pressed:bg-bone aria-pressed:text-coal">Weather</button>
+            </div>
+          </fieldset>
+
+          <div class="mt-10">
+            <label for="brief-time" class="flex items-baseline justify-between"><span class="label text-bone/50">Lands at</span><span class="font-serif text-4xl" data-time-label>7:00</span></label>
+            <input id="brief-time" type="range" min="300" max="600" step="15" value="420" class="mt-4 w-full" data-time>
+            <div class="mt-1 flex justify-between text-xs text-bone/40"><span>5:00</span><span>10:00</span></div>
+          </div>
+          <p class="mt-10 border-l border-sun pl-5 text-bone/80" aria-live="polite" data-brief-summary>3 sources, about 2 minutes to read, in your inbox at 7:00.</p>
+        </div>
+
+        <div class="lg:col-span-6 lg:col-start-7">
+          <div class="relative overflow-hidden bg-coal">
+            <div class="relative h-40 overflow-hidden border-b border-coal-line" aria-hidden="true">
+              <div class="plane-b absolute inset-0 bg-pitch"></div>
+              <div class="beam beam-b absolute inset-0 opacity-90"></div>
+              <div class="disc absolute h-14 w-14 -translate-x-1/2 -translate-y-1/2 transition-all duration-500" style="left: 37%; top: 55%" data-sun></div>
+            </div>
+            <div class="p-7 md:p-10">
+              <p class="label text-bone/50">Thursday · <span data-time-echo>7:00</span></p>
+              <p class="mt-3 font-serif text-3xl font-light md:text-4xl">Good morning, Ines.</p>
+              <div class="mt-8 grid gap-6" data-brief>
+                  <div data-brief-item="calendar" class="grid gap-1 border-t border-coal-line pt-5 md:grid-cols-[9rem_1fr] md:gap-6" >
+                    <p class="label pt-1 text-leaf">Calendar</p>
+                    <p class="leading-relaxed text-bone/80">Four meetings, the first at 10:30. The pricing review moved to Friday, so your afternoon is clear.</p>
+                  </div>
+                  <div data-brief-item="code" class="grid gap-1 border-t border-coal-line pt-5 md:grid-cols-[9rem_1fr] md:gap-6" >
+                    <p class="label pt-1 text-leaf">Pull requests</p>
+                    <p class="leading-relaxed text-bone/80">Two reviews are waiting on you. The billing migration has been open nine days and now blocks Tomas.</p>
+                  </div>
+                  <div data-brief-item="incidents" class="grid gap-1 border-t border-coal-line pt-5 md:grid-cols-[9rem_1fr] md:gap-6" >
+                    <p class="label pt-1 text-leaf">Incidents</p>
+                    <p class="leading-relaxed text-bone/80">One alert overnight: checkout latency for eleven minutes at 03:12. It resolved itself and nobody was paged.</p>
+                  </div>
+                  <div data-brief-item="pipeline" class="grid gap-1 border-t border-coal-line pt-5 md:grid-cols-[9rem_1fr] md:gap-6" hidden>
+                    <p class="label pt-1 text-leaf">Pipeline</p>
+                    <p class="leading-relaxed text-bone/80">Halvorsen signed. Brightmoor went quiet after the second call, which is worth a nudge today.</p>
+                  </div>
+                  <div data-brief-item="support" class="grid gap-1 border-t border-coal-line pt-5 md:grid-cols-[9rem_1fr] md:gap-6" hidden>
+                    <p class="label pt-1 text-leaf">Support</p>
+                    <p class="leading-relaxed text-bone/80">Fourteen new tickets, none urgent. Three mention the same export bug, already assigned to Mei.</p>
+                  </div>
+                  <div data-brief-item="weather" class="grid gap-1 border-t border-coal-line pt-5 md:grid-cols-[9rem_1fr] md:gap-6" hidden>
+                    <p class="label pt-1 text-leaf">Weather</p>
+                    <p class="leading-relaxed text-bone/80">Dry until four, then rain. Cycle in, take the train home.</p>
+                  </div>
+                <p class="border-t border-coal-line pt-5 font-serif text-2xl italic text-bone/60" data-brief-empty hidden>Nothing to read. Enjoy the quiet, or pick a source.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- block:end demo -->
+
+    <!-- block:start integrations -->
+    <section id="integrations" class="mx-auto max-w-[1500px] px-6 py-24 md:px-14 md:py-32">
+      <div class="flex flex-wrap items-end justify-between gap-8">
+        <div>
+          <p class="label text-bone/50">Reads from</p>
+          <h2 class="mt-6 max-w-2xl font-serif text-4xl font-light leading-tight md:text-6xl">Sixty tools in, one page out.</h2>
+        </div>
+        <div class="flex flex-wrap gap-6" role="group" aria-label="Filter integrations" data-filter>
+            <button type="button" data-filter-value="all" aria-pressed="true" class="label border-b border-transparent pb-1 text-bone/50 transition hover:text-bone aria-pressed:border-sun aria-pressed:text-bone">All</button>
+            <button type="button" data-filter-value="plan" aria-pressed="false" class="label border-b border-transparent pb-1 text-bone/50 transition hover:text-bone aria-pressed:border-sun aria-pressed:text-bone">Planning</button>
+            <button type="button" data-filter-value="build" aria-pressed="false" class="label border-b border-transparent pb-1 text-bone/50 transition hover:text-bone aria-pressed:border-sun aria-pressed:text-bone">Building</button>
+            <button type="button" data-filter-value="sell" aria-pressed="false" class="label border-b border-transparent pb-1 text-bone/50 transition hover:text-bone aria-pressed:border-sun aria-pressed:text-bone">Selling</button>
+            <button type="button" data-filter-value="help" aria-pressed="false" class="label border-b border-transparent pb-1 text-bone/50 transition hover:text-bone aria-pressed:border-sun aria-pressed:text-bone">Helping</button>
+        </div>
+      </div>
+      <ul class="mt-14 grid grid-cols-2 border-l border-t border-coal-line md:grid-cols-4" data-filter-grid>
+          <li data-category="plan" class="group flex items-center justify-between gap-4 border-b border-r border-coal-line px-6 py-8 transition hover:bg-pitch">
+            <span class="font-serif text-2xl">Google Calendar</span>
+            <i class="fa-solid fa-calendar-days text-bone/30 transition group-hover:text-leaf"></i>
+          </li>
+          <li data-category="build" class="group flex items-center justify-between gap-4 border-b border-r border-coal-line px-6 py-8 transition hover:bg-pitch">
+            <span class="font-serif text-2xl">GitHub</span>
+            <i class="fa-solid fa-code-branch text-bone/30 transition group-hover:text-leaf"></i>
+          </li>
+          <li data-category="build" class="group flex items-center justify-between gap-4 border-b border-r border-coal-line px-6 py-8 transition hover:bg-pitch">
+            <span class="font-serif text-2xl">Linear</span>
+            <i class="fa-solid fa-list-check text-bone/30 transition group-hover:text-leaf"></i>
+          </li>
+          <li data-category="sell" class="group flex items-center justify-between gap-4 border-b border-r border-coal-line px-6 py-8 transition hover:bg-pitch">
+            <span class="font-serif text-2xl">HubSpot</span>
+            <i class="fa-solid fa-handshake text-bone/30 transition group-hover:text-leaf"></i>
+          </li>
+          <li data-category="help" class="group flex items-center justify-between gap-4 border-b border-r border-coal-line px-6 py-8 transition hover:bg-pitch">
+            <span class="font-serif text-2xl">Zendesk</span>
+            <i class="fa-solid fa-life-ring text-bone/30 transition group-hover:text-leaf"></i>
+          </li>
+          <li data-category="plan" class="group flex items-center justify-between gap-4 border-b border-r border-coal-line px-6 py-8 transition hover:bg-pitch">
+            <span class="font-serif text-2xl">Notion</span>
+            <i class="fa-solid fa-note-sticky text-bone/30 transition group-hover:text-leaf"></i>
+          </li>
+          <li data-category="build" class="group flex items-center justify-between gap-4 border-b border-r border-coal-line px-6 py-8 transition hover:bg-pitch">
+            <span class="font-serif text-2xl">PagerDuty</span>
+            <i class="fa-solid fa-bell text-bone/30 transition group-hover:text-leaf"></i>
+          </li>
+          <li data-category="sell" class="group flex items-center justify-between gap-4 border-b border-r border-coal-line px-6 py-8 transition hover:bg-pitch">
+            <span class="font-serif text-2xl">Stripe</span>
+            <i class="fa-solid fa-credit-card text-bone/30 transition group-hover:text-leaf"></i>
+          </li>
+          <li data-category="help" class="group flex items-center justify-between gap-4 border-b border-r border-coal-line px-6 py-8 transition hover:bg-pitch">
+            <span class="font-serif text-2xl">Intercom</span>
+            <i class="fa-solid fa-comments text-bone/30 transition group-hover:text-leaf"></i>
+          </li>
+          <li data-category="plan" class="group flex items-center justify-between gap-4 border-b border-r border-coal-line px-6 py-8 transition hover:bg-pitch">
+            <span class="font-serif text-2xl">Slack</span>
+            <i class="fa-solid fa-hashtag text-bone/30 transition group-hover:text-leaf"></i>
+          </li>
+          <li data-category="build" class="group flex items-center justify-between gap-4 border-b border-r border-coal-line px-6 py-8 transition hover:bg-pitch">
+            <span class="font-serif text-2xl">Sentry</span>
+            <i class="fa-solid fa-bug text-bone/30 transition group-hover:text-leaf"></i>
+          </li>
+          <li data-category="sell" class="group flex items-center justify-between gap-4 border-b border-r border-coal-line px-6 py-8 transition hover:bg-pitch">
+            <span class="font-serif text-2xl">Salesforce</span>
+            <i class="fa-solid fa-cloud text-bone/30 transition group-hover:text-leaf"></i>
+          </li>
+      </ul>
+      <p class="mt-8 text-bone/60">Missing yours? <a href="contact.html" class="border-b border-bone/40 text-bone hover:border-sun">Ask us</a>, new connectors usually take a week.</p>
+    </section>
+    <!-- block:end integrations -->
+
+    <!-- block:start reviews -->
+    <section id="results" class="border-t border-coal-line">
+      <div class="mx-auto max-w-[1500px] px-6 py-24 md:px-14 md:py-32">
+        <p class="label text-bone/50">What changed for them</p>
+        <div class="mt-12 grid gap-0">
+            <figure class="grid gap-6 border-t border-coal-line py-10 last:border-b md:grid-cols-12 md:items-center" data-reveal>
+              <div class="md:col-span-4">
+                <p class="font-serif text-6xl font-light md:text-7xl">37 min</p>
+                <p class="label mt-2 text-sun">back every morning</p>
+              </div>
+              <blockquote class="font-serif text-2xl font-light leading-snug text-bone/90 md:col-span-5 md:text-3xl">“I used to open six tabs before I could say what my day was. Now I read one page on the tram and walk in knowing.”</blockquote>
+              <figcaption class="flex items-center gap-4 md:col-span-3 md:justify-end">
+                <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Ines Carvalho" class="h-12 w-12 rounded-full object-cover grayscale" loading="lazy">
+                <span><span class="block">Ines Carvalho</span><span class="block text-sm text-bone/50">Head of Product, Quietworks</span></span>
+              </figcaption>
+            </figure>
+            <figure class="grid gap-6 border-t border-coal-line py-10 last:border-b md:grid-cols-12 md:items-center" data-reveal>
+              <div class="md:col-span-4">
+                <p class="font-serif text-6xl font-light md:text-7xl">−62%</p>
+                <p class="label mt-2 text-sun">notifications opened</p>
+              </div>
+              <blockquote class="font-serif text-2xl font-light leading-snug text-bone/90 md:col-span-5 md:text-3xl">“We turned off most channel alerts the week we started. Nobody missed anything, because the brief had it.”</blockquote>
+              <figcaption class="flex items-center gap-4 md:col-span-3 md:justify-end">
+                <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Jonas Halvorsen" class="h-12 w-12 rounded-full object-cover grayscale" loading="lazy">
+                <span><span class="block">Jonas Halvorsen</span><span class="block text-sm text-bone/50">CTO, Halvorsen</span></span>
+              </figcaption>
+            </figure>
+            <figure class="grid gap-6 border-t border-coal-line py-10 last:border-b md:grid-cols-12 md:items-center" data-reveal>
+              <div class="md:col-span-4">
+                <p class="font-serif text-6xl font-light md:text-7xl">9 days</p>
+                <p class="label mt-2 text-sun">to 2, review wait</p>
+              </div>
+              <blockquote class="font-serif text-2xl font-light leading-snug text-bone/90 md:col-span-5 md:text-3xl">“The line that says who you are blocking is uncomfortable in exactly the right way.”</blockquote>
+              <figcaption class="flex items-center gap-4 md:col-span-3 md:justify-end">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4MHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Mei Tanaka" class="h-12 w-12 rounded-full object-cover grayscale" loading="lazy">
+                <span><span class="block">Mei Tanaka</span><span class="block text-sm text-bone/50">Engineering Lead, Ostrava Labs</span></span>
+              </figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+    <!-- block:end reviews -->
+
+    <!-- block:start cta -->
+    <section class="relative overflow-hidden bg-coal-soft">
+      <div class="plane-b absolute inset-0 bg-pitch" aria-hidden="true"></div>
+      <div class="beam beam-b absolute inset-0" aria-hidden="true"></div>
+      <div class="disc absolute left-[58%] top-[14%] h-20 w-20 md:left-[66%] md:top-[18%] md:h-36 md:w-36" aria-hidden="true"></div>
+      <div class="relative mx-auto flex max-w-[1500px] justify-start px-6 py-28 md:px-14 md:py-44">
+        <div class="w-full max-w-md pt-28 md:ml-[8%] md:pt-0">
+          <h2 class="font-serif text-5xl font-light uppercase leading-[0.95] tracking-wide md:text-6xl">Wake up<br>already<br>knowing.</h2>
+          <p class="mt-6 text-bone/70">Free for 14 days, for your whole team. Your first brief arrives tomorrow.</p>
+          <a href="pricing.html" class="label mt-9 inline-block rounded-full bg-bone px-8 py-4 font-normal text-coal hover:bg-sun hover:text-bone">Start free</a>
+        </div>
+      </div>
+    </section>
+    <!-- block:end cta -->
+  </main>
+
+  <!-- block:start footer -->
+  <footer class="border-t border-coal-line bg-pitch">
+    <div class="mx-auto max-w-[1500px] px-6 pt-16 md:px-14">
+      <div class="flex flex-wrap items-start justify-between gap-10">
+        <p class="max-w-xs text-bone/60">One calm page each morning, written overnight from the tools your team already uses.</p>
+        <nav class="flex flex-wrap gap-x-10 gap-y-4" aria-label="Footer">
+            <a href="index.html" class="label text-bone/60 hover:text-bone">Index</a>
+            <a href="features.html" class="label text-bone/60 hover:text-bone">Features</a>
+            <a href="pricing.html" class="label text-bone/60 hover:text-bone">Pricing</a>
+            <a href="contact.html" class="label text-bone/60 hover:text-bone">Contact</a>
+        </nav>
+        <a href="mailto:hello@solstra.example" class="label text-bone/60 hover:text-bone">hello@solstra.example</a>
+      </div>
+      <p class="mt-14 select-none font-serif text-[23vw] font-light leading-[0.8] tracking-tight text-bone/90 md:text-[20vw]" aria-hidden="true">Solstra</p>
+    </div>
+    <div class="border-t border-coal-line">
+      <div class="mx-auto flex max-w-[1500px] flex-wrap justify-between gap-3 px-6 py-6 text-xs text-bone/40 md:px-14">
+        <p>© 2026 Solstra Software BV, Amsterdam</p>
+        <p>Read-only by design. SOC 2 Type II.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    // Mobile menu
+    (() => {
+      const toggle = document.querySelector("[data-menu-toggle]");
+      const menu = document.getElementById("mobile-menu");
+      if (!toggle || !menu) return;
+      toggle.addEventListener("click", () => {
+        const open = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!open));
+        toggle.querySelector("[data-menu-label]").textContent = open ? "Menu" : "Close";
+        menu.hidden = open;
+        document.querySelector("header").classList.toggle("bg-pitch", !open);
+      });
+    })();
+
+    // Scroll story: marks the step in view
+    document.querySelectorAll("[data-scroll-story]").forEach((story) => {
+      const links = story.querySelectorAll("[data-story-link]");
+      if (!("IntersectionObserver" in window)) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          links.forEach((link) => link.toggleAttribute("aria-current", link.getAttribute("href") === `#${entry.target.id}`));
+        });
+      }, { rootMargin: "-45% 0px -50% 0px" });
+      story.querySelectorAll("[data-story-step]").forEach((step) => observer.observe(step));
+    });
+
+    // Brief composer
+    (() => {
+      const time = document.querySelector("[data-time]");
+      if (!time) return;
+      const sources = [...document.querySelectorAll("[data-source]")];
+      const sun = document.querySelector("[data-sun]");
+      const update = () => {
+        const minutes = Number(time.value);
+        const clock = `${Math.floor(minutes / 60)}:${String(minutes % 60).padStart(2, "0")}`;
+        const progress = (minutes - 300) / 300;
+        sun.style.left = 15 + progress * 55 + "%";
+        sun.style.top = 78 - Math.sin(progress * Math.PI * 0.75) * 50 + "%";
+        const active = sources.filter((button) => button.getAttribute("aria-pressed") === "true").map((button) => button.dataset.source);
+        document.querySelectorAll("[data-brief-item]").forEach((item) => { item.hidden = !active.includes(item.dataset.briefItem); });
+        document.querySelector("[data-brief-empty]").hidden = active.length > 0;
+        document.querySelector("[data-time-label]").textContent = clock;
+        document.querySelector("[data-time-echo]").textContent = clock;
+        const read = Math.max(1, Math.round(active.length * 0.6));
+        document.querySelector("[data-brief-summary]").textContent = active.length
+          ? `${active.length} ${active.length === 1 ? "source" : "sources"}, about ${read} ${read === 1 ? "minute" : "minutes"} to read, in your inbox at ${clock}.`
+          : `No sources picked, so there is nothing to send at ${clock}.`;
+      };
+      sources.forEach((button) => button.addEventListener("click", () => {
+        button.setAttribute("aria-pressed", String(button.getAttribute("aria-pressed") !== "true"));
+        update();
+      }));
+      time.addEventListener("input", update);
+      update();
+    })();
+
+    // Integration filter
+    (() => {
+      const group = document.querySelector("[data-filter]");
+      if (!group) return;
+      const items = document.querySelectorAll("[data-filter-grid] [data-category]");
+      group.querySelectorAll("[data-filter-value]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const value = button.dataset.filterValue;
+          group.querySelectorAll("[data-filter-value]").forEach((other) => other.setAttribute("aria-pressed", String(other === button)));
+          items.forEach((item) => { item.hidden = value !== "all" && item.dataset.category !== value; });
+        });
+      });
+    })();
+
+    // Scroll reveal
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=solstra&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

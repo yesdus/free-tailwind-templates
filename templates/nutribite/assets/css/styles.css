@@ -1,0 +1,17 @@
+body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        scroll-behavior: smooth;
+        background-color: #f4eddc;
+        color: #1a1a18;
+      }
+      .font-display {
+        font-family: "Fraunces", serif;
+      }
+      .meal-tab-active {
+        color: #6b7a52;
+        border-bottom: 2px solid #6b7a52;
+        font-weight: 700;
+      }
+      .meal-tab:not(.meal-tab-active) {
+        border-bottom: 2px solid transparent;
+      }

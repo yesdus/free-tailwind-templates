@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Kinetiq</title>
+  <meta name="description" content="Book a 30-minute intro call with Kinetiq: pick a day and time that suits you, or write to the Berlin office.">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Contact | Kinetiq">
+  <meta property="og:description" content="Book a 30-minute intro call with Kinetiq: pick a day and time that suits you, or write to the Berlin office.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Kinetiq template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Contact | Kinetiq">
+  <meta name="twitter:description" content="Book a 30-minute intro call with Kinetiq: pick a day and time that suits you, or write to the Berlin office.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Kinetiq template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { lime: { DEFAULT: '#e2f43a', soft: '#f3fbb8' }, coal: { DEFAULT: '#222528', soft: '#2c3035', line: '#3a3f45' } },
+          fontFamily: { sans: ['Inter', 'sans-serif'], display: ['"Big Shoulders Display"', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-coal font-sans text-white antialiased">
+  <header class="sticky top-0 z-40 bg-coal">
+    <nav class="mx-auto grid max-w-7xl grid-cols-[1fr_auto_1fr] items-center gap-4 px-5 py-4 md:px-10" aria-label="Main">
+      <ul class="hidden items-center gap-8 text-xs font-semibold uppercase tracking-wider lg:flex">
+          <li><a href="work.html"  class="transition hover:text-lime">Our work</a></li>
+          <li><a href="about.html"  class="transition hover:text-lime">About</a></li>
+          <li><a href="contact.html" aria-current="page" class="transition text-lime">Contact</a></li>
+      </ul>
+      <a href="index.html" class="col-start-1 font-display text-3xl font-black uppercase tracking-tight lg:col-start-2">Kinet<span class="italic text-lime">i</span>q</a>
+      <ul class="hidden items-center justify-end gap-8 text-xs font-semibold uppercase tracking-wider text-lime lg:flex">
+          <li><a href="startups.html"  class="inline-flex items-center gap-1.5 transition hover:text-white ">For startups<i class="fa-solid fa-arrow-up rotate-45 text-[10px]" aria-hidden="true"></i></a></li>
+          <li><a href="corporates.html"  class="inline-flex items-center gap-1.5 transition hover:text-white ">For corporates<i class="fa-solid fa-arrow-up rotate-45 text-[10px]" aria-hidden="true"></i></a></li>
+      </ul>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="col-start-3 grid h-10 w-10 place-items-center justify-self-end border-2 border-white/80 lg:hidden" aria-label="Open menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-coal-line px-5 pb-8 pt-4 lg:hidden">
+      <ul class="grid gap-1 font-display text-4xl font-extrabold uppercase">
+          <li><a href="index.html"  class="block py-1 hover:text-lime">Home</a></li>
+          <li><a href="work.html"  class="block py-1 hover:text-lime">Our work</a></li>
+          <li><a href="about.html"  class="block py-1 hover:text-lime">About</a></li>
+          <li><a href="contact.html" aria-current="page" class="block py-1 text-lime">Contact</a></li>
+          <li><a href="startups.html"  class="block py-1 hover:text-lime">For startups</a></li>
+          <li><a href="corporates.html"  class="block py-1 hover:text-lime">For corporates</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    
+  <section class="bg-white text-coal">
+    <div class="mx-auto max-w-7xl px-5 py-16 md:px-10 md:py-24">
+      <h1 class="font-display text-6xl font-extrabold uppercase leading-[0.92] md:text-8xl">Let's <span class="italic">talk</span></h1>
+      <p class="mt-6 max-w-md text-coal/70">Pick a slot for a 30-minute intro call. No slides, no sales pitch — just your problem and our honest take.</p>
+    </div>
+  </section>
+
+  <section class="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:px-10 md:py-24 lg:grid-cols-[1.4fr_1fr]">
+    <form class="grid gap-8" data-booking novalidate>
+      <fieldset>
+        <legend class="font-display text-2xl font-semibold">1. Choose a day</legend>
+        <div class="mt-4 grid grid-cols-5 gap-2">
+            <label class="cursor-pointer"><input type="radio" name="day" value="Mon 16" class="peer sr-only" ><span class="block border-2 border-coal-line py-3 text-center transition hover:border-lime peer-checked:border-lime peer-checked:bg-lime peer-checked:text-coal peer-focus-visible:ring-2 peer-focus-visible:ring-white"><span class="block text-xs uppercase">Mon</span><span class="font-display text-2xl font-extrabold">16</span></span></label>
+            <label class="cursor-pointer"><input type="radio" name="day" value="Tue 17" class="peer sr-only" checked><span class="block border-2 border-coal-line py-3 text-center transition hover:border-lime peer-checked:border-lime peer-checked:bg-lime peer-checked:text-coal peer-focus-visible:ring-2 peer-focus-visible:ring-white"><span class="block text-xs uppercase">Tue</span><span class="font-display text-2xl font-extrabold">17</span></span></label>
+            <label class="cursor-pointer"><input type="radio" name="day" value="Wed 18" class="peer sr-only" ><span class="block border-2 border-coal-line py-3 text-center transition hover:border-lime peer-checked:border-lime peer-checked:bg-lime peer-checked:text-coal peer-focus-visible:ring-2 peer-focus-visible:ring-white"><span class="block text-xs uppercase">Wed</span><span class="font-display text-2xl font-extrabold">18</span></span></label>
+            <label class="cursor-pointer"><input type="radio" name="day" value="Thu 19" class="peer sr-only" ><span class="block border-2 border-coal-line py-3 text-center transition hover:border-lime peer-checked:border-lime peer-checked:bg-lime peer-checked:text-coal peer-focus-visible:ring-2 peer-focus-visible:ring-white"><span class="block text-xs uppercase">Thu</span><span class="font-display text-2xl font-extrabold">19</span></span></label>
+            <label class="cursor-pointer"><input type="radio" name="day" value="Fri 20" class="peer sr-only" ><span class="block border-2 border-coal-line py-3 text-center transition hover:border-lime peer-checked:border-lime peer-checked:bg-lime peer-checked:text-coal peer-focus-visible:ring-2 peer-focus-visible:ring-white"><span class="block text-xs uppercase">Fri</span><span class="font-display text-2xl font-extrabold">20</span></span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="font-display text-2xl font-semibold">2. Pick a time (CET)</legend>
+        <div class="mt-4 flex flex-wrap gap-2">
+            <label class="cursor-pointer"><input type="radio" name="slot" value="09:30" class="peer sr-only" ><span class="block border-2 border-coal-line px-4 py-2 text-sm font-semibold transition hover:border-lime peer-checked:border-lime peer-checked:bg-lime peer-checked:text-coal peer-focus-visible:ring-2 peer-focus-visible:ring-white">09:30</span></label>
+            <label class="cursor-pointer"><input type="radio" name="slot" value="11:00" class="peer sr-only" ><span class="block border-2 border-coal-line px-4 py-2 text-sm font-semibold transition hover:border-lime peer-checked:border-lime peer-checked:bg-lime peer-checked:text-coal peer-focus-visible:ring-2 peer-focus-visible:ring-white">11:00</span></label>
+            <label class="cursor-pointer"><input type="radio" name="slot" value="13:30" class="peer sr-only" checked><span class="block border-2 border-coal-line px-4 py-2 text-sm font-semibold transition hover:border-lime peer-checked:border-lime peer-checked:bg-lime peer-checked:text-coal peer-focus-visible:ring-2 peer-focus-visible:ring-white">13:30</span></label>
+            <label class="cursor-pointer"><input type="radio" name="slot" value="15:00" class="peer sr-only" ><span class="block border-2 border-coal-line px-4 py-2 text-sm font-semibold transition hover:border-lime peer-checked:border-lime peer-checked:bg-lime peer-checked:text-coal peer-focus-visible:ring-2 peer-focus-visible:ring-white">15:00</span></label>
+            <label class="cursor-pointer"><input type="radio" name="slot" value="16:30" class="peer sr-only" ><span class="block border-2 border-coal-line px-4 py-2 text-sm font-semibold transition hover:border-lime peer-checked:border-lime peer-checked:bg-lime peer-checked:text-coal peer-focus-visible:ring-2 peer-focus-visible:ring-white">16:30</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="grid gap-4 sm:grid-cols-2">
+        <legend class="font-display text-2xl font-semibold">3. Your details</legend>
+        <label class="mt-4 grid gap-2 text-xs font-semibold uppercase tracking-wider text-white/70">Name<input name="name" required autocomplete="name" class="border-2 border-coal-line bg-coal-soft px-4 py-3 text-base normal-case tracking-normal text-white focus:border-lime focus:outline-none"></label>
+        <label class="grid gap-2 text-xs font-semibold uppercase tracking-wider text-white/70 sm:mt-4">Email<input name="email" type="email" required autocomplete="email" class="border-2 border-coal-line bg-coal-soft px-4 py-3 text-base normal-case tracking-normal text-white focus:border-lime focus:outline-none"></label>
+        <label class="grid gap-2 text-xs font-semibold uppercase tracking-wider text-white/70 sm:col-span-2">I'm a<select name="type" class="border-2 border-coal-line bg-coal-soft px-4 py-3 text-base normal-case tracking-normal text-white focus:border-lime focus:outline-none"><option>Startup founder</option><option>Corporate team</option><option>Investor</option><option>Something else</option></select></label>
+      </fieldset>
+      <div class="flex flex-wrap items-center gap-4">
+        <button type="submit" class="bg-lime px-8 py-4 text-xs font-bold uppercase tracking-wider text-coal transition hover:bg-white">Book the call</button>
+        <p class="text-sm text-white/70" data-form-status role="status"></p>
+      </div>
+    </form>
+    <aside class="grid content-start gap-4">
+      <div class="bg-lime p-7 text-coal">
+        <p class="text-xs font-bold uppercase tracking-wider">Write to us</p>
+        <a href="mailto:hello@kinetiq.studio" class="mt-2 block font-display text-3xl font-extrabold uppercase">hello@kinetiq.studio</a>
+      </div>
+      <div class="bg-coal-soft p-7">
+        <p class="text-xs font-bold uppercase tracking-wider text-lime">Berlin office</p>
+        <p class="mt-2 text-white/80">Karl-Marx-Allee 90<br>10243 Berlin, Germany</p>
+        <p class="mt-4 text-white/80">+49 30 5550 1840</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&h=480&q=75" alt="Open-plan office with people working at desks" class="neon aspect-[7/5] w-full object-cover" loading="lazy">
+    </aside>
+  </section>
+
+  <script>
+    document.querySelectorAll('[data-booking]').forEach((form) => {
+      const status = form.querySelector('[data-form-status]');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const missing = [...form.querySelectorAll('[required]')].find((input) => !input.checkValidity());
+        if (missing) { status.textContent = 'Please add your name and a valid email.'; missing.focus(); return; }
+        status.textContent = `Booked: ${form.elements.day.value} at ${form.elements.slot.value}. Check your inbox.`;
+      });
+    });
+  </script>
+
+  </main>
+
+  <footer class="bg-coal">
+    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:grid-cols-2 md:px-10 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <div>
+        <a href="index.html" class="font-display text-3xl font-black uppercase">Kinet<span class="italic text-lime">i</span>q</a>
+        <div class="mt-6 flex gap-2">
+          <a href="contact.html" class="grid h-8 w-8 place-items-center bg-lime text-sm text-coal" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="contact.html" class="grid h-8 w-8 place-items-center bg-lime text-sm text-coal" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div>
+        <h2 class="text-xs font-bold uppercase tracking-wider text-lime">Links</h2>
+        <ul class="mt-4 grid gap-2 text-sm text-white/70">
+            <li><a href="index.html" class="hover:text-lime">Home</a></li>
+            <li><a href="work.html" class="hover:text-lime">Our work</a></li>
+            <li><a href="about.html" class="hover:text-lime">About</a></li>
+            <li><a href="contact.html" class="hover:text-lime">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-xs font-bold uppercase tracking-wider text-lime">Programmes</h2>
+        <ul class="mt-4 grid gap-2 text-sm text-white/70">
+          <li><a href="startups.html" class="hover:text-lime">Founder sprint</a></li>
+          <li><a href="startups.html" class="hover:text-lime">Scale track</a></li>
+          <li><a href="corporates.html" class="hover:text-lime">Corporate labs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-xs font-bold uppercase tracking-wider text-lime">Contact</h2>
+        <ul class="mt-4 grid gap-2 text-sm text-white/70">
+          <li><a href="mailto:hello@kinetiq.studio" class="hover:text-lime">hello@kinetiq.studio</a></li>
+          <li>Karl-Marx-Allee 90, Berlin</li>
+          <li>+49 30 5550 1840</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mx-auto flex max-w-7xl flex-wrap justify-between gap-4 border-t border-coal-line px-5 py-6 text-xs text-white/50 md:px-10">
+      <p>&copy; 2026 Kinetiq. All rights reserved.</p>
+      <p><a href="contact.html" class="hover:text-lime">Privacy</a> · <a href="contact.html" class="hover:text-lime">Imprint</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const watchMotion = !reducedMotion && !navigator.webdriver && 'IntersectionObserver' in window;
+
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-draw]').forEach((root) => {
+      if (!watchMotion) return;
+      root.querySelectorAll('[data-draw-path]').forEach((path, index) => {
+        const length = path.getTotalLength();
+        path.style.strokeDasharray = length;
+        path.style.strokeDashoffset = length;
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          path.style.transition = `stroke-dashoffset .7s ease-out ${index * 150}ms`;
+          path.style.strokeDashoffset = 0;
+        }));
+      });
+    });
+
+    document.querySelectorAll('[data-team]').forEach((root) => {
+      const chips = [...root.querySelectorAll('[data-filter]')];
+      chips.forEach((chip) => chip.addEventListener('click', () => {
+        chips.forEach((other) => other.setAttribute('aria-pressed', String(other === chip)));
+        root.querySelectorAll('[data-category]').forEach((item) => { item.hidden = chip.dataset.filter !== 'all' && item.dataset.category !== chip.dataset.filter; });
+      }));
+    });
+
+    document.querySelectorAll('[data-newsletter]').forEach((form) => {
+      const status = form.parentElement.querySelector('[data-form-status]');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = form.elements.email;
+        if (!email.checkValidity()) { status.textContent = 'Please enter a valid email address.'; email.focus(); return; }
+        status.textContent = "You're on the list — see you next month.";
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-count]').forEach((el) => {
+      const stat = el.closest('[data-stat]');
+      const target = Number(el.dataset.count);
+      const decimals = el.dataset.count.includes('.') ? 1 : 0;
+      const format = (value) => (decimals ? value.toFixed(1) : Math.round(value).toLocaleString('en-US'));
+      if (!watchMotion) { stat.classList.replace('text-white/40', 'text-lime'); return; }
+      const observer = new IntersectionObserver(([entry]) => {
+        if (!entry.isIntersecting) return;
+        observer.disconnect();
+        const start = performance.now();
+        const tick = (now) => { const t = Math.min(1, (now - start) / 700); el.textContent = format(target * t); if (t < 1) requestAnimationFrame(tick); else stat.classList.replace('text-white/40', 'text-lime'); };
+        requestAnimationFrame(tick);
+      });
+      observer.observe(el);
+    });
+
+    if (watchMotion) {
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+      }), { threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach((el) => observer.observe(el));
+    }
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=kinetiq&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

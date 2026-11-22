@@ -1,0 +1,14 @@
+@view-transition { navigation: auto; }
+    html { scroll-behavior: smooth; }
+    [hidden] { display: none !important; }
+    .neon { background: linear-gradient(180deg, #ff2d78 0%, #ff5a1f 45%, #ffb21a 100%); }
+    .neon-text { background: linear-gradient(90deg, #ffb21a, #ff5a1f 45%, #ff2d78); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .cell { aspect-ratio: 1; background: #232329; transition: background-color .3s ease, box-shadow .3s ease; }
+    .cell[data-kind="yours"] { background: #ffb21a; box-shadow: 0 0 12px rgba(255, 178, 26, .45); }
+    .cell[data-kind="tax"] { background: #ff2d78; box-shadow: 0 0 12px rgba(255, 45, 120, .45); }
+    .cell[data-kind="tips"] { background: #7a3cff; box-shadow: 0 0 12px rgba(122, 60, 255, .45); }
+    .cell[data-kind="fee"] { background: #1fd6e6; box-shadow: 0 0 12px rgba(31, 214, 230, .45); }
+    input[type=range] { accent-color: #ff5a1f; }
+    .reveal-ready [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; transition-delay: var(--reveal-delay, 0ms); }
+    .reveal-ready [data-reveal].is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .cell { transition: none; } }

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velisse | Tailwind CSS Health & Fitness Template</title>
+  <meta name="description" content="Velisse is an elegant Tailwind CSS beauty salon template with an editorial portrait hero, treatment cards, a tabbed price list, stylist profiles, client reviews and online booking.">
+  <meta name="keywords" content="Velisse, Tailwind CSS template, HTML website template, beauty salon template, hair salon, makeup studio, skincare clinic, nail studio, spa website">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Velisse | Tailwind CSS Health & Fitness Template">
+  <meta property="og:description" content="An elegant Tailwind CSS beauty salon template with an editorial portrait hero, treatment cards, a tabbed price list and online booking.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Velisse template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Velisse | Tailwind CSS Health & Fitness Template">
+  <meta name="twitter:description" content="An elegant Tailwind CSS beauty salon template with an editorial portrait hero, treatment cards, a tabbed price list and online booking.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Velisse template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { gold: '#d4a72c', ink: '#1d1d1f', smoke: '#7a7a7d', mist: '#eceef0', pearl: '#f6f6f4' },
+          fontFamily: { serif: ['"Bodoni Moda"', 'serif'], sans: ['Urbanist', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-pearl font-sans text-ink antialiased">
+  <!-- block:start navbar -->
+  <header class="absolute inset-x-0 top-0 z-40">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-6 md:px-10" aria-label="Main">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="grid h-11 w-11 place-items-center rounded-full border-2 border-ink font-serif text-lg italic">V</span>
+        <span class="text-xl font-medium tracking-[0.3em]">VLS</span>
+      </a>
+      <ul class="hidden items-center gap-12 text-lg lg:flex">
+          <li><a href="index.html" aria-current="page" class="font-semibold text-ink">Home</a></li>
+          <li><a href="team.html"  class="text-ink/80 hover:text-gold">Our Team</a></li>
+          <li><a href="services.html"  class="text-ink/80 hover:text-gold">Services</a></li>
+          <li><a href="prices.html"  class="text-ink/80 hover:text-gold">Prices</a></li>
+          <li><a href="contact.html"  class="text-ink/80 hover:text-gold">Contact</a></li>
+      </ul>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="grid h-11 w-11 place-items-center border border-ink/30 bg-white/70 lg:hidden"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+    </nav>
+    <div id="mobile-menu" class="hidden px-5 lg:hidden">
+      <ul class="grid gap-1 bg-white/95 p-3 text-lg shadow-lg">
+          <li><a href="index.html" aria-current="page" class="block px-4 py-3 bg-mist font-semibold">Home</a></li>
+          <li><a href="team.html"  class="block px-4 py-3 text-ink/80">Our Team</a></li>
+          <li><a href="services.html"  class="block px-4 py-3 text-ink/80">Services</a></li>
+          <li><a href="prices.html"  class="block px-4 py-3 text-ink/80">Prices</a></li>
+          <li><a href="contact.html"  class="block px-4 py-3 text-ink/80">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section id="intro" class="hero-glow relative overflow-hidden">
+    <div class="mx-auto grid min-h-[100svh] max-w-7xl items-center gap-8 px-5 pb-16 pt-28 md:px-10 lg:grid-cols-2 lg:pb-0 lg:pt-24">
+      <div class="relative order-2 -mx-5 self-end md:-mx-10 lg:order-1 lg:-ml-10 lg:mr-0">
+        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1100&h=1200&q=80" alt="Portrait of a woman with natural curls and glowing skin" class="aspect-[11/12] w-full object-cover [mask-image:linear-gradient(to_top,transparent,black_18%)] lg:aspect-auto lg:h-[88svh]">
+        <ul class="absolute bottom-6 left-5 flex gap-7 font-serif text-lg md:left-10" aria-label="Social media">
+          <li><a href="https://twitter.com" class="hover:text-gold">Tw</a></li>
+          <li><a href="https://instagram.com" class="hover:text-gold">Ig</a></li>
+          <li><a href="https://facebook.com" class="hover:text-gold">Fb</a></li>
+        </ul>
+      </div>
+      <div class="order-1 lg:order-2">
+        <h1 data-reveal class="font-serif text-[clamp(3rem,6.5vw,5.75rem)] font-normal leading-[1.05] tracking-[0.08em] text-smoke">Velisse Beauty Studio</h1>
+        <p data-reveal style="--reveal-delay:120ms" class="mt-10 max-w-xl text-xl leading-snug">Velisse is built around unhurried, one-to-one care and an experience you'll remember. Your privacy and comfort come first in every treatment.</p>
+        <div data-reveal style="--reveal-delay:220ms" class="mt-12 flex flex-wrap gap-6">
+          <a href="contact.html" class="inline-flex min-w-[14rem] items-center justify-center bg-gold px-8 py-4 text-lg font-semibold text-white transition hover:bg-ink">Book online</a>
+          <a href="contact.html#call" class="inline-flex min-w-[14rem] items-center justify-center border border-smoke/60 px-8 py-4 text-lg font-semibold text-smoke transition hover:border-ink hover:text-ink">Request a call</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start about -->
+  <section id="about" class="bg-pearl">
+    <div class="mx-auto grid max-w-7xl gap-12 px-5 py-24 md:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-center">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold">The studio</p>
+        <h2 data-reveal class="mt-4 font-serif text-4xl leading-tight md:text-5xl">A quiet room, an expert hand and time that's all yours.</h2>
+        <p data-reveal class="mt-6 text-lg leading-relaxed text-ink/75">We see a handful of guests a day, so no one is rushed. Every visit starts with a short consultation, and every product we use is chosen for your skin, hair and routine.</p>
+        <dl class="mt-10 grid grid-cols-3 gap-6 border-t border-ink/10 pt-8">
+            <div class="flex flex-col"><dt class="order-2 mt-1 text-sm text-smoke">Years of craft</dt><dd class="order-1 font-serif text-4xl">12</dd></div>
+            <div class="flex flex-col"><dt class="order-2 mt-1 text-sm text-smoke">Specialists</dt><dd class="order-1 font-serif text-4xl">9</dd></div>
+            <div class="flex flex-col"><dt class="order-2 mt-1 text-sm text-smoke">Guest rating</dt><dd class="order-1 font-serif text-4xl">4.9</dd></div>
+        </dl>
+      </div>
+      <div class="grid grid-cols-[1fr_0.8fr] gap-4">
+        <img data-reveal src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&h=1000&q=80" alt="Bright salon interior with styling chairs and mirrors" class="aspect-[4/5] w-full object-cover">
+        <img data-reveal style="--reveal-delay:120ms" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=700&h=900&q=80" alt="Therapist pouring a drop of facial oil into a guest's hands" class="mt-16 aspect-[7/9] w-full object-cover">
+      </div>
+    </div>
+  </section>
+  <!-- block:end about -->
+
+  <!-- block:start features -->
+  <section id="services" class="bg-white">
+    <div class="mx-auto max-w-7xl px-5 py-24 md:px-10">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Treatments</p>
+          <h2 data-reveal class="mt-4 font-serif text-4xl md:text-5xl">What we do best</h2>
+        </div>
+        <a href="services.html" class="inline-flex items-center gap-3 border-b border-ink pb-1 font-semibold hover:border-gold hover:text-gold">All services <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a>
+      </div>
+      <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <a href="services.html" data-reveal style="--reveal-delay: 0ms" class="group block">
+            <span class="block overflow-hidden"><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&h=900&q=80" alt="Stylist blow-drying a guest&#39;s hair" class="aspect-[8/9] w-full object-cover transition duration-700 group-hover:scale-105"></span>
+            <span class="mt-5 flex items-baseline justify-between gap-4">
+              <span class="font-serif text-2xl">Hair styling</span>
+              <i class="fa-solid fa-arrow-right text-sm text-gold transition group-hover:translate-x-1" aria-hidden="true"></i>
+            </span>
+            <span class="mt-2 block text-ink/70">Cuts, colour and updos shaped to your face and lifestyle.</span>
+          </a>
+          <a href="signature-facial.html" data-reveal style="--reveal-delay: 90ms" class="group block">
+            <span class="block overflow-hidden"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&h=900&q=80" alt="Guest relaxing during a facial with a cream mask" class="aspect-[8/9] w-full object-cover transition duration-700 group-hover:scale-105"></span>
+            <span class="mt-5 flex items-baseline justify-between gap-4">
+              <span class="font-serif text-2xl">Signature facial</span>
+              <i class="fa-solid fa-arrow-right text-sm text-gold transition group-hover:translate-x-1" aria-hidden="true"></i>
+            </span>
+            <span class="mt-2 block text-ink/70">A deep-cleansing ritual that leaves skin calm and luminous.</span>
+          </a>
+          <a href="bridal-styling.html" data-reveal style="--reveal-delay: 180ms" class="group block">
+            <span class="block overflow-hidden"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=800&h=900&q=80" alt="Makeup artist applying lipstick to a bride" class="aspect-[8/9] w-full object-cover transition duration-700 group-hover:scale-105"></span>
+            <span class="mt-5 flex items-baseline justify-between gap-4">
+              <span class="font-serif text-2xl">Bridal styling</span>
+              <i class="fa-solid fa-arrow-right text-sm text-gold transition group-hover:translate-x-1" aria-hidden="true"></i>
+            </span>
+            <span class="mt-2 block text-ink/70">Hair and makeup trials and wedding-day styling at our studio or yours.</span>
+          </a>
+          <a href="services.html" data-reveal style="--reveal-delay: 0ms" class="group block">
+            <span class="block overflow-hidden"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&h=900&q=80" alt="Hands with glossy black and tortoiseshell nails" class="aspect-[8/9] w-full object-cover transition duration-700 group-hover:scale-105"></span>
+            <span class="mt-5 flex items-baseline justify-between gap-4">
+              <span class="font-serif text-2xl">Nail care</span>
+              <i class="fa-solid fa-arrow-right text-sm text-gold transition group-hover:translate-x-1" aria-hidden="true"></i>
+            </span>
+            <span class="mt-2 block text-ink/70">Long-lasting manicures and nail art in a calm, clean room.</span>
+          </a>
+          <a href="services.html" data-reveal style="--reveal-delay: 90ms" class="group block">
+            <span class="block overflow-hidden"><img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=800&h=900&q=80" alt="Feet resting in a bowl with fresh flowers" class="aspect-[8/9] w-full object-cover transition duration-700 group-hover:scale-105"></span>
+            <span class="mt-5 flex items-baseline justify-between gap-4">
+              <span class="font-serif text-2xl">Body rituals</span>
+              <i class="fa-solid fa-arrow-right text-sm text-gold transition group-hover:translate-x-1" aria-hidden="true"></i>
+            </span>
+            <span class="mt-2 block text-ink/70">Scrubs, wraps and foot treatments to reset tired skin.</span>
+          </a>
+          <a href="services.html" data-reveal style="--reveal-delay: 180ms" class="group block">
+            <span class="block overflow-hidden"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=800&h=900&q=80" alt="Makeup brushes arranged in a holder" class="aspect-[8/9] w-full object-cover transition duration-700 group-hover:scale-105"></span>
+            <span class="mt-5 flex items-baseline justify-between gap-4">
+              <span class="font-serif text-2xl">Makeup lessons</span>
+              <i class="fa-solid fa-arrow-right text-sm text-gold transition group-hover:translate-x-1" aria-hidden="true"></i>
+            </span>
+            <span class="mt-2 block text-ink/70">One-to-one sessions to master your everyday look.</span>
+          </a>
+      </div>
+    </div>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start pricing -->
+  <section id="prices" class="bg-mist">
+    <div class="mx-auto max-w-5xl px-5 py-24 md:px-10">
+      <div class="text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Price list</p>
+        <h2 data-reveal class="mt-4 font-serif text-4xl md:text-5xl">Clear prices, no surprises</h2>
+      </div>
+      <div data-tabs class="mt-12">
+        <div role="tablist" aria-label="Price categories" class="flex flex-wrap justify-center gap-2">
+            <button type="button" role="tab" id="price-tab-0" aria-controls="price-panel-0" aria-selected="true" tabindex="0" class="border border-ink/20 px-6 py-2.5 font-semibold transition aria-selected:border-ink aria-selected:bg-ink aria-selected:text-white">Hair</button>
+            <button type="button" role="tab" id="price-tab-1" aria-controls="price-panel-1" aria-selected="false" tabindex="-1" class="border border-ink/20 px-6 py-2.5 font-semibold transition aria-selected:border-ink aria-selected:bg-ink aria-selected:text-white">Face</button>
+            <button type="button" role="tab" id="price-tab-2" aria-controls="price-panel-2" aria-selected="false" tabindex="-1" class="border border-ink/20 px-6 py-2.5 font-semibold transition aria-selected:border-ink aria-selected:bg-ink aria-selected:text-white">Nails</button>
+            <button type="button" role="tab" id="price-tab-3" aria-controls="price-panel-3" aria-selected="false" tabindex="-1" class="border border-ink/20 px-6 py-2.5 font-semibold transition aria-selected:border-ink aria-selected:bg-ink aria-selected:text-white">Body</button>
+        </div>
+          <div role="tabpanel" id="price-panel-0" aria-labelledby="price-tab-0" class="mx-auto mt-10 max-w-2xl bg-white p-8 md:p-12 ">
+            <ul class="space-y-5">
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Women&#39;s cut &amp; finish</span><span class="bg-white pl-3 font-serif text-xl">$85</span></li>
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Men&#39;s cut</span><span class="bg-white pl-3 font-serif text-xl">$55</span></li>
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Full colour</span><span class="bg-white pl-3 font-serif text-xl">$140</span></li>
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Balayage</span><span class="bg-white pl-3 font-serif text-xl">$220</span></li>
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Blow-dry</span><span class="bg-white pl-3 font-serif text-xl">$45</span></li>
+            </ul>
+          </div>
+          <div role="tabpanel" id="price-panel-1" aria-labelledby="price-tab-1" class="mx-auto mt-10 max-w-2xl bg-white p-8 md:p-12 hidden">
+            <ul class="space-y-5">
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Signature facial</span><span class="bg-white pl-3 font-serif text-xl">$120</span></li>
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Express glow</span><span class="bg-white pl-3 font-serif text-xl">$70</span></li>
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Brow shaping</span><span class="bg-white pl-3 font-serif text-xl">$30</span></li>
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Lash lift</span><span class="bg-white pl-3 font-serif text-xl">$75</span></li>
+            </ul>
+          </div>
+          <div role="tabpanel" id="price-panel-2" aria-labelledby="price-tab-2" class="mx-auto mt-10 max-w-2xl bg-white p-8 md:p-12 hidden">
+            <ul class="space-y-5">
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Gel manicure</span><span class="bg-white pl-3 font-serif text-xl">$50</span></li>
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Classic pedicure</span><span class="bg-white pl-3 font-serif text-xl">$55</span></li>
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Nail art (from)</span><span class="bg-white pl-3 font-serif text-xl">$15</span></li>
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Removal</span><span class="bg-white pl-3 font-serif text-xl">$15</span></li>
+            </ul>
+          </div>
+          <div role="tabpanel" id="price-panel-3" aria-labelledby="price-tab-3" class="mx-auto mt-10 max-w-2xl bg-white p-8 md:p-12 hidden">
+            <ul class="space-y-5">
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Body scrub</span><span class="bg-white pl-3 font-serif text-xl">$90</span></li>
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Detox wrap</span><span class="bg-white pl-3 font-serif text-xl">$110</span></li>
+                <li class="price-row flex items-baseline justify-between gap-3 text-lg"><span class="bg-white pr-3">Foot ritual</span><span class="bg-white pl-3 font-serif text-xl">$60</span></li>
+            </ul>
+          </div>
+      </div>
+      <p class="mt-8 text-center text-smoke">Full menu and packages on the <a href="prices.html" class="font-semibold text-ink underline decoration-gold underline-offset-4">prices page</a>.</p>
+    </div>
+  </section>
+  <!-- block:end pricing -->
+
+  <!-- block:start team -->
+  <section id="team" class="bg-pearl">
+    <div class="mx-auto max-w-7xl px-5 py-24 md:px-10">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <h2 data-reveal class="font-serif text-4xl md:text-5xl">The hands behind the glow</h2>
+        <a href="team.html" class="inline-flex items-center gap-3 border-b border-ink pb-1 font-semibold hover:border-gold hover:text-gold">Meet the team <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a>
+      </div>
+      <div class="mt-12 grid grid-cols-2 gap-6 lg:grid-cols-4">
+          <figure data-reveal style="--reveal-delay: 0ms">
+            <img src="https://images.unsplash.com/photo-1674932668403-33398b81c92f?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDZ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Amara Diallo" class="aspect-[4/5] w-full object-cover grayscale transition hover:grayscale-0">
+            <figcaption class="mt-4"><span class="block font-serif text-xl">Amara Diallo</span><span class="text-sm text-smoke">Founder &amp; colourist</span></figcaption>
+          </figure>
+          <figure data-reveal style="--reveal-delay: 80ms">
+            <img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Léa Martin" class="aspect-[4/5] w-full object-cover grayscale transition hover:grayscale-0">
+            <figcaption class="mt-4"><span class="block font-serif text-xl">Léa Martin</span><span class="text-sm text-smoke">Skin therapist</span></figcaption>
+          </figure>
+          <figure data-reveal style="--reveal-delay: 160ms">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4MHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Sofia Rossi" class="aspect-[4/5] w-full object-cover grayscale transition hover:grayscale-0">
+            <figcaption class="mt-4"><span class="block font-serif text-xl">Sofia Rossi</span><span class="text-sm text-smoke">Makeup artist</span></figcaption>
+          </figure>
+          <figure data-reveal style="--reveal-delay: 240ms">
+            <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Noah Kim" class="aspect-[4/5] w-full object-cover grayscale transition hover:grayscale-0">
+            <figcaption class="mt-4"><span class="block font-serif text-xl">Noah Kim</span><span class="text-sm text-smoke">Senior stylist</span></figcaption>
+          </figure>
+      </div>
+    </div>
+  </section>
+  <!-- block:end team -->
+
+  <!-- block:start reviews -->
+  <section id="reviews" class="bg-white">
+    <div class="mx-auto max-w-4xl px-5 py-24 text-center md:px-10" data-carousel>
+      <p class="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Kind words</p>
+      <div class="mt-8 overflow-hidden">
+        <div data-carousel-track class="flex transition-transform duration-500">
+            <figure class="w-full shrink-0 px-2">
+              <blockquote class="font-serif text-2xl leading-snug md:text-3xl">“I left feeling looked after, not processed. The facial was the calmest hour of my month.”</blockquote>
+              <figcaption class="mt-8"><span class="font-semibold">Grace O.</span> <span class="text-smoke">· Signature facial</span></figcaption>
+            </figure>
+            <figure class="w-full shrink-0 px-2">
+              <blockquote class="font-serif text-2xl leading-snug md:text-3xl">“Amara finally got my colour right after years of brassy results. I&#39;m never going anywhere else.”</blockquote>
+              <figcaption class="mt-8"><span class="font-semibold">Jules P.</span> <span class="text-smoke">· Full colour</span></figcaption>
+            </figure>
+            <figure class="w-full shrink-0 px-2">
+              <blockquote class="font-serif text-2xl leading-snug md:text-3xl">“Sofia did my bridal makeup and it lasted through tears, dancing and a rainy photo shoot.”</blockquote>
+              <figcaption class="mt-8"><span class="font-semibold">Hannah L.</span> <span class="text-smoke">· Bridal styling</span></figcaption>
+            </figure>
+        </div>
+      </div>
+      <div class="mt-10 flex items-center justify-center gap-6">
+        <button type="button" data-carousel-prev aria-label="Previous review" class="grid h-11 w-11 place-items-center border border-ink/30 transition hover:border-gold hover:text-gold"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+        <div data-carousel-dots class="flex gap-2 text-gold"></div>
+        <button type="button" data-carousel-next aria-label="Next review" class="grid h-11 w-11 place-items-center border border-ink/30 transition hover:border-gold hover:text-gold"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </section>
+  <!-- block:end reviews -->
+
+  <!-- block:start cta -->
+  <section class="bg-ink text-white">
+    <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-5 py-20 md:flex-row md:items-center md:px-10">
+      <div>
+        <h2 data-reveal class="font-serif text-4xl md:text-5xl">Your chair is waiting.</h2>
+        <p class="mt-3 max-w-lg text-white/70">Book online in under a minute, or ask us to call you back to plan a longer visit.</p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a href="contact.html" class="inline-flex min-w-[12rem] items-center justify-center bg-gold px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-ink">Book online</a>
+        <a href="contact.html#call" class="inline-flex min-w-[12rem] items-center justify-center border border-white/40 px-8 py-4 font-semibold transition hover:border-white">Request a call</a>
+      </div>
+    </div>
+  </section>
+  <!-- block:end cta -->
+
+  <!-- block:start footer -->
+  <footer class="bg-pearl">
+    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 md:grid-cols-4 md:px-10">
+      <div class="md:col-span-2">
+        <a href="index.html" class="flex items-center gap-3">
+          <span class="grid h-11 w-11 place-items-center rounded-full border-2 border-ink font-serif text-lg italic">V</span>
+          <span class="text-xl font-medium tracking-[0.3em]">VLS</span>
+        </a>
+        <p class="mt-5 max-w-sm text-ink/70">Hair, skin, nails and makeup in a calm studio where every guest gets our full attention.</p>
+      </div>
+      <div>
+        <h2 class="font-serif text-xl">Visit</h2>
+        <address class="mt-4 not-italic leading-relaxed text-ink/70">48 Rue des Lilas<br>Montréal, QC H2T 1S6</address>
+        <a href="tel:+15145550163" class="mt-2 block text-ink/70 hover:text-gold">+1 (514) 555-0163</a>
+      </div>
+      <div>
+        <h2 class="font-serif text-xl">Hours</h2>
+        <p class="mt-4 leading-relaxed text-ink/70">Tue–Fri 10:00–20:00<br>Sat 9:00–17:00<br>Sun–Mon closed</p>
+      </div>
+    </div>
+    <div class="border-t border-ink/10">
+      <div class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-sm text-smoke md:flex-row md:items-center md:justify-between md:px-10">
+        <p>&copy; <span data-current-year>2026</span> Velisse Beauty Studio</p>
+        <ul class="flex gap-6 font-serif text-base text-ink">
+          <li><a href="https://twitter.com" class="hover:text-gold">Tw</a></li>
+          <li><a href="https://instagram.com" class="hover:text-gold">Ig</a></li>
+          <li><a href="https://facebook.com" class="hover:text-gold">Fb</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      if (!menu) return;
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-tabs]').forEach((group) => {
+      const tabs = [...group.querySelectorAll('[role="tab"]')];
+      const select = (tab) => {
+        tabs.forEach((other) => {
+          const active = other === tab;
+          other.setAttribute('aria-selected', String(active));
+          other.tabIndex = active ? 0 : -1;
+          document.getElementById(other.getAttribute('aria-controls')).classList.toggle('hidden', !active);
+        });
+      };
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => select(tab));
+        tab.addEventListener('keydown', (event) => {
+          if (!['ArrowRight', 'ArrowLeft'].includes(event.key)) return;
+          const next = tabs[(index + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length];
+          select(next);
+          next.focus();
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+      const track = carousel.querySelector('[data-carousel-track]');
+      if (!track) return;
+      const slides = [...track.children];
+      const dots = carousel.querySelector('[data-carousel-dots]');
+      let index = 0;
+      const perView = () => Math.max(1, Math.round(track.clientWidth / slides[0].clientWidth));
+      const maxIndex = () => Math.max(0, slides.length - perView());
+      const render = () => {
+        track.style.transform = `translateX(-${index * slides[0].clientWidth}px)`;
+        dots?.querySelectorAll('button').forEach((dot, i) => dot.setAttribute('aria-current', String(i === index)));
+      };
+      const go = (next) => { const max = maxIndex(); index = next > max ? 0 : next < 0 ? max : next; render(); };
+      const buildDots = () => {
+        if (!dots) return;
+        dots.innerHTML = '';
+        for (let i = 0; i <= maxIndex(); i++) {
+          const dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'h-2 w-2 rounded-full bg-current opacity-30 aria-[current=true]:opacity-100';
+          dot.setAttribute('aria-label', `Go to review ${i + 1}`);
+          dot.addEventListener('click', () => go(i));
+          dots.append(dot);
+        }
+      };
+      carousel.querySelector('[data-carousel-prev]')?.addEventListener('click', () => go(index - 1));
+      carousel.querySelector('[data-carousel-next]')?.addEventListener('click', () => go(index + 1));
+      addEventListener('resize', () => { buildDots(); go(Math.min(index, maxIndex())); });
+      buildDots();
+      render();
+    });
+
+    document.querySelectorAll('[data-accordion]').forEach((accordion) => {
+      const triggers = accordion.querySelectorAll('[data-accordion-trigger]');
+      triggers.forEach((trigger) => {
+        trigger.addEventListener('click', () => {
+          const willOpen = trigger.getAttribute('aria-expanded') !== 'true';
+          triggers.forEach((other) => {
+            const open = other === trigger && willOpen;
+            other.setAttribute('aria-expanded', String(open));
+            document.getElementById(other.getAttribute('aria-controls')).classList.toggle('hidden', !open);
+            other.querySelector('[data-accordion-icon]')?.classList.toggle('rotate-45', open);
+          });
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-contact-form]').forEach((form) => {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const status = form.querySelector('[data-form-status]');
+        if (!form.checkValidity()) {
+          status.textContent = form.dataset.error || 'Please complete the required fields.';
+          return;
+        }
+        status.textContent = form.dataset.success || 'Thanks! We will be in touch soon.';
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    (() => {
+      const items = document.querySelectorAll('[data-reveal]');
+      const skip = navigator.webdriver || !('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=velisse&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

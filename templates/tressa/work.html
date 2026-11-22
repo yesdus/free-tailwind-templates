@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work | Tressa Studio</title>
+  <meta name="description" content="Cuts, colour and styling from the Tressa Studio team in Chicago.">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Work | Tressa Studio">
+  <meta property="og:description" content="Cuts, colour and styling from the Tressa Studio team in Chicago.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Tressa template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Work | Tressa Studio">
+  <meta name="twitter:description" content="Cuts, colour and styling from the Tressa Studio team in Chicago.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Tressa template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink: '#111827', mist: '#f8f9fb', line: '#e5e7eb' },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white font-sans text-ink antialiased">
+  <header class="sticky top-0 z-40 border-b border-line/70 bg-white/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-5 py-5 md:px-8" aria-label="Main">
+      <div class="flex items-center gap-12">
+        <a href="index.html" class="text-xl font-medium tracking-tight">Tressa Studio</a>
+        <ul class="hidden items-center gap-10 text-[15px] text-ink/70 lg:flex">
+            <li><a href="services.html"  class="hover:text-ink">Services</a></li>
+            <li><a href="work.html" aria-current="page" class="font-medium text-ink underline underline-offset-8">Work</a></li>
+            <li><a href="team.html"  class="hover:text-ink">Team</a></li>
+            <li><a href="contact.html"  class="hover:text-ink">Contact</a></li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" class="hidden border border-ink px-5 py-2.5 text-[15px] font-medium transition hover:bg-ink hover:text-white sm:inline-block">Book Appointment</a>
+        <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="grid h-11 w-11 place-items-center border border-line lg:hidden"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-line px-5 pb-6 lg:hidden">
+      <ul class="grid gap-1 pt-3 text-lg">
+          <li><a href="index.html"  class="block px-2 py-2 text-ink/70">Home</a></li>
+          <li><a href="services.html"  class="block px-2 py-2 text-ink/70">Services</a></li>
+          <li><a href="work.html" aria-current="page" class="block px-2 py-2 bg-mist font-medium">Work</a></li>
+          <li><a href="team.html"  class="block px-2 py-2 text-ink/70">Team</a></li>
+          <li><a href="pricing.html"  class="block px-2 py-2 text-ink/70">Pricing</a></li>
+          <li><a href="contact.html"  class="block px-2 py-2 text-ink/70">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    
+
+  <section class="bg-mist">
+    <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
+      <p class="text-sm uppercase tracking-[0.15em] text-ink/60">Our work</p>
+      <h1 data-reveal class="mt-5 max-w-3xl text-5xl font-medium leading-[1.08] tracking-tight md:text-6xl">Recent Looks from the Chair</h1>
+      <p data-reveal class="mt-6 max-w-xl text-lg leading-relaxed text-ink/70">A few favourite results from the last months, photographed in natural light.</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-5 py-20 md:px-8">
+    <div data-filter-group class="flex flex-wrap gap-2" role="group" aria-label="Filter work">
+        <button type="button" data-filter="all" aria-pressed="true" class="border border-ink px-5 py-2 text-sm font-medium transition hover:bg-ink hover:text-white bg-ink text-white">All</button>
+        <button type="button" data-filter="cut" aria-pressed="false" class="border border-ink px-5 py-2 text-sm font-medium transition hover:bg-ink hover:text-white ">Cuts</button>
+        <button type="button" data-filter="colour" aria-pressed="false" class="border border-ink px-5 py-2 text-sm font-medium transition hover:bg-ink hover:text-white ">Colour</button>
+        <button type="button" data-filter="styling" aria-pressed="false" class="border border-ink px-5 py-2 text-sm font-medium transition hover:bg-ink hover:text-white ">Styling</button>
+    </div>
+    <div class="mt-10 grid grid-cols-2 gap-5 md:grid-cols-3">
+        <figure data-filter-item data-category="colour" data-reveal style="--reveal-delay: 0ms" class="relative">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&h=840&q=80" alt="Long glossy waves with soft balayage seen from behind" class="aspect-[5/6] w-full object-cover">
+          <figcaption class="mt-3 flex justify-between text-sm">
+            <a href="balayage.html" class="font-medium after:absolute after:inset-0">Soft balayage</a>
+            <span class="capitalize text-ink/50">colour</span>
+          </figcaption>
+        </figure>
+        <figure data-filter-item data-category="styling" data-reveal style="--reveal-delay: 70ms" class="relative">
+          <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?auto=format&fit=crop&w=700&h=840&q=80" alt="Stylist pinning soft curls into an elegant updo" class="aspect-[5/6] w-full object-cover">
+          <figcaption class="mt-3 flex justify-between text-sm">
+            <span class="font-medium">Pinned updo</span>
+            <span class="capitalize text-ink/50">styling</span>
+          </figcaption>
+        </figure>
+        <figure data-filter-item data-category="colour" data-reveal style="--reveal-delay: 140ms" class="relative">
+          <img src="https://images.unsplash.com/photo-1554519515-242161756769?auto=format&fit=crop&w=700&h=840&q=80" alt="Vivid multi-tone colour on long curls" class="aspect-[5/6] w-full object-cover">
+          <figcaption class="mt-3 flex justify-between text-sm">
+            <span class="font-medium">Vivid colour</span>
+            <span class="capitalize text-ink/50">colour</span>
+          </figcaption>
+        </figure>
+        <figure data-filter-item data-category="styling" data-reveal style="--reveal-delay: 0ms" class="relative">
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=700&h=840&q=80" alt="Stylist blow-drying shoulder-length hair" class="aspect-[5/6] w-full object-cover">
+          <figcaption class="mt-3 flex justify-between text-sm">
+            <span class="font-medium">Blow-dry finish</span>
+            <span class="capitalize text-ink/50">styling</span>
+          </figcaption>
+        </figure>
+        <figure data-filter-item data-category="colour" data-reveal style="--reveal-delay: 70ms" class="relative">
+          <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=700&h=840&q=80" alt="Long wavy lavender-toned hair" class="aspect-[5/6] w-full object-cover">
+          <figcaption class="mt-3 flex justify-between text-sm">
+            <span class="font-medium">Lavender waves</span>
+            <span class="capitalize text-ink/50">colour</span>
+          </figcaption>
+        </figure>
+        <figure data-filter-item data-category="cut" data-reveal style="--reveal-delay: 140ms" class="relative">
+          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=700&h=840&q=80" alt="Stylist washing a guest&#39;s hair before a cut" class="aspect-[5/6] w-full object-cover">
+          <figcaption class="mt-3 flex justify-between text-sm">
+            <a href="keratin-treatment.html" class="font-medium after:absolute after:inset-0">Shape refresh</a>
+            <span class="capitalize text-ink/50">cut</span>
+          </figcaption>
+        </figure>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="border-t border-line bg-mist">
+    <div class="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-[minmax(0,2fr)_minmax(0,1fr)_minmax(0,1fr)] md:px-8">
+      <div>
+        <a href="index.html" class="text-2xl font-medium tracking-tight">Tressa Studio</a>
+        <p class="mt-5 max-w-sm leading-relaxed text-ink/70">A calm hair studio for precise cuts, natural colour and treatments that keep hair healthy.</p>
+        <ul class="mt-6 flex gap-3">
+          <li><a href="https://instagram.com" aria-label="Instagram" class="grid h-11 w-11 place-items-center border border-line bg-white hover:border-ink"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://facebook.com" aria-label="Facebook" class="grid h-11 w-11 place-items-center border border-line bg-white hover:border-ink"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-sm font-medium uppercase tracking-[0.15em]">Links</h2>
+        <ul class="mt-5 space-y-3 text-ink/70">
+            <li><a href="services.html" class="hover:text-ink">Services</a></li>
+            <li><a href="work.html" class="hover:text-ink">Work</a></li>
+            <li><a href="team.html" class="hover:text-ink">Team</a></li>
+            <li><a href="pricing.html" class="hover:text-ink">Pricing</a></li>
+            <li><a href="contact.html" class="hover:text-ink">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-sm font-medium uppercase tracking-[0.15em]">Contact</h2>
+        <ul class="mt-5 space-y-3 text-ink/70">
+          <li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1" aria-hidden="true"></i><address class="not-italic">905 W Fulton St<br>Chicago, IL 60607</address></li>
+          <li class="flex gap-3"><i class="fa-solid fa-phone mt-1" aria-hidden="true"></i><a href="tel:+13125550194" class="hover:text-ink">(312) 555-0194</a></li>
+          <li class="flex gap-3"><i class="fa-regular fa-clock mt-1" aria-hidden="true"></i>Tue–Sat · 9:00–19:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 border-t border-line px-5 py-6 text-sm text-ink/60 md:flex-row md:items-center md:justify-between md:px-8">
+      <p>&copy; <span data-current-year>2026</span> Tressa Studio. All rights reserved.</p>
+      <a href="contact.html" class="hover:text-ink">Privacy &amp; terms</a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      if (!menu) return;
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-filter-group]').forEach((group) => {
+      const buttons = group.querySelectorAll('[data-filter]');
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          buttons.forEach((other) => {
+            const active = other === button;
+            other.setAttribute('aria-pressed', String(active));
+            other.classList.toggle('bg-ink', active);
+            other.classList.toggle('text-white', active);
+          });
+          document.querySelectorAll('[data-filter-item]').forEach((item) => {
+            item.hidden = button.dataset.filter !== 'all' && item.dataset.category !== button.dataset.filter;
+          });
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-accordion]').forEach((accordion) => {
+      const triggers = accordion.querySelectorAll('[data-accordion-trigger]');
+      triggers.forEach((trigger) => {
+        trigger.addEventListener('click', () => {
+          const willOpen = trigger.getAttribute('aria-expanded') !== 'true';
+          triggers.forEach((other) => {
+            const open = other === trigger && willOpen;
+            other.setAttribute('aria-expanded', String(open));
+            document.getElementById(other.getAttribute('aria-controls')).classList.toggle('hidden', !open);
+            other.querySelector('[data-accordion-icon]')?.classList.toggle('rotate-45', open);
+          });
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-contact-form]').forEach((form) => {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const status = form.querySelector('[data-form-status]');
+        if (!form.checkValidity()) {
+          status.textContent = form.dataset.error || 'Please complete the required fields.';
+          return;
+        }
+        status.textContent = form.dataset.success || 'Thanks! We will be in touch soon.';
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    (() => {
+      const counters = document.querySelectorAll('[data-count-to]');
+      if (!counters.length || navigator.webdriver || matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(({ isIntersecting, target }) => {
+          if (!isIntersecting) return;
+          observer.unobserve(target);
+          const end = Number(target.dataset.countTo);
+          const suffix = target.dataset.countSuffix || '';
+          const start = performance.now();
+          const tick = (now) => {
+            const progress = Math.min((now - start) / 700, 1);
+            target.textContent = Math.round(end * progress) + suffix;
+            if (progress < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        });
+      }, { threshold: 0.6 });
+      counters.forEach((counter) => observer.observe(counter));
+    })();
+
+    (() => {
+      const items = document.querySelectorAll('[data-reveal]');
+      const skip = navigator.webdriver || !('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=tressa&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

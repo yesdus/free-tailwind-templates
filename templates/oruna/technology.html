@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology | Oruna</title>
+  <meta name="description" content="How Oruna reads your body: the signals it uses, how its coaching model learns you week by week, and how your health data stays private.">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Technology | Oruna">
+  <meta property="og:description" content="How Oruna reads your body: the signals it uses, how its coaching model learns you week by week, and how your health data stays private.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Oruna template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Technology | Oruna">
+  <meta name="twitter:description" content="How Oruna reads your body: the signals it uses, how its coaching model learns you week by week, and how your health data stays private.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Oruna template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { lime: { DEFAULT: '#c8ee5c', deep: '#a9d13b', soft: '#e4f7a8' }, ink: { DEFAULT: '#0c0c0c', card: '#151515', line: '#262626' }, ember: '#ff8a3d', fog: '#d6d8d7' },
+          fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['"Instrument Serif"', 'serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-ink font-sans text-white antialiased">
+  <header class="fixed inset-x-0 top-0 z-40 px-4 pt-4" data-navbar>
+    <nav class="mx-auto flex max-w-3xl items-center justify-between gap-4 rounded-full border border-white/40 bg-white/25 py-2 pl-4 pr-2 text-ink shadow-lg shadow-ink/5 backdrop-blur-xl transition-all duration-300 data-[scrolled=true]:max-w-2xl data-[scrolled=true]:border-white/10 data-[scrolled=true]:bg-ink/80 data-[scrolled=true]:text-white" aria-label="Main" data-nav-pill data-solid="true" data-scrolled="true">
+      <a href="index.html" class="flex items-center gap-2 text-base font-semibold"><svg viewBox="0 0 32 32" class="h-6 w-6" aria-hidden="true"><path d="M4 18C4 10 10 4 18 4c0 8-6 14-14 14Z" fill="#c8ee5c"/><path d="M28 14c0 8-6 14-14 14 0-8 6-14 14-14Z" fill="#a9d13b"/></svg>Oruna</a>
+      <ul class="hidden items-center gap-1 text-sm md:flex">
+          <li><a href="index.html"  class="rounded-full px-3.5 py-2 transition opacity-70 hover:opacity-100">Overview</a></li>
+          <li><a href="features.html"  class="rounded-full px-3.5 py-2 transition opacity-70 hover:opacity-100">Features</a></li>
+          <li><a href="technology.html" aria-current="page" class="rounded-full px-3.5 py-2 transition bg-ink/10 font-medium">Technology</a></li>
+          <li><a href="community.html"  class="rounded-full px-3.5 py-2 transition opacity-70 hover:opacity-100">Community</a></li>
+      </ul>
+      <div class="flex items-center gap-2">
+        <a href="pricing.html" class="flex items-center gap-2 rounded-full bg-ink px-4 py-2.5 text-sm font-medium text-white ring-1 ring-white/10 transition hover:bg-lime hover:text-ink">Download<i class="fa-solid fa-arrow-down text-xs" aria-hidden="true"></i></a>
+        <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="grid h-10 w-10 place-items-center rounded-full bg-ink/10 md:hidden" aria-label="Open menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="mx-auto mt-2 hidden max-w-3xl rounded-3xl bg-ink p-3 text-white shadow-2xl md:hidden">
+      <ul class="grid gap-1">
+          <li><a href="index.html"  class="block rounded-2xl px-4 py-3 hover:bg-white/10">Overview</a></li>
+          <li><a href="features.html"  class="block rounded-2xl px-4 py-3 hover:bg-white/10">Features</a></li>
+          <li><a href="technology.html" aria-current="page" class="block rounded-2xl px-4 py-3 bg-lime text-ink">Technology</a></li>
+          <li><a href="community.html"  class="block rounded-2xl px-4 py-3 hover:bg-white/10">Community</a></li>
+          <li><a href="programs.html"  class="block rounded-2xl px-4 py-3 hover:bg-white/10">Programs</a></li>
+          <li><a href="pricing.html"  class="block rounded-2xl px-4 py-3 hover:bg-white/10">Pricing</a></li>
+          <li><a href="contact.html"  class="block rounded-2xl px-4 py-3 hover:bg-white/10">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    
+  <section class="bg-ink pb-16 pt-36">
+    <div class="mx-auto max-w-4xl px-5 text-center">
+      <p class="mx-auto w-fit rounded-full border border-white/20 px-3 py-1 text-xs font-medium">Technology</p>
+      <h1 class="mt-6 font-serif text-6xl leading-[.95] md:text-8xl">The <em>Science</em> Inside</h1>
+      <p class="mx-auto mt-6 max-w-lg text-white/60">Oruna turns a handful of quiet signals into one clear answer each morning: how hard should you go today?</p>
+    </div>
+  </section>
+
+  <section class="bg-ink pb-24" data-hotspots>
+    <div class="mx-auto grid max-w-5xl items-center gap-10 px-5 lg:grid-cols-[1.2fr_1fr]">
+      <div class="relative overflow-hidden rounded-3xl bg-fog">
+        <img src="https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?auto=format&fit=crop&w=1000&h=800&q=80" alt="Fitness band with a lit display" class="aspect-[5/4] w-full object-cover grayscale">
+          <button type="button" data-spot="hrv" aria-pressed="true" class="group absolute left-[30%] top-[38%] grid h-11 w-11 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-lime/30 backdrop-blur transition hover:scale-110 aria-pressed:bg-lime" aria-label="Heart rate variability">
+            <span class="absolute inset-0 animate-ping rounded-full bg-lime/40 motion-reduce:hidden"></span>
+            <span class="relative h-3.5 w-3.5 rounded-full bg-lime ring-4 ring-ink/20 group-aria-pressed:bg-ink"></span>
+          </button>
+          <button type="button" data-spot="sleep" aria-pressed="false" class="group absolute left-[58%] top-[22%] grid h-11 w-11 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-lime/30 backdrop-blur transition hover:scale-110 aria-pressed:bg-lime" aria-label="Sleep stages">
+            <span class="absolute inset-0 animate-ping rounded-full bg-lime/40 motion-reduce:hidden"></span>
+            <span class="relative h-3.5 w-3.5 rounded-full bg-lime ring-4 ring-ink/20 group-aria-pressed:bg-ink"></span>
+          </button>
+          <button type="button" data-spot="load" aria-pressed="false" class="group absolute left-[62%] top-[64%] grid h-11 w-11 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-lime/30 backdrop-blur transition hover:scale-110 aria-pressed:bg-lime" aria-label="Training load">
+            <span class="absolute inset-0 animate-ping rounded-full bg-lime/40 motion-reduce:hidden"></span>
+            <span class="relative h-3.5 w-3.5 rounded-full bg-lime ring-4 ring-ink/20 group-aria-pressed:bg-ink"></span>
+          </button>
+          <button type="button" data-spot="voice" aria-pressed="false" class="group absolute left-[22%] top-[70%] grid h-11 w-11 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-lime/30 backdrop-blur transition hover:scale-110 aria-pressed:bg-lime" aria-label="Voice check-in">
+            <span class="absolute inset-0 animate-ping rounded-full bg-lime/40 motion-reduce:hidden"></span>
+            <span class="relative h-3.5 w-3.5 rounded-full bg-lime ring-4 ring-ink/20 group-aria-pressed:bg-ink"></span>
+          </button>
+      </div>
+      <div class="rounded-3xl border border-white/10 bg-ink-card p-8" aria-live="polite">
+        <span class="grid h-12 w-12 place-items-center rounded-2xl bg-lime text-lg text-ink"><span data-spot-icon="hrv" ><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></span><span data-spot-icon="sleep" hidden><i class="fa-solid fa-moon" aria-hidden="true"></i></span><span data-spot-icon="load" hidden><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span><span data-spot-icon="voice" hidden><i class="fa-solid fa-microphone" aria-hidden="true"></i></span></span>
+        <h2 class="mt-6 font-serif text-4xl leading-none" data-spot-title>Heart rate variability</h2>
+        <p class="mt-4 text-white/70" data-spot-text>Measured overnight, HRV shows how recovered your nervous system is. A low reading means Oruna softens today&#39;s plan.</p>
+        <p class="mt-8 text-xs text-white/40">Tap the points on the band to explore each signal.</p>
+      </div>
+    </div>
+    <script type="application/json" data-spot-data>{"hrv":{"label":"Heart rate variability","text":"Measured overnight, HRV shows how recovered your nervous system is. A low reading means Oruna softens today's plan."},"sleep":{"label":"Sleep stages","text":"Deep, light and REM sleep are weighed against your usual pattern, not a generic eight-hour target."},"load":{"label":"Training load","text":"Every session adds strain. Oruna balances acute and long-term load to keep you progressing without tipping into burnout."},"voice":{"label":"Voice check-in","text":"How you say you feel matters as much as the numbers. Your words adjust the plan when the data looks fine but you don't."}}</script>
+  </section>
+
+  <section class="bg-lime py-24 text-ink" data-timeline>
+    <div class="mx-auto max-w-3xl px-5">
+      <h2 class="text-center font-serif text-5xl leading-none md:text-7xl">How Oruna <em>Learns</em> You</h2>
+      <ol class="relative mt-16 grid gap-12 pl-12">
+        <span class="absolute bottom-2 left-[11px] top-2 w-0.5 rounded-full bg-ink/15" aria-hidden="true"><span class="block h-full w-full origin-top rounded-full bg-ink" data-timeline-fill></span></span>
+          <li class="relative" data-reveal style="--reveal-delay: 0ms">
+            <span class="absolute -left-12 top-1 grid h-6 w-6 place-items-center rounded-full border-2 border-ink bg-lime text-[10px] font-semibold">1</span>
+            <p class="text-xs font-semibold uppercase tracking-widest text-ink/60">Week 1</p>
+            <h3 class="mt-1 font-serif text-4xl leading-none">Baseline</h3>
+            <p class="mt-3 max-w-xl text-ink/75">Oruna watches quietly. It learns your resting heart rate, sleep window and how you respond to your usual sessions.</p>
+          </li>
+          <li class="relative" data-reveal style="--reveal-delay: 80ms">
+            <span class="absolute -left-12 top-1 grid h-6 w-6 place-items-center rounded-full border-2 border-ink bg-lime text-[10px] font-semibold">2</span>
+            <p class="text-xs font-semibold uppercase tracking-widest text-ink/60">Week 2</p>
+            <h3 class="mt-1 font-serif text-4xl leading-none">Patterns</h3>
+            <p class="mt-3 max-w-xl text-ink/75">It starts to spot links, like how late dinners shorten your deep sleep or how Monday runs feel harder after busy weekends.</p>
+          </li>
+          <li class="relative" data-reveal style="--reveal-delay: 160ms">
+            <span class="absolute -left-12 top-1 grid h-6 w-6 place-items-center rounded-full border-2 border-ink bg-lime text-[10px] font-semibold">3</span>
+            <p class="text-xs font-semibold uppercase tracking-widest text-ink/60">Week 4</p>
+            <h3 class="mt-1 font-serif text-4xl leading-none">Your model</h3>
+            <p class="mt-3 max-w-xl text-ink/75">A personal coaching model takes over. Plans now shift daily, and check-ins get shorter because Oruna already knows the answer.</p>
+          </li>
+          <li class="relative" data-reveal style="--reveal-delay: 240ms">
+            <span class="absolute -left-12 top-1 grid h-6 w-6 place-items-center rounded-full border-2 border-ink bg-lime text-[10px] font-semibold">4</span>
+            <p class="text-xs font-semibold uppercase tracking-widest text-ink/60">Ongoing</p>
+            <h3 class="mt-1 font-serif text-4xl leading-none">Always learning</h3>
+            <p class="mt-3 max-w-xl text-ink/75">Seasons, travel, injuries and new goals all feed back in. The plan grows with you instead of resetting every twelve weeks.</p>
+          </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="bg-ink py-24">
+    <div class="mx-auto max-w-5xl px-5">
+      <h2 class="max-w-xl font-serif text-5xl leading-none md:text-6xl">Your data stays <em>yours</em></h2>
+      <ul class="mt-12 grid gap-4 md:grid-cols-3">
+          <li class="rounded-3xl border border-white/10 bg-ink-card p-7" data-reveal style="--reveal-delay: 0ms"><i class="fa-solid fa-microchip text-2xl text-lime" aria-hidden="true"></i><h3 class="mt-8 font-serif text-3xl leading-none">On-device first</h3><p class="mt-3 text-sm text-white/60">Most of the model runs on your phone. Raw heart data never has to leave it.</p></li>
+          <li class="rounded-3xl border border-white/10 bg-ink-card p-7" data-reveal style="--reveal-delay: 80ms"><i class="fa-solid fa-lock text-2xl text-lime" aria-hidden="true"></i><h3 class="mt-8 font-serif text-3xl leading-none">Encrypted sync</h3><p class="mt-3 text-sm text-white/60">Backups are encrypted end to end, and you can delete everything in one tap.</p></li>
+          <li class="rounded-3xl border border-white/10 bg-ink-card p-7" data-reveal style="--reveal-delay: 160ms"><i class="fa-solid fa-user-shield text-2xl text-lime" aria-hidden="true"></i><h3 class="mt-8 font-serif text-3xl leading-none">Never sold</h3><p class="mt-3 text-sm text-white/60">No ads and no data brokers. Your subscription is our only business model.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll('[data-hotspots]').forEach((root) => {
+      const data = JSON.parse(root.querySelector('[data-spot-data]').textContent);
+      const spots = [...root.querySelectorAll('[data-spot]')];
+      spots.forEach((spot) => spot.addEventListener('click', () => {
+        spots.forEach((other) => other.setAttribute('aria-pressed', String(other === spot)));
+        const item = data[spot.dataset.spot];
+        root.querySelector('[data-spot-title]').textContent = item.label;
+        root.querySelector('[data-spot-text]').textContent = item.text;
+        root.querySelectorAll('[data-spot-icon]').forEach((icon) => { icon.hidden = icon.dataset.spotIcon !== spot.dataset.spot; });
+      }));
+    });
+
+    document.querySelectorAll('[data-timeline]').forEach((root) => {
+      const fill = root.querySelector('[data-timeline-fill]');
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches || navigator.webdriver) return;
+      const update = () => {
+        const box = root.querySelector('ol').getBoundingClientRect();
+        const progress = Math.min(Math.max((innerHeight * 0.6 - box.top) / box.height, 0), 1);
+        fill.style.transform = `scaleY(${progress})`;
+      };
+      update();
+      addEventListener('scroll', update, { passive: true });
+    });
+  </script>
+
+  </main>
+
+  <footer class="relative overflow-hidden bg-ink pt-24">
+    <div class="mx-auto grid max-w-4xl gap-10 px-5 sm:grid-cols-2 lg:grid-cols-[1.4fr_repeat(4,1fr)]">
+      <div>
+        <a href="index.html" class="flex items-center gap-2 text-xl font-semibold"><svg viewBox="0 0 32 32" class="h-7 w-7" aria-hidden="true"><path d="M4 18C4 10 10 4 18 4c0 8-6 14-14 14Z" fill="#c8ee5c"/><path d="M28 14c0 8-6 14-14 14 0-8 6-14 14-14Z" fill="#a9d13b"/></svg>Oruna</a>
+        <p class="mt-3 max-w-[12rem] text-sm text-white/50">Your AI wellness companion.</p>
+      </div>
+        <div>
+          <h2 class="text-sm text-white/40">Product</h2>
+          <ul class="mt-4 grid gap-2 text-sm text-white/80">
+            <li><a href="features.html" class="transition hover:text-lime">Features</a></li><li><a href="technology.html" class="transition hover:text-lime">Technology</a></li><li><a href="programs.html" class="transition hover:text-lime">Programs</a></li><li><a href="pricing.html" class="transition hover:text-lime">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-sm text-white/40">Explore</h2>
+          <ul class="mt-4 grid gap-2 text-sm text-white/80">
+            <li><a href="index.html" class="transition hover:text-lime">Overview</a></li><li><a href="community.html" class="transition hover:text-lime">Community</a></li><li><a href="community.html" class="transition hover:text-lime">Challenges</a></li><li><a href="index.html#route" class="transition hover:text-lime">Run replay</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-sm text-white/40">Company</h2>
+          <ul class="mt-4 grid gap-2 text-sm text-white/80">
+            <li><a href="technology.html" class="transition hover:text-lime">About</a></li><li><a href="contact.html" class="transition hover:text-lime">Support</a></li><li><a href="contact.html" class="transition hover:text-lime">Press</a></li><li><a href="contact.html" class="transition hover:text-lime">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-sm text-white/40">Legal</h2>
+          <ul class="mt-4 grid gap-2 text-sm text-white/80">
+            <li><a href="contact.html" class="transition hover:text-lime">Terms</a></li><li><a href="contact.html" class="transition hover:text-lime">Privacy</a></li><li><a href="technology.html" class="transition hover:text-lime">Health data</a></li><li><a href="contact.html" class="transition hover:text-lime">Cookies</a></li>
+          </ul>
+        </div>
+    </div>
+    <p class="mx-auto mt-14 flex max-w-4xl flex-wrap justify-between gap-3 px-5 text-xs text-white/40"><span>&copy; 2026 Oruna Labs. Not a medical device.</span><span class="flex gap-4"><a href="contact.html" class="hover:text-lime" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a href="contact.html" class="hover:text-lime" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a><a href="contact.html" class="hover:text-lime" aria-label="Discord"><i class="fa-brands fa-discord" aria-hidden="true"></i></a></span></p>
+    <div class="relative mt-10 h-56 md:h-72" aria-hidden="true">
+      <div class="absolute inset-x-0 bottom-0 h-40 bg-lime/70 blur-[90px]"></div>
+      <svg viewBox="0 0 32 32" class="absolute left-1/2 top-6 h-72 w-72 -translate-x-1/2 opacity-90 md:h-96 md:w-96"><path d="M4 18C4 10 10 4 18 4c0 8-6 14-14 14Z" fill="#c8ee5c"/><path d="M28 14c0 8-6 14-14 14 0-8 6-14 14-14Z" fill="#a9d13b"/></svg>
+    </div>
+  </footer>
+
+  <script>
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const watchMotion = !reducedMotion && !navigator.webdriver && 'IntersectionObserver' in window;
+
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-nav-pill]').forEach((pill) => {
+      const update = () => { pill.dataset.scrolled = String(pill.dataset.solid === 'true' || scrollY > 60); };
+      update();
+      addEventListener('scroll', update, { passive: true });
+    });
+
+    document.querySelectorAll('[data-coach]').forEach((root) => {
+      const data = JSON.parse(root.querySelector('[data-coach-data]').textContent);
+      const input = root.querySelector('[data-coach-input]');
+      const reply = root.querySelector('[data-coach-reply]');
+      const moods = [...root.querySelectorAll('[data-mood]')];
+      const say = (text) => { reply.hidden = false; reply.textContent = text; };
+      moods.forEach((mood) => mood.addEventListener('click', () => {
+        moods.forEach((other) => other.setAttribute('aria-pressed', String(other === mood)));
+        input.value = `I want to ${data[mood.dataset.mood].label.toLowerCase()} today.`;
+        say(data[mood.dataset.mood].reply);
+      }));
+      root.querySelector('[data-coach-form]').addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (!input.value.trim()) { input.focus(); say('Tell me how you slept or how your body feels, and I will shape today around it.'); return; }
+        say(`Got it. Based on "${input.value.trim().slice(0, 60)}", I've drafted a 30-minute session and moved your hard intervals to Thursday.`);
+      });
+    });
+
+    document.querySelectorAll('[data-route]').forEach((root) => {
+      const routes = JSON.parse(root.querySelector('[data-route-data]').textContent);
+      const path = root.querySelector('[data-route-path]');
+      const start = root.querySelector('[data-route-start]');
+      const pin = root.querySelector('[data-route-pin]');
+      const time = root.querySelector('[data-route-time]');
+      const stats = Object.fromEntries([...root.querySelectorAll('[data-route-stat]')].map((el) => [el.dataset.routeStat, el]));
+      const tabs = [...root.querySelectorAll('[data-route-tab]')];
+      const seconds = (value) => value.split(':').reduce((total, part) => total * 60 + Number(part), 0);
+      const clock = (total) => `${String(Math.floor(total / 60)).padStart(2, '0')}:${String(Math.floor(total % 60)).padStart(2, '0')}`;
+      let current = tabs[0].dataset.routeTab;
+      let frame;
+      const render = (route, progress) => {
+        const length = path.getTotalLength();
+        path.style.strokeDasharray = length;
+        path.style.strokeDashoffset = length * (1 - progress);
+        const point = path.getPointAtLength(length * progress);
+        pin.setAttribute('transform', `translate(${point.x} ${point.y})`);
+        time.textContent = progress >= 1 ? route.time : clock(seconds(route.time) * progress);
+        stats.kcal.textContent = Math.round(route.kcal * progress);
+        stats.km.textContent = progress >= 1 ? route.km : (parseFloat(route.km.replace(',', '.')) * progress).toFixed(2).replace('.', ',');
+        stats.bpm.textContent = Math.round(90 + (route.bpm - 90) * progress);
+      };
+      const play = () => {
+        const route = routes[current];
+        path.setAttribute('d', route.d);
+        const first = path.getPointAtLength(0);
+        start.setAttribute('transform', `translate(${first.x} ${first.y})`);
+        cancelAnimationFrame(frame);
+        if (reducedMotion) { render(route, 1); return; }
+        const begin = performance.now();
+        const step = (now) => { const progress = Math.min((now - begin) / 2400, 1); render(route, progress); if (progress < 1) frame = requestAnimationFrame(step); };
+        frame = requestAnimationFrame(step);
+      };
+      tabs.forEach((tab) => tab.addEventListener('click', () => {
+        tabs.forEach((other) => other.setAttribute('aria-selected', String(other === tab)));
+        current = tab.dataset.routeTab;
+        play();
+      }));
+      root.querySelector('[data-route-play]').addEventListener('click', play);
+    });
+
+    document.querySelectorAll('[data-rhythm]').forEach((root) => {
+      const data = JSON.parse(root.querySelector('[data-rhythm-data]').textContent);
+      const tabs = [...root.querySelectorAll('[data-period]')];
+      tabs.forEach((tab) => tab.addEventListener('click', () => {
+        tabs.forEach((other) => other.setAttribute('aria-selected', String(other === tab)));
+        data[tab.dataset.period].forEach((item, index) => {
+          const card = root.querySelector(`[data-rhythm-card="${index}"]`);
+          card.querySelector('[data-rhythm-value]').textContent = item.value.toLocaleString('en-US');
+          card.querySelector('[data-rhythm-goal]').textContent = `/ ${item.goal}`;
+          const ticks = [...card.querySelector('[data-rhythm-ticks]').children];
+          const filled = Math.round(item.ratio * ticks.length);
+          ticks.forEach((tick, i) => {
+            tick.classList.toggle('bg-lime', i < filled - 1);
+            tick.classList.toggle('bg-ember', i === filled - 1);
+            tick.classList.toggle('shadow-[0_0_12px_#ff8a3d]', i === filled - 1);
+            tick.classList.toggle('bg-white/5', i >= filled);
+          });
+        });
+      }));
+    });
+
+    if (watchMotion) {
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+      }), { threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach((el) => observer.observe(el));
+    }
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=oruna&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstateFlow | Tailwind CSS Property Management SaaS Template</title>
+    <meta name="description" content="EstateFlow is a responsive Tailwind CSS property management template for real estate SaaS platforms, asset portfolios, tenant CRM, and analytics dashboards.">
+    <meta name="keywords" content="property management template, real estate SaaS template, Tailwind CSS dashboard, portfolio management website, tenant CRM, property analytics">
+    <meta name="author" content="Let's templates">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="color-scheme" content="light">
+    <link rel="canonical" href="">
+
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Let's templates">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="EstateFlow | Tailwind CSS Property Management SaaS Template">
+    <meta property="og:description" content="A responsive property management template for real estate SaaS platforms, asset portfolios, tenant CRM, and analytics dashboards.">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="EstateFlow property and portfolio management template preview">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="EstateFlow | Tailwind CSS Property Management SaaS Template">
+    <meta name="twitter:description" content="A responsive property management template for real estate SaaS platforms, asset portfolios, tenant CRM, and analytics dashboards.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:image:alt" content="EstateFlow property and portfolio management template preview">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.plot.ly/plotly-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-[#f8fafc] text-[#1e293b] antialiased">
+
+    <!-- block:start header -->
+    <header id="header" class="fixed top-0 left-0 w-full z-50 bg-white/60 backdrop-blur-lg border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-200">
+                    <i class="fa-solid fa-building-circle-check"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-[#0f172a]">EstateFlow</span>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-500">
+                <a href="#hero" class="hover:text-blue-600 transition-colors">Home</a>
+                <a href="#how-it-works" class="hover:text-blue-600 transition-colors">Platform</a>
+                <a href="#features" class="hover:text-blue-600 transition-colors">Features</a>
+                <a href="#pricing" class="hover:text-blue-600 transition-colors">Pricing</a>
+                <a href="#footer" class="hover:text-blue-600 transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#pricing" class="bg-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-blue-700 transition-all shadow-md shadow-blue-100">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- block:end header -->
+
+    <main class="pt-20">
+
+        <!-- block:start hero -->
+        <section id="hero" class="relative pt-24 pb-48 overflow-hidden">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover opacity-60" src="https://images.unsplash.com/photo-1713669374349-3a240c47f727?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHNlcmVuZSUyMGxhbmRzY2FwZSUyMHJvbGxpbmclMjBncmVlbiUyMGhpbGxzJTIwYmx1ZXxlbnwxfHx8fDE3OTUzODYxNTZ8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="serene landscape with rolling green hills and a bright blue sky with fluffy white clouds, peaceful a" />
+                <div class="absolute inset-0 hero-gradient"></div>
+            </div>
+
+            <div class="container max-w-7xl mx-auto px-6 relative z-10 text-center">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-600 text-xs font-bold uppercase tracking-widest mb-8 border border-blue-100">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+                    Trusted by 2,500+ Asset Managers
+                </div>
+                <h1 class="text-5xl md:text-7xl font-serif-elegant font-medium tracking-tight text-[#0f172a] leading-[1.1] mb-8 italic">
+                    Smart Portfolio <br/>
+                    <span class="text-blue-600 not-italic">Infrastructure</span>
+                </h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed">
+                    Optimize how you manage commercial assets, leads, and tenants with an AI-integrated ecosystem built for modern property enterprises.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button class="w-full sm:w-auto bg-blue-600 text-white px-10 py-4 rounded-full font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-200">
+                        Launch Dashboard
+                    </button>
+                    <button class="w-full sm:w-auto bg-white text-[#0f172a] border border-gray-200 px-10 py-4 rounded-full font-bold hover:bg-gray-50 transition-all">
+                        Schedule Demo
+                    </button>
+                </div>
+
+                <!-- Floating Mockup -->
+                <div class="mt-24 relative max-w-5xl mx-auto group">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-3xl blur-3xl opacity-20 group-hover:opacity-30 transition duration-1000"></div>
+                    <div class="relative bg-white rounded-2xl border border-gray-100 shadow-2xl overflow-hidden p-2">
+                        <div class="bg-gray-50 rounded-xl overflow-hidden border border-gray-100">
+                            <!-- Sidebar Mockup -->
+                            <div class="flex">
+                                <div class="w-64 bg-white border-r border-gray-100 h-[500px] p-6 hidden lg:block">
+                                    <div class="flex items-center gap-3 mb-10">
+                                        <div class="w-8 h-8 bg-blue-600 rounded-lg"></div>
+                                        <div class="font-bold">EstateFlow</div>
+                                    </div>
+                                    <div class="space-y-6">
+                                        <div class="space-y-2">
+                                            <div class="h-8 bg-blue-50 text-blue-600 rounded-lg flex items-center px-3 gap-3 text-xs font-bold">
+                                                <i class="fa-solid fa-grid-2"></i> Dashboard
+                                            </div>
+                                            <div class="h-8 text-gray-400 flex items-center px-3 gap-3 text-xs font-bold">
+                                                <i class="fa-solid fa-house"></i> Properties
+                                            </div>
+                                            <div class="h-8 text-gray-400 flex items-center px-3 gap-3 text-xs font-bold">
+                                                <i class="fa-solid fa-users"></i> Tenants
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Content Mockup -->
+                                <div class="flex-1 min-w-0 p-4 sm:p-8 bg-white">
+                                    <div class="flex justify-between items-center gap-4 mb-6 sm:mb-10">
+                                        <div>
+                                            <h3 class="text-lg sm:text-xl font-bold">Portfolio Overview</h3>
+                                            <p class="text-xs text-gray-400">Welcome back, Administrator</p>
+                                        </div>
+                                        <div class="flex gap-4">
+                                            <div class="w-9 h-9 sm:w-10 sm:h-10 shrink-0 rounded-full bg-gray-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6 mb-6 sm:mb-10">
+                                        <div class="p-4 sm:p-6 rounded-2xl bg-blue-50 border border-blue-100">
+                                            <div class="text-xs font-bold text-blue-600 uppercase mb-2">Occupancy</div>
+                                            <div class="text-2xl font-black">94.2%</div>
+                                        </div>
+                                        <div class="p-4 sm:p-6 rounded-2xl bg-gray-50 border border-gray-100">
+                                            <div class="text-xs font-bold text-gray-400 uppercase mb-2">Total Yield</div>
+                                            <div class="text-2xl font-black">$2.4M</div>
+                                        </div>
+                                        <div class="p-4 sm:p-6 rounded-2xl bg-gray-50 border border-gray-100">
+                                            <div class="text-xs font-bold text-gray-400 uppercase mb-2">Pending Task</div>
+                                            <div class="text-2xl font-black">12</div>
+                                        </div>
+                                    </div>
+                                    <div class="h-40 sm:h-48 bg-gray-50 rounded-2xl border border-dashed border-gray-200 flex items-center justify-center text-center px-4">
+                                        <span class="text-xs font-bold text-gray-300">Predictive Revenue Chart</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Butterfly Decorative -->
+                    <div class="absolute -top-10 -right-10 text-orange-400 animate-bounce opacity-40">
+                        <i class="fa-solid fa-bug fs-1 rotate-45"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- block:end hero -->
+
+        <!-- block:start features-grid -->
+        <section id="features" class="py-32 bg-white">
+            <div class="container max-w-7xl mx-auto px-6">
+                <div class="text-center mb-20">
+                    <h2 class="text-4xl font-serif-elegant font-bold tracking-tight text-[#0f172a] mb-4">Master Your Assets</h2>
+                    <p class="text-gray-500 max-w-2xl mx-auto">Everything you need to scale your property operations with precision and clarity.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="space-y-6">
+                        <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl shadow-sm">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Dynamic Inventory Tracking</h3>
+                        <p class="text-gray-500 leading-relaxed">Monitor unit availability, pricing fluctuations, and maintenance status across your entire portfolio in real-time.</p>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl shadow-sm">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">AI-Powered Prospecting</h3>
+                        <p class="text-gray-500 leading-relaxed">Let our proprietary algorithms qualify high-value leads and recommend optimized follow-up sequences automatically.</p>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="w-16 h-16 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center text-2xl shadow-sm">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Comprehensive CRM Insights</h3>
+                        <p class="text-gray-500 leading-relaxed">Understand tenant behavior and sentiment with deep data-driven profiles that help you boost retention rates.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- block:end features-grid -->
+
+        <!-- block:start how-it-works -->
+        <section id="how-it-works" class="py-32 bg-gray-50 overflow-hidden">
+            <div class="container max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                    <div class="space-y-12">
+                        <div class="space-y-6">
+                            <div class="text-blue-600 font-bold text-xs uppercase tracking-widest">Growth Engine</div>
+                            <h2 class="text-4xl md:text-5xl font-serif-elegant font-bold tracking-tight leading-tight italic">Quantify Potential <br/><span class="not-italic">To Accelerate Yield.</span></h2>
+                            <p class="text-gray-500 text-lg leading-relaxed">Discover how our infrastructure helps you eliminate vacancy gaps and maximize the valuation of every square foot.</p>
+                        </div>
+
+                        <div class="space-y-8">
+                            <div class="flex gap-6 items-start group">
+                                <div class="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                                    <i class="fa-solid fa-filter"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Qualify Leads</h4>
+                                    <p class="text-sm text-gray-500">Automated filtering of applicants based on credit and history.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6 items-start group">
+                                <div class="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Predictive Valuation</h4>
+                                    <p class="text-sm text-gray-500">ML models that forecast market rent changes months in advance.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6 items-start group">
+                                <div class="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                                    <i class="fa-solid fa-handshake-angle"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Engage & Retain</h4>
+                                    <p class="text-sm text-gray-500">Intelligent reminders and loyalty programs for premium tenants.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
+                            <img class="w-full h-auto" src="https://images.unsplash.com/photo-1507206130118-b5907f817163?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHdvbWFuJTIwcHJvcGVydHklMjBtYW5hZ2VyJTIwd29ya2luZyUyMGxhcHRvcCUyMGNvLXdvcmtpbmd8ZW58MXx8fHwxNzk1Mzg2MTU3fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="professional woman property manager working on a laptop in a bright modern co-working space, smiling" />
+                        </div>
+                        <!-- Overlay Card -->
+                        <div class="absolute -bottom-10 -left-10 glass-card p-8 rounded-3xl shadow-xl max-w-xs space-y-4">
+                            <div class="text-xs font-bold text-blue-600 uppercase">Quarterly Pulse</div>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium">Occupancy</span>
+                                    <span class="text-sm font-bold text-green-500">+4.2%</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium">Revenue</span>
+                                    <span class="text-sm font-bold text-green-500">On Track</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium">Alerts</span>
+                                    <span class="text-sm font-bold text-red-500">2 Pending</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- block:end how-it-works -->
+
+        <!-- block:start analytics -->
+        <section id="analytics" class="py-32 bg-white">
+            <div class="container max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="p-10 rounded-[2.5rem] bg-gray-50 border border-gray-100 space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Revenue Lifecycle</h3>
+                            <p class="text-sm text-gray-500">Track collected vs. projected income across fiscal periods.</p>
+                        </div>
+                        <div id="revenue-chart" class="w-full h-[300px]"></div>
+                        <p class="text-xs text-gray-400 italic">Data automatically synchronized from your connected bank accounts.</p>
+                    </div>
+                    <div class="p-10 rounded-[2.5rem] bg-[#0f172a] text-white space-y-8 relative overflow-hidden">
+                        <div class="relative z-10">
+                            <h3 class="text-2xl font-bold mb-2">Tenant Distribution</h3>
+                            <p class="text-sm text-gray-400">Holistic view of your portfolio utilization.</p>
+                        </div>
+                        <div id="occupancy-chart" class="w-full h-[300px] relative z-10"></div>
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 rounded-full blur-[80px]"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- block:end analytics -->
+
+        <!-- block:start pricing -->
+        <section id="pricing" class="py-32 bg-gray-50">
+            <div class="container max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <div class="text-blue-600 font-bold text-xs uppercase tracking-widest mb-4">Investment</div>
+                    <h2 class="text-4xl font-serif-elegant font-bold tracking-tight mb-8">Choose Your Plan</h2>
+                    <div class="flex items-center justify-center gap-4">
+                        <span id="monthly-label" class="text-sm font-bold text-blue-600">Monthly</span>
+                        <button
+                            id="billing-toggle"
+                            type="button"
+                            class="w-12 h-6 bg-blue-600 rounded-full p-1 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
+                            role="switch"
+                            aria-checked="false"
+                            aria-labelledby="monthly-label yearly-label"
+                        >
+                            <span id="billing-toggle-thumb" class="block w-4 h-4 bg-white rounded-full transition-transform duration-200 translate-x-0"></span>
+                        </button>
+                        <span id="yearly-label" class="text-sm font-bold text-gray-400">Yearly <span class="text-green-500">(Save 20%)</span></span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Starter -->
+                    <div class="bg-white p-10 rounded-[2rem] border border-gray-100 shadow-sm flex flex-col">
+                        <div class="mb-10">
+                            <h3 class="text-lg font-bold text-gray-400 mb-4">Starter Plan</h3>
+                            <div class="text-4xl font-black mb-1">Free</div>
+                            <p class="text-sm text-gray-500">Perfect for private owners.</p>
+                        </div>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-center gap-3 text-sm font-medium"><i class="fa-solid fa-circle-check text-blue-600"></i> Up to 3 Properties</li>
+                            <li class="flex items-center gap-3 text-sm font-medium"><i class="fa-solid fa-circle-check text-blue-600"></i> Basic Tenant CRM</li>
+                            <li class="flex items-center gap-3 text-sm font-medium"><i class="fa-solid fa-circle-check text-blue-600"></i> Expense Logging</li>
+                            <li class="flex items-center gap-3 text-sm font-medium text-gray-300"><i class="fa-solid fa-circle-xmark"></i> AI Insights</li>
+                        </ul>
+                        <button class="w-full py-4 rounded-full border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-50 transition-all">Get Started</button>
+                    </div>
+
+                    <!-- Professional -->
+                    <div class="bg-white p-10 rounded-[2rem] border-2 border-blue-600 shadow-xl relative scale-105 z-10 flex flex-col">
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full">Most Popular</div>
+                        <div class="mb-10">
+                            <h3 class="text-lg font-bold text-blue-600 mb-4">Professional</h3>
+                            <div class="text-4xl font-black mb-1" aria-live="polite">
+                                <span class="billing-price" data-monthly="$29" data-yearly="$278">$29</span><span class="billing-period text-sm text-gray-400 font-bold">/mo</span>
+                            </div>
+                            <p class="text-sm text-gray-500">For growing portfolios.</p>
+                        </div>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-center gap-3 text-sm font-medium"><i class="fa-solid fa-circle-check text-blue-600"></i> Unlimited Properties</li>
+                            <li class="flex items-center gap-3 text-sm font-medium"><i class="fa-solid fa-circle-check text-blue-600"></i> Advanced Analytics</li>
+                            <li class="flex items-center gap-3 text-sm font-medium"><i class="fa-solid fa-circle-check text-blue-600"></i> Market Value AI</li>
+                            <li class="flex items-center gap-3 text-sm font-medium"><i class="fa-solid fa-circle-check text-blue-600"></i> Priority Support</li>
+                        </ul>
+                        <button class="w-full py-4 rounded-full bg-blue-600 text-white font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">Select Plan</button>
+                    </div>
+
+                    <!-- Enterprise -->
+                    <div class="bg-white p-10 rounded-[2rem] border border-gray-100 shadow-sm flex flex-col">
+                        <div class="mb-10">
+                            <h3 class="text-lg font-bold text-gray-400 mb-4">Enterprise</h3>
+                            <div class="text-4xl font-black mb-1" aria-live="polite">
+                                <span class="billing-price" data-monthly="$49" data-yearly="$470">$49</span><span class="billing-period text-sm text-gray-400 font-bold">/mo</span>
+                            </div>
+                            <p class="text-sm text-gray-500">For large-scale management.</p>
+                        </div>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-center gap-3 text-sm font-medium"><i class="fa-solid fa-circle-check text-blue-600"></i> Custom API Access</li>
+                            <li class="flex items-center gap-3 text-sm font-medium"><i class="fa-solid fa-circle-check text-blue-600"></i> White-label Option</li>
+                            <li class="flex items-center gap-3 text-sm font-medium"><i class="fa-solid fa-circle-check text-blue-600"></i> Dedicated Manager</li>
+                            <li class="flex items-center gap-3 text-sm font-medium"><i class="fa-solid fa-circle-check text-blue-600"></i> Early Access Features</li>
+                        </ul>
+                        <button class="w-full py-4 rounded-full border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-50 transition-all">Talk to Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- block:end pricing -->
+
+        <!-- block:start cta-nature -->
+        <section class="relative py-32 px-6">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fG1hamVzdGljJTIwbW91bnRhaW4lMjByYW5nZSUyMHZhc3QlMjBza3klMjBzdW5zZXR8ZW58MXx8fHwxNzk1Mzg2MTU3fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="majestic mountain range under a vast sky at sunset, dramatic lighting, epic landscape photography" />
+                <div class="absolute inset-0 bg-blue-900/60 backdrop-blur-[2px]"></div>
+            </div>
+            <div class="container max-w-4xl mx-auto text-center relative z-10 text-white">
+                <h2 class="text-4xl md:text-5xl font-serif-elegant font-black mb-8 leading-tight italic">Scale Your Vision, <br/><span class="not-italic">Grow Your Legacy.</span></h2>
+                <p class="text-lg text-white/80 mb-12 max-w-2xl mx-auto">Join the new era of property administration. Secure, intelligent, and designed for your ultimate success.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <button class="w-full sm:w-auto bg-white text-blue-900 px-12 py-4 rounded-full font-black hover:bg-gray-100 transition-all shadow-2xl">
+                        Start Now
+                    </button>
+                    <button class="w-full sm:w-auto bg-transparent border-2 border-white text-white px-12 py-4 rounded-full font-black hover:bg-white/10 transition-all">
+                        Request Demo
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- block:end cta-nature -->
+
+        <!-- block:start testimonials -->
+        <section id="testimonials" class="py-32 bg-white">
+            <div class="container max-w-7xl mx-auto px-6 text-center">
+                <div class="text-blue-600 font-bold text-xs uppercase tracking-widest mb-4">Success Stories</div>
+                <h2 class="text-4xl font-serif-elegant font-bold tracking-tight text-[#0f172a] mb-16">Trusted by High-Volume Teams</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-8 rounded-3xl bg-gray-50 border border-gray-100 text-left">
+                        <div class="flex gap-1 text-orange-400 mb-6">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-8 font-medium italic">"EstateFlow has completely transformed how we handle our commercial leasing. The AI lead qualification alone saved us 20 hours a week."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-12 h-12 rounded-full border-2 border-white" alt="Avatar">
+                            <div>
+                                <h4 class="font-bold text-sm">Sarah Jenkins</h4>
+                                <p class="text-xs text-gray-400">Director at Nexus Realty</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-gray-50 border border-gray-100 text-left">
+                        <div class="flex gap-1 text-orange-400 mb-6">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-8 font-medium italic">"The predictive analytics gave us the edge we needed in a competitive market. Our yield increased by 12% in the first quarter."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-12 h-12 rounded-full border-2 border-white" alt="Avatar">
+                            <div>
+                                <h4 class="font-bold text-sm">David Chen</h4>
+                                <p class="text-xs text-gray-400">VP of Asset Management</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-gray-50 border border-gray-100 text-left">
+                        <div class="flex gap-1 text-orange-400 mb-6">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-8 font-medium italic">"Clean, intuitive, and powerful. It's the infrastructure we've been waiting for. Our tenants love the new portal too."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-12 h-12 rounded-full border-2 border-white" alt="Avatar">
+                            <div>
+                                <h4 class="font-bold text-sm">Marcus Thorne</h4>
+                                <p class="text-xs text-gray-400">Operations Head, Apex Portfolios</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- block:end testimonials -->
+
+        <!-- block:start footer -->
+        <footer id="footer" class="bg-white pt-24 pb-12 border-t border-gray-100">
+        <div class="container max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                <div class="space-y-6">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white">
+                            <i class="fa-solid fa-building-circle-check text-sm"></i>
+                        </div>
+                        <span class="text-xl font-bold tracking-tight text-[#0f172a]">EstateFlow</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">Pioneering the future of real estate administration through intelligence and automation.</p>
+                </div>
+                <div>
+                    <h5 class="font-bold text-[#0f172a] mb-6">Solutions</h5>
+                    <ul class="space-y-4 text-sm text-gray-500 font-medium">
+                        <li><a href="#features" class="hover:text-blue-600 transition-colors">Residential Portfolios</a></li>
+                        <li><a href="#features" class="hover:text-blue-600 transition-colors">Commercial Assets</a></li>
+                        <li><a href="#features" class="hover:text-blue-600 transition-colors">Lead Management</a></li>
+                        <li><a href="#analytics" class="hover:text-blue-600 transition-colors">AI Forecasting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-[#0f172a] mb-6">Company</h5>
+                    <ul class="space-y-4 text-sm text-gray-500 font-medium">
+                        <li><a href="#hero" class="hover:text-blue-600 transition-colors">About Us</a></li>
+                        <li><a href="#footer" class="hover:text-blue-600 transition-colors">Careers</a></li>
+                        <li><a href="#testimonials" class="hover:text-blue-600 transition-colors">Press & Media</a></li>
+                        <li><a href="#footer" class="hover:text-blue-600 transition-colors">Legal & Privacy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-[#0f172a] mb-6">Connect</h5>
+                    <ul class="space-y-4 text-sm text-gray-500 font-medium">
+                        <li><a href="#" class="hover:text-blue-600 transition-colors"><i class="fa-brands fa-linkedin me-2"></i> LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-blue-600 transition-colors"><i class="fa-brands fa-twitter me-2"></i> Twitter / X</a></li>
+                        <li><a href="#" class="hover:text-blue-600 transition-colors"><i class="fa-brands fa-instagram me-2"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400 font-bold uppercase tracking-widest">
+                <div>© 2024 EstateFlow Intelligence. All Rights Reserved.</div>
+                <div class="flex gap-8">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- block:end footer -->
+
+    <script>
+        window.addEventListener('load', function() {
+            const billingToggle = document.getElementById('billing-toggle');
+            const billingToggleThumb = document.getElementById('billing-toggle-thumb');
+            const monthlyLabel = document.getElementById('monthly-label');
+            const yearlyLabel = document.getElementById('yearly-label');
+
+            billingToggle.addEventListener('click', function() {
+                const isYearly = billingToggle.getAttribute('aria-checked') !== 'true';
+                billingToggle.setAttribute('aria-checked', String(isYearly));
+                billingToggleThumb.classList.toggle('translate-x-6', isYearly);
+                billingToggleThumb.classList.toggle('translate-x-0', !isYearly);
+                monthlyLabel.classList.toggle('text-blue-600', !isYearly);
+                monthlyLabel.classList.toggle('text-gray-400', isYearly);
+                yearlyLabel.classList.toggle('text-blue-600', isYearly);
+                yearlyLabel.classList.toggle('text-gray-400', !isYearly);
+
+                document.querySelectorAll('.billing-price').forEach(function(price) {
+                    price.textContent = isYearly ? price.dataset.yearly : price.dataset.monthly;
+                });
+                document.querySelectorAll('.billing-period').forEach(function(period) {
+                    period.textContent = isYearly ? '/yr' : '/mo';
+                });
+            });
+
+            // Revenue Chart
+            try {
+                const revenueData = [
+                    {
+                        x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                        y: [180, 210, 195, 240, 270, 310],
+                        type: 'scatter',
+                        mode: 'lines+markers',
+                        name: 'Projected',
+                        line: { color: '#3b82f6', width: 3, shape: 'spline' },
+                        marker: { size: 8 }
+                    },
+                    {
+                        x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                        y: [165, 205, 200, 230, 260, 290],
+                        type: 'scatter',
+                        mode: 'lines+markers',
+                        name: 'Actual',
+                        line: { color: '#94a3b8', width: 2, dash: 'dot' }
+                    }
+                ];
+
+                const revenueLayout = {
+                    margin: { t: 30, r: 20, b: 40, l: 40 },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    showlegend: true,
+                    legend: { orientation: 'h', y: -0.2 },
+                    xaxis: { gridcolor: '#e2e8f0', zeroline: false },
+                    yaxis: { gridcolor: '#e2e8f0', zeroline: false }
+                };
+
+                Plotly.newPlot('revenue-chart', revenueData, revenueLayout, {responsive: true, displayModeBar: false});
+            } catch(e) { console.error('Revenue chart error:', e); }
+
+            // Occupancy Chart
+            try {
+                const occupancyData = [{
+                    values: [94.2, 5.8],
+                    labels: ['Occupied', 'Vacant'],
+                    type: 'pie',
+                    hole: .7,
+                    marker: {
+                        colors: ['#3b82f6', 'rgba(255,255,255,0.1)']
+                    },
+                    textinfo: 'none'
+                }];
+
+                const occupancyLayout = {
+                    margin: { t: 0, r: 0, b: 0, l: 0 },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    showlegend: true,
+                    legend: { font: { color: '#ffffff' }, orientation: 'h', x: 0.1, y: -0.1 },
+                    annotations: [
+                        {
+                            font: { size: 30, color: '#ffffff', weight: 'bold' },
+                            showarrow: false,
+                            text: '94.2%',
+                            x: 0.5,
+                            y: 0.5
+                        }
+                    ]
+                };
+
+                Plotly.newPlot('occupancy-chart', occupancyData, occupancyLayout, {responsive: true, displayModeBar: false});
+            } catch(e) { console.error('Occupancy chart error:', e); }
+        });
+    </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=estateflow&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

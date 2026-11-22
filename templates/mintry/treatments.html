@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treatments | Mintry</title>
+  <meta name="description" content="What Mintry Dental Practice does, from check-ups and white fillings to whitening, clear aligners and implants: what each visit involves, how long it takes and what it costs.">
+  <meta name="keywords" content="Mintry, Tailwind CSS template, HTML website template, dentist template, dental clinic website, dental practice template, treatments and fees page, appointment request form, health template">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Treatments | Mintry">
+  <meta property="og:description" content="What Mintry Dental Practice does, from check-ups and white fillings to whitening, clear aligners and implants: what each visit involves, how long it takes and what it costs.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Mintry template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Treatments | Mintry">
+  <meta name="twitter:description" content="What Mintry Dental Practice does, from check-ups and white fillings to whitening, clear aligners and implants: what each visit involves, how long it takes and what it costs.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Mintry template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: { DEFAULT: '#1d2327', soft: '#4a545b', mute: '#69747b' },
+            mist: { DEFAULT: '#f1f2f4', deep: '#e3e5e8' },
+            mint: { DEFAULT: '#d4ece5', deep: '#a9d6ca', dark: '#1f5b50' },
+            coral: { DEFAULT: '#e8607c', deep: '#c9415f' },
+            line: '#dfe2e5'
+          },
+          fontFamily: {
+            sans: ['Hind', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white font-sans text-ink antialiased">
+  <header class="relative z-40">
+    <div class="mx-auto flex max-w-[1500px] items-center justify-between gap-6 px-5 py-5 md:px-10 md:py-8">
+      <a href="index.html" class="flex items-center gap-3 text-2xl font-bold leading-none">
+        <span class="relative block h-8 w-8" aria-hidden="true"><span class="absolute left-0 top-0 h-5 w-5 rounded-full bg-coral"></span><span class="absolute bottom-0 right-0 h-5 w-5 rounded-full bg-mint-deep mix-blend-multiply"></span></span>
+        Mintry
+      </a>
+      <nav aria-label="Main" class="hidden items-center gap-9 lg:flex">
+          <a href="treatments.html" aria-current="page" class="border-b-2 pb-1 font-medium transition hover:border-coral border-coral">Treatments</a>
+          <a href="fees.html"  class="border-b-2 pb-1 font-medium transition hover:border-coral border-transparent">Fees</a>
+          <a href="about.html"  class="border-b-2 pb-1 font-medium transition hover:border-coral border-transparent">The practice</a>
+          <a href="contact.html"  class="border-b-2 pb-1 font-medium transition hover:border-coral border-transparent">Contact</a>
+        <a href="tel:+441225555014" class="font-semibold"><i class="fa-solid fa-phone mr-2 text-sm text-coral"></i>01225 555 014</a>
+      </nav>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open the menu" class="flex h-11 w-11 items-center justify-center rounded-full bg-ink text-white lg:hidden"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu" hidden class="mx-5 rounded-2xl bg-white p-6 shadow-xl lg:hidden">
+      <nav aria-label="Mobile" class="flex flex-col">
+          <a href="index.html"  class="border-b border-line py-3 text-lg font-semibold ">Home</a>
+          <a href="treatments.html" aria-current="page" class="border-b border-line py-3 text-lg font-semibold text-coral-deep">Treatments</a>
+          <a href="fees.html"  class="border-b border-line py-3 text-lg font-semibold ">Fees</a>
+          <a href="about.html"  class="border-b border-line py-3 text-lg font-semibold ">The practice</a>
+          <a href="contact.html"  class="border-b border-line py-3 text-lg font-semibold ">Contact</a>
+        <a href="tel:+441225555014" class="mt-4 font-semibold"><i class="fa-solid fa-phone mr-2 text-sm text-coral"></i>01225 555 014</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+
+  <section class="relative overflow-hidden">
+    <div class="absolute bottom-0 left-0 h-24 w-[60%] bg-mint" aria-hidden="true"></div>
+    <p class="outline-word pointer-events-none absolute -bottom-2 left-0 text-[13.5vw]" aria-hidden="true">Treatments</p>
+    <div class="relative mx-auto grid max-w-[1500px] items-end gap-8 px-5 pt-10 md:px-10 lg:grid-cols-[1.1fr_.9fr] lg:pt-16">
+      <div class="pb-32 lg:pb-44 lg:pl-[5%]">
+        <p class="slash">Treatments</p>
+        <h1 class="mt-3 text-5xl font-bold leading-[1.02] tracking-tight md:text-6xl xl:text-7xl">Everything explained <span class="underlined">before we start</span></h1>
+        <p class="mt-6 max-w-lg text-lg leading-relaxed text-ink-soft">Four of the things we do most, in plain words. If yours is not here, it is probably on the fees page, and we are happy to talk it through.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1445527815219-ecbfec67492e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="A bright white dental surgery with two treatment chairs" class="relative hidden h-[26rem] w-full object-cover lg:block">
+    </div>
+  </section>
+
+  <section class="px-5 py-16 md:px-10 md:py-24" data-filter>
+    <div class="mx-auto max-w-[1320px]">
+      <div role="group" aria-label="Filter treatments" class="flex flex-wrap gap-2.5">
+          <button type="button" data-filter-chip="All" aria-pressed="true" class="rounded-full border border-ink px-5 py-2.5 font-medium transition hover:bg-mist aria-pressed:border-coral aria-pressed:bg-coral aria-pressed:text-white">All</button>
+          <button type="button" data-filter-chip="Everyday" aria-pressed="false" class="rounded-full border border-ink px-5 py-2.5 font-medium transition hover:bg-mist aria-pressed:border-coral aria-pressed:bg-coral aria-pressed:text-white">Everyday</button>
+          <button type="button" data-filter-chip="Cosmetic" aria-pressed="false" class="rounded-full border border-ink px-5 py-2.5 font-medium transition hover:bg-mist aria-pressed:border-coral aria-pressed:bg-coral aria-pressed:text-white">Cosmetic</button>
+          <button type="button" data-filter-chip="Restoring" aria-pressed="false" class="rounded-full border border-ink px-5 py-2.5 font-medium transition hover:bg-mist aria-pressed:border-coral aria-pressed:bg-coral aria-pressed:text-white">Restoring</button>
+      </div>
+      <div class="mt-12 space-y-16 md:space-y-24">
+          <article data-filter-item="Everyday" class="grid items-center gap-8 lg:grid-cols-2 lg:gap-20">
+            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="A dentist checking a patient&#39;s teeth with a small mirror" loading="lazy" class="aspect-[4/3] w-full bg-mist object-cover ">
+            <div>
+              <p class="slash">Everyday</p>
+              <h2 class="mt-2 text-4xl font-bold tracking-tight md:text-5xl">Check-up and clean</h2>
+              <p class="mt-5 text-lg leading-relaxed text-ink-soft">A dentist checks every tooth, your gums and the soft parts of your mouth. A hygienist then cleans and polishes. You leave with photos and a plan, even if the plan is to come back in a year.</p>
+              <ul class="mt-6 space-y-2.5">
+                  <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint text-xs text-mint-dark"><i class="fa-solid fa-check"></i></span>X-rays only when you are due them</li>
+                  <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint text-xs text-mint-dark"><i class="fa-solid fa-check"></i></span>Photos of anything we find</li>
+                  <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint text-xs text-mint-dark"><i class="fa-solid fa-check"></i></span>A written plan with prices</li>
+              </ul>
+              <dl class="mt-7 flex flex-wrap gap-x-12 gap-y-3 border-t border-line pt-6">
+                <div><dt class="text-ink-mute">It takes</dt><dd class="text-xl font-bold">40 minutes</dd></div>
+                <div><dt class="text-ink-mute">It costs</dt><dd class="text-xl font-bold">from &pound;45</dd></div>
+              </dl>
+              <a href="contact.html?visit=Check-up%20and%20clean" class="mt-8 inline-flex items-center gap-4 font-semibold">Ask about this <span class="disc h-11 w-11"><i class="fa-solid fa-arrow-right"></i></span></a>
+            </div>
+          </article>
+          <article data-filter-item="Everyday" class="grid items-center gap-8 lg:grid-cols-2 lg:gap-20">
+            <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="A dentist in a mask and blue gloves holding a mirror and a probe" loading="lazy" class="aspect-[4/3] w-full bg-mist object-cover lg:order-2">
+            <div>
+              <p class="slash">Everyday</p>
+              <h2 class="mt-2 text-4xl font-bold tracking-tight md:text-5xl">White fillings</h2>
+              <p class="mt-5 text-lg leading-relaxed text-ink-soft">We take out the decay, rebuild the tooth in a resin matched to its colour and polish it until your tongue cannot find the join. Old grey fillings can be swapped the same way.</p>
+              <ul class="mt-6 space-y-2.5">
+                  <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint text-xs text-mint-dark"><i class="fa-solid fa-check"></i></span>Numb before we start, always</li>
+                  <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint text-xs text-mint-dark"><i class="fa-solid fa-check"></i></span>Guaranteed for five years</li>
+                  <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint text-xs text-mint-dark"><i class="fa-solid fa-check"></i></span>Eat as soon as the numbness fades</li>
+              </ul>
+              <dl class="mt-7 flex flex-wrap gap-x-12 gap-y-3 border-t border-line pt-6">
+                <div><dt class="text-ink-mute">It takes</dt><dd class="text-xl font-bold">30 to 50 minutes</dd></div>
+                <div><dt class="text-ink-mute">It costs</dt><dd class="text-xl font-bold">from &pound;95</dd></div>
+              </dl>
+              <a href="contact.html?visit=White%20fillings" class="mt-8 inline-flex items-center gap-4 font-semibold">Ask about this <span class="disc h-11 w-11"><i class="fa-solid fa-arrow-right"></i></span></a>
+            </div>
+          </article>
+          <article data-filter-item="Cosmetic" class="grid items-center gap-8 lg:grid-cols-2 lg:gap-20">
+            <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="A person fitting a clear aligner over their top teeth" loading="lazy" class="aspect-[4/3] w-full bg-mist object-cover ">
+            <div>
+              <p class="slash">Cosmetic</p>
+              <h2 class="mt-2 text-4xl font-bold tracking-tight md:text-5xl">Clear aligners</h2>
+              <p class="mt-5 text-lg leading-relaxed text-ink-soft">A scan instead of putty, a 3D preview of the result before you commit, then a new pair of thin clear trays every week. Most people around you will not notice them.</p>
+              <ul class="mt-6 space-y-2.5">
+                  <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint text-xs text-mint-dark"><i class="fa-solid fa-check"></i></span>Free consultation and preview</li>
+                  <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint text-xs text-mint-dark"><i class="fa-solid fa-check"></i></span>Whitening included at the end</li>
+                  <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint text-xs text-mint-dark"><i class="fa-solid fa-check"></i></span>Retainers for life in the price</li>
+              </ul>
+              <dl class="mt-7 flex flex-wrap gap-x-12 gap-y-3 border-t border-line pt-6">
+                <div><dt class="text-ink-mute">It takes</dt><dd class="text-xl font-bold">6 to 12 months</dd></div>
+                <div><dt class="text-ink-mute">It costs</dt><dd class="text-xl font-bold">from &pound;1,900</dd></div>
+              </dl>
+              <a href="contact.html?visit=Clear%20aligners" class="mt-8 inline-flex items-center gap-4 font-semibold">Ask about this <span class="disc h-11 w-11"><i class="fa-solid fa-arrow-right"></i></span></a>
+            </div>
+          </article>
+          <article data-filter-item="Restoring" class="grid items-center gap-8 lg:grid-cols-2 lg:gap-20">
+            <img src="https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="A model of a dental implant between two teeth" loading="lazy" class="aspect-[4/3] w-full bg-mist object-cover lg:order-2">
+            <div>
+              <p class="slash">Restoring</p>
+              <h2 class="mt-2 text-4xl font-bold tracking-tight md:text-5xl">Implants</h2>
+              <p class="mt-5 text-lg leading-relaxed text-ink-soft">A small titanium post replaces the root, and a crown made for the gap sits on top. It is planned on a scan, placed here under local anaesthetic and feels like a tooth.</p>
+              <ul class="mt-6 space-y-2.5">
+                  <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint text-xs text-mint-dark"><i class="fa-solid fa-check"></i></span>One dentist from scan to crown</li>
+                  <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint text-xs text-mint-dark"><i class="fa-solid fa-check"></i></span>Sedation if you would like it</li>
+                  <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint text-xs text-mint-dark"><i class="fa-solid fa-check"></i></span>Ten-year guarantee on the implant</li>
+              </ul>
+              <dl class="mt-7 flex flex-wrap gap-x-12 gap-y-3 border-t border-line pt-6">
+                <div><dt class="text-ink-mute">It takes</dt><dd class="text-xl font-bold">3 to 5 months</dd></div>
+                <div><dt class="text-ink-mute">It costs</dt><dd class="text-xl font-bold">from &pound;2,200</dd></div>
+              </dl>
+              <a href="contact.html?visit=Implants" class="mt-8 inline-flex items-center gap-4 font-semibold">Ask about this <span class="disc h-11 w-11"><i class="fa-solid fa-arrow-right"></i></span></a>
+            </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-mist px-5 py-16 md:px-10 md:py-24">
+    <div class="mx-auto max-w-[1320px]">
+      <p class="slash">Your first visit</p>
+      <h2 class="mt-3 max-w-2xl text-4xl font-bold leading-[1.08] tracking-tight md:text-5xl">Forty minutes, and <span class="underlined">no surprises</span></h2>
+      <ol class="mt-12 grid gap-8 md:grid-cols-3">
+          <li class="bg-white p-8" data-reveal style="--reveal-delay: 0ms">
+            <span class="disc h-12 w-12 text-lg font-bold">1</span>
+            <h3 class="mt-6 text-2xl font-bold">A chat, sitting upright</h3>
+            <p class="mt-3 text-ink-soft">We ask what you want from your teeth and what has put you off before. Nothing happens in the first ten minutes.</p>
+          </li>
+          <li class="bg-white p-8" data-reveal style="--reveal-delay: 90ms">
+            <span class="disc h-12 w-12 text-lg font-bold">2</span>
+            <h3 class="mt-6 text-2xl font-bold">A careful look</h3>
+            <p class="mt-3 text-ink-soft">Teeth, gums and jaw, with a camera so you can see what we see on the screen above the chair.</p>
+          </li>
+          <li class="bg-white p-8" data-reveal style="--reveal-delay: 180ms">
+            <span class="disc h-12 w-12 text-lg font-bold">3</span>
+            <h3 class="mt-6 text-2xl font-bold">A plan to take home</h3>
+            <p class="mt-3 text-ink-soft">What needs doing, what can wait and what each part costs. You decide in your own time.</p>
+          </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="px-5 py-16 md:px-10 md:py-24">
+    <div class="mx-auto max-w-[1320px]">
+      <p class="slash">Asked every week</p>
+      <h2 class="mt-3 text-4xl font-bold tracking-tight md:text-5xl">Before <span class="underlined">you book</span></h2>
+      <dl class="mt-10 grid gap-x-16 gap-y-10 border-t-2 border-ink pt-10 md:grid-cols-2">
+          <div>
+            <dt class="text-xl font-bold">Will it hurt?</dt>
+            <dd class="mt-2 text-ink-soft">We numb the gum with a gel first and wait until it has worked. If you feel anything, raise a hand and we stop.</dd>
+          </div>
+          <div>
+            <dt class="text-xl font-bold">I have not been for years. Is that a problem?</dt>
+            <dd class="mt-2 text-ink-soft">No. About half of our new patients say the same. Nobody will tell you off.</dd>
+          </div>
+          <div>
+            <dt class="text-xl font-bold">Do you see children?</dt>
+            <dd class="mt-2 text-ink-soft">Yes, from their first tooth. Under twelves are seen free when a parent is a patient.</dd>
+          </div>
+          <div>
+            <dt class="text-xl font-bold">Can I spread the cost?</dt>
+            <dd class="mt-2 text-ink-soft">Anything over £300 can be paid over six or twelve months with no interest.</dd>
+          </div>
+      </dl>
+      <a href="fees.html" class="mt-12 inline-flex items-center gap-4 font-semibold">See every fee <span class="disc h-11 w-11"><i class="fa-solid fa-arrow-right"></i></span></a>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll("[data-filter]").forEach((root) => {
+      const chips = root.querySelectorAll("[data-filter-chip]");
+      const items = root.querySelectorAll("[data-filter-item]");
+      chips.forEach((chip) => chip.addEventListener("click", () => {
+        const kind = chip.dataset.filterChip;
+        chips.forEach((other) => other.setAttribute("aria-pressed", String(other === chip)));
+        items.forEach((item) => { item.hidden = kind !== "All" && item.dataset.filterItem !== kind; });
+      }));
+    });
+  </script>
+
+  </main>
+
+  <footer class="bg-ink px-5 py-14 text-white md:px-10 md:py-16">
+    <div class="mx-auto flex max-w-[1320px] flex-wrap items-start justify-between gap-10">
+      <div>
+        <a href="index.html" class="flex items-center gap-3 text-2xl font-bold leading-none">
+          <span class="relative block h-8 w-8" aria-hidden="true"><span class="absolute left-0 top-0 h-5 w-5 rounded-full bg-coral"></span><span class="absolute bottom-0 right-0 h-5 w-5 rounded-full bg-mint-deep/80"></span></span>
+          Mintry
+        </a>
+        <p class="mt-4 max-w-xs text-white/70">Family and cosmetic dentistry at 12 Quiet Street, Bath.</p>
+      </div>
+      <nav aria-label="Footer" class="flex flex-wrap gap-x-9 gap-y-3 font-medium">
+        <a href="index.html" class="hover:text-mint-deep">Home</a>
+          <a href="treatments.html" class="hover:text-mint-deep">Treatments</a>
+          <a href="fees.html" class="hover:text-mint-deep">Fees</a>
+          <a href="about.html" class="hover:text-mint-deep">The practice</a>
+          <a href="contact.html" class="hover:text-mint-deep">Contact</a>
+      </nav>
+      <p class="text-2xl font-bold"><a href="tel:+441225555014" class="hover:text-mint-deep">01225 555 014</a><span class="mt-1 block text-base font-normal text-white/70">Emergencies: ring before 10 am</span></p>
+    </div>
+    <div class="mx-auto mt-12 flex max-w-[1320px] flex-wrap items-center justify-between gap-4 border-t border-white/15 pt-6 text-sm text-white/60">
+      <p>&copy; 2026 Mintry Dental Practice. Regulated by the General Dental Council.</p>
+      <p class="flex gap-5 text-base"><a href="https://www.instagram.com/" aria-label="Instagram" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a><a href="https://www.facebook.com/" aria-label="Facebook" class="hover:text-white"><i class="fa-brands fa-facebook-f"></i></a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll("[data-menu-toggle]").forEach((toggle) => {
+      const menu = document.getElementById(toggle.getAttribute("aria-controls"));
+      if (!menu) return;
+      toggle.addEventListener("click", () => {
+        const open = toggle.getAttribute("aria-expanded") !== "true";
+        toggle.setAttribute("aria-expanded", String(open));
+        menu.hidden = !open;
+      });
+    });
+
+    document.querySelectorAll("[data-hours]").forEach((list) => {
+      const row = list.querySelector(`[data-day="${new Date().getDay()}"]`);
+      if (!row) return;
+      row.style.color = "#1d2327";
+      row.style.fontWeight = "700";
+    });
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=mintry&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

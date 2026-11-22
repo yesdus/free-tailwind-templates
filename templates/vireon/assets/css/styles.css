@@ -1,0 +1,37 @@
+@view-transition { navigation: auto; }
+    ::view-transition-old(root) { animation: 180ms ease-out both page-fade-out; }
+    ::view-transition-new(root) { animation: 220ms ease-in both page-fade-in; }
+    @keyframes page-fade-out { to { opacity: 0; } }
+    @keyframes page-fade-in { from { opacity: 0; } }
+    html { scroll-behavior: smooth; }
+    [hidden] { display: none !important; }
+    [data-accordion-panel] { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .45s ease; }
+    [data-accordion-panel] > div { overflow: hidden; }
+    [data-accordion-item][aria-expanded="true"] [data-accordion-panel] { grid-template-rows: 1fr; }
+    [data-accordion-item][aria-expanded="true"] [data-accordion-icon] { transform: rotate(45deg); }
+    [data-accordion-icon] { transition: transform .3s ease; }
+    .reveal-ready [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; transition-delay: var(--reveal-delay, 0ms); }
+    .reveal-ready [data-reveal].is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      [data-accordion-panel], [data-accordion-icon] { transition: none; }
+      ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+    }
+
+@view-transition { navigation: auto; }
+    ::view-transition-old(root) { animation: 180ms ease-out both page-fade-out; }
+    ::view-transition-new(root) { animation: 220ms ease-in both page-fade-in; }
+    @keyframes page-fade-out { to { opacity: 0; } }
+    @keyframes page-fade-in { from { opacity: 0; } }
+    html { scroll-behavior: smooth; }
+    [hidden] { display: none !important; }
+    [data-accordion-panel] { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .45s ease; }
+    [data-accordion-panel] > div { overflow: hidden; }
+    [data-accordion-item][aria-expanded="true"] [data-accordion-panel] { grid-template-rows: 1fr; }
+    .reveal-ready [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; transition-delay: var(--reveal-delay, 0ms); }
+    .reveal-ready [data-reveal].is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      [data-accordion-panel] { transition: none; }
+      ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+    }

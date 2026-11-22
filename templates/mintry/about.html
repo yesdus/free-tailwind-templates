@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The practice | Mintry</title>
+  <meta name="description" content="Mintry is a nine-person dental practice at 12 Quiet Street in Bath. Meet the dentists, see the rooms and read what we promise nervous patients.">
+  <meta name="keywords" content="Mintry, Tailwind CSS template, HTML website template, dentist template, dental clinic website, dental practice template, treatments and fees page, appointment request form, health template">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="The practice | Mintry">
+  <meta property="og:description" content="Mintry is a nine-person dental practice at 12 Quiet Street in Bath. Meet the dentists, see the rooms and read what we promise nervous patients.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Mintry template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="The practice | Mintry">
+  <meta name="twitter:description" content="Mintry is a nine-person dental practice at 12 Quiet Street in Bath. Meet the dentists, see the rooms and read what we promise nervous patients.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Mintry template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: { DEFAULT: '#1d2327', soft: '#4a545b', mute: '#69747b' },
+            mist: { DEFAULT: '#f1f2f4', deep: '#e3e5e8' },
+            mint: { DEFAULT: '#d4ece5', deep: '#a9d6ca', dark: '#1f5b50' },
+            coral: { DEFAULT: '#e8607c', deep: '#c9415f' },
+            line: '#dfe2e5'
+          },
+          fontFamily: {
+            sans: ['Hind', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white font-sans text-ink antialiased">
+  <header class="relative z-40">
+    <div class="mx-auto flex max-w-[1500px] items-center justify-between gap-6 px-5 py-5 md:px-10 md:py-8">
+      <a href="index.html" class="flex items-center gap-3 text-2xl font-bold leading-none">
+        <span class="relative block h-8 w-8" aria-hidden="true"><span class="absolute left-0 top-0 h-5 w-5 rounded-full bg-coral"></span><span class="absolute bottom-0 right-0 h-5 w-5 rounded-full bg-mint-deep mix-blend-multiply"></span></span>
+        Mintry
+      </a>
+      <nav aria-label="Main" class="hidden items-center gap-9 lg:flex">
+          <a href="treatments.html"  class="border-b-2 pb-1 font-medium transition hover:border-coral border-transparent">Treatments</a>
+          <a href="fees.html"  class="border-b-2 pb-1 font-medium transition hover:border-coral border-transparent">Fees</a>
+          <a href="about.html" aria-current="page" class="border-b-2 pb-1 font-medium transition hover:border-coral border-coral">The practice</a>
+          <a href="contact.html"  class="border-b-2 pb-1 font-medium transition hover:border-coral border-transparent">Contact</a>
+        <a href="tel:+441225555014" class="font-semibold"><i class="fa-solid fa-phone mr-2 text-sm text-coral"></i>01225 555 014</a>
+      </nav>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open the menu" class="flex h-11 w-11 items-center justify-center rounded-full bg-ink text-white lg:hidden"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu" hidden class="mx-5 rounded-2xl bg-white p-6 shadow-xl lg:hidden">
+      <nav aria-label="Mobile" class="flex flex-col">
+          <a href="index.html"  class="border-b border-line py-3 text-lg font-semibold ">Home</a>
+          <a href="treatments.html"  class="border-b border-line py-3 text-lg font-semibold ">Treatments</a>
+          <a href="fees.html"  class="border-b border-line py-3 text-lg font-semibold ">Fees</a>
+          <a href="about.html" aria-current="page" class="border-b border-line py-3 text-lg font-semibold text-coral-deep">The practice</a>
+          <a href="contact.html"  class="border-b border-line py-3 text-lg font-semibold ">Contact</a>
+        <a href="tel:+441225555014" class="mt-4 font-semibold"><i class="fa-solid fa-phone mr-2 text-sm text-coral"></i>01225 555 014</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+
+  <section class="relative overflow-hidden">
+    <div class="absolute bottom-0 left-0 h-24 w-[60%] bg-mint" aria-hidden="true"></div>
+    <p class="outline-word pointer-events-none absolute -bottom-2 left-0 text-[13.5vw]" aria-hidden="true">Quiet Street</p>
+    <div class="relative mx-auto grid max-w-[1500px] items-end gap-8 px-5 pt-10 md:px-10 lg:grid-cols-[1.1fr_.9fr] lg:pt-16">
+      <div class="pb-32 lg:pb-44 lg:pl-[5%]">
+        <p class="slash">The practice</p>
+        <h1 class="mt-3 text-5xl font-bold leading-[1.02] tracking-tight md:text-6xl xl:text-7xl">Nine people, three chairs, <span class="underlined">no hurry</span></h1>
+        <p class="mt-6 max-w-lg text-lg leading-relaxed text-ink-soft">We opened in 2012 with one idea: a dental practice run the way a nervous patient would run it.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="A wide treatment room with a dental chair, white units and a window with blinds" class="relative hidden h-[26rem] w-full object-cover lg:block">
+    </div>
+  </section>
+
+  <section class="px-5 py-16 md:px-10 md:py-24">
+    <div class="mx-auto grid max-w-[1320px] gap-12 lg:grid-cols-[.9fr_1.1fr] lg:gap-24">
+      <h2 class="text-4xl font-bold leading-[1.08] tracking-tight md:text-5xl" data-reveal>It started with a patient who <span class="underlined">walked out</span></h2>
+      <div class="space-y-5 text-lg leading-relaxed text-ink-soft" data-reveal>
+        <p>In her last hospital job, Amara Bello watched a man leave halfway through a check-up because nobody had told him what was about to happen. She wrote down everything that would have kept him in the chair. That list became Mintry.</p>
+        <p>Appointments here are a third longer than usual. Every room has a screen above the chair so you see what we see. Prices are on the wall, on the website and on your plan before anything begins.</p>
+        <p class="font-semibold text-ink">Four thousand patients later, the list is still pinned up in the staff room.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-mist px-5 py-16 md:px-10 md:py-24">
+    <div class="mx-auto max-w-[1320px]">
+      <p class="slash">The team</p>
+      <h2 class="mt-3 text-4xl font-bold tracking-tight md:text-5xl">Who looks <span class="underlined">after you</span></h2>
+      <ul class="mt-12 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+          <li class="" data-reveal>
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A dentist in a white coat smiling in a sunny garden" loading="lazy" class="aspect-[4/5] w-full bg-white object-cover object-top">
+            <h3 class="mt-5 text-2xl font-bold">Dr Amara Bello</h3>
+            <p class="slash mt-1">Principal dentist</p>
+            <p class="mt-3 text-ink-soft">Cosmetic work and aligners. Opened the practice in 2012.</p>
+          </li>
+          <li class="lg:mt-12" data-reveal>
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A dentist with glasses and a beard in a white coat, arms folded" loading="lazy" class="aspect-[4/5] w-full bg-white object-cover object-top">
+            <h3 class="mt-5 text-2xl font-bold">Dr Tomas Lindqvist</h3>
+            <p class="slash mt-1">Dentist</p>
+            <p class="mt-3 text-ink-soft">Implants, and most of our nervous patients.</p>
+          </li>
+          <li class="" data-reveal>
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A dental therapist with curly hair in teal scrubs, smiling with arms folded" loading="lazy" class="aspect-[4/5] w-full bg-white object-cover object-top">
+            <h3 class="mt-5 text-2xl font-bold">Priya Shah</h3>
+            <p class="slash mt-1">Dental therapist</p>
+            <p class="mt-3 text-ink-soft">Children, gums and the sticker drawer.</p>
+          </li>
+          <li class="lg:mt-12" data-reveal>
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A smiling hygienist in blue scrubs with his arms folded" loading="lazy" class="aspect-[4/5] w-full bg-white object-cover object-top">
+            <h3 class="mt-5 text-2xl font-bold">Marcus Oyelaran</h3>
+            <p class="slash mt-1">Hygienist</p>
+            <p class="mt-3 text-ink-soft">Gentle with a scaler, firm about flossing.</p>
+          </li>
+      </ul>
+      <p class="mt-12 max-w-2xl text-ink-soft">Plus Dee and Halima at the front desk, nurses Jo, Kasia and Bex, and a fish called Molar.</p>
+    </div>
+  </section>
+
+  <section class="px-5 py-16 md:px-10 md:py-24">
+    <div class="mx-auto max-w-[1320px]">
+      <p class="slash">What we promise</p>
+      <ol class="mt-8 border-t-2 border-ink">
+          <li class="grid gap-x-8 gap-y-2 border-b border-line py-7 md:grid-cols-[3rem_1fr_1.4fr]" data-reveal>
+            <span class="font-semibold text-coral">01</span>
+            <h3 class="text-2xl font-bold md:text-3xl">We explain first</h3>
+            <p class="text-lg text-ink-soft">What we are about to do, why, and what it will feel like. Then we ask if that is all right.</p>
+          </li>
+          <li class="grid gap-x-8 gap-y-2 border-b border-line py-7 md:grid-cols-[3rem_1fr_1.4fr]" data-reveal>
+            <span class="font-semibold text-coral">02</span>
+            <h3 class="text-2xl font-bold md:text-3xl">You can always stop us</h3>
+            <p class="text-lg text-ink-soft">A raised hand means stop. We do, at once, and we do not mind how often.</p>
+          </li>
+          <li class="grid gap-x-8 gap-y-2 border-b border-line py-7 md:grid-cols-[3rem_1fr_1.4fr]" data-reveal>
+            <span class="font-semibold text-coral">03</span>
+            <h3 class="text-2xl font-bold md:text-3xl">No telling off</h3>
+            <p class="text-lg text-ink-soft">Whatever state your teeth are in, you came. That is the hard part done.</p>
+          </li>
+          <li class="grid gap-x-8 gap-y-2 border-b border-line py-7 md:grid-cols-[3rem_1fr_1.4fr]" data-reveal>
+            <span class="font-semibold text-coral">04</span>
+            <h3 class="text-2xl font-bold md:text-3xl">One price, in writing</h3>
+            <p class="text-lg text-ink-soft">Your plan has a total. If the work is simpler than expected, the bill goes down.</p>
+          </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="relative overflow-hidden bg-mint px-5 py-16 md:px-10 md:py-24">
+    <p class="outline-word pointer-events-none absolute -bottom-3 right-0 text-[22vw] md:text-[13.5vw]" aria-hidden="true">Come in</p>
+    <div class="relative mx-auto grid max-w-[1320px] items-center gap-10 lg:grid-cols-2 lg:gap-20">
+      <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&amp;fit=crop&amp;w=1100&amp;q=80" alt="A bright reception desk with a curved white counter" class="aspect-[4/3] w-full object-cover">
+      <div>
+        <h2 class="text-4xl font-bold leading-[1.08] tracking-tight md:text-5xl">Have a look round <span class="underlined">before you book</span></h2>
+        <p class="mt-5 max-w-md text-lg text-ink-soft">Drop in any weekday. Someone at the desk will show you a room, the quiet room and where the kettle is.</p>
+        <a href="contact.html" class="mt-8 inline-flex items-center gap-4 text-lg font-bold">Find us <span class="disc h-14 w-14"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="bg-ink px-5 py-14 text-white md:px-10 md:py-16">
+    <div class="mx-auto flex max-w-[1320px] flex-wrap items-start justify-between gap-10">
+      <div>
+        <a href="index.html" class="flex items-center gap-3 text-2xl font-bold leading-none">
+          <span class="relative block h-8 w-8" aria-hidden="true"><span class="absolute left-0 top-0 h-5 w-5 rounded-full bg-coral"></span><span class="absolute bottom-0 right-0 h-5 w-5 rounded-full bg-mint-deep/80"></span></span>
+          Mintry
+        </a>
+        <p class="mt-4 max-w-xs text-white/70">Family and cosmetic dentistry at 12 Quiet Street, Bath.</p>
+      </div>
+      <nav aria-label="Footer" class="flex flex-wrap gap-x-9 gap-y-3 font-medium">
+        <a href="index.html" class="hover:text-mint-deep">Home</a>
+          <a href="treatments.html" class="hover:text-mint-deep">Treatments</a>
+          <a href="fees.html" class="hover:text-mint-deep">Fees</a>
+          <a href="about.html" class="hover:text-mint-deep">The practice</a>
+          <a href="contact.html" class="hover:text-mint-deep">Contact</a>
+      </nav>
+      <p class="text-2xl font-bold"><a href="tel:+441225555014" class="hover:text-mint-deep">01225 555 014</a><span class="mt-1 block text-base font-normal text-white/70">Emergencies: ring before 10 am</span></p>
+    </div>
+    <div class="mx-auto mt-12 flex max-w-[1320px] flex-wrap items-center justify-between gap-4 border-t border-white/15 pt-6 text-sm text-white/60">
+      <p>&copy; 2026 Mintry Dental Practice. Regulated by the General Dental Council.</p>
+      <p class="flex gap-5 text-base"><a href="https://www.instagram.com/" aria-label="Instagram" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a><a href="https://www.facebook.com/" aria-label="Facebook" class="hover:text-white"><i class="fa-brands fa-facebook-f"></i></a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll("[data-menu-toggle]").forEach((toggle) => {
+      const menu = document.getElementById(toggle.getAttribute("aria-controls"));
+      if (!menu) return;
+      toggle.addEventListener("click", () => {
+        const open = toggle.getAttribute("aria-expanded") !== "true";
+        toggle.setAttribute("aria-expanded", String(open));
+        menu.hidden = !open;
+      });
+    });
+
+    document.querySelectorAll("[data-hours]").forEach((list) => {
+      const row = list.querySelector(`[data-day="${new Date().getDay()}"]`);
+      if (!row) return;
+      row.style.color = "#1d2327";
+      row.style.fontWeight = "700";
+    });
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=mintry&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

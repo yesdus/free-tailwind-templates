@@ -1,0 +1,28 @@
+@view-transition { navigation: auto; }
+    ::view-transition-old(root) { animation: 180ms ease-out both page-fade-out; }
+    ::view-transition-new(root) { animation: 220ms ease-in both page-fade-in; }
+    @keyframes page-fade-out { to { opacity: 0; } }
+    @keyframes page-fade-in { from { opacity: 0; } }
+    html { scroll-behavior: smooth; }
+    [hidden] { display: none !important; }
+    .arches { background-image: radial-gradient(circle at 70% 120%, transparent 38%, rgba(236,235,220,.55) 38.4%, transparent 39.2%, transparent 46%, rgba(236,235,220,.55) 46.4%, transparent 47.2%); }
+    .arches-dark { background-image: radial-gradient(circle at 12% 110%, transparent 30%, rgba(255,255,255,.08) 30.4%, transparent 31.4%, transparent 38%, rgba(255,255,255,.08) 38.4%, transparent 39.4%), radial-gradient(circle at 92% 110%, transparent 30%, rgba(255,255,255,.08) 30.4%, transparent 31.4%, transparent 38%, rgba(255,255,255,.08) 38.4%, transparent 39.4%), linear-gradient(110deg, #4fa595 0%, #2f6b5e 45%, #1e3d36 100%); }
+    .marquee { animation: marquee 30s linear infinite; }
+    .marquee:hover { animation-play-state: paused; }
+    @keyframes marquee { to { transform: translateX(-50%); } }
+    .chart-line { transition: d .6s ease; }
+    .ring-fill { transition: stroke-dashoffset 1.2s ease; }
+    .draw { stroke-dasharray: 600; stroke-dashoffset: 0; transition: stroke-dashoffset 1.4s ease; }
+    .reveal-ready .draw:not(.is-drawn) { stroke-dashoffset: 600; }
+    [data-word] { transition: color .4s ease; }
+    .rail-card { transition: background-color .4s ease, color .4s ease, transform .4s ease; }
+    .rail-card[data-active="true"] { background: #1e3d36; color: #fff; transform: translateY(-.75rem); }
+    .rail-card[data-active="true"] .rail-muted { color: rgba(255,255,255,.75); }
+    .reveal-ready [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; transition-delay: var(--reveal-delay, 0ms); }
+    .reveal-ready [data-reveal].is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .marquee { animation: none; }
+      .chart-line, .ring-fill, .draw, [data-word], .rail-card { transition: none; }
+      ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+    }

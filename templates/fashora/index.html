@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full"><head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashora | Tailwind CSS Streetwear Ecommerce Template</title>
+    <meta name="description" content="Fashora is a vibrant Tailwind CSS streetwear store template for presenting fashion collections, featured products, and bold editorial campaigns.">
+    <meta name="keywords" content="Fashora, Tailwind CSS template, HTML website template, streetwear store template, fashion landing page, clothing collection, responsive ecommerce design">
+    <meta name="author" content="Let's templates">
+    <link rel="canonical" href="">
+
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Let's templates">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Fashora | Tailwind CSS Streetwear Ecommerce Template">
+    <meta property="og:description" content="A vibrant Tailwind CSS streetwear store template for presenting fashion collections, featured products, and bold editorial campaigns.">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="Fashora template preview">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Fashora | Tailwind CSS Streetwear Ecommerce Template">
+    <meta name="twitter:description" content="A vibrant Tailwind CSS streetwear store template for presenting fashion collections, featured products, and bold editorial campaigns.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:image:alt" content="Fashora template preview">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3B82F6',
+              dark: '#121212',
+              light: '#f4f4f5',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              teko: ['Teko', 'sans-serif'],
+            },
+            spacing: {
+              '15': '3.75rem',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              },
+            },
+            animation: {
+              marquee: 'marquee 20s linear infinite',
+            },
+          },
+        },
+      };
+    </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-light text-black overflow-x-hidden">
+
+    <!-- block:start navbar -->
+    <nav class="absolute top-4 sm:top-8 left-0 w-full z-50 px-5 sm:px-8 lg:px-12">
+        <div class="flex items-center justify-between gap-3">
+            <a href="index.html" class="text-2xl sm:text-3xl font-teko font-bold tracking-tight text-white uppercase shrink-0">FASHORA</a>
+
+            <div class="hidden lg:flex items-center gap-2 bg-white/20 backdrop-blur-md p-1 rounded-full border border-white/10">
+                  <a href="index.html" data-nav-link class="nav-pill is-active px-6 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-colors" aria-current=&quot;page&quot;>Home</a>
+                  <a href="#product" data-nav-link class="nav-pill px-6 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-colors">Product</a>
+                  <a href="#pricing" data-nav-link class="nav-pill px-6 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-colors">Pricing</a>
+                  <a href="#shops" data-nav-link class="nav-pill px-6 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-colors">Our Shops</a>
+                  <a href="contact.html" data-nav-link class="nav-pill px-6 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-colors">Contact</a>
+            </div>
+
+            <a href="#pricing" class="bg-white text-black px-4 sm:px-8 py-2 sm:py-2.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider hover:bg-gray-100 transition-colors shrink-0">
+                ORDER NOW
+            </a>
+        </div>
+        <div class="mt-3 flex lg:hidden items-center gap-1 bg-white/20 backdrop-blur-md p-1 rounded-full border border-white/10">
+              <a href="index.html" data-nav-link class="nav-pill is-active flex-1 text-center px-2 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-wider transition-colors" aria-current=&quot;page&quot;>Home</a>
+              <a href="#product" data-nav-link class="nav-pill flex-1 text-center px-2 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-wider transition-colors">Product</a>
+              <a href="#pricing" data-nav-link class="nav-pill flex-1 text-center px-2 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-wider transition-colors">Pricing</a>
+              <a href="#shops" data-nav-link class="nav-pill flex-1 text-center px-2 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-wider transition-colors">Our Shops</a>
+              <a href="contact.html" data-nav-link class="nav-pill flex-1 text-center px-2 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-wider transition-colors">Contact</a>
+        </div>
+    </nav>
+    <!-- block:end navbar -->
+
+    <!-- block:start hero -->
+    <header id="hero" class="relative bg-primary overflow-hidden pt-32 sm:pt-36 md:pt-32 md:h-[900px] md:flex md:flex-col md:justify-end">
+        <h1 class="sr-only">FASHORA</h1>
+        <div class="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none select-none z-0 overflow-hidden" aria-hidden="true">
+            <p class="text-[35vw] font-teko font-bold leading-[0.8] text-white uppercase">FASHORA</p>
+        </div>
+
+        <div class="relative z-10 flex items-center justify-center pointer-events-none px-6 pt-2 md:absolute md:inset-0 md:px-0 md:pt-0">
+            <img class="w-4/5 max-h-[240px] sm:max-h-[300px] md:w-full md:max-w-[1000px] md:max-h-[850px] md:h-auto object-contain drop-shadow-2xl" src="https://images.unsplash.com/photo-1593010932917-92bd21088dee?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGZhc2hpb24lMjBhY3Rpb24lMjB3b21hbiUyMHdoaXRlJTIwc3RyZWV0d2VhciUyMGp1bXBpbmd8ZW58MXx8fHwxNzk1Mzg2MDk2fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="editorial high fashion action photo of a woman in white streetwear jumping with a red skateboard, sk" />
+        </div>
+
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 z-[15] hidden md:block h-1/3 bg-gradient-to-t from-primary via-primary/50 to-transparent"></div>
+
+        <div class="relative z-20 w-full max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12 pt-6 pb-10 md:pt-0 md:pb-24 grid grid-cols-12 gap-6 md:gap-8 items-end">
+            <!-- Hero Description & CTA -->
+            <div class="col-span-12 lg:col-span-5 space-y-5 md:space-y-8">
+                <p class="text-white text-sm max-w-sm leading-relaxed font-medium">
+                    Discover thoughtfully crafted fashion that blends timeless elegance with everyday comfort. Designed for modern lifestyles, made to elevate every moment.
+                </p>
+                <div class="flex items-center gap-2">
+                    <a href="#product" class="bg-white text-black px-6 sm:px-8 py-3 rounded-l-full text-xs font-bold uppercase tracking-widest hover:bg-gray-100 transition-all">
+                        SHOP COLLECTION
+                    </a>
+                    <a href="#product" class="bg-black text-white w-12 h-12 rounded-full flex items-center justify-center -ml-1 shrink-0" aria-label="Shop collection">
+                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-span-12 lg:col-span-7 flex justify-start lg:justify-end">
+                <!-- Glassmorphism Card -->
+                <div class="bg-white/20 backdrop-blur-xl p-5 sm:p-8 rounded-[28px] sm:rounded-[40px] border border-white/30 w-full max-w-[350px] space-y-5 sm:space-y-6">
+                    <div class="flex items-end justify-between gap-3">
+                        <div class="space-y-1">
+                            <div class="flex items-center gap-2">
+                                <span class="text-5xl font-teko text-white font-bold">4.8</span>
+                                <span class="text-white/60 text-xs font-medium uppercase mt-2">(360)</span>
+                            </div>
+                            <p class="text-white/60 text-[10px] font-bold uppercase tracking-widest">Happy Clients Score</p>
+                        </div>
+                        <div class="text-white/80 text-[10px] font-bold uppercase tracking-widest text-right leading-tight">
+                            It's all about the<br>shopping
+                        </div>
+                    </div>
+
+                    <div class="relative hidden sm:block rounded-3xl overflow-hidden aspect-square w-full">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1617551307538-c9cdb9d71289?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGZhc2hpb24lMjBtb2RlbCUyMHdoaXRlJTIwZHJlc3MlMjBzdW5zZXQlMjBnbG93fGVufDF8fHx8MTc5NTM4NjA5N3ww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="aesthetic fashion photography of a model in a white dress, sunset lighting, soft glow" />
+                        <div class="absolute bottom-4 right-4 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-xs"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- block:end hero -->
+
+    <!-- block:start marquee -->
+    <section class="bg-primary py-10 overflow-hidden border-t border-white/10">
+        <div class="flex whitespace-nowrap animate-marquee">
+            <span class="text-[8rem] font-black text-transparent [-webkit-text-stroke:2px_white] mx-10">FASHORA</span>
+            <span class="text-[8rem] font-black text-transparent [-webkit-text-stroke:2px_white] mx-10">FASHORA</span>
+            <span class="text-[8rem] font-black text-transparent [-webkit-text-stroke:2px_white] mx-10">FASHORA</span>
+            <span class="text-[8rem] font-black text-transparent [-webkit-text-stroke:2px_white] mx-10">FASHORA</span>
+        </div>
+    </section>
+    <!-- block:end marquee -->
+
+    <!-- block:start products -->
+    <section id="product" class="py-40 px-12 bg-white overflow-hidden">
+        <div class="max-w-[1400px] mx-auto relative">
+            <div class="mb-32 text-center">
+                <h2 class="text-7xl lg:text-9xl font-teko font-bold text-black uppercase leading-[0.9] relative z-10">
+                    DISCOVER LOOKS THAT<br>DEFINE YOUR STYLE
+                </h2>
+                <!-- Faded Background Text -->
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none opacity-10">
+                    <span class="text-[25vw] font-teko font-bold text-gray-400 uppercase tracking-tighter whitespace-nowrap">START SHOPPING</span>
+                </div>
+            </div>
+
+            <!-- Overlapping Cards -->
+            <div class="flex justify-center items-center gap-4 relative z-20">
+                <div class="w-[300px] aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl -rotate-6 -mr-20 translate-y-10 border-4 border-white">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1586020780197-b3daebd5aaa8?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGZhc2hpb24lMjBwb3J0cmFpdCUyMG1vZGVsJTIwb3JhbmdlJTIwa25pdHdlYXIlMjBvdXRkb29yfGVufDF8fHx8MTc5NTM4NjA5N3ww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="fashion portrait of a model in orange knitwear, outdoor urban setting" />
+                </div>
+                <div class="w-[350px] aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl z-30 border-4 border-white">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1578632292335-df3abbb0d586?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGZhc2hpb24lMjBtb2RlbCUyMGdsYXNzZXMlMjBhdXR1bW4lMjBzdHJlZXR3ZWFyfGVufDF8fHx8MTc5NTM4NjA5OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="editorial fashion photo of a model with glasses in autumn streetwear, close up" />
+                </div>
+                <div class="w-[300px] aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl rotate-6 -ml-20 translate-y-10 border-4 border-white">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1779106761097-5c3e2250be00?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGZhc2hpb24lMjBtb2RlbCUyMHRlY2huaWNhbCUyMHN0cmVldHdlYXIlMjB1cmJhbiUyMGFyY2hpdGVjdHVyYWx8ZW58MXx8fHwxNzk1Mzg2MDk4fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="fashion model in technical streetwear, urban architectural background" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end products -->
+
+    <!-- block:start gallery -->
+    <section id="shops" class="py-32 px-[5%] bg-dark text-white">
+        <div class="max-w-[1400px] mx-auto grid grid-cols-12 gap-8">
+            <div class="col-span-12 md:col-span-4 group">
+                <div class="aspect-[4/5] rounded-2xl overflow-hidden mb-8">
+                    <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://images.unsplash.com/photo-1561053114-fbe0ffaa1440?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHRlY2huaWNhbCUyMGphY2tldCUyMHN0aXRjaGluZyUyMGhhcmR3YXJlJTIwbWFjcm8lMjBmYXNoaW9ufGVufDF8fHx8MTc5NTM4NjA5OXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="detail shot of technical jacket stitching and hardware, macro fashion photography, dramatic light" />
+                </div>
+                <h3 class="text-3xl font-bold mb-4">Modular Shells</h3>
+                <p class="text-gray-400">Weather-ready outerwear engineered for the city. Detachable panels let you adapt your silhouette through the day.</p>
+            </div>
+            <div class="col-span-12 md:col-span-4 group">
+                <div class="aspect-[4/5] rounded-2xl overflow-hidden mb-8">
+                    <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://images.unsplash.com/photo-1608680480325-d3ec3cdf7e60?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGZsYXQlMjBsYXklMjBmb2xkZWQlMjBzdHJlZXR3ZWFyJTIwcGllY2VzJTIwdGV4dHVyZWR8ZW58MXx8fHwxNzk1Mzg2MTAwfDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="flat lay of folded premium streetwear pieces on textured concrete, overhead editorial styling" />
+                </div>
+                <h3 class="text-3xl font-bold mb-4">Utility Systems</h3>
+                <p class="text-gray-400">Functional pockets and reinforced seams meet refined tailoring. Gear up without sacrificing the line.</p>
+            </div>
+            <div class="col-span-12 md:col-span-4 group">
+                <div class="aspect-[4/5] rounded-2xl overflow-hidden mb-8">
+                    <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://images.unsplash.com/photo-1669159423685-4fa4e23faaad?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fG1vZGVsJTIwd2Fsa2luZyUyMHJlZmxlY3RpdmUlMjB0cmFjayUyMHBhbnRzJTIwZHVza3xlbnwxfHx8fDE3OTUzODYxMDB8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="model walking in reflective track pants at dusk, motion blur, urban streetwear campaign" />
+                </div>
+                <h3 class="text-3xl font-bold mb-4">Reflective Accents</h3>
+                <p class="text-gray-400">Subtle light-catching details keep you visible after dark while staying sharp under any light.</p>
+            </div>
+        </div>
+    </section>
+    <!-- block:end gallery -->
+
+    <!-- block:start reviews -->
+    <section class="py-32 px-[5%] bg-light overflow-hidden">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="flex justify-between items-end mb-20">
+                <h2 class="text-6xl font-bold text-black uppercase max-w-2xl">
+                    WHAT OUR COLLECTORS ARE SAYING
+                </h2>
+                <div class="flex gap-4">
+                    <button type="button" id="reviews-prev" class="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center hover:bg-black hover:text-white transition-all" aria-controls="reviews-track" aria-label="Previous reviews">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button type="button" id="reviews-next" class="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center hover:bg-black hover:text-white transition-all" aria-controls="reviews-track" aria-label="Next reviews">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="reviews-track" class="flex gap-6 overflow-x-auto no-scrollbar pb-10 snap-x">
+                  <article data-review class="w-[min(400px,100%)] shrink-0 bg-[#1c1c1c] p-10 rounded-3xl text-white snap-center">
+                    <p class="text-xl leading-relaxed mb-8">"The fit and finish on these drops is unreal. Every piece I&#39;ve grabbed has become a staple — quality that actually holds up."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-full overflow-hidden">
+                            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1613419441661-6a5af1751d30?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIweW91bmclMjBtYW4lMjBzdHJlZXR3ZWFyJTIwY29sbGVjdG9yJTIwY2FuZGlkfGVufDF8fHx8MTc5NTM4NjEwMXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="portrait of a young man streetwear collector, candid smile, natural light" />
+                        </div>
+                        <div>
+                            <div class="font-bold">Marcus Reed</div>
+                            <div class="text-sm text-gray-400">Streetwear Curator</div>
+                        </div>
+                    </div>
+                  </article>
+                  <article data-review class="w-[min(400px,100%)] shrink-0 bg-[#1c1c1c] p-10 rounded-3xl text-white snap-center">
+                    <p class="text-xl leading-relaxed mb-8">"Finally a brand that gets the balance between function and fashion. The modular shells are my everyday uniform now."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-full overflow-hidden">
+                            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1758600587728-9bde755354ad?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIwd29tYW4lMjBmYXNoaW9uJTIwc3R5bGlzdCUyMGNvbmZpZGVudCUyMGV4cHJlc3Npb258ZW58MXx8fHwxNzk1Mzg2MTAxfDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="portrait of a woman fashion stylist, confident expression, studio lighting" />
+                        </div>
+                        <div>
+                            <div class="font-bold">Elena Vance</div>
+                            <div class="text-sm text-gray-400">Fashion Stylist</div>
+                        </div>
+                    </div>
+                  </article>
+                  <article data-review class="w-[min(400px,100%)] shrink-0 bg-[#1c1c1c] p-10 rounded-3xl text-white snap-center">
+                    <p class="text-xl leading-relaxed mb-8">"Limited runs, real craftsmanship. It feels exclusive without being pretentious. Fashora gets it."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-full overflow-hidden">
+                            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIwbWFsZSUyMGNyZWF0aXZlJTIwZGlyZWN0b3IlMjB0aG91Z2h0ZnVsJTIwZ2F6ZXxlbnwxfHx8fDE3OTUzODYxMDJ8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="portrait of a male creative director, thoughtful gaze, soft window light" />
+                        </div>
+                        <div>
+                            <div class="font-bold">Leo Tanaka</div>
+                            <div class="text-sm text-gray-400">Creative Director</div>
+                        </div>
+                    </div>
+                  </article>
+                  <article data-review class="w-[min(400px,100%)] shrink-0 bg-[#1c1c1c] p-10 rounded-3xl text-white snap-center">
+                    <p class="text-xl leading-relaxed mb-8">"The archival pieces still look current seasons later. That kind of longevity is rare in streetwear and it&#39;s why I keep coming back."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-full overflow-hidden">
+                            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="portrait of a woman brand consultant, warm studio lighting" />
+                        </div>
+                        <div>
+                            <div class="font-bold">Amara Cole</div>
+                            <div class="text-sm text-gray-400">Brand Consultant</div>
+                        </div>
+                    </div>
+                  </article>
+                  <article data-review class="w-[min(400px,100%)] shrink-0 bg-[#1c1c1c] p-10 rounded-3xl text-white snap-center">
+                    <p class="text-xl leading-relaxed mb-8">"Every campaign I shoot for these drops feels considered. The silhouettes read instantly on camera and hold up in real life."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-full overflow-hidden">
+                            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="portrait of a male photographer, natural outdoor light" />
+                        </div>
+                        <div>
+                            <div class="font-bold">Noah Blake</div>
+                            <div class="text-sm text-gray-400">Photographer</div>
+                        </div>
+                    </div>
+                  </article>
+                  <article data-review class="w-[min(400px,100%)] shrink-0 bg-[#1c1c1c] p-10 rounded-3xl text-white snap-center">
+                    <p class="text-xl leading-relaxed mb-8">"Customers ask for Fashora by name now. The utility systems sell themselves once people try a piece on the floor."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-full overflow-hidden">
+                            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="portrait of a woman retail buyer, soft window light" />
+                        </div>
+                        <div>
+                            <div class="font-bold">Priya Shah</div>
+                            <div class="text-sm text-gray-400">Retail Buyer</div>
+                        </div>
+                    </div>
+                  </article>
+            </div>
+        </div>
+    </section>
+    <!-- block:end reviews -->
+
+    <!-- block:start pricing -->
+    <section id="pricing" class="py-32 px-[5%] bg-dark text-white">
+        <div class="max-w-[1400px] mx-auto">
+            <h2 class="text-6xl font-bold text-center mb-20">MEMBERSHIP TIERS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="border border-white/10 p-10 rounded-3xl flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2">The Access Drop</h3>
+                    <p class="text-gray-400 text-sm mb-8">Early access to seasonal releases</p>
+                    <div class="text-5xl font-bold mb-10">$49<span class="text-lg text-gray-500 font-normal">/mo</span></div>
+                    <ul class="space-y-4 mb-10 text-gray-300">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-primary"></i> Early release access</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-primary"></i> Member-only looks</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-primary"></i> Free shipping</li>
+                    </ul>
+                    <a href="contact.html" class="mt-auto border border-white/20 text-center py-4 rounded-full font-bold hover:bg-white hover:text-black transition-all">Order Now</a>
+                </div>
+                <div class="border-2 border-primary p-10 rounded-3xl flex flex-col relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-black px-6 py-1 rounded-full text-xs font-bold uppercase">Recommended</div>
+                    <h3 class="text-2xl font-bold mb-2">The Elite Collective</h3>
+                    <p class="text-gray-400 text-sm mb-8">Full archive + private drops</p>
+                    <div class="text-5xl font-bold mb-10">$129<span class="text-lg text-gray-500 font-normal">/mo</span></div>
+                    <ul class="space-y-4 mb-10 text-gray-300">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-primary"></i> Everything in Access</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-primary"></i> Private drop invites</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-primary"></i> 15% off all orders</li>
+                    </ul>
+                    <a href="contact.html" class="mt-auto border border-white/20 text-center py-4 rounded-full font-bold hover:bg-white hover:text-black transition-all">Order Now</a>
+                </div>
+                <div class="border border-white/10 p-10 rounded-3xl flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2">The Archival Tier</h3>
+                    <p class="text-gray-400 text-sm mb-8">Lifetime collector status</p>
+                    <div class="text-5xl font-bold mb-10">$299<span class="text-lg text-gray-500 font-normal">/mo</span></div>
+                    <ul class="space-y-4 mb-10 text-gray-300">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-primary"></i> Everything in Elite</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-primary"></i> One-of-one pieces</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-primary"></i> Lifetime collector ID</li>
+                    </ul>
+                    <a href="contact.html" class="mt-auto border border-white/20 text-center py-4 rounded-full font-bold hover:bg-white hover:text-black transition-all">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end pricing -->
+
+    <!-- block:start footer -->
+    <footer class="bg-black text-white pt-16 sm:pt-24 lg:pt-32 pb-10 px-5 sm:px-[5%] overflow-x-hidden">
+        <div class="max-w-[1400px] mx-auto min-w-0">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 mb-12 lg:mb-20 border-b border-white/10 pb-12 lg:pb-20">
+                <div class="lg:col-span-6 min-w-0">
+                    <h2 class="text-5xl sm:text-6xl lg:text-8xl font-bold tracking-tighter mb-6 lg:mb-10 break-words">FASHORA</h2>
+                    <p class="text-base sm:text-xl text-gray-400 max-w-md">Redefining streetwear with premium materials, timeless design, and a commitment to quality that stands the test of time.</p>
+                </div>
+                <div class="lg:col-span-6 grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-8 min-w-0">
+                    <div class="space-y-4 min-w-0">
+                        <h4 class="font-bold text-xs sm:text-sm uppercase tracking-wider sm:tracking-widest text-gray-500">Explore</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#product" class="hover:text-primary transition-colors">New Arrivals</a></li>
+                            <li><a href="#shops" class="hover:text-primary transition-colors">Our Shops</a></li>
+                            <li><a href="#pricing" class="hover:text-primary transition-colors">Membership</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4 min-w-0">
+                        <h4 class="font-bold text-xs sm:text-sm uppercase tracking-wider sm:tracking-widest text-gray-500">Company</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="about.html" class="hover:text-primary transition-colors">About Us</a></li>
+                            <li><a href="contact.html" class="hover:text-primary transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4 min-w-0">
+                        <h4 class="font-bold text-xs sm:text-sm uppercase tracking-wider sm:tracking-widest text-gray-500">Support</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="contact.html#faq" class="hover:text-primary transition-colors">FAQ</a></li>
+                            <li><a href="contact.html#faq" class="hover:text-primary transition-colors">Shipping and returns</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4 min-w-0">
+                        <h4 class="font-bold text-xs sm:text-sm uppercase tracking-wider sm:tracking-widest text-gray-500">Legal</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="legal.html#privacy" class="hover:text-primary transition-colors break-words">Privacy Policy</a></li>
+                            <li><a href="legal.html#terms" class="hover:text-primary transition-colors break-words">Terms of Service</a></li>
+                            <li><a href="legal.html#cookies" class="hover:text-primary transition-colors break-words">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+                <div class="text-gray-500 text-sm">
+                    © 2026 FASHORA / All Rights Reserved
+                </div>
+                <div class="flex gap-6">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="text-white hover:text-primary transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+                    <a href="https://x.com/" target="_blank" rel="noopener" aria-label="Twitter" class="text-white hover:text-primary transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="text-white hover:text-primary transition-colors"><i class="fa-brands fa-facebook-f text-xl"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-white hover:text-primary transition-colors"><i class="fa-brands fa-linkedin-in text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- block:end footer -->
+
+    <script>
+      (function () {
+        var track = document.getElementById("reviews-track");
+        var prev = document.getElementById("reviews-prev");
+        var next = document.getElementById("reviews-next");
+        if (!track || !prev || !next) return;
+
+        function cardStep() {
+          var card = track.querySelector("[data-review]");
+          if (!card) return 400;
+          var styles = window.getComputedStyle(track);
+          var gap = parseFloat(styles.columnGap || styles.gap) || 24;
+          return card.getBoundingClientRect().width + gap;
+        }
+
+        function scrollByDir(dir) {
+          var step = cardStep();
+          var max = Math.max(track.scrollWidth - track.clientWidth, 0);
+          var nextLeft = track.scrollLeft + dir * step;
+          if (nextLeft > max - 8) nextLeft = 0;
+          if (nextLeft < 8 && dir < 0) nextLeft = max;
+          track.scrollTo({ left: nextLeft, behavior: "smooth" });
+        }
+
+        prev.addEventListener("click", function () { scrollByDir(-1); });
+        next.addEventListener("click", function () { scrollByDir(1); });
+      })();
+
+      (function () {
+        var links = document.querySelectorAll("[data-nav-link]");
+
+        function setActive(href) {
+          links.forEach(function (link) {
+            var isActive = link.getAttribute("href") === href;
+            link.classList.toggle("is-active", isActive);
+            if (isActive) {
+              link.setAttribute("aria-current", "page");
+            } else {
+              link.removeAttribute("aria-current");
+            }
+          });
+        }
+
+        links.forEach(function (link) {
+          link.addEventListener("click", function () {
+            setActive(link.getAttribute("href"));
+          });
+        });
+      })();
+    </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=fashora&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body></html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wayloom | Tailwind CSS Startup Template</title>
+  <meta name="description" content="Wayloom is a calm, editorial Tailwind CSS startup template for travel-tech and marketplace platforms, with an expanding image hero, impact stats, a four-step model and a team page.">
+  <meta name="keywords" content="Wayloom, Tailwind CSS template, HTML website template, startup template, travel tech, experience marketplace, B2B platform, multi-page startup website">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Wayloom | Tailwind CSS Startup Template">
+  <meta property="og:description" content="A calm, editorial Tailwind CSS startup template for travel-tech and marketplace platforms, with an expanding image hero, impact stats, a four-step model and a team page.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Wayloom template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Wayloom | Tailwind CSS Startup Template">
+  <meta name="twitter:description" content="A calm, editorial Tailwind CSS startup template for travel-tech and marketplace platforms, with an expanding image hero, impact stats, a four-step model and a team page.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Wayloom template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#f5f0e3',
+            sand: '#e8e4d4',
+            pine: '#1f5552',
+            'pine-dark': '#163f3d'
+          },
+          fontFamily: {
+            display: ['"Schibsted Grotesk"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-cream font-sans text-pine antialiased">
+
+  <!-- block:start navbar -->
+  <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-[90rem] items-stretch justify-between border-b border-pine/15 px-6 lg:px-20">
+      <a href="index.html" class="flex items-center gap-2 py-6 pr-10 font-display text-3xl font-bold tracking-tight text-pine lg:border-r lg:border-pine/15">
+        <i class="fa-solid fa-cube text-2xl" aria-hidden="true"></i>
+        Wayloom
+      </a>
+      <div class="hidden flex-1 items-center justify-center gap-2 xl:flex">
+          <a href="index.html" aria-current="page" class="px-6 py-3 text-lg transition bg-sand text-pine">Home</a>
+          <a href="problem.html"  class="px-6 py-3 text-lg transition text-pine-dark/80 hover:text-pine">Problem</a>
+          <a href="solution.html"  class="px-6 py-3 text-lg transition text-pine-dark/80 hover:text-pine">Solution</a>
+          <a href="model.html"  class="px-6 py-3 text-lg transition text-pine-dark/80 hover:text-pine">Model</a>
+          <a href="platform.html"  class="px-6 py-3 text-lg transition text-pine-dark/80 hover:text-pine">Platform</a>
+          <a href="about.html"  class="px-6 py-3 text-lg transition text-pine-dark/80 hover:text-pine">About</a>
+          <a href="team.html"  class="px-6 py-3 text-lg transition text-pine-dark/80 hover:text-pine">Team</a>
+      </div>
+      <div class="flex items-center gap-4 py-5 lg:border-l lg:border-pine/15 lg:pl-10">
+        <a href="contact.html" class="hidden bg-pine px-8 py-4 font-display text-lg font-semibold text-cream transition hover:bg-pine-dark sm:inline-flex">Partner with us</a>
+        <button type="button" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" class="inline-flex h-12 w-12 items-center justify-center border border-pine/20 xl:hidden">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          <span class="sr-only">Toggle menu</span>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" hidden class="border-b border-pine/15 bg-cream px-6 pb-6 xl:hidden">
+        <a href="index.html" class="block border-b border-pine/10 py-3 text-lg font-semibold">Home</a>
+        <a href="problem.html" class="block border-b border-pine/10 py-3 text-lg ">Problem</a>
+        <a href="solution.html" class="block border-b border-pine/10 py-3 text-lg ">Solution</a>
+        <a href="model.html" class="block border-b border-pine/10 py-3 text-lg ">Model</a>
+        <a href="platform.html" class="block border-b border-pine/10 py-3 text-lg ">Platform</a>
+        <a href="about.html" class="block border-b border-pine/10 py-3 text-lg ">About</a>
+        <a href="team.html" class="block border-b border-pine/10 py-3 text-lg ">Team</a>
+      <a href="contact.html" class="mt-4 block bg-pine px-6 py-4 text-center font-display font-semibold text-cream">Partner with us</a>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section id="hero" class="px-6 pb-16 pt-14 lg:px-20 lg:pt-24">
+    <div class="mx-auto grid max-w-[90rem] items-start gap-12 lg:grid-cols-[1fr_1.05fr]">
+      <div data-reveal>
+        <span class="inline-flex rounded-full bg-sand px-6 py-2.5 text-lg">Gather. Shape. Share. Earn.</span>
+        <h1 class="mt-8 font-display text-5xl font-semibold leading-[1.02] tracking-tight md:text-6xl xl:text-7xl">The worldwide supply layer for real local experiences</h1>
+        <p class="mt-8 max-w-2xl text-xl leading-relaxed text-pine/90">Wayloom is the <strong class="font-semibold">connective tissue</strong> of the experience economy, linking local hosts and operators to global booking platforms, brands and travelers.</p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="contact.html" class="bg-pine px-9 py-5 font-display text-lg font-semibold text-cream transition hover:bg-pine-dark">Partner with us</a>
+          <a href="platform.html" class="border-2 border-pine px-9 py-[1.125rem] font-display text-lg font-semibold transition hover:bg-pine hover:text-cream">Browse supply integrations</a>
+        </div>
+      </div>
+      <div data-reveal style="--reveal-delay:120ms" class="flex h-[30rem] gap-3 sm:h-[36rem] sm:gap-5" role="tablist" aria-label="Featured experiences">
+          <div data-panel aria-expanded="true" class="relative flex flex-col border-x border-pine/60 px-0">
+            <button type="button" role="tab" aria-selected="true" aria-controls="panel-0" data-panel-trigger class="absolute inset-0 z-10 pointer-events-none">
+              <span class="sr-only">Show experience 1</span>
+            </button>
+            <div data-panel-tall class="h-full overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1775644672234-cfaadb6919a3?auto=format&fit=crop&w=400&h=1000&q=80" alt="Two travelers reading a map beside an old stone archway" class="h-full w-full object-cover grayscale">
+            </div>
+            <div id="panel-0" data-panel-body role="tabpanel" class="flex h-full flex-col px-3 sm:px-5">
+              <div class="aspect-[3/2] overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1775644672234-cfaadb6919a3?auto=format&fit=crop&w=900&h=600&q=80" alt="Two travelers reading a map beside an old stone archway" class="h-full w-full object-cover grayscale">
+              </div>
+              <p class="mt-8 text-lg leading-relaxed sm:text-xl">Hosts in <strong class="font-semibold">140 cities</strong> list once on Wayloom and reach every major booking channel the same week.</p>
+            </div>
+            <span class="absolute bottom-6 left-1/2 -translate-x-1/2 font-serif text-2xl text-pine" data-panel-number>01</span>
+          </div>
+          <div data-panel aria-expanded="false" class="relative flex flex-col border-x border-pine/60 px-0">
+            <button type="button" role="tab" aria-selected="false" aria-controls="panel-1" data-panel-trigger class="absolute inset-0 z-10 ">
+              <span class="sr-only">Show experience 2</span>
+            </button>
+            <div data-panel-tall class="h-full overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1741272689174-f7f03b09a0ab?auto=format&fit=crop&w=400&h=1000&q=80" alt="Dancer in traditional costume performing with musicians" class="h-full w-full object-cover grayscale">
+            </div>
+            <div id="panel-1" data-panel-body role="tabpanel" class="flex h-full flex-col px-3 sm:px-5">
+              <div class="aspect-[3/2] overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1741272689174-f7f03b09a0ab?auto=format&fit=crop&w=900&h=600&q=80" alt="Dancer in traditional costume performing with musicians" class="h-full w-full object-cover grayscale">
+              </div>
+              <p class="mt-8 text-lg leading-relaxed sm:text-xl">Cultural performances, workshops and festivals get rich storytelling pages that <strong class="font-semibold">convert lookers into guests</strong>.</p>
+            </div>
+            <span class="absolute bottom-6 left-1/2 -translate-x-1/2 font-serif text-2xl text-white" data-panel-number>02</span>
+          </div>
+          <div data-panel aria-expanded="false" class="relative flex flex-col border-x border-pine/60 px-0">
+            <button type="button" role="tab" aria-selected="false" aria-controls="panel-2" data-panel-trigger class="absolute inset-0 z-10 ">
+              <span class="sr-only">Show experience 3</span>
+            </button>
+            <div data-panel-tall class="h-full overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1768154626896-44290a532fc7?auto=format&fit=crop&w=400&h=1000&q=80" alt="Heritage palace reflected in a long courtyard pool" class="h-full w-full object-cover grayscale">
+            </div>
+            <div id="panel-2" data-panel-body role="tabpanel" class="flex h-full flex-col px-3 sm:px-5">
+              <div class="aspect-[3/2] overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1768154626896-44290a532fc7?auto=format&fit=crop&w=900&h=600&q=80" alt="Heritage palace reflected in a long courtyard pool" class="h-full w-full object-cover grayscale">
+              </div>
+              <p class="mt-8 text-lg leading-relaxed sm:text-xl">Heritage sites and guided tours sync live availability, so <strong class="font-semibold">no slot is ever double-booked</strong>.</p>
+            </div>
+            <span class="absolute bottom-6 left-1/2 -translate-x-1/2 font-serif text-2xl text-white" data-panel-number>03</span>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start stats -->
+  <section id="impact" class="relative overflow-hidden px-6 pb-24 lg:px-20">
+    <div class="pointer-events-none absolute left-20 top-36 hidden text-pine/40 lg:block" aria-hidden="true">
+      <i class="fa-solid fa-leaf absolute left-10 top-10 -rotate-45 text-7xl"></i>
+      <i class="fa-solid fa-leaf absolute left-28 top-0 rotate-12 text-6xl text-pine/30"></i>
+      <i class="fa-solid fa-seedling absolute left-0 top-32 text-8xl"></i>
+      <i class="fa-solid fa-leaf absolute left-40 top-28 rotate-[70deg] text-7xl text-pine/25"></i>
+      <span class="block h-64 w-72"></span>
+    </div>
+    <dl class="relative mx-auto grid max-w-[90rem] gap-10 border-b border-pine/15 pb-20 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0">
+        <div data-reveal style="--reveal-delay:0ms" class="flex flex-col lg:px-12  lg:pl-0">
+          <dt class="order-2 mt-3 text-xl text-pine/80">Experiences gathered</dt>
+          <dd class="font-display text-6xl font-semibold tracking-tight"><span data-count-to="25000">25,000</span>+</dd>
+        </div>
+        <div data-reveal style="--reveal-delay:80ms" class="flex flex-col lg:px-12 lg:border-l lg:border-pine/15 ">
+          <dt class="order-2 mt-3 text-xl text-pine/80">Bookings unlocked</dt>
+          <dd class="font-display text-6xl font-semibold tracking-tight"><span data-count-to="500">500</span>K+</dd>
+        </div>
+        <div data-reveal style="--reveal-delay:160ms" class="flex flex-col lg:px-12 lg:border-l lg:border-pine/15 ">
+          <dt class="order-2 mt-3 text-xl text-pine/80">Enterprise partners</dt>
+          <dd class="font-display text-6xl font-semibold tracking-tight"><span data-count-to="30">30</span>+</dd>
+        </div>
+        <div data-reveal style="--reveal-delay:240ms" class="flex flex-col lg:px-12 lg:border-l lg:border-pine/15 ">
+          <dt class="order-2 mt-3 text-xl text-pine/80">Live API connections</dt>
+          <dd class="font-display text-6xl font-semibold tracking-tight"><span data-count-to="200">200</span>+</dd>
+        </div>
+    </dl>
+  </section>
+  <!-- block:end stats -->
+
+  <!-- block:start about -->
+  <section id="problem" class="px-6 py-24 lg:px-20">
+    <div class="mx-auto grid max-w-[90rem] items-center gap-14 lg:grid-cols-2">
+      <div data-reveal class="grid grid-cols-2 gap-5">
+        <div class="aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1787676259212-7e39dae5dd14?auto=format&fit=crop&w=700&q=80" alt="Travelers walking down a narrow historic alley" class="h-full w-full object-cover grayscale"></div>
+        <div class="mt-16 aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1595351298020-038700609878?auto=format&fit=crop&w=700&q=80" alt="Potter shaping clay on a spinning wheel" class="h-full w-full object-cover grayscale"></div>
+      </div>
+      <div data-reveal style="--reveal-delay:100ms">
+        <span class="inline-flex rounded-full bg-sand px-5 py-2">The problem</span>
+        <h2 class="mt-6 font-display text-4xl font-semibold leading-tight tracking-tight md:text-5xl">The best local experiences are the hardest ones to book</h2>
+        <p class="mt-6 text-lg leading-relaxed text-pine/80">Most hosts run on phone calls, spreadsheets and goodwill. Global platforms can't plug into them, so travelers end up with the same handful of generic tours.</p>
+        <ul class="mt-8 space-y-4 text-lg">
+            <li class="flex gap-4"><i class="fa-solid fa-minus mt-2 text-sm" aria-hidden="true"></i>Fragmented inventory across thousands of tiny operators</li>
+            <li class="flex gap-4"><i class="fa-solid fa-minus mt-2 text-sm" aria-hidden="true"></i>No shared format for stories, photos or availability</li>
+            <li class="flex gap-4"><i class="fa-solid fa-minus mt-2 text-sm" aria-hidden="true"></i>Payouts that take weeks and eat into thin margins</li>
+        </ul>
+        <a href="problem.html" class="mt-10 inline-flex items-center gap-3 font-display text-lg font-semibold underline decoration-2 underline-offset-8">Read the full picture <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- block:end about -->
+
+  <!-- block:start features -->
+  <section id="solution" class="bg-pine px-6 py-24 text-cream lg:px-20">
+    <div class="mx-auto max-w-[90rem]">
+      <div data-reveal class="flex flex-wrap items-end justify-between gap-8">
+        <div class="max-w-3xl">
+          <span class="inline-flex rounded-full bg-cream/10 px-5 py-2">The solution</span>
+          <h2 class="mt-6 font-display text-4xl font-semibold leading-tight tracking-tight md:text-5xl">One clean pipe from local host to global demand</h2>
+        </div>
+        <a href="solution.html" class="border-2 border-cream px-8 py-4 font-display font-semibold transition hover:bg-cream hover:text-pine">How it works</a>
+      </div>
+      <div class="mt-16 grid gap-px bg-cream/15 sm:grid-cols-2 lg:grid-cols-4">
+          <div data-reveal style="--reveal-delay:0ms" class="bg-pine p-8">
+            <i class="fa-solid fa-layer-group text-3xl text-sand" aria-hidden="true"></i>
+            <h3 class="mt-8 font-display text-2xl font-semibold">Unified catalog</h3>
+            <p class="mt-3 text-cream/70">Every experience normalized into one schema, with photos, policies and pricing.</p>
+          </div>
+          <div data-reveal style="--reveal-delay:80ms" class="bg-pine p-8">
+            <i class="fa-solid fa-feather text-3xl text-sand" aria-hidden="true"></i>
+            <h3 class="mt-8 font-display text-2xl font-semibold">Story studio</h3>
+            <p class="mt-3 text-cream/70">Editors help hosts turn a two-line listing into a page people want to read.</p>
+          </div>
+          <div data-reveal style="--reveal-delay:160ms" class="bg-pine p-8">
+            <i class="fa-solid fa-share-nodes text-3xl text-sand" aria-hidden="true"></i>
+            <h3 class="mt-8 font-display text-2xl font-semibold">Smart distribution</h3>
+            <p class="mt-3 text-cream/70">Push inventory to booking sites, airlines and hotel apps from one dashboard.</p>
+          </div>
+          <div data-reveal style="--reveal-delay:240ms" class="bg-pine p-8">
+            <i class="fa-solid fa-wallet text-3xl text-sand" aria-hidden="true"></i>
+            <h3 class="mt-8 font-display text-2xl font-semibold">Fast payouts</h3>
+            <p class="mt-3 text-cream/70">Hosts get paid within days, in local currency, with transparent fees.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start process -->
+  <section id="model" class="px-6 py-24 lg:px-20">
+    <div class="mx-auto max-w-[90rem]">
+      <div data-reveal class="max-w-3xl">
+        <span class="inline-flex rounded-full bg-sand px-5 py-2">The model</span>
+        <h2 class="mt-6 font-display text-4xl font-semibold leading-tight tracking-tight md:text-5xl">Four moves that turn a local gem into global revenue</h2>
+      </div>
+      <ol class="mt-16 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+          <li data-reveal style="--reveal-delay:0ms" class="border-t-2 border-pine pt-6">
+            <span class="font-serif text-3xl">01</span>
+            <h3 class="mt-4 font-display text-3xl font-semibold">Gather</h3>
+            <p class="mt-3 text-lg text-pine/80">We onboard hosts and import their offers, schedules and photos in a single session.</p>
+          </li>
+          <li data-reveal style="--reveal-delay:80ms" class="border-t-2 border-pine pt-6">
+            <span class="font-serif text-3xl">02</span>
+            <h3 class="mt-4 font-display text-3xl font-semibold">Shape</h3>
+            <p class="mt-3 text-lg text-pine/80">Our editors write the story, translate it and tag it for the channels that fit.</p>
+          </li>
+          <li data-reveal style="--reveal-delay:160ms" class="border-t-2 border-pine pt-6">
+            <span class="font-serif text-3xl">03</span>
+            <h3 class="mt-4 font-display text-3xl font-semibold">Share</h3>
+            <p class="mt-3 text-lg text-pine/80">Listings go live across partner platforms with synced, real-time availability.</p>
+          </li>
+          <li data-reveal style="--reveal-delay:240ms" class="border-t-2 border-pine pt-6">
+            <span class="font-serif text-3xl">04</span>
+            <h3 class="mt-4 font-display text-3xl font-semibold">Earn</h3>
+            <p class="mt-3 text-lg text-pine/80">Bookings settle automatically and hosts see every payout in one ledger.</p>
+          </li>
+      </ol>
+    </div>
+  </section>
+  <!-- block:end process -->
+
+  <!-- block:start integrations -->
+  <section id="platform" class="bg-sand/60 px-6 py-24 lg:px-20">
+    <div class="mx-auto grid max-w-[90rem] items-center gap-14 lg:grid-cols-[1fr_1.1fr]">
+      <div data-reveal>
+        <span class="inline-flex rounded-full bg-cream px-5 py-2">The platform</span>
+        <h2 class="mt-6 font-display text-4xl font-semibold leading-tight tracking-tight md:text-5xl">Plugs into the channels your guests already use</h2>
+        <p class="mt-6 text-lg leading-relaxed text-pine/80">A single API and a set of ready-made connectors mean partners go live in days, not quarters.</p>
+        <a href="platform.html" class="mt-10 inline-flex bg-pine px-8 py-4 font-display font-semibold text-cream">Explore the platform</a>
+      </div>
+      <ul data-reveal style="--reveal-delay:100ms" class="grid grid-cols-2 gap-4 sm:grid-cols-3">
+          <li class="flex flex-col items-start gap-6 bg-cream p-6">
+            <i class="fa-solid fa-plane-departure text-2xl" aria-hidden="true"></i>
+            <span class="font-display text-lg font-semibold">Airlines</span>
+          </li>
+          <li class="flex flex-col items-start gap-6 bg-cream p-6">
+            <i class="fa-solid fa-hotel text-2xl" aria-hidden="true"></i>
+            <span class="font-display text-lg font-semibold">Hotel apps</span>
+          </li>
+          <li class="flex flex-col items-start gap-6 bg-cream p-6">
+            <i class="fa-solid fa-globe text-2xl" aria-hidden="true"></i>
+            <span class="font-display text-lg font-semibold">Online agencies</span>
+          </li>
+          <li class="flex flex-col items-start gap-6 bg-cream p-6">
+            <i class="fa-solid fa-mobile-screen text-2xl" aria-hidden="true"></i>
+            <span class="font-display text-lg font-semibold">Super apps</span>
+          </li>
+          <li class="flex flex-col items-start gap-6 bg-cream p-6">
+            <i class="fa-solid fa-credit-card text-2xl" aria-hidden="true"></i>
+            <span class="font-display text-lg font-semibold">Card perks</span>
+          </li>
+          <li class="flex flex-col items-start gap-6 bg-cream p-6">
+            <i class="fa-solid fa-code text-2xl" aria-hidden="true"></i>
+            <span class="font-display text-lg font-semibold">Open API</span>
+          </li>
+      </ul>
+    </div>
+  </section>
+  <!-- block:end integrations -->
+
+  <!-- block:start team -->
+  <section id="team" class="px-6 py-24 lg:px-20">
+    <div class="mx-auto max-w-[90rem]">
+      <div data-reveal class="flex flex-wrap items-end justify-between gap-6">
+        <div>
+          <span class="inline-flex rounded-full bg-sand px-5 py-2">The team</span>
+          <h2 class="mt-6 font-display text-4xl font-semibold tracking-tight md:text-5xl">Operators, editors and engineers</h2>
+        </div>
+        <a href="team.html" class="inline-flex items-center gap-3 font-display text-lg font-semibold underline decoration-2 underline-offset-8">Meet everyone <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a>
+      </div>
+      <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <figure data-reveal style="--reveal-delay:0ms">
+            <div class="aspect-[4/5] overflow-hidden bg-sand"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4MHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Anika Rao" class="h-full w-full object-cover grayscale"></div>
+            <figcaption class="mt-4"><span class="block font-display text-xl font-semibold">Anika Rao</span><span class="text-pine/70">Co-founder, CEO</span></figcaption>
+          </figure>
+          <figure data-reveal style="--reveal-delay:80ms">
+            <div class="aspect-[4/5] overflow-hidden bg-sand"><img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Mateo Silva" class="h-full w-full object-cover grayscale"></div>
+            <figcaption class="mt-4"><span class="block font-display text-xl font-semibold">Mateo Silva</span><span class="text-pine/70">Co-founder, CTO</span></figcaption>
+          </figure>
+          <figure data-reveal style="--reveal-delay:160ms">
+            <div class="aspect-[4/5] overflow-hidden bg-sand"><img src="https://images.unsplash.com/photo-1509460913899-515f1df34fea?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDh8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Lena Hartmann" class="h-full w-full object-cover grayscale"></div>
+            <figcaption class="mt-4"><span class="block font-display text-xl font-semibold">Lena Hartmann</span><span class="text-pine/70">Head of Supply</span></figcaption>
+          </figure>
+          <figure data-reveal style="--reveal-delay:240ms">
+            <div class="aspect-[4/5] overflow-hidden bg-sand"><img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Kofi Mensah" class="h-full w-full object-cover grayscale"></div>
+            <figcaption class="mt-4"><span class="block font-display text-xl font-semibold">Kofi Mensah</span><span class="text-pine/70">Head of Partnerships</span></figcaption>
+          </figure>
+      </div>
+    </div>
+  </section>
+  <!-- block:end team -->
+
+  <!-- block:start cta -->
+  <section class="px-6 pb-24 lg:px-20">
+    <div data-reveal class="relative mx-auto max-w-[90rem] overflow-hidden bg-pine-dark">
+      <img src="https://images.unsplash.com/photo-1743485754079-d7fde0e9283f?auto=format&fit=crop&w=1600&q=70" alt="Lantern-lit night market with food stalls" class="absolute inset-0 h-full w-full object-cover opacity-30 grayscale">
+      <div class="relative px-8 py-20 text-center text-cream md:px-16">
+        <h2 class="mx-auto max-w-3xl font-display text-4xl font-semibold leading-tight tracking-tight md:text-5xl">Bring the world's most memorable experiences to your guests</h2>
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+          <a href="contact.html" class="bg-cream px-9 py-5 font-display text-lg font-semibold text-pine">Partner with us</a>
+          <a href="model.html" class="border-2 border-cream px-9 py-[1.125rem] font-display text-lg font-semibold">See the model</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end cta -->
+
+  <!-- block:start footer -->
+  <footer class="border-t border-pine/15 px-6 py-16 lg:px-20">
+    <div class="mx-auto grid max-w-[90rem] gap-12 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
+      <div>
+        <a href="index.html" class="flex items-center gap-2 font-display text-3xl font-bold"><i class="fa-solid fa-cube text-2xl" aria-hidden="true"></i>Wayloom</a>
+        <p class="mt-4 max-w-sm text-pine/80">The supply layer that takes local experiences worldwide.</p>
+      </div>
+      <div>
+        <p class="font-display font-semibold">Company</p>
+        <ul class="mt-4 space-y-2 text-pine/80">
+          <li><a href="about.html" class="hover:text-pine">About</a></li>
+          <li><a href="team.html" class="hover:text-pine">Team</a></li>
+          <li><a href="contact.html" class="hover:text-pine">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-display font-semibold">Product</p>
+        <ul class="mt-4 space-y-2 text-pine/80">
+          <li><a href="solution.html" class="hover:text-pine">Solution</a></li>
+          <li><a href="model.html" class="hover:text-pine">Model</a></li>
+          <li><a href="platform.html" class="hover:text-pine">Platform</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-display font-semibold">Follow</p>
+        <div class="mt-4 flex gap-3">
+            <a href="https://linkedin.com" class="inline-flex h-11 w-11 items-center justify-center border border-pine/30 hover:bg-pine hover:text-cream" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://x.com" class="inline-flex h-11 w-11 items-center justify-center border border-pine/30 hover:bg-pine hover:text-cream" aria-label="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+            <a href="https://instagram.com" class="inline-flex h-11 w-11 items-center justify-center border border-pine/30 hover:bg-pine hover:text-cream" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="mx-auto mt-14 max-w-[90rem] border-t border-pine/15 pt-6 text-sm text-pine/60">&copy; <span data-current-year>2026</span> Wayloom. All rights reserved.</p>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!expanded));
+        mobileMenu.hidden = expanded;
+      });
+    }
+
+    const panels = document.querySelectorAll('[data-panel]');
+    panels.forEach((panel) => {
+      panel.querySelector('[data-panel-trigger]').addEventListener('click', () => {
+        panels.forEach((other) => {
+          const active = other === panel;
+          other.setAttribute('aria-expanded', String(active));
+          const trigger = other.querySelector('[data-panel-trigger]');
+          trigger.setAttribute('aria-selected', String(active));
+          trigger.classList.toggle('pointer-events-none', active);
+          const number = other.querySelector('[data-panel-number]');
+          number.classList.toggle('text-pine', active);
+          number.classList.toggle('text-white', !active);
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduceMotion && !navigator.webdriver && 'IntersectionObserver' in window) {
+      document.body.classList.add('reveal-ready');
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach((el) => revealObserver.observe(el));
+
+      const countObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const target = parseInt(el.dataset.countTo, 10);
+          const start = performance.now();
+          const step = (now) => {
+            const progress = Math.min((now - start) / 700, 1);
+            el.textContent = Math.round(progress * target).toLocaleString('en-US');
+            if (progress < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+          countObserver.unobserve(el);
+        });
+      }, { threshold: 0.4 });
+      document.querySelectorAll('[data-count-to]').forEach((el) => countObserver.observe(el));
+    }
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=wayloom&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

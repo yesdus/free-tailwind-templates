@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postwave | Tailwind CSS Blog Template</title>
+  <meta name="description" content="Postwave is a dark, editorial Tailwind CSS blog template for creator-economy and influencer marketing platforms, with live search and category chips, a featured story, image-led post cards, a personal reading list, a topic ticker, webinar reminders and a ticket-style newsletter.">
+  <meta name="keywords" content="Postwave, Tailwind CSS template, HTML website template, blog template, creator economy blog, influencer marketing, resources page, article template, newsletter signup, dark blog design">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Postwave | Tailwind CSS Blog Template">
+  <meta property="og:description" content="A dark, editorial Tailwind CSS blog template for creator platforms, with live search, image-led post cards and a personal reading list.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Postwave template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Postwave | Tailwind CSS Blog Template">
+  <meta name="twitter:description" content="A dark, editorial Tailwind CSS blog template for creator platforms, with live search, image-led post cards and a personal reading list.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Postwave template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { night: { DEFAULT: '#0a0a0a', page: '#1b1b1d', card: '#141416', line: '#2c2c30' }, volt: { DEFAULT: '#c6ff3d', soft: '#e6ffb0' } },
+          fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Antonio', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-night-page font-sans text-white antialiased">
+  <!-- block:start navbar -->
+  <header class="sticky top-0 z-40 px-3 pt-3 md:px-4">
+    <nav class="mx-auto grid max-w-[90rem] grid-cols-[1fr_auto_1fr] items-center gap-4 rounded-2xl bg-night px-4 py-3 md:px-6" aria-label="Main">
+      <ul class="hidden items-center gap-6 text-sm lg:flex">
+          <li><a href="brands.html"  class="transition text-white/60 hover:text-white">For brands</a></li>
+          <li><a href="ambassadors.html"  class="transition text-white/60 hover:text-white">For creators</a></li>
+          <li><a href="about.html"  class="transition text-white/60 hover:text-white">About</a></li>
+          <li><a href="cases.html"  class="transition text-white/60 hover:text-white">Cases</a></li>
+          <li><a href="index.html" aria-current="page" class="transition font-semibold text-white">Resources</a></li>
+      </ul>
+      <a href="index.html" class="col-start-1 font-display text-3xl font-bold uppercase tracking-tight lg:col-start-2">Postwave</a>
+      <div class="col-start-3 flex items-center justify-end gap-2">
+        <a href="contact.html" class="hidden rounded-lg border border-white/30 px-4 py-2 text-sm font-medium transition hover:border-white sm:block">Request a demo</a>
+        <a href="brands.html" class="hidden rounded-lg bg-white px-4 py-2 text-sm font-semibold text-night transition hover:bg-volt sm:block">Open the app</a>
+        <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="grid h-10 w-10 place-items-center rounded-lg border border-white/30 lg:hidden" aria-label="Open menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="mx-auto mt-2 hidden max-w-[90rem] rounded-2xl bg-night p-4 lg:hidden">
+      <ul class="grid gap-1 font-display text-3xl font-semibold uppercase">
+          <li><a href="brands.html"  class="block rounded-lg px-2 py-1 hover:text-volt">For brands</a></li>
+          <li><a href="ambassadors.html"  class="block rounded-lg px-2 py-1 hover:text-volt">For creators</a></li>
+          <li><a href="about.html"  class="block rounded-lg px-2 py-1 hover:text-volt">About</a></li>
+          <li><a href="cases.html"  class="block rounded-lg px-2 py-1 hover:text-volt">Cases</a></li>
+          <li><a href="index.html" aria-current="page" class="block rounded-lg px-2 py-1 bg-volt text-night">Resources</a></li>
+          <li><a href="contact.html"  class="block rounded-lg px-2 py-1 hover:text-volt">Request a demo</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section class="px-3 pt-3 md:px-4">
+    <div class="mx-auto max-w-[90rem] rounded-2xl bg-night px-5 pb-8 pt-10 md:px-8">
+      <div class="grid gap-6 lg:grid-cols-2">
+        <h1 class="font-display text-6xl font-bold md:text-7xl">Resources</h1>
+        <p class="max-w-lg text-sm leading-relaxed text-white/80 lg:justify-self-end">Want to learn the basics, ride the newest trend or anything in between? The Postwave journal has what you need to grow in the creator economy.</p>
+      </div>
+      <div class="mt-10 flex flex-col gap-3 md:flex-row md:items-center" data-search-root>
+        <label class="relative md:w-96 md:shrink-0">
+          <span class="sr-only">Search articles</span>
+          <i class="fa-solid fa-magnifying-glass pointer-events-none absolute left-5 top-1/2 -translate-y-1/2 text-white/60" aria-hidden="true"></i>
+          <input type="search" placeholder="What are you looking for?" data-search class="w-full rounded-full border border-white/40 bg-transparent py-3.5 pl-12 pr-5 text-sm placeholder:text-white/50 focus:border-volt focus:outline-none">
+        </label>
+        <div class="chips -mx-5 flex gap-2 overflow-x-auto px-5 md:mx-0 md:px-0" role="group" aria-label="Filter by category">
+          <span class="grid h-12 min-w-12 shrink-0 place-items-center rounded-full bg-white/15 px-4 text-sm" aria-live="polite"><span data-result-count>11</span><span class="sr-only"> articles shown</span></span>
+            <button type="button" data-chip="All" aria-pressed="true" class="shrink-0 rounded-full border border-white/40 px-5 py-3 text-sm transition hover:border-white aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night">All</button>
+            <button type="button" data-chip="Creator economy" aria-pressed="false" class="shrink-0 rounded-full border border-white/40 px-5 py-3 text-sm transition hover:border-white aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night">Creator economy</button>
+            <button type="button" data-chip="Brand deals" aria-pressed="false" class="shrink-0 rounded-full border border-white/40 px-5 py-3 text-sm transition hover:border-white aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night">Brand deals</button>
+            <button type="button" data-chip="Short video" aria-pressed="false" class="shrink-0 rounded-full border border-white/40 px-5 py-3 text-sm transition hover:border-white aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night">Short video</button>
+            <button type="button" data-chip="Analytics" aria-pressed="false" class="shrink-0 rounded-full border border-white/40 px-5 py-3 text-sm transition hover:border-white aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night">Analytics</button>
+            <button type="button" data-chip="Community" aria-pressed="false" class="shrink-0 rounded-full border border-white/40 px-5 py-3 text-sm transition hover:border-white aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night">Community</button>
+            <button type="button" data-chip="Tools" aria-pressed="false" class="shrink-0 rounded-full border border-white/40 px-5 py-3 text-sm transition hover:border-white aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night">Tools</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start blog -->
+  <section class="px-3 pt-3 md:px-4" data-posts>
+    <div class="mx-auto grid max-w-[90rem] gap-3">
+      <article class="grid overflow-hidden rounded-2xl bg-night lg:grid-cols-2" data-post data-category="Creator economy" data-title="How three creators turned a side channel into a full-time studio">
+        <a href="creator-studio.html" class="block"><img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&w=1100&h=1000&q=80" alt="Woman looking up at city lights at dusk" class="aspect-[4/3] h-full w-full object-cover lg:aspect-auto"></a>
+        <div class="flex flex-col gap-6 p-6 md:p-8">
+          <div class="flex items-start justify-between gap-4">
+            <h2 class="font-display text-4xl font-semibold leading-[1.02] md:text-6xl"><a href="creator-studio.html" class="hover:text-volt">How three creators turned a side channel into a full-time studio</a></h2>
+            <button type="button" data-save="creator-studio-0" data-save-title="How three creators turned a side channel into a full-time studio" data-save-href="creator-studio.html" aria-pressed="false" class="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-white/30 transition hover:border-volt aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night" aria-label="Save to reading list"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+          </div>
+          <p class="max-w-xl text-sm leading-relaxed text-white/70">Three creators, three niches, one shared playbook: how they used a smaller second channel to test ideas, find paying partners and finally go full-time.</p>
+          <p class="mt-auto flex flex-wrap justify-between gap-2 text-sm"><span>(newest) 18/03/2026</span><span>Creator economy · Noor Haddad</span></p>
+        </div>
+      </article>
+      <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <li class="relative " data-post data-category="Brand deals" data-title="The brief template brands keep reusing" data-reveal style="--reveal-delay: 0ms">
+            <a href="brief-template.html" class="group relative isolate flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-2xl p-5 ">
+              <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=800&h=1000&q=75" alt="Macro shot of colourful oil bubbles" class="absolute inset-0 -z-10 h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+              <span class="absolute inset-0 -z-10 bg-gradient-to-b from-black/50 via-transparent to-black/60"></span>
+              <h3 class="pr-12 font-display text-3xl font-semibold leading-[1.02] md:text-[2rem]">The brief template brands keep reusing</h3>
+              <span class="text-sm"><span class="block text-white/80">14/03/2026</span>Brand deals · Leo Brandt</span>
+            </a>
+            <button type="button" data-save="brief-template-1" data-save-title="The brief template brands keep reusing" data-save-href="brief-template.html" aria-pressed="false" class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-black/50 backdrop-blur transition hover:bg-black/80 aria-pressed:bg-volt aria-pressed:text-night" aria-label="Save to reading list"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+          </li>
+          <li class="relative " data-post data-category="Short video" data-title="Hooks that hold: what the first two seconds really decide" data-reveal style="--reveal-delay: 60ms">
+            <a href="first-two-seconds.html" class="group relative isolate flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-2xl p-5 ">
+              <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=800&h=1000&q=75" alt="Man in a waistcoat standing on a city street" class="absolute inset-0 -z-10 h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+              <span class="absolute inset-0 -z-10 bg-gradient-to-b from-black/50 via-transparent to-black/60"></span>
+              <h3 class="pr-12 font-display text-3xl font-semibold leading-[1.02] md:text-[2rem]">Hooks that hold: what the first two seconds really decide</h3>
+              <span class="text-sm"><span class="block text-white/80">11/03/2026</span>Short video · Mina Sato</span>
+            </a>
+            <button type="button" data-save="first-two-seconds-2" data-save-title="Hooks that hold: what the first two seconds really decide" data-save-href="first-two-seconds.html" aria-pressed="false" class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-black/50 backdrop-blur transition hover:bg-black/80 aria-pressed:bg-volt aria-pressed:text-night" aria-label="Save to reading list"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+          </li>
+          <li class="relative " data-post data-category="Analytics" data-title="Reading your analytics without losing your mind" data-reveal style="--reveal-delay: 120ms">
+            <a href="brief-template.html" class="group relative isolate flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-2xl p-5 ">
+              <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&h=1000&q=75" alt="Retro consoles lit with pink and blue neon" class="absolute inset-0 -z-10 h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+              <span class="absolute inset-0 -z-10 bg-gradient-to-b from-black/50 via-transparent to-black/60"></span>
+              <h3 class="pr-12 font-display text-3xl font-semibold leading-[1.02] md:text-[2rem]">Reading your analytics without losing your mind</h3>
+              <span class="text-sm"><span class="block text-white/80">07/03/2026</span>Analytics · Kai Osei</span>
+            </a>
+            <button type="button" data-save="brief-template-3" data-save-title="Reading your analytics without losing your mind" data-save-href="brief-template.html" aria-pressed="false" class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-black/50 backdrop-blur transition hover:bg-black/80 aria-pressed:bg-volt aria-pressed:text-night" aria-label="Save to reading list"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+          </li>
+          <li class="relative " data-post data-category="Community" data-title="Why micro communities beat big follower counts" data-reveal style="--reveal-delay: 180ms">
+            <a href="creator-studio.html" class="group relative isolate flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-2xl p-5 ">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&h=1000&q=75" alt="Smiling young woman in a denim jacket" class="absolute inset-0 -z-10 h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+              <span class="absolute inset-0 -z-10 bg-gradient-to-b from-black/50 via-transparent to-black/60"></span>
+              <h3 class="pr-12 font-display text-3xl font-semibold leading-[1.02] md:text-[2rem]">Why micro communities beat big follower counts</h3>
+              <span class="text-sm"><span class="block text-white/80">04/03/2026</span>Community · Ana Ruiz</span>
+            </a>
+            <button type="button" data-save="creator-studio-4" data-save-title="Why micro communities beat big follower counts" data-save-href="creator-studio.html" aria-pressed="false" class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-black/50 backdrop-blur transition hover:bg-black/80 aria-pressed:bg-volt aria-pressed:text-night" aria-label="Save to reading list"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+          </li>
+          <li class="relative lg:col-span-2" data-post data-category="Tools" data-title="Building a content calendar you&#39;ll actually keep" data-reveal style="--reveal-delay: 0ms">
+            <a href="first-two-seconds.html" class="group relative isolate flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-2xl p-5 lg:aspect-auto lg:h-full">
+              <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&h=1000&q=75" alt="Hands sketching layouts on paper" class="absolute inset-0 -z-10 h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+              <span class="absolute inset-0 -z-10 bg-gradient-to-b from-black/50 via-transparent to-black/60"></span>
+              <h3 class="pr-12 font-display text-3xl font-semibold leading-[1.02] md:text-[2rem]">Building a content calendar you&#39;ll actually keep</h3>
+              <span class="text-sm"><span class="block text-white/80">28/02/2026</span>Tools · Sam Ito</span>
+            </a>
+            <button type="button" data-save="first-two-seconds-5" data-save-title="Building a content calendar you&#39;ll actually keep" data-save-href="first-two-seconds.html" aria-pressed="false" class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-black/50 backdrop-blur transition hover:bg-black/80 aria-pressed:bg-volt aria-pressed:text-night" aria-label="Save to reading list"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+          </li>
+          <li class="relative " data-post data-category="Brand deals" data-title="Rate cards in 2026: what creators charge now" data-reveal style="--reveal-delay: 60ms">
+            <a href="brief-template.html" class="group relative isolate flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-2xl p-5 ">
+              <img src="https://images.unsplash.com/photo-1600096194534-95cf5ece04cf?auto=format&fit=crop&w=800&h=1000&q=75" alt="Red like-notification sign painted on a white wall" class="absolute inset-0 -z-10 h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+              <span class="absolute inset-0 -z-10 bg-gradient-to-b from-black/50 via-transparent to-black/60"></span>
+              <h3 class="pr-12 font-display text-3xl font-semibold leading-[1.02] md:text-[2rem]">Rate cards in 2026: what creators charge now</h3>
+              <span class="text-sm"><span class="block text-white/80">24/02/2026</span>Brand deals · Noor Haddad</span>
+            </a>
+            <button type="button" data-save="brief-template-6" data-save-title="Rate cards in 2026: what creators charge now" data-save-href="brief-template.html" aria-pressed="false" class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-black/50 backdrop-blur transition hover:bg-black/80 aria-pressed:bg-volt aria-pressed:text-night" aria-label="Save to reading list"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+          </li>
+          <li class="relative " data-post data-category="Short video" data-title="Loops, cuts and captions: an editing cheat sheet" data-reveal style="--reveal-delay: 120ms">
+            <a href="first-two-seconds.html" class="group relative isolate flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-2xl p-5 ">
+              <img src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&h=1000&q=75" alt="Purple and red abstract light" class="absolute inset-0 -z-10 h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+              <span class="absolute inset-0 -z-10 bg-gradient-to-b from-black/50 via-transparent to-black/60"></span>
+              <h3 class="pr-12 font-display text-3xl font-semibold leading-[1.02] md:text-[2rem]">Loops, cuts and captions: an editing cheat sheet</h3>
+              <span class="text-sm"><span class="block text-white/80">20/02/2026</span>Short video · Mina Sato</span>
+            </a>
+            <button type="button" data-save="first-two-seconds-7" data-save-title="Loops, cuts and captions: an editing cheat sheet" data-save-href="first-two-seconds.html" aria-pressed="false" class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-black/50 backdrop-blur transition hover:bg-black/80 aria-pressed:bg-volt aria-pressed:text-night" aria-label="Save to reading list"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+          </li>
+          <li class="relative lg:col-span-2" data-post data-category="Creator economy" data-title="What brands look for before the first DM" data-reveal style="--reveal-delay: 180ms">
+            <a href="creator-studio.html" class="group relative isolate flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-2xl p-5 lg:aspect-auto lg:h-full">
+              <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&h=1000&q=75" alt="Woman with red hair looking to the side" class="absolute inset-0 -z-10 h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+              <span class="absolute inset-0 -z-10 bg-gradient-to-b from-black/50 via-transparent to-black/60"></span>
+              <h3 class="pr-12 font-display text-3xl font-semibold leading-[1.02] md:text-[2rem]">What brands look for before the first DM</h3>
+              <span class="text-sm"><span class="block text-white/80">16/02/2026</span>Creator economy · Leo Brandt</span>
+            </a>
+            <button type="button" data-save="creator-studio-8" data-save-title="What brands look for before the first DM" data-save-href="creator-studio.html" aria-pressed="false" class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-black/50 backdrop-blur transition hover:bg-black/80 aria-pressed:bg-volt aria-pressed:text-night" aria-label="Save to reading list"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+          </li>
+          <li class="relative " data-post data-category="Tools" data-title="Tools we use to plan a month of posts in an hour" data-reveal style="--reveal-delay: 0ms">
+            <a href="brief-template.html" class="group relative isolate flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-2xl p-5 ">
+              <img src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?auto=format&fit=crop&w=800&h=1000&q=75" alt="Swirls of pink and blue paint" class="absolute inset-0 -z-10 h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+              <span class="absolute inset-0 -z-10 bg-gradient-to-b from-black/50 via-transparent to-black/60"></span>
+              <h3 class="pr-12 font-display text-3xl font-semibold leading-[1.02] md:text-[2rem]">Tools we use to plan a month of posts in an hour</h3>
+              <span class="text-sm"><span class="block text-white/80">12/02/2026</span>Tools · Sam Ito</span>
+            </a>
+            <button type="button" data-save="brief-template-9" data-save-title="Tools we use to plan a month of posts in an hour" data-save-href="brief-template.html" aria-pressed="false" class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-black/50 backdrop-blur transition hover:bg-black/80 aria-pressed:bg-volt aria-pressed:text-night" aria-label="Save to reading list"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+          </li>
+          <li class="relative " data-post data-category="Community" data-title="Comments are the new reach: running a reply sprint" data-reveal style="--reveal-delay: 60ms">
+            <a href="creator-studio.html" class="group relative isolate flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-2xl p-5 ">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&h=1000&q=75" alt="Woman with long hair in a dark top" class="absolute inset-0 -z-10 h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+              <span class="absolute inset-0 -z-10 bg-gradient-to-b from-black/50 via-transparent to-black/60"></span>
+              <h3 class="pr-12 font-display text-3xl font-semibold leading-[1.02] md:text-[2rem]">Comments are the new reach: running a reply sprint</h3>
+              <span class="text-sm"><span class="block text-white/80">08/02/2026</span>Community · Ana Ruiz</span>
+            </a>
+            <button type="button" data-save="creator-studio-10" data-save-title="Comments are the new reach: running a reply sprint" data-save-href="creator-studio.html" aria-pressed="false" class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-black/50 backdrop-blur transition hover:bg-black/80 aria-pressed:bg-volt aria-pressed:text-night" aria-label="Save to reading list"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+          </li>
+      </ul>
+      <p data-empty hidden class="rounded-2xl bg-night p-10 text-center text-white/70">No articles match that search. Try another word or <button type="button" data-reset class="text-volt underline">clear the filters</button>.</p>
+    </div>
+    <div class="fixed bottom-5 right-5 z-30" data-reading>
+      <button type="button" data-reading-toggle aria-expanded="false" aria-controls="reading-list" class="flex items-center gap-3 rounded-full bg-volt px-5 py-3 text-sm font-semibold text-night shadow-2xl shadow-black/50 transition hover:bg-white"><i class="fa-solid fa-bookmark" aria-hidden="true"></i>Reading list <span class="grid h-6 min-w-6 place-items-center rounded-full bg-night px-1.5 text-xs text-volt" data-reading-count>0</span></button>
+      <div id="reading-list" hidden class="absolute bottom-16 right-0 w-[min(22rem,calc(100vw-2.5rem))] rounded-2xl border border-night-line bg-night p-5 shadow-2xl shadow-black/60">
+        <p class="font-display text-2xl font-semibold">Saved for later</p>
+        <ul class="mt-4 grid max-h-72 gap-3 overflow-y-auto text-sm" data-reading-items></ul>
+        <p class="mt-2 text-sm text-white/60" data-reading-empty>Tap the bookmark on any article to keep it here.</p>
+      </div>
+    </div>
+  </section>
+  <!-- block:end blog -->
+
+  <!-- block:start marquee -->
+  <section class="mt-3 overflow-hidden border-y border-night-line py-5" aria-label="Trending topics">
+    <div class="ticker flex w-max gap-10 font-display text-4xl font-semibold uppercase md:text-5xl" aria-hidden="true">
+          <span class="flex items-center gap-10">Creator economy<i class="fa-solid fa-asterisk text-2xl text-volt" aria-hidden="true"></i></span>
+          <span class="flex items-center gap-10">Brand deals<i class="fa-solid fa-asterisk text-2xl text-volt" aria-hidden="true"></i></span>
+          <span class="flex items-center gap-10">Short video<i class="fa-solid fa-asterisk text-2xl text-volt" aria-hidden="true"></i></span>
+          <span class="flex items-center gap-10">Analytics<i class="fa-solid fa-asterisk text-2xl text-volt" aria-hidden="true"></i></span>
+          <span class="flex items-center gap-10">Community<i class="fa-solid fa-asterisk text-2xl text-volt" aria-hidden="true"></i></span>
+          <span class="flex items-center gap-10">Tools<i class="fa-solid fa-asterisk text-2xl text-volt" aria-hidden="true"></i></span>
+          <span class="flex items-center gap-10">Creator economy<i class="fa-solid fa-asterisk text-2xl text-volt" aria-hidden="true"></i></span>
+          <span class="flex items-center gap-10">Brand deals<i class="fa-solid fa-asterisk text-2xl text-volt" aria-hidden="true"></i></span>
+          <span class="flex items-center gap-10">Short video<i class="fa-solid fa-asterisk text-2xl text-volt" aria-hidden="true"></i></span>
+          <span class="flex items-center gap-10">Analytics<i class="fa-solid fa-asterisk text-2xl text-volt" aria-hidden="true"></i></span>
+          <span class="flex items-center gap-10">Community<i class="fa-solid fa-asterisk text-2xl text-volt" aria-hidden="true"></i></span>
+          <span class="flex items-center gap-10">Tools<i class="fa-solid fa-asterisk text-2xl text-volt" aria-hidden="true"></i></span>
+    </div>
+    <p class="sr-only">Trending topics: Creator economy, Brand deals, Short video, Analytics, Community, Tools.</p>
+  </section>
+  <!-- block:end marquee -->
+
+  <!-- block:start events -->
+  <section class="px-3 pt-3 md:px-4">
+    <div class="mx-auto max-w-[90rem] rounded-2xl bg-night px-5 py-12 md:px-8 md:py-16">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <h2 class="font-display text-5xl font-bold md:text-6xl">Live sessions</h2>
+        <p class="max-w-sm text-sm text-white/70">Free webinars with creators and brand teams. Set a reminder and we'll email you the link an hour before.</p>
+      </div>
+      <ul class="mt-10 divide-y divide-night-line border-y border-night-line">
+          <li class="grid items-center gap-4 py-6 sm:grid-cols-[6rem_1fr_auto]" data-reveal style="--reveal-delay: 0ms">
+            <p class="font-display leading-none"><span class="block text-sm text-volt">APR</span><span class="text-6xl font-bold">02</span></p>
+            <div>
+              <h3 class="font-display text-3xl font-semibold">Live: pricing your first brand deal</h3>
+              <p class="mt-1 text-sm text-white/60">Hosted by Noor Haddad &amp; guests · 45 min</p>
+            </div>
+            <button type="button" data-remind aria-pressed="false" class="flex w-fit items-center gap-2 rounded-full border border-white/40 px-5 py-2.5 text-sm transition hover:border-white aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night"><i class="fa-regular fa-bell" aria-hidden="true"></i><span data-remind-label>Remind me</span></button>
+          </li>
+          <li class="grid items-center gap-4 py-6 sm:grid-cols-[6rem_1fr_auto]" data-reveal style="--reveal-delay: 80ms">
+            <p class="font-display leading-none"><span class="block text-sm text-volt">APR</span><span class="text-6xl font-bold">16</span></p>
+            <div>
+              <h3 class="font-display text-3xl font-semibold">Short video teardown: what hooked 1M viewers</h3>
+              <p class="mt-1 text-sm text-white/60">Hosted by Mina Sato · 60 min</p>
+            </div>
+            <button type="button" data-remind aria-pressed="false" class="flex w-fit items-center gap-2 rounded-full border border-white/40 px-5 py-2.5 text-sm transition hover:border-white aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night"><i class="fa-regular fa-bell" aria-hidden="true"></i><span data-remind-label>Remind me</span></button>
+          </li>
+          <li class="grid items-center gap-4 py-6 sm:grid-cols-[6rem_1fr_auto]" data-reveal style="--reveal-delay: 160ms">
+            <p class="font-display leading-none"><span class="block text-sm text-volt">MAY</span><span class="text-6xl font-bold">07</span></p>
+            <div>
+              <h3 class="font-display text-3xl font-semibold">Ask a brand manager anything</h3>
+              <p class="mt-1 text-sm text-white/60">Hosted by Leo Brandt · 50 min</p>
+            </div>
+            <button type="button" data-remind aria-pressed="false" class="flex w-fit items-center gap-2 rounded-full border border-white/40 px-5 py-2.5 text-sm transition hover:border-white aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night"><i class="fa-regular fa-bell" aria-hidden="true"></i><span data-remind-label>Remind me</span></button>
+          </li>
+      </ul>
+    </div>
+  </section>
+  <!-- block:end events -->
+
+  <!-- block:start newsletter -->
+  <section class="px-3 py-12 md:px-4 md:py-16">
+    <div class="ticket mx-auto grid max-w-4xl overflow-hidden rounded-2xl bg-volt text-night md:grid-cols-[1fr_15rem]">
+      <div class="p-8 md:p-10">
+        <p class="text-xs font-semibold uppercase tracking-widest">Admit one · every Friday</p>
+        <h2 class="mt-3 font-display text-5xl font-bold leading-none md:text-6xl">The Friday drop</h2>
+        <p class="mt-3 max-w-md text-sm text-night/75">Five links, one trend and a creator worth following — straight to your inbox.</p>
+        <form class="mt-6 flex flex-col gap-2 sm:flex-row" data-newsletter novalidate>
+          <label for="newsletter-email" class="sr-only">Email</label>
+          <input id="newsletter-email" name="email" type="email" required autocomplete="email" placeholder="you@studio.com" class="min-w-0 flex-1 rounded-lg border-2 border-night bg-transparent px-4 py-3 text-sm placeholder:text-night/50 focus:outline-none focus:ring-2 focus:ring-night">
+          <button type="submit" class="rounded-lg bg-night px-6 py-3 text-sm font-semibold text-volt transition hover:bg-white hover:text-night">Get the drop</button>
+        </form>
+        <p class="mt-3 text-xs" data-form-status role="status"></p>
+      </div>
+      <div class="flex flex-row items-center justify-between gap-4 border-t-2 border-dashed border-night/40 p-8 md:flex-col md:justify-center md:border-l-2 md:border-t-0">
+        <p class="font-display text-7xl font-bold leading-none">No.<br>148</p>
+        <i class="fa-solid fa-barcode text-6xl" aria-hidden="true"></i>
+      </div>
+    </div>
+  </section>
+  <!-- block:end newsletter -->
+
+  <!-- block:start footer -->
+  <footer class="px-3 pb-3 md:px-4">
+    <div class="mx-auto max-w-[90rem] overflow-hidden rounded-2xl bg-night px-5 pt-10 md:px-8">
+      <div class="flex flex-wrap items-center justify-between gap-6">
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/70">
+            <li><a href="brands.html" class="hover:text-volt">For brands</a></li>
+            <li><a href="ambassadors.html" class="hover:text-volt">For creators</a></li>
+            <li><a href="about.html" class="hover:text-volt">About</a></li>
+            <li><a href="cases.html" class="hover:text-volt">Cases</a></li>
+            <li><a href="index.html" class="hover:text-volt">Resources</a></li>
+            <li><a href="contact.html" class="hover:text-volt">Contact</a></li>
+        </ul>
+        <div class="flex gap-2">
+            <a href="contact.html" class="grid h-10 w-10 place-items-center rounded-full border border-white/30 transition hover:border-volt hover:text-volt" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="contact.html" class="grid h-10 w-10 place-items-center rounded-full border border-white/30 transition hover:border-volt hover:text-volt" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+            <a href="contact.html" class="grid h-10 w-10 place-items-center rounded-full border border-white/30 transition hover:border-volt hover:text-volt" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <p class="mt-10 font-display text-[clamp(5rem,21vw,20rem)] font-bold uppercase leading-[0.8] tracking-tight text-white/10" aria-hidden="true">Postwave</p>
+      <div class="flex flex-wrap justify-between gap-4 border-t border-night-line py-5 text-xs text-white/50">
+        <p>&copy; 2026 Postwave Inc.</p>
+        <p><a href="contact.html" class="hover:text-volt">Privacy</a> · <a href="contact.html" class="hover:text-volt">Terms</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const watchMotion = !reducedMotion && !navigator.webdriver && 'IntersectionObserver' in window;
+
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-search-root]').forEach((root) => {
+      const input = root.querySelector('[data-search]');
+      const chips = [...root.querySelectorAll('[data-chip]')];
+      const posts = [...document.querySelectorAll('[data-post]')];
+      const empty = document.querySelector('[data-empty]');
+      let category = 'All';
+      const paint = () => {
+        const query = input.value.trim().toLowerCase();
+        let shown = 0;
+        posts.forEach((post) => {
+          const match = (category === 'All' || post.dataset.category === category) && (!query || post.dataset.title.toLowerCase().includes(query) || post.dataset.category.toLowerCase().includes(query));
+          post.hidden = !match;
+          if (match) shown += 1;
+        });
+        root.querySelector('[data-result-count]').textContent = shown;
+        if (empty) empty.hidden = shown > 0;
+      };
+      chips.forEach((chip) => chip.addEventListener('click', () => {
+        category = chip.dataset.chip;
+        chips.forEach((other) => other.setAttribute('aria-pressed', String(other === chip)));
+        paint();
+      }));
+      input.addEventListener('input', paint);
+      document.querySelector('[data-reset]')?.addEventListener('click', () => { input.value = ''; chips[0].click(); });
+    });
+
+    document.querySelectorAll('[data-reading]').forEach((root) => {
+      const toggle = root.querySelector('[data-reading-toggle]');
+      const panel = document.getElementById(toggle.getAttribute('aria-controls'));
+      const list = root.querySelector('[data-reading-items]');
+      const read = () => { try { return JSON.parse(localStorage.getItem('postwave-reading') || '[]'); } catch (error) { return []; } };
+      const write = (items) => { try { localStorage.setItem('postwave-reading', JSON.stringify(items)); } catch (error) { /* storage unavailable */ } };
+      let saved = read();
+      const paint = () => {
+        root.querySelector('[data-reading-count]').textContent = saved.length;
+        root.querySelector('[data-reading-empty]').hidden = saved.length > 0;
+        list.replaceChildren(...saved.map((item) => {
+          const li = document.createElement('li');
+          const link = document.createElement('a');
+          link.href = item.href; link.textContent = item.title; link.className = 'block rounded-lg bg-white/5 px-3 py-2 hover:text-volt';
+          li.append(link);
+          return li;
+        }));
+        document.querySelectorAll('[data-save]').forEach((button) => button.setAttribute('aria-pressed', String(saved.some((item) => item.id === button.dataset.save))));
+      };
+      document.querySelectorAll('[data-save]').forEach((button) => button.addEventListener('click', () => {
+        const id = button.dataset.save;
+        saved = saved.some((item) => item.id === id) ? saved.filter((item) => item.id !== id) : [...saved, { id, title: button.dataset.saveTitle, href: button.dataset.saveHref }];
+        write(saved);
+        paint();
+      }));
+      toggle.addEventListener('click', () => { const open = panel.hidden; panel.hidden = !open; toggle.setAttribute('aria-expanded', String(open)); });
+      document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && !panel.hidden) { panel.hidden = true; toggle.setAttribute('aria-expanded', 'false'); toggle.focus(); } });
+      paint();
+    });
+
+    document.querySelectorAll('[data-remind]').forEach((button) => button.addEventListener('click', () => {
+      const on = button.getAttribute('aria-pressed') !== 'true';
+      button.setAttribute('aria-pressed', String(on));
+      button.querySelector('[data-remind-label]').textContent = on ? 'Reminder set' : 'Remind me';
+    }));
+
+    document.querySelectorAll('[data-newsletter]').forEach((form) => {
+      const status = form.parentElement.querySelector('[data-form-status]');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = form.elements.email;
+        if (!email.checkValidity()) { status.textContent = 'Please enter a valid email address.'; email.focus(); return; }
+        status.textContent = "You're in. First drop lands this Friday.";
+        form.reset();
+      });
+    });
+
+    if (watchMotion) {
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+      }), { threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach((el) => observer.observe(el));
+    }
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=postwave&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

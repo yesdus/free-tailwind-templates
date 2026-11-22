@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farthing | Tailwind CSS Fintech Template</title>
+  <meta name="description" content="Farthing is a dark Tailwind CSS fintech template for a business account, with a white navbar over a black page, neon night photos that bleed off the edges, heavy grotesk headlines, a takings splitter with a glowing grid, and features, pricing and contact pages.">
+  <meta name="keywords" content="Farthing, Tailwind CSS template, HTML website template, fintech template, business account website, payments landing page, neobank template, dark template, pricing page, free template">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Farthing | Tailwind CSS Fintech Template">
+  <meta property="og:description" content="A dark Tailwind CSS fintech template with edge-to-edge neon photos, heavy headlines, a takings splitter and features, pricing and contact pages.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Farthing template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Farthing | Tailwind CSS Fintech Template">
+  <meta name="twitter:description" content="A dark Tailwind CSS fintech template with edge-to-edge neon photos, heavy headlines, a takings splitter and features, pricing and contact pages.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Farthing template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: { DEFAULT: '#0e0e10', soft: '#19191d', line: '#2c2c33' },
+            navy: '#0c2152',
+            fog: '#a9a9b4',
+            amber: '#ffb21a',
+            flame: '#ff5a1f',
+            pink: '#ff2d78',
+            violet: '#7a3cff',
+            cyan: '#1fd6e6'
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-ink font-sans text-white antialiased">
+  <!-- block:start navbar -->
+  <header class="sticky top-0 z-40 bg-white text-navy">
+    <div class="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-5 md:px-12">
+      <a href="index.html" class="flex items-center gap-3 text-xl font-extrabold" aria-label="Farthing home">
+        <span class="grid h-8 w-8 grid-cols-2 gap-0.5" aria-hidden="true"><span class="bg-navy"></span><span class="bg-flame"></span><span class="bg-pink"></span><span class="bg-navy"></span></span>
+        Farthing
+      </a>
+      <nav class="hidden items-center gap-10 md:flex" aria-label="Main">
+          <a href="features.html" class="font-semibold hover:text-flame">Features</a>
+          <a href="pricing.html" class="font-semibold hover:text-flame">Pricing</a>
+          <a href="contact.html" class="font-semibold hover:text-flame">Contact</a>
+        <a href="pricing.html" class="rounded-full bg-navy px-6 py-3 font-semibold text-white hover:bg-flame">Open an account</a>
+      </nav>
+      <button type="button" class="flex h-11 w-11 items-center justify-center md:hidden" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="border-t border-navy/10 px-6 py-6 md:hidden" hidden>
+      <nav class="grid gap-4 text-2xl font-extrabold" aria-label="Mobile">
+        <a href="index.html" aria-current="page" class="text-flame">Home</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+      </nav>
+      <a href="pricing.html" class="mt-6 inline-block rounded-full bg-navy px-6 py-3 font-semibold text-white">Open an account</a>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <main>
+    <!-- block:start hero -->
+    <section id="top" class="relative overflow-hidden">
+      <div class="absolute right-0 top-0 hidden h-9 w-[46%] bg-cover bg-center lg:block" style="background-image: url('https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&amp;fit=crop&amp;w=1400&amp;q=80')" aria-hidden="true"></div>
+      <div class="absolute bottom-0 right-0 hidden h-9 w-[46%] bg-cover bg-top lg:block" style="background-image: url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=1400&amp;q=80')" aria-hidden="true"></div>
+      <div class="grid items-center lg:min-h-[52rem] lg:grid-cols-2">
+        <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="A wet street at night lit by red and yellow neon signs, with two tuk-tuks parked outside a shop" class="aspect-[4/3] w-full object-cover lg:my-28 lg:aspect-[5/4]">
+        <div class="px-6 py-16 md:px-12 lg:py-24 lg:pl-24 xl:pl-36">
+          <h1 class="text-5xl font-extrabold leading-[1.05] md:text-7xl">Paid before<br>you lock up</h1>
+          <p class="mt-8 max-w-md text-2xl font-semibold leading-snug md:text-3xl">The business account for places that stay open late.</p>
+          <p class="mt-3 max-w-md text-lg leading-relaxed text-white/80">Card takings land in minutes, not on Tuesday. Tax is set aside as you earn, so the money you see is the money you have.</p>
+          <div class="mt-10 flex flex-wrap items-center gap-6">
+            <a href="pricing.html" class="rounded-full bg-white px-7 py-4 font-semibold text-ink hover:bg-amber">Open an account</a>
+            <a href="#split" class="flex items-center gap-3 font-semibold hover:text-amber">Split tonight's takings <i class="fa-solid fa-arrow-down"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- block:end hero -->
+
+    <!-- block:start features -->
+    <section id="why" class="overflow-hidden border-t border-ink-line">
+        <article class="grid items-center lg:grid-cols-2">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="A customer paying by phone on a small white card reader held across a counter" class="aspect-[4/3] w-full object-cover lg:my-16 lg:aspect-[5/4] " loading="lazy" data-reveal>
+          <div class="px-6 py-14 md:px-12 lg:pl-24 xl:pl-36" data-reveal style="--reveal-delay: 120ms">
+            <p class="neon-text inline-block font-extrabold uppercase tracking-widest">01 · Payouts</p>
+            <h2 class="mt-5 max-w-lg text-4xl font-extrabold leading-[1.08] md:text-6xl">Tonight&#39;s cards, tonight</h2>
+            <p class="mt-6 max-w-md text-lg leading-relaxed text-white/80">Every card payment settles to your account within ten minutes, weekends and bank holidays included. Pay the supplier at the back door from what came in at the front.</p>
+          </div>
+        </article>
+        <article class="grid items-center lg:grid-cols-2">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Tax forms, a calculator and a pen spread out on a white table" class="aspect-[4/3] w-full object-cover lg:my-16 lg:aspect-[5/4] lg:order-2" loading="lazy" data-reveal>
+          <div class="px-6 py-14 md:px-12 lg:pr-24 xl:pl-28" data-reveal style="--reveal-delay: 120ms">
+            <p class="neon-text inline-block font-extrabold uppercase tracking-widest">02 · Tax pots</p>
+            <h2 class="mt-5 max-w-lg text-4xl font-extrabold leading-[1.08] md:text-6xl">The taxman&#39;s share, out of sight</h2>
+            <p class="mt-6 max-w-md text-lg leading-relaxed text-white/80">Choose a percentage once. Farthing moves it into a locked pot with each sale and tells you what is left that is really yours to spend.</p>
+          </div>
+        </article>
+        <article class="grid items-center lg:grid-cols-2">
+          <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="A red paper lantern glowing in a narrow alley at night" class="aspect-[4/3] w-full object-cover lg:my-16 lg:aspect-[5/4] " loading="lazy" data-reveal>
+          <div class="px-6 py-14 md:px-12 lg:pl-24 xl:pl-36" data-reveal style="--reveal-delay: 120ms">
+            <p class="neon-text inline-block font-extrabold uppercase tracking-widest">03 · Team cards</p>
+            <h2 class="mt-5 max-w-lg text-4xl font-extrabold leading-[1.08] md:text-6xl">A card for whoever does the run</h2>
+            <p class="mt-6 max-w-md text-lg leading-relaxed text-white/80">Hand out cards with a nightly limit for stock, fuel and change. Each tap asks for a photo of the receipt before the shift ends.</p>
+          </div>
+        </article>
+      <div class="px-6 pb-20 pt-6 text-center md:px-12">
+        <a href="features.html" class="inline-flex items-center gap-3 border-b-2 border-flame pb-2 font-semibold hover:text-amber">Everything the account does <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+    <!-- block:end features -->
+
+    <!-- block:start stats -->
+    <section class="bg-ink-soft">
+      <div class="mx-auto grid max-w-[1500px] gap-px bg-ink-line md:grid-cols-3">
+          <div class="bg-ink-soft px-6 py-14 md:px-12 md:py-20" data-reveal style="--reveal-delay: 0ms">
+            <p class="neon-text inline-block text-6xl font-extrabold md:text-7xl">9 min</p>
+            <p class="mt-4 max-w-[16rem] text-lg text-white/80">from tap to your balance, on average</p>
+          </div>
+          <div class="bg-ink-soft px-6 py-14 md:px-12 md:py-20" data-reveal style="--reveal-delay: 100ms">
+            <p class="neon-text inline-block text-6xl font-extrabold md:text-7xl">41,000</p>
+            <p class="mt-4 max-w-[16rem] text-lg text-white/80">bars, kitchens, kiosks and corner shops</p>
+          </div>
+          <div class="bg-ink-soft px-6 py-14 md:px-12 md:py-20" data-reveal style="--reveal-delay: 200ms">
+            <p class="neon-text inline-block text-6xl font-extrabold md:text-7xl">0</p>
+            <p class="mt-4 max-w-[16rem] text-lg text-white/80">payouts held over a weekend, ever</p>
+          </div>
+      </div>
+    </section>
+    <!-- block:end stats -->
+
+    <!-- block:start demo -->
+    <section id="split" class="mx-auto max-w-[1500px] px-6 py-24 md:px-12 md:py-36" data-splitter>
+      <div class="grid items-center gap-16 lg:grid-cols-12">
+        <div class="lg:col-span-6">
+          <p class="neon-text inline-block font-extrabold uppercase tracking-widest">Try it</p>
+          <h2 class="mt-5 text-4xl font-extrabold leading-[1.08] md:text-6xl">Split tonight's takings.</h2>
+          <p class="mt-6 max-w-md text-lg leading-relaxed text-white/80">Each square is one percent of what came in. Move the slider and watch where it goes before you have cashed up.</p>
+
+          <div class="mt-12">
+            <label for="takings" class="flex items-baseline justify-between"><span class="font-semibold text-fog">Card takings tonight</span><span class="text-4xl font-extrabold" data-takings-label>€1,800</span></label>
+            <input id="takings" type="range" min="200" max="6000" step="100" value="1800" class="mt-4 w-full" data-takings>
+          </div>
+
+          <fieldset class="mt-10">
+            <legend class="font-semibold text-fog">Set aside for tax</legend>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <button type="button" data-tax="10" aria-pressed="false" class="rounded-full border border-white/30 px-5 py-2.5 font-semibold transition hover:border-white aria-pressed:border-white aria-pressed:bg-white aria-pressed:text-ink">10%</button>
+                <button type="button" data-tax="15" aria-pressed="false" class="rounded-full border border-white/30 px-5 py-2.5 font-semibold transition hover:border-white aria-pressed:border-white aria-pressed:bg-white aria-pressed:text-ink">15%</button>
+                <button type="button" data-tax="21" aria-pressed="true" class="rounded-full border border-white/30 px-5 py-2.5 font-semibold transition hover:border-white aria-pressed:border-white aria-pressed:bg-white aria-pressed:text-ink">21%</button>
+                <button type="button" data-tax="25" aria-pressed="false" class="rounded-full border border-white/30 px-5 py-2.5 font-semibold transition hover:border-white aria-pressed:border-white aria-pressed:bg-white aria-pressed:text-ink">25%</button>
+            </div>
+          </fieldset>
+
+          <label class="mt-8 flex cursor-pointer items-center gap-4">
+            <input type="checkbox" class="h-5 w-5 accent-violet" data-tips checked>
+            <span class="font-semibold">Keep 5% in a tips pot for the team</span>
+          </label>
+        </div>
+
+        <div class="lg:col-span-5 lg:col-start-8">
+          <div class="rounded-[2rem] border-[10px] border-ink-soft bg-black p-5 shadow-[0_0_80px_rgba(255,90,31,.25)]">
+            <div class="grid grid-cols-10 gap-1.5" aria-hidden="true" data-cells>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="yours"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tax"></span>
+                <span class="cell" data-kind="tips"></span>
+                <span class="cell" data-kind="tips"></span>
+                <span class="cell" data-kind="tips"></span>
+                <span class="cell" data-kind="tips"></span>
+                <span class="cell" data-kind="tips"></span>
+                <span class="cell" data-kind="fee"></span>
+            </div>
+          </div>
+          <dl class="mt-8 grid grid-cols-2 gap-x-6 gap-y-5" aria-live="polite">
+              <div class="border-t border-ink-line pt-4" data-row="yours">
+                <dt class="flex items-center gap-3 text-sm text-fog"><span class="h-3 w-3 bg-amber"></span>Yours by closing time</dt>
+                <dd class="mt-1 text-3xl font-extrabold" data-amount="yours">€1,314</dd>
+              </div>
+              <div class="border-t border-ink-line pt-4" data-row="tax">
+                <dt class="flex items-center gap-3 text-sm text-fog"><span class="h-3 w-3 bg-pink"></span>Locked in the tax pot</dt>
+                <dd class="mt-1 text-3xl font-extrabold" data-amount="tax">€378</dd>
+              </div>
+              <div class="border-t border-ink-line pt-4" data-row="tips">
+                <dt class="flex items-center gap-3 text-sm text-fog"><span class="h-3 w-3 bg-violet"></span>Tips pot</dt>
+                <dd class="mt-1 text-3xl font-extrabold" data-amount="tips">€90</dd>
+              </div>
+              <div class="border-t border-ink-line pt-4" data-row="fee">
+                <dt class="flex items-center gap-3 text-sm text-fog"><span class="h-3 w-3 bg-cyan"></span>Our fee, 1%</dt>
+                <dd class="mt-1 text-3xl font-extrabold" data-amount="fee">€18</dd>
+              </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <!-- block:end demo -->
+
+    <!-- block:start process -->
+    <section id="start" class="border-y border-ink-line bg-ink-soft">
+      <div class="mx-auto max-w-[1500px] px-6 py-24 md:px-12 md:py-32">
+        <div class="flex flex-wrap items-end justify-between gap-6">
+          <h2 class="max-w-2xl text-4xl font-extrabold leading-[1.08] md:text-6xl">Open before your next shift.</h2>
+          <p class="max-w-xs text-white/80">No branch visit and no paper. Most accounts are trading the same afternoon.</p>
+        </div>
+        <ol class="mt-16 grid gap-10 md:grid-cols-3 md:gap-0">
+            <li class="relative border-t-2 border-ink-line pt-8 md:pr-10" data-reveal style="--reveal-delay: 0ms">
+              <span class="neon absolute -top-[9px] left-0 h-4 w-4 rounded-full" aria-hidden="true"></span>
+              <p class="font-extrabold uppercase tracking-widest text-amber">Minute 0</p>
+              <h3 class="mt-4 text-3xl font-extrabold">Scan your ID</h3>
+              <p class="mt-4 max-w-sm leading-relaxed text-white/80">Photograph a passport or ID card and your trade licence. We read them for you, so there are no forms to type.</p>
+            </li>
+            <li class="relative border-t-2 border-ink-line pt-8 md:pr-10" data-reveal style="--reveal-delay: 120ms">
+              <span class="neon absolute -top-[9px] left-0 h-4 w-4 rounded-full" aria-hidden="true"></span>
+              <p class="font-extrabold uppercase tracking-widest text-amber">Minute 4</p>
+              <h3 class="mt-4 text-3xl font-extrabold">Pick your pots</h3>
+              <p class="mt-4 max-w-sm leading-relaxed text-white/80">Set a tax percentage, add a tips pot if you share them, and name anything else you save for.</p>
+            </li>
+            <li class="relative border-t-2 border-ink-line pt-8 md:pr-10" data-reveal style="--reveal-delay: 240ms">
+              <span class="neon absolute -top-[9px] left-0 h-4 w-4 rounded-full" aria-hidden="true"></span>
+              <p class="font-extrabold uppercase tracking-widest text-amber">Minute 10</p>
+              <h3 class="mt-4 text-3xl font-extrabold">Take a payment</h3>
+              <p class="mt-4 max-w-sm leading-relaxed text-white/80">Use your phone as the card reader tonight. The countertop reader and your cards arrive in two days.</p>
+            </li>
+        </ol>
+      </div>
+    </section>
+    <!-- block:end process -->
+
+    <!-- block:start reviews -->
+    <section id="voices" class="mx-auto max-w-[1500px] px-6 py-24 md:px-12 md:py-36">
+      <h2 class="max-w-3xl text-4xl font-extrabold leading-[1.08] md:text-6xl">Said after closing time.</h2>
+      <div class="mt-14 grid gap-5 md:grid-cols-3">
+          <figure class="flex flex-col justify-between rounded-2xl border border-ink-line bg-ink-soft p-8" data-reveal style="--reveal-delay: 0ms">
+            <div>
+              <figcaption class="flex items-center gap-4">
+                <img src="https://images.unsplash.com/photo-1509460913899-515f1df34fea?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDh8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Noor Haddad" class="h-12 w-12 rounded-full object-cover" loading="lazy">
+                <span><span class="block font-semibold">Noor Haddad</span><span class="block text-sm text-fog">@noorskitchen</span></span>
+              </figcaption>
+              <blockquote class="mt-6 text-xl leading-relaxed">Friday&#39;s takings paid Saturday&#39;s fish order at 7am. With my old bank that money showed up on Wednesday.</blockquote>
+            </div>
+            <p class="mt-8 flex items-center justify-between border-t border-ink-line pt-5 text-sm text-fog">
+              <span>Posted at 02:14</span>
+              <button type="button" class="flex items-center gap-2 font-semibold hover:text-pink aria-pressed:text-pink" aria-pressed="false" data-like data-likes="318" aria-label="Like this post"><i class="fa-solid fa-heart"></i><span data-like-count>318</span></button>
+            </p>
+          </figure>
+          <figure class="flex flex-col justify-between rounded-2xl border border-ink-line bg-ink-soft p-8" data-reveal style="--reveal-delay: 100ms">
+            <div>
+              <figcaption class="flex items-center gap-4">
+                <img src="https://images.unsplash.com/photo-1674932668403-33398b81c92f?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDZ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Dario Lenz" class="h-12 w-12 rounded-full object-cover" loading="lazy">
+                <span><span class="block font-semibold">Dario Lenz</span><span class="block text-sm text-fog">@barlenz</span></span>
+              </figcaption>
+              <blockquote class="mt-6 text-xl leading-relaxed">First VAT quarter where I did not have to borrow from myself. The pot was just sitting there, full.</blockquote>
+            </div>
+            <p class="mt-8 flex items-center justify-between border-t border-ink-line pt-5 text-sm text-fog">
+              <span>Posted at 01:40</span>
+              <button type="button" class="flex items-center gap-2 font-semibold hover:text-pink aria-pressed:text-pink" aria-pressed="false" data-like data-likes="204" aria-label="Like this post"><i class="fa-solid fa-heart"></i><span data-like-count>204</span></button>
+            </p>
+          </figure>
+          <figure class="flex flex-col justify-between rounded-2xl border border-ink-line bg-ink-soft p-8" data-reveal style="--reveal-delay: 200ms">
+            <div>
+              <figcaption class="flex items-center gap-4">
+                <img src="https://images.unsplash.com/photo-1533933269825-da140ad3132f?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Mireille Okafor" class="h-12 w-12 rounded-full object-cover" loading="lazy">
+                <span><span class="block font-semibold">Mireille Okafor</span><span class="block text-sm text-fog">@latekiosk</span></span>
+              </figcaption>
+              <blockquote class="mt-6 text-xl leading-relaxed">Gave my nephew a card with a forty euro limit for the cash and carry. It asked him for the receipt before I had to.</blockquote>
+            </div>
+            <p class="mt-8 flex items-center justify-between border-t border-ink-line pt-5 text-sm text-fog">
+              <span>Posted at 23:52</span>
+              <button type="button" class="flex items-center gap-2 font-semibold hover:text-pink aria-pressed:text-pink" aria-pressed="false" data-like data-likes="157" aria-label="Like this post"><i class="fa-solid fa-heart"></i><span data-like-count>157</span></button>
+            </p>
+          </figure>
+      </div>
+    </section>
+    <!-- block:end reviews -->
+
+    <!-- block:start cta -->
+    <section class="relative overflow-hidden">
+      <div class="neon absolute inset-0" aria-hidden="true"></div>
+      <div class="absolute inset-0 opacity-40" style="background-image: linear-gradient(#0e0e10 2px, transparent 2px), linear-gradient(90deg, #0e0e10 2px, transparent 2px); background-size: 56px 56px" aria-hidden="true"></div>
+      <div class="relative mx-auto max-w-[1500px] px-6 py-28 md:px-12 md:py-40">
+        <h2 class="max-w-4xl text-5xl font-extrabold leading-[1.02] text-ink md:text-8xl">Cash up with nothing owed.</h2>
+        <div class="mt-10 flex flex-wrap items-center gap-6">
+          <a href="pricing.html" class="rounded-full bg-ink px-8 py-4 font-semibold text-white hover:bg-navy">Open an account</a>
+          <p class="font-semibold text-ink">Free for your first three months.</p>
+        </div>
+      </div>
+    </section>
+    <!-- block:end cta -->
+  </main>
+
+  <!-- block:start footer -->
+  <footer class="bg-white text-navy">
+    <div class="mx-auto grid max-w-[1500px] gap-10 px-6 py-14 md:grid-cols-12 md:px-12">
+      <div class="md:col-span-5">
+        <a href="index.html" class="flex items-center gap-3 text-xl font-extrabold">
+          <span class="grid h-8 w-8 grid-cols-2 gap-0.5" aria-hidden="true"><span class="bg-navy"></span><span class="bg-flame"></span><span class="bg-pink"></span><span class="bg-navy"></span></span>
+          Farthing
+        </a>
+        <p class="mt-5 max-w-xs text-navy/70">The business account for places that stay open late. Support answers until 4am.</p>
+      </div>
+      <nav class="grid content-start gap-3 md:col-span-3" aria-label="Footer">
+          <a href="index.html" class="font-semibold hover:text-flame">Home</a>
+          <a href="features.html" class="font-semibold hover:text-flame">Features</a>
+          <a href="pricing.html" class="font-semibold hover:text-flame">Pricing</a>
+          <a href="contact.html" class="font-semibold hover:text-flame">Contact</a>
+      </nav>
+      <div class="grid content-start gap-3 md:col-span-4">
+        <a href="mailto:hello@farthing.example" class="font-semibold hover:text-flame">hello@farthing.example</a>
+        <a href="tel:+31200000145" class="font-semibold hover:text-flame">+31 20 000 0145</a>
+        <p class="text-sm text-navy/60">Farthing Payments BV is a licensed electronic money institution. Your balance is safeguarded in full.</p>
+      </div>
+    </div>
+    <div class="border-t border-navy/10">
+      <p class="mx-auto max-w-[1500px] px-6 py-5 text-sm text-navy/60 md:px-12">© 2026 Farthing Payments BV, Rotterdam</p>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    // Mobile menu
+    (() => {
+      const toggle = document.querySelector("[data-menu-toggle]");
+      const menu = document.getElementById("mobile-menu");
+      if (!toggle || !menu) return;
+      toggle.addEventListener("click", () => {
+        const open = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!open));
+        toggle.setAttribute("aria-label", open ? "Open menu" : "Close menu");
+        menu.hidden = open;
+      });
+    })();
+
+    // Takings splitter: each cell is one percent
+    document.querySelectorAll("[data-splitter]").forEach((root) => {
+      const takings = root.querySelector("[data-takings]");
+      const tips = root.querySelector("[data-tips]");
+      const rates = [...root.querySelectorAll("[data-tax]")];
+      const cells = [...root.querySelectorAll("[data-cells] .cell")];
+      const euro = (value) => "€" + Math.round(value).toLocaleString("en-US");
+      const update = () => {
+        const total = Number(takings.value);
+        const tax = Number(rates.find((button) => button.getAttribute("aria-pressed") === "true").dataset.tax);
+        const share = { fee: 1, tips: tips.checked ? 5 : 0, tax };
+        share.yours = 100 - share.fee - share.tips - share.tax;
+        cells.forEach((cell, index) => {
+          cell.dataset.kind = index < share.yours ? "yours" : index < share.yours + share.tax ? "tax" : index < share.yours + share.tax + share.tips ? "tips" : "fee";
+        });
+        root.querySelector("[data-takings-label]").textContent = euro(total);
+        Object.entries(share).forEach(([kind, percent]) => { root.querySelector(`[data-amount="${kind}"]`).textContent = euro(total * percent / 100); });
+        root.querySelector('[data-row="tips"]').classList.toggle("opacity-40", !tips.checked);
+      };
+      rates.forEach((button) => button.addEventListener("click", () => {
+        rates.forEach((other) => other.setAttribute("aria-pressed", String(other === button)));
+        update();
+      }));
+      takings.addEventListener("input", update);
+      tips.addEventListener("change", update);
+      update();
+    });
+
+    // Like buttons
+    document.querySelectorAll("[data-like]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const liked = button.getAttribute("aria-pressed") !== "true";
+        button.setAttribute("aria-pressed", String(liked));
+        button.querySelector("[data-like-count]").textContent = Number(button.dataset.likes) + (liked ? 1 : 0);
+      });
+    });
+
+    // Scroll reveal
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=farthing&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

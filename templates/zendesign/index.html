@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenDesign | Tailwind CSS Designer Marketplace Template</title>
+    <meta name="description" content="ZenDesign is a refined Tailwind CSS designer marketplace template for showcasing creative talent, agencies, portfolios, and hiring services.">
+    <meta name="keywords" content="ZenDesign, Tailwind CSS template, HTML website template, designer marketplace template, creative agency landing page, portfolio website, responsive design">
+    <meta name="author" content="Let's templates">
+    <link rel="canonical" href="">
+
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Let's templates">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="ZenDesign | Tailwind CSS Designer Marketplace Template">
+    <meta property="og:description" content="A refined Tailwind CSS designer marketplace template for showcasing creative talent, agencies, portfolios, and hiring services.">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="ZenDesign template preview">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="ZenDesign | Tailwind CSS Designer Marketplace Template">
+    <meta name="twitter:description" content="A refined Tailwind CSS designer marketplace template for showcasing creative talent, agencies, portfolios, and hiring services.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:image:alt" content="ZenDesign template preview">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white text-[#0d0c22]">
+
+    <!-- block:start navbar -->
+    <nav id="header" class="flex items-center justify-between px-6 py-4 bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="flex items-center gap-8">
+            <!-- Logo -->
+            <a href="#hero" class="text-2xl font-bold tracking-tighter flex items-center gap-2">
+                <i class="fa-solid fa-peace text-[#ffda79]"></i> ZenDesign
+            </a>
+
+            <!-- Links -->
+            <div class="hidden lg:flex items-center gap-6 text-sm font-semibold text-gray-600">
+                <a href="#brand-connection" class="hover:text-black transition">Find talent</a>
+                <a href="#dual-cta" class="hover:text-black transition">For creatives</a>
+                <a href="#gallery" class="hover:text-black transition">Inspiration</a>
+                <a href="#features-grid" class="hover:text-black transition">Masterclasses</a>
+                <a href="#final-cta" class="hover:text-black transition">Elite Access</a>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <div class="hidden sm:flex items-center gap-4 text-sm font-semibold">
+                <div class="relative group">
+                    <button class="text-gray-600 hover:text-black transition flex items-center gap-1">
+                        Accounts <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                    </button>
+                </div>
+                <a href="#dual-cta" class="text-gray-600 hover:text-black transition">Sign up</a>
+            </div>
+            <a href="#final-cta" class="bg-[#ffda79] text-[#0d0c22] px-4 py-2.5 rounded-lg text-sm font-bold hover:bg-[#f5c342] transition">
+                Start Hiring
+            </a>
+        </div>
+    </nav>
+    <!-- block:end navbar -->
+
+    <!-- block:start hero -->
+    <section id="hero" class="pt-20 pb-16 text-center">
+        <div class="container mx-auto px-4">
+            <span class="inline-block bg-[#fff9e6] text-[#b38a00] px-4 py-1.5 rounded-full text-xs font-bold mb-8 border border-[#fff3cd]">
+                A curated community of elite design talent.
+            </span>
+            <h1 class="font-serif text-5xl md:text-7xl font-bold mb-6 max-w-4xl mx-auto leading-tight">
+                Connect with the world's most mindful designers.
+            </h1>
+            <p class="text-gray-600 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+                Discover exceptional creative professionals and agencies ready to bring your vision to life with precision and care.
+            </p>
+            <button class="bg-[#ffda79] text-[#0d0c22] px-10 py-4 rounded-full font-bold hover:bg-[#f5c342] transition mb-16 shadow-lg shadow-[#fff3cd]">
+                Begin your search
+            </button>
+
+            <!-- Talent Cards Carousel/Grid -->
+            <div class="flex gap-4 overflow-x-auto no-scrollbar px-4 pb-4 snap-x snap-mandatory">
+                <!-- Card 1 -->
+                <div class="min-w-[240px] md:min-w-[280px] bg-gray-100 rounded-2xl overflow-hidden snap-center relative group">
+                    <img class="w-full h-80 object-cover" src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIwbWFuJTIwZGVzaWduZXJ8ZW58MXx8fHwxNzk1Mzg2NDkwfDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Senior Product Designer" />
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white text-left">
+                        <p class="font-bold text-sm">Hendes Cooper</p>
+                        <p class="text-[10px] opacity-80 uppercase tracking-wider">Senior Product Designer</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="min-w-[240px] md:min-w-[280px] bg-gray-100 rounded-2xl overflow-hidden snap-center relative group">
+                    <img class="w-full h-80 object-cover" src="https://images.unsplash.com/photo-1517462964-21fdcec3f25b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fHBvcnRyYWl0JTIwd29tYW4lMjBjcmVhdGl2ZSUyMGRpcmVjdG9yfGVufDF8fHx8MTc5NTM4NjQ5MXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Creative Lead" />
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white text-left">
+                        <p class="font-bold text-sm">Maya Daley</p>
+                        <p class="text-[10px] opacity-80 uppercase tracking-wider">Creative Lead</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="min-w-[240px] md:min-w-[280px] bg-gray-100 rounded-2xl overflow-hidden snap-center relative group">
+                    <img class="w-full h-80 object-cover" src="https://images.unsplash.com/photo-1584598788860-2695a3a6c874?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIweW91bmclMjBtYW4lMjBhcnRpc3R8ZW58MXx8fHwxNzk1Mzg2NDkxfDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="3D Artist" />
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white text-left">
+                        <p class="font-bold text-sm">Cody Fisher</p>
+                        <p class="text-[10px] opacity-80 uppercase tracking-wider">3D Artist</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="min-w-[240px] md:min-w-[280px] bg-gray-100 rounded-2xl overflow-hidden snap-center relative group">
+                    <img class="w-full h-80 object-cover" src="https://images.unsplash.com/photo-1654512697681-8434b50096dd?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIwd29tYW4lMjBkZXNpZ25lcnxlbnwxfHx8fDE3OTUzODY0OTJ8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="UI Designer" />
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white text-left">
+                        <p class="font-bold text-sm">Esther Howard</p>
+                        <p class="text-[10px] opacity-80 uppercase tracking-wider">UI Designer</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="min-w-[240px] md:min-w-[280px] bg-gray-100 rounded-2xl overflow-hidden snap-center relative group">
+                    <img class="w-full h-80 object-cover" src="https://images.unsplash.com/photo-1590086782957-93c06ef21604?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIwbWFuJTIwc21pbGluZyUyMHN0dWRpb3xlbnwxfHx8fDE3OTUzODY1MTV8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Motion Director" />
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white text-left">
+                        <p class="font-bold text-sm">Dmitry Kars</p>
+                        <p class="text-[10px] opacity-80 uppercase tracking-wider">Motion Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end hero -->
+
+    <!-- block:start clients -->
+    <section id="trusted-by" class="py-12 border-y border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale">
+                <span class="text-xs font-bold uppercase tracking-widest text-gray-400">Industry Leaders Trust Us</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Adobe_Inc._logo.svg" alt="Adobe" class="h-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="h-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" class="h-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Shopify_Logo.png" alt="Shopify" class="h-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney" class="h-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="h-6">
+            </div>
+        </div>
+    </section>
+    <!-- block:end clients -->
+
+    <!-- block:start features -->
+    <section id="features-text" class="py-24">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <h2 class="font-serif text-4xl md:text-6xl font-bold leading-tight">
+                    When exceptional design is the priority.
+                </h2>
+                <div class="space-y-6">
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        From startups to Fortune 500 companies, see why over 60,000 global brands use ZenDesign to discover, engage, and hire their most critical creative assets.
+                    </p>
+                    <button class="bg-[#ffda79] text-[#0d0c22] px-8 py-3 rounded-lg font-bold hover:bg-[#f5c342] transition">
+                        Get started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end features -->
+
+    <!-- block:start about -->
+    <section id="brand-connection" class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-4 text-center mb-16">
+            <span class="inline-block bg-[#fff9e6] text-[#b38a00] px-3 py-1 rounded-full text-[10px] font-bold uppercase mb-6 border border-[#fff3cd]">
+                Preferred by visionaries
+            </span>
+            <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">
+                Empowering brands with the<br class="hidden md:block">finest design expertise.
+            </h2>
+            <p class="text-gray-500 max-w-2xl mx-auto">
+                Leading organizations use ZenDesign to secure top-tier creative talent. Explore our verified portfolios to find your ideal design partner.
+            </p>
+        </div>
+
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <h3 class="font-serif text-4xl font-bold">Find your ideal design partner</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        As a premier global network of vetted creative professionals, we are positioned to support your most ambitious projects with strategic design thinking.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="bg-[#ffda79] text-[#0d0c22] px-6 py-3 rounded-lg font-bold hover:bg-[#f5c342] transition">
+                            Find a specialist
+                        </button>
+                        <button class="bg-white text-[#b38a00] border border-[#fff3cd] px-6 py-3 rounded-lg font-bold hover:border-[#ffda79] transition">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="bg-[#fff9e6] rounded-full aspect-square flex items-center justify-center p-8">
+                        <img class="w-full h-full object-cover rounded-full" src="https://images.unsplash.com/photo-1603993097397-89c963e325c7?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGNyZWF0aXZlfGVufDF8fHx8MTc5NTM4NjEyNHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Creative Professional" />
+                    </div>
+                    <!-- Floating Card -->
+                    <div class="absolute bottom-10 right-0 bg-white p-5 rounded-xl shadow-2xl border border-gray-100 w-64">
+                        <div class="flex items-center gap-3 mb-4">
+                            <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-10 h-10 rounded-lg" alt="Avatar">
+                            <div>
+                                <p class="font-bold text-sm">Maya Daley</p>
+                                <p class="text-[10px] text-gray-400">Creative Lead</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mb-4">
+                            <span class="bg-[#fff9e6] text-[#b38a00] text-[8px] font-bold py-1 px-2 rounded-full text-center">UX Strategy</span>
+                            <span class="bg-[#fff9e6] text-[#b38a00] text-[8px] font-bold py-1 px-2 rounded-full text-center">UI Systems</span>
+                            <span class="bg-[#fff9e6] text-[#b38a00] text-[8px] font-bold py-1 px-2 rounded-full text-center">Visual Identity</span>
+                            <span class="bg-[#fff9e6] text-[#b38a00] text-[8px] font-bold py-1 px-2 rounded-full text-center">Motion</span>
+                        </div>
+                        <div class="flex justify-between items-center pt-2 border-t border-gray-50">
+                            <span class="font-bold text-xs">$120/hr</span>
+                            <div class="flex text-amber-400 text-[8px]">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end about -->
+
+    <!-- block:start features-2 -->
+    <section id="features-grid" class="py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-4xl font-bold mb-16 max-w-lg">A more mindful way to hire</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="space-y-4">
+                    <h4 class="font-bold text-lg">The premium hub for design talent</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Expose your opportunities to a massive audience of highly skilled designers actively seeking impactful collaborations.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-bold text-lg">Precision search & filtering</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Effortlessly find the exact skill sets you need with our granular search tools designed for professional recruitment.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-bold text-lg">Vetted candidate quality</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Focus on excellence. Connect with designers who have a proven track record of delivering high-quality commercial work.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end features-2 -->
+
+    <!-- block:start reviews -->
+    <section id="testimonial" class="py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- Quote Side -->
+                <div class="flex-1 bg-white p-12 border border-gray-100 rounded-2xl flex flex-col justify-between">
+                    <p class="text-2xl font-medium leading-relaxed mb-8 italic">
+                        "ZenDesign is our definitive source for creative hiring. The quality of professionals here consistently exceeds our expectations."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-10 h-10 rounded-full" alt="Lee Munroe">
+                        <div>
+                            <p class="font-bold text-sm">Lee Munroe</p>
+                            <p class="text-xs text-gray-400">Head of design, OneSignal</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Brand Side -->
+                <div class="w-full lg:w-1/3 bg-[#ffda79] rounded-2xl flex items-center justify-center p-12">
+                    <div class="text-[#0d0c22] text-center">
+                        <i class="fa-solid fa-signal text-5xl mb-4"></i>
+                        <p class="text-xl font-bold tracking-tight">OneSignal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end reviews -->
+
+    <!-- block:start about-2 -->
+    <section id="why-us" class="py-24 bg-white">
+        <div class="container mx-auto px-4 text-center mb-16">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold">Why the world's best companies<br class="hidden md:block">trust ZenDesign</h2>
+        </div>
+
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-12">
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-[#fff9e6] rounded-xl text-[#b38a00]">
+                            <i class="fa-solid fa-gem text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Curated elite talent</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">Access a verified pool of specialists across brand, product, and digital experience design.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-[#fff9e6] rounded-xl text-[#b38a00]">
+                            <i class="fa-solid fa-bolt text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Transparent hiring</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">Our platform is built for direct connection, eliminating unnecessary intermediaries and fees.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-[#fff9e6] rounded-xl text-[#b38a00]">
+                            <i class="fa-solid fa-globe text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Universal perspective</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">Discover creators from over 170 countries, bringing diverse perspectives to your brand's challenges.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img class="w-full h-auto rounded-3xl shadow-xl" src="https://images.unsplash.com/photo-1681949103006-70066fb25dfe?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGNvbGxhYm9yYXRpdmUlMjBjcmVhdGl2ZSUyMHRlYW18ZW58MXx8fHwxNzk1Mzg2MTI1fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Collaborative creative team" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end about-2 -->
+
+    <!-- block:start gallery -->
+    <section id="gallery" class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-4 mb-12">
+            <h2 class="font-serif text-4xl font-bold">Unrivaled creative output</h2>
+        </div>
+
+        <!-- Horizontal Scrollable Gallery -->
+        <div class="flex gap-4 overflow-x-auto no-scrollbar px-6 snap-x snap-mandatory pb-8">
+            <div class="min-w-[300px] md:min-w-[400px] aspect-[4/3] rounded-xl overflow-hidden snap-center shadow-lg">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1744686909434-fd158fca1c35?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fGRlc2lnbiUyMHdvcmt8ZW58MXx8fHwxNzk1Mzg2MTI1fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Modern design work" />
+            </div>
+            <div class="min-w-[300px] md:min-w-[400px] aspect-[4/3] rounded-xl overflow-hidden snap-center shadow-lg">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fGNyZWF0aXZlfGVufDF8fHx8MTc5NTM4NjEyNXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="3D Creative" />
+            </div>
+            <div class="min-w-[300px] md:min-w-[400px] aspect-[4/3] rounded-xl overflow-hidden snap-center shadow-lg">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGRlc2lnbnxlbnwxfHx8fDE3OTUzODYxMjZ8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="UI Design" />
+            </div>
+            <div class="min-w-[300px] md:min-w-[400px] aspect-[4/3] rounded-xl overflow-hidden snap-center shadow-lg">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1633533452148-a9657d2c9a5f?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGJyYW5kJTIwaWRlbnRpdHl8ZW58MXx8fHwxNzk1Mzg2MTI2fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Brand Identity" />
+            </div>
+            <div class="min-w-[300px] md:min-w-[400px] aspect-[4/3] rounded-xl overflow-hidden snap-center shadow-lg">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1526570207772-784d36084510?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGRpZ2l0YWwlMjBwcm9kdWN0fGVufDF8fHx8MTc5NTM4NjEyNnww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Digital Product" />
+            </div>
+        </div>
+    </section>
+    <!-- block:end gallery -->
+
+    <!-- block:start cta -->
+    <section id="dual-cta" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- For Creatives -->
+                <div class="bg-white p-12 rounded-[2rem] space-y-6 shadow-sm border border-gray-100">
+                    <span class="inline-block bg-[#fff9e6] text-[#b38a00] px-3 py-1 rounded-full text-[10px] font-bold uppercase border border-[#fff3cd]">For Creators</span>
+                    <h3 class="font-serif text-4xl font-bold">Launch your next chapter</h3>
+                    <p class="text-gray-500 leading-relaxed">Gain access to elite opportunities and showcase your work to leading global brands.</p>
+                    <div class="flex items-center gap-6 pt-4">
+                        <button class="bg-[#ffda79] text-[#0d0c22] px-8 py-3 rounded-xl font-bold hover:bg-[#f5c342] transition">View opportunities</button>
+                        <a href="#final-cta" class="text-sm font-bold border-b-2 border-[#ffda79] text-[#b38a00]">Join the elite</a>
+                    </div>
+                </div>
+                <!-- For Inspiration -->
+                <div class="bg-white p-12 rounded-[2rem] space-y-6 shadow-sm border border-gray-100">
+                    <span class="inline-block bg-amber-50 text-amber-600 px-3 py-1 rounded-full text-[10px] font-bold uppercase border border-amber-100">Stay Inspired</span>
+                    <h3 class="font-serif text-4xl font-bold">Curate your inspiration</h3>
+                    <p class="text-gray-500 leading-relaxed">Follow industry leaders and build collections of world-class design projects.</p>
+                    <div class="flex items-center gap-6 pt-4">
+                        <button class="bg-slate-900 text-white px-8 py-3 rounded-xl font-bold hover:bg-black transition">Create profile</button>
+                        <a href="#gallery" class="text-sm font-bold border-b-2 border-slate-900 text-slate-900">Browse trending</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end cta -->
+
+    <!-- block:start cta-2 -->
+    <section id="final-cta" class="py-32 bg-[#ffda79] relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center relative z-10 text-[#0d0c22]">
+            <h2 class="font-serif text-5xl md:text-7xl font-bold mb-8">Ready to elevate your brand?</h2>
+            <p class="text-lg md:text-xl mb-12 max-w-xl mx-auto font-medium text-[#0d0c22]/70">Start exploring verified portfolios and engage with elite talent today.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button class="bg-black text-white px-10 py-4 rounded-full font-bold hover:bg-gray-800 transition text-lg shadow-xl">Get started now</button>
+                <button class="bg-white text-black border border-gray-200 px-10 py-4 rounded-full font-bold hover:bg-gray-50 transition text-lg">Contact Sales</button>
+            </div>
+            <p class="mt-8 text-sm font-medium text-[#0d0c22]/50">Are you a top-tier designer? <a href="#dual-cta" class="underline hover:text-black transition">Apply for ZenDesign</a></p>
+        </div>
+        <!-- Abstract Decoration -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-white/20 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-white/10 rounded-full blur-2xl"></div>
+    </section>
+    <!-- block:end cta-2 -->
+
+    <!-- block:start footer -->
+    <footer id="footer" class="pt-24 pb-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 mb-20">
+                <div class="col-span-2 md:col-span-1">
+                    <a href="#hero" class="text-2xl font-bold tracking-tighter mb-8 block flex items-center gap-2">
+                        <i class="fa-solid fa-peace text-[#ffda79]"></i> ZenDesign
+                    </a>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-400 hover:text-[#ffda79] transition"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-[#ffda79] transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-[#ffda79] transition"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h6 class="font-bold text-sm mb-6">Talent Solutions</h6>
+                    <ul class="space-y-4 text-sm text-gray-500 font-medium">
+                        <li><a href="#features-grid" class="hover:text-black transition">Direct Hiring</a></li>
+                        <li><a href="#dual-cta" class="hover:text-black transition">For Creatives</a></li>
+                        <li><a href="#features-grid" class="hover:text-black transition">Project Management</a></li>
+                        <li><a href="#gallery" class="hover:text-black transition">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6 class="font-bold text-sm mb-6">Exploration</h6>
+                    <ul class="space-y-4 text-sm text-gray-500 font-medium">
+                        <li><a href="#gallery" class="hover:text-black transition">Product Design</a></li>
+                        <li><a href="#gallery" class="hover:text-black transition">Brand Identity</a></li>
+                        <li><a href="#gallery" class="hover:text-black transition">Illustration</a></li>
+                        <li><a href="#gallery" class="hover:text-black transition">Interactive</a></li>
+                        <li><a href="#gallery" class="hover:text-black transition">3D & Motion</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6 class="font-bold text-sm mb-6">The Studio</h6>
+                    <ul class="space-y-4 text-sm text-gray-500 font-medium">
+                        <li><a href="#why-us" class="hover:text-black transition">Our Vision</a></li>
+                        <li><a href="#why-us" class="hover:text-black transition">The Lab</a></li>
+                        <li><a href="#why-us" class="hover:text-black transition">Partner Program</a></li>
+                        <li><a href="#why-us" class="hover:text-black transition">Concierge</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-2 lg:col-span-2">
+                    <h6 class="font-bold text-sm mb-6">Resources</h6>
+                    <ul class="grid grid-cols-2 gap-4 text-sm text-gray-500 font-medium">
+                        <li><a href="#gallery" class="hover:text-black transition">Job Board</a></li>
+                        <li><a href="#gallery" class="hover:text-black transition">Vetted Network</a></li>
+                        <li><a href="#gallery" class="hover:text-black transition">Freelance Hub</a></li>
+                        <li><a href="#gallery" class="hover:text-black transition">Design Assets</a></li>
+                        <li><a href="#gallery" class="hover:text-black transition">Insights</a></li>
+                        <li><a href="#gallery" class="hover:text-black transition">Collections</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex gap-6 text-xs text-gray-500 font-medium">
+                    <span>© 2024 ZenDesign Network</span>
+                    <a href="#footer" class="hover:text-black">Legal</a>
+                    <a href="#footer" class="hover:text-black">Privacy</a>
+                    <a href="#footer" class="hover:text-black">Policy</a>
+                </div>
+                <div class="text-xs text-gray-500 font-medium flex items-center gap-1">
+                    <span class="text-black font-bold">2.4M</span> creative moments shared <i class="fa-solid fa-sparkles text-amber-400 text-[10px]"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- block:end footer -->
+
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=zendesign&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

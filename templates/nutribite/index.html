@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      window.FontAwesomeConfig = { autoReplaceSvg: "nest" };
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriBite | Tailwind CSS Healthy Meal Delivery Template</title>
+    <meta
+      name="description"
+      content="NutriBite is a responsive meal delivery landing page template for healthy food subscriptions, organic meal prep services, nutrition brands, and wellness-focused food businesses."
+    />
+    <meta
+      name="keywords"
+      content="healthy meal delivery template, meal subscription landing page, organic food website template, nutrition brand design, wellness food service"
+    />
+    <meta name="author" content="Let's templates">
+    <link rel="canonical" href="">
+
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Let's templates">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="NutriBite | Tailwind CSS Healthy Meal Delivery Template">
+    <meta property="og:description" content="A responsive meal delivery landing page template for healthy food subscriptions, organic meal prep services, nutrition brands, and wellness-focused food businesses.">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="NutriBite template preview">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="NutriBite | Tailwind CSS Healthy Meal Delivery Template">
+    <meta name="twitter:description" content="A responsive meal delivery landing page template for healthy food subscriptions, organic meal prep services, nutrition brands, and wellness-focused food businesses.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:image:alt" content="NutriBite template preview">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sage: "#6b7a52",
+              "sage-dark": "#4a5638",
+              cream: "#f4eddc",
+              "cream-dark": "#e8dfc8",
+              "nb-dark": "#1a1a18",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+  <body class="antialiased">
+
+    <!-- block:start announcement-bar -->
+    <div id="announcement-bar" class="bg-sage text-white text-center py-2.5 text-xs font-semibold tracking-wide">
+      Free delivery for first-time customers. Use code:
+      <span class="font-black underline cursor-pointer">NUTRIFRESH</span>
+    </div>
+    <!-- block:end announcement-bar -->
+
+    <!-- block:start header -->
+    <header id="header" class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-500">
+          <a href="#menu" class="hover:text-sage transition-colors">Menu</a>
+          <a href="#meal-plans" class="hover:text-sage transition-colors">Plans</a>
+          <a href="#why-nutribite" class="hover:text-sage transition-colors">About Us</a>
+        </nav>
+
+        <a href="#hero" class="flex items-center gap-2 font-display font-bold text-xl text-nb-dark absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0">
+          <span class="w-7 h-7 bg-sage rounded-lg flex items-center justify-center text-white">
+            <i class="fa-solid fa-leaf text-xs"></i>
+          </span>
+          NutriBite
+        </a>
+
+        <div class="hidden md:flex items-center gap-6">
+          <nav class="flex items-center gap-6 text-sm font-semibold text-gray-500">
+            <a href="#testimonials" class="hover:text-sage transition-colors">Blog</a>
+            <a href="#faq" class="hover:text-sage transition-colors">FAQs</a>
+          </nav>
+          <div class="flex items-center gap-2">
+            <button
+              class="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:border-sage hover:text-sage transition-all"
+              aria-label="User account"
+            >
+              <i class="fa-regular fa-user text-xs"></i>
+            </button>
+            <button
+              class="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:border-sage hover:text-sage transition-all"
+              aria-label="Shopping cart"
+            >
+              <i class="fa-solid fa-bag-shopping text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <button class="md:hidden text-gray-600" aria-label="Open navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!-- block:end header -->
+
+    <main>
+
+      <!-- block:start hero -->
+      <section id="hero" class="relative overflow-hidden">
+        <!-- Background food image -->
+        <div class="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1920&q=80"
+            alt="Colorful fresh ingredients arranged on a table with herbs and vegetables"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-r from-nb-dark/70 via-nb-dark/35 to-transparent"></div>
+        </div>
+
+        <!-- Hero content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-6 pt-20 pb-8 md:pt-28 md:pb-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+
+            <!-- Left: pitch -->
+            <div class="text-white">
+              <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/20 text-xs font-bold uppercase tracking-widest mb-6">
+                <i class="fa-solid fa-seedling text-green-300"></i>
+                Mindful Eating
+              </span>
+              <h1 class="font-display text-3xl md:text-5xl font-bold leading-tight mb-4">
+                Healthy Food,<br/>
+                Magically Prepared<br/>
+                With Real Ingredients<br/>
+                and Balanced Nutrition
+              </h1>
+              <p class="text-white/70 text-sm leading-relaxed max-w-sm mb-8">
+                Made to support your body, your family, and your long-range peace of mind.
+              </p>
+              <a
+                href="#menu"
+                class="inline-block bg-white text-nb-dark px-8 py-3 rounded-full font-bold text-sm hover:bg-cream transition-colors shadow-lg"
+              >
+                Order Now
+              </a>
+            </div>
+
+            <!-- Right: floating meal card -->
+            <div class="flex justify-end items-start pt-4">
+              <div class="bg-white rounded-2xl shadow-2xl overflow-hidden w-52">
+                <div class="relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
+                    alt="Poached egg quinoa bowl with greens and vegetables"
+                    class="w-full h-36 object-cover"
+                  />
+                  <span class="absolute top-2 right-2 bg-sage text-white text-[10px] font-bold px-2 py-0.5 rounded-full">New</span>
+                </div>
+                <div class="p-3">
+                  <h3 class="font-bold text-xs text-nb-dark mb-2 leading-snug">Poached Egg Quinoa Bowl</h3>
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-sm text-nb-dark">$7.20</span>
+                    <button
+                      class="w-6 h-6 rounded-full bg-sage text-white flex items-center justify-center hover:bg-sage-dark transition-colors"
+                      aria-label="Add Poached Egg Quinoa Bowl to cart"
+                    >
+                      <i class="fa-solid fa-plus text-[10px]"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Large "Healthier" display text -->
+        <div class="relative z-10 bg-gradient-to-b from-transparent to-cream overflow-hidden px-4 pb-0 pt-6">
+          <p
+            class="font-display font-black leading-none text-nb-dark/10 select-none pointer-events-none text-[20vw] md:text-[18vw] whitespace-nowrap"
+            aria-hidden="true"
+          >Healthier</p>
+        </div>
+      </section>
+      <!-- block:end hero -->
+
+      <!-- block:start menu -->
+      <section id="menu" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Filter tabs -->
+          <div class="flex items-center justify-between border-b border-gray-100 mb-10 overflow-x-auto">
+            <div class="flex items-center flex-shrink-0">
+              <button class="meal-tab px-5 py-3 text-sm text-gray-400 hover:text-sage whitespace-nowrap transition-colors" data-tab="high-protein">
+                High Proteins <sup class="text-[10px]">31</sup>
+              </button>
+              <button class="meal-tab meal-tab-active px-5 py-3 text-sm whitespace-nowrap" data-tab="weight-loss">
+                Weight Loss <sup class="text-[10px]">20</sup>
+              </button>
+              <button class="meal-tab px-5 py-3 text-sm text-gray-400 hover:text-sage whitespace-nowrap transition-colors" data-tab="vegan">
+                Vegan <sup class="text-[10px]">11</sup>
+              </button>
+              <button class="meal-tab px-5 py-3 text-sm text-gray-400 hover:text-sage whitespace-nowrap transition-colors" data-tab="balanced">
+                Balanced Meals <sup class="text-[10px]">32</sup>
+              </button>
+            </div>
+            <button class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 text-sm font-semibold text-gray-600 hover:border-sage hover:text-sage transition-all flex-shrink-0 ml-4">
+              <i class="fa-solid fa-sliders text-xs"></i> Filter
+            </button>
+          </div>
+
+          <!-- Meal cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <article class="bg-[#f9f8f5] rounded-2xl overflow-hidden group hover:shadow-lg transition-all duration-300">
+                <div class="relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&amp;q=80"
+                    alt="Grilled salmon salad with mixed greens and dressing"
+                    class="w-full h-44 object-cover"
+                  />
+                  <span class="absolute top-3 left-3 text-[10px] font-bold px-2.5 py-1 rounded-full bg-sage text-white">
+                    Best Seller
+                  </span>
+                </div>
+                <div class="p-4">
+                  <h3 class="font-bold text-sm text-nb-dark mb-1.5 leading-snug">Grilled Salmon Salad</h3>
+                  <p class="text-[11px] text-gray-400 mb-3">420 Kcal &middot; 32g Protein</p>
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-base text-nb-dark">$5.20</span>
+                    <button
+                      class="w-8 h-8 rounded-full bg-sage text-white flex items-center justify-center hover:bg-sage-dark transition-colors"
+                      aria-label="Add Grilled Salmon Salad to cart"
+                    >
+                      <i class="fa-solid fa-plus text-xs"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+              <article class="bg-[#f9f8f5] rounded-2xl overflow-hidden group hover:shadow-lg transition-all duration-300">
+                <div class="relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&amp;q=80"
+                    alt="Lean chicken breast with sliced avocado and salad"
+                    class="w-full h-44 object-cover"
+                  />
+                  <span class="absolute top-3 left-3 text-[10px] font-bold px-2.5 py-1 rounded-full bg-amber-400 text-white">
+                    Deal Seller
+                  </span>
+                </div>
+                <div class="p-4">
+                  <h3 class="font-bold text-sm text-nb-dark mb-1.5 leading-snug">Lean Chicken Avocado Plate</h3>
+                  <p class="text-[11px] text-gray-400 mb-3">380 Kcal &middot; 35g Protein</p>
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-base text-nb-dark">$5.80</span>
+                    <button
+                      class="w-8 h-8 rounded-full bg-sage text-white flex items-center justify-center hover:bg-sage-dark transition-colors"
+                      aria-label="Add Lean Chicken Avocado Plate to cart"
+                    >
+                      <i class="fa-solid fa-plus text-xs"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+              <article class="bg-[#f9f8f5] rounded-2xl overflow-hidden group hover:shadow-lg transition-all duration-300">
+                <div class="relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&amp;q=80"
+                    alt="Chicken and quinoa salad bowl with colorful vegetables"
+                    class="w-full h-44 object-cover"
+                  />
+                  <span class="absolute top-3 left-3 text-[10px] font-bold px-2.5 py-1 rounded-full bg-blue-100 text-blue-700">
+                    5 New Dishes
+                  </span>
+                </div>
+                <div class="p-4">
+                  <h3 class="font-bold text-sm text-nb-dark mb-1.5 leading-snug">Chicken Quinoa Salad</h3>
+                  <p class="text-[11px] text-gray-400 mb-3">400 Kcal &middot; 28g Protein</p>
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-base text-nb-dark">$5.50</span>
+                    <button
+                      class="w-8 h-8 rounded-full bg-sage text-white flex items-center justify-center hover:bg-sage-dark transition-colors"
+                      aria-label="Add Chicken Quinoa Salad to cart"
+                    >
+                      <i class="fa-solid fa-plus text-xs"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+              <article class="bg-[#f9f8f5] rounded-2xl overflow-hidden group hover:shadow-lg transition-all duration-300">
+                <div class="relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400&amp;q=80"
+                    alt="Fresh quinoa chicken wrap with herbs"
+                    class="w-full h-44 object-cover"
+                  />
+                  <span class="absolute top-3 left-3 text-[10px] font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-700">
+                    Chef&#39;s Choice
+                  </span>
+                </div>
+                <div class="p-4">
+                  <h3 class="font-bold text-sm text-nb-dark mb-1.5 leading-snug">Quinoa Chicken Wrap</h3>
+                  <p class="text-[11px] text-gray-400 mb-3">440 Kcal &middot; 30g Protein</p>
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-base text-nb-dark">$5.40</span>
+                    <button
+                      class="w-8 h-8 rounded-full bg-sage text-white flex items-center justify-center hover:bg-sage-dark transition-colors"
+                      aria-label="Add Quinoa Chicken Wrap to cart"
+                    >
+                      <i class="fa-solid fa-plus text-xs"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+          </div>
+
+          <div class="text-center mt-10">
+            <a
+              href="#menu"
+              class="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-sage text-sage font-bold text-sm hover:bg-sage hover:text-white transition-all"
+            >
+              View All
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- block:end menu -->
+
+      <!-- block:start why-nutribite -->
+      <section id="why-nutribite" class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Left: image + floating calorie card -->
+            <div class="relative">
+              <div class="rounded-3xl overflow-hidden shadow-xl">
+                <img
+                  src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=700&q=80"
+                  alt="Person tracking nutrition on a smartphone while enjoying a healthy meal"
+                  class="w-full h-[480px] object-cover"
+                />
+              </div>
+              <div class="absolute bottom-8 left-6 bg-white rounded-2xl shadow-xl p-4 w-52">
+                <div class="flex items-center gap-3 mb-3">
+                  <div class="w-12 h-12 rounded-full border-4 border-sage flex items-center justify-center flex-shrink-0">
+                    <div class="text-center leading-tight">
+                      <div class="text-[11px] font-black text-sage">380</div>
+                      <div class="text-[8px] text-gray-400">kcal</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold text-nb-dark">Today's Calories</div>
+                    <div class="text-[10px] text-gray-400">Keep your meals balance</div>
+                  </div>
+                </div>
+                  <div class="flex items-center gap-2 mb-1.5">
+                    <span class="text-[9px] text-gray-500 w-10 flex-shrink-0">Carb</span>
+                    <div class="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                      <div class="h-full rounded-full bg-blue-400" style="width: 32%"></div>
+                    </div>
+                    <span class="text-[9px] text-gray-400 w-6 text-right">32%</span>
+                  </div>
+                  <div class="flex items-center gap-2 mb-1.5">
+                    <span class="text-[9px] text-gray-500 w-10 flex-shrink-0">Protein</span>
+                    <div class="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                      <div class="h-full rounded-full bg-green-400" style="width: 25%"></div>
+                    </div>
+                    <span class="text-[9px] text-gray-400 w-6 text-right">25%</span>
+                  </div>
+                  <div class="flex items-center gap-2 mb-1.5">
+                    <span class="text-[9px] text-gray-500 w-10 flex-shrink-0">Fat</span>
+                    <div class="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                      <div class="h-full rounded-full bg-orange-400" style="width: 28%"></div>
+                    </div>
+                    <span class="text-[9px] text-gray-400 w-6 text-right">28%</span>
+                  </div>
+                  <div class="flex items-center gap-2 mb-1.5">
+                    <span class="text-[9px] text-gray-500 w-10 flex-shrink-0">Fiber</span>
+                    <div class="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                      <div class="h-full rounded-full bg-sage" style="width: 40%"></div>
+                    </div>
+                    <span class="text-[9px] text-gray-400 w-6 text-right">40%</span>
+                  </div>
+              </div>
+            </div>
+
+            <!-- Right: content -->
+            <div>
+              <p class="text-sage text-xs font-bold uppercase tracking-widest mb-3">Why NutriBite</p>
+              <h2 class="font-display text-4xl md:text-5xl font-bold leading-tight mb-5">
+                Effortlessly<br/>Healthy
+              </h2>
+              <p class="text-gray-500 leading-relaxed text-sm mb-8 max-w-md">
+                You want to eat healthy, but busy days make it hard. NutriBite delivers fresh, balanced meals made with real ingredients — ready to heat, enjoy, and nourish your body.
+              </p>
+              <a
+                href="#menu"
+                class="inline-block bg-sage text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-sage-dark transition-colors mb-10"
+              >
+                Order Now
+              </a>
+
+              <div class="flex items-center gap-4 flex-wrap">
+                  <div class="flex flex-col items-center gap-2 w-16 text-center">
+                    <div class="w-12 h-12 rounded-2xl bg-white border border-gray-100 shadow-sm flex items-center justify-center text-sage">
+                      <i class="fa-solid fa-carrot"></i>
+                    </div>
+                    <span class="text-[10px] font-medium text-gray-500 leading-tight whitespace-pre-line">Fresh
+Ingredients</span>
+                  </div>
+                  <div class="flex flex-col items-center gap-2 w-16 text-center">
+                    <div class="w-12 h-12 rounded-2xl bg-white border border-gray-100 shadow-sm flex items-center justify-center text-sage">
+                      <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <span class="text-[10px] font-medium text-gray-500 leading-tight whitespace-pre-line">Balanced
+Nutrition</span>
+                  </div>
+                  <div class="flex flex-col items-center gap-2 w-16 text-center">
+                    <div class="w-12 h-12 rounded-2xl bg-white border border-gray-100 shadow-sm flex items-center justify-center text-sage">
+                      <i class="fa-solid fa-bowl-food"></i>
+                    </div>
+                    <span class="text-[10px] font-medium text-gray-500 leading-tight whitespace-pre-line">Easy
+Servings</span>
+                  </div>
+                  <div class="flex flex-col items-center gap-2 w-16 text-center">
+                    <div class="w-12 h-12 rounded-2xl bg-white border border-gray-100 shadow-sm flex items-center justify-center text-sage">
+                      <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <span class="text-[10px] font-medium text-gray-500 leading-tight whitespace-pre-line">Chat
+Support</span>
+                  </div>
+                <div class="rounded-2xl overflow-hidden w-24 h-24 flex-shrink-0 ml-2">
+                  <img
+                    src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200&q=80"
+                    alt="Colorful healthy meal spread"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- block:end why-nutribite -->
+
+      <!-- block:start how-it-works -->
+      <section id="how-it-works" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+            <!-- Left: heading + feature card -->
+            <div>
+              <p class="text-gray-400 text-xs font-semibold uppercase tracking-widest mb-3">How to Order</p>
+              <h2 class="font-display text-3xl md:text-4xl font-bold leading-tight mb-10">
+                How NutriBite<br/>Delivers Freshness
+              </h2>
+              <div class="bg-cream rounded-2xl p-6 max-w-sm">
+                <div class="flex items-center gap-2 mb-3">
+                  <i class="fa-solid fa-fire-flame-curved text-sage"></i>
+                  <span class="text-xs font-bold text-sage uppercase tracking-wide">Cooked Fresh Daily</span>
+                </div>
+                <p class="text-sm text-gray-500 leading-relaxed">
+                  Our chefs prepare every meal using high-quality ingredients and balanced recipes. No preservatives, no shortcuts — just wholesome fresh meals made with care.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right: numbered steps -->
+            <div class="space-y-1">
+                <div class="flex items-center gap-4 px-4 py-4 rounded-2xl ">
+                  <span class="font-display text-xs font-semibold text-gray-300 w-8 flex-shrink-0">(01)</span>
+                  <span class="font-bold text-sm text-gray-400">
+                    Select Your Plan
+                  </span>
+                </div>
+                <div class="flex items-center gap-4 px-4 py-4 rounded-2xl ">
+                  <span class="font-display text-xs font-semibold text-gray-300 w-8 flex-shrink-0">(02)</span>
+                  <span class="font-bold text-sm text-gray-400">
+                    Pick Your Meals
+                  </span>
+                </div>
+                <div class="flex items-center gap-4 px-4 py-4 rounded-2xl bg-cream">
+                  <span class="font-display text-xs font-semibold text-gray-300 w-8 flex-shrink-0">(03)</span>
+                  <span class="font-bold font-display italic text-xl text-nb-dark">
+                    Cooked Fresh Daily
+                  </span>
+                    <div class="ml-auto rounded-xl overflow-hidden w-20 h-14 flex-shrink-0">
+                      <img
+                        src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=200&q=80"
+                        alt="Chef preparing a fresh meal in the kitchen"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 px-4 py-4 rounded-2xl ">
+                  <span class="font-display text-xs font-semibold text-gray-300 w-8 flex-shrink-0">(04)</span>
+                  <span class="font-bold text-sm text-gray-400">
+                    Delivered to Your Door
+                  </span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- block:end how-it-works -->
+
+      <!-- block:start testimonials -->
+      <section id="testimonials" class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            <!-- Left: chips + quote -->
+            <div>
+              <div class="flex flex-wrap gap-2 mb-10" role="tablist" aria-label="Customer meal plan reviews">
+                <button type="button" class="testimonial-plan px-4 py-1.5 rounded-full text-xs font-semibold bg-sage text-white transition-colors" data-testimonial-index="0" role="tab" aria-selected="true">Weight Loss Plan</button>
+                <button type="button" class="testimonial-plan px-4 py-1.5 rounded-full text-xs font-semibold bg-white text-gray-500 hover:bg-cream-dark transition-colors" data-testimonial-index="1" role="tab" aria-selected="false">Fight Bloat Plan</button>
+                <button type="button" class="testimonial-plan px-4 py-1.5 rounded-full text-xs font-semibold bg-white text-gray-500 hover:bg-cream-dark transition-colors" data-testimonial-index="2" role="tab" aria-selected="false">Vegan Plan</button>
+                <button type="button" class="testimonial-plan px-4 py-1.5 rounded-full text-xs font-semibold bg-white text-gray-500 hover:bg-cream-dark transition-colors" data-testimonial-index="3" role="tab" aria-selected="false">Balanced Meal Plan</button>
+              </div>
+
+              <div class="flex gap-2 mb-8">
+                <button
+                  id="testimonial-prev"
+                  type="button"
+                  class="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:border-sage hover:text-sage transition-all"
+                  aria-label="Previous testimonial"
+                >
+                  <i class="fa-solid fa-chevron-left text-xs"></i>
+                </button>
+                <button
+                  id="testimonial-next"
+                  type="button"
+                  class="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:border-sage hover:text-sage transition-all"
+                  aria-label="Next testimonial"
+                >
+                  <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+              </div>
+
+              <div id="testimonial-avatars" class="flex items-center mb-6" aria-hidden="true">
+                  <img
+                    src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop"
+                    alt="NutriBite customer"
+                    class="testimonial-avatar w-10 h-10 rounded-full border-2 border-white object-cover transition-all ring-2 ring-sage ring-offset-2 ring-offset-cream"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop"
+                    alt="NutriBite customer"
+                    class="testimonial-avatar w-10 h-10 rounded-full border-2 border-white object-cover transition-all -ml-3 opacity-60"
+                  />
+                  <img
+                    src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop"
+                    alt="NutriBite customer"
+                    class="testimonial-avatar w-10 h-10 rounded-full border-2 border-white object-cover transition-all -ml-3 opacity-60"
+                  />
+              </div>
+
+              <div id="testimonial-content" aria-live="polite" aria-atomic="true">
+                <blockquote id="testimonial-quote" class="font-bold text-xl text-nb-dark leading-snug mb-6 max-w-md transition-opacity duration-200">
+                  "I never thought healthy eating could be this easy. The portions are perfect, the flavors are great, and I've lost 4 kg in just six weeks without feeling hungry or deprived."
+                </blockquote>
+                <div class="transition-opacity duration-200">
+                  <p id="testimonial-author" class="font-bold text-sm">Sarah Milero</p>
+                  <p id="testimonial-location" class="text-xs text-gray-400">Sydney</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: before/after images -->
+            <div class="grid grid-cols-2 gap-4">
+              <div class="relative">
+                <img
+                  id="testimonial-before-image"
+                  src="https://images.unsplash.com/photo-1524594081293-190a2fe0baae?w=400&q=80"
+                  alt="Before starting the NutriBite meal plan"
+                  class="w-full h-72 object-cover rounded-3xl transition-opacity duration-200"
+                />
+                <span class="absolute bottom-4 left-4 bg-white text-xs font-bold px-3 py-1.5 rounded-full shadow">Before</span>
+              </div>
+              <div class="relative">
+                <img
+                  id="testimonial-after-image"
+                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80"
+                  alt="After following the NutriBite meal plan for six weeks"
+                  class="w-full h-72 object-cover rounded-3xl transition-opacity duration-200"
+                />
+                <span class="absolute bottom-4 left-4 bg-white text-xs font-bold px-3 py-1.5 rounded-full shadow">After</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- block:end testimonials -->
+
+      <!-- block:start meal-plans -->
+      <section id="meal-plans" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex items-end justify-between mb-10">
+            <div>
+              <p class="text-sage text-xs font-bold uppercase tracking-widest mb-2">Find Your Fit</p>
+              <h2 class="font-display text-3xl md:text-4xl font-bold leading-tight">
+                Healthy Meals<br/>That Fit Your Life
+              </h2>
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:border-sage hover:text-sage transition-all"
+                aria-label="View previous meal plans"
+              >
+                <i class="fa-solid fa-arrow-left text-sm"></i>
+              </button>
+              <button
+                class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:border-sage hover:text-sage transition-all"
+                aria-label="View more meal plans"
+              >
+                <i class="fa-solid fa-arrow-right text-sm"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Plan card 1: Vegan -->
+            <article class="relative rounded-3xl overflow-hidden group cursor-pointer">
+              <img
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80"
+                alt="Vegan meal plan — plant-based dishes with seasonal vegetables and grains"
+                class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-nb-dark/70 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5">
+                <span class="inline-block bg-sage text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2">Vegan Plan</span>
+                <p class="text-white text-xs leading-relaxed">
+                  Plant-based meals made with seasonal organic ingredients. No animal products.
+                </p>
+              </div>
+              <span class="absolute top-4 left-4 text-white text-xs font-semibold bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full">
+                View More
+              </span>
+            </article>
+
+            <!-- Plan card 2: Balanced -->
+            <article class="relative rounded-3xl overflow-hidden group cursor-pointer">
+              <img
+                src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80"
+                alt="Balanced meal plan — high-protein, well-rounded dishes for active lifestyles"
+                class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-nb-dark/70 to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5">
+                <p class="text-white text-xs leading-relaxed">
+                  High-protein, balanced carbs. Ideal for active lifestyles and muscle recovery.
+                </p>
+              </div>
+            </article>
+
+            <!-- CTA card -->
+            <article class="bg-cream rounded-3xl p-8 flex flex-col justify-between border border-cream-dark">
+              <h3 class="font-display font-bold text-2xl leading-snug">
+                Choose a meal plan that fits your lifestyle and goals.
+              </h3>
+              <a
+                href="#menu"
+                class="inline-flex items-center gap-2 bg-sage text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-sage-dark transition-colors w-fit mt-8"
+              >
+                Order Now
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- block:end meal-plans -->
+
+      <!-- block:start cta -->
+      <section id="cta" class="relative py-24 px-6 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80"
+            alt="Artfully plated fresh and healthy meal on a rustic table"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-nb-dark/70"></div>
+        </div>
+        <div class="relative z-10 max-w-3xl mx-auto text-center text-white">
+          <h2 class="font-display text-4xl md:text-5xl font-bold mb-10 leading-tight">
+            Start Your Healthier<br/>Journey Today!
+          </h2>
+          <a
+            href="#menu"
+            class="inline-block bg-white text-nb-dark px-10 py-4 rounded-full font-bold hover:bg-cream transition-colors shadow-xl"
+          >
+            Choose Your Plan
+          </a>
+        </div>
+        <div class="relative z-10 mt-16 flex flex-wrap items-center justify-between max-w-7xl mx-auto text-white/40 text-xs gap-4">
+          <div class="flex gap-6">
+            <a href="#menu" class="hover:text-white transition-colors">Menu</a>
+            <a href="#meal-plans" class="hover:text-white transition-colors">Order Now</a>
+            <a href="#why-nutribite" class="hover:text-white transition-colors">About Us</a>
+          </div>
+          <div class="flex gap-6">
+            <a href="#testimonials" class="hover:text-white transition-colors">Blog</a>
+            <a href="#faq" class="hover:text-white transition-colors">FAQs</a>
+            <a href="#footer" class="hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+      </section>
+      <!-- block:end cta -->
+
+    </main>
+
+    <!-- block:start footer -->
+    <footer id="footer" class="bg-nb-dark text-white pt-16">
+      <div class="max-w-7xl mx-auto px-6 pb-12">
+        <div class="flex flex-col lg:flex-row justify-between gap-12">
+
+          <!-- Nav columns -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-10 flex-1">
+            <div>
+              <h4 class="font-bold text-xs text-gray-300 mb-4 uppercase tracking-widest">Menu</h4>
+              <ul class="space-y-3 text-sm text-gray-500">
+                <li><a href="#menu" class="hover:text-white transition-colors">High Protein</a></li>
+                <li><a href="#menu" class="hover:text-white transition-colors">Weight Loss</a></li>
+                <li><a href="#menu" class="hover:text-white transition-colors">Vegan</a></li>
+                <li><a href="#menu" class="hover:text-white transition-colors">Balanced Meals</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-bold text-xs text-gray-300 mb-4 uppercase tracking-widest">Plans</h4>
+              <ul class="space-y-3 text-sm text-gray-500">
+                <li><a href="#meal-plans" class="hover:text-white transition-colors">Weekly Plan</a></li>
+                <li><a href="#meal-plans" class="hover:text-white transition-colors">Monthly Plan</a></li>
+                <li><a href="#meal-plans" class="hover:text-white transition-colors">Family Plan</a></li>
+                <li><a href="#meal-plans" class="hover:text-white transition-colors">Corporate</a></li>
+              </ul>
+            </div>
+            <div id="faq">
+              <h4 class="font-bold text-xs text-gray-300 mb-4 uppercase tracking-widest">Company</h4>
+              <ul class="space-y-3 text-sm text-gray-500">
+                <li><a href="#why-nutribite" class="hover:text-white transition-colors">About NutriBite</a></li>
+                <li><a href="#faq" class="hover:text-white transition-colors">FAQs</a></li>
+                <li><a href="#testimonials" class="hover:text-white transition-colors">Blog</a></li>
+                <li><a href="#footer" class="hover:text-white transition-colors">Press</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Logo + socials -->
+          <div class="flex flex-col gap-6 lg:items-end">
+            <a href="#hero" class="flex items-center gap-2 font-display font-bold text-xl text-white">
+              <span class="w-7 h-7 bg-sage rounded-lg flex items-center justify-center text-white">
+                <i class="fa-solid fa-leaf text-xs"></i>
+              </span>
+              NutriBite
+            </a>
+            <div class="flex gap-3">
+              <a href="#" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-sage transition-all" aria-label="Instagram">
+                <i class="fa-brands fa-instagram text-xs"></i>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-sage transition-all" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok text-xs"></i>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-sage transition-all" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f text-xs"></i>
+              </a>
+            </div>
+            <p class="text-gray-600 text-xs">© 2025 NutriBite. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nutritional claims bar -->
+      <div class="border-t border-white/5 bg-[#141412]">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-1.5 text-gray-500 text-[11px]">
+              <i class="fa-solid fa-seedling text-sage text-[10px]"></i>
+              <span>100% Organic Sugar</span>
+            </div>
+            <div class="flex items-center gap-1.5 text-gray-500 text-[11px]">
+              <i class="fa-solid fa-ban text-sage text-[10px]"></i>
+              <span>No Added Sugar</span>
+            </div>
+            <div class="flex items-center gap-1.5 text-gray-500 text-[11px]">
+              <i class="fa-solid fa-percent text-sage text-[10px]"></i>
+              <span>27% Less Calories</span>
+            </div>
+            <div class="flex items-center gap-1.5 text-gray-500 text-[11px]">
+              <i class="fa-solid fa-leaf text-sage text-[10px]"></i>
+              <span>100% Natural Ingredients</span>
+            </div>
+            <div class="flex items-center gap-1.5 text-gray-500 text-[11px]">
+              <i class="fa-solid fa-dumbbell text-sage text-[10px]"></i>
+              <span>High in Protein</span>
+            </div>
+            <div class="flex items-center gap-1.5 text-gray-500 text-[11px]">
+              <i class="fa-solid fa-heart-pulse text-sage text-[10px]"></i>
+              <span>Nutritionally Balanced</span>
+            </div>
+        </div>
+      </div>
+    </footer>
+    <!-- block:end footer -->
+
+    <script>
+      document.querySelectorAll(".meal-tab").forEach(function (tab) {
+        tab.addEventListener("click", function () {
+          document.querySelectorAll(".meal-tab").forEach(function (t) {
+            t.classList.remove("meal-tab-active");
+            t.classList.add("text-gray-400");
+          });
+          this.classList.add("meal-tab-active");
+          this.classList.remove("text-gray-400");
+        });
+      });
+
+      const testimonials = [
+        {
+          quote: "I never thought healthy eating could be this easy. The portions are perfect, the flavors are great, and I've lost 4 kg in just six weeks without feeling hungry or deprived.",
+          author: "Sarah Milero",
+          location: "Sydney",
+          before: "https://images.unsplash.com/photo-1524594081293-190a2fe0baae?w=400&q=80",
+          after: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
+          beforeAlt: "Sarah before starting the NutriBite Weight Loss Plan",
+          afterAlt: "Sarah after six weeks on the NutriBite Weight Loss Plan",
+        },
+        {
+          quote: "Within two weeks I felt lighter and more energized. The Fight Bloat meals are satisfying, thoughtfully seasoned, and easy to fit into my busiest workdays.",
+          author: "Maya Chen",
+          location: "Melbourne",
+          before: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&q=80",
+          after: "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=400&q=80",
+          beforeAlt: "Maya before starting the NutriBite Fight Bloat Plan",
+          afterAlt: "Maya feeling energized after the NutriBite Fight Bloat Plan",
+        },
+        {
+          quote: "The Vegan Plan proved that plant-based food can be convenient and genuinely exciting. Every delivery feels fresh, colorful, and completely different from the last.",
+          author: "Avery Williams",
+          location: "Brisbane",
+          before: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&q=80",
+          after: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400&q=80",
+          beforeAlt: "Avery before switching to the NutriBite Vegan Plan",
+          afterAlt: "Avery thriving on the NutriBite Vegan Plan",
+        },
+        {
+          quote: "NutriBite takes the guesswork out of eating well. The Balanced Meal Plan keeps my energy steady, and dinner is one less thing I need to plan every day.",
+          author: "Daniel Brooks",
+          location: "Perth",
+          before: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80",
+          after: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=400&q=80",
+          beforeAlt: "Daniel before starting the NutriBite Balanced Meal Plan",
+          afterAlt: "Daniel after following the NutriBite Balanced Meal Plan",
+        },
+      ];
+
+      let activeTestimonial = 0;
+      const testimonialQuote = document.getElementById("testimonial-quote");
+      const testimonialAuthor = document.getElementById("testimonial-author");
+      const testimonialLocation = document.getElementById("testimonial-location");
+      const testimonialBeforeImage = document.getElementById("testimonial-before-image");
+      const testimonialAfterImage = document.getElementById("testimonial-after-image");
+      const testimonialPlans = document.querySelectorAll(".testimonial-plan");
+      const testimonialAvatars = document.querySelectorAll(".testimonial-avatar");
+
+      function showTestimonial(index) {
+        activeTestimonial = (index + testimonials.length) % testimonials.length;
+        const testimonial = testimonials[activeTestimonial];
+
+        testimonialQuote.textContent = `“${testimonial.quote}”`;
+        testimonialAuthor.textContent = testimonial.author;
+        testimonialLocation.textContent = testimonial.location;
+        testimonialBeforeImage.src = testimonial.before;
+        testimonialBeforeImage.alt = testimonial.beforeAlt;
+        testimonialAfterImage.src = testimonial.after;
+        testimonialAfterImage.alt = testimonial.afterAlt;
+
+        testimonialPlans.forEach(function (plan, planIndex) {
+          const isActive = planIndex === activeTestimonial;
+          plan.setAttribute("aria-selected", String(isActive));
+          plan.classList.toggle("bg-sage", isActive);
+          plan.classList.toggle("text-white", isActive);
+          plan.classList.toggle("bg-white", !isActive);
+          plan.classList.toggle("text-gray-500", !isActive);
+        });
+
+        testimonialAvatars.forEach(function (avatar, avatarIndex) {
+          const isActive = avatarIndex === activeTestimonial % testimonialAvatars.length;
+          avatar.classList.toggle("opacity-60", !isActive);
+          avatar.classList.toggle("ring-2", isActive);
+          avatar.classList.toggle("ring-sage", isActive);
+          avatar.classList.toggle("ring-offset-2", isActive);
+          avatar.classList.toggle("ring-offset-cream", isActive);
+        });
+      }
+
+      document.getElementById("testimonial-prev").addEventListener("click", function () {
+        showTestimonial(activeTestimonial - 1);
+      });
+
+      document.getElementById("testimonial-next").addEventListener("click", function () {
+        showTestimonial(activeTestimonial + 1);
+      });
+
+      testimonialPlans.forEach(function (plan) {
+        plan.addEventListener("click", function () {
+          showTestimonial(Number(this.dataset.testimonialIndex));
+        });
+      });
+    </script>
+  <p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=nutribite&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

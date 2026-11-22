@@ -1,0 +1,4 @@
+.serif-italic { font-family: 'Instrument Serif', serif; font-style: italic; }
+        .hero-title { line-height: 0.9; }
+        .nav-link:hover { color: #000; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }

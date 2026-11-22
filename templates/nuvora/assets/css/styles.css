@@ -1,0 +1,15 @@
+@view-transition { navigation: auto; }
+    ::view-transition-old(root) { animation: 180ms ease-out both page-fade-out; }
+    ::view-transition-new(root) { animation: 220ms ease-in both page-fade-in; }
+    @keyframes page-fade-out { to { opacity: 0; } }
+    @keyframes page-fade-in { from { opacity: 0; } }
+    html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+    [hidden] { display: none !important; }
+    [data-count-to] { font-variant-numeric: tabular-nums; }
+    .reveal-ready [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; transition-delay: var(--reveal-delay, 0ms); }
+    .reveal-ready [data-reveal].is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      [data-carousel-track] { transition: none !important; }
+      ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+    }

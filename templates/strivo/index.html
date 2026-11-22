@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strivo | Tailwind CSS Health &amp; Fitness Template</title>
+  <meta name="description" content="Strivo is a bold, electric-blue Tailwind CSS health and fitness template for training studios, with a motion-blur hero, rotating program card, giant marquee, numbered services, training cycle diagram, heart rate zone calculator, reviews, FAQ tabs and services, programs, wellness plans and contact pages.">
+  <meta name="keywords" content="Strivo, Tailwind CSS template, HTML website template, fitness template, training studio, HIIT, heart rate zones, personal training, wellness plans, gym landing page">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Strivo | Tailwind CSS Health &amp; Fitness Template">
+  <meta property="og:description" content="A bold electric-blue Tailwind CSS training template with a heart rate zone calculator, training cycle diagram and wellness plans by audience.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Strivo template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Strivo | Tailwind CSS Health &amp; Fitness Template">
+  <meta name="twitter:description" content="A bold electric-blue Tailwind CSS training template with a heart rate zone calculator, training cycle diagram and wellness plans by audience.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Strivo template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { volt: { DEFAULT: '#1aa3e8', deep: '#0b5fa6', pale: '#d9f0fc' }, ink: { DEFAULT: '#0b0d10', soft: '#1a1e24' }, cream: '#fbf6ef', flare: '#ff7a3d' },
+          fontFamily: { sans: ['Archivo', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-ink font-sans text-white antialiased">
+  <!-- block:start navbar -->
+  <header class="absolute inset-x-0 top-0 z-40">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-6 md:px-12 md:py-8" aria-label="Main">
+      <a href="index.html" class="flex items-center gap-2 text-2xl font-extrabold uppercase tracking-tight"><svg viewBox="0 0 32 20" class="h-5 w-8" aria-hidden="true"><path d="M2 6v8M6 3v14M26 3v14M30 6v8M6 10h20" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="square"/></svg>Strivo</a>
+      <ul class="hidden items-center gap-12 text-sm font-semibold uppercase tracking-wide lg:flex">
+          <li><a href="services.html"  class="border-b-2 pb-1 transition border-transparent opacity-85 hover:border-white/60">Services</a></li>
+          <li><a href="programs.html"  class="border-b-2 pb-1 transition border-transparent opacity-85 hover:border-white/60">Programs</a></li>
+          <li><a href="wellness-plans.html"  class="border-b-2 pb-1 transition border-transparent opacity-85 hover:border-white/60">Wellness plans</a></li>
+      </ul>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" class="hidden border border-white px-6 py-3.5 text-sm font-semibold uppercase tracking-wide transition hover:bg-white hover:text-ink sm:inline-block">Get started</a>
+        <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="grid h-12 w-12 place-items-center border border-white/60 lg:hidden" aria-label="Open menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="mx-5 hidden bg-white p-2 text-ink lg:hidden">
+      <ul class="grid">
+          <li><a href="index.html" aria-current="page" class="flex items-center justify-between border-b border-ink/10 px-4 py-4 text-lg font-extrabold uppercase last:border-0 bg-volt text-white">Home<i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a></li>
+          <li><a href="services.html"  class="flex items-center justify-between border-b border-ink/10 px-4 py-4 text-lg font-extrabold uppercase last:border-0 hover:bg-volt-pale">Services<i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a></li>
+          <li><a href="programs.html"  class="flex items-center justify-between border-b border-ink/10 px-4 py-4 text-lg font-extrabold uppercase last:border-0 hover:bg-volt-pale">Programs<i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a></li>
+          <li><a href="wellness-plans.html"  class="flex items-center justify-between border-b border-ink/10 px-4 py-4 text-lg font-extrabold uppercase last:border-0 hover:bg-volt-pale">Wellness plans<i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a></li>
+          <li><a href="contact.html"  class="flex items-center justify-between border-b border-ink/10 px-4 py-4 text-lg font-extrabold uppercase last:border-0 hover:bg-volt-pale">Contact<i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section class="relative isolate overflow-hidden bg-volt">
+    <img src="https://images.unsplash.com/photo-1594882645126-14020914d58d?auto=format&fit=crop&w=1800&q=70" alt="" class="blur-photo absolute inset-0 -z-20 h-full w-full object-cover">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-volt/80 via-volt/40 via-55% to-ink"></div>
+    <div class="mx-auto max-w-7xl px-5 pb-10 pt-36 md:px-12 md:pt-44">
+      <h1 class="text-[3.4rem] font-extrabold uppercase leading-[.86] tracking-tight sm:text-7xl md:text-8xl lg:text-[8.5rem]" data-reveal><span class="block">Built for</span><span class="block sm:pl-[22%]">Every</span><span class="block">Stride</span></h1>
+      <div class="mt-8 grid gap-8 lg:-mt-24 lg:grid-cols-[1fr_minmax(0,34rem)]">
+        <span class="hidden lg:block"></span>
+        <div>
+          <p class="text-lg leading-relaxed md:text-2xl" data-reveal style="--reveal-delay: 80ms">Train with intent: tailored sessions, coaches who notice the details and an energy that makes every goal feel within reach.</p>
+          <a href="programs.html" class="mt-10 flex items-center justify-between gap-6 border border-white/40 bg-white/75 px-8 py-7 text-lg font-extrabold uppercase text-ink backdrop-blur-xl transition hover:bg-white md:ml-auto md:w-[26rem]">Find your program<i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-[1fr_1.6fr_1.1fr_1fr] lg:items-start">
+        <div data-reveal><p class="text-5xl font-extrabold" data-count="420">420</p><p class="mt-1 text-lg text-white/85">Body transformations</p></div>
+        <div class="relative min-h-[13rem] overflow-hidden bg-cream text-ink" data-hero-card data-reveal style="--reveal-delay: 80ms">
+            <article class="absolute inset-0 grid grid-cols-[1.1fr_1fr] transition-opacity duration-500" data-hero-slide >
+              <div class="flex flex-col p-6"><h2 class="text-2xl font-extrabold uppercase leading-none md:text-3xl">HIIT Training</h2><p class="mt-auto text-sm">Short, sharp intervals that build engine and grit in 30 minutes.</p></div>
+              <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=500&h=500&q=75" alt="Woman training with battle ropes" class="h-full w-full object-cover">
+            </article>
+            <article class="absolute inset-0 grid grid-cols-[1.1fr_1fr] transition-opacity duration-500" data-hero-slide hidden>
+              <div class="flex flex-col p-6"><h2 class="text-2xl font-extrabold uppercase leading-none md:text-3xl">Strength Lab</h2><p class="mt-auto text-sm">Coached lifting that grows muscle and power safely.</p></div>
+              <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=500&h=500&q=75" alt="Woman lifting a barbell in a squat rack" class="h-full w-full object-cover">
+            </article>
+            <article class="absolute inset-0 grid grid-cols-[1.1fr_1fr] transition-opacity duration-500" data-hero-slide hidden>
+              <div class="flex flex-col p-6"><h2 class="text-2xl font-extrabold uppercase leading-none md:text-3xl">Mobility Reset</h2><p class="mt-auto text-sm">Joint-friendly flows that keep you moving freely.</p></div>
+              <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=500&h=500&q=75" alt="Person stretching in a downward dog pose" class="h-full w-full object-cover">
+            </article>
+          <div class="absolute bottom-3 right-3 z-10 flex gap-1.5" role="group" aria-label="Featured programs">
+              <button type="button" data-hero-dot="0" aria-pressed="true" class="h-2 w-6 bg-ink/25 transition aria-pressed:w-10 aria-pressed:bg-ink" aria-label="Show HIIT Training"></button>
+              <button type="button" data-hero-dot="1" aria-pressed="false" class="h-2 w-6 bg-ink/25 transition aria-pressed:w-10 aria-pressed:bg-ink" aria-label="Show Strength Lab"></button>
+              <button type="button" data-hero-dot="2" aria-pressed="false" class="h-2 w-6 bg-ink/25 transition aria-pressed:w-10 aria-pressed:bg-ink" aria-label="Show Mobility Reset"></button>
+          </div>
+        </div>
+        <div class="border-t border-white/70 pt-5" data-reveal style="--reveal-delay: 160ms"><p class="text-5xl font-extrabold"><span data-count="6000">6000</span>+</p><p class="mt-1 text-lg text-white/85">Coached sessions a year</p></div>
+        <p class="text-white/85 lg:pt-1" data-reveal style="--reveal-delay: 240ms">Gain muscle, sharpen power and build strength that carries into everything you do.</p>
+      </div>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start marquee -->
+  <section class="overflow-hidden border-y border-white/10 bg-ink py-10" aria-label="Strivo promise">
+    <div class="marquee flex w-max items-center gap-10 whitespace-nowrap text-6xl font-black uppercase tracking-tight md:text-8xl">
+          <span class="" >Train smart</span><span class="text-volt" aria-hidden="true">✦</span>
+          <span class="text-transparent [-webkit-text-stroke:2px_#1aa3e8]" >Move fast</span><span class="text-volt" aria-hidden="true">✦</span>
+          <span class="" >Lift heavy</span><span class="text-volt" aria-hidden="true">✦</span>
+          <span class="text-transparent [-webkit-text-stroke:2px_#1aa3e8]" >Recover well</span><span class="text-volt" aria-hidden="true">✦</span>
+          <span class="" aria-hidden="true">Train smart</span><span class="text-volt" aria-hidden="true">✦</span>
+          <span class="text-transparent [-webkit-text-stroke:2px_#1aa3e8]" aria-hidden="true">Move fast</span><span class="text-volt" aria-hidden="true">✦</span>
+          <span class="" aria-hidden="true">Lift heavy</span><span class="text-volt" aria-hidden="true">✦</span>
+          <span class="text-transparent [-webkit-text-stroke:2px_#1aa3e8]" aria-hidden="true">Recover well</span><span class="text-volt" aria-hidden="true">✦</span>
+    </div>
+    <div class="mx-auto mt-8 flex max-w-7xl justify-end px-5 md:px-12"><a href="contact.html" class="flex items-center gap-4 bg-volt px-7 py-4 font-extrabold uppercase transition hover:bg-volt-deep">Book a free session<i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+  </section>
+  <!-- block:end marquee -->
+
+  <!-- block:start features -->
+  <section id="services" class="bg-cream text-ink">
+    <div class="mx-auto max-w-7xl px-5 py-20 md:px-12 md:py-28">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <h2 class="max-w-2xl text-5xl font-extrabold uppercase leading-[.9] tracking-tight md:text-7xl">What we do best</h2>
+        <a href="services.html" class="border-b-2 border-ink pb-1 font-semibold uppercase">All services</a>
+      </div>
+      <ol class="mt-14 border-t border-ink" data-services>
+          <li class="border-b border-ink">
+            <h3>
+              <button type="button" data-service-toggle aria-expanded="true" aria-controls="service-0" class="group grid w-full grid-cols-[3.5rem_1fr_auto] items-center gap-4 py-7 text-left md:grid-cols-[7rem_1fr_auto]">
+                <span class="text-3xl font-extrabold text-volt md:text-5xl">01</span>
+                <span class="text-2xl font-extrabold uppercase md:text-5xl">Personal training</span>
+                <span class="grid h-12 w-12 place-items-center border border-ink transition group-hover:bg-ink group-hover:text-white group-aria-expanded:rotate-45 group-aria-expanded:bg-volt group-aria-expanded:border-volt group-aria-expanded:text-white"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+              </button>
+            </h3>
+            <div id="service-0" class="grid gap-6 pb-8 md:grid-cols-[7rem_1fr_20rem]" >
+              <span class="hidden md:block"></span>
+              <p class="max-w-xl text-lg text-ink/75">One coach, one plan and a weekly review of every lift, run and rest day. Sessions move with your calendar and your energy.<a href="services.html" class="mt-5 block w-fit font-semibold uppercase text-volt-deep underline underline-offset-4">Learn more</a></p>
+              <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=640&h=420&q=75" alt="Hands gripping a loaded barbell" class="aspect-[3/2] w-full object-cover">
+            </div>
+          </li>
+          <li class="border-b border-ink">
+            <h3>
+              <button type="button" data-service-toggle aria-expanded="false" aria-controls="service-1" class="group grid w-full grid-cols-[3.5rem_1fr_auto] items-center gap-4 py-7 text-left md:grid-cols-[7rem_1fr_auto]">
+                <span class="text-3xl font-extrabold text-volt md:text-5xl">02</span>
+                <span class="text-2xl font-extrabold uppercase md:text-5xl">HIIT &amp; conditioning</span>
+                <span class="grid h-12 w-12 place-items-center border border-ink transition group-hover:bg-ink group-hover:text-white group-aria-expanded:rotate-45 group-aria-expanded:bg-volt group-aria-expanded:border-volt group-aria-expanded:text-white"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+              </button>
+            </h3>
+            <div id="service-1" class="grid gap-6 pb-8 md:grid-cols-[7rem_1fr_20rem]" hidden>
+              <span class="hidden md:block"></span>
+              <p class="max-w-xl text-lg text-ink/75">Thirty-minute intervals with heart rate screens on the wall, so you always know when to push and when to hold back.<a href="services.html" class="mt-5 block w-fit font-semibold uppercase text-volt-deep underline underline-offset-4">Learn more</a></p>
+              <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=640&h=420&q=75" alt="Group lifting dumbbells in a class" class="aspect-[3/2] w-full object-cover">
+            </div>
+          </li>
+          <li class="border-b border-ink">
+            <h3>
+              <button type="button" data-service-toggle aria-expanded="false" aria-controls="service-2" class="group grid w-full grid-cols-[3.5rem_1fr_auto] items-center gap-4 py-7 text-left md:grid-cols-[7rem_1fr_auto]">
+                <span class="text-3xl font-extrabold text-volt md:text-5xl">03</span>
+                <span class="text-2xl font-extrabold uppercase md:text-5xl">Strength &amp; power</span>
+                <span class="grid h-12 w-12 place-items-center border border-ink transition group-hover:bg-ink group-hover:text-white group-aria-expanded:rotate-45 group-aria-expanded:bg-volt group-aria-expanded:border-volt group-aria-expanded:text-white"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+              </button>
+            </h3>
+            <div id="service-2" class="grid gap-6 pb-8 md:grid-cols-[7rem_1fr_20rem]" hidden>
+              <span class="hidden md:block"></span>
+              <p class="max-w-xl text-lg text-ink/75">Small-group barbell work focused on technique first, then load. Perfect for first-timers and returning lifters.<a href="services.html" class="mt-5 block w-fit font-semibold uppercase text-volt-deep underline underline-offset-4">Learn more</a></p>
+              <img src="https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?auto=format&fit=crop&w=640&h=420&q=75" alt="Man pressing a barbell in a rack" class="aspect-[3/2] w-full object-cover">
+            </div>
+          </li>
+          <li class="border-b border-ink">
+            <h3>
+              <button type="button" data-service-toggle aria-expanded="false" aria-controls="service-3" class="group grid w-full grid-cols-[3.5rem_1fr_auto] items-center gap-4 py-7 text-left md:grid-cols-[7rem_1fr_auto]">
+                <span class="text-3xl font-extrabold text-volt md:text-5xl">04</span>
+                <span class="text-2xl font-extrabold uppercase md:text-5xl">Mobility &amp; recovery</span>
+                <span class="grid h-12 w-12 place-items-center border border-ink transition group-hover:bg-ink group-hover:text-white group-aria-expanded:rotate-45 group-aria-expanded:bg-volt group-aria-expanded:border-volt group-aria-expanded:text-white"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+              </button>
+            </h3>
+            <div id="service-3" class="grid gap-6 pb-8 md:grid-cols-[7rem_1fr_20rem]" hidden>
+              <span class="hidden md:block"></span>
+              <p class="max-w-xl text-lg text-ink/75">Guided mobility, breathwork and a recovery suite so the hard sessions actually pay off.<a href="services.html" class="mt-5 block w-fit font-semibold uppercase text-volt-deep underline underline-offset-4">Learn more</a></p>
+              <img src="https://images.unsplash.com/photo-1600881333168-2ef49b341f30?auto=format&fit=crop&w=640&h=420&q=75" alt="Woman in a downward dog yoga pose" class="aspect-[3/2] w-full object-cover">
+            </div>
+          </li>
+      </ol>
+    </div>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start process -->
+  <section class="relative overflow-hidden bg-volt-deep" data-cycle>
+    <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 py-20 md:px-12 md:py-28 lg:grid-cols-2">
+      <div>
+        <h2 class="text-5xl font-extrabold uppercase leading-[.9] tracking-tight md:text-7xl">The 12-week cycle</h2>
+        <p class="mt-6 max-w-md text-lg text-white/80">Every Strivo program follows the same proven rhythm. Tap a phase to see what happens inside it.</p>
+        <div class="mt-10 border-l-4 border-white pl-6" aria-live="polite">
+          <p class="text-sm font-semibold uppercase tracking-widest text-white/70" data-cycle-weeks>Weeks 1–2</p>
+          <p class="mt-2 text-4xl font-extrabold uppercase" data-cycle-title>Assess</p>
+          <p class="mt-3 max-w-md text-white/85" data-cycle-text>Movement screen, strength tests and a resting heart rate baseline. We find your starting line, not someone else&#39;s.</p>
+        </div>
+      </div>
+      <div class="relative mx-auto aspect-square w-full max-w-md">
+        <div class="absolute inset-[12%] rounded-full border-2 border-dashed border-white/40"></div>
+        <div class="absolute inset-[30%] grid place-items-center rounded-full bg-white text-center text-ink"><span><span class="block text-5xl font-black leading-none">12</span><span class="text-xs font-semibold uppercase tracking-widest">weeks</span></span></div>
+          <button type="button" data-phase="0" aria-pressed="true" class="absolute left-1/2 top-[12%] flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-1 bg-ink text-xs font-bold uppercase tracking-wide transition hover:scale-105 aria-pressed:bg-white aria-pressed:text-ink md:h-28 md:w-28"><i class="fa-solid fa-clipboard-check text-xl" aria-hidden="true"></i>Assess</button>
+          <button type="button" data-phase="1" aria-pressed="false" class="absolute left-[88%] top-1/2 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-1 bg-ink text-xs font-bold uppercase tracking-wide transition hover:scale-105 aria-pressed:bg-white aria-pressed:text-ink md:h-28 md:w-28"><i class="fa-solid fa-layer-group text-xl" aria-hidden="true"></i>Build</button>
+          <button type="button" data-phase="2" aria-pressed="false" class="absolute left-1/2 top-[88%] flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-1 bg-ink text-xs font-bold uppercase tracking-wide transition hover:scale-105 aria-pressed:bg-white aria-pressed:text-ink md:h-28 md:w-28"><i class="fa-solid fa-bolt text-xl" aria-hidden="true"></i>Peak</button>
+          <button type="button" data-phase="3" aria-pressed="false" class="absolute left-[12%] top-1/2 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-1 bg-ink text-xs font-bold uppercase tracking-wide transition hover:scale-105 aria-pressed:bg-white aria-pressed:text-ink md:h-28 md:w-28"><i class="fa-solid fa-moon text-xl" aria-hidden="true"></i>Recover</button>
+      </div>
+    </div>
+    <script type="application/json" data-cycle-data>[{"title":"Assess","weeks":"Weeks 1–2","text":"Movement screen, strength tests and a resting heart rate baseline. We find your starting line, not someone else's."},{"title":"Build","weeks":"Weeks 3–6","text":"Volume climbs gradually. Technique stays sharp and every session has a clear purpose."},{"title":"Peak","weeks":"Weeks 7–10","text":"Intensity rises, volume drops. You test new personal bests in strength and conditioning."},{"title":"Recover","weeks":"Weeks 11–12","text":"A planned deload with mobility and sleep focus, then we reassess and start the next cycle stronger."}]</script>
+  </section>
+  <!-- block:end process -->
+
+  <!-- block:start demo -->
+  <section id="zones" class="bg-ink" data-zones>
+    <div class="mx-auto grid max-w-7xl gap-12 px-5 py-20 md:px-12 md:py-28 lg:grid-cols-[1fr_1.3fr]">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-widest text-volt">Zone finder</p>
+        <h2 class="mt-4 text-5xl font-extrabold uppercase leading-[.9] tracking-tight md:text-7xl">Know your numbers</h2>
+        <p class="mt-6 max-w-md text-white/75">Our coaches program every session by heart rate zone. Enter two numbers to see yours.</p>
+        <div class="mt-10 grid gap-8">
+          <label class="grid gap-3"><span class="flex justify-between text-sm font-semibold uppercase tracking-wide">Age <output class="text-2xl text-volt" data-zone-age-out>32</output></span><input type="range" min="18" max="75" value="32" class="accent-[#1aa3e8]" data-zone-age></label>
+          <label class="grid gap-3"><span class="flex justify-between text-sm font-semibold uppercase tracking-wide">Resting heart rate <output class="text-2xl text-volt" data-zone-rest-out>60 bpm</output></span><input type="range" min="40" max="90" value="60" class="accent-[#1aa3e8]" data-zone-rest></label>
+        </div>
+        <p class="mt-10 border-t border-white/15 pt-6 text-white/70">Max heart rate <span class="ml-2 text-3xl font-extrabold text-white" data-zone-max>188</span> bpm</p>
+      </div>
+      <div>
+        <ul class="grid gap-2" role="list">
+            <li>
+              <button type="button" data-zone="0" aria-pressed="false" class="group relative grid w-full grid-cols-[6rem_1fr_auto] items-center gap-4 overflow-hidden bg-ink-soft px-5 py-5 text-left transition hover:bg-white/10 aria-pressed:bg-volt">
+                <span class="absolute inset-y-0 left-0 bg-white/5 group-aria-pressed:bg-white/15" style="width: 60%"></span>
+                <span class="relative text-sm font-semibold uppercase tracking-wide">Zone 1</span>
+                <span class="relative text-xl font-extrabold uppercase">Recovery</span>
+                <span class="relative text-lg font-semibold tabular-nums" data-zone-range>124–137</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-zone="1" aria-pressed="false" class="group relative grid w-full grid-cols-[6rem_1fr_auto] items-center gap-4 overflow-hidden bg-ink-soft px-5 py-5 text-left transition hover:bg-white/10 aria-pressed:bg-volt">
+                <span class="absolute inset-y-0 left-0 bg-white/5 group-aria-pressed:bg-white/15" style="width: 70%"></span>
+                <span class="relative text-sm font-semibold uppercase tracking-wide">Zone 2</span>
+                <span class="relative text-xl font-extrabold uppercase">Endurance</span>
+                <span class="relative text-lg font-semibold tabular-nums" data-zone-range>137–150</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-zone="2" aria-pressed="false" class="group relative grid w-full grid-cols-[6rem_1fr_auto] items-center gap-4 overflow-hidden bg-ink-soft px-5 py-5 text-left transition hover:bg-white/10 aria-pressed:bg-volt">
+                <span class="absolute inset-y-0 left-0 bg-white/5 group-aria-pressed:bg-white/15" style="width: 80%"></span>
+                <span class="relative text-sm font-semibold uppercase tracking-wide">Zone 3</span>
+                <span class="relative text-xl font-extrabold uppercase">Tempo</span>
+                <span class="relative text-lg font-semibold tabular-nums" data-zone-range>150–162</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-zone="3" aria-pressed="true" class="group relative grid w-full grid-cols-[6rem_1fr_auto] items-center gap-4 overflow-hidden bg-ink-soft px-5 py-5 text-left transition hover:bg-white/10 aria-pressed:bg-volt">
+                <span class="absolute inset-y-0 left-0 bg-white/5 group-aria-pressed:bg-white/15" style="width: 90%"></span>
+                <span class="relative text-sm font-semibold uppercase tracking-wide">Zone 4</span>
+                <span class="relative text-xl font-extrabold uppercase">Threshold</span>
+                <span class="relative text-lg font-semibold tabular-nums" data-zone-range>162–175</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-zone="4" aria-pressed="false" class="group relative grid w-full grid-cols-[6rem_1fr_auto] items-center gap-4 overflow-hidden bg-ink-soft px-5 py-5 text-left transition hover:bg-white/10 aria-pressed:bg-volt">
+                <span class="absolute inset-y-0 left-0 bg-white/5 group-aria-pressed:bg-white/15" style="width: 100%"></span>
+                <span class="relative text-sm font-semibold uppercase tracking-wide">Zone 5</span>
+                <span class="relative text-xl font-extrabold uppercase">Max effort</span>
+                <span class="relative text-lg font-semibold tabular-nums" data-zone-range>175–188</span>
+              </button>
+            </li>
+        </ul>
+        <p class="mt-6 flex items-center gap-3 border border-white/15 px-5 py-4" aria-live="polite"><i class="fa-solid fa-dumbbell text-volt" aria-hidden="true"></i><span>Try this: <strong data-zone-session>HIIT Training intervals</strong></span></p>
+      </div>
+    </div>
+    <script type="application/json" data-zone-data>[{"low":0.5,"high":0.6,"session":"Easy walk or Mobility Reset"},{"low":0.6,"high":0.7,"session":"Long steady ride or easy run"},{"low":0.7,"high":0.8,"session":"Strength Lab circuits"},{"low":0.8,"high":0.9,"session":"HIIT Training intervals"},{"low":0.9,"high":1.0,"session":"Sprint finishers, 20 seconds max"}]</script>
+  </section>
+  <!-- block:end demo -->
+
+  <!-- block:start reviews -->
+  <section class="bg-cream text-ink" data-carousel>
+    <div class="mx-auto max-w-7xl px-5 py-20 md:px-12 md:py-28">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <h2 class="text-5xl font-extrabold uppercase leading-[.9] tracking-tight md:text-7xl">Member stories</h2>
+        <div class="flex gap-2">
+          <button type="button" data-prev class="grid h-14 w-14 place-items-center border border-ink transition hover:bg-ink hover:text-white" aria-label="Previous story"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+          <button type="button" data-next class="grid h-14 w-14 place-items-center bg-volt text-white transition hover:bg-volt-deep" aria-label="Next story"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      <div class="mt-12 overflow-hidden">
+        <ul class="flex transition-transform duration-500 motion-reduce:transition-none" data-track>
+            <li class="w-full shrink-0 md:w-1/2 md:pr-6" aria-roledescription="slide" aria-label="1 of 4">
+              <figure class="flex h-full flex-col border-t-4 border-ink bg-white p-8">
+                <blockquote class="text-2xl font-medium leading-snug">“I&#39;ve tried every gym in town. Strivo is the first place where the plan changed when my life did.”</blockquote>
+                <figcaption class="mt-auto flex items-center gap-4 pt-8"><img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-12 w-12 object-cover"><span><span class="block font-extrabold uppercase">Nadia Brooks</span><span class="text-sm text-volt-deep">Down 11 kg in 6 months</span></span></figcaption>
+              </figure>
+            </li>
+            <li class="w-full shrink-0 md:w-1/2 md:pr-6" aria-roledescription="slide" aria-label="2 of 4">
+              <figure class="flex h-full flex-col border-t-4 border-ink bg-white p-8">
+                <blockquote class="text-2xl font-medium leading-snug">“The heart rate screens in HIIT are addictive. I finally understand what easy and hard really mean.”</blockquote>
+                <figcaption class="mt-auto flex items-center gap-4 pt-8"><img src="https://images.unsplash.com/photo-1674932668403-33398b81c92f?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDZ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-12 w-12 object-cover"><span><span class="block font-extrabold uppercase">Owen Price</span><span class="text-sm text-volt-deep">First sub-50 10K</span></span></figcaption>
+              </figure>
+            </li>
+            <li class="w-full shrink-0 md:w-1/2 md:pr-6" aria-roledescription="slide" aria-label="3 of 4">
+              <figure class="flex h-full flex-col border-t-4 border-ink bg-white p-8">
+                <blockquote class="text-2xl font-medium leading-snug">“Coming back after a knee injury, the coaches built my confidence before they built my squat.”</blockquote>
+                <figcaption class="mt-auto flex items-center gap-4 pt-8"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4MHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-12 w-12 object-cover"><span><span class="block font-extrabold uppercase">Leila Haddad</span><span class="text-sm text-volt-deep">Back to 80 kg squat</span></span></figcaption>
+              </figure>
+            </li>
+            <li class="w-full shrink-0 md:w-1/2 md:pr-6" aria-roledescription="slide" aria-label="4 of 4">
+              <figure class="flex h-full flex-col border-t-4 border-ink bg-white p-8">
+                <blockquote class="text-2xl font-medium leading-snug">“Twelve-week cycles keep me honest. Every deload week I&#39;m amazed how much stronger I feel.”</blockquote>
+                <figcaption class="mt-auto flex items-center gap-4 pt-8"><img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-12 w-12 object-cover"><span><span class="block font-extrabold uppercase">Chris Moreno</span><span class="text-sm text-volt-deep">+30% on every lift</span></span></figcaption>
+              </figure>
+            </li>
+        </ul>
+      </div>
+      <div class="mt-8 flex gap-2" role="group" aria-label="Choose a story">
+          <button type="button" data-dot="0" aria-pressed="true" class="h-1.5 w-10 bg-ink/20 transition aria-pressed:bg-ink" aria-label="Story 1"></button>
+          <button type="button" data-dot="1" aria-pressed="false" class="h-1.5 w-10 bg-ink/20 transition aria-pressed:bg-ink" aria-label="Story 2"></button>
+          <button type="button" data-dot="2" aria-pressed="false" class="h-1.5 w-10 bg-ink/20 transition aria-pressed:bg-ink" aria-label="Story 3"></button>
+          <button type="button" data-dot="3" aria-pressed="false" class="h-1.5 w-10 bg-ink/20 transition aria-pressed:bg-ink" aria-label="Story 4"></button>
+      </div>
+    </div>
+  </section>
+  <!-- block:end reviews -->
+
+  <!-- block:start faq -->
+  <section class="bg-ink" data-faq-tabs>
+    <div class="mx-auto grid max-w-7xl gap-12 px-5 py-20 md:px-12 md:py-28 lg:grid-cols-[1fr_1.5fr]">
+      <div>
+        <h2 class="text-5xl font-extrabold uppercase leading-[.9] tracking-tight md:text-7xl">Questions</h2>
+        <div class="mt-10 flex flex-wrap gap-2 lg:flex-col lg:items-start" role="tablist" aria-label="Question topics">
+            <button type="button" role="tab" id="faq-tab-membership" aria-controls="faq-membership" aria-selected="true" tabindex="0" class="border border-white/30 px-5 py-3 text-sm font-semibold uppercase tracking-wide transition hover:border-white aria-selected:border-volt aria-selected:bg-volt">Membership</button>
+            <button type="button" role="tab" id="faq-tab-training" aria-controls="faq-training" aria-selected="false" tabindex="-1" class="border border-white/30 px-5 py-3 text-sm font-semibold uppercase tracking-wide transition hover:border-white aria-selected:border-volt aria-selected:bg-volt">Training</button>
+            <button type="button" role="tab" id="faq-tab-recovery" aria-controls="faq-recovery" aria-selected="false" tabindex="-1" class="border border-white/30 px-5 py-3 text-sm font-semibold uppercase tracking-wide transition hover:border-white aria-selected:border-volt aria-selected:bg-volt">Recovery</button>
+        </div>
+      </div>
+      <div>
+          <dl id="faq-membership" role="tabpanel" aria-labelledby="faq-tab-membership" class="border-t border-white/20" >
+              <div class="border-b border-white/20 py-7"><dt class="text-xl font-extrabold uppercase">Can I pause my plan?</dt><dd class="mt-2 text-white/75">Yes, up to six weeks a year with no fee.</dd></div>
+              <div class="border-b border-white/20 py-7"><dt class="text-xl font-extrabold uppercase">Is there a contract?</dt><dd class="mt-2 text-white/75">Monthly plans roll monthly. Annual plans save 15% and can be transferred.</dd></div>
+              <div class="border-b border-white/20 py-7"><dt class="text-xl font-extrabold uppercase">Do you offer corporate plans?</dt><dd class="mt-2 text-white/75">Yes. Teams of five or more get pooled sessions and a shared dashboard.</dd></div>
+          </dl>
+          <dl id="faq-training" role="tabpanel" aria-labelledby="faq-tab-training" class="border-t border-white/20" hidden>
+              <div class="border-b border-white/20 py-7"><dt class="text-xl font-extrabold uppercase">I&#39;m a complete beginner. Is that okay?</dt><dd class="mt-2 text-white/75">Absolutely. Your first two weeks are an assessment phase built for exactly that.</dd></div>
+              <div class="border-b border-white/20 py-7"><dt class="text-xl font-extrabold uppercase">How long are sessions?</dt><dd class="mt-2 text-white/75">HIIT runs 30 minutes, strength and personal training 50 to 60.</dd></div>
+              <div class="border-b border-white/20 py-7"><dt class="text-xl font-extrabold uppercase">Do I need a heart rate monitor?</dt><dd class="mt-2 text-white/75">We lend chest straps for every class, or you can pair your own.</dd></div>
+          </dl>
+          <dl id="faq-recovery" role="tabpanel" aria-labelledby="faq-tab-recovery" class="border-t border-white/20" hidden>
+              <div class="border-b border-white/20 py-7"><dt class="text-xl font-extrabold uppercase">What&#39;s in the recovery suite?</dt><dd class="mt-2 text-white/75">Sauna, cold plunge, compression boots and a stretching zone.</dd></div>
+              <div class="border-b border-white/20 py-7"><dt class="text-xl font-extrabold uppercase">Do you help with nutrition?</dt><dd class="mt-2 text-white/75">Wellness plans include a monthly nutrition check-in with our dietitian.</dd></div>
+              <div class="border-b border-white/20 py-7"><dt class="text-xl font-extrabold uppercase">Can I train with an injury?</dt><dd class="mt-2 text-white/75">Often, yes. Tell us first and we&#39;ll build sessions around it with our physio.</dd></div>
+          </dl>
+      </div>
+    </div>
+  </section>
+  <!-- block:end faq -->
+
+  <!-- block:start footer -->
+  <footer class="bg-volt">
+    <div class="mx-auto max-w-7xl px-5 py-16 md:px-12">
+      <div class="grid gap-10 border-b border-white/30 pb-14 lg:grid-cols-[1.4fr_1fr]">
+        <p class="text-4xl font-extrabold uppercase leading-[.95] tracking-tight md:text-6xl">Your first session is on us</p>
+        <form class="self-end" data-newsletter novalidate>
+          <label for="footer-email" class="text-sm font-semibold uppercase tracking-wide">Email for a free pass</label>
+          <div class="mt-3 flex">
+            <input id="footer-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" class="min-w-0 flex-1 bg-white px-5 py-4 text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-ink">
+            <button type="submit" class="bg-ink px-6 font-extrabold uppercase transition hover:bg-ink-soft">Claim</button>
+          </div>
+          <p class="mt-3 min-h-[1.5rem] text-sm font-medium" data-form-status role="status"></p>
+        </form>
+      </div>
+      <div class="grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <a href="index.html" class="flex items-center gap-2 text-2xl font-extrabold uppercase"><svg viewBox="0 0 32 20" class="h-5 w-8" aria-hidden="true"><path d="M2 6v8M6 3v14M26 3v14M30 6v8M6 10h20" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="square"/></svg>Strivo</a>
+          <p class="mt-4 max-w-xs text-white/85">Modern training for people who want results without the guesswork.</p>
+        </div>
+          <div>
+            <h2 class="text-sm font-semibold uppercase tracking-widest text-white/70">Train</h2>
+            <ul class="mt-4 grid gap-2">
+              <li><a href="services.html" class="hover:underline">Services</a></li><li><a href="programs.html" class="hover:underline">Programs</a></li><li><a href="index.html#zones" class="hover:underline">Zone finder</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-sm font-semibold uppercase tracking-widest text-white/70">Join</h2>
+            <ul class="mt-4 grid gap-2">
+              <li><a href="wellness-plans.html" class="hover:underline">Wellness plans</a></li><li><a href="contact.html" class="hover:underline">Free session</a></li><li><a href="wellness-plans.html" class="hover:underline">Corporate</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-sm font-semibold uppercase tracking-widest text-white/70">Visit</h2>
+            <ul class="mt-4 grid gap-2">
+              <li>210 Canal Street, Manchester</li><li><a href="mailto:hello@strivo.fit" class="hover:underline">hello@strivo.fit</a></li><li><a href="tel:+441615550192" class="hover:underline">+44 161 555 0192</a></li>
+            </ul>
+          </div>
+      </div>
+      <p class="flex flex-wrap justify-between gap-4 border-t border-white/30 pt-6 text-sm text-white/80"><span>&copy; 2026 Strivo Training Ltd.</span><span class="flex gap-5"><a href="contact.html" aria-label="Instagram" class="hover:text-ink"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a href="contact.html" aria-label="TikTok" class="hover:text-ink"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a><a href="contact.html" aria-label="YouTube" class="hover:text-ink"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></span></p>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const watchMotion = !reducedMotion && !navigator.webdriver && 'IntersectionObserver' in window;
+
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-hero-card]').forEach((root) => {
+      const slides = [...root.querySelectorAll('[data-hero-slide]')];
+      const dots = [...root.querySelectorAll('[data-hero-dot]')];
+      let current = 0;
+      const show = (index) => {
+        current = index;
+        slides.forEach((slide, i) => { slide.hidden = i !== index; });
+        dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === index)));
+      };
+      dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
+      if (!reducedMotion && !navigator.webdriver) setInterval(() => { if (!root.matches(':hover')) show((current + 1) % slides.length); }, 5000);
+    });
+
+    document.querySelectorAll('[data-services]').forEach((root) => {
+      root.querySelectorAll('[data-service-toggle]').forEach((button) => button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        document.getElementById(button.getAttribute('aria-controls')).hidden = open;
+      }));
+    });
+
+    document.querySelectorAll('[data-cycle]').forEach((root) => {
+      const data = JSON.parse(root.querySelector('[data-cycle-data]').textContent);
+      const buttons = [...root.querySelectorAll('[data-phase]')];
+      buttons.forEach((button) => button.addEventListener('click', () => {
+        buttons.forEach((other) => other.setAttribute('aria-pressed', String(other === button)));
+        const phase = data[Number(button.dataset.phase)];
+        root.querySelector('[data-cycle-title]').textContent = phase.title;
+        root.querySelector('[data-cycle-weeks]').textContent = phase.weeks;
+        root.querySelector('[data-cycle-text]').textContent = phase.text;
+      }));
+    });
+
+    document.querySelectorAll('[data-zones]').forEach((root) => {
+      const data = JSON.parse(root.querySelector('[data-zone-data]').textContent);
+      const age = root.querySelector('[data-zone-age]');
+      const rest = root.querySelector('[data-zone-rest]');
+      const buttons = [...root.querySelectorAll('[data-zone]')];
+      const update = () => {
+        const max = 220 - Number(age.value);
+        const reserve = max - Number(rest.value);
+        root.querySelector('[data-zone-age-out]').textContent = age.value;
+        root.querySelector('[data-zone-rest-out]').textContent = `${rest.value} bpm`;
+        root.querySelector('[data-zone-max]').textContent = max;
+        buttons.forEach((button, i) => { button.querySelector('[data-zone-range]').textContent = `${Math.round(Number(rest.value) + reserve * data[i].low)}–${Math.round(Number(rest.value) + reserve * data[i].high)}`; });
+      };
+      age.addEventListener('input', update);
+      rest.addEventListener('input', update);
+      buttons.forEach((button) => button.addEventListener('click', () => {
+        buttons.forEach((other) => other.setAttribute('aria-pressed', String(other === button)));
+        root.querySelector('[data-zone-session]').textContent = data[Number(button.dataset.zone)].session;
+      }));
+    });
+
+    document.querySelectorAll('[data-carousel]').forEach((root) => {
+      const track = root.querySelector('[data-track]');
+      const dots = [...root.querySelectorAll('[data-dot]')];
+      const count = track.children.length;
+      let index = 0;
+      const go = (next) => {
+        index = (next + count) % count;
+        track.style.transform = `translateX(-${track.children[index].offsetLeft}px)`;
+        dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === index)));
+      };
+      root.querySelector('[data-prev]').addEventListener('click', () => go(index - 1));
+      root.querySelector('[data-next]').addEventListener('click', () => go(index + 1));
+      dots.forEach((dot, i) => dot.addEventListener('click', () => go(i)));
+    });
+
+    document.querySelectorAll('[data-faq-tabs]').forEach((root) => {
+      const tabs = [...root.querySelectorAll('[role="tab"]')];
+      const select = (tab, focus) => {
+        tabs.forEach((other) => { const on = other === tab; other.setAttribute('aria-selected', String(on)); other.tabIndex = on ? 0 : -1; document.getElementById(other.getAttribute('aria-controls')).hidden = !on; });
+        if (focus) tab.focus();
+      };
+      tabs.forEach((tab, i) => {
+        tab.addEventListener('click', () => select(tab));
+        tab.addEventListener('keydown', (event) => {
+          if (event.key === 'ArrowRight' || event.key === 'ArrowDown') select(tabs[(i + 1) % tabs.length], true);
+          if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') select(tabs[(i - 1 + tabs.length) % tabs.length], true);
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-newsletter]').forEach((form) => {
+      const status = form.querySelector('[data-form-status]');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = form.querySelector('[name="email"]');
+        if (!email.value.trim() || !email.checkValidity()) { status.textContent = 'Please enter a valid email address.'; email.focus(); return; }
+        status.textContent = 'Pass on its way. Check your inbox to book your first session.';
+        form.reset();
+      });
+    });
+
+    if (watchMotion) {
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+      }), { threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach((el) => observer.observe(el));
+      const counter = new IntersectionObserver((entries) => entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target; const end = Number(el.dataset.count); const start = performance.now();
+        const tick = (now) => { const p = Math.min((now - start) / 900, 1); el.textContent = Math.round(end * p); if (p < 1) requestAnimationFrame(tick); };
+        requestAnimationFrame(tick); counter.unobserve(el);
+      }), { threshold: 0.5 });
+      document.querySelectorAll('[data-count]').forEach((el) => counter.observe(el));
+    }
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=strivo&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

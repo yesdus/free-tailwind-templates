@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keelson | Tailwind CSS Consulting Template</title>
+  <meta name="description" content="Keelson is a bold Tailwind CSS consulting template for management and strategy firms, with a giant letterform hero, a sticky practice story, an engagement finder quiz, an orbit process diagram, result-led client quotes, case studies, insights and office contact pages.">
+  <meta name="keywords" content="Keelson, Tailwind CSS template, HTML website template, consulting template, management consulting, strategy firm, advisory, operations consulting, case studies, professional services website">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Keelson | Tailwind CSS Consulting Template">
+  <meta property="og:description" content="A bold Tailwind CSS consulting template with a giant letterform hero, an engagement finder quiz, case studies and insights.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Keelson template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Keelson | Tailwind CSS Consulting Template">
+  <meta name="twitter:description" content="A bold Tailwind CSS consulting template with a giant letterform hero, an engagement finder quiz, case studies and insights.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Keelson template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink: { DEFAULT: '#15233b', soft: '#1f3150', line: '#33466a' }, coral: { DEFAULT: '#e35b4b', deep: '#c94434', soft: '#f7d5ce' }, paper: '#f5f0e8', mist: '#c9d1de' },
+          fontFamily: { serif: ['Gloock', 'serif'], sans: ['Manrope', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-paper font-sans text-ink antialiased">
+  <!-- block:start navbar -->
+  <header class="absolute inset-x-0 top-0 z-30 text-white">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-6 md:px-10" aria-label="Main">
+      <a href="index.html" class="flex items-center gap-2 text-lg font-extrabold tracking-tight">
+        <span class="grid h-9 w-9 place-items-center rounded-full bg-coral font-serif text-xl leading-none">K</span>
+        Keelson
+      </a>
+      <div class="flex items-center gap-6">
+        <ul class="hidden items-center gap-7 text-sm md:flex">
+            <li><a href="services.html"  class="underline-offset-8 transition hover:underline ">Services</a></li>
+            <li><a href="work.html"  class="underline-offset-8 transition hover:underline ">Work</a></li>
+            <li><a href="about.html"  class="underline-offset-8 transition hover:underline ">About</a></li>
+            <li><a href="insights.html"  class="underline-offset-8 transition hover:underline ">Insights</a></li>
+        </ul>
+        <span class="hidden h-5 w-px bg-white/40 md:block" aria-hidden="true"></span>
+        <a href="contact.html" class="hidden rounded-full border border-white/50 px-5 py-2 text-sm font-semibold transition hover:border-coral hover:bg-coral md:inline-block">Book a call</a>
+        <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="grid h-10 w-10 place-items-center rounded-full border border-white/40 md:hidden" aria-label="Open menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="mx-4 hidden rounded-3xl bg-ink-soft p-4 shadow-2xl md:hidden">
+      <ul class="grid gap-1">
+          <li><a href="services.html" class="block rounded-2xl px-4 py-3 text-2xl font-bold hover:bg-ink-line">Services</a></li>
+          <li><a href="work.html" class="block rounded-2xl px-4 py-3 text-2xl font-bold hover:bg-ink-line">Work</a></li>
+          <li><a href="about.html" class="block rounded-2xl px-4 py-3 text-2xl font-bold hover:bg-ink-line">About</a></li>
+          <li><a href="insights.html" class="block rounded-2xl px-4 py-3 text-2xl font-bold hover:bg-ink-line">Insights</a></li>
+        <li><a href="contact.html" class="mt-2 block rounded-2xl bg-coral px-4 py-3 text-center font-semibold">Book a call</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section class="relative isolate flex min-h-[44rem] overflow-hidden bg-ink text-white md:min-h-screen">
+    <div class="pointer-events-none absolute inset-0 -z-10 select-none" aria-hidden="true">
+      <span class="absolute -left-[0.08em] top-1/2 -translate-y-1/2 font-serif text-[28rem] leading-none text-coral/80 md:text-[46rem] md:text-coral">K</span>
+      <span class="absolute -right-[0.18em] bottom-[-0.2em] hidden font-serif md:block text-[22rem] leading-none text-coral md:text-[38rem]">e</span>
+      <span class="absolute right-[18%] top-[16%] hidden h-28 w-28 rounded-full bg-coral md:block lg:h-36 lg:w-36"></span>
+    </div>
+    <div class="mx-auto flex w-full max-w-7xl flex-col justify-end px-5 pb-28 pt-40 md:px-10 md:pb-36">
+      <p class="text-sm font-semibold uppercase tracking-[0.25em] text-coral-soft">Management advisory · Since 2009</p>
+      <h1 class="mt-5 max-w-4xl text-5xl font-extrabold leading-[0.95] tracking-tight sm:text-6xl md:text-8xl">Steady decisions for restless companies</h1>
+      <div class="mt-8 grid max-w-xl gap-1 text-lg">
+        <p class="font-bold">Operating strategy</p>
+        <p class="text-white/80">An advisory boutique for leaders who have outgrown their own playbook.</p>
+      </div>
+      <div class="mt-9 flex flex-wrap gap-3">
+        <a href="#finder" class="rounded-full bg-white px-7 py-3 font-semibold text-ink transition hover:bg-coral-soft">Find your engagement</a>
+        <a href="work.html" class="rounded-full border border-white/50 px-7 py-3 font-semibold transition hover:border-white">See client work</a>
+      </div>
+    </div>
+    <a href="#practices" class="absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-3 text-sm text-white/80 md:flex">
+      Scroll to explore
+      <span class="scroll-cue block h-10 w-px bg-white" aria-hidden="true"></span>
+    </a>
+    <a href="contact.html" class="absolute bottom-6 right-5 hidden h-20 w-20 place-items-center rounded-full border border-white/60 text-center text-xs font-semibold transition hover:border-coral hover:bg-coral md:right-10 md:grid md:h-24 md:w-24 md:text-sm">Contact <i class="fa-solid fa-arrow-right mt-1" aria-hidden="true"></i></a>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start features -->
+  <section id="practices" class="mx-auto grid max-w-7xl gap-12 px-5 py-24 md:px-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20" data-scroll-story>
+    <div class="lg:sticky lg:top-16 lg:self-start">
+      <p class="text-sm font-semibold uppercase tracking-[0.25em] text-coral">What we do</p>
+      <h2 class="mt-4 text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">Four practices, one honest view of the business</h2>
+      <p class="mt-6 max-w-md text-lg text-ink/70">Most clients arrive with one question and leave with a sharper sense of the other three. We work across all of them with the same small senior team.</p>
+      <ol class="mt-10 hidden gap-3 lg:grid">
+          <li><a href="#practice-strategy" data-story-link class="flex items-center gap-4 text-lg font-semibold text-ink/50 transition hover:text-ink aria-[current]:text-ink"><span class="font-serif text-coral">01</span>Strategy</a></li>
+          <li><a href="#practice-operations" data-story-link class="flex items-center gap-4 text-lg font-semibold text-ink/50 transition hover:text-ink aria-[current]:text-ink"><span class="font-serif text-coral">02</span>Operations</a></li>
+          <li><a href="#practice-organisation" data-story-link class="flex items-center gap-4 text-lg font-semibold text-ink/50 transition hover:text-ink aria-[current]:text-ink"><span class="font-serif text-coral">03</span>Organisation</a></li>
+          <li><a href="#practice-finance" data-story-link class="flex items-center gap-4 text-lg font-semibold text-ink/50 transition hover:text-ink aria-[current]:text-ink"><span class="font-serif text-coral">04</span>Finance</a></li>
+      </ol>
+    </div>
+    <div class="grid gap-16">
+        <article id="practice-strategy" class="grid gap-6" data-story-step data-reveal>
+          <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1000&h=620&q=80" alt="Leadership team working through notes at a long wooden table" class="aspect-[50/31] w-full rounded-[2rem] object-cover">
+          <div class="grid gap-3 sm:grid-cols-[auto_1fr] sm:gap-8">
+            <span class="story-index font-serif text-6xl leading-none text-ink/20 transition">01</span>
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.2em] text-coral">Strategy</p>
+              <h3 class="mt-2 text-2xl font-bold md:text-3xl">Choose where to play and what to stop</h3>
+              <p class="mt-3 text-ink/70">We turn a crowded list of ambitions into three bets the board can fund and the team can explain in one breath.</p>
+              <a href="services.html#strategy" class="mt-4 inline-flex items-center gap-2 font-semibold underline decoration-coral decoration-2 underline-offset-4">How we work on strategy <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </article>
+        <article id="practice-operations" class="grid gap-6" data-story-step data-reveal>
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&h=620&q=80" alt="Busy warehouse floor with shelves of yellow crates" class="aspect-[50/31] w-full rounded-[2rem] object-cover">
+          <div class="grid gap-3 sm:grid-cols-[auto_1fr] sm:gap-8">
+            <span class="story-index font-serif text-6xl leading-none text-ink/20 transition">02</span>
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.2em] text-coral">Operations</p>
+              <h3 class="mt-2 text-2xl font-bold md:text-3xl">Make the machine run quieter</h3>
+              <p class="mt-3 text-ink/70">Process maps, capacity models and supplier terms rebuilt around how work actually moves, not how the org chart says it should.</p>
+              <a href="services.html#operations" class="mt-4 inline-flex items-center gap-2 font-semibold underline decoration-coral decoration-2 underline-offset-4">How we work on operations <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </article>
+        <article id="practice-organisation" class="grid gap-6" data-story-step data-reveal>
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&h=620&q=80" alt="Team reviewing sticky notes on a wall during a workshop" class="aspect-[50/31] w-full rounded-[2rem] object-cover">
+          <div class="grid gap-3 sm:grid-cols-[auto_1fr] sm:gap-8">
+            <span class="story-index font-serif text-6xl leading-none text-ink/20 transition">03</span>
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.2em] text-coral">Organisation</p>
+              <h3 class="mt-2 text-2xl font-bold md:text-3xl">Design teams around decisions</h3>
+              <p class="mt-3 text-ink/70">Clear owners, fewer committees and leadership rhythms that let a growing company keep its speed.</p>
+              <a href="services.html#organisation" class="mt-4 inline-flex items-center gap-2 font-semibold underline decoration-coral decoration-2 underline-offset-4">How we work on organisation <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </article>
+        <article id="practice-finance" class="grid gap-6" data-story-step data-reveal>
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&h=620&q=80" alt="Analytics dashboard with charts on a laptop screen" class="aspect-[50/31] w-full rounded-[2rem] object-cover">
+          <div class="grid gap-3 sm:grid-cols-[auto_1fr] sm:gap-8">
+            <span class="story-index font-serif text-6xl leading-none text-ink/20 transition">04</span>
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.2em] text-coral">Finance</p>
+              <h3 class="mt-2 text-2xl font-bold md:text-3xl">Know which numbers to steer by</h3>
+              <p class="mt-3 text-ink/70">Unit economics, pricing and cash planning that give leaders a dashboard they trust before the quarter closes.</p>
+              <a href="services.html#finance" class="mt-4 inline-flex items-center gap-2 font-semibold underline decoration-coral decoration-2 underline-offset-4">How we work on finance <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </article>
+    </div>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start stats -->
+  <section class="relative overflow-hidden bg-coral text-ink">
+    <div class="mx-auto grid max-w-7xl items-end gap-8 px-5 py-20 md:px-10 lg:grid-cols-[1.2fr_1fr]">
+      <p class="font-serif text-[9rem] leading-[0.8] tracking-tight text-ink sm:text-[13rem] md:text-[17rem]" data-reveal><span data-count-to="41" data-count-suffix="%">41%</span></p>
+      <div class="pb-4" data-reveal style="--reveal-delay: 120ms">
+        <p class="text-2xl font-bold leading-snug md:text-3xl">Average lift in operating margin across clients we have worked with for two years or more.</p>
+        <dl class="mt-10 grid grid-cols-3 gap-4 border-t border-ink/30 pt-6">
+          <div><dt class="text-sm text-ink/70">Engagements</dt><dd class="text-3xl font-extrabold"><span data-count-to="260" data-count-suffix="+">260+</span></dd></div>
+          <div><dt class="text-sm text-ink/70">Rehired</dt><dd class="text-3xl font-extrabold">7 in 10</dd></div>
+          <div><dt class="text-sm text-ink/70">Senior-led</dt><dd class="text-3xl font-extrabold">100%</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+  <!-- block:end stats -->
+
+  <!-- block:start demo -->
+  <section id="finder" class="bg-ink text-white">
+    <div class="mx-auto grid max-w-7xl gap-12 px-5 py-24 md:px-10 lg:grid-cols-2 lg:gap-16">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-coral">Engagement finder</p>
+        <h2 class="mt-4 text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">Three answers, one place to start</h2>
+        <p class="mt-5 max-w-lg text-white/70">Tell us where the company stands and what keeps you up at night. We will suggest the engagement most clients in your seat begin with.</p>
+        <form class="mt-10 grid gap-6" data-finder novalidate>
+          <div class="h-1.5 overflow-hidden rounded-full bg-ink-line" role="progressbar" aria-label="Finder progress" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" data-finder-progress><span class="block h-full w-1/3 rounded-full bg-coral transition-all duration-500" data-finder-bar></span></div>
+          <fieldset class="grid gap-4" data-finder-step>
+            <legend class="mb-4 text-xl font-bold">1. Where is the company today?</legend>
+            <div class="grid gap-3 sm:grid-cols-2">
+                <label class="finder-chip flex cursor-pointer flex-col rounded-2xl border border-ink-line p-4 transition hover:border-coral">
+                  <input type="radio" name="stage" value="founder" class="sr-only" >
+                  <span class="font-bold">Founder-led</span>
+                  <span class="text-sm opacity-75">Under 50 people</span>
+                </label>
+                <label class="finder-chip flex cursor-pointer flex-col rounded-2xl border border-ink-line p-4 transition hover:border-coral">
+                  <input type="radio" name="stage" value="scaling" class="sr-only" checked>
+                  <span class="font-bold">Scaling</span>
+                  <span class="text-sm opacity-75">50 to 500 people</span>
+                </label>
+                <label class="finder-chip flex cursor-pointer flex-col rounded-2xl border border-ink-line p-4 transition hover:border-coral">
+                  <input type="radio" name="stage" value="established" class="sr-only" >
+                  <span class="font-bold">Established</span>
+                  <span class="text-sm opacity-75">500+ people</span>
+                </label>
+                <label class="finder-chip flex cursor-pointer flex-col rounded-2xl border border-ink-line p-4 transition hover:border-coral">
+                  <input type="radio" name="stage" value="turnaround" class="sr-only" >
+                  <span class="font-bold">Turnaround</span>
+                  <span class="text-sm opacity-75">Results slipping</span>
+                </label>
+            </div>
+            <button type="button" data-finder-next class="justify-self-start rounded-full bg-white px-6 py-3 font-semibold text-ink transition hover:bg-coral-soft">Next question</button>
+          </fieldset>
+          <fieldset class="grid gap-4" data-finder-step>
+            <legend class="mb-4 text-xl font-bold">2. What is the loudest problem?</legend>
+            <div class="grid gap-3 sm:grid-cols-2">
+                <label class="finder-chip flex cursor-pointer items-center gap-3 rounded-2xl border border-ink-line p-4 font-bold transition hover:border-coral">
+                  <input type="radio" name="pressure" value="margin" class="sr-only" checked>
+                  Margins are thin
+                </label>
+                <label class="finder-chip flex cursor-pointer items-center gap-3 rounded-2xl border border-ink-line p-4 font-bold transition hover:border-coral">
+                  <input type="radio" name="pressure" value="growth" class="sr-only" >
+                  Growth has stalled
+                </label>
+                <label class="finder-chip flex cursor-pointer items-center gap-3 rounded-2xl border border-ink-line p-4 font-bold transition hover:border-coral">
+                  <input type="radio" name="pressure" value="structure" class="sr-only" >
+                  Teams are tangled
+                </label>
+                <label class="finder-chip flex cursor-pointer items-center gap-3 rounded-2xl border border-ink-line p-4 font-bold transition hover:border-coral">
+                  <input type="radio" name="pressure" value="systems" class="sr-only" >
+                  Data is a mess
+                </label>
+            </div>
+            <div class="flex gap-3">
+              <button type="button" data-finder-back class="rounded-full border border-white/40 px-6 py-3 font-semibold transition hover:border-white">Back</button>
+              <button type="button" data-finder-next class="rounded-full bg-white px-6 py-3 font-semibold text-ink transition hover:bg-coral-soft">Next question</button>
+            </div>
+          </fieldset>
+          <fieldset class="grid gap-4" data-finder-step>
+            <legend class="mb-4 text-xl font-bold">3. When do you need to see change?</legend>
+            <label for="finder-weeks" class="flex items-baseline justify-between text-white/80">Within <output class="text-3xl font-extrabold text-white" data-finder-weeks-label>12</output> weeks</label>
+            <input id="finder-weeks" type="range" name="weeks" min="4" max="26" step="1" value="12" class="w-full accent-coral" data-finder-weeks>
+            <div class="flex justify-between text-xs text-white/60"><span>4 weeks</span><span>6 months</span></div>
+            <div class="flex gap-3">
+              <button type="button" data-finder-back class="rounded-full border border-white/40 px-6 py-3 font-semibold transition hover:border-white">Back</button>
+              <a href="contact.html" class="rounded-full bg-coral px-6 py-3 font-semibold transition hover:bg-coral-deep">Talk it through</a>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="relative overflow-hidden rounded-[2rem] bg-ink-soft p-8 md:p-10" aria-live="polite" data-reveal>
+        <span class="pointer-events-none absolute -bottom-24 -right-10 select-none font-serif text-[18rem] leading-none text-coral/15" aria-hidden="true">K</span>
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-coral-soft">Suggested start</p>
+        <h3 class="mt-3 text-3xl font-extrabold md:text-4xl" data-finder-title>Scale-up Operating Review</h3>
+        <p class="mt-3 text-white/75" data-finder-text>A fast read of how work, money and decisions flow, ending in a ninety-day plan your leadership team owns.</p>
+        <svg viewBox="0 0 240 240" class="mx-auto mt-8 w-full max-w-[16rem]" role="img" aria-label="Focus of the suggested engagement across strategy, operations, people and finance">
+          <g fill="none" stroke="#33466a">
+            <polygon points="120,20 220,120 120,220 20,120"/>
+            <polygon points="120,53 187,120 120,187 53,120"/>
+            <polygon points="120,87 153,120 120,153 87,120"/>
+            <line x1="120" y1="20" x2="120" y2="220"/>
+            <line x1="20" y1="120" x2="220" y2="120"/>
+          </g>
+          <polygon points="120,50 200,120 120,170 60,120" fill="rgba(227,91,75,.55)" stroke="#e35b4b" stroke-width="2" data-finder-shape style="transition: all .5s ease"/>
+          <g font-family="Manrope, sans-serif" font-size="11" font-weight="700" fill="#c9d1de" text-anchor="middle">
+            <text x="120" y="12">Strategy</text>
+            <text x="232" y="124" text-anchor="end">Ops</text>
+            <text x="120" y="238">People</text>
+            <text x="8" y="124" text-anchor="start">Finance</text>
+          </g>
+        </svg>
+        <dl class="mt-8 grid grid-cols-3 gap-3 border-t border-ink-line pt-6 text-sm">
+          <div><dt class="text-white/60">Length</dt><dd class="mt-1 text-lg font-bold" data-finder-length>8 weeks</dd></div>
+          <div><dt class="text-white/60">Team</dt><dd class="mt-1 text-lg font-bold" data-finder-team>3 partners</dd></div>
+          <div><dt class="text-white/60">From</dt><dd class="mt-1 text-lg font-bold" data-finder-price>$68k</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+  <!-- block:end demo -->
+
+  <!-- block:start process -->
+  <section class="mx-auto max-w-7xl px-5 py-24 md:px-10" data-orbit>
+    <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-coral">How an engagement runs</p>
+        <h2 class="mt-4 text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">A loop, not a slide deck</h2>
+        <p class="mt-5 max-w-md text-lg text-ink/70">Every phase feeds the next, and the last one hands the loop back to your team. Pick a phase to see what happens inside it.</p>
+      </div>
+      <div class="relative mx-auto aspect-square w-full max-w-md">
+        <div class="absolute inset-[12%] rounded-full border-2 border-dashed border-ink/20" aria-hidden="true"></div>
+        <div class="absolute inset-[30%] grid place-items-center rounded-full bg-ink p-4 text-center text-white sm:p-6">
+            <div id="orbit-panel-0" role="tabpanel" data-orbit-panel="0" >
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-coral-soft">Week 1–2</p>
+              <p class="mt-1 text-xl font-extrabold sm:text-2xl">Listen</p>
+              <p class="mt-1 hidden text-xs text-white/75 sm:block">Two weeks of interviews, data pulls and floor visits before we form a single opinion.</p>
+            </div>
+            <div id="orbit-panel-1" role="tabpanel" data-orbit-panel="1" hidden>
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-coral-soft">Week 3</p>
+              <p class="mt-1 text-xl font-extrabold sm:text-2xl">Frame</p>
+              <p class="mt-1 hidden text-xs text-white/75 sm:block">We reduce the noise to the three questions that move the numbers, and agree them with you.</p>
+            </div>
+            <div id="orbit-panel-2" role="tabpanel" data-orbit-panel="2" hidden>
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-coral-soft">Week 4–8</p>
+              <p class="mt-1 text-xl font-extrabold sm:text-2xl">Build</p>
+              <p class="mt-1 hidden text-xs text-white/75 sm:block">Options are modelled with your team, tested on real cases and priced before anyone commits.</p>
+            </div>
+            <div id="orbit-panel-3" role="tabpanel" data-orbit-panel="3" hidden>
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-coral-soft">Quarter 2</p>
+              <p class="mt-1 text-xl font-extrabold sm:text-2xl">Embed</p>
+              <p class="mt-1 hidden text-xs text-white/75 sm:block">We stay through the first quarter of change, coaching owners until the new rhythm holds.</p>
+            </div>
+        </div>
+        <div role="tablist" aria-label="Engagement phases">
+            <button type="button" role="tab" aria-controls="orbit-panel-0" aria-selected="true" data-orbit-node="0" class="absolute left-1/2 top-0 -translate-x-1/2 grid h-20 w-20 place-items-center rounded-full border-2 border-ink bg-paper text-sm font-bold transition hover:border-coral sm:h-24 sm:w-24"><span><span class="block font-serif text-lg leading-none">01</span>Listen</span></button>
+            <button type="button" role="tab" aria-controls="orbit-panel-1" aria-selected="false" data-orbit-node="1" class="absolute right-0 top-1/2 -translate-y-1/2 grid h-20 w-20 place-items-center rounded-full border-2 border-ink bg-paper text-sm font-bold transition hover:border-coral sm:h-24 sm:w-24"><span><span class="block font-serif text-lg leading-none">02</span>Frame</span></button>
+            <button type="button" role="tab" aria-controls="orbit-panel-2" aria-selected="false" data-orbit-node="2" class="absolute bottom-0 left-1/2 -translate-x-1/2 grid h-20 w-20 place-items-center rounded-full border-2 border-ink bg-paper text-sm font-bold transition hover:border-coral sm:h-24 sm:w-24"><span><span class="block font-serif text-lg leading-none">03</span>Build</span></button>
+            <button type="button" role="tab" aria-controls="orbit-panel-3" aria-selected="false" data-orbit-node="3" class="absolute left-0 top-1/2 -translate-y-1/2 grid h-20 w-20 place-items-center rounded-full border-2 border-ink bg-paper text-sm font-bold transition hover:border-coral sm:h-24 sm:w-24"><span><span class="block font-serif text-lg leading-none">04</span>Embed</span></button>
+        </div>
+      </div>
+    </div>
+    <ol class="mt-12 grid gap-4 md:grid-cols-4 lg:hidden">
+        <li class="rounded-2xl bg-white p-5"><span class="font-serif text-coral">01</span> <strong>Listen</strong><p class="mt-1 text-sm text-ink/70">Two weeks of interviews, data pulls and floor visits before we form a single opinion.</p></li>
+        <li class="rounded-2xl bg-white p-5"><span class="font-serif text-coral">02</span> <strong>Frame</strong><p class="mt-1 text-sm text-ink/70">We reduce the noise to the three questions that move the numbers, and agree them with you.</p></li>
+        <li class="rounded-2xl bg-white p-5"><span class="font-serif text-coral">03</span> <strong>Build</strong><p class="mt-1 text-sm text-ink/70">Options are modelled with your team, tested on real cases and priced before anyone commits.</p></li>
+        <li class="rounded-2xl bg-white p-5"><span class="font-serif text-coral">04</span> <strong>Embed</strong><p class="mt-1 text-sm text-ink/70">We stay through the first quarter of change, coaching owners until the new rhythm holds.</p></li>
+    </ol>
+  </section>
+  <!-- block:end process -->
+
+  <!-- block:start reviews -->
+  <section class="bg-white py-24">
+    <div class="mx-auto max-w-7xl px-5 md:px-10">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <h2 class="max-w-2xl text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">Results first, then the kind words</h2>
+        <a href="work.html" class="inline-flex items-center gap-2 font-semibold underline decoration-coral decoration-2 underline-offset-4">All case studies <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i></a>
+      </div>
+      <div class="mt-14 divide-y divide-ink/15 border-y border-ink/15">
+          <figure class="grid gap-6 py-10 md:grid-cols-[0.8fr_1.2fr] md:gap-12" data-reveal style="--reveal-delay: 0ms">
+            <div>
+              <p class="font-serif text-7xl leading-none text-coral md:text-8xl">−23%</p>
+              <p class="mt-2 font-semibold text-ink/70">cost to serve in eleven months</p>
+            </div>
+            <div>
+              <blockquote class="text-xl leading-relaxed md:text-2xl">“They never sold us a framework. They sat in our depots at 5am and asked the questions our own managers had stopped asking.”</blockquote>
+              <figcaption class="mt-6 flex items-center gap-3">
+                <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Dana Whitfield" class="h-12 w-12 rounded-full object-cover">
+                <span><strong class="block">Dana Whitfield</strong><span class="text-sm text-ink/60">COO, Tidewater Freight</span></span>
+              </figcaption>
+            </div>
+          </figure>
+          <figure class="grid gap-6 py-10 md:grid-cols-[0.8fr_1.2fr] md:gap-12" data-reveal style="--reveal-delay: 100ms">
+            <div>
+              <p class="font-serif text-7xl leading-none text-coral md:text-8xl">2.4×</p>
+              <p class="mt-2 font-semibold text-ink/70">faster hiring decisions</p>
+            </div>
+            <div>
+              <blockquote class="text-xl leading-relaxed md:text-2xl">“Our leadership meetings went from status updates to actual choices. Half the committees are gone and nobody misses them.”</blockquote>
+              <figcaption class="mt-6 flex items-center gap-3">
+                <img src="https://images.unsplash.com/photo-1509460913899-515f1df34fea?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDh8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Rafael Ortiz" class="h-12 w-12 rounded-full object-cover">
+                <span><strong class="block">Rafael Ortiz</strong><span class="text-sm text-ink/60">CEO, Ledgerpoint</span></span>
+              </figcaption>
+            </div>
+          </figure>
+          <figure class="grid gap-6 py-10 md:grid-cols-[0.8fr_1.2fr] md:gap-12" data-reveal style="--reveal-delay: 200ms">
+            <div>
+              <p class="font-serif text-7xl leading-none text-coral md:text-8xl">+$18m</p>
+              <p class="mt-2 font-semibold text-ink/70">free cash flow in year one</p>
+            </div>
+            <div>
+              <blockquote class="text-xl leading-relaxed md:text-2xl">“The pricing work paid for the whole engagement inside a quarter. More importantly, my finance team now owns the model.”</blockquote>
+              <figcaption class="mt-6 flex items-center gap-3">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4MHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Helen Achebe" class="h-12 w-12 rounded-full object-cover">
+                <span><strong class="block">Helen Achebe</strong><span class="text-sm text-ink/60">CFO, Altmark Components</span></span>
+              </figcaption>
+            </div>
+          </figure>
+      </div>
+    </div>
+  </section>
+  <!-- block:end reviews -->
+
+  <!-- block:start blog -->
+  <section class="mx-auto max-w-7xl px-5 py-24 md:px-10">
+    <div class="flex flex-wrap items-end justify-between gap-6">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-coral">Insights</p>
+        <h2 class="mt-4 text-4xl font-extrabold tracking-tight md:text-6xl">Notes from the field</h2>
+      </div>
+      <a href="insights.html" class="rounded-full border border-ink px-6 py-3 font-semibold transition hover:bg-ink hover:text-white">Read all insights</a>
+    </div>
+    <div class="mt-12 grid gap-8 lg:grid-cols-[1.4fr_1fr]">
+        <article class="group lg:row-span-2" data-reveal style="--reveal-delay: 0ms">
+          <a href="the-quiet-cost-of-reorgs.html" class="block overflow-hidden rounded-[2rem]"><img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1100&h=760&q=80" alt="Team talking through a plan on a whiteboard in a loft office" class="aspect-[11/7.6] w-full object-cover transition duration-500 group-hover:scale-105"></a>
+          <div class="mt-6">
+            <p class="text-sm font-semibold text-coral">Organisation · <span class="text-ink/60">8 min read</span></p>
+            <h3 class="mt-2 font-bold text-3xl md:text-4xl"><a href="the-quiet-cost-of-reorgs.html" class="hover:underline hover:decoration-coral hover:decoration-2 hover:underline-offset-4">The quiet cost of reorganising every eighteen months</a></h3>
+          </div>
+        </article>
+        <article class="group grid gap-5 sm:grid-cols-[0.8fr_1fr]" data-reveal style="--reveal-delay: 100ms">
+          <a href="insights.html" class="block overflow-hidden rounded-[2rem]"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&h=460&q=80" alt="Hands taking notes beside a laptop on a desk" class="aspect-[6/4.6] w-full object-cover transition duration-500 group-hover:scale-105"></a>
+          <div class="">
+            <p class="text-sm font-semibold text-coral">Finance · <span class="text-ink/60">6 min read</span></p>
+            <h3 class="mt-2 font-bold text-xl"><a href="insights.html" class="hover:underline hover:decoration-coral hover:decoration-2 hover:underline-offset-4">Pricing is a strategy decision dressed up as maths</a></h3>
+          </div>
+        </article>
+        <article class="group grid gap-5 sm:grid-cols-[0.8fr_1fr]" data-reveal style="--reveal-delay: 200ms">
+          <a href="insights.html" class="block overflow-hidden rounded-[2rem]"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=600&h=460&q=80" alt="Open-plan office with people talking at desks" class="aspect-[6/4.6] w-full object-cover transition duration-500 group-hover:scale-105"></a>
+          <div class="">
+            <p class="text-sm font-semibold text-coral">Operations · <span class="text-ink/60">5 min read</span></p>
+            <h3 class="mt-2 font-bold text-xl"><a href="insights.html" class="hover:underline hover:decoration-coral hover:decoration-2 hover:underline-offset-4">What a 5am depot visit teaches that a dashboard can&#39;t</a></h3>
+          </div>
+        </article>
+    </div>
+  </section>
+  <!-- block:end blog -->
+
+  <!-- block:start footer -->
+  <footer class="relative overflow-hidden bg-ink text-white">
+    <span class="pointer-events-none absolute -right-16 -top-24 select-none font-serif text-[26rem] leading-none text-coral/20 md:text-[36rem]" aria-hidden="true">K</span>
+    <div class="relative mx-auto grid max-w-7xl gap-14 px-5 py-20 md:px-10 lg:grid-cols-[1.1fr_1fr]">
+      <div>
+        <h2 class="max-w-xl text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">Bring us the problem you keep postponing</h2>
+        <form class="mt-10 grid max-w-xl gap-3 rounded-[2rem] bg-ink-soft/95 p-6 sm:grid-cols-2" action="contact.html">
+          <label class="grid gap-1 text-sm">Work email<input type="email" name="email" required placeholder="you@company.com" class="rounded-xl border border-ink-line bg-ink px-4 py-3 text-white placeholder:text-white/40 focus:border-coral focus:outline-none"></label>
+          <label class="grid gap-1 text-sm">Topic
+            <select name="topic" class="rounded-xl border border-ink-line bg-ink px-4 py-3 text-white focus:border-coral focus:outline-none">
+              <option>Strategy</option>
+              <option>Operations</option>
+              <option>Organisation</option>
+              <option>Finance</option>
+            </select>
+          </label>
+          <button type="submit" class="rounded-full bg-coral px-6 py-3 font-semibold transition hover:bg-coral-deep sm:col-span-2">Request a first conversation</button>
+        </form>
+      </div>
+      <div class="grid content-end gap-10 sm:grid-cols-2">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-coral-soft">Pages</p>
+          <ul class="mt-4 grid gap-2">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+              <li><a href="services.html" class="hover:underline">Services</a></li>
+              <li><a href="work.html" class="hover:underline">Work</a></li>
+              <li><a href="about.html" class="hover:underline">About</a></li>
+              <li><a href="insights.html" class="hover:underline">Insights</a></li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-coral-soft">Offices</p>
+          <ul class="mt-4 grid gap-2 text-white/80">
+            <li>Chicago · 140 W Lake St</li>
+            <li>London · 22 Bankside Row</li>
+            <li>New York · 9 Hudson Yards</li>
+          </ul>
+          <a href="mailto:hello@keelson.example" class="mt-6 inline-block font-semibold underline decoration-coral decoration-2 underline-offset-4">hello@keelson.example</a>
+        </div>
+      </div>
+    </div>
+    <div class="relative mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 border-t border-ink-line px-5 py-6 text-sm text-white/60 md:px-10">
+      <p>© 2026 Keelson Advisory. All rights reserved.</p>
+      <div class="flex gap-4 text-base">
+        <a href="https://www.linkedin.com" aria-label="Keelson on LinkedIn" class="hover:text-white"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com" aria-label="Keelson on YouTube" class="hover:text-white"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com" aria-label="Keelson on Instagram" class="hover:text-white"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      if (!menu) return;
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    (() => {
+      const items = document.querySelectorAll('[data-reveal]');
+      const skip = navigator.webdriver || !('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+
+    (() => {
+      const counters = document.querySelectorAll('[data-count-to]');
+      if (!counters.length || navigator.webdriver || matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(({ isIntersecting, target }) => {
+          if (!isIntersecting) return;
+          observer.unobserve(target);
+          const end = Number(target.dataset.countTo);
+          const suffix = target.dataset.countSuffix || '';
+          const start = performance.now();
+          const tick = (now) => {
+            const progress = Math.min((now - start) / 1200, 1);
+            target.textContent = Math.round(end * progress).toLocaleString() + suffix;
+            if (progress < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        });
+      });
+      counters.forEach((counter) => observer.observe(counter));
+    })();
+
+    document.querySelectorAll('[data-scroll-story]').forEach((story) => {
+      const links = story.querySelectorAll('[data-story-link]');
+      if (!('IntersectionObserver' in window)) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          story.querySelectorAll('[data-story-step]').forEach((step) => (step === entry.target ? step.setAttribute('aria-current', 'step') : step.removeAttribute('aria-current')));
+          links.forEach((link) => link.toggleAttribute('aria-current', link.getAttribute('href') === `#${entry.target.id}`));
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      story.querySelectorAll('[data-story-step]').forEach((step) => observer.observe(step));
+    });
+
+    document.querySelectorAll('[data-finder]').forEach((form) => {
+      const root = form.closest('section');
+      const steps = [...form.querySelectorAll('[data-finder-step]')];
+      const progress = form.querySelector('[data-finder-progress]');
+      const bar = form.querySelector('[data-finder-bar]');
+      const weeks = form.querySelector('[data-finder-weeks]');
+      const plans = {
+        founder: { title: 'Founder Focus Sprint', text: 'A short, intense sprint that turns the founder’s head into a written plan and a first leadership team that can run it.', team: '2 partners', base: 38 },
+        scaling: { title: 'Scale-up Operating Review', text: 'A fast read of how work, money and decisions flow, ending in a ninety-day plan your leadership team owns.', team: '3 partners', base: 68 },
+        established: { title: 'Portfolio Strategy Reset', text: 'A board-level look at which businesses, markets and products deserve the next dollar, and which should be released.', team: '4 partners', base: 120 },
+        turnaround: { title: 'Ninety-Day Stabilisation', text: 'Cash first, then cost, then confidence. A war-room engagement with weekly decisions and an interim lead on site.', team: '3 + interim', base: 95 }
+      };
+      const shapes = {
+        margin: '120,70 200,120 120,160 40,120',
+        growth: '120,30 170,120 120,150 70,120',
+        structure: '120,80 160,120 120,205 80,120',
+        systems: '120,85 190,120 120,165 45,120'
+      };
+      const step = (index) => {
+        steps.forEach((fieldset, i) => { fieldset.hidden = i !== index; });
+        progress.setAttribute('aria-valuenow', String(index + 1));
+        bar.style.width = `${((index + 1) / steps.length) * 100}%`;
+      };
+      const update = () => {
+        const stage = form.querySelector('[name="stage"]:checked')?.value || 'scaling';
+        const pressure = form.querySelector('[name="pressure"]:checked')?.value || 'margin';
+        const plan = plans[stage];
+        const length = Math.max(4, Math.min(Number(weeks.value), stage === 'established' ? 16 : 12));
+        root.querySelector('[data-finder-title]').textContent = plan.title;
+        root.querySelector('[data-finder-text]').textContent = plan.text;
+        root.querySelector('[data-finder-team]').textContent = plan.team;
+        root.querySelector('[data-finder-length]').textContent = `${length} weeks`;
+        root.querySelector('[data-finder-price]').textContent = `$${Math.round(plan.base * (length / 8))}k`;
+        root.querySelector('[data-finder-shape]').setAttribute('points', shapes[pressure]);
+        form.querySelector('[data-finder-weeks-label]').textContent = weeks.value;
+      };
+      let current = 0;
+      form.addEventListener('click', (event) => {
+        if (event.target.closest('[data-finder-next]')) step(current = Math.min(current + 1, steps.length - 1));
+        if (event.target.closest('[data-finder-back]')) step(current = Math.max(current - 1, 0));
+      });
+      form.addEventListener('input', update);
+      form.addEventListener('change', update);
+      step(0);
+      update();
+    });
+
+    document.querySelectorAll('[data-orbit]').forEach((root) => {
+      root.addEventListener('click', (event) => {
+        const node = event.target.closest('[data-orbit-node]');
+        if (!node) return;
+        root.querySelectorAll('[data-orbit-node]').forEach((button) => button.setAttribute('aria-selected', String(button === node)));
+        root.querySelectorAll('[data-orbit-panel]').forEach((panel) => { panel.hidden = panel.dataset.orbitPanel !== node.dataset.orbitNode; });
+      });
+    });
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=keelson&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

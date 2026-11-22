@@ -1,0 +1,37 @@
+@view-transition { navigation: auto; }
+    html { scroll-behavior: smooth; }
+    [hidden] { display: none !important; }
+    .label { font-size: .7rem; letter-spacing: .28em; text-transform: uppercase; }
+    .disc { border-radius: 9999px; background: linear-gradient(180deg, #e0262d 0%, #8f1318 100%); }
+    .beam { background: linear-gradient(160deg, #86b92c 0%, #0f8a5f 100%); }
+    .plane-a { clip-path: polygon(64% 0, 0 0, 0 24%, 31% 60%); }
+    .beam-a { clip-path: polygon(31% 50%, 31% 60.5%, 60% 100%, 57% 96%); }
+    .plane-b { clip-path: polygon(92% 0, 66% 0, 80% 58%); }
+    .beam-b { clip-path: polygon(80% 58%, 60% 100%, 70% 100%); }
+    input[type=range] { accent-color: #d42027; }
+    [data-story-link][aria-current] { color: #ece8df; }
+    [data-story-link][aria-current] .story-rule { width: 3rem; background: #d42027; }
+    .reveal-ready [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; transition-delay: var(--reveal-delay, 0ms); }
+    .reveal-ready [data-reveal].is-visible { opacity: 1; transform: none; }
+    @media (max-width: 767px) {
+      .plane-a { clip-path: polygon(80% 0, 0 0, 0 19%, 38% 31%); }
+      .beam-a { clip-path: polygon(38% 25%, 38% 31%, 92% 39%, 88% 37.5%); }
+    }
+
+@view-transition { navigation: auto; }
+    html { scroll-behavior: smooth; }
+    [hidden] { display: none !important; }
+    .label { font-size: .7rem; letter-spacing: .28em; text-transform: uppercase; }
+    .disc { border-radius: 9999px; background: linear-gradient(180deg, #e0262d 0%, #8f1318 100%); }
+    .beam { background: linear-gradient(160deg, #86b92c 0%, #0f8a5f 100%); }
+    .plane-a { clip-path: polygon(64% 0, 0 0, 0 24%, 31% 60%); }
+    .beam-a { clip-path: polygon(31% 50%, 31% 60.5%, 60% 100%, 57% 96%); }
+    .plane-b { clip-path: polygon(92% 0, 66% 0, 80% 58%); }
+    .beam-b { clip-path: polygon(80% 58%, 60% 100%, 70% 100%); }
+    input[type=range] { accent-color: #d42027; }
+    .reveal-ready [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; transition-delay: var(--reveal-delay, 0ms); }
+    .reveal-ready [data-reveal].is-visible { opacity: 1; transform: none; }
+    @media (max-width: 767px) {
+      .plane-a { clip-path: polygon(80% 0, 0 0, 0 19%, 38% 31%); }
+      .beam-a { clip-path: polygon(38% 25%, 38% 31%, 92% 39%, 88% 37.5%); }
+    }

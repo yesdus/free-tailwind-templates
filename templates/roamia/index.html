@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roamia | Tailwind CSS Travel Companion Matching Template</title>
+    <meta name="description" content="Roamia is a vibrant Tailwind CSS travel companion matching template for traveler communities, trip matching apps, and shared adventure brands.">
+    <meta name="keywords" content="Roamia, Tailwind CSS template, HTML website template, travel companion matching, traveler community, trip matching app, responsive travel design">
+    <meta name="author" content="Let's templates">
+    <link rel="canonical" href="">
+
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Let's templates">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Roamia | Tailwind CSS Travel Companion Matching Template">
+    <meta property="og:description" content="A vibrant Tailwind CSS travel companion matching template for traveler communities, trip matching apps, and shared adventure brands.">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="Roamia template preview">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Roamia | Tailwind CSS Travel Companion Matching Template">
+    <meta name="twitter:description" content="A vibrant Tailwind CSS travel companion matching template for traveler communities, trip matching apps, and shared adventure brands.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:image:alt" content="Roamia template preview">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- block:start navbar -->
+    <header id="header" class="fixed top-0 w-full z-50 px-6 py-4">
+        <div class="nav-pill max-w-7xl mx-auto flex items-center justify-between bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-8 py-3">
+            <a href="index.html" class="flex items-center space-x-2">
+                <span class="brand text-2xl font-bold tracking-tighter text-white serif">Roamia</span>
+            </a>
+            <nav aria-label="Main" class="nav-links hidden md:flex items-center space-x-5 lg:space-x-8 text-sm font-medium text-white/80">
+                <a href="#features" class="hover:text-white">Benefits</a>
+                <a href="about.html" class="hover:text-white">Community</a>
+                <a href="#matching" class="hover:text-white">Find Matches</a>
+                <a href="#testimonials" class="hover:text-white">Stories</a>
+                <a href="pricing.html" class="hover:text-white">Pricing</a>
+                <a href="contact.html" class="hover:text-white">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4MHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Profile" class="profile-ring w-10 h-10 rounded-full border-2 border-white/30">
+                <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open the menu" class="nav-toggle md:hidden text-white text-xl w-10 h-10 flex items-center justify-center">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" aria-label="Mobile" class="md:hidden max-w-7xl mx-auto mt-3 bg-white rounded-[2rem] shadow-2xl border border-neutral-100 p-4" hidden>
+            <a href="#features" class="block px-5 py-3 rounded-full text-sm font-semibold text-neutral-700 hover:bg-neutral-50">Benefits</a>
+            <a href="about.html" class="block px-5 py-3 rounded-full text-sm font-semibold text-neutral-700 hover:bg-neutral-50">Community</a>
+            <a href="#matching" class="block px-5 py-3 rounded-full text-sm font-semibold text-neutral-700 hover:bg-neutral-50">Find Matches</a>
+            <a href="#testimonials" class="block px-5 py-3 rounded-full text-sm font-semibold text-neutral-700 hover:bg-neutral-50">Stories</a>
+            <a href="pricing.html" class="block px-5 py-3 rounded-full text-sm font-semibold text-neutral-700 hover:bg-neutral-50">Pricing</a>
+            <a href="contact.html" class="block px-5 py-3 rounded-full text-sm font-semibold text-neutral-700 hover:bg-neutral-50">Contact</a>
+        </nav>
+    </header>
+    <!-- block:end navbar -->
+
+    <!-- block:start hero -->
+    <section id="hero" class="relative min-h-[900px] flex flex-col items-center pt-32 pb-20 overflow-hidden bg-gradient-to-b from-blue-400 to-blue-300">
+        <div class="text-center max-w-4xl px-6 relative z-20">
+            <h1 class="serif text-6xl md:text-8xl text-white font-bold leading-tight mb-8">
+                Your Next Epic<br>Begins Right Here
+            </h1>
+            <p class="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+                Sync with world-class explorers. Match your pace and passion, and transform solo trips into shared masterpieces.
+            </p>
+            <a href="contact.html" class="inline-block bg-white text-blue-500 px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-transform">
+                Get Started
+            </a>
+        </div>
+
+        <!-- Hero Image Cards -->
+        <div class="mt-20 w-full max-w-7xl px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+            <div class="relative h-[450px] rounded-[2.5rem] overflow-hidden border-4 border-white/10 shadow-2xl">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1780186481181-437b94280f9e?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGFkdmVudHVyb3VzJTIwaGlrZXIlMjBibHVlJTIwamFja2V0JTIwbWlzdHklMjBtb3VudGFpbnN8ZW58MXx8fHwxNzk1Mzg2MDgwfDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="adventurous hiker with blue jacket in misty mountains, wide landscape shot" />
+            </div>
+            <div class="relative h-[450px] rounded-[2.5rem] overflow-hidden border-4 border-white/10 shadow-2xl mt-8">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1656513014654-420af5aa6896?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHRyYXZlbGVyJTIwb3JhbmdlJTIwamFja2V0JTIwbG9va2luZyUyMG1vdW50YWluJTIwcmFuZ2V8ZW58MXx8fHwxNzk1Mzg2MDgxfDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="traveler in orange jacket looking at mountain range, clear sky" />
+            </div>
+            <div class="relative h-[450px] rounded-[2.5rem] overflow-hidden border-4 border-white/10 shadow-2xl mt-4">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/19/nomad.JPG?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGJhY2twYWNrZXIlMjB3YWxraW5nJTIwcmlkZ2UlMjBzdW5zZXR8ZW58MXx8fHwxNzk1Mzg2MDgxfDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="backpacker walking on a ridge at sunset, dramatic lighting" />
+            </div>
+            <div class="relative h-[450px] rounded-[2.5rem] overflow-hidden border-4 border-white/10 shadow-2xl mt-12">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1790019853155-47c908548839?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGV4cGxvcmVyJTIwc3RhbmRpbmclMjByb2NreSUyMHBlYWslMjBjb2xkJTIwd2ludGVyfGVufDF8fHx8MTc5NTM4NjA4Mnww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="explorer standing on a rocky peak, cold winter atmosphere" />
+            </div>
+
+            <!-- Decorative Swoosh Line -->
+            <svg class="swoosh-line absolute hidden lg:block" viewBox="0 0 1200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 50C200 10 400 90 600 50C800 10 1000 90 1200 50" stroke="#fbbf24" stroke-width="6" stroke-linecap="round" />
+            </svg>
+        </div>
+    </section>
+    <!-- block:end hero -->
+
+    <!-- block:start features -->
+    <section id="features" class="py-32 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="serif text-4xl md:text-5xl text-center font-bold mb-20">Everything You Need<br>For the Perfect Trip</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <!-- Feature: Costing -->
+                <div class="md:col-span-8 bg-neutral-50 rounded-[3rem] p-10 border border-neutral-100 relative overflow-hidden">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-8">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Budget Forecasting</h3>
+                            <p class="text-neutral-500 text-sm">Visualize your travel expenses with precision.</p>
+                        </div>
+                        <div class="text-blue-500 font-bold mt-4 md:mt-0">$12,206 <i class="fa-solid fa-arrow-trend-up ml-1"></i></div>
+                    </div>
+                    <div id="cost-chart" class="h-[250px] w-full"></div>
+                </div>
+
+                <!-- Feature: People -->
+                <div class="md:col-span-4 bg-neutral-900 rounded-[3rem] overflow-hidden relative group">
+                    <img class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" src="https://images.unsplash.com/photo-1627490601633-1b45a55e13b6?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGdyb3VwJTIwZGl2ZXJzZSUyMHRyYXZlbGVycyUyMHNpdHRpbmclMjBhcm91bmQlMjBjYW1wZmlyZXxlbnwxfHx8fDE3OTUzODYwODJ8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="group of diverse travelers sitting around a campfire at night, warm glow" />
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end text-white">
+                        <div class="w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Verified Community</h3>
+                        <p class="text-white/60 text-xs">Only real travelers with verified backgrounds for your safety.</p>
+                    </div>
+                </div>
+
+                <!-- Feature: Safety -->
+                <div class="md:col-span-4 bg-neutral-900 rounded-[3rem] overflow-hidden relative group">
+                    <img class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" src="https://images.unsplash.com/photo-1582641857491-7e9987c2e415?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGFsdGl0dWRlJTIwd2luZG93JTIwc3Vuc2V0JTIwY29sb3JzJTIwaG9yaXpvbnxlbnwxfHx8fDE3OTUzODYwODJ8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="view from a high altitude window of sunset colors over the horizon" />
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end text-white">
+                        <div class="w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Travel Safer</h3>
+                        <p class="text-white/60 text-xs">Smart notifications and real-time security updates for every leg of your journey.</p>
+                    </div>
+                </div>
+
+                <!-- Feature: Itinerary -->
+                <div class="md:col-span-8 bg-white rounded-[3rem] p-10 border border-neutral-100 shadow-sm overflow-hidden">
+                    <div class="flex items-center justify-between mb-8">
+                        <h3 class="text-2xl font-bold">Planned Itineraries</h3>
+                        <span class="text-xs font-bold text-neutral-400 uppercase tracking-widest">Active Plans</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-4 bg-neutral-50 rounded-2xl">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-500">
+                                    <i class="fa-solid fa-mountain-sun"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm">Himalayan Peak Trek</h4>
+                                    <p class="text-[10px] text-neutral-400">Oct 12 - Oct 25</p>
+                                </div>
+                            </div>
+                            <div class="flex -space-x-2">
+                                <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-8 h-8 rounded-full border-2 border-white">
+                                <img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-8 h-8 rounded-full border-2 border-white">
+                                <div class="w-8 h-8 rounded-full border-2 border-white bg-neutral-200 flex items-center justify-center text-[10px] font-bold">+4</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-neutral-50 rounded-2xl">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-green-500">
+                                    <i class="fa-solid fa-compass"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm">Amalfi Coast Drive</h4>
+                                    <p class="text-[10px] text-neutral-400">Sept 05 - Sept 12</p>
+                                </div>
+                            </div>
+                            <div class="flex -space-x-2">
+                                <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-8 h-8 rounded-full border-2 border-white">
+                                <img src="https://images.unsplash.com/photo-1674932668403-33398b81c92f?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDZ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-8 h-8 rounded-full border-2 border-white">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end features -->
+
+    <!-- block:start process -->
+    <section id="how-it-works" class="py-32 px-6 bg-neutral-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="serif text-4xl md:text-5xl font-bold mb-20">How Roamia Works</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white p-10 rounded-[3rem] border border-neutral-100 flex flex-col items-center text-center group hover:bg-blue-50 transition-colors">
+                    <div class="w-24 h-24 mb-8 bg-blue-50 rounded-full flex items-center justify-center group-hover:bg-white transition-colors">
+                        <i class="fa-solid fa-magnifying-glass-location text-3xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-4 leading-tight">Find Like-Minded<br>Explorers</h3>
+                    <p class="text-xs text-neutral-500 leading-relaxed">Search through thousands of profiles based on interests and destination.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-white p-10 rounded-[3rem] border border-neutral-100 flex flex-col items-center text-center group hover:bg-blue-50 transition-colors">
+                    <div class="w-24 h-24 mb-8 bg-blue-50 rounded-full flex items-center justify-center group-hover:bg-white transition-colors">
+                        <i class="fa-solid fa-comments text-3xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-4 leading-tight">Sync Your<br>Vibe</h3>
+                    <p class="text-xs text-neutral-500 leading-relaxed">Start a private chat with your matched traveler to discuss plans and pace.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-white p-10 rounded-[3rem] border border-neutral-100 flex flex-col items-center text-center group hover:bg-blue-50 transition-colors">
+                    <div class="w-24 h-24 mb-8 bg-blue-50 rounded-full flex items-center justify-center group-hover:bg-white transition-colors">
+                        <i class="fa-solid fa-plane-departure text-3xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-4 leading-tight">Depart On<br>Schedule</h3>
+                    <p class="text-xs text-neutral-500 leading-relaxed">Connect before the trip so you hit the ground running with no surprises.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="bg-white p-10 rounded-[3rem] border border-neutral-100 flex flex-col items-center text-center group hover:bg-blue-50 transition-colors">
+                    <div class="w-24 h-24 mb-8 bg-blue-50 rounded-full flex items-center justify-center group-hover:bg-white transition-colors">
+                        <i class="fa-solid fa-users text-3xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-4 leading-tight">Global Trusted<br>Network</h3>
+                    <p class="text-xs text-neutral-500 leading-relaxed">Join a verified network of enthusiasts who share your wanderlust.</p>
+                </div>
+            </div>
+
+            <a href="contact.html" class="inline-block mt-16 bg-blue-500 text-white px-12 py-4 rounded-full font-bold shadow-lg hover:bg-blue-600 transition-colors">
+                Get Started
+            </a>
+        </div>
+    </section>
+    <!-- block:end process -->
+
+    <!-- block:start gallery -->
+    <section id="matching" class="py-32 px-6 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center mb-20">
+            <span class="inline-block bg-blue-50 text-blue-500 px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6">Discovery</span>
+            <h2 class="serif text-4xl md:text-6xl font-bold leading-tight">Match Based On<br>Pure Compatibility</h2>
+        </div>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Profile Card (Floating) -->
+            <div class="lg:col-span-4 flex flex-col space-y-6">
+                <div class="bg-white p-6 rounded-3xl shadow-xl border border-neutral-100 tilted-card">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-14 h-14 rounded-full border-2 border-blue-500 p-0.5">
+                        <div>
+                            <h4 class="font-bold">Elias Thorne</h4>
+                            <p class="text-[10px] text-neutral-400">Professional Climber</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-center">
+                        <div class="bg-neutral-50 p-3 rounded-2xl">
+                            <div class="text-lg font-bold">98%</div>
+                            <div class="text-[8px] uppercase tracking-widest text-neutral-400">Match</div>
+                        </div>
+                        <div class="bg-neutral-50 p-3 rounded-2xl">
+                            <div class="text-lg font-bold">12k</div>
+                            <div class="text-[8px] uppercase tracking-widest text-neutral-400">Followers</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-500 p-6 rounded-3xl shadow-xl text-white tilted-card">
+                    <h4 class="font-bold mb-2">Upcoming Expeditions</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-2 text-xs">
+                            <i class="fa-solid fa-location-dot opacity-60"></i>
+                            <span>Patagonia, Chile</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-xs">
+                            <i class="fa-solid fa-calendar opacity-60"></i>
+                            <span>October 2024</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Central Image Section -->
+            <div class="lg:col-span-4 flex flex-col space-y-8">
+                <div class="h-[400px] rounded-[3rem] overflow-hidden shadow-2xl relative group">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="https://images.unsplash.com/photo-1760716052949-3c7b374a2de1?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHRyYXZlbGVyJTIwYmVhbmllJTIwYmFja3BhY2slMjBzdGFuZGluZyUyMGFscGluZSUyMGxhbmRzY2FwZXxlbnwxfHx8fDE3OTUzODYwODN8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="traveler with beanie and backpack standing in alpine landscape, looking away" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                </div>
+                <div class="h-[300px] rounded-[3rem] overflow-hidden shadow-2xl relative group">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="https://images.unsplash.com/photo-1789021883954-0efbed6a6467?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGFkdmVudHVyZXIlMjBibHVlJTIwamFja2V0JTIwaGlraW5nJTIwc3RlZXB8ZW58MXx8fHwxNzk1Mzg2MTg3fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="adventurer in blue jacket hiking up a steep hill, bright daylight" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                </div>
+            </div>
+
+            <!-- Right Profile Selection -->
+            <div class="lg:col-span-4 flex flex-col space-y-6">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="aspect-square rounded-3xl overflow-hidden border-2 border-white shadow-lg">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1617206710131-4e2f87491eb1?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIwZmVtYWxlJTIwdHJhdmVsZXIlMjBzdW4lMjBoYXQlMjBzbWlsaW5nfGVufDF8fHx8MTc5NTM4NjA4NHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="portrait of a female traveler with a sun hat, smiling" />
+                    </div>
+                    <div class="aspect-square rounded-3xl overflow-hidden border-2 border-white shadow-lg">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1505778276668-26b3ff7af103?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHRyYXZlbGVyJTIwaGFuZCUyMGhvbGRpbmclMjBjb21wYXNzfGVufDF8fHx8MTc5NTM4NjA4NHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="close up of a traveler's hand holding a compass" />
+                    </div>
+                    <div class="aspect-square rounded-3xl overflow-hidden border-2 border-white shadow-lg">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1693219190614-de5b896e475f?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGdyb3VwJTIwcGVvcGxlJTIwdHJla2tpbmclMjBzYW5keSUyMHRyYWlsfGVufDF8fHx8MTc5NTM4NjA4NXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="group of people trekking on a sandy trail" />
+                    </div>
+                    <div class="aspect-square rounded-3xl bg-neutral-100 border-2 border-white shadow-lg flex items-center justify-center text-neutral-400 text-3xl">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-[2.5rem] shadow-xl border border-neutral-100">
+                    <p class="text-sm italic leading-relaxed text-neutral-600 mb-6">
+                        "Finding someone who matches my hiking pace and love for astro-photography was impossible until I used Roamia. Best trip ever!"
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <img src="https://images.unsplash.com/photo-1533933269825-da140ad3132f?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-10 h-10 rounded-full">
+                        <div>
+                            <div class="font-bold text-xs">Sarah Jenkins</div>
+                            <div class="text-[8px] uppercase font-bold text-neutral-300">Adventure Blogger</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end gallery -->
+
+    <!-- block:start reviews -->
+    <section id="testimonials" class="py-32 px-6 bg-neutral-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="serif text-4xl md:text-5xl font-bold mb-20">Voice of the Community</h2>
+
+            <!-- Central Featured Testimonial -->
+            <div class="relative max-w-4xl mx-auto flex flex-col items-center">
+                <!-- Avatar Circle -->
+                <div class="flex items-center justify-center -space-x-4 mb-12">
+                    <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-16 h-16 rounded-full border-4 border-white shadow-lg scale-75">
+                    <img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-16 h-16 rounded-full border-4 border-white shadow-lg scale-90">
+                    <div class="relative w-28 h-28 rounded-full border-4 border-white shadow-xl overflow-hidden z-10">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1574212674875-ff96d2274b66?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIwaGFwcHklMjB0cmF2ZWxlciUyMHN1bmdsYXNzZXMlMjB3aW50ZXIlMjBnZWFyfGVufDF8fHx8MTc5NTM4NjA4NXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="portrait of a happy traveler with sunglasses and winter gear" />
+                    </div>
+                    <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-16 h-16 rounded-full border-4 border-white shadow-lg scale-90">
+                    <img src="https://images.unsplash.com/photo-1674932668403-33398b81c92f?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDZ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-16 h-16 rounded-full border-4 border-white shadow-lg scale-75">
+                </div>
+
+                <blockquote class="text-2xl md:text-3xl font-medium leading-relaxed text-neutral-800 mb-10 max-w-2xl italic">
+                    "Meet real travelers who share your vibe. Match on interests, style, and start planning adventures together. Roamia changed how I see the world."
+                </blockquote>
+
+                <a href="about.html" class="bg-white px-8 py-2 rounded-full border border-neutral-200 text-xs font-bold uppercase tracking-widest shadow-sm hover:border-blue-400 transition-colors">
+                    Meet The Community
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- block:end reviews -->
+
+    <!-- block:start about -->
+    <section id="safety" class="py-32 px-6 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="relative">
+                    <div class="aspect-square rounded-[3.5rem] bg-blue-50 relative overflow-hidden">
+                        <div class="absolute inset-10 bg-white rounded-[2.5rem] shadow-2xl p-8 flex flex-col justify-between">
+                            <div class="flex items-center justify-between">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-500">
+                                    <i class="fa-solid fa-shield-check text-xl"></i>
+                                </div>
+                                <span class="text-[10px] font-bold uppercase tracking-widest text-green-500">Identity Verified</span>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="h-4 bg-neutral-100 rounded-full w-3/4"></div>
+                                <div class="h-4 bg-neutral-100 rounded-full w-1/2"></div>
+                            </div>
+                            <div class="pt-8 border-t border-neutral-50 flex items-center space-x-4">
+                                <img src="https://images.unsplash.com/photo-1509460913899-515f1df34fea?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDh8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-10 h-10 rounded-full">
+                                <div>
+                                    <div class="text-xs font-bold">Marcus Thorne</div>
+                                    <div class="text-[8px] text-neutral-400">Verified Member since 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Decorative circles -->
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-200/30 rounded-full blur-3xl"></div>
+                        <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-200/30 rounded-full blur-3xl"></div>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <span class="text-xs font-bold uppercase tracking-[0.3em] text-blue-500 block">Trust & Security</span>
+                    <h2 class="serif text-4xl md:text-5xl font-bold leading-tight">Travel With Absolute<br>Peace of Mind</h2>
+                    <p class="text-neutral-500 text-sm leading-relaxed max-w-md">
+                        We prioritize your safety above all else. Our multi-layered verification process ensures that every explorer on Roamia is who they say they are.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-[10px] text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm">Biometric Identity Sync</h4>
+                                <p class="text-xs text-neutral-400">Government-issued ID and live facial recognition for all members.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-[10px] text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm">Community Endorsements</h4>
+                                <p class="text-xs text-neutral-400">Transparent review system where travelers rate each other's reliability.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-[10px] text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm">24/7 SOS Concierge</h4>
+                                <p class="text-xs text-neutral-400">Direct access to emergency support wherever your journey takes you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end about -->
+
+    <!-- block:start demo -->
+    <section id="mobile-app" class="py-32 px-6 bg-neutral-900 rounded-[2rem] sm:rounded-[4rem] mx-3 sm:mx-6 my-12 overflow-hidden relative">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-500 to-transparent"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="space-y-10">
+                <h2 class="serif text-4xl md:text-6xl text-white font-bold leading-tight">Roamia In Your<br>Pocket</h2>
+                <p class="text-white/60 text-lg leading-relaxed max-w-md">
+                    Take the community with you. Match, chat, and manage your itineraries on the go with our award-winning mobile experience.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-white text-black px-8 py-4 rounded-2xl flex items-center space-x-3 hover:scale-105 transition-transform">
+                        <i class="fa-brands fa-apple text-2xl"></i>
+                        <div class="text-left">
+                            <div class="text-[8px] uppercase font-bold opacity-40">Download on the</div>
+                            <div class="text-sm font-bold">App Store</div>
+                        </div>
+                    </button>
+                    <button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-2xl flex items-center space-x-3 hover:scale-105 transition-transform">
+                        <i class="fa-brands fa-google-play text-2xl"></i>
+                        <div class="text-left">
+                            <div class="text-[8px] uppercase font-bold opacity-40">Get it on</div>
+                            <div class="text-sm font-bold">Google Play</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center">
+                <!-- Phone Mockup Simulation -->
+                <div class="relative w-[300px] h-[600px] bg-neutral-800 rounded-[3rem] border-[8px] border-neutral-700 shadow-2xl overflow-hidden">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-neutral-700 rounded-b-2xl z-20"></div>
+                    <div class="h-full w-full bg-white p-6 pt-10 flex flex-col space-y-6">
+                        <div class="flex items-center justify-between">
+                            <div class="text-xs font-bold">Explore</div>
+                            <i class="fa-solid fa-magnifying-glass text-xs opacity-30"></i>
+                        </div>
+                        <div class="h-32 rounded-2xl bg-blue-50 overflow-hidden relative">
+                            <img class="w-full h-full object-cover opacity-80" src="https://images.unsplash.com/photo-1606152536277-5aa1fd33e150?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGNpdHklMjBzdHJlZXQlMjBuaWdodCUyMG5lb24lMjBsaWdodHN8ZW58MXx8fHwxNzk1Mzg2MDg1fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="vibrant city street at night, neon lights" />
+                            <div class="absolute bottom-2 left-2 text-[10px] font-bold text-white">Tokyo, Japan</div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="text-[10px] font-bold uppercase tracking-widest text-neutral-400">Nearby Matches</div>
+                            <div class="flex -space-x-2">
+                                <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-10 h-10 rounded-full border-2 border-white">
+                                <img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-10 h-10 rounded-full border-2 border-white">
+                                <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-10 h-10 rounded-full border-2 border-white">
+                            </div>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-end">
+                            <div class="p-4 bg-neutral-50 rounded-2xl border border-neutral-100">
+                                <div class="text-[10px] font-bold mb-1">New Message from Elias</div>
+                                <div class="text-[8px] text-neutral-400 italic">"Ready for the trek?"</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Floating notifications -->
+                <div class="absolute top-20 -right-10 bg-white p-4 rounded-2xl shadow-xl border border-neutral-100 hidden md:block">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white">
+                            <i class="fa-solid fa-location-dot text-xs"></i>
+                        </div>
+                        <div class="text-[10px] font-bold">Match nearby!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end demo -->
+
+    <!-- block:start cta -->
+    <section id="join" class="py-32 px-6 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="serif text-4xl md:text-7xl font-bold leading-none mb-8">Join The Global<br>Traveler Network</h2>
+            <a href="pricing.html" class="inline-block bg-neutral-900 text-white px-12 py-5 rounded-full font-bold shadow-2xl hover:scale-105 transition-transform mb-20">
+                Get Started Now
+            </a>
+
+            <!-- Tilted Image Gallery -->
+            <div class="flex justify-center -space-x-6 sm:-space-x-12 mt-12 pb-20 pt-10 px-4 overflow-hidden">
+                <div class="w-36 sm:w-64 h-52 sm:h-80 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white tilted-card rotate-[-12deg] z-10 relative flex-shrink-0">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1616937089238-60829b853a27?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHRyYXZlbGVyJTIwc2tpJTIwZ29nZ2xlcyUyMGhlbG1ldCUyMHNub3d5fGVufDF8fHx8MTc5NTM4NjA4Nnww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="traveler with ski goggles and helmet, snowy background" />
+                </div>
+                <div class="w-36 sm:w-64 h-52 sm:h-80 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white tilted-card rotate-[-4deg] z-20 relative -mt-4 sm:-mt-10 flex-shrink-0">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1486828091931-b1629e807216?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHdvbWFuJTIwd2hpdGUlMjBwdWZmZXIlMjBqYWNrZXQlMjBzaXR0aW5nJTIwbW91bnRhaW5zfGVufDF8fHx8MTc5NTM4NjA4N3ww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="woman in white puffer jacket sitting in mountains, sunny day" />
+                </div>
+                <div class="w-36 sm:w-64 h-52 sm:h-80 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white tilted-card rotate-[6deg] z-10 relative mt-2 sm:mt-4 flex-shrink-0">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1641488294680-d97e18508128?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGhpa2VyJTIwb3JhbmdlJTIwamFja2V0JTIwbG9va2luZyUyMGF3YXklMjBjYW1lcmF8ZW58MXx8fHwxNzk1Mzg2MDg3fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="hiker in orange jacket looking away from camera" />
+                </div>
+                <div class="w-36 sm:w-64 h-52 sm:h-80 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white tilted-card rotate-[15deg] z-30 relative -mt-4 sm:-mt-8 flex-shrink-0">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1637152851930-e95d1a31acef?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBlcnNvbiUyMHN0eWxpc2glMjBtb3VudGFpbiUyMGV5ZXdlYXJ8ZW58MXx8fHwxNzk1Mzg2MDg3fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="close up of a person with stylish mountain eyewear" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end cta -->
+
+    <!-- block:start footer -->
+    <footer id="footer" class="bg-neutral-50 pt-32 pb-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-32">
+                <div class="lg:col-span-1">
+                    <h3 class="text-2xl font-bold serif mb-6">Newsletter</h3>
+                    <p class="text-xs text-neutral-500 leading-relaxed mb-8">Get the latest travel tips, match updates, and exclusive destination guides delivered weekly.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Email Address" class="flex-1 bg-white border border-neutral-200 rounded-l-full px-6 py-4 text-xs focus:ring-1 focus:ring-blue-500 outline-none">
+                        <button class="bg-blue-400 text-white px-8 rounded-r-full text-xs font-bold uppercase hover:bg-blue-500 transition-colors">Join</button>
+                    </form>
+                </div>
+                <div>
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-neutral-400 mb-8">Product</h4>
+                    <ul class="space-y-4 text-xs font-medium text-neutral-600">
+                        <li><a href="#features" class="hover:text-blue-500">Features</a></li>
+                        <li><a href="pricing.html" class="hover:text-blue-500">Pricing</a></li>
+                        <li><a href="#safety" class="hover:text-blue-500">Safety Policy</a></li>
+                        <li><a href="#mobile-app" class="hover:text-blue-500">Mobile App</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-neutral-400 mb-8">Company</h4>
+                    <ul class="space-y-4 text-xs font-medium text-neutral-600">
+                        <li><a href="about.html" class="hover:text-blue-500">About Us</a></li>
+                        <li><a href="about.html#careers" class="hover:text-blue-500">Careers</a></li>
+                        <li><a href="#testimonials" class="hover:text-blue-500">Stories</a></li>
+                        <li><a href="about.html#press" class="hover:text-blue-500">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-neutral-400 mb-8">Support</h4>
+                    <ul class="space-y-4 text-xs font-medium text-neutral-600">
+                        <li><a href="contact.html#faq" class="hover:text-blue-500">Help Center</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-500">Contact Us</a></li>
+                        <li><a href="legal.html#privacy" class="hover:text-blue-500">Privacy</a></li>
+                        <li><a href="legal.html#terms" class="hover:text-blue-500">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Large Brand Logo -->
+            <div class="relative border-t border-neutral-200 pt-12 flex flex-col items-center">
+                <h2 class="text-[5rem] sm:text-[12rem] md:text-[20rem] font-bold tracking-tighter text-neutral-900 serif leading-none opacity-10 select-none">roamia</h2>
+                <div class="absolute bottom-20 flex justify-center -space-x-12 z-10 opacity-40">
+                    <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-20 h-20 rounded-full border-4 border-white shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-20 h-20 rounded-full border-4 border-white shadow-lg">
+                    <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" class="w-20 h-20 rounded-full border-4 border-white shadow-lg">
+                </div>
+                <div class="mt-12 text-[10px] font-bold uppercase tracking-[0.5em] text-neutral-400">© 2024 Roamia. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <!-- block:end footer -->
+
+    <script>
+        (function() {
+            const header = document.getElementById('header');
+            const hero = document.getElementById('hero');
+
+            function updateHeader() {
+                if (!header || !hero) return;
+                const threshold = Math.max(hero.offsetHeight - 120, 80);
+                header.classList.toggle('is-scrolled', window.scrollY > threshold);
+            }
+
+            window.addEventListener('scroll', updateHeader, { passive: true });
+            window.addEventListener('resize', updateHeader);
+            updateHeader();
+        })();
+
+        (function() {
+            const toggle = document.querySelector('[data-menu-toggle]');
+            const menu = document.getElementById('mobile-menu');
+            if (!toggle || !menu) return;
+
+            function setOpen(open) {
+                menu.hidden = !open;
+                toggle.setAttribute('aria-expanded', String(open));
+            }
+
+            toggle.addEventListener('click', function() { setOpen(menu.hidden); });
+            menu.addEventListener('click', function(event) { if (event.target.closest('a')) setOpen(false); });
+            document.addEventListener('keydown', function(event) { if (event.key === 'Escape') setOpen(false); });
+        })();
+
+        window.addEventListener('load', function() {
+            try {
+                const data = [{
+                    type: 'scatter',
+                    mode: 'lines',
+                    fill: 'tozeroy',
+                    x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                    y: [4000, 4500, 3800, 6000, 5500, 8000, 12206],
+                    line: { color: '#60a5fa', width: 4, shape: 'spline' },
+                    fillcolor: 'rgba(96, 165, 250, 0.1)'
+                }];
+
+                const layout = {
+                    margin: { t: 10, r: 10, b: 40, l: 40 },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    showlegend: false,
+                    xaxis: {
+                        showgrid: false,
+                        zeroline: false,
+                        tickfont: { size: 10, color: '#9ca3af' }
+                    },
+                    yaxis: {
+                        showgrid: true,
+                        gridcolor: 'rgba(0,0,0,0.05)',
+                        zeroline: false,
+                        tickfont: { size: 10, color: '#9ca3af' }
+                    }
+                };
+
+                const config = { responsive: true, displayModeBar: false, displaylogo: false };
+                Plotly.newPlot('cost-chart', data, layout, config);
+            } catch(e) {
+                console.error("Plotly Error:", e);
+            }
+        });
+    </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=roamia&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

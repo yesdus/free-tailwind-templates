@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Threefold | Tailwind CSS Brand Consultancy Template</title>
+  <meta name="description" content="Threefold is a light, minimal Tailwind CSS template for brand consultancies and strategy studios, with thin geometric type, hatched ribbon graphics, a three-strand services explorer, selected work, a case study, and about and contact pages.">
+  <meta name="keywords" content="Threefold, Tailwind CSS template, HTML website template, brand consultancy template, strategy studio website, consulting template, minimal agency website, case study page, light portfolio">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Threefold | Tailwind CSS Brand Consultancy Template">
+  <meta property="og:description" content="A light, minimal Tailwind CSS template for brand consultancies and strategy studios, with hatched ribbon graphics, a three-strand services explorer, selected work and a case study.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Threefold template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Threefold | Tailwind CSS Brand Consultancy Template">
+  <meta name="twitter:description" content="A light, minimal Tailwind CSS template for brand consultancies and strategy studios, with hatched ribbon graphics, a three-strand services explorer, selected work and a case study.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Threefold template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: { DEFAULT: '#f3f3f1', deep: '#e9e9e6' },
+            graphite: { DEFAULT: '#151515', soft: '#6f6f6b', line: '#d6d6d2' },
+            coral: { DEFAULT: '#ee4c58', deep: '#d53643' },
+            mint: '#6fdcb9'
+          },
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-paper font-sans font-light text-graphite antialiased">
+  <!-- block:start navbar -->
+  <header class="absolute inset-x-0 top-0 z-40">
+    <nav class="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-8 md:px-16 md:py-12" aria-label="Main">
+      <a href="index.html" class="text-2xl font-medium tracking-tight text-coral" aria-current="page">Threefold</a>
+      <div class="flex items-center gap-8">
+        <a href="contact.html" class="hidden text-sm font-normal text-graphite-soft hover:text-graphite sm:inline">Booking spring projects</a>
+        <button type="button" class="group grid h-11 w-11 place-items-center" data-menu-toggle aria-controls="site-menu" aria-expanded="false" aria-label="Open menu">
+          <span class="grid gap-[7px]" aria-hidden="true"><span class="block h-px w-8 bg-graphite transition group-hover:bg-coral"></span><span class="block h-px w-8 bg-graphite transition group-hover:bg-coral"></span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <div id="site-menu" class="fixed inset-0 z-50 hidden overflow-y-auto bg-graphite text-paper" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="mx-auto flex min-h-full max-w-[1400px] flex-col px-6 py-8 md:px-16 md:py-12">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="text-2xl font-medium tracking-tight text-coral">Threefold</a>
+        <button type="button" class="grid h-11 w-11 place-items-center text-2xl hover:text-coral" data-menu-close aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <ul class="my-auto grid gap-2 py-12 text-[clamp(2.75rem,8vw,6rem)] leading-tight">
+          <li><a href="index.html" aria-current="page" class="text-coral">Home</a></li>
+          <li><a href="work.html"  class="hover:text-coral">Work</a></li>
+          <li><a href="about.html"  class="hover:text-coral">Studio</a></li>
+          <li><a href="contact.html"  class="hover:text-coral">Contact</a></li>
+      </ul>
+      <div class="flex flex-wrap justify-between gap-4 border-t border-paper/20 pt-6 text-sm font-normal text-paper/60">
+        <a href="mailto:hello@example.com" class="hover:text-paper">hello@example.com</a>
+        <p>Lisbon &middot; Rotterdam</p>
+      </div>
+    </div>
+  </div>
+  <!-- block:end navbar -->
+
+  <main>
+    <!-- block:start hero -->
+    <section id="top" class="relative flex min-h-[100svh] flex-col justify-end overflow-hidden">
+      <svg class="pointer-events-none absolute -right-[30%] top-0 h-full w-[130%] opacity-60 sm:opacity-100 sm:-right-[12%] sm:w-[85%] lg:right-0 lg:w-[62%]" viewBox="0 0 800 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" data-ribbon>
+        <defs>
+          <pattern id="hero-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)">
+            <line x1="0" y1="0" x2="6" y2="0" stroke="#ee4c58" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <path d="M720 -40 C 520 160, 660 330, 460 500 S 300 800, 180 960" fill="none" stroke="url(#hero-hatch)" stroke-width="92" data-ribbon-layer="14"/>
+        <path d="M430 -40 C 560 180, 380 320, 540 520 S 700 780, 560 960" fill="none" stroke="url(#hero-hatch)" stroke-width="58" opacity=".75" data-ribbon-layer="-10"/>
+        <path d="M300 120 C 420 300, 620 360, 640 620" fill="none" stroke="#6fdcb9" stroke-width="1.5" data-ribbon-layer="22"/>
+        <path d="M820 200 C 640 330, 700 560, 520 720" fill="none" stroke="#ee4c58" stroke-width="1" opacity=".6" data-ribbon-layer="-18"/>
+      </svg>
+      <div class="relative mx-auto w-full max-w-[1400px] px-6 pb-16 pt-40 md:px-16 md:pb-24">
+        <h1 class="max-w-[15ch] text-[clamp(2.5rem,5.6vw,5.25rem)] font-light leading-[1.08] tracking-[-0.01em]">Strategy, craft and experience, woven into one brand.</h1>
+        <div class="mt-12 flex items-end justify-between gap-6">
+          <p class="max-w-sm text-lg text-graphite-soft">An independent brand consultancy for companies that have outgrown their first identity.</p>
+          <a href="#studio" class="hidden shrink-0 text-lg text-graphite-soft hover:text-coral sm:inline">Scroll</a>
+        </div>
+      </div>
+    </section>
+    <!-- block:end hero -->
+
+    <!-- block:start about -->
+    <section id="studio" class="mx-auto max-w-[1400px] px-6 py-24 md:px-16 md:py-36">
+      <div class="grid gap-12 lg:grid-cols-12">
+        <p class="text-sm font-normal uppercase tracking-[0.2em] text-graphite-soft lg:col-span-3">What we do</p>
+        <div class="lg:col-span-9" data-reveal>
+          <p class="text-[clamp(1.6rem,3.2vw,2.9rem)] leading-[1.25]">Most brands are built in pieces: a deck from one firm, a logo from another, a website from a third. We do all three at one table, so the <span class="text-coral">thinking</span>, the <span class="text-coral">look</span> and the <span class="text-coral">feel</span> never drift apart.</p>
+          <dl class="mt-16 grid gap-8 border-t border-graphite-line pt-8 sm:grid-cols-3">
+              <div>
+                <dd class="text-5xl font-extralight">12</dd>
+                <dt class="mt-2 text-base font-normal text-graphite-soft">people, no account managers</dt>
+              </div>
+              <div>
+                <dd class="text-5xl font-extralight">9 yrs</dd>
+                <dt class="mt-2 text-base font-normal text-graphite-soft">as an independent studio</dt>
+              </div>
+              <div>
+                <dd class="text-5xl font-extralight">64</dd>
+                <dt class="mt-2 text-base font-normal text-graphite-soft">brands launched or relaunched</dt>
+              </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <!-- block:end about -->
+
+    <!-- block:start features -->
+    <section id="strands" class="bg-white">
+      <div class="mx-auto grid max-w-[1400px] gap-12 px-6 py-24 md:px-16 md:py-32 lg:grid-cols-12" data-tabs>
+        <div class="lg:col-span-5">
+          <p class="text-sm font-normal uppercase tracking-[0.2em] text-graphite-soft">Three strands</p>
+          <h2 class="mt-6 text-4xl leading-tight md:text-5xl">Pull one, and the other two move.</h2>
+          <div class="mt-10 flex flex-wrap gap-x-8 gap-y-3 border-b border-graphite-line" role="tablist" aria-label="Our three strands">
+              <button type="button" role="tab" id="strand-tab-strategy" aria-controls="strand-panel-strategy" aria-selected="true" data-tab="strategy" class="-mb-px border-b-2 border-transparent pb-4 text-xl text-graphite-soft hover:text-graphite aria-selected:border-coral aria-selected:text-graphite">Strategy</button>
+              <button type="button" role="tab" id="strand-tab-craft" aria-controls="strand-panel-craft" aria-selected="false" data-tab="craft" class="-mb-px border-b-2 border-transparent pb-4 text-xl text-graphite-soft hover:text-graphite aria-selected:border-coral aria-selected:text-graphite">Craft</button>
+              <button type="button" role="tab" id="strand-tab-experience" aria-controls="strand-panel-experience" aria-selected="false" data-tab="experience" class="-mb-px border-b-2 border-transparent pb-4 text-xl text-graphite-soft hover:text-graphite aria-selected:border-coral aria-selected:text-graphite">Experience</button>
+          </div>
+            <div role="tabpanel" id="strand-panel-strategy" aria-labelledby="strand-tab-strategy" data-tab-panel="strategy"  class="pt-8">
+              <p class="text-xl leading-relaxed">We find the one thing your company can say that nobody else can, and prove it with customers before anything is designed.</p>
+              <ul class="mt-8 grid gap-3 text-lg text-graphite-soft">
+                  <li class="flex items-center gap-4"><span class="hatch block h-3 w-8 shrink-0" aria-hidden="true"></span>Positioning and audience research</li>
+                  <li class="flex items-center gap-4"><span class="hatch block h-3 w-8 shrink-0" aria-hidden="true"></span>Brand architecture and naming</li>
+                  <li class="flex items-center gap-4"><span class="hatch block h-3 w-8 shrink-0" aria-hidden="true"></span>Messaging and tone of voice</li>
+                  <li class="flex items-center gap-4"><span class="hatch block h-3 w-8 shrink-0" aria-hidden="true"></span>Launch and rollout planning</li>
+              </ul>
+              <p class="mt-8 text-sm font-normal uppercase tracking-[0.2em] text-graphite-soft">Typically 3 to 5 weeks</p>
+            </div>
+            <div role="tabpanel" id="strand-panel-craft" aria-labelledby="strand-tab-craft" data-tab-panel="craft" hidden class="pt-8">
+              <p class="text-xl leading-relaxed">An identity system drawn to survive real use: small screens, cheap print, busy shelves and people who never read the guidelines.</p>
+              <ul class="mt-8 grid gap-3 text-lg text-graphite-soft">
+                  <li class="flex items-center gap-4"><span class="hatch block h-3 w-8 shrink-0" aria-hidden="true"></span>Logo, type and colour systems</li>
+                  <li class="flex items-center gap-4"><span class="hatch block h-3 w-8 shrink-0" aria-hidden="true"></span>Illustration and art direction</li>
+                  <li class="flex items-center gap-4"><span class="hatch block h-3 w-8 shrink-0" aria-hidden="true"></span>Packaging and environmental design</li>
+                  <li class="flex items-center gap-4"><span class="hatch block h-3 w-8 shrink-0" aria-hidden="true"></span>Guidelines people actually open</li>
+              </ul>
+              <p class="mt-8 text-sm font-normal uppercase tracking-[0.2em] text-graphite-soft">Typically 6 to 9 weeks</p>
+            </div>
+            <div role="tabpanel" id="strand-panel-experience" aria-labelledby="strand-tab-experience" data-tab-panel="experience" hidden class="pt-8">
+              <p class="text-xl leading-relaxed">The brand, built into the places customers meet it. We design and ship the website, the product surface and the first campaign.</p>
+              <ul class="mt-8 grid gap-3 text-lg text-graphite-soft">
+                  <li class="flex items-center gap-4"><span class="hatch block h-3 w-8 shrink-0" aria-hidden="true"></span>Website design and build</li>
+                  <li class="flex items-center gap-4"><span class="hatch block h-3 w-8 shrink-0" aria-hidden="true"></span>Product and interface design</li>
+                  <li class="flex items-center gap-4"><span class="hatch block h-3 w-8 shrink-0" aria-hidden="true"></span>Campaign concepts and content</li>
+                  <li class="flex items-center gap-4"><span class="hatch block h-3 w-8 shrink-0" aria-hidden="true"></span>Design systems and handover</li>
+              </ul>
+              <p class="mt-8 text-sm font-normal uppercase tracking-[0.2em] text-graphite-soft">Typically 8 to 12 weeks</p>
+            </div>
+        </div>
+        <div class="lg:col-span-6 lg:col-start-7">
+          <svg viewBox="0 0 600 520" class="h-auto w-full" role="img" aria-label="Three interwoven strands: strategy, craft and experience" data-strand-active="strategy" data-tabs-reflect>
+            <defs>
+              <pattern id="strand-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-25)">
+                <line x1="0" y1="0" x2="6" y2="0" stroke="#ee4c58" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <path class="strand strand-strategy" d="M20 120 C 160 120, 180 400, 300 400 S 440 120, 580 120"/>
+            <path class="strand strand-craft" d="M20 260 C 140 260, 180 110, 300 110 S 460 400, 580 400"/>
+            <path class="strand strand-experience" d="M20 400 C 160 400, 200 260, 300 260 S 440 260, 580 260"/>
+            <path d="M20 60 C 200 40, 420 480, 580 470" fill="none" stroke="#6fdcb9" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- block:end features -->
+
+    <!-- block:start gallery -->
+    <section id="work" class="mx-auto max-w-[1400px] px-6 py-24 md:px-16 md:py-32">
+      <div class="flex items-end justify-between gap-6">
+        <h2 class="text-4xl leading-tight md:text-5xl">Selected work</h2>
+        <a href="work.html" class="text-lg text-graphite-soft underline decoration-coral underline-offset-8 hover:text-graphite">All projects</a>
+      </div>
+      <div class="mt-14 grid gap-10 lg:grid-cols-12" data-switcher>
+        <div class="lg:col-span-7">
+            <figure data-switch-panel="odda" >
+              <a href="odda-rebrand.html" class="group relative block overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1400&q=80" alt="Shirts and jackets in soft neutral colours on a clothes rail" class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-[1.03]">
+                <span class="hatch absolute bottom-0 left-0 h-10 w-40" aria-hidden="true"></span>
+              </a>
+              <figcaption class="mt-5 flex items-baseline justify-between gap-6 text-lg">
+                <span>Rebrand for a slow-fashion label</span>
+                <a href="odda-rebrand.html" class="shrink-0 text-coral hover:text-coral-deep">View project <i class="fa-solid fa-arrow-right ml-1 text-sm" aria-hidden="true"></i></a>
+              </figcaption>
+            </figure>
+            <figure data-switch-panel="letterhaus" hidden>
+              <a href="work.html" class="group relative block overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=1400&q=80" alt="A tablet showing a sketched capital letter beside a red notebook" class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-[1.03]">
+                <span class="hatch absolute bottom-0 left-0 h-10 w-40" aria-hidden="true"></span>
+              </a>
+              <figcaption class="mt-5 flex items-baseline justify-between gap-6 text-lg">
+                <span>Identity for a type foundry</span>
+                <a href="work.html" class="shrink-0 text-coral hover:text-coral-deep">View project <i class="fa-solid fa-arrow-right ml-1 text-sm" aria-hidden="true"></i></a>
+              </figcaption>
+            </figure>
+            <figure data-switch-panel="counter" hidden>
+              <a href="work.html" class="group relative block overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80" alt="A shop assistant serving a customer at a bright white counter" class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-[1.03]">
+                <span class="hatch absolute bottom-0 left-0 h-10 w-40" aria-hidden="true"></span>
+              </a>
+              <figcaption class="mt-5 flex items-baseline justify-between gap-6 text-lg">
+                <span>Retail experience for a neighbourhood grocer</span>
+                <a href="work.html" class="shrink-0 text-coral hover:text-coral-deep">View project <i class="fa-solid fa-arrow-right ml-1 text-sm" aria-hidden="true"></i></a>
+              </figcaption>
+            </figure>
+            <figure data-switch-panel="plotline" hidden>
+              <a href="work.html" class="group relative block overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=1400&q=80" alt="A hand sketching interface wireframes on a tablet" class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-[1.03]">
+                <span class="hatch absolute bottom-0 left-0 h-10 w-40" aria-hidden="true"></span>
+              </a>
+              <figcaption class="mt-5 flex items-baseline justify-between gap-6 text-lg">
+                <span>Product design for a planning tool</span>
+                <a href="work.html" class="shrink-0 text-coral hover:text-coral-deep">View project <i class="fa-solid fa-arrow-right ml-1 text-sm" aria-hidden="true"></i></a>
+              </figcaption>
+            </figure>
+        </div>
+        <div class="lg:col-span-5" role="tablist" aria-label="Choose a project" aria-orientation="vertical">
+            <button type="button" role="tab" aria-selected="true" data-switch="odda" class="group flex w-full items-baseline justify-between gap-6 border-b border-graphite-line py-6 text-left first:border-t">
+              <span class="text-3xl text-graphite-soft transition group-hover:text-graphite group-aria-selected:text-coral md:text-4xl">Odda</span>
+              <span class="text-sm font-normal text-graphite-soft">2026</span>
+            </button>
+            <button type="button" role="tab" aria-selected="false" data-switch="letterhaus" class="group flex w-full items-baseline justify-between gap-6 border-b border-graphite-line py-6 text-left first:border-t">
+              <span class="text-3xl text-graphite-soft transition group-hover:text-graphite group-aria-selected:text-coral md:text-4xl">Letterhaus</span>
+              <span class="text-sm font-normal text-graphite-soft">2025</span>
+            </button>
+            <button type="button" role="tab" aria-selected="false" data-switch="counter" class="group flex w-full items-baseline justify-between gap-6 border-b border-graphite-line py-6 text-left first:border-t">
+              <span class="text-3xl text-graphite-soft transition group-hover:text-graphite group-aria-selected:text-coral md:text-4xl">Counter &amp; Co</span>
+              <span class="text-sm font-normal text-graphite-soft">2025</span>
+            </button>
+            <button type="button" role="tab" aria-selected="false" data-switch="plotline" class="group flex w-full items-baseline justify-between gap-6 border-b border-graphite-line py-6 text-left first:border-t">
+              <span class="text-3xl text-graphite-soft transition group-hover:text-graphite group-aria-selected:text-coral md:text-4xl">Plotline</span>
+              <span class="text-sm font-normal text-graphite-soft">2024</span>
+            </button>
+        </div>
+      </div>
+    </section>
+    <!-- block:end gallery -->
+
+    <!-- block:start stats -->
+    <section class="border-y border-graphite-line bg-paper-deep">
+      <div class="mx-auto grid max-w-[1400px] gap-12 px-6 py-24 md:px-16 md:py-32 lg:grid-cols-12">
+        <div class="lg:col-span-4">
+          <p class="text-sm font-normal uppercase tracking-[0.2em] text-graphite-soft">A year after launch</p>
+          <h2 class="mt-6 text-4xl leading-tight md:text-5xl">What changes when the strands hold.</h2>
+          <p class="mt-6 text-lg text-graphite-soft">Median results across 21 clients who measured before and after, 2022 to 2025.</p>
+        </div>
+        <dl class="grid gap-10 lg:col-span-7 lg:col-start-6" data-reveal>
+            <div>
+              <div class="flex items-baseline justify-between gap-6">
+                <dt class="text-xl">Unaided brand recall</dt>
+                <dd class="text-4xl font-extralight">+38%</dd>
+              </div>
+              <div class="mt-3 h-6 border-b border-graphite" aria-hidden="true">
+                <div class="bar-fill hatch h-6" style="width: 38%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-baseline justify-between gap-6">
+                <dt class="text-xl">Direct and branded traffic</dt>
+                <dd class="text-4xl font-extralight">+61%</dd>
+              </div>
+              <div class="mt-3 h-6 border-b border-graphite" aria-hidden="true">
+                <div class="bar-fill hatch h-6" style="width: 61%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-baseline justify-between gap-6">
+                <dt class="text-xl">Sales cycle length</dt>
+                <dd class="text-4xl font-extralight">-24%</dd>
+              </div>
+              <div class="mt-3 h-6 border-b border-graphite" aria-hidden="true">
+                <div class="bar-fill hatch-mint h-6" style="width: 24%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-baseline justify-between gap-6">
+                <dt class="text-xl">Hires who cite the brand</dt>
+                <dd class="text-4xl font-extralight">+47%</dd>
+              </div>
+              <div class="mt-3 h-6 border-b border-graphite" aria-hidden="true">
+                <div class="bar-fill hatch h-6" style="width: 47%"></div>
+              </div>
+            </div>
+        </dl>
+      </div>
+    </section>
+    <!-- block:end stats -->
+
+    <!-- block:start reviews -->
+    <section id="words" class="mx-auto max-w-[1400px] px-6 py-24 md:px-16 md:py-36" data-switcher>
+      <p class="text-sm font-normal uppercase tracking-[0.2em] text-graphite-soft">In their words</p>
+        <figure data-switch-panel="0"  class="mt-10">
+          <blockquote class="max-w-5xl text-[clamp(1.6rem,3.4vw,3rem)] leading-[1.25]">&ldquo;They talked us out of the logo we came in asking for and into a position we could actually defend. Wholesale orders doubled within two seasons.&rdquo;</blockquote>
+          <figcaption class="mt-8 text-lg">Ingrid Aasen <span class="text-graphite-soft">&middot; Founder, Odda</span></figcaption>
+        </figure>
+        <figure data-switch-panel="1" hidden class="mt-10">
+          <blockquote class="max-w-5xl text-[clamp(1.6rem,3.4vw,3rem)] leading-[1.25]">&ldquo;One team from the first workshop to the shipped product. Nothing was lost in a handover because there never was one.&rdquo;</blockquote>
+          <figcaption class="mt-8 text-lg">Rafael Monteiro <span class="text-graphite-soft">&middot; CEO, Plotline</span></figcaption>
+        </figure>
+        <figure data-switch-panel="2" hidden class="mt-10">
+          <blockquote class="max-w-5xl text-[clamp(1.6rem,3.4vw,3rem)] leading-[1.25]">&ldquo;Our staff describe the shop the same way our customers do now. That had never been true before.&rdquo;</blockquote>
+          <figcaption class="mt-8 text-lg">Hannah Brecht <span class="text-graphite-soft">&middot; Marketing Director, Counter &amp; Co</span></figcaption>
+        </figure>
+      <div class="mt-10 flex gap-4" role="tablist" aria-label="Choose a client quote">
+          <button type="button" role="tab" aria-selected="true" aria-label="Quote from Ingrid Aasen" data-switch="0" class="rounded-full p-1 opacity-50 ring-1 ring-transparent transition hover:opacity-100 aria-selected:opacity-100 aria-selected:ring-coral">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4MHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-14 w-14 rounded-full object-cover grayscale">
+          </button>
+          <button type="button" role="tab" aria-selected="false" aria-label="Quote from Rafael Monteiro" data-switch="1" class="rounded-full p-1 opacity-50 ring-1 ring-transparent transition hover:opacity-100 aria-selected:opacity-100 aria-selected:ring-coral">
+            <img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-14 w-14 rounded-full object-cover grayscale">
+          </button>
+          <button type="button" role="tab" aria-selected="false" aria-label="Quote from Hannah Brecht" data-switch="2" class="rounded-full p-1 opacity-50 ring-1 ring-transparent transition hover:opacity-100 aria-selected:opacity-100 aria-selected:ring-coral">
+            <img src="https://images.unsplash.com/photo-1601412436009-d964bd02edbc?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwZWxlbmF8ZW58MXx8fHwxNzk1Mzg2MTY2fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-14 w-14 rounded-full object-cover grayscale">
+          </button>
+      </div>
+    </section>
+    <!-- block:end reviews -->
+
+    <!-- block:start clients -->
+    <section class="border-t border-graphite-line" aria-label="Clients">
+      <ul class="mx-auto grid max-w-[1400px] grid-cols-2 gap-x-6 gap-y-8 px-6 py-14 text-2xl text-graphite-soft sm:grid-cols-3 md:px-16 lg:grid-cols-6">
+          <li>Odda</li>
+          <li>Letterhaus</li>
+          <li>Counter &amp; Co</li>
+          <li>Plotline</li>
+          <li>Nordvik</li>
+          <li>Field Notes Co</li>
+      </ul>
+    </section>
+    <!-- block:end clients -->
+
+    <!-- block:start cta -->
+    <section class="relative overflow-hidden bg-white">
+      <span class="hatch absolute -right-10 top-0 hidden h-full w-56 -skew-x-12 opacity-60 md:block" aria-hidden="true"></span>
+      <div class="relative mx-auto max-w-[1400px] px-6 py-24 text-center md:px-16 md:py-36">
+        <h2 class="mx-auto max-w-3xl text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.1]">Outgrown your brand? Let&rsquo;s talk it through.</h2>
+        <p class="mx-auto mt-6 max-w-xl text-lg text-graphite-soft">A first conversation is forty minutes, free, and ends with an honest view on whether you need us at all.</p>
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+          <a href="contact.html" class="rounded-full bg-coral px-8 py-4 text-lg font-normal text-white hover:bg-coral-deep">Start a conversation</a>
+          <a href="work.html" class="rounded-full border border-graphite px-8 py-4 text-lg font-normal hover:bg-graphite hover:text-white">See the work</a>
+        </div>
+      </div>
+    </section>
+    <!-- block:end cta -->
+  </main>
+
+  <!-- block:start footer -->
+  <footer class="border-t border-graphite-line">
+    <div class="mx-auto flex max-w-[1400px] flex-wrap items-center justify-between gap-x-10 gap-y-6 px-6 py-10 md:px-16">
+      <a href="index.html" class="text-2xl font-medium tracking-tight text-coral">Threefold</a>
+      <ul class="flex flex-wrap gap-x-8 gap-y-2 text-base font-normal">
+          <li><a href="index.html" class="text-graphite-soft hover:text-graphite">Home</a></li>
+          <li><a href="work.html" class="text-graphite-soft hover:text-graphite">Work</a></li>
+          <li><a href="about.html" class="text-graphite-soft hover:text-graphite">Studio</a></li>
+          <li><a href="contact.html" class="text-graphite-soft hover:text-graphite">Contact</a></li>
+      </ul>
+      <a href="mailto:hello@example.com" class="text-base font-normal underline decoration-coral underline-offset-4 hover:text-coral">hello@example.com</a>
+      <p class="w-full text-sm font-normal text-graphite-soft lg:w-auto">&copy; 2026 Threefold Studio. Lisbon &middot; Rotterdam.</p>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    // Full-screen menu.
+    (() => {
+      const button = document.querySelector("[data-menu-toggle]");
+      const menu = button && document.getElementById(button.getAttribute("aria-controls"));
+      if (!menu) return;
+      const set = (open) => {
+        button.setAttribute("aria-expanded", String(open));
+        menu.classList.toggle("hidden", !open);
+        document.documentElement.style.overflow = open ? "hidden" : "";
+        if (open) menu.querySelector("[data-menu-close]")?.focus(); else button.focus();
+      };
+      button.addEventListener("click", () => set(true));
+      menu.querySelector("[data-menu-close]")?.addEventListener("click", () => set(false));
+      document.addEventListener("keydown", (event) => { if (event.key === "Escape" && !menu.classList.contains("hidden")) set(false); });
+    })();
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+
+    // Tabs. A [data-tabs-reflect] element inside the group mirrors the active tab, which redraws the strands.
+    document.querySelectorAll("[data-tabs]").forEach((root) => {
+      const tabs = [...root.querySelectorAll("[data-tab]")];
+      const select = (tab) => {
+        tabs.forEach((item) => item.setAttribute("aria-selected", String(item === tab)));
+        root.querySelectorAll("[data-tab-panel]").forEach((panel) => { panel.hidden = panel.dataset.tabPanel !== tab.dataset.tab; });
+        root.querySelectorAll("[data-tabs-reflect]").forEach((target) => { target.dataset.strandActive = tab.dataset.tab; });
+      };
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => select(tab));
+        tab.addEventListener("keydown", (event) => {
+          if (!["ArrowRight", "ArrowLeft"].includes(event.key)) return;
+          event.preventDefault();
+          const next = tabs[(index + (event.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length];
+          next.focus();
+          select(next);
+        });
+      });
+    });
+
+    // Switchers: featured project and client quotes.
+    document.querySelectorAll("[data-switcher]").forEach((root) => {
+      root.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-switch]");
+        if (!button) return;
+        root.querySelectorAll("[data-switch]").forEach((item) => item.setAttribute("aria-selected", String(item === button)));
+        root.querySelectorAll("[data-switch-panel]").forEach((panel) => { panel.hidden = panel.dataset.switchPanel !== button.dataset.switch; });
+      });
+    });
+
+    // Hero ribbons drift with the pointer.
+    (() => {
+      const ribbon = document.querySelector("[data-ribbon]");
+      if (!ribbon || navigator.webdriver || !matchMedia("(pointer: fine)").matches || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      const layers = ribbon.querySelectorAll("[data-ribbon-layer]");
+      layers.forEach((layer) => { layer.style.transition = "transform .6s ease-out"; });
+      addEventListener("pointermove", (event) => {
+        const x = event.clientX / innerWidth - 0.5;
+        const y = event.clientY / innerHeight - 0.5;
+        layers.forEach((layer) => { const depth = Number(layer.dataset.ribbonLayer); layer.style.transform = `translate(${x * depth}px, ${y * depth}px)`; });
+      });
+    })();
+
+    // Filter chips on the work page.
+    document.querySelectorAll("[data-filter-group]").forEach((group) => {
+      const items = group.parentElement.querySelectorAll("[data-filter-items] [data-category]");
+      group.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-filter]");
+        if (!button) return;
+        const filter = button.dataset.filter;
+        group.querySelectorAll("[data-filter]").forEach((chip) => chip.setAttribute("aria-pressed", String(chip === button)));
+        items.forEach((item) => { item.hidden = !(filter === "all" || item.dataset.category.split(" ").includes(filter)); });
+      });
+    });
+
+    // Contact form confirms in place.
+    document.querySelectorAll("[data-contact-form]").forEach((form) => {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const status = form.querySelector("[data-contact-status]");
+        const name = form.querySelector("[name=name]")?.value.trim().split(" ")[0] || "there";
+        const topics = [...form.querySelectorAll("[name=topic]:checked")].map((box) => box.value.toLowerCase());
+        status.textContent = `Thanks, ${name}. We will reply within two working days${topics.length ? ` about ${topics.join(" and ")}` : ""}.`;
+        status.hidden = false;
+        form.reset();
+      });
+    });
+
+    // Copy the studio email.
+    document.querySelectorAll("[data-copy]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const label = button.querySelector("[data-copy-label]");
+        try { await navigator.clipboard.writeText(button.dataset.copy); label.textContent = "Copied"; } catch { label.textContent = button.dataset.copy; }
+        setTimeout(() => { label.textContent = "Copy"; }, 2000);
+      });
+    });
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=threefold&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

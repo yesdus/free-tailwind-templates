@@ -1,0 +1,20 @@
+@view-transition { navigation: auto; }
+    ::view-transition-old(root) { animation: 180ms ease-out both page-fade-out; }
+    ::view-transition-new(root) { animation: 220ms ease-in both page-fade-in; }
+    @keyframes page-fade-out { to { opacity: 0; } }
+    @keyframes page-fade-in { from { opacity: 0; } }
+    html { scroll-behavior: smooth; }
+    [hidden] { display: none !important; }
+    .reveal-ready [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; transition-delay: var(--reveal-delay, 0ms); }
+    .reveal-ready [data-reveal].is-visible { opacity: 1; transform: none; }
+    .scroll-cue { animation: cue 1.8s ease-in-out infinite; transform-origin: top; }
+    @keyframes cue { 0% { transform: scaleY(0); } 50% { transform: scaleY(1); } 100% { transform: scaleY(0); transform-origin: bottom; } }
+    [data-story-step][aria-current="step"] .story-index { color: #e35b4b; }
+    .finder-chip:has(input:checked) { background: #e35b4b; border-color: #e35b4b; color: #fff; }
+    .finder-chip:has(input:focus-visible) { outline: 2px solid #f7d5ce; outline-offset: 2px; }
+    [data-orbit-node][aria-selected="true"] { background: #e35b4b; border-color: #e35b4b; color: #fff; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+      .scroll-cue { animation: none; }
+    }

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights | Trichora</title>
+  <meta name="description" content="Trichora insights: short, evidence-based reads on scalp health, hair loss, routines and what our scan data shows. Browse by topic.">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Insights | Trichora">
+  <meta property="og:description" content="Trichora insights: short, evidence-based reads on scalp health, hair loss, routines and what our scan data shows. Browse by topic.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Trichora template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Insights | Trichora">
+  <meta name="twitter:description" content="Trichora insights: short, evidence-based reads on scalp health, hair loss, routines and what our scan data shows. Browse by topic.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Trichora template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { bark: '#2a2016', coal: '#151310', umber: { DEFAULT: '#8d6a3f', light: '#b48c5c' }, linen: '#ece6dc', fog: '#f4f3f1' },
+          fontFamily: { sans: ['"Hanken Grotesk"', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-bark font-sans text-coal antialiased">
+  <div class="mx-auto max-w-[1360px] bg-white">
+  <header id="top" class="relative z-30">
+    <nav class="grid grid-cols-3 items-center px-5 py-5 md:px-10" aria-label="Main">
+      <a href="index.html" class="w-fit"><svg viewBox="0 0 24 28" class="h-7 w-auto" aria-hidden="true"><path d="M12 2c0 6-4 8-4 13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M12 2c0 6 4 8 4 13" fill="none" stroke="#8d6a3f" stroke-width="2.5" stroke-linecap="round"/><circle cx="12" cy="21" r="5.5" fill="none" stroke="currentColor" stroke-width="2.5"/></svg><span class="sr-only">Trichora home</span></a>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="mx-auto grid h-10 w-14 place-items-center" aria-label="Open menu"><span class="grid gap-1.5" aria-hidden="true"><span class="block h-px w-8 bg-coal"></span><span class="block h-px w-8 bg-coal"></span></span></button>
+      <a href="pricing.html" class="ml-auto bg-umber px-4 py-2 text-sm text-white transition hover:bg-coal">Sign up</a>
+    </nav>
+    <div id="mobile-menu" class="absolute inset-x-0 top-full hidden border-y border-coal/10 bg-white px-5 py-6 shadow-xl md:px-10">
+      <ul class="grid gap-1 md:grid-cols-6">
+          <li><a href="index.html"  class="block py-2 text-2xl transition hover:text-umber ">Home</a></li>
+          <li><a href="platform.html"  class="block py-2 text-2xl transition hover:text-umber ">Platform</a></li>
+          <li><a href="programs.html"  class="block py-2 text-2xl transition hover:text-umber ">Programs</a></li>
+          <li><a href="insights.html" aria-current="page" class="block py-2 text-2xl transition hover:text-umber text-umber">Insights</a></li>
+          <li><a href="pricing.html"  class="block py-2 text-2xl transition hover:text-umber ">Pricing</a></li>
+          <li><a href="contact.html"  class="block py-2 text-2xl transition hover:text-umber ">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    
+  <section class="px-5 pb-10 pt-10 md:px-10">
+    <p class="text-xs font-medium uppercase tracking-widest text-umber">— Insights</p>
+    <h1 class="mt-4 max-w-3xl text-5xl font-medium leading-[1.04] tracking-tight md:text-6xl">Short reads, <span class="text-umber">backed by scans</span></h1>
+  </section>
+
+  <section class="px-5 pb-20 md:px-10" data-topics>
+    <div class="flex flex-wrap gap-6 border-b border-coal/10" role="tablist" aria-label="Topics">
+        <button type="button" role="tab" id="topic-tab-scalp" aria-controls="topic-scalp" aria-selected="true" tabindex="0" class="-mb-px border-b-2 border-transparent pb-3 text-sm text-coal/60 transition hover:text-coal aria-selected:border-umber aria-selected:text-coal">Scalp health</button>
+        <button type="button" role="tab" id="topic-tab-loss" aria-controls="topic-loss" aria-selected="false" tabindex="-1" class="-mb-px border-b-2 border-transparent pb-3 text-sm text-coal/60 transition hover:text-coal aria-selected:border-umber aria-selected:text-coal">Hair loss</button>
+        <button type="button" role="tab" id="topic-tab-routine" aria-controls="topic-routine" aria-selected="false" tabindex="-1" class="-mb-px border-b-2 border-transparent pb-3 text-sm text-coal/60 transition hover:text-coal aria-selected:border-umber aria-selected:text-coal">Routines</button>
+    </div>
+      <div id="topic-scalp" role="tabpanel" aria-labelledby="topic-tab-scalp" class="mt-10 grid gap-8 md:grid-cols-2" >
+          <article class="group">
+            <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?auto=format&fit=crop&w=900&h=560&q=75" alt="Stylist rinsing a client&#39;s hair at a salon basin" class="aspect-[16/10] w-full object-cover transition group-hover:opacity-90">
+            <p class="mt-4 text-xs font-medium uppercase tracking-widest text-umber">Scalp health · 4 min</p>
+            <h2 class="mt-2 text-2xl font-medium tracking-tight">Why a flaky scalp is not always dry</h2>
+            <p class="mt-2 text-coal/60">Build-up and oil can look the same on camera. Here is how the model tells them apart.</p>
+          </article>
+          <article class="group">
+            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&h=560&q=75" alt="Hairdresser washing a client&#39;s hair in a salon" class="aspect-[16/10] w-full object-cover transition group-hover:opacity-90">
+            <p class="mt-4 text-xs font-medium uppercase tracking-widest text-umber">Scalp health · 6 min</p>
+            <h2 class="mt-2 text-2xl font-medium tracking-tight">What 140,000 scans say about washing</h2>
+            <p class="mt-2 text-coal/60">Wash frequency matters less than water temperature, according to our data.</p>
+          </article>
+      </div>
+      <div id="topic-loss" role="tabpanel" aria-labelledby="topic-tab-loss" class="mt-10 grid gap-8 md:grid-cols-2" hidden>
+          <article class="group">
+            <img src="https://images.unsplash.com/photo-1503104834685-7205e8607eb9?auto=format&fit=crop&w=900&h=560&q=75" alt="Woman with very long straight hair on a forest road" class="aspect-[16/10] w-full object-cover transition group-hover:opacity-90">
+            <p class="mt-4 text-xs font-medium uppercase tracking-widest text-umber">Hair loss · 5 min</p>
+            <h2 class="mt-2 text-2xl font-medium tracking-tight">Shedding season is real</h2>
+            <p class="mt-2 text-coal/60">Our members shed 18% more hair in late summer. It is usually temporary.</p>
+          </article>
+          <article class="group">
+            <img src="https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?auto=format&fit=crop&w=900&h=560&q=75" alt="Woman with long hair seen from behind against the sea" class="aspect-[16/10] w-full object-cover transition group-hover:opacity-90">
+            <p class="mt-4 text-xs font-medium uppercase tracking-widest text-umber">Hair loss · 3 min</p>
+            <h2 class="mt-2 text-2xl font-medium tracking-tight">Thinning or just a parting?</h2>
+            <p class="mt-2 text-coal/60">How the density map separates a wide part from early thinning.</p>
+          </article>
+      </div>
+      <div id="topic-routine" role="tabpanel" aria-labelledby="topic-tab-routine" class="mt-10 grid gap-8 md:grid-cols-2" hidden>
+          <article class="group">
+            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=900&h=560&q=75" alt="Hairdresser blow-drying a client&#39;s hair" class="aspect-[16/10] w-full object-cover transition group-hover:opacity-90">
+            <p class="mt-4 text-xs font-medium uppercase tracking-widest text-umber">Routines · 4 min</p>
+            <h2 class="mt-2 text-2xl font-medium tracking-tight">Heat styling without the damage</h2>
+            <p class="mt-2 text-coal/60">Three habits that kept members&#39; breakage scores flat.</p>
+          </article>
+          <article class="group">
+            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=900&h=560&q=75" alt="Young woman with full natural curly hair" class="aspect-[16/10] w-full object-cover transition group-hover:opacity-90">
+            <p class="mt-4 text-xs font-medium uppercase tracking-widest text-umber">Routines · 5 min</p>
+            <h2 class="mt-2 text-2xl font-medium tracking-tight">Curly hair needs different numbers</h2>
+            <p class="mt-2 text-coal/60">Why we score coily and curly hair against its own baseline.</p>
+          </article>
+      </div>
+  </section>
+
+  <script>
+    document.querySelectorAll('[data-topics]').forEach((root) => {
+      const tabs = [...root.querySelectorAll('[role="tab"]')];
+      const select = (tab, focus) => {
+        tabs.forEach((other) => { const on = other === tab; other.setAttribute('aria-selected', String(on)); other.tabIndex = on ? 0 : -1; document.getElementById(other.getAttribute('aria-controls')).hidden = !on; });
+        if (focus) tab.focus();
+      };
+      tabs.forEach((tab, i) => {
+        tab.addEventListener('click', () => select(tab));
+        tab.addEventListener('keydown', (event) => {
+          if (event.key === 'ArrowRight') select(tabs[(i + 1) % tabs.length], true);
+          if (event.key === 'ArrowLeft') select(tabs[(i - 1 + tabs.length) % tabs.length], true);
+        });
+      });
+    });
+  </script>
+
+  </main>
+
+  <footer class="relative overflow-hidden bg-fog px-5 pb-10 pt-16 md:px-10">
+    <div class="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
+      <p class="text-7xl font-semibold leading-none tracking-tighter md:text-9xl">Trichora<sup class="text-3xl">®</sup></p>
+      <div>
+        <p class="text-3xl font-medium leading-tight">Keep your hair <br>on your radar</p>
+        <p class="mt-3 max-w-xs text-sm text-coal/60">Monthly scalp tips and data-led routines, straight to your inbox.</p>
+        <form class="mt-6 flex max-w-xs border-b border-coal/30" data-news-form novalidate>
+          <label for="news-email" class="sr-only">Email</label>
+          <input id="news-email" name="email" type="email" required autocomplete="email" placeholder="Email" class="min-w-0 flex-1 bg-transparent py-2 text-sm placeholder:text-coal/50 focus:outline-none">
+          <button type="submit" class="px-2 text-umber" aria-label="Subscribe"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+        </form>
+        <p class="mt-2 min-h-[1.25rem] text-sm" data-form-status role="status"></p>
+      </div>
+    </div>
+    <a href="#top" class="mt-10 inline-flex items-center gap-2 text-umber" data-back-top><i class="fa-solid fa-arrow-up" aria-hidden="true"></i>Back to top</a>
+    <span class="ticks mt-10 block h-3 text-umber/40" aria-hidden="true"></span>
+    <div class="mt-12 grid gap-8 md:grid-cols-[1fr_auto_auto] md:items-end md:gap-16">
+      <div><p class="text-sm">+1 (800) 555 0127</p><p class="text-2xl font-medium md:text-3xl">care@trichora.app</p></div>
+      <ul class="grid gap-1 text-sm"><li><a href="platform.html" class="hover:text-umber">Platform</a></li><li><a href="programs.html" class="hover:text-umber">Programs</a></li><li><a href="insights.html" class="hover:text-umber">Insights</a></li><li><a href="pricing.html" class="hover:text-umber">Pricing</a></li></ul>
+      <ul class="grid gap-1 text-sm"><li><a href="contact.html" class="hover:text-umber">Instagram</a></li><li><a href="contact.html" class="hover:text-umber">TikTok</a></li><li><a href="contact.html" class="hover:text-umber">YouTube</a></li><li><a href="contact.html" class="hover:text-umber">LinkedIn</a></li></ul>
+    </div>
+    <p class="mt-10 text-xs text-coal/50">&copy; 2026 Trichora Labs. Not a medical diagnosis.</p>
+  </footer>
+  </div>
+
+  <script>
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const watchMotion = !reducedMotion && !navigator.webdriver && 'IntersectionObserver' in window;
+
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-steps]').forEach((root) => {
+      const steps = [...root.querySelectorAll('[data-step]')];
+      steps.forEach((step) => step.addEventListener('click', () => steps.forEach((other) => other.setAttribute('aria-pressed', String(other === step)))));
+    });
+
+    document.querySelectorAll('[data-demo]').forEach((root) => {
+      const readings = [...root.querySelectorAll('[data-reading-value]')];
+      const time = root.querySelector('[data-demo-time]');
+      const phase = root.querySelector('[data-demo-phase]');
+      const label = root.querySelector('[data-demo-label]');
+      const phases = ['Capturing image', 'Mapping follicles', 'Reading oil balance', 'Scoring density'];
+      let timer;
+      const show = (count) => readings.forEach((value, i) => { value.textContent = i < count ? value.dataset.value : '—'; value.parentElement.classList.toggle('border-umber-light', i < count); });
+      const finish = () => { clearInterval(timer); time.textContent = '03:00'; phase.textContent = 'Analysis complete'; label.textContent = 'Run again'; show(readings.length); };
+      root.querySelector('[data-demo-play]').addEventListener('click', () => {
+        clearInterval(timer);
+        show(0);
+        if (reducedMotion || navigator.webdriver) { finish(); return; }
+        let seconds = 0;
+        label.textContent = 'Analysing…';
+        timer = setInterval(() => {
+          seconds += 15;
+          const step = Math.min(3, Math.floor(seconds / 45));
+          time.textContent = `0${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`;
+          phase.textContent = phases[step];
+          show(Math.floor(seconds / 45));
+          if (seconds >= 180) finish();
+        }, 250);
+      });
+    });
+
+    document.querySelectorAll('[data-plans]').forEach((root) => {
+      const tabs = [...root.querySelectorAll('[role="tab"]')];
+      const select = (tab, focus) => {
+        tabs.forEach((other) => { const on = other === tab; other.setAttribute('aria-selected', String(on)); other.tabIndex = on ? 0 : -1; document.getElementById(other.getAttribute('aria-controls')).hidden = !on; });
+        if (focus) tab.focus();
+      };
+      tabs.forEach((tab, i) => {
+        tab.addEventListener('click', () => select(tab));
+        tab.addEventListener('keydown', (event) => {
+          if (event.key === 'ArrowDown') { event.preventDefault(); select(tabs[(i + 1) % tabs.length], true); }
+          if (event.key === 'ArrowUp') { event.preventDefault(); select(tabs[(i - 1 + tabs.length) % tabs.length], true); }
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-quotes]').forEach((root) => {
+      const quotes = [...root.querySelectorAll('[data-quote]')];
+      let current = 0;
+      const show = (index) => {
+        current = (index + quotes.length) % quotes.length;
+        quotes.forEach((quote, i) => { quote.hidden = i !== current; });
+        root.querySelector('[data-quote-index]').textContent = current + 1;
+      };
+      root.querySelector('[data-quote-prev]').addEventListener('click', () => show(current - 1));
+      root.querySelector('[data-quote-next]').addEventListener('click', () => show(current + 1));
+    });
+
+    document.querySelectorAll('[data-faq-toggle]').forEach((button) => button.addEventListener('click', () => {
+      const open = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!open));
+      document.getElementById(button.getAttribute('aria-controls')).hidden = open;
+      button.querySelector('svg, i')?.classList.toggle('rotate-45', !open);
+    }));
+
+    document.querySelectorAll('[data-back-top]').forEach((link) => link.addEventListener('click', (event) => { event.preventDefault(); scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' }); }));
+
+    document.querySelectorAll('[data-news-form]').forEach((form) => {
+      const status = form.parentElement.querySelector('[data-form-status]');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = form.querySelector('[name="email"]');
+        if (!email.value.trim() || !email.checkValidity()) { status.textContent = 'Please enter a valid email address.'; email.focus(); return; }
+        status.textContent = `Subscribed. The next letter goes to ${email.value}.`;
+        form.reset();
+      });
+    });
+
+    if (watchMotion) {
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+      }), { threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach((el) => observer.observe(el));
+    }
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=trichora&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

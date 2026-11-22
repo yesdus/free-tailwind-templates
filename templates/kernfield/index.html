@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kernfield | Tailwind CSS Education Template</title>
+  <meta name="description" content="Kernfield is a bold Tailwind CSS education template for design schools, art academies and short-course studios, with a charcoal and vermilion hero, a hover course index, a term planner with clash warnings, tutors, marquee reviews, myth-or-fact cards, and courses, course detail, talks, about and contact pages.">
+  <meta name="keywords" content="Kernfield, Tailwind CSS template, HTML website template, education template, design school website, art academy, short courses, course catalog, timetable planner, school admissions">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Kernfield | Tailwind CSS Education Template">
+  <meta property="og:description" content="A bold Tailwind CSS template for design schools and short-course studios, with a course index, a term planner, tutors, talks and admissions.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Kernfield template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Kernfield | Tailwind CSS Education Template">
+  <meta name="twitter:description" content="A bold Tailwind CSS template for design schools and short-course studios, with a course index, a term planner, tutors, talks and admissions.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Kernfield template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            char: { DEFAULT: '#2a2826', deep: '#1c1a19', soft: '#3a3735' },
+            vermilion: { DEFAULT: '#ef5a2a', deep: '#c9431a', soft: '#fbd9cc' },
+            stone: { DEFAULT: '#8f8b85', light: '#b7b3ad', pale: '#e8e5e0' }
+          },
+          fontFamily: { sans: ['"Hanken Grotesk"', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-stone-pale font-sans text-char antialiased">
+  <!-- block:start navbar -->
+  <header class="relative z-30 border-t-4 border-vermilion bg-char text-stone-pale">
+    <nav class="mx-auto flex max-w-[1400px] items-center justify-between gap-6 px-5 py-5 md:px-12" aria-label="Main">
+      <a href="index.html" class="flex items-center gap-3 text-xl font-bold tracking-tight" aria-label="Kernfield home">
+        <span class="flex gap-1" aria-hidden="true"><span class="h-3 w-3 rounded-full bg-vermilion"></span><span class="h-3 w-3 rounded-full bg-stone-pale"></span></span>
+        Kernfield
+      </a>
+      <div class="hidden items-center gap-8 lg:flex">
+          <a href="courses.html" class="text-sm font-medium text-stone-light hover:text-vermilion">Courses</a>
+          <a href="brand-identity.html" class="text-sm font-medium text-stone-light hover:text-vermilion">Featured course</a>
+          <a href="talks.html" class="text-sm font-medium text-stone-light hover:text-vermilion">Talks</a>
+          <a href="about.html" class="text-sm font-medium text-stone-light hover:text-vermilion">About</a>
+          <a href="contact.html" class="text-sm font-medium text-stone-light hover:text-vermilion">Contact</a>
+      </div>
+      <a href="contact.html" class="hidden rounded-full bg-vermilion px-5 py-2.5 text-sm font-semibold text-char-deep hover:bg-stone-pale lg:inline-flex">Apply for spring</a>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="grid h-11 w-11 place-items-center rounded-full border border-stone/50 lg:hidden">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-stone/30 px-5 pb-6 lg:hidden">
+      <a href="index.html" aria-current="page" class="block py-3 font-semibold text-vermilion">Home</a>
+        <a href="courses.html" class="block border-t border-stone/20 py-3 font-medium">Courses</a>
+        <a href="brand-identity.html" class="block border-t border-stone/20 py-3 font-medium">Featured course</a>
+        <a href="talks.html" class="block border-t border-stone/20 py-3 font-medium">Talks</a>
+        <a href="about.html" class="block border-t border-stone/20 py-3 font-medium">About</a>
+        <a href="contact.html" class="block border-t border-stone/20 py-3 font-medium">Contact</a>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <main>
+    <!-- block:start hero -->
+    <section id="hero" class="relative overflow-hidden bg-char text-vermilion">
+      <img src="https://images.unsplash.com/photo-1544531585-9847b68c8c86?auto=format&fit=crop&w=1800&q=80" alt="A full lecture hall watching a talk" class="absolute inset-0 h-full w-full object-cover opacity-30 grayscale">
+      <div class="absolute inset-0 bg-gradient-to-r from-char via-char/80 to-char/40" aria-hidden="true"></div>
+      <div class="relative mx-auto max-w-[1400px] px-5 pb-20 pt-14 md:px-12 md:pt-20">
+        <p class="flex items-center gap-2 text-sm font-semibold md:ml-[50%]"><span class="h-1.5 w-1.5 rounded-full bg-vermilion" aria-hidden="true"></span>Open evening — Thursday 20 March, Hall B</p>
+        <h1 class="mt-10 max-w-4xl text-5xl font-semibold leading-[0.95] tracking-tight md:mt-16 md:text-7xl lg:text-8xl">A school for people who make things</h1>
+        <hr class="mt-12 border-vermilion/70">
+        <div class="mt-10 grid gap-10 md:grid-cols-2">
+          <nav aria-label="On this page">
+            <p class="text-sm font-semibold">Jump to</p>
+            <ul class="mt-2 space-y-1 text-sm text-vermilion/80">
+                <li><a href="#courses-index" class="hover:text-stone-pale">Course index</a></li>
+                <li><a href="#planner" class="hover:text-stone-pale">Plan your term</a></li>
+                <li><a href="#tutors" class="hover:text-stone-pale">Tutors</a></li>
+                <li><a href="#voices" class="hover:text-stone-pale">Student voices</a></li>
+                <li><a href="#myths" class="hover:text-stone-pale">Myth or fact</a></li>
+            </ul>
+          </nav>
+          <div>
+            <p class="text-2xl leading-snug md:text-3xl">Evening and weekend courses in type, identity, illustration and interfaces, taught in small studios by people who still do the work. Eleven years in, three hundred students a term.</p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="courses.html" class="rounded-full bg-vermilion px-6 py-3 font-semibold text-char-deep hover:bg-stone-pale">Browse courses</a>
+              <a href="talks.html" class="rounded-full border border-vermilion px-6 py-3 font-semibold hover:bg-vermilion hover:text-char-deep">Free talks</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- block:end hero -->
+
+    <!-- block:start cta -->
+    <section id="apply" class="grain relative overflow-hidden bg-stone text-char-deep">
+      <div class="mx-auto max-w-[1400px] px-5 pt-12 md:px-12">
+        <div class="flex items-center justify-between" aria-hidden="true">
+          <span class="flex gap-3"><span class="h-6 w-6 rounded-full bg-char-deep"></span><span class="h-6 w-6 rounded-full bg-char-deep"></span></span>
+          <span class="h-6 w-6 rounded-full bg-char-deep"></span>
+          <span class="flex gap-3"><span class="h-6 w-6 rounded-full bg-char-deep"></span><span class="h-6 w-6 rounded-full bg-char-deep"></span></span>
+        </div>
+        <div class="mt-14 grid gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:items-end">
+          <h2 class="text-5xl font-semibold leading-[0.95] tracking-tight md:text-7xl">Spring term<br>applications open</h2>
+          <div>
+            <p class="text-lg">Twelve-week courses start on 7 April. Places are first come, first served, and we keep four bursary seats on every course.</p>
+            <p class="mt-4 text-sm font-semibold uppercase tracking-widest">Closes 28 March · <span data-countdown="2027-03-28">a few weeks left</span></p>
+            <a href="contact.html" class="mt-6 inline-flex items-center gap-3 rounded-full bg-char-deep px-6 py-3 font-semibold text-stone-pale hover:bg-vermilion hover:text-char-deep">Start an application <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <hr class="mt-14 border-char-deep/40">
+        <div class="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8">
+            <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=700&q=80" alt="A tablet showing a large letter A beside a red type specimen book" class="aspect-[2/1] w-full rounded-t-full object-cover grayscale transition duration-500 hover:grayscale-0">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=700&q=80" alt="Rows of colour swatches spread across a desk" class="aspect-[2/1] w-full rounded-t-full object-cover grayscale transition duration-500 hover:grayscale-0">
+            <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=700&q=80" alt="Hand sketching interface layouts on a tablet" class="aspect-[2/1] w-full rounded-t-full object-cover grayscale transition duration-500 hover:grayscale-0">
+            <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=700&q=80" alt="Well-used paintbrushes covered in colour" class="aspect-[2/1] w-full rounded-t-full object-cover grayscale transition duration-500 hover:grayscale-0">
+        </div>
+      </div>
+    </section>
+    <!-- block:end cta -->
+
+    <!-- block:start products -->
+    <section id="courses-index" class="relative px-5 py-24 md:px-12" data-hover-list>
+      <div class="mx-auto max-w-[1400px]">
+        <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <h2 class="text-4xl font-semibold tracking-tight md:text-6xl">Course index</h2>
+          <p class="max-w-sm text-char-soft">Twelve weeks, one evening or Saturday a week, eight to fourteen people per studio.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?auto=format&fit=crop&w=700&q=80" alt="" data-hover-img class="pointer-events-none fixed left-0 top-0 z-40 hidden aspect-[4/3] w-72 rounded-t-full object-cover opacity-0 shadow-2xl transition-opacity duration-300 lg:block" aria-hidden="true">
+        <ul class="mt-14 border-t border-char/30">
+            <li>
+              <a href="brand-identity.html" data-hover-item data-src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?auto=format&fit=crop&w=700&q=80" class="group grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-4 border-b border-char/30 py-6 md:grid-cols-[80px_minmax(0,1.4fr)_minmax(0,1fr)_120px_100px] md:gap-6">
+                <span class="text-sm font-semibold text-stone">01</span>
+                <span class="flex items-center gap-4">
+                  <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?auto=format&fit=crop&w=200&q=70" alt="Brand concepts shown on a large desktop monitor" class="h-12 w-16 shrink-0 rounded-t-full object-cover grayscale lg:hidden">
+                  <span class="text-2xl font-semibold tracking-tight transition group-hover:translate-x-2 group-hover:text-vermilion md:text-4xl">Brand identity</span>
+                </span>
+                <span class="hidden text-char-soft md:block">Tuesday evenings</span>
+                <span class="hidden text-char-soft md:block">12 weeks</span>
+                <span class="text-right font-semibold">€780</span>
+              </a>
+            </li>
+            <li>
+              <a href="courses.html" data-hover-item data-src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=700&q=80" class="group grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-4 border-b border-char/30 py-6 md:grid-cols-[80px_minmax(0,1.4fr)_minmax(0,1fr)_120px_100px] md:gap-6">
+                <span class="text-sm font-semibold text-stone">02</span>
+                <span class="flex items-center gap-4">
+                  <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=200&q=70" alt="A tablet showing a large letter A beside a type specimen" class="h-12 w-16 shrink-0 rounded-t-full object-cover grayscale lg:hidden">
+                  <span class="text-2xl font-semibold tracking-tight transition group-hover:translate-x-2 group-hover:text-vermilion md:text-4xl">Type &amp; lettering</span>
+                </span>
+                <span class="hidden text-char-soft md:block">Monday evenings</span>
+                <span class="hidden text-char-soft md:block">12 weeks</span>
+                <span class="text-right font-semibold">€720</span>
+              </a>
+            </li>
+            <li>
+              <a href="courses.html" data-hover-item data-src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=700&q=80" class="group grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-4 border-b border-char/30 py-6 md:grid-cols-[80px_minmax(0,1.4fr)_minmax(0,1fr)_120px_100px] md:gap-6">
+                <span class="text-sm font-semibold text-stone">03</span>
+                <span class="flex items-center gap-4">
+                  <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=200&q=70" alt="Wireframe sketches on a dark blueprint background" class="h-12 w-16 shrink-0 rounded-t-full object-cover grayscale lg:hidden">
+                  <span class="text-2xl font-semibold tracking-tight transition group-hover:translate-x-2 group-hover:text-vermilion md:text-4xl">Interface design</span>
+                </span>
+                <span class="hidden text-char-soft md:block">Wednesday evenings</span>
+                <span class="hidden text-char-soft md:block">12 weeks</span>
+                <span class="text-right font-semibold">€820</span>
+              </a>
+            </li>
+            <li>
+              <a href="courses.html" data-hover-item data-src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&w=700&q=80" class="group grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-4 border-b border-char/30 py-6 md:grid-cols-[80px_minmax(0,1.4fr)_minmax(0,1fr)_120px_100px] md:gap-6">
+                <span class="text-sm font-semibold text-stone">04</span>
+                <span class="flex items-center gap-4">
+                  <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&w=200&q=70" alt="Illustrator drawing on a graphics tablet with colour samples" class="h-12 w-16 shrink-0 rounded-t-full object-cover grayscale lg:hidden">
+                  <span class="text-2xl font-semibold tracking-tight transition group-hover:translate-x-2 group-hover:text-vermilion md:text-4xl">Editorial illustration</span>
+                </span>
+                <span class="hidden text-char-soft md:block">Saturday mornings</span>
+                <span class="hidden text-char-soft md:block">10 weeks</span>
+                <span class="text-right font-semibold">€640</span>
+              </a>
+            </li>
+            <li>
+              <a href="courses.html" data-hover-item data-src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=700&q=80" class="group grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-4 border-b border-char/30 py-6 md:grid-cols-[80px_minmax(0,1.4fr)_minmax(0,1fr)_120px_100px] md:gap-6">
+                <span class="text-sm font-semibold text-stone">05</span>
+                <span class="flex items-center gap-4">
+                  <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=200&q=70" alt="Rows of colour swatches spread across a desk" class="h-12 w-16 shrink-0 rounded-t-full object-cover grayscale lg:hidden">
+                  <span class="text-2xl font-semibold tracking-tight transition group-hover:translate-x-2 group-hover:text-vermilion md:text-4xl">Colour for designers</span>
+                </span>
+                <span class="hidden text-char-soft md:block">Thursday evenings</span>
+                <span class="hidden text-char-soft md:block">6 weeks</span>
+                <span class="text-right font-semibold">€380</span>
+              </a>
+            </li>
+            <li>
+              <a href="courses.html" data-hover-item data-src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=700&q=80" class="group grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-4 border-b border-char/30 py-6 md:grid-cols-[80px_minmax(0,1.4fr)_minmax(0,1fr)_120px_100px] md:gap-6">
+                <span class="text-sm font-semibold text-stone">06</span>
+                <span class="flex items-center gap-4">
+                  <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=200&q=70" alt="Tape, scissors and a rotary cutter on a blue cutting mat" class="h-12 w-16 shrink-0 rounded-t-full object-cover grayscale lg:hidden">
+                  <span class="text-2xl font-semibold tracking-tight transition group-hover:translate-x-2 group-hover:text-vermilion md:text-4xl">Print &amp; bookbinding</span>
+                </span>
+                <span class="hidden text-char-soft md:block">Saturday afternoons</span>
+                <span class="hidden text-char-soft md:block">8 weeks</span>
+                <span class="text-right font-semibold">€520</span>
+              </a>
+            </li>
+        </ul>
+        <a href="courses.html" class="mt-10 inline-flex items-center gap-3 font-semibold text-vermilion-deep hover:text-char">All courses and dates <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+    <!-- block:end products -->
+
+    <!-- block:start demo -->
+    <section id="planner" class="bg-char px-5 py-24 text-stone-pale md:px-12" data-planner>
+      <div class="mx-auto max-w-[1400px]">
+        <div class="grid gap-6 lg:grid-cols-2 lg:items-end">
+          <div>
+            <p class="flex items-center gap-2 text-sm font-semibold text-vermilion"><span class="h-1.5 w-1.5 rounded-full bg-vermilion" aria-hidden="true"></span>Term planner</p>
+            <h2 class="mt-4 text-4xl font-semibold tracking-tight md:text-6xl">Plan your spring week</h2>
+          </div>
+          <p class="text-lg text-stone-light">Pick up to three courses. We draw your week, flag any clashes and take 10% off a second course, 15% off a third.</p>
+        </div>
+        <div class="mt-12 grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+          <fieldset>
+            <legend class="sr-only">Choose courses</legend>
+            <div class="grid gap-3 sm:grid-cols-2">
+                <label class="plan-chip flex cursor-pointer items-center justify-between gap-3 rounded-2xl border border-stone/40 px-4 py-4 transition hover:border-vermilion">
+                  <input type="checkbox" class="sr-only" value="identity" data-plan-course data-name="Brand identity" data-day="Tue" data-time="18:30" data-fee="780" checked>
+                  <span>
+                    <span class="block font-semibold">Brand identity</span>
+                    <span class="text-sm opacity-75">Tue · 18:30</span>
+                  </span>
+                  <span class="font-semibold">€780</span>
+                </label>
+                <label class="plan-chip flex cursor-pointer items-center justify-between gap-3 rounded-2xl border border-stone/40 px-4 py-4 transition hover:border-vermilion">
+                  <input type="checkbox" class="sr-only" value="type" data-plan-course data-name="Type &amp; lettering" data-day="Mon" data-time="18:30" data-fee="720" checked>
+                  <span>
+                    <span class="block font-semibold">Type &amp; lettering</span>
+                    <span class="text-sm opacity-75">Mon · 18:30</span>
+                  </span>
+                  <span class="font-semibold">€720</span>
+                </label>
+                <label class="plan-chip flex cursor-pointer items-center justify-between gap-3 rounded-2xl border border-stone/40 px-4 py-4 transition hover:border-vermilion">
+                  <input type="checkbox" class="sr-only" value="ui" data-plan-course data-name="Interface design" data-day="Wed" data-time="18:30" data-fee="820" >
+                  <span>
+                    <span class="block font-semibold">Interface design</span>
+                    <span class="text-sm opacity-75">Wed · 18:30</span>
+                  </span>
+                  <span class="font-semibold">€820</span>
+                </label>
+                <label class="plan-chip flex cursor-pointer items-center justify-between gap-3 rounded-2xl border border-stone/40 px-4 py-4 transition hover:border-vermilion">
+                  <input type="checkbox" class="sr-only" value="illustration" data-plan-course data-name="Editorial illustration" data-day="Sat" data-time="10:00" data-fee="640" >
+                  <span>
+                    <span class="block font-semibold">Editorial illustration</span>
+                    <span class="text-sm opacity-75">Sat · 10:00</span>
+                  </span>
+                  <span class="font-semibold">€640</span>
+                </label>
+                <label class="plan-chip flex cursor-pointer items-center justify-between gap-3 rounded-2xl border border-stone/40 px-4 py-4 transition hover:border-vermilion">
+                  <input type="checkbox" class="sr-only" value="colour" data-plan-course data-name="Colour for designers" data-day="Tue" data-time="18:30" data-fee="380" >
+                  <span>
+                    <span class="block font-semibold">Colour for designers</span>
+                    <span class="text-sm opacity-75">Tue · 18:30</span>
+                  </span>
+                  <span class="font-semibold">€380</span>
+                </label>
+                <label class="plan-chip flex cursor-pointer items-center justify-between gap-3 rounded-2xl border border-stone/40 px-4 py-4 transition hover:border-vermilion">
+                  <input type="checkbox" class="sr-only" value="print" data-plan-course data-name="Print &amp; bookbinding" data-day="Sat" data-time="14:00" data-fee="520" >
+                  <span>
+                    <span class="block font-semibold">Print &amp; bookbinding</span>
+                    <span class="text-sm opacity-75">Sat · 14:00</span>
+                  </span>
+                  <span class="font-semibold">€520</span>
+                </label>
+            </div>
+            <p class="mt-4 text-sm text-vermilion" data-plan-limit hidden role="status">Three courses is our limit per term. Untick one to swap.</p>
+          </fieldset>
+          <div class="min-w-0">
+            <div class="grid grid-cols-5 gap-2 text-center text-sm">
+                <div class="font-semibold text-stone-light">Mon</div>
+                <div class="font-semibold text-stone-light">Tue</div>
+                <div class="font-semibold text-stone-light">Wed</div>
+                <div class="font-semibold text-stone-light">Thu</div>
+                <div class="font-semibold text-stone-light">Sat</div>
+                <div class="flex min-h-[160px] flex-col gap-2 rounded-2xl bg-char-soft p-2" data-plan-day="Mon"></div>
+                <div class="flex min-h-[160px] flex-col gap-2 rounded-2xl bg-char-soft p-2" data-plan-day="Tue"></div>
+                <div class="flex min-h-[160px] flex-col gap-2 rounded-2xl bg-char-soft p-2" data-plan-day="Wed"></div>
+                <div class="flex min-h-[160px] flex-col gap-2 rounded-2xl bg-char-soft p-2" data-plan-day="Thu"></div>
+                <div class="flex min-h-[160px] flex-col gap-2 rounded-2xl bg-char-soft p-2" data-plan-day="Sat"></div>
+            </div>
+            <p class="mt-4 hidden rounded-2xl bg-vermilion/15 px-4 py-3 text-sm text-vermilion" data-plan-clash role="alert"></p>
+            <div class="mt-6 flex flex-wrap items-end justify-between gap-4 border-t border-stone/30 pt-6">
+              <div>
+                <p class="text-sm text-stone-light"><span data-plan-count>2</span> courses · <span data-plan-discount>10% off the second</span></p>
+                <p class="mt-1 text-5xl font-semibold tracking-tight text-vermilion">€<span data-plan-total>1428</span></p>
+              </div>
+              <a href="contact.html" class="rounded-full bg-vermilion px-6 py-3 font-semibold text-char-deep hover:bg-stone-pale">Apply with this plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- block:end demo -->
+
+    <!-- block:start stats -->
+    <section id="studios" class="px-5 py-24 md:px-12">
+      <div class="mx-auto grid max-w-[1400px] gap-10 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] lg:items-center">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1400&q=80" alt="A bright open studio with long desks and students at work" class="aspect-[4/3] w-full rounded-t-[999px] object-cover grayscale">
+          <div class="absolute bottom-6 left-6 rounded-2xl bg-vermilion px-5 py-4 text-char-deep shadow-lg">
+            <p class="text-4xl font-semibold">4</p>
+            <p class="text-sm font-semibold">studios, open till 22:00</p>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-4xl font-semibold tracking-tight md:text-5xl">Small rooms, real feedback</h2>
+          <p class="mt-5 text-lg text-char-soft">Every course ends with a crit in front of a working designer. Most of our students take a second course; plenty come back to teach.</p>
+          <dl class="mt-10 grid grid-cols-2 gap-x-6 gap-y-8 border-t border-char/30 pt-8">
+              <div class="flex flex-col">
+                <dt class="text-sm text-char-soft">years of evening classes</dt>
+                <dd class="order-first text-4xl font-semibold tracking-tight text-vermilion-deep md:text-5xl">11</dd>
+              </div>
+              <div class="flex flex-col">
+                <dt class="text-sm text-char-soft">alumni in 40 countries</dt>
+                <dd class="order-first text-4xl font-semibold tracking-tight text-vermilion-deep md:text-5xl">3,400</dd>
+              </div>
+              <div class="flex flex-col">
+                <dt class="text-sm text-char-soft">students per studio, at most</dt>
+                <dd class="order-first text-4xl font-semibold tracking-tight text-vermilion-deep md:text-5xl">12</dd>
+              </div>
+              <div class="flex flex-col">
+                <dt class="text-sm text-char-soft">would recommend us to a friend</dt>
+                <dd class="order-first text-4xl font-semibold tracking-tight text-vermilion-deep md:text-5xl">92%</dd>
+              </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <!-- block:end stats -->
+
+    <!-- block:start team -->
+    <section id="tutors" class="bg-stone-light/40 px-5 py-24 md:px-12">
+      <div class="mx-auto max-w-[1400px]">
+        <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <h2 class="text-4xl font-semibold tracking-tight md:text-6xl">Tutors who still ship</h2>
+          <a href="about.html" class="font-semibold text-vermilion-deep hover:text-char">Meet the whole faculty <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="mt-14 grid grid-cols-2 gap-x-5 gap-y-10 lg:grid-cols-4 lg:gap-8">
+            <article class="group" data-reveal style="--reveal-delay: 0ms">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=700&q=80" alt="Portrait of Nadia smiling in a red top" class="aspect-[4/5] w-full rounded-t-full object-cover grayscale transition duration-500 group-hover:grayscale-0">
+              <p class="mt-5 flex items-center gap-2 text-sm font-semibold text-vermilion-deep"><span class="h-1.5 w-1.5 rounded-full bg-vermilion" aria-hidden="true"></span>Brand identity</p>
+              <h3 class="mt-1 text-xl font-semibold md:text-2xl">Nadia Okafor</h3>
+              <p class="mt-1 text-char-soft">Creative director at a branding studio in Leeds</p>
+            </article>
+            <article class="group" data-reveal style="--reveal-delay: 100ms">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=700&q=80" alt="Portrait of Tomás against a grey wall" class="aspect-[4/5] w-full rounded-t-full object-cover grayscale transition duration-500 group-hover:grayscale-0">
+              <p class="mt-5 flex items-center gap-2 text-sm font-semibold text-vermilion-deep"><span class="h-1.5 w-1.5 rounded-full bg-vermilion" aria-hidden="true"></span>Type &amp; lettering</p>
+              <h3 class="mt-1 text-xl font-semibold md:text-2xl">Tomás Rivera</h3>
+              <p class="mt-1 text-char-soft">Type designer with four retail families</p>
+            </article>
+            <article class="group" data-reveal style="--reveal-delay: 200ms">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&q=80" alt="Portrait of Laura in a grey blazer" class="aspect-[4/5] w-full rounded-t-full object-cover grayscale transition duration-500 group-hover:grayscale-0">
+              <p class="mt-5 flex items-center gap-2 text-sm font-semibold text-vermilion-deep"><span class="h-1.5 w-1.5 rounded-full bg-vermilion" aria-hidden="true"></span>Interface design</p>
+              <h3 class="mt-1 text-xl font-semibold md:text-2xl">Laura Bennett</h3>
+              <p class="mt-1 text-char-soft">Product design lead at a health start-up</p>
+            </article>
+            <article class="group" data-reveal style="--reveal-delay: 300ms">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=700&q=80" alt="Portrait of Ines with long hair in warm light" class="aspect-[4/5] w-full rounded-t-full object-cover grayscale transition duration-500 group-hover:grayscale-0">
+              <p class="mt-5 flex items-center gap-2 text-sm font-semibold text-vermilion-deep"><span class="h-1.5 w-1.5 rounded-full bg-vermilion" aria-hidden="true"></span>Editorial illustration</p>
+              <h3 class="mt-1 text-xl font-semibold md:text-2xl">Ines Varga</h3>
+              <p class="mt-1 text-char-soft">Illustrates covers for weekly magazines</p>
+            </article>
+        </div>
+      </div>
+    </section>
+    <!-- block:end team -->
+
+    <!-- block:start reviews -->
+    <section id="voices" class="overflow-hidden bg-char py-24 text-stone-pale">
+      <div class="mx-auto max-w-[1400px] px-5 md:px-12">
+        <h2 class="text-4xl font-semibold tracking-tight md:text-6xl">Student voices</h2>
+      </div>
+      <div class="mt-14 space-y-5">
+          <div class="marquee overflow-hidden">
+            <div class="marquee-track  flex w-max gap-5">
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" >
+                  <blockquote class="text-lg leading-snug">“I left with a real logo system for my sister&#39;s bakery and the confidence to charge for the next one.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Priya S." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Priya S.</span><span class="text-sm text-vermilion">Brand identity</span></span>
+                  </figcaption>
+                </figure>
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" >
+                  <blockquote class="text-lg leading-snug">“Twelve Mondays turned into a font I actually use. The crits were tough and fair.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Jonas K." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Jonas K.</span><span class="text-sm text-vermilion">Type &amp; lettering</span></span>
+                  </figcaption>
+                </figure>
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" >
+                  <blockquote class="text-lg leading-snug">“My tutor reviewed my portfolio twice after the course ended. Nobody asked her to.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1509460913899-515f1df34fea?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDh8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Mei L." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Mei L.</span><span class="text-sm text-vermilion">Interface design</span></span>
+                  </figcaption>
+                </figure>
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" >
+                  <blockquote class="text-lg leading-snug">“I bound my grandmother&#39;s recipes into a book for the whole family. Best Saturdays of the year.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1601412436009-d964bd02edbc?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwZWxlbmF8ZW58MXx8fHwxNzk1Mzg2MTY2fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Ruth A." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Ruth A.</span><span class="text-sm text-vermilion">Print &amp; bookbinding</span></span>
+                  </figcaption>
+                </figure>
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" aria-hidden="true">
+                  <blockquote class="text-lg leading-snug">“I left with a real logo system for my sister&#39;s bakery and the confidence to charge for the next one.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Priya S." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Priya S.</span><span class="text-sm text-vermilion">Brand identity</span></span>
+                  </figcaption>
+                </figure>
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" aria-hidden="true">
+                  <blockquote class="text-lg leading-snug">“Twelve Mondays turned into a font I actually use. The crits were tough and fair.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Jonas K." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Jonas K.</span><span class="text-sm text-vermilion">Type &amp; lettering</span></span>
+                  </figcaption>
+                </figure>
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" aria-hidden="true">
+                  <blockquote class="text-lg leading-snug">“My tutor reviewed my portfolio twice after the course ended. Nobody asked her to.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1509460913899-515f1df34fea?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDh8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Mei L." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Mei L.</span><span class="text-sm text-vermilion">Interface design</span></span>
+                  </figcaption>
+                </figure>
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" aria-hidden="true">
+                  <blockquote class="text-lg leading-snug">“I bound my grandmother&#39;s recipes into a book for the whole family. Best Saturdays of the year.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1601412436009-d964bd02edbc?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwZWxlbmF8ZW58MXx8fHwxNzk1Mzg2MTY2fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Ruth A." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Ruth A.</span><span class="text-sm text-vermilion">Print &amp; bookbinding</span></span>
+                  </figcaption>
+                </figure>
+            </div>
+          </div>
+          <div class="marquee overflow-hidden">
+            <div class="marquee-track reverse flex w-max gap-5">
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" >
+                  <blockquote class="text-lg leading-snug">“Small studio, big ideas. I got my first paid commission in week nine.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Daniel O." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Daniel O.</span><span class="text-sm text-vermilion">Editorial illustration</span></span>
+                  </figcaption>
+                </figure>
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" >
+                  <blockquote class="text-lg leading-snug">“Six weeks that changed how I see every poster on the underground.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1674932668403-33398b81c92f?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDZ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Hana M." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Hana M.</span><span class="text-sm text-vermilion">Colour for designers</span></span>
+                  </figcaption>
+                </figure>
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" >
+                  <blockquote class="text-lg leading-snug">“Better than the master&#39;s module I paid four times as much for.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4MHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Leo B." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Leo B.</span><span class="text-sm text-vermilion">Brand identity</span></span>
+                  </figcaption>
+                </figure>
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" >
+                  <blockquote class="text-lg leading-snug">“Changed careers from accounting to product design in under a year.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1684598273417-2d07e1429a6c?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIweXVpJTIwdGFuYWthfGVufDF8fHx8MTc5NTM4NjE3N3ww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Sara V." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Sara V.</span><span class="text-sm text-vermilion">Interface design</span></span>
+                  </figcaption>
+                </figure>
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" aria-hidden="true">
+                  <blockquote class="text-lg leading-snug">“Small studio, big ideas. I got my first paid commission in week nine.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Daniel O." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Daniel O.</span><span class="text-sm text-vermilion">Editorial illustration</span></span>
+                  </figcaption>
+                </figure>
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" aria-hidden="true">
+                  <blockquote class="text-lg leading-snug">“Six weeks that changed how I see every poster on the underground.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1674932668403-33398b81c92f?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDZ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Hana M." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Hana M.</span><span class="text-sm text-vermilion">Colour for designers</span></span>
+                  </figcaption>
+                </figure>
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" aria-hidden="true">
+                  <blockquote class="text-lg leading-snug">“Better than the master&#39;s module I paid four times as much for.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4MHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Leo B." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Leo B.</span><span class="text-sm text-vermilion">Brand identity</span></span>
+                  </figcaption>
+                </figure>
+                <figure class="flex w-[340px] shrink-0 flex-col justify-between rounded-3xl border border-stone/30 p-6 md:w-[420px]" aria-hidden="true">
+                  <blockquote class="text-lg leading-snug">“Changed careers from accounting to product design in under a year.”</blockquote>
+                  <figcaption class="mt-6 flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1684598273417-2d07e1429a6c?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIweXVpJTIwdGFuYWthfGVufDF8fHx8MTc5NTM4NjE3N3ww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Sara V." class="h-10 w-10 rounded-full object-cover grayscale">
+                    <span><span class="block font-semibold">Sara V.</span><span class="text-sm text-vermilion">Interface design</span></span>
+                  </figcaption>
+                </figure>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- block:end reviews -->
+
+    <!-- block:start faq -->
+    <section id="myths" class="px-5 py-24 md:px-12">
+      <div class="mx-auto max-w-[1400px]">
+        <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <h2 class="text-4xl font-semibold tracking-tight md:text-6xl">Myth or fact?</h2>
+          <p class="max-w-sm text-char-soft">Things people tell us before they enrol. Tap a card to turn it over.</p>
+        </div>
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <button type="button" class="flip h-72 text-left" aria-pressed="false" data-flip>
+              <span class="flip-inner relative block h-full w-full">
+                <span class="flip-face absolute inset-0 flex flex-col justify-between rounded-3xl bg-stone p-6 text-char-deep">
+                  <span class="flex gap-2" aria-hidden="true"><span class="h-4 w-4 rounded-full bg-char-deep"></span><span class="h-4 w-4 rounded-full bg-char-deep"></span></span>
+                  <span class="text-2xl font-semibold leading-tight">You need to be able to draw.</span>
+                  <span class="text-sm font-semibold">Turn over <i class="fa-solid fa-rotate" aria-hidden="true"></i></span>
+                </span>
+                <span class="flip-face flip-back absolute inset-0 flex flex-col justify-between rounded-3xl bg-char text-stone-pale p-6">
+                  <span class="text-5xl font-semibold">Myth</span>
+                  <span class="text-lg leading-snug">Half our students arrive with no drawing at all. We teach looking first, drawing second.</span>
+                </span>
+              </span>
+            </button>
+            <button type="button" class="flip h-72 text-left" aria-pressed="false" data-flip>
+              <span class="flip-inner relative block h-full w-full">
+                <span class="flip-face absolute inset-0 flex flex-col justify-between rounded-3xl bg-stone p-6 text-char-deep">
+                  <span class="flex gap-2" aria-hidden="true"><span class="h-4 w-4 rounded-full bg-char-deep"></span><span class="h-4 w-4 rounded-full bg-char-deep"></span></span>
+                  <span class="text-2xl font-semibold leading-tight">You need your own laptop.</span>
+                  <span class="text-sm font-semibold">Turn over <i class="fa-solid fa-rotate" aria-hidden="true"></i></span>
+                </span>
+                <span class="flip-face flip-back absolute inset-0 flex flex-col justify-between rounded-3xl bg-char text-stone-pale p-6">
+                  <span class="text-5xl font-semibold">Myth</span>
+                  <span class="text-lg leading-snug">Every studio has machines and licences. Bring a notebook and something to say.</span>
+                </span>
+              </span>
+            </button>
+            <button type="button" class="flip h-72 text-left" aria-pressed="false" data-flip>
+              <span class="flip-inner relative block h-full w-full">
+                <span class="flip-face absolute inset-0 flex flex-col justify-between rounded-3xl bg-stone p-6 text-char-deep">
+                  <span class="flex gap-2" aria-hidden="true"><span class="h-4 w-4 rounded-full bg-char-deep"></span><span class="h-4 w-4 rounded-full bg-char-deep"></span></span>
+                  <span class="text-2xl font-semibold leading-tight">Courses fit around a full-time job.</span>
+                  <span class="text-sm font-semibold">Turn over <i class="fa-solid fa-rotate" aria-hidden="true"></i></span>
+                </span>
+                <span class="flip-face flip-back absolute inset-0 flex flex-col justify-between rounded-3xl bg-vermilion text-char-deep p-6">
+                  <span class="text-5xl font-semibold">Fact</span>
+                  <span class="text-lg leading-snug">Classes start at 18:30 or on Saturdays, and every session is recorded for catch-up.</span>
+                </span>
+              </span>
+            </button>
+            <button type="button" class="flip h-72 text-left" aria-pressed="false" data-flip>
+              <span class="flip-inner relative block h-full w-full">
+                <span class="flip-face absolute inset-0 flex flex-col justify-between rounded-3xl bg-stone p-6 text-char-deep">
+                  <span class="flex gap-2" aria-hidden="true"><span class="h-4 w-4 rounded-full bg-char-deep"></span><span class="h-4 w-4 rounded-full bg-char-deep"></span></span>
+                  <span class="text-2xl font-semibold leading-tight">You get feedback from working designers.</span>
+                  <span class="text-sm font-semibold">Turn over <i class="fa-solid fa-rotate" aria-hidden="true"></i></span>
+                </span>
+                <span class="flip-face flip-back absolute inset-0 flex flex-col justify-between rounded-3xl bg-vermilion text-char-deep p-6">
+                  <span class="text-5xl font-semibold">Fact</span>
+                  <span class="text-lg leading-snug">Every course ends with a crit from a guest who hires designers for a living.</span>
+                </span>
+              </span>
+            </button>
+        </div>
+      </div>
+    </section>
+    <!-- block:end faq -->
+  </main>
+
+  <!-- block:start footer -->
+  <footer class="overflow-hidden bg-char-deep px-5 pt-20 text-stone-light md:px-12">
+    <div class="mx-auto max-w-[1400px]">
+      <div class="flex flex-col justify-between gap-10 md:flex-row">
+        <ul class="flex flex-wrap gap-x-8 gap-y-3 font-medium">
+            <li><a href="courses.html" class="hover:text-vermilion">Courses</a></li>
+            <li><a href="brand-identity.html" class="hover:text-vermilion">Featured course</a></li>
+            <li><a href="talks.html" class="hover:text-vermilion">Talks</a></li>
+            <li><a href="about.html" class="hover:text-vermilion">About</a></li>
+            <li><a href="contact.html" class="hover:text-vermilion">Contact</a></li>
+        </ul>
+        <p class="max-w-xs text-sm">Kernfield School of Design<br>Unit 4, Foundry Yard, 18 Canal Street<br>hello@kernfield.example</p>
+      </div>
+      <p class="mt-16 select-none text-[22vw] font-semibold leading-[0.8] tracking-tighter text-vermilion md:text-[18vw]" aria-hidden="true">Kernfield</p>
+      <div class="flex flex-col justify-between gap-3 border-t border-stone/20 py-6 text-sm md:flex-row">
+        <p>© 2026 Kernfield School of Design</p>
+        <div class="flex gap-4">
+            <a href="contact.html" aria-label="Instagram" class="hover:text-vermilion"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="contact.html" aria-label="Behance" class="hover:text-vermilion"><i class="fa-brands fa-behance" aria-hidden="true"></i></a>
+            <a href="contact.html" aria-label="LinkedIn" class="hover:text-vermilion"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      if (!menu) return;
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    (() => {
+      const items = document.querySelectorAll('[data-reveal]');
+      const skip = navigator.webdriver || !('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+
+    document.querySelectorAll('[data-countdown]').forEach((el) => {
+      const days = Math.ceil((new Date(el.dataset.countdown) - new Date()) / 86400000);
+      if (days > 0) el.textContent = `${days} ${days === 1 ? 'day' : 'days'} left`;
+    });
+
+    document.querySelectorAll('[data-hover-list]').forEach((root) => {
+      const img = root.querySelector('[data-hover-img]');
+      if (!img || !matchMedia('(hover: hover)').matches) return;
+      root.querySelectorAll('[data-hover-item]').forEach((item) => {
+        item.addEventListener('mouseenter', () => { img.src = item.dataset.src; img.classList.add('opacity-100'); });
+        item.addEventListener('mouseleave', () => img.classList.remove('opacity-100'));
+        item.addEventListener('mousemove', (event) => { img.style.transform = `translate(${event.clientX + 24}px, ${event.clientY - 110}px)`; });
+      });
+    });
+
+    document.querySelectorAll('[data-planner]').forEach((root) => {
+      const inputs = [...root.querySelectorAll('[data-plan-course]')];
+      const limit = root.querySelector('[data-plan-limit]');
+      const clash = root.querySelector('[data-plan-clash]');
+      const discounts = [0, 0.1, 0.15];
+      const render = () => {
+        const chosen = inputs.filter((input) => input.checked);
+        root.querySelectorAll('[data-plan-day]').forEach((day) => { day.innerHTML = ''; });
+        chosen.forEach((input) => {
+          const cell = root.querySelector(`[data-plan-day="${input.dataset.day}"]`);
+          const block = document.createElement('div');
+          block.className = 'rounded-xl bg-vermilion px-1.5 py-2 text-left text-[10px] font-semibold leading-tight text-char-deep [overflow-wrap:anywhere] sm:px-2 sm:py-3 sm:text-xs';
+          block.innerHTML = `<span class="block opacity-70">${input.dataset.time}</span>${input.dataset.name}`;
+          cell?.appendChild(block);
+        });
+        const slots = chosen.map((input) => `${input.dataset.day} ${input.dataset.time}`);
+        const clashes = slots.filter((slot, i) => slots.indexOf(slot) !== i);
+        clash.classList.toggle('hidden', !clashes.length);
+        clash.textContent = clashes.length ? `Two courses meet on ${clashes[0].replace(' ', ' at ')}. Pick one, or ask us about the Thursday group.` : '';
+        const fees = chosen.map((input) => Number(input.dataset.fee)).sort((a, b) => b - a);
+        const total = fees.reduce((sum, fee, i) => sum + fee * (1 - (discounts[i] || 0)), 0);
+        root.querySelector('[data-plan-total]').textContent = Math.round(total);
+        root.querySelector('[data-plan-count]').textContent = chosen.length;
+        root.querySelector('[data-plan-discount]').textContent = ['no discount yet', 'no discount yet', '10% off the second', '10% + 15% off'][chosen.length];
+      };
+      inputs.forEach((input) => input.addEventListener('change', () => {
+        if (inputs.filter((other) => other.checked).length > 3) {
+          input.checked = false;
+          limit.hidden = false;
+          return;
+        }
+        limit.hidden = true;
+        render();
+      }));
+      render();
+    });
+
+    document.querySelectorAll('[data-flip]').forEach((card) => {
+      card.addEventListener('click', () => card.setAttribute('aria-pressed', String(card.getAttribute('aria-pressed') !== 'true')));
+    });
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=kernfield&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

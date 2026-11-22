@@ -1,0 +1,22 @@
+@view-transition { navigation: auto; }
+    ::view-transition-old(root) { animation: 180ms ease-out both page-fade-out; }
+    ::view-transition-new(root) { animation: 220ms ease-in both page-fade-in; }
+    @keyframes page-fade-out { to { opacity: 0; } }
+    @keyframes page-fade-in { from { opacity: 0; } }
+    html { scroll-behavior: smooth; }
+    [hidden] { display: none !important; }
+    .checker { background-color: #e1e8c4; background-image: conic-gradient(#d3e6c6 25%, transparent 0 50%, #d3e6c6 0 75%, transparent 0); background-size: 3.5rem 3.5rem; }
+    .checker-mint { background-color: #c6e4d2; background-image: conic-gradient(#e6efcf 25%, transparent 0 50%, #e6efcf 0 75%, transparent 0); background-size: 3.5rem 3.5rem; }
+    .btn-pop { box-shadow: 0 3px 0 #141414; transition: transform .15s, box-shadow .15s; }
+    .btn-pop:hover { transform: translateY(-2px); box-shadow: 0 5px 0 #141414; }
+    .btn-pop:active { transform: translateY(2px); box-shadow: 0 1px 0 #141414; }
+    .wave-top { clip-path: polygon(0 18%, 8% 12%, 20% 6%, 35% 4%, 50% 7%, 62% 11%, 72% 9%, 84% 4%, 93% 6%, 100% 10%, 100% 100%, 0 100%); }
+    .wiggle:hover { animation: wiggle .5s ease-in-out; }
+    @keyframes wiggle { 25% { transform: rotate(-3deg); } 75% { transform: rotate(3deg); } }
+    .reveal-ready [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; transition-delay: var(--reveal-delay, 0ms); }
+    .reveal-ready [data-reveal].is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .wiggle:hover { animation: none; }
+      ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+    }

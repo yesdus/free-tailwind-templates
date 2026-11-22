@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuvora | Tailwind CSS SaaS Template</title>
+  <meta name="description" content="Nuvora is a Tailwind CSS SaaS template for customer support and CRM platforms, with a functionality grid, step-by-step onboarding, testimonial carousel, and pricing page.">
+  <meta name="keywords" content="Nuvora, Tailwind CSS template, HTML website template, SaaS template, CRM landing page, customer support platform, pricing page, testimonial carousel">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Nuvora | Tailwind CSS SaaS Template">
+  <meta property="og:description" content="A Tailwind CSS SaaS template for customer support and CRM platforms, with a functionality grid, step-by-step onboarding, testimonial carousel, and pricing page.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Nuvora template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Nuvora | Tailwind CSS SaaS Template">
+  <meta name="twitter:description" content="A Tailwind CSS SaaS template for customer support and CRM platforms, with a functionality grid, step-by-step onboarding, testimonial carousel, and pricing page.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Nuvora template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#f4f2ec',
+            ink: '#17181c',
+            accent: '#5850ec',
+            'accent-soft': '#e8e6fd'
+          },
+          fontFamily: {
+            serif: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-paper font-sans text-ink antialiased">
+
+  <!-- block:start navbar -->
+  <header class="sticky top-0 z-40 border-b border-black/10 bg-paper/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+      <a href="index.html" class="flex items-center gap-2 font-serif text-lg font-semibold">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-ink text-paper"><i class="fa-solid fa-diamond text-xs" aria-hidden="true"></i></span>
+        Nuvora
+      </a>
+      <div class="hidden items-center gap-10 md:flex">
+          <a href="features.html"  class="text-sm font-medium transition text-ink/70 hover:text-ink">Features</a>
+          <a href="pricing.html"  class="text-sm font-medium transition text-ink/70 hover:text-ink">Pricing</a>
+          <a href="index.html#testimonials"  class="text-sm font-medium transition text-ink/70 hover:text-ink">Testimonials</a>
+      </div>
+      <a href="pricing.html" class="hidden rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-paper transition hover:bg-black md:inline-flex">Sign up</a>
+      <button type="button" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/10 md:hidden">
+        <i class="fa-solid fa-bars text-sm" aria-hidden="true"></i>
+        <span class="sr-only">Toggle menu</span>
+      </button>
+    </nav>
+    <div id="mobile-menu" hidden class="border-t border-black/10 bg-paper px-6 pb-6 md:hidden">
+      <a href="features.html" class="block py-3 text-sm font-medium text-ink/70">Features</a>
+      <a href="pricing.html" class="block py-3 text-sm font-medium text-ink/70">Pricing</a>
+      <a href="index.html#testimonials" class="block py-3 text-sm font-medium text-ink/70">Testimonials</a>
+      <a href="pricing.html" class="mt-2 block rounded-full bg-ink px-5 py-2.5 text-center text-sm font-semibold text-paper">Sign up</a>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section id="hero" class="px-6 pb-20 pt-16 lg:px-10 lg:pt-24">
+    <div class="mx-auto max-w-4xl text-center" data-reveal>
+      <span class="inline-flex items-center rounded-md bg-accent px-3 py-1 text-xs font-semibold text-white">Unify your customer service</span>
+      <h1 class="mt-6 font-serif text-5xl leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">Customer conversations, on every channel.</h1>
+      <p class="mx-auto mt-6 max-w-2xl text-lg text-ink/60">Bring email, chat and social messages into a single inbox. Reply faster, keep context, and give every customer a personal touch.</p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <a href="pricing.html" class="rounded-xl bg-gradient-to-b from-[#2c2e35] to-ink px-7 py-3.5 text-sm font-semibold text-paper shadow-lg shadow-black/20 transition hover:to-black">Start free trial</a>
+        <a href="contact.html" class="rounded-xl border border-ink px-7 py-3.5 text-sm font-semibold text-ink transition hover:bg-white">See demo</a>
+      </div>
+    </div>
+    <div class="mx-auto mt-16 grid max-w-7xl gap-5 md:grid-cols-3">
+      <div data-reveal style="--reveal-delay:60ms" class="flex flex-col overflow-hidden rounded-3xl bg-ink text-paper">
+        <div class="p-7">
+          <h2 class="flex items-center gap-3 text-xl font-semibold"><span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/15"><i class="fa-solid fa-comment text-sm" aria-hidden="true"></i></span>Live chat support</h2>
+          <p class="mt-2 pl-12 text-sm text-white/60">Answer visitors in real time from the same inbox.</p>
+        </div>
+        <div class="mt-auto px-7 pb-7">
+          <div class="rotate-[-3deg] rounded-2xl border-t-8 border-accent bg-white p-5 text-ink shadow-xl">
+            <p class="text-[10px] font-semibold uppercase tracking-wide text-rose-500">Aaron Wells &middot; 08:00</p>
+            <p class="mt-2 text-xs leading-relaxed">Welcome aboard! We're glad to help you get set up. Ask us anything.</p>
+            <p class="mt-4 text-[10px] font-semibold uppercase tracking-wide text-accent">Mila Hart &middot; 2:56</p>
+            <p class="mt-1 inline-block rounded-xl bg-accent-soft px-3 py-2 text-xs">Could you send the <span class="text-accent underline">onboarding link</span>?</p>
+          </div>
+        </div>
+      </div>
+      <div data-reveal style="--reveal-delay:120ms" class="relative min-h-[26rem] overflow-hidden rounded-3xl bg-slate-600 text-paper">
+        <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?auto=format&fit=crop&w=800&q=80" alt="Smiling support team member portrait" class="absolute inset-0 h-full w-full object-cover opacity-80">
+        <div class="relative p-7">
+          <h2 class="flex items-center gap-3 text-xl font-semibold"><span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/20"><i class="fa-solid fa-chart-simple text-sm" aria-hidden="true"></i></span>Performance analytics</h2>
+          <p class="mt-2 pl-12 text-sm text-white/80">Response time and satisfaction, tracked live.</p>
+        </div>
+        <div class="absolute bottom-6 right-6 rounded-2xl bg-white p-4 text-center text-ink shadow-xl">
+          <p class="font-serif text-2xl" data-count-to="21800">21,800</p>
+          <p class="text-[11px] text-ink/50">Total customers</p>
+        </div>
+      </div>
+      <div data-reveal style="--reveal-delay:180ms" class="flex flex-col overflow-hidden rounded-3xl bg-[#1d1e22] text-paper">
+        <div class="p-7">
+          <h2 class="flex items-center gap-3 text-xl font-semibold"><span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/15"><i class="fa-solid fa-user text-sm" aria-hidden="true"></i></span>Personalized profiles</h2>
+          <p class="mt-2 pl-12 text-sm text-white/60">Every profile carries history, preferences and open threads.</p>
+          <ul class="mt-5 flex flex-col items-start gap-2 pl-12 text-xs">
+            <li class="rounded-full border border-white/20 bg-white/10 px-3 py-1">&bull; Social integration</li>
+            <li class="rounded-full border border-white/20 bg-white/10 px-3 py-1">&bull; Friendly interface</li>
+          </ul>
+        </div>
+        <div class="mt-auto rounded-t-2xl bg-white p-5 text-ink">
+          <div class="flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Customer profile photo" class="h-12 w-12 rounded-full object-cover">
+            <div>
+              <p class="font-semibold">Aaron Wells</p>
+              <p class="text-xs text-ink/50">Leeds, United Kingdom</p>
+            </div>
+          </div>
+          <div class="mt-4 flex gap-2 text-xs">
+            <a href="contact.html" class="rounded-lg border border-black/10 px-3 py-2">Message</a>
+            <a href="contact.html" class="rounded-lg bg-ink px-3 py-2 text-paper">Send an email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start clients -->
+  <section class="px-6 lg:px-10">
+    <div data-reveal class="mx-auto flex max-w-5xl flex-wrap items-center justify-center gap-x-12 gap-y-4 border-y border-black/10 py-6 text-ink">
+        <span class="flex items-center gap-2 text-xl font-bold"><i class="fa-solid fa-circle-nodes text-blue-500" aria-hidden="true"></i>Nordly</span>
+        <span class="flex items-center gap-2 text-xl font-bold"><i class="fa-solid fa-cube text-ink" aria-hidden="true"></i>Halcyon</span>
+        <span class="flex items-center gap-2 text-xl font-bold"><i class="fa-solid fa-bolt text-emerald-600" aria-hidden="true"></i>Ferro</span>
+        <span class="flex items-center gap-2 text-xl font-bold"><i class="fa-solid fa-sun text-orange-500" aria-hidden="true"></i>Brightline</span>
+        <span class="flex items-center gap-2 text-xl font-bold"><i class="fa-solid fa-star text-ink" aria-hidden="true"></i>Solvane</span>
+    </div>
+  </section>
+  <!-- block:end clients -->
+
+  <!-- block:start process -->
+  <section id="how-it-works" class="px-6 py-20 lg:px-10">
+    <div data-reveal class="mx-auto max-w-4xl text-center">
+      <span class="inline-flex items-center rounded-md bg-accent px-3 py-1 text-xs font-semibold text-white">How it works</span>
+      <p class="mt-4 text-sm font-medium text-ink/60">Step by step</p>
+      <h2 class="mt-3 font-serif text-3xl tracking-tight md:text-5xl">Stop juggling five apps to answer one customer question.</h2>
+    </div>
+    <div class="mx-auto mt-14 grid max-w-6xl gap-8 md:grid-cols-3">
+        <div data-reveal style="--reveal-delay:0ms" class="text-center">
+          <div class="aspect-[4/3] overflow-hidden rounded-2xl">
+            <img src="https://images.unsplash.com/photo-1789386932786-c778ad0674c6?auto=format&fit=crop&w=800&q=80" alt="Two colleagues reviewing a laptop in a glass-walled office" class="h-full w-full object-cover">
+          </div>
+          <span class="mx-auto mt-6 inline-flex h-11 w-11 items-center justify-center rounded-lg border border-emerald-300 bg-emerald-50"><i class="fa-solid fa-plug" aria-hidden="true"></i></span>
+          <h3 class="mt-3 text-xl font-semibold">Connect channels</h3>
+          <p class="mt-1 text-sm text-ink/60">Link inbox, chat and social in a few clicks</p>
+        </div>
+        <div data-reveal style="--reveal-delay:80ms" class="text-center">
+          <div class="aspect-[4/3] overflow-hidden rounded-2xl">
+            <img src="https://images.unsplash.com/photo-1674049406289-28f07e897fa6?auto=format&fit=crop&w=800&q=80" alt="Person working at a desk with a laptop and coffee" class="h-full w-full object-cover">
+          </div>
+          <span class="mx-auto mt-6 inline-flex h-11 w-11 items-center justify-center rounded-lg border border-indigo-300 bg-indigo-50"><i class="fa-solid fa-gear" aria-hidden="true"></i></span>
+          <h3 class="mt-3 text-xl font-semibold">Manage interactions</h3>
+          <p class="mt-1 text-sm text-ink/60">One shared queue with full customer context</p>
+        </div>
+        <div data-reveal style="--reveal-delay:160ms" class="text-center">
+          <div class="aspect-[4/3] overflow-hidden rounded-2xl">
+            <img src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?auto=format&fit=crop&w=800&q=80" alt="Four coworkers smiling around a laptop at a table" class="h-full w-full object-cover">
+          </div>
+          <span class="mx-auto mt-6 inline-flex h-11 w-11 items-center justify-center rounded-lg border border-amber-300 bg-amber-50"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span>
+          <h3 class="mt-3 text-xl font-semibold">Enhance performance</h3>
+          <p class="mt-1 text-sm text-ink/60">Measure, improve and hit your targets</p>
+        </div>
+    </div>
+  </section>
+  <!-- block:end process -->
+
+  <!-- block:start features -->
+  <section id="features" class="bg-[#e6e5df] px-6 py-20 lg:px-10">
+    <div data-reveal class="mx-auto max-w-3xl text-center">
+      <span class="inline-flex items-center rounded-md bg-accent px-3 py-1 text-xs font-semibold text-white">Functionality</span>
+      <h2 class="mt-6 font-serif text-4xl tracking-tight md:text-5xl">Built for teams that move fast</h2>
+      <p class="mt-4 text-ink/60">Everything you need to keep replies quick and customers happy.</p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <a href="pricing.html" class="rounded-xl bg-ink px-7 py-3.5 text-sm font-semibold text-paper">Start free trial</a>
+        <a href="contact.html" class="rounded-xl border border-ink px-7 py-3.5 text-sm font-semibold text-ink">See demo</a>
+      </div>
+    </div>
+    <div class="mx-auto mt-14 grid max-w-7xl gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div data-reveal style="--reveal-delay:0ms" class="flex min-h-[20rem] flex-col rounded-2xl bg-white p-7">
+          <span class="inline-flex h-12 w-12 items-center justify-center rounded-lg border-2 border-indigo-300"><i class="fa-solid fa-fire" aria-hidden="true"></i></span>
+          <h3 class="mt-auto font-serif text-3xl leading-tight">Higher productivity</h3>
+          <p class="mt-4 text-sm text-ink/60">Streamline work with intuitive tools built for efficient teamwork.</p>
+        </div>
+        <div data-reveal style="--reveal-delay:60ms" class="flex min-h-[20rem] flex-col rounded-2xl bg-white p-7">
+          <span class="inline-flex h-12 w-12 items-center justify-center rounded-lg border-2 border-pink-300"><i class="fa-solid fa-rocket" aria-hidden="true"></i></span>
+          <h3 class="mt-auto font-serif text-3xl leading-tight">Seamless teamwork</h3>
+          <p class="mt-4 text-sm text-ink/60">Share context and hand off threads without losing history.</p>
+        </div>
+        <div data-reveal style="--reveal-delay:120ms" class="flex min-h-[20rem] flex-col rounded-2xl bg-white p-7">
+          <span class="inline-flex h-12 w-12 items-center justify-center rounded-lg border-2 border-emerald-300"><i class="fa-solid fa-ellipsis" aria-hidden="true"></i></span>
+          <h3 class="mt-auto font-serif text-3xl leading-tight">Leaner processes</h3>
+          <p class="mt-4 text-sm text-ink/60">Schedule replies and route tickets automatically across channels.</p>
+        </div>
+        <div data-reveal style="--reveal-delay:180ms" class="flex min-h-[20rem] flex-col rounded-2xl bg-white p-7">
+          <span class="inline-flex h-12 w-12 items-center justify-center rounded-lg border-2 border-orange-300"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></span>
+          <h3 class="mt-auto font-serif text-3xl leading-tight">Live insight</h3>
+          <p class="mt-4 text-sm text-ink/60">Boost output with custom automation and real-time reporting.</p>
+        </div>
+    </div>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start stats -->
+  <section class="px-6 py-20 lg:px-10">
+    <div class="mx-auto max-w-5xl">
+      <div data-reveal>
+        <span class="inline-flex items-center rounded-md bg-accent px-3 py-1 text-xs font-semibold text-white">Features</span>
+        <h2 class="mt-4 font-serif text-4xl tracking-tight md:text-5xl">Every customer inquiry, one platform.</h2>
+      </div>
+      <div class="mt-10 grid gap-10 rounded-3xl bg-[#e6e5df] p-6 md:p-8">
+        <div class="grid items-center gap-8 md:grid-cols-2">
+          <div data-reveal class="rounded-2xl bg-white p-6">
+            <p class="text-sm font-semibold">Statistics</p>
+            <div class="mt-4 flex gap-8">
+              <div class="flex items-center gap-2"><span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-sky-100 text-sky-600"><i class="fa-solid fa-arrow-up text-xs" aria-hidden="true"></i></span><div><p class="text-sm font-semibold" data-count-to="9500">9,500</p><p class="text-xs text-ink/50">New leads</p></div></div>
+              <div class="flex items-center gap-2"><span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-rose-100 text-rose-500"><i class="fa-solid fa-arrow-down text-xs" aria-hidden="true"></i></span><div><p class="text-sm font-semibold" data-count-to="1400">1,400</p><p class="text-xs text-ink/50">Cancelled</p></div></div>
+            </div>
+            <svg viewBox="0 0 300 110" class="mt-6 w-full" role="img" aria-label="Line chart of weekly leads">
+              <defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#5850ec" stop-opacity=".18"/><stop offset="1" stop-color="#5850ec" stop-opacity="0"/></linearGradient></defs>
+              <path d="M0 85 C30 85 40 45 75 45 S120 40 150 15 S190 55 225 60 S265 95 300 100 V110 H0Z" fill="url(#chartFill)"/>
+              <path d="M0 85 C30 85 40 45 75 45 S120 40 150 15 S190 55 225 60 S265 95 300 100" fill="none" stroke="#2563eb" stroke-width="2"/>
+            </svg>
+          </div>
+          <div data-reveal style="--reveal-delay:100ms">
+            <h3 class="font-serif text-3xl">A central hub for every channel.</h3>
+            <p class="mt-4 text-ink/60">Handle social replies, comments and mentions from one dashboard, and bring the whole team into the conversation.</p>
+            <ul class="mt-6 flex flex-col items-start gap-3 text-sm font-medium">
+              <li class="rounded-full bg-white px-4 py-2">&bull; Easy access</li>
+              <li class="rounded-full bg-white px-4 py-2">&bull; Friendly interface</li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid items-center gap-8 md:grid-cols-2">
+          <div data-reveal class="md:order-2 rounded-2xl bg-white p-6">
+            <p class="font-semibold">Traffic sources</p>
+            <p class="text-xs text-ink/50">29,400 customers</p>
+            <ul class="mt-4 divide-y divide-black/5 text-sm">
+                <li class="flex items-center justify-between gap-3 py-3">
+                  <span class="flex items-center gap-3"><i class="fa-solid fa-share-nodes w-4 text-ink/60" aria-hidden="true"></i><span><span class="block font-medium">Social channels</span><span class="text-xs text-ink/50">All social networks</span></span></span>
+                  <span class="rounded px-2 py-0.5 text-xs font-semibold bg-emerald-100 text-emerald-700">+4.1%</span>
+                </li>
+                <li class="flex items-center justify-between gap-3 py-3">
+                  <span class="flex items-center gap-3"><i class="fa-solid fa-envelope w-4 text-ink/60" aria-hidden="true"></i><span><span class="block font-medium">Email campaigns</span><span class="text-xs text-ink/50">Newsletter sends</span></span></span>
+                  <span class="rounded px-2 py-0.5 text-xs font-semibold bg-emerald-100 text-emerald-700">+0.2%</span>
+                </li>
+                <li class="flex items-center justify-between gap-3 py-3">
+                  <span class="flex items-center gap-3"><i class="fa-solid fa-link w-4 text-ink/60" aria-hidden="true"></i><span><span class="block font-medium">Referral traffic</span><span class="text-xs text-ink/50">Partner links</span></span></span>
+                  <span class="rounded px-2 py-0.5 text-xs font-semibold bg-rose-100 text-rose-600">-0.4%</span>
+                </li>
+            </ul>
+          </div>
+          <div data-reveal style="--reveal-delay:100ms" class="md:order-1">
+            <h3 class="font-serif text-3xl">Plan and publish replies ahead.</h3>
+            <p class="mt-4 text-ink/60">Queue updates in advance, publish across channels, and reuse evergreen answers so repetitive work disappears.</p>
+            <ul class="mt-6 flex flex-col items-start gap-3 text-sm font-medium">
+              <li class="rounded-full bg-white px-4 py-2">&bull; Insights dashboard</li>
+              <li class="rounded-full bg-white px-4 py-2">&bull; Smart planner</li>
+              <li class="rounded-full bg-white px-4 py-2">&bull; Scheduled posts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end stats -->
+
+  <!-- block:start reviews -->
+  <section id="testimonials" class="px-6 py-20 lg:px-10">
+    <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_2fr]">
+      <div data-reveal>
+        <span class="inline-flex items-center rounded-md bg-accent px-3 py-1 text-xs font-semibold text-white">Testimonials</span>
+        <h2 class="mt-4 font-serif text-4xl tracking-tight md:text-5xl">Trusted by 7,500+ happy teams</h2>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="features.html" class="rounded-xl bg-ink px-6 py-3 text-sm font-semibold text-paper">Explore more</a>
+          <a href="contact.html" class="rounded-xl border border-ink px-6 py-3 text-sm font-semibold">Leave a review</a>
+        </div>
+      </div>
+      <div data-reveal style="--reveal-delay:100ms" data-carousel class="overflow-hidden" role="region" aria-roledescription="carousel" aria-label="Customer testimonials">
+        <div data-carousel-track class="flex transition-transform duration-500 ease-out">
+            <figure class="grid w-full shrink-0 gap-6 sm:grid-cols-[14rem_1fr]" aria-label="1 of 3">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=500&q=80" alt="Portrait of Leslie Alvarez" class="aspect-square w-full max-w-[14rem] rounded-2xl object-cover">
+              <div class="flex flex-col">
+                <blockquote class="font-serif text-2xl leading-snug">&ldquo;Nuvora changed how we handle support. It&#39;s simple to use and lets us reach customers in minutes, not hours.&rdquo;</blockquote>
+                <figcaption class="mt-auto border-t border-black/10 pt-4">
+                  <p class="font-semibold">Leslie Alvarez</p>
+                  <p class="text-sm text-ink/50">UI/UX Designer</p>
+                </figcaption>
+              </div>
+            </figure>
+            <figure class="grid w-full shrink-0 gap-6 sm:grid-cols-[14rem_1fr]" aria-label="2 of 3">
+              <img src="https://images.unsplash.com/photo-1758600587839-56ba05596c69?auto=format&fit=crop&w=500&q=80" alt="Portrait of Eliana Park" class="aspect-square w-full max-w-[14rem] rounded-2xl object-cover">
+              <div class="flex flex-col">
+                <blockquote class="font-serif text-2xl leading-snug">&ldquo;We finally run one queue instead of five inboxes. First-response time dropped by half in the first month.&rdquo;</blockquote>
+                <figcaption class="mt-auto border-t border-black/10 pt-4">
+                  <p class="font-semibold">Eliana Park</p>
+                  <p class="text-sm text-ink/50">Operations Manager</p>
+                </figcaption>
+              </div>
+            </figure>
+            <figure class="grid w-full shrink-0 gap-6 sm:grid-cols-[14rem_1fr]" aria-label="3 of 3">
+              <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?auto=format&fit=crop&w=500&q=80" alt="Portrait of Priya Anand" class="aspect-square w-full max-w-[14rem] rounded-2xl object-cover">
+              <div class="flex flex-col">
+                <blockquote class="font-serif text-2xl leading-snug">&ldquo;The analytics view shows where the team needs help before a backlog even forms.&rdquo;</blockquote>
+                <figcaption class="mt-auto border-t border-black/10 pt-4">
+                  <p class="font-semibold">Priya Anand</p>
+                  <p class="text-sm text-ink/50">Support Lead</p>
+                </figcaption>
+              </div>
+            </figure>
+        </div>
+        <div class="mt-8 flex items-center gap-3">
+          <button type="button" data-carousel-prev class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-sm" aria-label="Previous testimonial"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+          <button type="button" data-carousel-next class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-ink text-paper" aria-label="Next testimonial"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+          <div class="ml-2 flex gap-2">
+              <button type="button" data-carousel-dot="0" class="h-2.5 w-2.5 rounded-full bg-ink" aria-label="Show testimonial 1" aria-current="true"></button>
+              <button type="button" data-carousel-dot="1" class="h-2.5 w-2.5 rounded-full bg-ink/20" aria-label="Show testimonial 2" aria-current="false"></button>
+              <button type="button" data-carousel-dot="2" class="h-2.5 w-2.5 rounded-full bg-ink/20" aria-label="Show testimonial 3" aria-current="false"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end reviews -->
+
+  <!-- block:start cta -->
+  <section class="bg-[#e6e5df] px-6 pt-20 lg:px-10">
+    <div data-reveal class="mx-auto max-w-3xl text-center">
+      <span class="inline-flex items-center rounded-md bg-accent px-3 py-1 text-xs font-semibold text-white">Contact now</span>
+      <h2 class="mt-6 font-serif text-4xl tracking-tight md:text-6xl">Level up your customer service today</h2>
+      <p class="mx-auto mt-4 max-w-xl text-ink/60">Manage every customer conversation in one place. Pick a plan and get going in minutes.</p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <a href="pricing.html" class="rounded-xl bg-ink px-7 py-3.5 text-sm font-semibold text-paper">Start free trial</a>
+        <a href="contact.html" class="rounded-xl border border-ink px-7 py-3.5 text-sm font-semibold text-ink">See demo</a>
+      </div>
+    </div>
+  </section>
+  <!-- block:end cta -->
+
+  <!-- block:start footer -->
+  <footer class="bg-[#e6e5df] px-4 pb-6 pt-16 lg:px-6">
+    <div class="mx-auto max-w-7xl rounded-3xl bg-ink px-8 py-12 text-paper md:px-14">
+      <div class="grid gap-10 md:grid-cols-[1.6fr_1fr_1fr_1.4fr]">
+        <div>
+          <a href="index.html" class="flex items-center gap-2 font-serif text-xl font-semibold">
+            <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10"><i class="fa-solid fa-diamond text-xs" aria-hidden="true"></i></span>
+            Nuvora
+          </a>
+          <p class="mt-4 max-w-sm font-serif text-2xl text-white/80">Every conversation in one place. Pick your plan and start today.</p>
+        </div>
+        <div class="text-sm">
+          <p class="font-semibold">Socials</p>
+          <div class="mt-4 flex flex-col gap-3 text-white/60">
+            <a href="https://facebook.com" class="hover:text-white">Facebook</a>
+            <a href="https://linkedin.com" class="hover:text-white">LinkedIn</a>
+            <a href="https://instagram.com" class="hover:text-white">Instagram</a>
+            <a href="https://x.com" class="hover:text-white">X</a>
+          </div>
+        </div>
+        <div class="text-sm">
+          <p class="font-semibold">Product</p>
+          <div class="mt-4 flex flex-col gap-3 text-white/60">
+            <a href="features.html" class="hover:text-white">Features</a>
+            <a href="pricing.html" class="hover:text-white">Pricing</a>
+            <a href="contact.html" class="hover:text-white">Contact</a>
+          </div>
+        </div>
+        <div class="text-sm">
+          <p class="text-white/70">Get a free consultation and see how to simplify your customer relationships.</p>
+          <form class="mt-8 flex items-center gap-3 border-b border-white/30 pb-2" onsubmit="event.preventDefault();">
+            <label for="footer-email" class="sr-only">Email address</label>
+            <input id="footer-email" type="email" required placeholder="Your email" class="w-full bg-transparent placeholder:text-white/50 focus:outline-none">
+            <button type="submit" class="shrink-0 font-semibold">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <p class="mt-14 text-xs text-white/50">&copy; <span data-current-year>2026</span> Nuvora. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!expanded));
+        mobileMenu.hidden = expanded;
+      });
+    }
+
+    document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+      const track = carousel.querySelector('[data-carousel-track]');
+      const dots = carousel.querySelectorAll('[data-carousel-dot]');
+      const count = track.children.length;
+      let index = 0;
+      const goTo = (next) => {
+        index = (next + count) % count;
+        track.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('bg-ink', i === index);
+          dot.classList.toggle('bg-ink/20', i !== index);
+          dot.setAttribute('aria-current', String(i === index));
+        });
+      };
+      carousel.querySelector('[data-carousel-prev]').addEventListener('click', () => goTo(index - 1));
+      carousel.querySelector('[data-carousel-next]').addEventListener('click', () => goTo(index + 1));
+      dots.forEach((dot) => dot.addEventListener('click', () => goTo(Number(dot.dataset.carouselDot))));
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduceMotion && !navigator.webdriver && 'IntersectionObserver' in window) {
+      document.body.classList.add('reveal-ready');
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach((el) => revealObserver.observe(el));
+
+      const countObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const target = parseInt(el.dataset.countTo, 10);
+          const start = performance.now();
+          const step = (now) => {
+            const progress = Math.min((now - start) / 700, 1);
+            el.textContent = Math.round(progress * target).toLocaleString('en-US');
+            if (progress < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+          countObserver.unobserve(el);
+        });
+      }, { threshold: 0.4 });
+      document.querySelectorAll('[data-count-to]').forEach((el) => countObserver.observe(el));
+    }
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=nuvora&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

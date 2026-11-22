@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinwell | Tailwind CSS Telehealth App Template</title>
+  <meta name="description" content="Kinwell is a bold, editorial Tailwind CSS health template for telehealth apps and wellness brands with oversized type, app screen mockups, treatment programs, membership plans, and an online shop.">
+  <meta name="keywords" content="Kinwell, Tailwind CSS template, HTML website template, health template, telehealth app, men's and women's health, online doctor, wellness app landing page, responsive health design">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Kinwell | Tailwind CSS Telehealth App Template">
+  <meta property="og:description" content="A bold, editorial Tailwind CSS health template for telehealth apps and wellness brands with oversized type, app screen mockups, treatment programs, membership plans, and an online shop.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Kinwell template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Kinwell | Tailwind CSS Telehealth App Template">
+  <meta name="twitter:description" content="A bold, editorial Tailwind CSS health template for telehealth apps and wellness brands with oversized type, app screen mockups, treatment programs, membership plans, and an online shop.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Kinwell template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;family=DM+Serif+Display&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#221f1d',
+            cobalt: '#000f96',
+            magenta: '#c9006f',
+            pine: '#03603e',
+            teal: '#035066',
+            sand: '#b3ad7a',
+            mint: '#67b387',
+            brick: '#c14b4b',
+            lemon: '#e4f05d'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            wide: ['Archivo', 'ui-sans-serif', 'sans-serif'],
+            serif: ['"DM Serif Display"', 'Georgia', 'serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-[#3f3f3f] font-sans text-ink antialiased overflow-x-hidden">
+  <div class="mx-auto max-w-[1428px] overflow-hidden bg-white sm:my-6 lg:my-[120px]">
+    <!-- block:start navbar -->
+    <header id="top" class="absolute inset-x-0 z-40 mx-auto max-w-[1428px]">
+      <nav class="flex items-center justify-between px-5 py-6 md:px-12 md:py-10" aria-label="Main">
+        <a href="index.html" aria-current="page" class="font-serif text-2xl tracking-tight">Kin<span class="text-magenta">&amp;</span>well</a>
+        <ul class="hidden items-center gap-8 text-sm lg:flex">
+            <li><a href="treatments.html" class="text-ink/70 transition hover:text-ink">Treatments</a></li>
+            <li><a href="plans.html" class="text-ink/70 transition hover:text-ink">Plans</a></li>
+            <li><a href="care.html" class="text-ink/70 transition hover:text-ink">Care</a></li>
+            <li><a href="shop.html" class="text-ink/70 transition hover:text-ink">Shop</a></li>
+            <li><a href="contact.html" class="text-ink/70 transition hover:text-ink">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-2">
+          <a href="plans.html" class="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-medium shadow-[0_10px_30px_-10px_rgba(0,0,0,.25)] transition hover:bg-ink hover:text-white"><i class="fa-brands fa-apple"></i> Get the app</a>
+          <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-ink text-white lg:hidden" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </nav>
+      <div id="mobile-menu" class="hidden mx-5 rounded-3xl bg-ink p-6 text-white shadow-xl lg:hidden">
+        <ul class="space-y-1 font-black-wide text-4xl uppercase">
+            <li><a href="index.html" aria-current="page" class="block py-1 text-lemon">Home</a></li>
+            <li><a href="treatments.html" aria-current="false" class="block py-1 hover:text-lemon">Treatments</a></li>
+            <li><a href="plans.html" aria-current="false" class="block py-1 hover:text-lemon">Plans</a></li>
+            <li><a href="care.html" aria-current="false" class="block py-1 hover:text-lemon">Care</a></li>
+            <li><a href="shop.html" aria-current="false" class="block py-1 hover:text-lemon">Shop</a></li>
+            <li><a href="contact.html" aria-current="false" class="block py-1 hover:text-lemon">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- block:end navbar -->
+
+    <main>
+      <!-- block:start hero -->
+      <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-white via-[#f6effa] to-[#efe6f3] pb-16 pt-32 md:pt-44">
+        <p class="text-center text-sm font-medium uppercase tracking-[1.6em]"><span class="text-[#3b33e0]">Whole</span></p>
+        <div class="relative mt-6 md:mt-4">
+          <h1 class="care-gradient select-none text-center font-wide text-[34vw] font-medium leading-[0.78] tracking-[-0.06em] md:text-[31vw] lg:text-[440px]" aria-label="Whole care">care</h1>
+          <div class="absolute left-1/2 top-[-6%] w-[62%] max-w-[290px] -translate-x-1/2 md:top-[-12%]">
+            <div class="phone bg-[#2a2522] p-4 text-white" data-reveal>
+              <div class="flex items-center justify-between text-[11px] text-white/70"><span>9:41</span><span class="phone-notch"></span><span><i class="fa-solid fa-signal"></i> <i class="fa-solid fa-battery-full"></i></span></div>
+              <div class="mt-5 flex items-center justify-between text-xs"><span>What can we help with?</span><img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-6 w-6 rounded-md object-cover"></div>
+              <div class="mt-4 grid grid-cols-2 gap-2">
+                  <a href="treatments.html#mental-health" class="glass-tile flex aspect-square items-center justify-center rounded-2xl p-2 text-center font-black-wide text-[11px] uppercase leading-none transition hover:bg-white/25">Mental health</a>
+                  <a href="treatments.html#hair-loss" class="glass-tile flex aspect-square items-center justify-center rounded-2xl p-2 text-center font-black-wide text-[11px] uppercase leading-none transition hover:bg-white/25">Hair loss</a>
+                  <a href="treatments.html#intimate-health" class="glass-tile flex aspect-square items-center justify-center rounded-2xl p-2 text-center font-black-wide text-[11px] uppercase leading-none transition hover:bg-white/25">Intimate health</a>
+                  <a href="treatments.html#heart-health" class="glass-tile flex aspect-square items-center justify-center rounded-2xl p-2 text-center font-black-wide text-[11px] uppercase leading-none transition hover:bg-white/25">Heart health</a>
+                  <a href="treatments.html#metabolic-health" class="glass-tile flex aspect-square items-center justify-center rounded-2xl p-2 text-center font-black-wide text-[11px] uppercase leading-none transition hover:bg-white/25">Metabolic health</a>
+                  <a href="treatments.html#weight-care" class="glass-tile flex aspect-square items-center justify-center rounded-2xl p-2 text-center font-black-wide text-[11px] uppercase leading-none transition hover:bg-white/25">Weight care</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="relative mx-auto mt-32 max-w-[19rem] px-5 text-center text-sm leading-snug md:mt-40">Personal, easy healthcare for men and women, built to support your body, confidence and wellbeing at every age.</p>
+      </section>
+      <!-- block:end hero -->
+
+      <!-- block:start about -->
+      <section id="health" class="relative bg-white pb-20 pt-16 md:pb-28">
+        <p class="health-gradient text-center font-black-wide text-[20vw] uppercase lg:text-[270px]" aria-hidden="true">Health</p>
+        <div class="relative mx-auto -mt-[14vw] grid max-w-[1428px] items-start gap-8 px-5 md:grid-cols-[1fr_1.3fr_1fr] md:px-5 lg:-mt-[190px]">
+          <h2 class="order-2 pt-4 text-[11px] font-semibold uppercase leading-tight tracking-tight md:order-1 md:pt-[320px]">Great treatment is just the start. Get live support day and night, plus guided start videos and hours of original content.</h2>
+          <div class="relative order-1 md:order-2">
+            <img src="https://images.unsplash.com/photo-1524330685423-3e1966445abe?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Woman in wide trousers striking a dance pose in black and white" class="relative z-10 mx-auto aspect-[552/640] w-full object-cover grayscale md:mt-[140px]">
+            <a href="plans.html" class="absolute left-1/2 top-[55%] z-20 inline-flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full bg-ink/80 px-12 py-8 text-xs uppercase text-white backdrop-blur transition hover:bg-ink md:py-12"><i class="fa-brands fa-apple text-base"></i> Download app</a>
+          </div>
+          <p class="order-3 pt-4 text-[11px] font-semibold uppercase leading-tight tracking-tight md:pt-[320px]">Free, unlimited messaging with licensed providers. Proven products that really work. Healthcare the way it should feel.</p>
+        </div>
+      </section>
+      <!-- block:end about -->
+
+      <!-- block:start features -->
+      <section id="for-you" class="grid md:grid-cols-2" data-split>
+          <a href="treatments.html#men" class="group relative flex flex-col items-center overflow-hidden bg-cobalt px-6 pt-16 md:pt-20">
+            <span class="font-serif text-[26vw] leading-[0.8] text-sand md:text-[16vw] lg:text-[230px]">men</span>
+            <div class="phone relative -mt-[8vw] w-[70%] max-w-[340px] transition duration-500 group-hover:-translate-y-3 lg:-mt-[70px]">
+              <div class="flex items-center justify-between px-5 pt-3 text-[11px]"><span>9:41</span><span class="phone-notch"></span><span><i class="fa-solid fa-battery-full"></i></span></div>
+              <p class="flex items-center justify-between px-5 pt-4 text-[11px]">Get your energy back with testosterone care <i class="fa-solid fa-bars-staggered text-ink/50"></i></p>
+              <div class="relative mt-2 aspect-[3/4] overflow-hidden">
+                <p class="absolute left-3 top-0 font-black-wide text-6xl uppercase text-ink/10" aria-hidden="true">Energy</p>
+                <img src="https://images.unsplash.com/photo-1643904524951-2a3a58856745?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Man in black and white looking down" loading="lazy" class="h-full w-full object-cover grayscale">
+                <div class="absolute inset-x-3 bottom-3 flex justify-around rounded-full bg-white/80 py-2 text-[10px] backdrop-blur">
+                  <span class="font-semibold"><i class="fa-solid fa-house block text-center"></i>Home</span><span class="text-ink/50"><i class="fa-solid fa-heart-pulse block text-center"></i>Care</span><span class="text-ink/50"><i class="fa-solid fa-list block text-center"></i>Plans</span><span class="text-ink/50"><i class="fa-solid fa-cart-shopping block text-center"></i>Shop</span>
+                </div>
+              </div>
+            </div>
+            <span class="sr-only">Explore care for men</span>
+            <div class="h-16"></div>
+          </a>
+          <a href="treatments.html#women" class="group relative flex flex-col items-center overflow-hidden bg-magenta px-6 pt-16 md:pt-20">
+            <span class="font-serif text-[26vw] leading-[0.8] text-mint md:text-[16vw] lg:text-[230px]">women</span>
+            <div class="phone relative -mt-[8vw] w-[70%] max-w-[340px] transition duration-500 group-hover:-translate-y-3 lg:-mt-[70px]">
+              <div class="flex items-center justify-between px-5 pt-3 text-[11px]"><span>9:41</span><span class="phone-notch"></span><span><i class="fa-solid fa-battery-full"></i></span></div>
+              <p class="flex items-center justify-between px-5 pt-4 text-[11px]">Balance your hormones with guided care <i class="fa-solid fa-bars-staggered text-ink/50"></i></p>
+              <div class="relative mt-2 aspect-[3/4] overflow-hidden">
+                <p class="absolute left-3 top-0 font-black-wide text-6xl uppercase text-ink/10" aria-hidden="true">Balance</p>
+                <img src="https://images.unsplash.com/photo-1532617157703-6767b6415b14?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Woman in a sports bra in black and white" loading="lazy" class="h-full w-full object-cover grayscale">
+                <div class="absolute inset-x-3 bottom-3 flex justify-around rounded-full bg-white/80 py-2 text-[10px] backdrop-blur">
+                  <span class="font-semibold"><i class="fa-solid fa-house block text-center"></i>Home</span><span class="text-ink/50"><i class="fa-solid fa-heart-pulse block text-center"></i>Care</span><span class="text-ink/50"><i class="fa-solid fa-list block text-center"></i>Plans</span><span class="text-ink/50"><i class="fa-solid fa-cart-shopping block text-center"></i>Shop</span>
+                </div>
+              </div>
+            </div>
+            <span class="sr-only">Explore care for women</span>
+            <div class="h-16"></div>
+          </a>
+      </section>
+      <!-- block:end features -->
+
+      <!-- block:start stats -->
+      <section id="doses" class="relative bg-white px-5 pb-24 pt-32 md:pt-48">
+        <p class="text-center font-black-wide text-[24vw] uppercase text-ink lg:text-[260px]" aria-hidden="true">Doses</p>
+        <div class="mx-auto -mt-[22vw] w-[80%] max-w-[410px] rounded-[3rem] bg-gradient-to-b from-[#c55050] via-[#9b1b1b] to-[#c55050] px-8 pb-24 pt-10 text-center text-white shadow-2xl lg:-mt-[250px]" data-reveal>
+          <div class="relative mx-auto h-44 w-44">
+            <svg viewBox="0 0 100 100" class="h-full w-full -rotate-90" aria-hidden="true"><circle cx="50" cy="50" r="44" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="3"/><circle data-ring cx="50" cy="50" r="44" fill="none" stroke="#ff8f8f" stroke-width="3" stroke-linecap="round" stroke-dasharray="276.5" stroke-dashoffset="138"/></svg>
+            <p class="absolute inset-0 flex items-center justify-center text-5xl font-light"><span data-count-to="50" data-count-suffix="%">50%</span></p>
+          </div>
+          <h2 class="mt-10 text-2xl leading-tight">About half of all prescriptions aren't taken the right way. <span class="font-semibold text-lemon">We're changing that.</span></h2>
+          <a href="plans.html" class="mt-8 inline-flex items-center gap-2 rounded-full bg-white/15 px-5 py-2.5 text-sm backdrop-blur transition hover:bg-white hover:text-brick">See how plans help <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        </div>
+      </section>
+      <!-- block:end stats -->
+
+      <!-- block:start gallery -->
+      <section id="stories" class="bg-white px-5 pb-24 md:px-[70px]">
+        <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5 md:gap-[14px]">
+            <a href="treatments.html#mental-health" class="group relative block aspect-[246/460] overflow-hidden rounded-[2rem] " data-reveal style="--reveal-delay: 0ms">
+              <img src="https://images.unsplash.com/photo-1590417154498-ec4c5d293e0e?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Woman stretching her arms overhead against a cloudy sky" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105 ">
+            </a>
+            <a href="care.html" class="group relative block aspect-[246/460] overflow-hidden rounded-[2rem] " data-reveal style="--reveal-delay: 80ms">
+              <img src="https://images.unsplash.com/photo-1645066928295-2506defde470?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Doctor in a white coat holding a tablet" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105 ">
+            </a>
+            <a href="shop.html" class="group relative block aspect-[246/460] overflow-hidden rounded-[2rem] " data-reveal style="--reveal-delay: 160ms">
+              <img src="https://images.unsplash.com/photo-1666902752583-c2e9b6174927?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Two capsules resting on a reflective blue surface" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105 ">
+                <span class="absolute inset-x-3 top-1/2 -translate-y-1/2 text-center font-black-wide text-lg uppercase leading-none text-white drop-shadow">Introducing Clarity</span>
+            </a>
+            <a href="treatments.html#heart-health" class="group relative block aspect-[246/460] overflow-hidden rounded-[2rem] " data-reveal style="--reveal-delay: 240ms">
+              <img src="https://images.unsplash.com/photo-1628595351029-c2bf17511435?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Glowing DNA double helix on a deep blue background" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105 ">
+            </a>
+            <a href="treatments.html#metabolic-health" class="group relative block aspect-[246/460] overflow-hidden rounded-[2rem] " data-reveal style="--reveal-delay: 320ms">
+              <img src="https://images.unsplash.com/photo-1722970651094-90f4d9b10089?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Sculpted porous white head in profile" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105 ">
+            </a>
+            <a href="treatments.html#hair-loss" class="group relative block aspect-[246/460] overflow-hidden rounded-[2rem] " data-reveal style="--reveal-delay: 0ms">
+              <img src="https://images.unsplash.com/photo-1548733865-2ff7802d2b3f?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Woman with closed eyes and hands in her hair in black and white" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105 grayscale">
+                <span class="absolute inset-x-3 top-1/2 -translate-y-1/2 text-center font-black-wide text-lg uppercase leading-none text-white drop-shadow">Your hair care guided start</span>
+            </a>
+            <a href="plans.html" class="group relative block aspect-[246/460] overflow-hidden rounded-[2rem] " data-reveal style="--reveal-delay: 80ms">
+              <img src="https://images.unsplash.com/photo-1715408050105-e6c1134b8064?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Man sitting against a wall striped with light and shadow" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105 grayscale">
+            </a>
+            <a href="care.html" class="group relative block aspect-[246/460] overflow-hidden rounded-[2rem] md:col-start-4" data-reveal style="--reveal-delay: 160ms">
+              <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Clinician in teal scrubs with arms crossed" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105 ">
+            </a>
+            <a href="contact.html" class="group relative block aspect-[246/460] overflow-hidden rounded-[2rem] " data-reveal style="--reveal-delay: 240ms">
+              <img src="https://images.unsplash.com/photo-1659353888906-adb3e0041693?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Doctor in a white coat smiling in a bright clinic" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105 ">
+            </a>
+        </div>
+      </section>
+      <!-- block:end gallery -->
+
+      <!-- block:start process -->
+      <section id="plans" class="relative bg-white pt-16" data-lessons>
+        <p class="text-center font-black-wide text-[24vw] uppercase text-ink lg:text-[330px]" aria-hidden="true">Plans</p>
+        <div class="relative mx-auto -mt-[9vw] grid max-w-[1428px] items-start gap-10 px-5 pb-20 md:grid-cols-[1fr_300px_1fr] md:px-[110px] lg:-mt-[110px]">
+          <div class="order-2 md:order-1 md:pt-[230px]">
+            <h2 class="font-medium">Plans built to get you better results.</h2>
+            <p class="mt-3 text-ink/80">A step-by-step curriculum made with leading advisors, so you get more from every treatment.</p>
+          </div>
+          <div class="phone order-1 mx-auto w-full max-w-[300px] md:order-2">
+            <div class="flex items-center justify-between px-5 pt-3 text-[11px]"><span>9:41</span><span class="phone-notch"></span><span><i class="fa-solid fa-battery-full"></i></span></div>
+            <div class="flex gap-1 px-3 pt-4 text-[11px]" role="tablist" aria-label="Plan views">
+                <button type="button" role="tab" data-lesson-tab="0" aria-selected="true" class="rounded-full px-3 py-1.5 text-ink/50 aria-selected:bg-ink/10 aria-selected:font-semibold aria-selected:text-ink">Schedule</button>
+                <button type="button" role="tab" data-lesson-tab="1" aria-selected="false" class="rounded-full px-3 py-1.5 text-ink/50 aria-selected:bg-ink/10 aria-selected:font-semibold aria-selected:text-ink">Awards</button>
+                <button type="button" role="tab" data-lesson-tab="2" aria-selected="false" class="rounded-full px-3 py-1.5 text-ink/50 aria-selected:bg-ink/10 aria-selected:font-semibold aria-selected:text-ink">Community</button>
+            </div>
+            <div data-lesson-panel class="space-y-2 p-3">
+              <p class="flex items-center justify-between px-1 text-sm">Week 1: How ageing works <i class="fa-solid fa-chevron-down text-[10px]"></i></p>
+                <button type="button" data-lesson class="flex w-full gap-3 rounded-2xl bg-white p-2 text-left shadow-sm transition hover:shadow-md" aria-pressed="true">
+                  <span class="relative h-20 w-16 shrink-0 overflow-hidden rounded-xl bg-pine"><img src="https://images.unsplash.com/photo-1645066928295-2506defde470?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="" class="h-full w-full object-cover mix-blend-luminosity opacity-80"><i class="fa-solid fa-play absolute inset-0 m-auto h-4 w-4 text-white"></i></span>
+                  <span class="flex flex-1 flex-col justify-between py-1 text-[11px]"><span class="font-medium">Welcome to your healthy ageing start</span><span class="flex items-center justify-between text-ink/40">Overview · 2 mins <i data-lesson-icon class="fa-solid fa-circle-check text-green-600"></i></span></span>
+                </button>
+                <button type="button" data-lesson class="flex w-full gap-3 rounded-2xl bg-white p-2 text-left shadow-sm transition hover:shadow-md" aria-pressed="false">
+                  <span class="relative h-20 w-16 shrink-0 overflow-hidden rounded-xl bg-brick"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="" class="h-full w-full object-cover mix-blend-luminosity opacity-80"><i class="fa-solid fa-play absolute inset-0 m-auto h-4 w-4 text-white"></i></span>
+                  <span class="flex flex-1 flex-col justify-between py-1 text-[11px]"><span class="font-medium">Ageing and your skin</span><span class="flex items-center justify-between text-ink/40">Chapter 1 · 5 mins <i data-lesson-icon class="fa-solid fa-rotate-right"></i></span></span>
+                </button>
+                <button type="button" data-lesson class="flex w-full gap-3 rounded-2xl bg-white p-2 text-left shadow-sm transition hover:shadow-md" aria-pressed="false">
+                  <span class="relative h-20 w-16 shrink-0 overflow-hidden rounded-xl bg-teal"><img src="https://images.unsplash.com/photo-1715408050105-e6c1134b8064?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="" class="h-full w-full object-cover mix-blend-luminosity opacity-80"><i class="fa-solid fa-play absolute inset-0 m-auto h-4 w-4 text-white"></i></span>
+                  <span class="flex flex-1 flex-col justify-between py-1 text-[11px]"><span class="font-medium">What sleep does for you</span><span class="flex items-center justify-between text-ink/40">Chapter 2 · 7 mins <i data-lesson-icon class="fa-solid fa-rotate-right"></i></span></span>
+                </button>
+            </div>
+            <div data-lesson-panel hidden class="p-5 text-center text-sm"><i class="fa-solid fa-medal text-4xl text-sand"></i><p class="mt-3 font-medium">3-day streak</p><p class="text-xs text-ink/50">Finish two more lessons to earn your first badge.</p></div>
+            <div data-lesson-panel hidden class="space-y-2 p-4 text-xs"><p class="rounded-2xl bg-white p-3 shadow-sm"><strong>Maya:</strong> Week three and my sleep is so much better.</p><p class="rounded-2xl bg-white p-3 shadow-sm"><strong>Theo:</strong> The morning routine video changed everything for me.</p></div>
+          </div>
+          <div class="order-3 md:pt-[230px]">
+            <h2 class="font-medium">Time for honest talk.</h2>
+            <p class="mt-3 text-ink/80">Join the community for member-only sessions and expert answers from people just like you.</p>
+          </div>
+        </div>
+      </section>
+      <!-- block:end process -->
+
+      <!-- block:start team -->
+      <section id="care" class="relative bg-white pt-12" data-modes>
+        <p class="text-center font-black-wide text-[26vw] uppercase text-ink lg:text-[340px]" aria-hidden="true">Care</p>
+        <p class="relative -mt-[16vw] text-center text-sm text-white mix-blend-difference lg:-mt-[180px]">Reach your care team from anywhere, in one tap.</p>
+        <div class="relative mx-auto mt-10 grid max-w-[1428px] items-end gap-10 px-5 pb-24 md:grid-cols-[1fr_300px_1fr] md:px-[110px]">
+          <p class="order-2 text-ink/80 md:order-1 md:text-right">A doctor is ready now. Get a call back, chat live, or book a visit, whichever suits you.</p>
+          <div class="phone order-1 mx-auto w-full max-w-[300px] md:order-2">
+            <div class="flex items-center justify-between px-5 pt-3 text-[11px]"><span>9:41</span><span class="phone-notch"></span><span><i class="fa-solid fa-battery-full"></i></span></div>
+            <div class="p-5">
+              <h2 class="text-2xl">Care</h2>
+              <p class="mt-1 text-xs text-green-700">Support when you need it. Meet your care team.</p>
+                <a href="care.html" class="mt-3 flex items-center justify-between rounded-2xl bg-white p-4 shadow-sm">
+                  <span><span class="block text-sm font-medium">Hair loss</span><span class="text-[11px] text-ink/50">Dr. Owen Hale · MD</span></span>
+                  <span class="relative"><img src="https://images.unsplash.com/photo-1645066928295-2506defde470?auto=format&amp;fit=crop&amp;w=120&amp;q=80" alt="" class="h-10 w-10 rounded-xl object-cover"><span class="absolute -right-0.5 -top-0.5 h-2.5 w-2.5 rounded-full bg-green-500 ring-2 ring-white"></span></span>
+                </a>
+                <a href="care.html" class="mt-3 flex items-center justify-between rounded-2xl bg-white p-4 shadow-sm">
+                  <span><span class="block text-sm font-medium">Skin clinic</span><span class="text-[11px] text-ink/50">Dr. Amani Reyes · MD</span></span>
+                  <span class="relative"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&amp;fit=crop&amp;w=120&amp;q=80" alt="" class="h-10 w-10 rounded-xl object-cover"><span class="absolute -right-0.5 -top-0.5 h-2.5 w-2.5 rounded-full bg-green-500 ring-2 ring-white"></span></span>
+                </a>
+              <div class="mt-4 rounded-2xl bg-white p-4 text-xs shadow-sm" aria-live="polite">
+                  <div data-mode-panel="chat" ><p class="text-ink/40">Dr. Amani Reyes</p><p class="mt-2 rounded-xl bg-ink/5 p-3">Most people notice some dryness in the first four weeks. It settles, so keep going.</p></div>
+                  <div data-mode-panel="call" hidden><p class="text-ink/40">Dr. Owen Hale</p><p class="mt-2 rounded-xl bg-ink/5 p-3">Calling your care team now. Average wait today: under two minutes.</p></div>
+                  <div data-mode-panel="video" hidden><p class="text-ink/40">Dr. Amani Reyes</p><p class="mt-2 rounded-xl bg-ink/5 p-3">Your video visit starts at 4:30 pm. We&#39;ll send a reminder ten minutes before.</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="order-3 flex gap-3 md:self-start md:pt-10" role="tablist" aria-label="Contact method">
+              <button type="button" role="tab" data-mode="chat" aria-selected="true" class="flex h-20 w-20 flex-col items-center justify-center gap-1 rounded-full bg-white text-xs shadow-[0_15px_30px_-12px_rgba(0,0,0,.3)] transition aria-selected:bg-ink aria-selected:text-white"><i class="fa-solid fa-comment text-base"></i>Chat</button>
+              <button type="button" role="tab" data-mode="call" aria-selected="false" class="flex h-20 w-20 flex-col items-center justify-center gap-1 rounded-full bg-white text-xs shadow-[0_15px_30px_-12px_rgba(0,0,0,.3)] transition aria-selected:bg-ink aria-selected:text-white"><i class="fa-solid fa-phone text-base"></i>Call</button>
+              <button type="button" role="tab" data-mode="video" aria-selected="false" class="flex h-20 w-20 flex-col items-center justify-center gap-1 rounded-full bg-white text-xs shadow-[0_15px_30px_-12px_rgba(0,0,0,.3)] transition aria-selected:bg-ink aria-selected:text-white"><i class="fa-solid fa-video text-base"></i>Video</button>
+          </div>
+        </div>
+      </section>
+      <!-- block:end team -->
+
+      <section id="glow" class="bg-[#7a706c] px-5 py-12 md:px-[110px] md:py-20">
+        <div class="bg-[#e4b53e] p-6 md:p-[110px]">
+          <img src="https://images.unsplash.com/photo-1758523671894-b5891a2ef3b6?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Smiling man with clear skin against a pale blue background" loading="lazy" class="aspect-[892/636] w-full object-cover">
+        </div>
+      </section>
+
+      <!-- block:start products -->
+      <section id="shop" class="relative bg-white pt-24" data-product>
+        <p class="text-center font-black-wide text-[24vw] uppercase text-ink lg:text-[300px]" aria-hidden="true">Shop</p>
+        <div class="relative mx-auto -mt-[12vw] w-[86%] max-w-[794px] bg-[#e9955f] lg:-mt-[150px]">
+          <img src="https://images.unsplash.com/photo-1608571423539-e951b9b3871e?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Amber glass dropper bottle of hair serum on a wooden stand" loading="lazy" class="aspect-[794/610] w-full object-cover mix-blend-multiply">
+        </div>
+        <div class="mx-auto grid max-w-[1428px] items-start gap-10 px-5 pb-24 pt-16 md:grid-cols-[1fr_310px_1fr] md:px-[125px]">
+          <p class="order-2 text-ink/80 md:order-1 md:pt-10">Check out in seconds with one-tap ordering and saved payment.</p>
+          <div class="phone order-1 mx-auto w-full max-w-[310px] md:order-2">
+            <div class="flex items-center justify-between px-5 pt-3 text-[11px]"><span>9:41</span><span class="phone-notch"></span><span><i class="fa-solid fa-battery-full"></i></span></div>
+            <p class="flex items-center justify-between px-4 pt-4 text-sm"><i class="fa-solid fa-arrow-left"></i> Root Revive Drops <a href="cart.html" class="relative" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i><span data-cart-count class="absolute -right-2 -top-2 inline-flex h-4 min-w-4 items-center justify-center rounded-full bg-brick px-1 text-[9px] text-white">1</span></a></p>
+            <div class="p-4">
+              <img src="https://images.unsplash.com/photo-1608571423539-e951b9b3871e?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="" class="aspect-[4/3.3] w-full rounded-2xl bg-[#e9955f] object-cover">
+              <h2 class="mt-3 text-lg font-semibold">Root Revive Drops</h2>
+              <p class="text-sm text-ink/60"><span data-price>$21.00</span> <span data-save class="ml-1 rounded bg-green-100 px-1.5 py-0.5 text-[10px] text-green-800">15% off</span></p>
+              <p class="mt-2 text-[11px] leading-relaxed text-ink/60">A rich five-minute scalp treatment that nourishes and hydrates every hair type.</p>
+              <div class="mt-4 grid grid-cols-2 gap-2 text-xs">
+                <button type="button" data-subscribe aria-pressed="false" class="rounded-full bg-ink py-3 text-white transition aria-pressed:bg-green-700">Subscribe</button>
+                <button type="button" data-add-cart class="rounded-full bg-ink py-3 text-white transition hover:bg-black">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <p class="order-3 text-ink/80 md:pt-10 md:text-right">Manage orders, delivery, tracking and subscriptions all in one place.</p>
+        </div>
+      </section>
+      <!-- block:end products -->
+
+      <!-- block:start cta -->
+      <section id="providers" class="bg-white">
+        <div class="relative grid grid-cols-2">
+          <div class="h-[46vw] bg-black md:h-[380px]"></div>
+          <div class="h-[46vw] md:h-[380px]"></div>
+          <h2 class="pointer-events-none absolute inset-x-0 bottom-0 translate-y-[30%] px-5 text-[11vw] font-light leading-none tracking-tight text-white mix-blend-difference md:px-[120px] lg:whitespace-nowrap lg:text-[112px]">Access to great care</h2>
+        </div>
+        <div class="px-5 pb-10 pt-16 text-center md:pt-24">
+          <a href="care.html" class="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm text-white transition hover:bg-black">Meet our providers <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        </div>
+      </section>
+      <!-- block:end cta -->
+
+      <section id="best" class="relative bg-white pb-20 pt-16 text-center">
+        <p class="text-xs font-medium uppercase tracking-[1em] text-ink/60">Only the</p>
+        <div class="relative mx-auto mt-4 max-w-[1100px]">
+          <p class="font-wide text-[30vw] font-medium leading-[0.78] tracking-[-0.06em] text-ink/15 lg:text-[340px]" aria-hidden="true">Best</p>
+          <p class="font-wide text-[30vw] font-medium leading-[0.78] tracking-[-0.06em] text-ink/10 lg:text-[340px]" aria-hidden="true">Best</p>
+          <a href="shop.html" class="absolute left-1/2 top-[22%] w-[46%] max-w-[260px] -translate-x-1/2">
+            <img src="https://images.unsplash.com/photo-1764184661156-e8803cef9b67?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Black supplement jar with a white label on a turquoise background" class="aspect-[3/4] w-full rounded-[2rem] object-cover shadow-2xl">
+            <span class="mt-3 block rounded-full bg-white/90 px-3 py-1 text-sm font-medium">Deep Rest Gummies · $29</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- block:start footer -->
+    <footer id="footer" class="relative overflow-hidden text-white">
+      <img src="https://images.unsplash.com/photo-1758520705424-e31fc2a77239?auto=format&amp;fit=crop&amp;w=2000&amp;q=80" alt="Couple walking outdoors with gym bags and water bottles" loading="lazy" class="absolute inset-0 h-full w-full object-cover">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative flex min-h-[640px] flex-col items-center justify-center px-5 py-20 text-center md:min-h-[790px]">
+        <p class="font-serif text-6xl md:text-7xl">Kin<span class="text-magenta">&amp;</span>well</p>
+        <a href="plans.html" class="mt-12 inline-flex items-center gap-2 rounded-full bg-white/15 px-10 py-6 text-xs uppercase backdrop-blur transition hover:bg-white hover:text-ink"><i class="fa-brands fa-apple text-base"></i> Download app</a>
+        <ul class="mt-10 flex gap-6 text-sm">
+            <li><a href="https://twitter.com/" class="hover:text-lemon" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/" class="hover:text-lemon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/" class="hover:text-lemon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+        <nav class="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-white/70" aria-label="Footer">
+          <a href="treatments.html" class="hover:text-white">Treatments</a>
+          <a href="plans.html" class="hover:text-white">Plans</a>
+          <a href="care.html" class="hover:text-white">Care</a>
+          <a href="shop.html" class="hover:text-white">Shop</a>
+          <a href="contact.html#terms" class="hover:text-white">Terms of use</a>
+          <a href="contact.html#privacy" class="hover:text-white">Privacy policy</a>
+        </nav>
+        <p class="mt-6 text-xs text-white/50">&copy; 2026 Kinwell Health. Not a replacement for emergency care.</p>
+      </div>
+    </footer>
+    <!-- block:end footer -->
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-menu-toggle]").forEach((button) => {
+      const menu = document.getElementById(button.getAttribute("aria-controls"));
+      if (!menu) return;
+      button.addEventListener("click", () => {
+        const open = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!open));
+        menu.classList.toggle("hidden", open);
+      });
+    });
+
+    (() => {
+      const read = () => { try { return Number(localStorage.getItem("kinwell-cart") ?? 1); } catch (e) { return 1; } };
+      const write = (value) => { try { localStorage.setItem("kinwell-cart", String(value)); } catch (e) {} };
+      const paint = () => document.querySelectorAll("[data-cart-count]").forEach((el) => { el.textContent = read(); });
+      window.kinwellCart = { read, write, paint };
+      paint();
+      document.addEventListener("click", (event) => {
+        const add = event.target.closest("[data-add-cart]");
+        if (!add) return;
+        write(read() + 1);
+        paint();
+        const label = add.textContent;
+        add.textContent = "Added";
+        setTimeout(() => { add.textContent = label; }, 1200);
+      });
+    })();
+
+    document.querySelectorAll("[data-lessons]").forEach((section) => {
+      const tabs = [...section.querySelectorAll("[data-lesson-tab]")];
+      const panels = [...section.querySelectorAll("[data-lesson-panel]")];
+      tabs.forEach((tab, index) => tab.addEventListener("click", () => {
+        tabs.forEach((other) => other.setAttribute("aria-selected", String(other === tab)));
+        panels.forEach((panel, i) => { panel.hidden = i !== index; });
+      }));
+      section.querySelectorAll("[data-lesson]").forEach((lesson) => lesson.addEventListener("click", () => {
+        const done = lesson.getAttribute("aria-pressed") !== "true";
+        lesson.setAttribute("aria-pressed", String(done));
+        const icon = lesson.querySelector("[data-lesson-icon]");
+        if (!icon) return;
+        icon.classList.toggle("fa-circle-check", done);
+        icon.classList.toggle("text-green-600", done);
+        icon.classList.toggle("fa-rotate-right", !done);
+      }));
+    });
+
+    document.querySelectorAll("[data-modes]").forEach((section) => {
+      const buttons = [...section.querySelectorAll("[data-mode]")];
+      buttons.forEach((button) => button.addEventListener("click", () => {
+        buttons.forEach((other) => other.setAttribute("aria-selected", String(other === button)));
+        section.querySelectorAll("[data-mode-panel]").forEach((panel) => { panel.hidden = panel.dataset.modePanel !== button.dataset.mode; });
+      }));
+    });
+
+    document.querySelectorAll("[data-product]").forEach((product) => {
+      const toggle = product.querySelector("[data-subscribe]");
+      const price = product.querySelector("[data-price]");
+      const save = product.querySelector("[data-save]");
+      toggle?.addEventListener("click", () => {
+        const on = toggle.getAttribute("aria-pressed") !== "true";
+        toggle.setAttribute("aria-pressed", String(on));
+        toggle.textContent = on ? "Subscribed" : "Subscribe";
+        if (price) price.textContent = on ? "$17.85" : "$21.00";
+        if (save) save.textContent = on ? "15% off applied" : "15% off";
+      });
+    });
+
+    document.querySelectorAll("[data-contact-form]").forEach((form) => {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const note = form.querySelector("[data-form-note]");
+        if (note) note.hidden = false;
+        form.reset();
+      });
+    });
+
+    (() => {
+      const counters = document.querySelectorAll("[data-count-to]");
+      if (!counters.length || navigator.webdriver || matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(({ isIntersecting, target }) => {
+          if (!isIntersecting) return;
+          observer.unobserve(target);
+          const end = Number(target.dataset.countTo);
+          const suffix = target.dataset.countSuffix || "";
+          const ring = target.closest("section")?.querySelector("[data-ring]");
+          const start = performance.now();
+          const tick = (now) => {
+            const progress = Math.min((now - start) / 1200, 1);
+            const value = Math.round(end * progress);
+            target.textContent = value + suffix;
+            if (ring) ring.setAttribute("stroke-dashoffset", String(276.5 * (1 - value / 100)));
+            if (progress < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        });
+      });
+      counters.forEach((counter) => observer.observe(counter));
+    })();
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=kinwell&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

@@ -1,0 +1,111 @@
+@view-transition { navigation: auto; }
+        [hidden] { display: none !important; }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .serif {
+            font-family: 'Fraunces', serif;
+        }
+        .swoosh-line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            pointer-events: none;
+            z-index: 10;
+        }
+        .tilted-card {
+            transition: transform 0.3s ease;
+        }
+        .tilted-card:hover {
+            transform: translateY(-10px) rotate(-2deg);
+        }
+        .nav-pill {
+            transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .nav-pill .brand,
+        .nav-pill .nav-links a,
+        .nav-pill .nav-toggle,
+        .nav-pill .profile-ring {
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+        #header.is-scrolled .nav-pill {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-color: rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        }
+        #header.is-scrolled .nav-pill .brand,
+        #header.is-scrolled .nav-pill .nav-toggle {
+            color: #171717;
+        }
+        #header.is-scrolled .nav-pill .nav-links {
+            color: rgba(23, 23, 23, 0.7);
+        }
+        #header.is-scrolled .nav-pill .nav-links a:hover {
+            color: #171717;
+        }
+        #header.is-scrolled .nav-pill .profile-ring {
+            border-color: rgba(0, 0, 0, 0.12);
+        }
+
+@view-transition { navigation: auto; }
+        html { scroll-behavior: smooth; }
+        [hidden] { display: none !important; }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .serif {
+            font-family: 'Fraunces', serif;
+        }
+        .swoosh-line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            pointer-events: none;
+        }
+        .tilted-card {
+            transition: transform 0.3s ease;
+        }
+        .tilted-card:hover {
+            transform: translateY(-10px) rotate(-2deg);
+        }
+        .nav-pill {
+            transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .nav-pill .brand,
+        .nav-pill .nav-links a,
+        .nav-pill .nav-toggle,
+        .nav-pill .profile-ring {
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+        .nav-pill .nav-links a[aria-current="page"] {
+            color: #ffffff;
+            font-weight: 700;
+        }
+        #header.is-scrolled .nav-pill {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-color: rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        }
+        #header.is-scrolled .nav-pill .brand,
+        #header.is-scrolled .nav-pill .nav-toggle {
+            color: #171717;
+        }
+        #header.is-scrolled .nav-pill .nav-links {
+            color: rgba(23, 23, 23, 0.7);
+        }
+        #header.is-scrolled .nav-pill .nav-links a:hover,
+        #header.is-scrolled .nav-pill .nav-links a[aria-current="page"] {
+            color: #171717;
+        }
+        #header.is-scrolled .nav-pill .profile-ring {
+            border-color: rgba(0, 0, 0, 0.12);
+        }
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] .faq-icon { transform: rotate(45deg); }

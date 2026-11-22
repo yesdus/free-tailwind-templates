@@ -1,0 +1,431 @@
+body { font-family: 'Inter', sans-serif; }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: currentColor;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+        .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        #product, #shops, #pricing { scroll-margin-top: 5rem; }
+        .nav-pill {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .nav-pill:hover { color: #fff; }
+        .nav-pill.is-active {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+body { font-family: 'Inter', sans-serif; }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: currentColor;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+        .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        #product, #shops, #pricing { scroll-margin-top: 5rem; }
+        .nav-pill {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .nav-pill:hover { color: #fff; }
+        .nav-pill.is-active {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+      /* Sub-pages */
+      @view-transition { navigation: auto; }
+      [hidden] { display: none !important; }
+      .fop-display {
+        font-family: "Teko", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -0.01em;
+        line-height: 0.9;
+      }
+      .fop-wrap {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 clamp(1.25rem, 5vw, 4rem);
+      }
+      .fop-narrow { max-width: 900px; }
+      .fop-hero {
+        position: relative;
+        overflow: hidden;
+        padding: 11rem 0 5rem;
+        background: #3b82f6;
+        color: #fff;
+      }
+      .fop-hero-short { padding-bottom: 3.5rem; }
+      .fop-hero h1 {
+        margin: 0 0 1.5rem;
+        font-size: clamp(4.5rem, 16vw, 13rem);
+        color: #fff;
+      }
+      .fop-hero-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 1.5rem;
+      }
+      .fop-hero-row p {
+        max-width: 26rem;
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.9);
+      }
+      .fop-kicker {
+        display: block;
+        margin: 0 0 1rem;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+      .fop-section { padding: clamp(4rem, 9vw, 7rem) 0; }
+      .fop-white { background: #fff; color: #121212; }
+      .fop-gray { background: #f2f2f2; color: #121212; }
+      .fop-black { background: #121212; color: #fff; }
+      .fop-blue { background: #3b82f6; color: #fff; }
+      .fop-title {
+        margin: 0 0 2.5rem;
+        font-size: clamp(3rem, 7vw, 5.5rem);
+      }
+      .fop-grid {
+        display: grid;
+        gap: 1.5rem;
+      }
+      .fop-grid > * { min-width: 0; }
+      .fop-card {
+        border-radius: 1.5rem;
+        padding: clamp(1.5rem, 4vw, 2.5rem);
+      }
+      .fop-card-gray { background: #f2f2f2; }
+      .fop-card-black { background: #121212; color: #fff; }
+      .fop-card-line { border: 1px solid rgba(255, 255, 255, 0.12); }
+      .fop-card h2 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(2.25rem, 4vw, 3rem);
+      }
+      .fop-muted {
+        margin: 0;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: #6b7280;
+      }
+      .fop-form {
+        display: grid;
+        gap: 1.25rem;
+        margin-top: 2rem;
+      }
+      .fop-form-row {
+        display: grid;
+        gap: 1.25rem;
+      }
+      .fop-field { display: block; }
+      .fop-field > span {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #6b7280;
+      }
+      .fop-input {
+        display: block;
+        width: 100%;
+        padding: 0.9rem 1.25rem;
+        border: 1px solid #d4d4d8;
+        border-radius: 999px;
+        background: #fff;
+        color: #121212;
+        font: inherit;
+        font-size: 0.9rem;
+      }
+      textarea.fop-input {
+        min-height: 9rem;
+        border-radius: 1.25rem;
+      }
+      .fop-input:focus {
+        outline: 2px solid #3b82f6;
+        outline-offset: 1px;
+      }
+      .fop-md-field {
+        width: 100%;
+        --md-outlined-text-field-container-shape: 1.25rem;
+        --md-outlined-text-field-outline-color: #a1a1aa;
+        background: #fff;
+        border-radius: 1.25rem;
+      }
+      .fop-done {
+        margin: 1.5rem 0 0;
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: #3b82f6;
+      }
+      .fop-rows {
+        display: grid;
+        gap: 0;
+        margin: 2rem 0 0;
+        padding: 0;
+        list-style: none;
+      }
+      .fop-rows li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.1rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .fop-rows a { color: inherit; text-decoration: none; }
+      .fop-rows a:hover { color: #3b82f6; }
+      .fop-rows strong {
+        display: block;
+        font-size: 0.95rem;
+        font-weight: 700;
+      }
+      .fop-rows small {
+        display: block;
+        margin-top: 0.15rem;
+        font-size: 0.78rem;
+        color: rgba(255, 255, 255, 0.55);
+      }
+      .fop-icon {
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+        width: 2.75rem;
+        height: 2.75rem;
+        border-radius: 50%;
+        background: #3b82f6;
+        color: #fff;
+      }
+      .fop-faqs {
+        display: grid;
+        gap: 0.75rem;
+      }
+      .fop-faq {
+        background: #fff;
+        border-radius: 1.25rem;
+        padding: 1.4rem 1.75rem;
+      }
+      .fop-faq summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+        list-style: none;
+        cursor: pointer;
+        font-weight: 700;
+      }
+      .fop-faq summary::-webkit-details-marker { display: none; }
+      .fop-faq-icon {
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background: #121212;
+        color: #fff;
+        font-size: 0.75rem;
+        transition: transform 0.2s ease;
+      }
+      .fop-faq[open] .fop-faq-icon { transform: rotate(45deg); }
+      .fop-faq p {
+        margin: 1rem 0 0;
+        max-width: 40rem;
+        font-size: 0.9rem;
+        line-height: 1.7;
+        color: #6b7280;
+      }
+      .fop-photos {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+      }
+      .fop-photos div {
+        flex-shrink: 0;
+        width: clamp(9rem, 22vw, 15rem);
+        aspect-ratio: 3 / 4;
+        border: 4px solid #fff;
+        border-radius: 1.25rem;
+        overflow: hidden;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+      }
+      .fop-photos div:nth-child(1) { transform: rotate(-8deg) translateY(1.5rem); margin-right: -1.5rem; }
+      .fop-photos div:nth-child(2) { position: relative; z-index: 1; }
+      .fop-photos div:nth-child(3) { transform: rotate(8deg) translateY(1.5rem); margin-left: -1.5rem; }
+      .fop-photos img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .fop-copy p {
+        max-width: 32rem;
+        margin: 0 0 1.25rem;
+        line-height: 1.7;
+        color: #52525b;
+      }
+      .fop-stats {
+        margin-top: 4rem;
+        padding-top: 3rem;
+        border-top: 1px solid #e4e4e7;
+      }
+      .fop-stats strong {
+        display: block;
+        font-size: clamp(3.5rem, 7vw, 5.5rem);
+        color: #3b82f6;
+      }
+      .fop-stats span {
+        display: block;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #6b7280;
+      }
+      .fop-value span {
+        display: block;
+        margin-bottom: 2.5rem;
+        font-size: 3rem;
+        color: #3b82f6;
+      }
+      .fop-value h3 {
+        margin: 0 0 0.6rem;
+        font-size: 1.35rem;
+        font-weight: 700;
+      }
+      .fop-value p {
+        margin: 0;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .fop-cta { text-align: center; }
+      .fop-cta h2 {
+        margin: 0 0 2rem;
+        font-size: clamp(3.5rem, 12vw, 9rem);
+        color: #fff;
+      }
+      .fop-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+      }
+      .fop-btn.btn {
+        height: auto;
+        min-height: 0;
+        padding: 0.8rem 2rem;
+        border: 1px solid #fff;
+        border-radius: 999px;
+        background: #fff;
+        color: #121212;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .fop-btn.btn.is-dark {
+        background: #121212;
+        border-color: #121212;
+        color: #fff;
+      }
+      .fop-md-dark {
+        --md-filled-button-container-color: #121212;
+        --md-filled-button-label-text-color: #fff;
+        --md-filled-button-hover-label-text-color: #fff;
+        --md-filled-button-focus-label-text-color: #fff;
+        --md-filled-button-pressed-label-text-color: #fff;
+        --md-filled-button-container-shape: 999px;
+      }
+      .fop-toc {
+        display: grid;
+        gap: 0.5rem;
+        align-content: start;
+      }
+      .fop-toc > a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.85rem 1.25rem;
+        border-radius: 999px;
+        background: #fff;
+        color: #121212;
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .fop-toc > a:hover { color: #3b82f6; }
+      .fop-toc .fop-muted { margin-top: 1rem; }
+      .fop-toc .fop-muted a { color: #3b82f6; font-weight: 700; }
+      .fop-legal {
+        display: grid;
+        gap: 4rem;
+      }
+      .fop-legal article { scroll-margin-top: 2rem; }
+      .fop-legal .fop-title { margin-bottom: 1.5rem; font-size: clamp(2.75rem, 5vw, 4rem); }
+      .fop-clause {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.25rem;
+        padding: 1.5rem 0;
+        border-top: 1px solid #e4e4e7;
+      }
+      .fop-clause > span {
+        flex-shrink: 0;
+        width: 3rem;
+        font-size: 2rem;
+        color: #3b82f6;
+      }
+      .fop-clause h3 {
+        margin: 0 0 0.4rem;
+        font-size: 1.05rem;
+        font-weight: 700;
+      }
+      .fop-clause p {
+        margin: 0;
+        font-size: 0.9rem;
+        line-height: 1.7;
+        color: #52525b;
+      }
+      #faq { scroll-margin-top: 2rem; }
+      @media (min-width: 640px) {
+        .fop-form-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .fop-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      }
+      @media (min-width: 960px) {
+        .fop-grid-contact { grid-template-columns: 7fr 5fr; }
+        .fop-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4rem; align-items: center; }
+        .fop-grid-legal { grid-template-columns: 4fr 8fr; gap: 3rem; align-items: start; }
+        .fop-toc { position: sticky; top: 2rem; }
+      }

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fairway Club | Tailwind CSS Private Golf Club Template</title>
+    <meta name="description" content="The Fairway Club is an elegant Tailwind CSS template for private golf clubs, members-only sanctuaries, and luxury sports membership landing pages.">
+    <meta name="keywords" content="The Fairway Club, Tailwind CSS template, HTML website template, private golf club, membership landing page, luxury sports club, responsive golf website design">
+    <meta name="author" content="Let's templates">
+    <link rel="canonical" href="">
+
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Let's templates">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="The Fairway Club | Tailwind CSS Private Golf Club Template">
+    <meta property="og:description" content="An elegant Tailwind CSS template for private golf clubs, members-only sanctuaries, and luxury sports membership landing pages.">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="The Fairway Club template preview">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="The Fairway Club | Tailwind CSS Private Golf Club Template">
+    <meta name="twitter:description" content="An elegant Tailwind CSS template for private golf clubs, members-only sanctuaries, and luxury sports membership landing pages.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:image:alt" content="The Fairway Club template preview">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- block:start navbar -->
+    <header id="header" class="sticky top-0 z-50 w-full bg-[#f5f3eb]/95 backdrop-blur-md border-b border-neutral-200/60">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-4 md:py-6 flex items-center justify-between">
+            <a href="#hero" class="md:hidden serif text-lg font-bold leading-none tracking-tighter uppercase shrink-0">
+                Fairway<br><span class="text-[10px] tracking-[0.3em] font-normal font-sans">Club</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide uppercase shrink-0">
+                <a href="#hero" class="hover:opacity-60 transition-opacity">Entrance</a>
+                <a href="#philosophy" class="hover:opacity-60 transition-opacity">The Heritage</a>
+                <a href="#membership" class="hover:opacity-60 transition-opacity">Membership</a>
+            </nav>
+
+            <div class="hidden md:block absolute left-1/2 -translate-x-1/2 text-center pointer-events-none">
+                <a href="#hero" class="pointer-events-auto serif text-2xl font-bold leading-none tracking-tighter uppercase">
+                    Fairway<br><span class="text-xs tracking-[0.3em] font-normal font-sans">Club</span>
+                </a>
+            </div>
+
+            <div class="flex items-center gap-3 shrink-0">
+                <a href="#membership" class="hidden md:inline-block text-xs uppercase tracking-[0.2em] font-medium border-b border-black/40 pb-1 hover:opacity-60 transition-opacity">
+                    Apply
+                </a>
+                <button
+                    id="mobile-menu-button"
+                    type="button"
+                    class="md:hidden flex flex-col justify-center items-end w-10 h-10 focus:outline-none group"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                    aria-controls="mobile-navigation"
+                >
+                    <span id="mobile-menu-icon-open" class="flex flex-col space-y-1.5" aria-hidden="true">
+                        <span class="w-7 h-px bg-black group-hover:w-5 transition-all"></span>
+                        <span class="w-7 h-px bg-black"></span>
+                    </span>
+                    <span id="mobile-menu-icon-close" class="hidden text-xl leading-none" aria-hidden="true">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <nav
+            id="mobile-navigation"
+            class="md:hidden border-t border-neutral-200/60 bg-[#f5f3eb] px-4 py-4"
+            aria-label="Mobile navigation"
+            hidden
+        >
+            <div class="flex flex-col text-sm font-medium tracking-wide uppercase">
+                <a href="#hero" class="px-3 py-3 rounded-xl hover:bg-white/70 transition-colors">Entrance</a>
+                <a href="#philosophy" class="px-3 py-3 rounded-xl hover:bg-white/70 transition-colors">The Heritage</a>
+                <a href="#membership" class="px-3 py-3 rounded-xl hover:bg-white/70 transition-colors">Membership</a>
+                <a href="#events" class="px-3 py-3 rounded-xl hover:bg-white/70 transition-colors">The Season</a>
+                <a href="#location" class="px-3 py-3 rounded-xl hover:bg-white/70 transition-colors">The Estate</a>
+            </div>
+        </nav>
+    </header>
+    <!-- block:end navbar -->
+
+    <!-- block:start hero -->
+    <section id="hero" class="relative pt-10 pb-20 md:pt-16 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center mb-12 md:mb-20">
+            <span class="text-[10px] sm:text-xs uppercase tracking-[0.3em] sm:tracking-[0.4em] font-medium mb-4 md:mb-6 block text-neutral-500">Private Members Sanctuary</span>
+            <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-8 md:mb-12 max-w-5xl mx-auto font-normal px-2">
+                Rarefied air. <span class="italic font-serif opacity-90">The sanctuary</span> of shared passion.
+            </h1>
+            <a href="#membership" class="inline-block bg-white text-black px-8 sm:px-10 py-3.5 sm:py-4 rounded-full text-sm font-medium hover:bg-black hover:text-white transition-colors duration-300 shadow-sm border border-neutral-100">
+                Explore the club
+            </a>
+        </div>
+
+        <div class="flex items-end justify-start md:justify-center gap-3 sm:gap-4 md:gap-8 px-4 overflow-x-auto pb-4 no-scrollbar snap-x snap-mandatory">
+            <div class="flex-shrink-0 snap-center w-40 sm:w-48 md:w-64 h-[260px] sm:h-[300px] md:h-[400px] rounded-[2rem] md:rounded-[3rem] overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1698432407690-ff72173cc29d?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGx1c2glMjBncmVlbiUyMGdvbGYlMjBjb3Vyc2UlMjBzdW5yaXNlJTIwbWlzdHxlbnwxfHx8fDE3OTUzODYxNDZ8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="cinematic shot of a lush green golf course at sunrise, soft mist, high-end photography" />
+            </div>
+            <div class="flex-shrink-0 snap-center w-44 sm:w-56 md:w-72 h-[300px] sm:h-[350px] md:h-[480px] rounded-[2rem] md:rounded-[3rem] overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1793640439641-1d9d454c3a7a?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGdvbGZlcnMlMjBjbGFzc2ljJTIwYXR0aXJlJTIwd2Fsa2luZyUyMGdyZWVuJTIwY2FuZGlkfGVufDF8fHx8MTc5NTM4NjE0Nnww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="elegant golfers in classic attire walking on a green, candid editorial style" />
+            </div>
+            <div class="flex-shrink-0 snap-center w-48 sm:w-64 md:w-80 h-[340px] sm:h-[400px] md:h-[560px] rounded-[2rem] md:rounded-[3rem] overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1633597468433-fdb200b73f62?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIwZ29sZmVyJTIwd2hpdGUlMjBwb2xvJTIwc2hpcnR8ZW58MXx8fHwxNzk1Mzg2MTQ2fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="portrait of a professional golfer in white polo shirt, clean aesthetic, soft natural lighting" />
+            </div>
+            <div class="flex-shrink-0 snap-center w-44 sm:w-56 md:w-72 h-[300px] sm:h-[350px] md:h-[480px] rounded-[2rem] md:rounded-[3rem] overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1780323252226-91092ed59e40?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGdvbGYlMjBjYXJ0JTIwcGFya2VkJTIwc2NlbmljJTIwZmFpcndheXxlbnwxfHx8fDE3OTUzODYxNDd8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="a modern luxury golf cart parked on a scenic fairway, minimalist composition" />
+            </div>
+            <div class="flex-shrink-0 snap-center w-40 sm:w-48 md:w-64 h-[260px] sm:h-[300px] md:h-[400px] rounded-[2rem] md:rounded-[3rem] overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1629673120178-53a664eec9e8?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHR3byUyMGdvbGYlMjBjbHViJTIwbWVtYmVycyUyMHRhbGtpbmclMjBoaWdoLWVuZHxlbnwxfHx8fDE3OTUzODYxNDh8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="two golf club members talking in a high-end clubhouse terrace, editorial lifestyle photography" />
+            </div>
+        </div>
+    </section>
+    <!-- block:end hero -->
+
+    <!-- block:start cta -->
+    <section id="membership" class="py-20 md:py-32 bg-[#efede4] overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+            <span class="text-[10px] sm:text-xs uppercase tracking-[0.3em] sm:tracking-[0.4em] font-medium mb-4 md:mb-6 block text-neutral-500">Membership</span>
+            <h2 class="text-3xl sm:text-4xl md:text-6xl leading-[1.2] mb-6 md:mb-8 max-w-4xl mx-auto font-normal px-2">
+                Belonging here is a silent accord. <br><span class="italic opacity-80">It is earned through character.</span>
+            </h2>
+            <p class="max-w-xl mx-auto text-neutral-600 text-sm sm:text-base md:text-lg mb-10 md:mb-12 font-light leading-relaxed px-2">
+                We curate a circle of individuals who value depth over display. Every member contributes to the club's enduring legacy of sportsmanship and quiet connection.
+            </p>
+            <a href="#location" class="inline-block bg-white text-black px-8 sm:px-10 py-3.5 sm:py-4 rounded-full text-sm font-medium hover:bg-black hover:text-white transition-colors duration-300 shadow-sm border border-neutral-100 mb-12 md:mb-24">
+                Apply Now
+            </a>
+
+            <div class="flex md:relative md:h-[600px] items-center gap-4 md:gap-0 overflow-x-auto md:overflow-visible pb-4 md:pb-0 no-scrollbar snap-x snap-mandatory md:snap-none md:justify-center md:space-x-[-50px] px-2 md:px-0">
+                <div class="flex-shrink-0 snap-center w-36 sm:w-40 md:w-64 aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl md:-rotate-6 z-10">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1765198955329-54f2ece22c52?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHZpbnRhZ2UlMjBnb2xmJTIwZXF1aXBtZW50JTIwbGVhdGhlciUyMGJhZyUyMHdvb2RlbnxlbnwxfHx8fDE3OTUzODYxNDh8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="vintage golf equipment, leather bag, wooden clubs, moody lighting" />
+                </div>
+                <div class="flex-shrink-0 snap-center w-40 sm:w-48 md:w-72 aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl md:rotate-3 z-20">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1593282153762-a41e3cceb06c?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHR3byUyMGZlbWFsZSUyMGdvbGYlMjBtZW1iZXJzJTIwaGlnaC1maXZpbmclMjBncmVlbnxlbnwxfHx8fDE3OTUzODYxNDl8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="two female golf members high-fiving on a green, joyful and elegant atmosphere" />
+                </div>
+                <div class="flex-shrink-0 snap-center w-44 sm:w-56 md:w-80 aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl md:-rotate-2 z-30">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1762980966910-d854b689726e?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGxhbmRzY2FwZSUyMGNvYXN0YWwlMjBnb2xmJTIwY291cnNlJTIwZ29sZGVuJTIwaG91cnxlbnwxfHx8fDE3OTUzODYxNDl8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="wide landscape of a coastal golf course at golden hour, breathtaking views" />
+                </div>
+                <div class="flex-shrink-0 snap-center w-40 sm:w-48 md:w-72 aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl md:rotate-6 z-20">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1622819219246-b27f75fffbba?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fGdyb3VwJTIwZnJpZW5kcyUyMGdvbGYlMjBjYXJ0JTIwbGF1Z2hpbmclMjBsaWZlc3R5bGV8ZW58MXx8fHwxNzk1Mzg2MTUwfDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="group of friends in a luxury golf cart laughing, editorial lifestyle" />
+                </div>
+                <div class="flex-shrink-0 snap-center w-36 sm:w-40 md:w-64 aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl md:-rotate-12 z-10">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1771409151249-36b45b6fdabe?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fG1hY3JvJTIwZ29sZiUyMGJhbGwlMjBiZWluZyUyMHBsYWNlZCUyMHRlZXxlbnwxfHx8fDE3OTUzODYxNTB8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="macro shot of a golf ball being placed on a tee, minimalist clean shot" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end cta -->
+
+    <!-- block:start about -->
+    <section id="philosophy" class="py-20 md:py-32 bg-[#f5f3eb] overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-start">
+            <div class="space-y-8 md:space-y-12 min-w-0">
+                <div class="max-w-md">
+                    <span class="text-[10px] sm:text-xs uppercase tracking-[0.3em] sm:tracking-[0.4em] font-medium mb-4 md:mb-6 block text-neutral-500">Not everything needs knowing</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl leading-tight mb-6 md:mb-8 font-normal">
+                        Some parts are visible. <br><span class="italic opacity-80">Most are not.</span>
+                    </h2>
+                    <p class="text-neutral-600 text-sm sm:text-base md:text-lg font-light leading-relaxed">
+                        What defines the society is not access, but alignment — in mindset, conduct, and respect for the game and for others within it. Not everything needs to be known to be understood.
+                    </p>
+                </div>
+
+                <!-- Staggered Grid -->
+                <div class="grid grid-cols-3 gap-2 sm:gap-4 h-auto min-h-[280px] sm:min-h-[360px] md:h-[500px]">
+                    <div class="col-span-1 flex flex-col justify-end">
+                        <div class="aspect-[3/4] rounded-2xl overflow-hidden mb-4 h-32">
+                            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1696104470342-b1ed3afe8381?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fGdvbGZlciUyMGZpbmlzaGluZyUyMHN3aW5nJTIwc2lsaG91ZXR0ZSUyMHN1bnNldHxlbnwxfHx8fDE3OTUzODYxNTF8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="golfer finishing a swing, silhouette, sunset" />
+                        </div>
+                    </div>
+                    <div class="col-span-1 flex flex-col justify-center">
+                        <div class="aspect-[3/4] rounded-2xl overflow-hidden mb-4 h-48">
+                            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1689323473750-75520243edcb?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHdhdGNoJTIwZ29sZiUyMGdsb3ZlfGVufDF8fHx8MTc5NTM4NjE1MXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="close up of a luxury watch and a golf glove" />
+                        </div>
+                        <div class="aspect-square rounded-2xl overflow-hidden h-32">
+                            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1713728920029-3184af309c47?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGdvbGYlMjBiYWclMjBjb3Vyc2V8ZW58MXx8fHwxNzk1Mzg2NDkzfDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="two golf bags leaning against a wooden fence" />
+                        </div>
+                    </div>
+                    <div class="col-span-1 space-y-4">
+                        <div class="aspect-[3/4] rounded-2xl overflow-hidden h-64">
+                            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1761971976592-58882ab1cacc?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGZyaWVuZHMlMjBzaGFyaW5nJTIwZHJpbmslMjBjbHViaG91c2UlMjBsb3VuZ2V8ZW58MXx8fHwxNzk1Mzg2MTUyfDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="friends sharing a drink at the clubhouse lounge" />
+                        </div>
+                        <div class="aspect-square rounded-2xl overflow-hidden h-40">
+                            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1709525615743-1b45c0d2e081?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGdvbGYlMjBmbGFnJTIwd2luZHxlbnwxfHx8fDE3OTUzODYxNTJ8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="minimalist shot of a golf flag in the wind" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-[420px] sm:h-[520px] md:h-[600px] lg:h-[800px] rounded-[2rem] md:rounded-[3rem] overflow-hidden lg:sticky lg:top-24">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1591491640784-3232eb748d4b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHN0eWxpc2glMjBnb2xmZXIlMjBtaWQtYWN0aW9uJTIwd2VhcmluZyUyMGNvbnRlbXBvcmFyeSUyMGdvbGZ8ZW58MXx8fHwxNzk1Mzg2MTUzfDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="a stylish golfer in mid-action, wearing contemporary minimal golf wear, dynamic pose, high-end edito" />
+            </div>
+        </div>
+    </section>
+    <!-- block:end about -->
+
+    <!-- block:start process -->
+    <section id="pace" class="py-20 md:py-32 bg-[#f5f3eb] overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative">
+            <div class="mb-12 md:mb-20 max-w-xl">
+                <span class="text-[10px] sm:text-xs uppercase tracking-[0.3em] sm:tracking-[0.4em] font-medium mb-4 md:mb-6 block text-neutral-500">The Pace</span>
+                <h2 class="text-3xl sm:text-4xl md:text-6xl leading-tight mb-6 md:mb-8 font-normal">
+                    Nothing here is rushed. <br><span class="italic bg-[#efede4] px-3 sm:px-4 py-1 rounded">Including people.</span>
+                </h2>
+                <p class="text-neutral-600 text-base md:text-lg font-light">
+                    Every meeting is special. <br>Every participant is unique.
+                </p>
+            </div>
+
+            <div class="relative flex flex-col md:block gap-16 md:gap-0 h-auto md:h-[600px] w-full mt-8 md:mt-20">
+                <!-- Curve SVG -->
+                <svg class="hidden md:block absolute top-0 left-0 w-full h-full text-neutral-300 pointer-events-none" viewBox="0 0 1000 500" fill="none">
+                    <path d="M0,500 C200,400 400,100 1000,50" stroke="currentColor" stroke-width="1" />
+                </svg>
+
+                <!-- Morning Node -->
+                <div class="md:absolute md:left-[30%] md:top-[40%] flex flex-col items-center">
+                    <div class="mb-4 text-center">
+                        <i class="fa-solid fa-sun text-xs mb-2"></i>
+                        <h3 class="serif italic text-xl sm:text-2xl">Morning</h3>
+                        <p class="text-[10px] sm:text-xs uppercase tracking-widest text-neutral-500 mt-1">The day opens slowly.</p>
+                    </div>
+                    <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1629928515074-0a76b71e9954?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fHR3byUyMGdvbGZlcnMlMjB3YWxraW5nJTIwZGV3eXxlbnwxfHx8fDE3OTUzODYxOTN8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="two golfers walking on a dewy fairway in the early morning light" />
+                    </div>
+                </div>
+
+                <!-- Afternoon Node -->
+                <div class="md:absolute md:right-[10%] md:top-[10%] flex flex-col items-center">
+                    <div class="mb-4 text-center">
+                        <i class="fa-solid fa-cloud-sun text-xs mb-2"></i>
+                        <h3 class="serif italic text-xl sm:text-2xl">Afternoon</h3>
+                        <p class="text-[10px] sm:text-xs uppercase tracking-widest text-neutral-500 mt-1">Nothing is rushed.</p>
+                    </div>
+                    <div class="w-24 h-24 sm:w-28 sm:h-28 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1714405640106-76a06fba4786?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHNlcmVuZSUyMGdyZWVuJTIwbGFuZHNjYXBlJTIwbG9uZSUyMGdvbGZlcnxlbnwxfHx8fDE3OTUzODYxOTR8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="a serene green landscape with a lone golfer under a red umbrella" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end process -->
+
+    <!-- block:start events -->
+    <section id="events" class="py-20 md:py-32 bg-[#efede4]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 space-y-6 md:space-y-0">
+                <div class="max-w-xl">
+                    <span class="text-xs uppercase tracking-[0.4em] font-medium mb-6 block text-neutral-500">The Season</span>
+                    <h2 class="text-4xl md:text-5xl font-normal leading-tight">
+                        Curated moments for <br><span class="italic opacity-80">the discerning member.</span>
+                    </h2>
+                </div>
+                <a href="#" class="text-xs uppercase tracking-[0.3em] font-bold border-b border-black pb-2 hover:opacity-60 transition-opacity">View full season</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="group cursor-pointer">
+                    <div class="aspect-[4/5] rounded-3xl overflow-hidden mb-6 relative">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1689781307118-030db9290d38?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGxvbmclMjB0YWJsZSUyMHNldCUyMG91dGRvb3IlMjBkaW5uZXJ8ZW58MXx8fHwxNzk1Mzg2MTk0fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="long table set for an elegant outdoor dinner on a golf course at night, fairy lights" />
+                        <div class="absolute top-6 left-6 bg-white px-4 py-2 rounded-full shadow-sm">
+                            <span class="text-xs font-bold uppercase tracking-widest text-black">Oct 12</span>
+                        </div>
+                    </div>
+                    <h3 class="serif text-2xl mb-2">The Autumn Invitational</h3>
+                    <p class="text-neutral-500 text-sm uppercase tracking-widest">Tournament & Social</p>
+                </div>
+                <!-- Event 2 -->
+                <div class="group cursor-pointer">
+                    <div class="aspect-[4/5] rounded-3xl overflow-hidden mb-6 relative">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1678060553550-a01e77195a5a?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGludGVyaW9yJTIwY2x1YmhvdXNlJTIwbGlicmFyeSUyMGxlYXRoZXIlMjBjaGFpcnN8ZW58MXx8fHwxNzk1Mzg2MTk1fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="interior of a luxury clubhouse library, leather chairs, fireplace, warm lighting" />
+                        <div class="absolute top-6 left-6 bg-white px-4 py-2 rounded-full shadow-sm">
+                            <span class="text-xs font-bold uppercase tracking-widest text-black">Nov 05</span>
+                        </div>
+                    </div>
+                    <h3 class="serif text-2xl mb-2">Heritage Gala Dinner</h3>
+                    <p class="text-neutral-500 text-sm uppercase tracking-widest">Formal Evening</p>
+                </div>
+                <!-- Event 3 -->
+                <div class="group cursor-pointer">
+                    <div class="aspect-[4/5] rounded-3xl overflow-hidden mb-6 relative">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1623113807896-3b3a7fc2aec0?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGdvbGZlciUyMGluc3RydWN0aW5nJTIwc3R1ZGVudHxlbnwxfHx8fDE3OTUzODYxNTV8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="professional golfer instructing a student, minimalist clean composition, soft light" />
+                        <div class="absolute top-6 left-6 bg-white px-4 py-2 rounded-full shadow-sm">
+                            <span class="text-xs font-bold uppercase tracking-widest text-black">Nov 20</span>
+                        </div>
+                    </div>
+                    <h3 class="serif text-2xl mb-2">The Art of the Swing</h3>
+                    <p class="text-neutral-500 text-sm uppercase tracking-widest">Masterclass</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end events -->
+
+    <!-- block:start contact -->
+    <section id="location" class="py-20 md:py-32 bg-[#f5f3eb]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
+                <div class="lg:col-span-7 h-[320px] sm:h-[420px] md:h-[600px] rounded-[2rem] md:rounded-[3rem] overflow-hidden relative shadow-inner bg-neutral-200 min-w-0">
+                    <!-- Map Placeholder/Illustration -->
+                    <img class="w-full h-full object-cover opacity-80" src="https://images.unsplash.com/photo-1787945832695-98618e9082ad?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGFydGlzdGljJTIwbWFwJTIwY29hc3RhbCUyMHJlZ2lvbiUyMGVhcnRoJTIwdG9wb2dyYXBoaWNhbHxlbnwxfHx8fDE3OTUzODYxNTZ8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="minimalist artistic map of a coastal region, soft earth tones, topographical lines" />
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="relative">
+                            <div class="w-4 h-4 bg-black rounded-full animate-ping absolute"></div>
+                            <div class="w-4 h-4 bg-black rounded-full relative"></div>
+                            <div class="absolute top-8 left-1/2 -translate-x-1/2 whitespace-nowrap bg-white px-4 py-2 rounded-lg shadow-lg text-xs font-bold uppercase tracking-widest">
+                                The Fairway Club
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 lg:pl-0 xl:pl-12 min-w-0">
+                    <span class="text-[10px] sm:text-xs uppercase tracking-[0.3em] sm:tracking-[0.4em] font-medium mb-4 md:mb-6 block text-neutral-500">The Estate</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-normal leading-tight mb-6 md:mb-8">
+                        Where the land <br><span class="italic opacity-80">meets the sky.</span>
+                    </h2>
+                    <p class="text-neutral-600 text-base md:text-lg font-light leading-relaxed mb-8 md:mb-12">
+                        Nestled in the quiet reaches of the Highlands, our estate offers a sanctuary far from the noise of the modern world.
+                    </p>
+
+                    <div class="bg-white p-6 sm:p-8 md:p-12 rounded-[2rem] md:rounded-[2.5rem] shadow-sm border border-neutral-100">
+                        <h4 class="serif text-2xl mb-4 text-center">Join the Correspondence</h4>
+                        <p class="text-neutral-500 text-sm text-center mb-8 font-light leading-relaxed">
+                            A monthly letter on the craft, the club, and the finer details of the game.
+                        </p>
+                        <form class="space-y-4">
+                            <div class="relative">
+                                <input type="email" placeholder="Email Address" class="w-full px-6 py-4 rounded-full bg-neutral-50 border-transparent focus:border-neutral-200 focus:bg-white focus:ring-0 transition-all text-sm outline-none">
+                            </div>
+                            <button type="submit" class="w-full bg-black text-white py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold hover:bg-neutral-800 transition-colors">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end contact -->
+
+    <!-- block:start footer -->
+    <footer id="footer" class="py-12 md:py-16 px-4 sm:px-6 md:px-12 border-t border-neutral-200">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
+            <div class="text-center md:text-left">
+                <div class="text-xl font-bold leading-none tracking-tighter uppercase serif mb-4">
+                    Fairway<br><span class="text-xs tracking-[0.3em] font-normal font-sans">Club</span>
+                </div>
+                <p class="text-xs text-neutral-500 uppercase tracking-widest">© 2024 The Fairway Club. All rights reserved.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8 text-xs uppercase tracking-widest font-medium text-neutral-600">
+                <a href="#" class="hover:text-black transition-colors">Privacy</a>
+                <a href="#" class="hover:text-black transition-colors">Terms</a>
+                <a href="#" class="hover:text-black transition-colors">Contact</a>
+                <a href="#" class="hover:text-black transition-colors">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <!-- block:end footer -->
+
+    <script>
+        (function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileNavigation = document.getElementById('mobile-navigation');
+            const iconOpen = document.getElementById('mobile-menu-icon-open');
+            const iconClose = document.getElementById('mobile-menu-icon-close');
+
+            if (!mobileMenuButton || !mobileNavigation) return;
+
+            function setMobileMenu(open) {
+                mobileNavigation.hidden = !open;
+                mobileMenuButton.setAttribute('aria-expanded', String(open));
+                mobileMenuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+                iconOpen.classList.toggle('hidden', open);
+                iconClose.classList.toggle('hidden', !open);
+            }
+
+            mobileMenuButton.addEventListener('click', function () {
+                setMobileMenu(mobileNavigation.hidden);
+            });
+
+            mobileNavigation.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    setMobileMenu(false);
+                });
+            });
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape' && !mobileNavigation.hidden) {
+                    setMobileMenu(false);
+                }
+            });
+        })();
+    </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=the-fairway-club&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

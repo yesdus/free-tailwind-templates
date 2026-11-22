@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crumbelle | Tailwind CSS Food &amp; Restaurant Template</title>
+  <meta name="description" content="Crumbelle is a cheerful, checkerboard Tailwind CSS bakery template for pastry shops and dessert delivery, with a tilted cake hero, product boxes, an ingredients spotlight, a build-your-box configurator, a delivery checker and an FAQ.">
+  <meta name="keywords" content="Crumbelle, Tailwind CSS template, HTML website template, bakery template, pastry shop website, dessert delivery, cake shop, food and restaurant template, online bakery">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Crumbelle | Tailwind CSS Food &amp; Restaurant Template">
+  <meta property="og:description" content="A cheerful, checkerboard Tailwind CSS bakery template with product boxes, a build-your-box configurator and a delivery checker.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Crumbelle template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Crumbelle | Tailwind CSS Food &amp; Restaurant Template">
+  <meta name="twitter:description" content="A cheerful, checkerboard Tailwind CSS bakery template with product boxes, a build-your-box configurator and a delivery checker.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Crumbelle template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { blush: '#fdecec', rose: { DEFAULT: '#f7a6a8', deep: '#ef7f86' }, mint: '#b2dcc7', pistachio: '#e1e8c4', peach: '#fcd2b4', ink: '#141414' },
+          fontFamily: { sans: ['Poppins', 'sans-serif'], display: ['Chewy', 'cursive'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-blush font-sans text-ink antialiased">
+  <!-- block:start navbar -->
+  <header class="relative z-40">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-5 py-5 md:px-8" aria-label="Main">
+      <a href="index.html" class="font-display text-3xl leading-none">Crumbelle</a>
+      <div class="hidden items-center gap-7 text-sm lg:flex">
+        <ul class="flex items-center gap-7">
+            <li><a href="about.html"  class="hover:text-rose-deep">About us</a></li>
+            <li><a href="pastries.html"  class="hover:text-rose-deep">Pastries</a></li>
+            <li><a href="contact.html"  class="hover:text-rose-deep">Contact</a></li>
+          <li class="relative" data-dropdown>
+            <button type="button" data-dropdown-toggle aria-expanded="false" aria-controls="more-menu" class="flex items-center gap-1.5  hover:text-rose-deep">More <i class="fa-solid fa-chevron-down text-[10px]" aria-hidden="true"></i></button>
+            <ul id="more-menu" class="absolute right-0 top-full mt-3 hidden w-44 rounded-xl border border-ink bg-white p-2 shadow-[0_4px_0_#141414]">
+                <li><a href="delivery.html"  class="block rounded-lg px-3 py-2 hover:bg-blush ">Delivery</a></li>
+                <li><a href="order.html"  class="block rounded-lg px-3 py-2 hover:bg-blush ">Build a box</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a href="login.html"  class="btn-pop rounded-md border border-ink bg-white px-4 py-1.5">Login</a>
+        <a href="order.html" class="btn-pop rounded-md border border-ink bg-rose px-4 py-1.5">Order</a>
+      </div>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="btn-pop grid h-11 w-11 place-items-center rounded-md border border-ink bg-white lg:hidden"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+    </nav>
+    <div id="mobile-menu" class="hidden px-5 pb-6 lg:hidden">
+      <ul class="grid gap-1 rounded-2xl border border-ink bg-white p-3 text-lg shadow-[0_4px_0_#141414]">
+          <li><a href="index.html" aria-current="page" class="block rounded-lg px-4 py-2.5 bg-rose font-semibold">Home</a></li>
+          <li><a href="about.html"  class="block rounded-lg px-4 py-2.5 hover:bg-blush">About us</a></li>
+          <li><a href="pastries.html"  class="block rounded-lg px-4 py-2.5 hover:bg-blush">Pastries</a></li>
+          <li><a href="contact.html"  class="block rounded-lg px-4 py-2.5 hover:bg-blush">Contact</a></li>
+          <li><a href="delivery.html"  class="block rounded-lg px-4 py-2.5 hover:bg-blush">Delivery</a></li>
+          <li><a href="order.html"  class="block rounded-lg px-4 py-2.5 hover:bg-blush">Build a box</a></li>
+          <li><a href="login.html"  class="block rounded-lg px-4 py-2.5 hover:bg-blush">Login</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section class="relative overflow-hidden">
+    <div class="checker absolute inset-y-0 right-0 hidden w-[44%] [clip-path:polygon(22%_0,100%_0,100%_100%,0_100%)] lg:block" aria-hidden="true"></div>
+    <div class="relative mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-8 md:px-8 lg:min-h-[36rem] lg:grid-cols-[1.1fr_1fr] lg:pb-24">
+      <div>
+        <h1 class="font-display text-6xl leading-[0.95] md:text-7xl lg:text-[5.5rem]">Warm <span class="text-rose-deep">pastries</span>,<br><span class="text-rose-deep">quick</span> delivery</h1>
+        <p class="mt-6 max-w-md text-[15px] leading-relaxed">Crumbelle bakes the best-loved classics with real ingredients you can trust. Order now and taste what proper baking feels like.</p>
+        <div class="mt-8 flex gap-3">
+          <a href="order.html" class="btn-pop rounded-md border border-ink bg-rose px-6 py-2.5 font-medium">Order</a>
+          <a href="about.html" class="btn-pop rounded-md border border-ink bg-white px-6 py-2.5 font-medium">Learn</a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="checker absolute -inset-4 rounded-3xl lg:hidden" aria-hidden="true"></div>
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1100&q=80" alt="Layered chocolate cake with glossy drip and piped cream rosettes" class="wiggle relative aspect-[5/4] w-full rotate-3 rounded-[2rem] border border-ink object-cover shadow-[0_6px_0_#141414] lg:ml-6">
+        <span class="absolute -bottom-5 left-2 -rotate-6 rounded-full border border-ink bg-white px-4 py-2 font-display text-xl shadow-[0_3px_0_#141414] md:left-0">Baked at 5am today</span>
+      </div>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start about -->
+  <section class="wave-top relative bg-mint pb-24 pt-28 md:pt-36">
+    <div class="mx-auto max-w-6xl px-5 md:px-8">
+      <div class="mx-auto max-w-2xl text-center" data-reveal>
+        <h2 class="font-display text-5xl md:text-6xl">Baked <span class="text-white">properly</span>, every time</h2>
+        <p class="mt-5 leading-relaxed">We start with real butter, flour, eggs and time. No shortcuts, no premixes, just the patient craft of real baking. Every pastry tastes like the ones you remember from a grandparent's kitchen.</p>
+      </div>
+      <div class="mt-14 grid gap-6 md:grid-cols-2">
+        <div class="grid gap-6">
+          <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=1000&q=80" alt="Baker piping chocolate rosettes onto a layered cake" class="aspect-[4/3] w-full rounded-xl border border-ink object-cover" loading="lazy" data-reveal>
+          <img src="https://images.unsplash.com/photo-1556911073-a517e752729c?auto=format&fit=crop&w=1000&q=80" alt="Baker preparing fresh ingredients in a bright kitchen" class="aspect-[4/3] w-full rounded-xl border border-ink object-cover md:aspect-[4/5]" loading="lazy" data-reveal>
+        </div>
+        <div class="grid gap-6">
+          <img src="https://images.unsplash.com/photo-1486887396153-fa416526c108?auto=format&fit=crop&w=1000&q=80" alt="Hands holding a freshly baked country loaf" class="aspect-[4/3] w-full rounded-xl border border-ink object-cover md:aspect-[4/5]" loading="lazy" data-reveal style="--reveal-delay: 120ms">
+          <img src="https://images.unsplash.com/photo-1534432182912-63863115e106?auto=format&fit=crop&w=1000&q=80" alt="Trays of pastries and cakes laid out on the counter" class="aspect-[4/3] w-full rounded-xl border border-ink object-cover" loading="lazy" data-reveal style="--reveal-delay: 120ms">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end about -->
+
+  <!-- block:start products -->
+  <section class="bg-blush">
+    <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <div class="max-w-xl">
+          <h2 class="font-display text-5xl md:text-6xl">Crowd <span class="text-rose-deep">favourites</span></h2>
+          <p class="mt-4 leading-relaxed">The bakes that keep our regulars coming back, made fresh each day and ready when you are.</p>
+        </div>
+        <a href="pastries.html" class="btn-pop rounded-md border border-ink bg-white px-5 py-2 text-sm font-medium">Browse</a>
+      </div>
+      <ul class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <li data-reveal style="--reveal-delay: 0ms">
+            <a href="pastries.html" class="group block">
+              <span class="block overflow-hidden rounded-xl border border-ink"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Two golden croissants dusted with sugar" class="aspect-square w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy"></span>
+              <span class="mt-3 block rounded-xl border border-ink bg-rose px-4 py-3 transition group-hover:-translate-y-1">
+                <span class="block font-medium">Butter croissant</span>
+                <span class="block text-xs">Box of 6</span>
+                <span class="mt-2 block text-xl font-semibold">$18</span>
+              </span>
+            </a>
+          </li>
+          <li data-reveal style="--reveal-delay: 100ms">
+            <a href="pastries.html" class="group block">
+              <span class="block overflow-hidden rounded-xl border border-ink"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Stack of fudgy chocolate brownies" class="aspect-square w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy"></span>
+              <span class="mt-3 block rounded-xl border border-ink bg-rose px-4 py-3 transition group-hover:-translate-y-1">
+                <span class="block font-medium">Fudge brownie</span>
+                <span class="block text-xs">Box of 9</span>
+                <span class="mt-2 block text-xl font-semibold">$16</span>
+              </span>
+            </a>
+          </li>
+          <li data-reveal style="--reveal-delay: 200ms">
+            <a href="pastries.html" class="group block">
+              <span class="block overflow-hidden rounded-xl border border-ink"><img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=800&q=80" alt="Cinnamon rolls dusted with sugar on a dark tray" class="aspect-square w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy"></span>
+              <span class="mt-3 block rounded-xl border border-ink bg-rose px-4 py-3 transition group-hover:-translate-y-1">
+                <span class="block font-medium">Cinnamon roll</span>
+                <span class="block text-xs">Box of 6</span>
+                <span class="mt-2 block text-xl font-semibold">$20</span>
+              </span>
+            </a>
+          </li>
+          <li data-reveal style="--reveal-delay: 0ms">
+            <a href="pastries.html" class="group block">
+              <span class="block overflow-hidden rounded-xl border border-ink"><img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80" alt="Lemon tart topped with toasted meringue" class="aspect-square w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy"></span>
+              <span class="mt-3 block rounded-xl border border-ink bg-rose px-4 py-3 transition group-hover:-translate-y-1">
+                <span class="block font-medium">Lemon meringue tart</span>
+                <span class="block text-xs">Whole tart</span>
+                <span class="mt-2 block text-xl font-semibold">$24</span>
+              </span>
+            </a>
+          </li>
+          <li data-reveal style="--reveal-delay: 100ms">
+            <a href="pastries.html" class="group block">
+              <span class="block overflow-hidden rounded-xl border border-ink"><img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?auto=format&fit=crop&w=800&q=80" alt="Two cherry lattice pies with fresh berries" class="aspect-square w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy"></span>
+              <span class="mt-3 block rounded-xl border border-ink bg-rose px-4 py-3 transition group-hover:-translate-y-1">
+                <span class="block font-medium">Cherry lattice pie</span>
+                <span class="block text-xs">Two mini pies</span>
+                <span class="mt-2 block text-xl font-semibold">$15</span>
+              </span>
+            </a>
+          </li>
+          <li data-reveal style="--reveal-delay: 200ms">
+            <a href="pastries.html" class="group block">
+              <span class="block overflow-hidden rounded-xl border border-ink"><img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=800&q=80" alt="Vanilla cupcakes with swirled frosting and sprinkles" class="aspect-square w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy"></span>
+              <span class="mt-3 block rounded-xl border border-ink bg-rose px-4 py-3 transition group-hover:-translate-y-1">
+                <span class="block font-medium">Confetti cupcakes</span>
+                <span class="block text-xs">Box of 4</span>
+                <span class="mt-2 block text-xl font-semibold">$17</span>
+              </span>
+            </a>
+          </li>
+      </ul>
+    </div>
+  </section>
+  <!-- block:end products -->
+
+  <!-- block:start process -->
+  <section class="bg-blush pb-24">
+    <div class="mx-auto max-w-6xl px-5 md:px-8">
+      <h2 class="text-center font-display text-4xl md:text-5xl">Oven to doorstep in three steps</h2>
+      <ol class="mt-12 grid border border-ink md:grid-cols-3">
+          <li class="bg-rose px-6 py-8 text-center ">
+            <span class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-white text-xl" aria-hidden="true"><i class="fa-solid fa-fire-burner"></i></span>
+            <h3 class="mt-4 font-display text-3xl">Bake</h3>
+            <p class="mx-auto mt-3 max-w-[16rem] text-sm leading-relaxed">Every pastry leaves the oven golden and still warm.</p>
+          </li>
+          <li class="bg-mint px-6 py-8 text-center border-t border-ink md:border-l md:border-t-0">
+            <span class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-white text-xl" aria-hidden="true"><i class="fa-solid fa-box-open"></i></span>
+            <h3 class="mt-4 font-display text-3xl">Pack</h3>
+            <p class="mx-auto mt-3 max-w-[16rem] text-sm leading-relaxed">We box them gently so nothing arrives squashed.</p>
+          </li>
+          <li class="bg-pistachio px-6 py-8 text-center border-t border-ink md:border-l md:border-t-0">
+            <span class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-white text-xl" aria-hidden="true"><i class="fa-solid fa-truck-fast"></i></span>
+            <h3 class="mt-4 font-display text-3xl">Ship</h3>
+            <p class="mx-auto mt-3 max-w-[16rem] text-sm leading-relaxed">Your treats turn up quickly, fresh and ready to enjoy.</p>
+          </li>
+      </ol>
+    </div>
+  </section>
+  <!-- block:end process -->
+
+  <!-- block:start features -->
+  <section class="checker">
+    <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="font-display text-5xl md:text-6xl">What goes in is what you taste</h2>
+        <p class="mt-5 leading-relaxed">We bake in the open. Every ingredient is one you'd keep in your own cupboard, and we're happy to tell you exactly what they are.</p>
+      </div>
+      <div class="mt-14 grid items-center gap-6 lg:grid-cols-[1fr_1.3fr_1fr]">
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-1">
+                <div class="rounded-2xl border border-ink bg-white/70 p-6 text-center backdrop-blur" data-reveal>
+                  <span class="mx-auto grid h-14 w-14 place-items-center rounded-full border border-ink text-lg" aria-hidden="true"><i class="fa-solid fa-egg"></i></span>
+                  <h3 class="mt-4 font-display text-2xl leading-tight">Butter, flour, eggs. That&#39;s the list</h3>
+                  <p class="mt-2 text-sm leading-relaxed">Plus salt and patience. Nothing else goes in.</p>
+                </div>
+                <div class="rounded-2xl border border-ink bg-white/70 p-6 text-center backdrop-blur" data-reveal>
+                  <span class="mx-auto grid h-14 w-14 place-items-center rounded-full border border-ink text-lg" aria-hidden="true"><i class="fa-solid fa-rotate-left"></i></span>
+                  <h3 class="mt-4 font-display text-2xl leading-tight">Fresh, or your money back</h3>
+                  <p class="mt-2 text-sm leading-relaxed">If it isn&#39;t perfect when it lands, we refund you. No questions.</p>
+                </div>
+            </div>
+            <div class="relative mx-auto w-full max-w-sm">
+              <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=900&q=80" alt="Pink drip cake topped with an ice cream cone on a white cake stand" class="aspect-square w-full rounded-full border border-ink object-cover shadow-[0_6px_0_#141414]" loading="lazy">
+              <span class="absolute -right-2 top-6 rotate-12 rounded-full border border-ink bg-rose px-4 py-2 font-display text-xl">100% real</span>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-1">
+                <div class="rounded-2xl border border-ink bg-white/70 p-6 text-center backdrop-blur" data-reveal>
+                  <span class="mx-auto grid h-14 w-14 place-items-center rounded-full border border-ink text-lg" aria-hidden="true"><i class="fa-solid fa-truck"></i></span>
+                  <h3 class="mt-4 font-display text-2xl leading-tight">Baked today, sent today</h3>
+                  <p class="mt-2 text-sm leading-relaxed">Out of the oven at dawn and on its way by lunch.</p>
+                </div>
+                <div class="rounded-2xl border border-ink bg-white/70 p-6 text-center backdrop-blur" data-reveal>
+                  <span class="mx-auto grid h-14 w-14 place-items-center rounded-full border border-ink text-lg" aria-hidden="true"><i class="fa-solid fa-ban"></i></span>
+                  <h3 class="mt-4 font-display text-2xl leading-tight">No mystery ingredients</h3>
+                  <p class="mt-2 text-sm leading-relaxed">No preservatives, no fillers, just good baking done right.</p>
+                </div>
+            </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start reviews -->
+  <section class="bg-blush">
+    <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
+      <h2 class="font-display text-5xl md:text-6xl">Kind <span class="text-rose-deep">words</span></h2>
+      <p class="mt-3">Real people, real breakfasts with Crumbelle.</p>
+      <div class="mt-12 grid gap-10 md:grid-cols-3">
+          <figure data-reveal style="--reveal-delay: 0ms">
+            <p class="text-mint" aria-label="Five stars"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
+            <blockquote class="mt-4 font-display text-2xl leading-snug">&ldquo;They taste like they came from the corner bakery, not a delivery box.&rdquo;</blockquote>
+            <figcaption class="mt-5 flex items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDR8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Sofia Lindqvist" class="h-12 w-12 rounded-full object-cover" loading="lazy">
+              <span><span class="block text-sm font-semibold">Sofia Lindqvist</span><span class="text-sm">Regular customer</span></span>
+            </figcaption>
+          </figure>
+          <figure data-reveal style="--reveal-delay: 120ms">
+            <p class="text-mint" aria-label="Five stars"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
+            <blockquote class="mt-4 font-display text-2xl leading-snug">&ldquo;Quick delivery, and the croissants were still warm when the box opened.&rdquo;</blockquote>
+            <figcaption class="mt-5 flex items-center gap-3">
+              <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Daniel Mensah" class="h-12 w-12 rounded-full object-cover" loading="lazy">
+              <span><span class="block text-sm font-semibold">Daniel Mensah</span><span class="text-sm">Breakfast lover</span></span>
+            </figcaption>
+          </figure>
+          <figure data-reveal style="--reveal-delay: 240ms">
+            <p class="text-mint" aria-label="Five stars"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
+            <blockquote class="mt-4 font-display text-2xl leading-snug">&ldquo;Finally a bakery I can trust. Short ingredient lists, brilliant baking.&rdquo;</blockquote>
+            <figcaption class="mt-5 flex items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1674932668403-33398b81c92f?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDZ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="Portrait of Aiko Tanaka" class="h-12 w-12 rounded-full object-cover" loading="lazy">
+              <span><span class="block text-sm font-semibold">Aiko Tanaka</span><span class="text-sm">Home baker</span></span>
+            </figcaption>
+          </figure>
+      </div>
+    </div>
+  </section>
+  <!-- block:end reviews -->
+
+  <section class="wave-top bg-white pb-20 pt-28 md:pb-24">
+    <div class="mx-auto max-w-6xl px-5 md:px-8">
+      <h2 class="font-display text-5xl md:text-6xl">Made for the <span class="text-rose-deep">way you live</span></h2>
+      <p class="mt-4 max-w-xl leading-relaxed">You're busy. So we ship quickly and pack cleverly, and fresh baking fits into your week without the fuss.</p>
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <a href="delivery.html" class="group flex flex-col overflow-hidden rounded-2xl border border-ink bg-pistachio transition hover:-translate-y-1 hover:shadow-[0_6px_0_#141414]" data-reveal>
+            <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=800&q=80" alt="Courier cycling a delivery bag down a narrow street" class="aspect-[16/10] w-full object-cover" loading="lazy">
+            <span class="flex-1 p-7">
+              <span class="block font-display text-3xl leading-tight">Two-day delivery almost everywhere</span>
+              <span class="mt-4 block text-sm leading-relaxed">Order in the morning, enjoy fresh pastries by the next afternoon.</span>
+            </span>
+          </a>
+          <a href="about.html" class="group flex flex-col overflow-hidden rounded-2xl border border-ink bg-mint transition hover:-translate-y-1 hover:shadow-[0_6px_0_#141414]" data-reveal>
+            <img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=800&q=80" alt="Fresh croissants piled on a café counter" class="aspect-[16/10] w-full object-cover" loading="lazy">
+            <span class="flex-1 p-7">
+              <span class="block font-display text-3xl leading-tight">Packaging that&#39;s kind to the planet</span>
+              <span class="mt-4 block text-sm leading-relaxed">Our boxes are fully compostable, because good baking shouldn&#39;t cost the earth.</span>
+            </span>
+          </a>
+          <a href="order.html" class="group flex flex-col overflow-hidden rounded-2xl border border-ink bg-peach transition hover:-translate-y-1 hover:shadow-[0_6px_0_#141414]" data-reveal>
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" alt="Couple cooking together in a home kitchen" class="aspect-[16/10] w-full object-cover" loading="lazy">
+            <span class="flex-1 p-7">
+              <span class="block font-display text-3xl leading-tight">Subscribe and save on every box</span>
+              <span class="mt-4 block text-sm leading-relaxed">A fresh box every week at a price that actually makes sense.</span>
+            </span>
+          </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- block:start faq -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-3xl px-5 pb-20 md:px-8 md:pb-24">
+      <div class="text-center">
+        <h2 class="font-display text-6xl text-rose-deep">Questions</h2>
+        <p class="mt-3">Answers about freshness, delivery and what we bake.</p>
+      </div>
+      <div class="mt-10 border-t border-ink/15" data-accordion>
+          <div class="border-b border-ink/15">
+            <h3>
+              <button type="button" data-accordion-trigger aria-expanded="true" aria-controls="faq-0" class="flex w-full items-center justify-between gap-6 py-5 text-left font-semibold">
+                How fresh is everything?
+                <i class="fa-solid fa-chevron-down shrink-0 text-xs transition-transform" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="faq-0"  class="pb-5 leading-relaxed">Everything is baked the morning it ships. Nothing is made days ahead, so you get it at its best, usually within 24 hours of baking.</div>
+          </div>
+          <div class="border-b border-ink/15">
+            <h3>
+              <button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-1" class="flex w-full items-center justify-between gap-6 py-5 text-left font-semibold">
+                How long does delivery take?
+                <i class="fa-solid fa-chevron-down shrink-0 text-xs transition-transform" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="faq-1" hidden class="pb-5 leading-relaxed">Most orders arrive in two to three working days in insulated packaging, and every order comes with tracking.</div>
+          </div>
+          <div class="border-b border-ink/15">
+            <h3>
+              <button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-2" class="flex w-full items-center justify-between gap-6 py-5 text-left font-semibold">
+                Do you bake gluten-free?
+                <i class="fa-solid fa-chevron-down shrink-0 text-xs transition-transform" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="faq-2" hidden class="pb-5 leading-relaxed">Not yet, though we&#39;re testing recipes. For now everything contains wheat flour, and we&#39;re careful about cross-contamination.</div>
+          </div>
+          <div class="border-b border-ink/15">
+            <h3>
+              <button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-3" class="flex w-full items-center justify-between gap-6 py-5 text-left font-semibold">
+                What if my box arrives damaged?
+                <i class="fa-solid fa-chevron-down shrink-0 text-xs transition-transform" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="faq-3" hidden class="pb-5 leading-relaxed">Tell us within 24 hours and we&#39;ll replace it or refund you. We pack with care, and we stand behind every box.</div>
+          </div>
+          <div class="border-b border-ink/15">
+            <h3>
+              <button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-4" class="flex w-full items-center justify-between gap-6 py-5 text-left font-semibold">
+                Can I pause or cancel a subscription?
+                <i class="fa-solid fa-chevron-down shrink-0 text-xs transition-transform" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="faq-4" hidden class="pb-5 leading-relaxed">Any time, with no penalty. Pause or cancel from your account page whenever you like.</div>
+          </div>
+      </div>
+      <div class="mt-16 text-center">
+        <h3 class="font-display text-4xl">Still wondering about something?</h3>
+        <p class="mx-auto mt-3 max-w-sm">We're happy to talk about what we bake and how it reaches you.</p>
+        <a href="contact.html" class="btn-pop mt-6 inline-block rounded-md border border-ink bg-white px-6 py-2.5 font-medium">Contact</a>
+      </div>
+    </div>
+  </section>
+  <!-- block:end faq -->
+
+  <!-- block:start cta -->
+  <section class="grid md:grid-cols-2">
+    <div class="checker flex flex-col justify-center px-5 py-16 md:px-12 lg:px-[max(3rem,calc((100vw-72rem)/2+2rem))]">
+      <h2 class="font-display text-5xl leading-tight md:text-6xl">Hungry for something fresh?</h2>
+      <p class="mt-5 max-w-md text-lg">Order today and taste the difference real baking makes.</p>
+      <div class="mt-8 flex gap-3">
+        <a href="order.html" class="btn-pop rounded-md border border-ink bg-rose px-6 py-2.5 font-medium">Order</a>
+        <a href="pastries.html" class="btn-pop rounded-md border border-ink bg-white px-6 py-2.5 font-medium">Learn</a>
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&w=1200&q=80" alt="Rows of small fruit tarts topped with berries and kiwi" class="aspect-[4/3] h-full w-full object-cover md:aspect-auto" loading="lazy">
+  </section>
+  <!-- block:end cta -->
+
+  <!-- block:start footer -->
+  <footer class="bg-mint">
+    <div class="mx-auto max-w-6xl px-5 py-16 md:px-8">
+      <div class="grid gap-10 rounded-2xl border border-ink bg-rose p-8 md:grid-cols-[1.4fr_1fr_1fr] md:p-12">
+        <div>
+          <a href="index.html" class="font-display text-4xl">Crumbelle</a>
+          <p class="mt-6 text-sm font-semibold">Location</p>
+          <p class="text-sm">14 Mill Lane, Bath BA1 2JX</p>
+          <p class="mt-4 text-sm font-semibold">Reach us</p>
+          <p class="text-sm"><a href="tel:+441225000418" class="underline">01225 000 418</a><br><a href="mailto:hello@crumbelle.co" class="underline">hello@crumbelle.co</a></p>
+          <ul class="mt-6 flex gap-4 text-lg">
+              <li><a href="https://www.facebook.com" aria-label="Facebook" class="transition hover:text-white"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com" aria-label="Instagram" class="transition hover:text-white"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.tiktok.com" aria-label="TikTok" class="transition hover:text-white"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.youtube.com" aria-label="YouTube" class="transition hover:text-white"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <ul class="grid content-start gap-3 text-sm font-semibold">
+          <li><a href="about.html" class="hover:underline">Our story</a></li><li><a href="about.html" class="hover:underline">The craft</a></li><li><a href="about.html" class="hover:underline">Quality promise</a></li><li><a href="about.html" class="hover:underline">Meet the team</a></li><li><a href="order.html" class="hover:underline">Ordering</a></li>
+        </ul>
+        <ul class="grid content-start gap-3 text-sm font-semibold">
+          <li><a href="pastries.html" class="hover:underline">Menu</a></li><li><a href="delivery.html" class="hover:underline">Delivery</a></li><li><a href="delivery.html" class="hover:underline">Track an order</a></li><li><a href="contact.html" class="hover:underline">Support</a></li><li><a href="login.html" class="hover:underline">Your account</a></li>
+        </ul>
+      </div>
+      <div class="mt-8 flex flex-wrap items-center justify-between gap-4 text-sm">
+        <p>&copy; <span data-current-year>2026</span> Crumbelle Bakery</p>
+        <ul class="flex flex-wrap gap-6 underline">
+          <li><a href="contact.html">Terms of service</a></li>
+          <li><a href="contact.html">Cookie settings</a></li>
+          <li><a href="contact.html">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      if (!menu) return;
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-dropdown]').forEach((dropdown) => {
+      const toggle = dropdown.querySelector('[data-dropdown-toggle]');
+      const menu = document.getElementById(toggle.getAttribute('aria-controls'));
+      const set = (open) => { toggle.setAttribute('aria-expanded', String(open)); menu.classList.toggle('hidden', !open); };
+      toggle.addEventListener('click', () => set(toggle.getAttribute('aria-expanded') !== 'true'));
+      document.addEventListener('click', (event) => { if (!dropdown.contains(event.target)) set(false); });
+      dropdown.addEventListener('keydown', (event) => { if (event.key === 'Escape') { set(false); toggle.focus(); } });
+    });
+
+    document.querySelectorAll('[data-accordion]').forEach((accordion) => {
+      accordion.querySelectorAll('[data-accordion-trigger]').forEach((trigger) => {
+        const panel = document.getElementById(trigger.getAttribute('aria-controls'));
+        const icon = () => trigger.querySelector('svg') || trigger.querySelector('i');
+        const sync = () => { const open = trigger.getAttribute('aria-expanded') === 'true'; panel.hidden = !open; icon()?.classList.toggle('rotate-180', open); };
+        trigger.addEventListener('click', () => { trigger.setAttribute('aria-expanded', String(trigger.getAttribute('aria-expanded') !== 'true')); sync(); });
+        sync();
+      });
+    });
+
+    document.querySelectorAll('[data-tabs]').forEach((tablist) => {
+      const tabs = [...tablist.querySelectorAll('[role="tab"]')];
+      const select = (tab) => tabs.forEach((other) => {
+        const active = other === tab;
+        other.setAttribute('aria-selected', String(active));
+        other.tabIndex = active ? 0 : -1;
+        document.getElementById(other.getAttribute('aria-controls')).hidden = !active;
+      });
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => select(tab));
+        tab.addEventListener('keydown', (event) => {
+          const step = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[event.key];
+          if (!step) return;
+          event.preventDefault();
+          const next = tabs[(index + step + tabs.length) % tabs.length];
+          next.focus();
+          select(next);
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-box-builder]').forEach((builder) => {
+      const size = Number(builder.dataset.boxSize);
+      const summary = builder.querySelector('[data-box-summary]');
+      const count = builder.querySelector('[data-box-count]');
+      const total = builder.querySelector('[data-box-total]');
+      const bar = builder.querySelector('[data-box-bar]');
+      const submit = builder.querySelector('[data-box-submit]');
+      const slots = [...builder.querySelectorAll('[data-box-slot]')];
+      const update = () => {
+        const items = [...builder.querySelectorAll('[data-box-item]')];
+        let pieces = 0;
+        let price = 0;
+        const fill = [];
+        items.forEach((item) => {
+          const qty = Number(item.querySelector('[data-qty]').textContent);
+          pieces += qty;
+          price += qty * Number(item.dataset.price);
+          for (let i = 0; i < qty; i += 1) fill.push(item.dataset.emoji);
+          item.querySelector('[data-step="-1"]').disabled = qty === 0;
+        });
+        items.forEach((item) => { item.querySelector('[data-step="1"]').disabled = pieces >= size; });
+        slots.forEach((slot, i) => { slot.textContent = fill[i] || ''; slot.classList.toggle('is-filled', Boolean(fill[i])); });
+        count.textContent = pieces;
+        total.textContent = price.toFixed(2);
+        bar.style.width = `${(pieces / size) * 100}%`;
+        summary.textContent = pieces === size ? 'Your box is full. Ready when you are!' : `Add ${size - pieces} more to fill your box.`;
+        submit.disabled = pieces !== size;
+      };
+      builder.addEventListener('click', (event) => {
+        const button = event.target.closest('[data-step]');
+        if (!button) return;
+        const qty = button.closest('[data-box-item]').querySelector('[data-qty]');
+        qty.textContent = Math.max(0, Number(qty.textContent) + Number(button.dataset.step));
+        update();
+      });
+      builder.addEventListener('submit', (event) => {
+        event.preventDefault();
+        builder.querySelector('[data-form-status]').textContent = 'Lovely! Your box is saved. Pick a delivery day at checkout.';
+      });
+      update();
+    });
+
+    document.querySelectorAll('[data-postcode-check]').forEach((form) => {
+      const status = form.querySelector('[data-form-status]');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const value = String(form.querySelector('[name="postcode"]').value || '').trim().toUpperCase();
+        if (!value) { status.textContent = 'Type your postcode first.'; return; }
+        const area = value.replace(/[^A-Z]/g, '').slice(0, 2);
+        const local = ['BA', 'BS', 'SN', 'GL'].includes(area);
+        status.textContent = local ? `Good news: we deliver to ${value} the next day, Tuesday to Saturday.` : `We deliver to ${value} in two to three working days.`;
+      });
+    });
+
+    document.querySelectorAll('[data-flip]').forEach((card) => {
+      card.addEventListener('click', () => card.setAttribute('aria-pressed', String(card.getAttribute('aria-pressed') !== 'true')));
+    });
+
+    document.querySelectorAll('[data-contact-form]').forEach((form) => {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const status = form.querySelector('[data-form-status]');
+        if (!form.checkValidity()) {
+          status.textContent = form.dataset.error;
+          form.querySelector(':invalid')?.focus();
+          return;
+        }
+        status.textContent = form.dataset.success;
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    (() => {
+      const items = document.querySelectorAll('[data-reveal]');
+      const skip = navigator.webdriver || !('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=crumbelle&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

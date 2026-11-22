@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog | Oblique</title>
+  <meta name="description" content="Browse the full Oblique catalog of minimal outerwear, knitwear, tops, dresses, and leather accessories cut in small runs.">
+  <meta name="keywords" content="Oblique, Tailwind CSS template, HTML website template, fashion ecommerce, clothing store template, minimal online boutique, capsule wardrobe shop, responsive store design">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Catalog | Oblique">
+  <meta property="og:description" content="Browse the full Oblique catalog of minimal outerwear, knitwear, tops, dresses, and leather accessories cut in small runs.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Oblique template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Catalog | Oblique">
+  <meta name="twitter:description" content="Browse the full Oblique catalog of minimal outerwear, knitwear, tops, dresses, and leather accessories cut in small runs.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Oblique template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&amp;family=Inter:wght@400;500;600&amp;family=Inter+Tight:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#faf9f6',
+            ink: '#141414',
+            stone: '#6d6b66',
+            line: '#e5e2db',
+            sand: '#efece6'
+          },
+          fontFamily: {
+            sans: ['Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            display: ['"Inter Tight"', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            mono: ['"Courier Prime"', 'Courier New', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="overflow-x-hidden bg-paper font-sans text-ink antialiased">
+  <header id="top" class="relative z-30 bg-paper">
+    <nav class="mx-auto flex max-w-[1600px] items-center justify-between gap-6 px-5 py-5 sm:px-8 lg:px-10 lg:py-6" aria-label="Main">
+      <a href="index.html" class="font-mono text-[26px] font-bold leading-none tracking-tight lg:text-[28px]">oblique.</a>
+      <div class="hidden items-center gap-9 text-[15px] md:flex">
+          <a href="about-us.html"  class="text-ink/80 transition-colors hover:text-ink">About Us</a>
+          <a href="catalog.html" aria-current=&quot;page&quot; class="border-b border-ink pb-1 text-ink">Catalog</a>
+          <a href="new-collection.html"  class="text-ink/80 transition-colors hover:text-ink">New Collection</a>
+          <a href="best-sellers.html"  class="text-ink/80 transition-colors hover:text-ink">Best Sellers</a>
+      </div>
+      <div class="flex items-center gap-5 sm:gap-7">
+        <a href="cart.html"  class="text-[15px] text-ink/80 transition-colors hover:text-ink">Bag (<span data-cart-count data-product-count="data-cart-count">2</span>)</a>
+        <a href="catalog.html" class="hidden h-12 items-center justify-center bg-ink px-12 text-[15px] text-white transition-colors hover:bg-black/80 sm:inline-flex">View catalog</a>
+        <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="-mr-2 flex h-10 w-10 items-center justify-center md:hidden">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-line px-5 pb-6 pt-2 sm:px-8 md:hidden">
+        <a href="about-us.html"  class="block border-b border-line py-4 text-lg ">About Us</a>
+        <a href="catalog.html" aria-current=&quot;page&quot; class="block border-b border-line py-4 text-lg font-medium">Catalog</a>
+        <a href="new-collection.html"  class="block border-b border-line py-4 text-lg ">New Collection</a>
+        <a href="best-sellers.html"  class="block border-b border-line py-4 text-lg ">Best Sellers</a>
+        <a href="contact.html"  class="block border-b border-line py-4 text-lg ">Contact</a>
+      <a href="catalog.html" class="mt-6 flex h-12 items-center justify-center bg-ink text-[15px] text-white">View catalog</a>
+    </div>
+  </header>
+
+  <main>
+    
+  <section class="mx-auto max-w-[1600px] px-5 pb-10 pt-8 sm:px-8 lg:px-10 lg:pb-14 lg:pt-12">
+    <nav aria-label="Breadcrumb" class="text-sm text-stone">
+      <a href="index.html" class="hover:text-ink">Home</a>
+      <span class="mx-2">/</span>
+      <span class="text-ink">Catalog</span>
+    </nav>
+    <div class="mt-8 grid gap-8 md:grid-cols-2 md:items-end">
+      <h1 class="font-display text-5xl font-medium uppercase leading-[0.98] tracking-[-0.02em] sm:text-6xl lg:text-[80px]">Catalog</h1>
+      <p class="max-w-md text-[15px] leading-relaxed text-ink/80 md:justify-self-end">Every piece we currently make, in one place. Restocks are small and infrequent, so if something speaks to you, it is worth not waiting too long.</p>
+    </div>
+  </section>
+
+  <section id="products" class="mx-auto max-w-[1600px] px-5 pb-20 sm:px-8 lg:px-10 lg:pb-28">
+    <div class="flex flex-col gap-5 border-y border-line py-5 lg:flex-row lg:items-center lg:justify-between">
+      <div role="group" aria-label="Filter products" data-filter-group data-product-filters class="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 text-sm sm:mx-0 sm:flex-wrap sm:px-0 lg:pb-0">
+          <button type="button" data-filter="all" aria-pressed="true" class="bg-ink text-white shrink-0 border border-ink px-5 py-2.5 transition-colors hover:bg-ink hover:text-white">All</button>
+          <button type="button" data-filter="outerwear" aria-pressed="false" class=" shrink-0 border border-ink px-5 py-2.5 transition-colors hover:bg-ink hover:text-white">Outerwear</button>
+          <button type="button" data-filter="knitwear" aria-pressed="false" class=" shrink-0 border border-ink px-5 py-2.5 transition-colors hover:bg-ink hover:text-white">Knitwear</button>
+          <button type="button" data-filter="tops" aria-pressed="false" class=" shrink-0 border border-ink px-5 py-2.5 transition-colors hover:bg-ink hover:text-white">Tops</button>
+          <button type="button" data-filter="dresses" aria-pressed="false" class=" shrink-0 border border-ink px-5 py-2.5 transition-colors hover:bg-ink hover:text-white">Dresses</button>
+          <button type="button" data-filter="accessories" aria-pressed="false" class=" shrink-0 border border-ink px-5 py-2.5 transition-colors hover:bg-ink hover:text-white">Accessories</button>
+      </div>
+      <div class="flex items-center justify-between gap-6 text-sm">
+        <p class="text-stone"><span data-filter-count data-product-number>14</span> pieces</p>
+        <label class="flex items-center gap-3">
+          <span class="text-stone">Sort by</span>
+          <select data-sort class="h-11 border border-line bg-paper px-3 pr-8 text-sm focus:border-ink focus:outline-none">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price, low to high</option>
+            <option value="price-desc">Price, high to low</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div data-filter-items class="mt-10 grid grid-cols-2 gap-x-4 gap-y-12 md:gap-x-6 lg:grid-cols-4 lg:gap-x-10">
+        <article data-product-card="" data-category="outerwear" data-price="240" data-order="0" class="group" data-reveal style="--reveal-delay: 0ms">
+  <a data-product-link href="column-wool-blazer.html" class="relative block aspect-[4/5] overflow-hidden bg-sand">
+    <img data-product-image src="https://images.unsplash.com/photo-1608234808654-2a8875faa7fd?auto=format&fit=crop&w=800&q=80" alt="Woman in a grey checked wool blazer over a white shirt" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+      <span data-product-demo class="absolute left-3 top-3 bg-paper px-3 py-1.5 text-[11px] uppercase tracking-[0.16em]">Best seller</span>
+  </a>
+  <div class="mt-4 flex items-start justify-between gap-3">
+    <div>
+      <h3 class="text-[15px] font-medium"><a data-product-link data-product-name href="column-wool-blazer.html" class="hover:underline">Column Wool Blazer</a></h3>
+      <p data-product-summary class="mt-1 text-sm text-stone">Stone check</p>
+    </div>
+    <p data-product-price class="text-[15px]">$240</p>
+  </div>
+  <button type="button" data-add-to-cart data-product-add="data-add-to-cart" data-product="Column Wool Blazer" class="mt-4 flex h-11 w-full items-center justify-center border border-ink text-sm transition-colors hover:bg-ink hover:text-white">Add to bag</button>
+</article>
+
+        <article data-product-card="" data-category="outerwear" data-price="320" data-order="1" class="group" data-reveal style="--reveal-delay: 100ms">
+  <a data-product-link href="draped-camel-coat.html" class="relative block aspect-[4/5] overflow-hidden bg-sand">
+    <img data-product-image src="https://images.unsplash.com/photo-1619603364904-c0498317e145?auto=format&fit=crop&w=800&q=80" alt="Model in a long camel coat over a brown turtleneck" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+      <span data-product-demo class="absolute left-3 top-3 bg-paper px-3 py-1.5 text-[11px] uppercase tracking-[0.16em]">New</span>
+  </a>
+  <div class="mt-4 flex items-start justify-between gap-3">
+    <div>
+      <h3 class="text-[15px] font-medium"><a data-product-link data-product-name href="draped-camel-coat.html" class="hover:underline">Draped Camel Coat</a></h3>
+      <p data-product-summary class="mt-1 text-sm text-stone">Camel</p>
+    </div>
+    <p data-product-price class="text-[15px]">$320</p>
+  </div>
+  <button type="button" data-add-to-cart data-product-add="data-add-to-cart" data-product="Draped Camel Coat" class="mt-4 flex h-11 w-full items-center justify-center border border-ink text-sm transition-colors hover:bg-ink hover:text-white">Add to bag</button>
+</article>
+
+        <article data-product-card="" data-category="dresses" data-price="185" data-order="2" class="group" data-reveal style="--reveal-delay: 200ms">
+  <a data-product-link href="olive-strap-playsuit.html" class="relative block aspect-[4/5] overflow-hidden bg-sand">
+    <img data-product-image src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?auto=format&fit=crop&w=800&q=80" alt="Olive belted strappy playsuit on a hanger" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+  </a>
+  <div class="mt-4 flex items-start justify-between gap-3">
+    <div>
+      <h3 class="text-[15px] font-medium"><a data-product-link data-product-name href="olive-strap-playsuit.html" class="hover:underline">Olive Strap Playsuit</a></h3>
+      <p data-product-summary class="mt-1 text-sm text-stone">Olive</p>
+    </div>
+    <p data-product-price class="text-[15px]">$185</p>
+  </div>
+  <button type="button" data-add-to-cart data-product-add="data-add-to-cart" data-product="Olive Strap Playsuit" class="mt-4 flex h-11 w-full items-center justify-center border border-ink text-sm transition-colors hover:bg-ink hover:text-white">Add to bag</button>
+</article>
+
+        <article data-product-card="" data-category="knitwear" data-price="140" data-order="3" class="group" data-reveal style="--reveal-delay: 300ms">
+  <a data-product-link href="column-wool-blazer.html" class="relative block aspect-[4/5] overflow-hidden bg-sand">
+    <img data-product-image src="https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257?auto=format&fit=crop&w=800&q=80" alt="Model in a fitted black merino turtleneck" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+      <span data-product-demo class="absolute left-3 top-3 bg-paper px-3 py-1.5 text-[11px] uppercase tracking-[0.16em]">Best seller</span>
+  </a>
+  <div class="mt-4 flex items-start justify-between gap-3">
+    <div>
+      <h3 class="text-[15px] font-medium"><a data-product-link data-product-name href="column-wool-blazer.html" class="hover:underline">Fine Merino Turtleneck</a></h3>
+      <p data-product-summary class="mt-1 text-sm text-stone">Black</p>
+    </div>
+    <p data-product-price class="text-[15px]">$140</p>
+  </div>
+  <button type="button" data-add-to-cart data-product-add="data-add-to-cart" data-product="Fine Merino Turtleneck" class="mt-4 flex h-11 w-full items-center justify-center border border-ink text-sm transition-colors hover:bg-ink hover:text-white">Add to bag</button>
+</article>
+
+        <article data-product-card="" data-category="outerwear" data-price="210" data-order="4" class="group" data-reveal style="--reveal-delay: 0ms">
+  <a data-product-link href="draped-camel-coat.html" class="relative block aspect-[4/5] overflow-hidden bg-sand">
+    <img data-product-image src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80" alt="Rust satin bomber jacket held up on a hanger" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+  </a>
+  <div class="mt-4 flex items-start justify-between gap-3">
+    <div>
+      <h3 class="text-[15px] font-medium"><a data-product-link data-product-name href="draped-camel-coat.html" class="hover:underline">Rust Cropped Bomber</a></h3>
+      <p data-product-summary class="mt-1 text-sm text-stone">Rust</p>
+    </div>
+    <p data-product-price class="text-[15px]">$210</p>
+  </div>
+  <button type="button" data-add-to-cart data-product-add="data-add-to-cart" data-product="Rust Cropped Bomber" class="mt-4 flex h-11 w-full items-center justify-center border border-ink text-sm transition-colors hover:bg-ink hover:text-white">Add to bag</button>
+</article>
+
+        <article data-product-card="" data-category="knitwear" data-price="135" data-order="5" class="group" data-reveal style="--reveal-delay: 100ms">
+  <a data-product-link href="column-wool-blazer.html" class="relative block aspect-[4/5] overflow-hidden bg-sand">
+    <img data-product-image src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80" alt="Cream open-knit fringed cape on a wooden hanger" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+  </a>
+  <div class="mt-4 flex items-start justify-between gap-3">
+    <div>
+      <h3 class="text-[15px] font-medium"><a data-product-link data-product-name href="column-wool-blazer.html" class="hover:underline">Open-Knit Cape</a></h3>
+      <p data-product-summary class="mt-1 text-sm text-stone">Ecru</p>
+    </div>
+    <p data-product-price class="text-[15px]">$135</p>
+  </div>
+  <button type="button" data-add-to-cart data-product-add="data-add-to-cart" data-product="Open-Knit Cape" class="mt-4 flex h-11 w-full items-center justify-center border border-ink text-sm transition-colors hover:bg-ink hover:text-white">Add to bag</button>
+</article>
+
+        <article data-product-card="" data-category="tops" data-price="120" data-order="6" class="group" data-reveal style="--reveal-delay: 200ms">
+  <a data-product-link href="column-wool-blazer.html" class="relative block aspect-[4/5] overflow-hidden bg-sand">
+    <img data-product-image src="https://images.unsplash.com/photo-1601762603339-fd61e28b698a?auto=format&fit=crop&w=800&q=80" alt="Model in an oversized grey poplin shirt" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+  </a>
+  <div class="mt-4 flex items-start justify-between gap-3">
+    <div>
+      <h3 class="text-[15px] font-medium"><a data-product-link data-product-name href="column-wool-blazer.html" class="hover:underline">Poplin Balloon Shirt</a></h3>
+      <p data-product-summary class="mt-1 text-sm text-stone">Slate</p>
+    </div>
+    <p data-product-price class="text-[15px]">$120</p>
+  </div>
+  <button type="button" data-add-to-cart data-product-add="data-add-to-cart" data-product="Poplin Balloon Shirt" class="mt-4 flex h-11 w-full items-center justify-center border border-ink text-sm transition-colors hover:bg-ink hover:text-white">Add to bag</button>
+</article>
+
+        <article data-product-card="" data-category="dresses" data-price="210" data-order="7" class="group" data-reveal style="--reveal-delay: 300ms">
+  <a data-product-link href="olive-strap-playsuit.html" class="relative block aspect-[4/5] overflow-hidden bg-sand">
+    <img data-product-image src="https://images.unsplash.com/photo-1550639525-c97d455acf70?auto=format&fit=crop&w=800&q=80" alt="Woman in a black knit top and belted quilted midi skirt" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+  </a>
+  <div class="mt-4 flex items-start justify-between gap-3">
+    <div>
+      <h3 class="text-[15px] font-medium"><a data-product-link data-product-name href="olive-strap-playsuit.html" class="hover:underline">Belted Midi Dress</a></h3>
+      <p data-product-summary class="mt-1 text-sm text-stone">Black</p>
+    </div>
+    <p data-product-price class="text-[15px]">$210</p>
+  </div>
+  <button type="button" data-add-to-cart data-product-add="data-add-to-cart" data-product="Belted Midi Dress" class="mt-4 flex h-11 w-full items-center justify-center border border-ink text-sm transition-colors hover:bg-ink hover:text-white">Add to bag</button>
+</article>
+
+        <article data-product-card="" data-category="tops" data-price="95" data-order="8" class="group" data-reveal style="--reveal-delay: 0ms">
+  <a data-product-link href="column-wool-blazer.html" class="relative block aspect-[4/5] overflow-hidden bg-sand">
+    <img data-product-image src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80" alt="White loop-back sweatshirt laid flat on a table" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+  </a>
+  <div class="mt-4 flex items-start justify-between gap-3">
+    <div>
+      <h3 class="text-[15px] font-medium"><a data-product-link data-product-name href="column-wool-blazer.html" class="hover:underline">Loop-Back Sweatshirt</a></h3>
+      <p data-product-summary class="mt-1 text-sm text-stone">Chalk</p>
+    </div>
+    <p data-product-price class="text-[15px]">$95</p>
+  </div>
+  <button type="button" data-add-to-cart data-product-add="data-add-to-cart" data-product="Loop-Back Sweatshirt" class="mt-4 flex h-11 w-full items-center justify-center border border-ink text-sm transition-colors hover:bg-ink hover:text-white">Add to bag</button>
+</article>
+
+        <article data-product-card="" data-category="outerwear" data-price="390" data-order="9" class="group" data-reveal style="--reveal-delay: 100ms">
+  <a data-product-link href="draped-camel-coat.html" class="relative block aspect-[4/5] overflow-hidden bg-sand">
+    <img data-product-image src="https://images.unsplash.com/photo-1603189343302-e603f7add05a?auto=format&fit=crop&w=800&q=80" alt="Model in an oversized black sculpted coat" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+      <span data-product-demo class="absolute left-3 top-3 bg-paper px-3 py-1.5 text-[11px] uppercase tracking-[0.16em]">New</span>
+  </a>
+  <div class="mt-4 flex items-start justify-between gap-3">
+    <div>
+      <h3 class="text-[15px] font-medium"><a data-product-link data-product-name href="draped-camel-coat.html" class="hover:underline">Sculpted Night Coat</a></h3>
+      <p data-product-summary class="mt-1 text-sm text-stone">Ink</p>
+    </div>
+    <p data-product-price class="text-[15px]">$390</p>
+  </div>
+  <button type="button" data-add-to-cart data-product-add="data-add-to-cart" data-product="Sculpted Night Coat" class="mt-4 flex h-11 w-full items-center justify-center border border-ink text-sm transition-colors hover:bg-ink hover:text-white">Add to bag</button>
+</article>
+
+        <article data-product-card="" data-category="tops" data-price="48" data-order="10" class="group" data-reveal style="--reveal-delay: 200ms">
+  <a data-product-link href="column-wool-blazer.html" class="relative block aspect-[4/5] overflow-hidden bg-sand">
+    <img data-product-image src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?auto=format&fit=crop&w=800&q=80" alt="Pale blue washed cotton tee on a hanger" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+  </a>
+  <div class="mt-4 flex items-start justify-between gap-3">
+    <div>
+      <h3 class="text-[15px] font-medium"><a data-product-link data-product-name href="column-wool-blazer.html" class="hover:underline">Washed Cotton Tee</a></h3>
+      <p data-product-summary class="mt-1 text-sm text-stone">Sky</p>
+    </div>
+    <p data-product-price class="text-[15px]">$48</p>
+  </div>
+  <button type="button" data-add-to-cart data-product-add="data-add-to-cart" data-product="Washed Cotton Tee" class="mt-4 flex h-11 w-full items-center justify-center border border-ink text-sm transition-colors hover:bg-ink hover:text-white">Add to bag</button>
+</article>
+
+        <article data-product-card="" data-category="tops" data-price="65" data-order="11" class="group" data-reveal style="--reveal-delay: 300ms">
+  <a data-product-link href="column-wool-blazer.html" class="relative block aspect-[4/5] overflow-hidden bg-sand">
+    <img data-product-image src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=800&q=80" alt="Model in a white sleeveless rib tank and straight jeans" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+  </a>
+  <div class="mt-4 flex items-start justify-between gap-3">
+    <div>
+      <h3 class="text-[15px] font-medium"><a data-product-link data-product-name href="column-wool-blazer.html" class="hover:underline">Sleeveless Rib Tank</a></h3>
+      <p data-product-summary class="mt-1 text-sm text-stone">White</p>
+    </div>
+    <p data-product-price class="text-[15px]">$65</p>
+  </div>
+  <button type="button" data-add-to-cart data-product-add="data-add-to-cart" data-product="Sleeveless Rib Tank" class="mt-4 flex h-11 w-full items-center justify-center border border-ink text-sm transition-colors hover:bg-ink hover:text-white">Add to bag</button>
+</article>
+
+        <article data-product-card="" data-category="accessories" data-price="160" data-order="12" class="group" data-reveal style="--reveal-delay: 0ms">
+  <a data-product-link href="column-wool-blazer.html" class="relative block aspect-[4/5] overflow-hidden bg-sand">
+    <img data-product-image src="https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?auto=format&fit=crop&w=800&q=80" alt="Pair of cream pointed leather pumps" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+  </a>
+  <div class="mt-4 flex items-start justify-between gap-3">
+    <div>
+      <h3 class="text-[15px] font-medium"><a data-product-link data-product-name href="column-wool-blazer.html" class="hover:underline">Pointed Leather Pump</a></h3>
+      <p data-product-summary class="mt-1 text-sm text-stone">Cream</p>
+    </div>
+    <p data-product-price class="text-[15px]">$160</p>
+  </div>
+  <button type="button" data-add-to-cart data-product-add="data-add-to-cart" data-product="Pointed Leather Pump" class="mt-4 flex h-11 w-full items-center justify-center border border-ink text-sm transition-colors hover:bg-ink hover:text-white">Add to bag</button>
+</article>
+
+        <article data-product-card="" data-category="accessories" data-price="85" data-order="13" class="group" data-reveal style="--reveal-delay: 100ms">
+  <a data-product-link href="column-wool-blazer.html" class="relative block aspect-[4/5] overflow-hidden bg-sand">
+    <img data-product-image src="https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=800&q=80" alt="Brown folded leather wallet" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+  </a>
+  <div class="mt-4 flex items-start justify-between gap-3">
+    <div>
+      <h3 class="text-[15px] font-medium"><a data-product-link data-product-name href="column-wool-blazer.html" class="hover:underline">Folded Leather Wallet</a></h3>
+      <p data-product-summary class="mt-1 text-sm text-stone">Tan</p>
+    </div>
+    <p data-product-price class="text-[15px]">$85</p>
+  </div>
+  <button type="button" data-add-to-cart data-product-add="data-add-to-cart" data-product="Folded Leather Wallet" class="mt-4 flex h-11 w-full items-center justify-center border border-ink text-sm transition-colors hover:bg-ink hover:text-white">Add to bag</button>
+</article>
+
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-[1600px] px-5 pb-20 sm:px-8 lg:px-10 lg:pb-28">
+    <div class="grid overflow-hidden bg-sand md:grid-cols-2">
+      <figure class="aspect-[4/3] md:aspect-auto md:min-h-[480px]">
+        <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1200&q=80" alt="Bright boutique interior with garments on a hanging rail under a pendant lamp" loading="lazy" class="h-full w-full object-cover">
+      </figure>
+      <div class="flex flex-col justify-center p-8 sm:p-12 lg:p-16" data-reveal>
+        <p class="text-[13px] uppercase tracking-[0.18em] text-stone">Fit advice</p>
+        <h2 class="mt-3 font-display text-4xl font-medium uppercase leading-[1.05] tracking-[-0.015em] md:text-5xl">Not sure about a size?</h2>
+        <p class="mt-5 max-w-md text-[15px] leading-relaxed text-ink/80">Send us your height and usual size and a member of the studio team will reply within a working day with measurements from the actual garment.</p>
+        <a href="contact.html" class="mt-8 inline-flex h-14 w-full max-w-[320px] items-center justify-center bg-ink text-base text-white transition-colors hover:bg-black/80">Ask the studio</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t border-line">
+    <div class="mx-auto grid max-w-[1600px] gap-10 px-5 py-14 sm:grid-cols-3 sm:px-8 lg:px-10">
+        <div data-reveal>
+          <i class="fa-solid fa-truck-fast text-lg"></i>
+          <h3 class="mt-4 text-[15px] font-medium">Free shipping over $150</h3>
+          <p class="mt-2 max-w-xs text-sm leading-relaxed text-stone">Tracked delivery across Europe and North America, plastic-free packaging.</p>
+        </div>
+        <div data-reveal>
+          <i class="fa-solid fa-rotate-left text-lg"></i>
+          <h3 class="mt-4 text-[15px] font-medium">30-day returns</h3>
+          <p class="mt-2 max-w-xs text-sm leading-relaxed text-stone">Changed your mind? Send it back unworn within thirty days, free of charge.</p>
+        </div>
+        <div data-reveal>
+          <i class="fa-solid fa-scissors text-lg"></i>
+          <h3 class="mt-4 text-[15px] font-medium">Repairs for life</h3>
+          <p class="mt-2 max-w-xs text-sm leading-relaxed text-stone">Loose button or split seam — we mend every Oblique piece at no cost.</p>
+        </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="border-t border-line">
+    <div class="mx-auto grid max-w-[1600px] gap-12 px-5 py-14 sm:px-8 md:grid-cols-2 lg:grid-cols-5 lg:px-10 lg:py-16">
+      <div class="lg:col-span-2">
+        <a href="index.html" class="font-mono text-[28px] font-bold leading-none tracking-tight">oblique.</a>
+        <p class="mt-5 max-w-xs text-[15px] leading-relaxed text-stone">Considered clothing, cut in small runs and made to be worn for a long time.</p>
+        <div class="mt-6 flex gap-5 text-lg">
+          <a href="https://www.instagram.com/" aria-label="Instagram" class="text-ink/70 transition-colors hover:text-ink"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.pinterest.com/" aria-label="Pinterest" class="text-ink/70 transition-colors hover:text-ink"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="https://www.tiktok.com/" aria-label="TikTok" class="text-ink/70 transition-colors hover:text-ink"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-[13px] uppercase tracking-[0.18em] text-stone">Shop</h3>
+        <ul class="mt-5 space-y-3 text-[15px]">
+          <li><a href="catalog.html" class="hover:underline">Catalog</a></li>
+          <li><a href="new-collection.html" class="hover:underline">New Collection</a></li>
+          <li><a href="best-sellers.html" class="hover:underline">Best Sellers</a></li>
+          <li><a href="cart.html" class="hover:underline">Your bag</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-[13px] uppercase tracking-[0.18em] text-stone">Studio</h3>
+        <ul class="mt-5 space-y-3 text-[15px]">
+          <li><a href="about-us.html" class="hover:underline">About Us</a></li>
+          <li><a href="about-us.html#ateliers" class="hover:underline">Our ateliers</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-[13px] uppercase tracking-[0.18em] text-stone">Help</h3>
+        <ul class="mt-5 space-y-3 text-[15px]">
+          <li><a href="contact.html#faq" class="hover:underline">Shipping &amp; returns</a></li>
+          <li><a href="contact.html#faq" class="hover:underline">Size guide</a></li>
+          <li><a href="contact.html" class="hover:underline">Garment care</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mx-auto flex max-w-[1600px] flex-col gap-3 border-t border-line px-5 py-6 text-sm text-stone sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10">
+      <p>© 2026 Oblique Studio. All rights reserved.</p>
+      <p>Free shipping over $150 · 30-day returns</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll("[data-menu-toggle]").forEach((button) => {
+      const menu = document.getElementById(button.getAttribute("aria-controls"));
+      if (!menu) return;
+      button.addEventListener("click", () => {
+        const open = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!open));
+        button.setAttribute("aria-label", open ? "Open menu" : "Close menu");
+        menu.classList.toggle("hidden", open);
+      });
+    });
+
+    const bag = (() => {
+      const counters = document.querySelectorAll("[data-cart-count]");
+      const read = () => {
+        try { return localStorage.getItem("oblique-bag-count"); } catch (error) { return null; }
+      };
+      const stored = read();
+      let count = stored === null || Number.isNaN(Number(stored)) ? Number(counters[0]?.textContent || 0) : Number(stored);
+      const set = (value) => {
+        count = Math.max(0, value);
+        counters.forEach((counter) => { counter.textContent = count; });
+        try { localStorage.setItem("oblique-bag-count", String(count)); } catch (error) {}
+      };
+      counters.forEach((counter) => { counter.textContent = count; });
+      return { set, add: (value) => set(count + value) };
+    })();
+
+    document.querySelectorAll("[data-add-to-cart]").forEach((button) => {
+      const label = button.textContent;
+      button.addEventListener("click", () => {
+        const qtyInput = button.dataset.qtySource ? document.querySelector(button.dataset.qtySource) : null;
+        bag.add(qtyInput ? Math.max(1, Number(qtyInput.value) || 1) : 1);
+        button.textContent = "Added to bag";
+        setTimeout(() => { button.textContent = label; }, 1400);
+      });
+    });
+
+    document.querySelectorAll("[data-filter-group]").forEach((group) => {
+      const section = group.closest("section");
+      const items = section.querySelectorAll("[data-filter-items] [data-category]");
+      const count = section.querySelector("[data-filter-count]");
+      const activeClasses = ["bg-ink", "text-white"];
+      group.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-filter]");
+        if (!button) return;
+        const filter = button.dataset.filter;
+        let shown = 0;
+        group.querySelectorAll("[data-filter]").forEach((chip) => {
+          const active = chip === button;
+          chip.setAttribute("aria-pressed", String(active));
+          activeClasses.forEach((cls) => chip.classList.toggle(cls, active));
+        });
+        items.forEach((item) => {
+          const match = filter === "all" || item.dataset.category.split(" ").includes(filter);
+          item.hidden = !match;
+          if (match) shown += 1;
+        });
+        if (count) count.textContent = shown;
+      });
+    });
+
+    document.querySelectorAll("[data-sort]").forEach((select) => {
+      const grid = select.closest("section").querySelector("[data-filter-items]");
+      if (!grid) return;
+      select.addEventListener("change", () => {
+        const key = select.value;
+        const items = [...grid.children];
+        items.sort((a, b) => {
+          if (key === "price-asc") return a.dataset.price - b.dataset.price;
+          if (key === "price-desc") return b.dataset.price - a.dataset.price;
+          return a.dataset.order - b.dataset.order;
+        });
+        grid.append(...items);
+      });
+    });
+
+    document.querySelectorAll("[data-gallery]").forEach((gallery) => {
+      const main = gallery.querySelector("[data-gallery-main]");
+      gallery.querySelectorAll("[data-gallery-thumb]").forEach((thumb) => {
+        thumb.addEventListener("click", () => {
+          main.src = thumb.dataset.src;
+          main.alt = thumb.dataset.alt;
+          gallery.querySelectorAll("[data-gallery-thumb]").forEach((other) => {
+            const active = other === thumb;
+            other.setAttribute("aria-pressed", String(active));
+            other.classList.toggle("ring-ink", active);
+            other.classList.toggle("ring-transparent", !active);
+          });
+        });
+      });
+    });
+
+    document.querySelectorAll("[data-size-group]").forEach((group) => {
+      const label = document.querySelector("[data-size-label]");
+      const options = [...group.querySelectorAll('[role="radio"]:not([disabled])')];
+      const select = (option) => {
+        options.forEach((other) => {
+          const active = other === option;
+          other.setAttribute("aria-checked", String(active));
+          other.tabIndex = active ? 0 : -1;
+          other.classList.toggle("bg-ink", active);
+          other.classList.toggle("text-white", active);
+        });
+        if (label) label.textContent = option.dataset.size;
+      };
+      options.forEach((option, index) => {
+        option.addEventListener("click", () => select(option));
+        option.addEventListener("keydown", (event) => {
+          if (!["ArrowRight", "ArrowLeft"].includes(event.key)) return;
+          event.preventDefault();
+          const next = options[(index + (event.key === "ArrowRight" ? 1 : -1) + options.length) % options.length];
+          select(next);
+          next.focus();
+        });
+      });
+    });
+
+    document.querySelectorAll("[data-qty]").forEach((stepper) => {
+      const input = stepper.querySelector("input");
+      const change = (delta) => {
+        const min = Number(input.min || 1);
+        const max = Number(input.max || 99);
+        input.value = Math.min(max, Math.max(min, (Number(input.value) || min) + delta));
+        input.dispatchEvent(new Event("input", { bubbles: true }));
+      };
+      stepper.querySelector("[data-qty-dec]")?.addEventListener("click", () => change(-1));
+      stepper.querySelector("[data-qty-inc]")?.addEventListener("click", () => change(1));
+    });
+
+    document.querySelectorAll("[data-cart]").forEach((cart) => {
+      const money = (value) => `$${value.toFixed(2)}`;
+      const promo = cart.querySelector("[data-promo]");
+      let discountRate = 0;
+      const update = () => {
+        const items = [...cart.querySelectorAll("[data-cart-item]")];
+        let subtotal = 0;
+        let units = 0;
+        items.forEach((item) => {
+          const qty = Number(item.querySelector("input").value) || 1;
+          const line = qty * Number(item.dataset.price);
+          item.querySelector("[data-line-total]").textContent = money(line);
+          subtotal += line;
+          units += qty;
+        });
+        const discount = subtotal * discountRate;
+        const shipping = subtotal === 0 || subtotal - discount >= 150 ? 0 : 12;
+        cart.querySelector("[data-subtotal]").textContent = money(subtotal);
+        cart.querySelector("[data-discount]").textContent = discount ? `−${money(discount)}` : "—";
+        cart.querySelector("[data-shipping]").textContent = shipping ? money(shipping) : "Free";
+        cart.querySelector("[data-total]").textContent = money(subtotal - discount + shipping);
+        cart.querySelectorAll("[data-units]").forEach((node) => { node.textContent = `${units} ${units === 1 ? "item" : "items"}`; });
+        cart.querySelector("[data-cart-empty]").hidden = items.length > 0;
+        cart.querySelector("[data-cart-filled]").hidden = items.length === 0;
+        bag.set(units);
+      };
+      cart.addEventListener("input", update);
+      cart.addEventListener("click", (event) => {
+        const remove = event.target.closest("[data-remove]");
+        if (!remove) return;
+        remove.closest("[data-cart-item]").remove();
+        update();
+      });
+      promo?.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const code = promo.querySelector("input").value.trim().toUpperCase();
+        const status = promo.querySelector("[data-promo-status]");
+        discountRate = code === "QUIET10" ? 0.1 : 0;
+        status.textContent = discountRate ? "Code applied — 10% off your order." : "That code isn’t valid. Try QUIET10.";
+        update();
+      });
+      cart.querySelector("[data-checkout]")?.addEventListener("click", (event) => {
+        const status = cart.querySelector("[data-checkout-status]");
+        if (status) status.textContent = "Checkout is a demo — connect your payment provider here.";
+        event.preventDefault();
+      });
+      update();
+    });
+
+    document.querySelectorAll("[data-form-message]").forEach((form) => {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const status = form.querySelector("[data-form-status]");
+        if (status) status.textContent = form.dataset.formMessage;
+        form.reset();
+      });
+    });
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || /HeadlessChrome/.test(navigator.userAgent) || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=oblique&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

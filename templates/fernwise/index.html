@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernwise | Tailwind CSS Fintech Template</title>
+  <meta name="description" content="Fernwise is a calm, modern Tailwind CSS fintech template for wealth, banking and money apps, with a bento hero and live chart, a scroll-lit statement, value cards, a step-by-step section, a services carousel, a comparison table, a searchable FAQ and a multi-step sign-up.">
+  <meta name="keywords" content="Fernwise, Tailwind CSS template, HTML website template, fintech template, finance website, wealth management template, banking app landing page, investment website, pricing table, sign up form">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Fernwise | Tailwind CSS Fintech Template">
+  <meta property="og:description" content="A calm, modern Tailwind CSS fintech template with a bento hero and live chart, a services carousel, a comparison table and a multi-step sign-up.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Fernwise template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Fernwise | Tailwind CSS Fintech Template">
+  <meta name="twitter:description" content="A calm, modern Tailwind CSS fintech template with a bento hero and live chart, a services carousel, a comparison table and a multi-step sign-up.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Fernwise template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Mulish:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { pine: { DEFAULT: '#1e3d36', light: '#2f6b5e' }, jade: '#4fa595', paper: '#f5f5f3', stone: '#ecece9', cream: '#ecebdc', mist: '#dde9e7', zest: '#e6e04a' },
+          fontFamily: { sans: ['Mulish', 'sans-serif'], brand: ['Archivo', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-paper font-sans text-pine antialiased">
+  <!-- block:start navbar -->
+  <header class="relative z-40">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-6 md:px-10" aria-label="Main">
+      <a href="index.html" class="leading-none" aria-label="Fernwise Finance home">
+        <span class="block font-brand text-[1.7rem] font-extrabold tracking-tight">Fernwise</span>
+        <span class="block font-brand text-[10px] font-bold uppercase tracking-[0.35em]">Finance</span>
+      </a>
+      <ul class="hidden items-center gap-10 text-[15px] font-medium lg:flex">
+          <li><a href="index.html" aria-current="page" class="border-b-2 pb-1 transition border-pine">Home</a></li>
+          <li><a href="about.html"  class="border-b-2 pb-1 transition border-transparent text-pine/70 hover:text-pine">About us</a></li>
+          <li><a href="services.html"  class="border-b-2 pb-1 transition border-transparent text-pine/70 hover:text-pine">Services</a></li>
+          <li><a href="pricing.html"  class="border-b-2 pb-1 transition border-transparent text-pine/70 hover:text-pine">Pricing</a></li>
+          <li><a href="faq.html"  class="border-b-2 pb-1 transition border-transparent text-pine/70 hover:text-pine">FAQ</a></li>
+      </ul>
+      <div class="flex items-center gap-2">
+        <a href="signup.html"  class="hidden rounded-full bg-pine px-6 py-2.5 text-sm font-medium text-white transition hover:bg-pine-light sm:inline-block">Sign up</a>
+        <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="grid h-11 w-11 place-items-center rounded-full bg-pine text-white lg:hidden"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden px-5 pb-4 lg:hidden">
+      <ul class="grid gap-1 rounded-3xl bg-white p-3 font-medium shadow-lg">
+          <li><a href="index.html" aria-current="page" class="block rounded-2xl px-4 py-3 bg-pine text-white">Home</a></li>
+          <li><a href="about.html"  class="block rounded-2xl px-4 py-3 hover:bg-stone">About us</a></li>
+          <li><a href="services.html"  class="block rounded-2xl px-4 py-3 hover:bg-stone">Services</a></li>
+          <li><a href="pricing.html"  class="block rounded-2xl px-4 py-3 hover:bg-stone">Pricing</a></li>
+          <li><a href="faq.html"  class="block rounded-2xl px-4 py-3 hover:bg-stone">FAQ</a></li>
+          <li><a href="contact.html"  class="block rounded-2xl px-4 py-3 hover:bg-stone">Contact</a></li>
+          <li><a href="signup.html"  class="block rounded-2xl px-4 py-3 hover:bg-stone">Sign up</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section class="mx-auto grid max-w-7xl items-center gap-14 px-5 pb-16 pt-6 md:px-10 lg:grid-cols-[1.05fr_1fr] lg:pb-24">
+    <div class="grid grid-cols-2 gap-4 sm:gap-5">
+      <div class="flex flex-col justify-between rounded-[1.75rem] bg-mist p-5 sm:p-6" data-reveal>
+        <span class="text-2xl" aria-hidden="true">✦✦</span>
+        <p class="mt-6 text-right text-sm sm:text-base">Active members</p>
+        <div class="mt-3 flex -space-x-2">
+          <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4OHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-8 w-8 rounded-full border-2 border-mist object-cover"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDJ8fHBvcnRyYWl0JTIwcGVyc29ufGVufDF8fHx8MTc5NTM4NjA4MHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-8 w-8 rounded-full border-2 border-mist object-cover"><img src="https://images.unsplash.com/photo-1601412436009-d964bd02edbc?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDN8fHBvcnRyYWl0JTIwZWxlbmF8ZW58MXx8fHwxNzk1Mzg2MTY2fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="" class="h-8 w-8 rounded-full border-2 border-mist object-cover">
+          <span class="grid h-8 w-8 place-items-center rounded-full border-2 border-mist bg-pine text-xs text-white" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+        </div>
+      </div>
+      <div class="relative min-h-[11rem] rounded-[1.75rem] bg-gradient-to-br from-jade to-pine sm:min-h-[15rem]" data-reveal style="--reveal-delay: 80ms">
+        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&crop=focalpoint&fp-x=0.72&fp-y=0.55&fp-z=2.2&w=700&h=800&q=80" alt="Hand holding a phone showing a banking app next to a laptop" class="absolute inset-x-3 -top-8 bottom-3 h-[calc(100%+1.25rem)] w-[calc(100%-1.5rem)] rounded-[1.4rem] object-cover shadow-xl">
+      </div>
+      <div class="flex flex-col justify-between rounded-[1.75rem] bg-cream p-5 sm:p-6" data-reveal style="--reveal-delay: 160ms">
+        <p class="text-3xl font-medium">56+</p>
+        <div class="mt-6 flex items-end justify-between gap-2"><p class="text-lg">Currencies</p><i class="fa-solid fa-globe text-4xl" aria-hidden="true"></i></div>
+      </div>
+      <div class="rounded-[1.75rem] bg-pine p-5 text-white sm:p-6" data-chart data-reveal style="--reveal-delay: 240ms">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <p class="text-lg font-medium" aria-live="polite"><span data-chart-value>$196,000</span> <span data-chart-change class="text-xs text-zest">+18.6%</span></p>
+          <div class="flex rounded-full bg-white/10 p-0.5 text-[11px]" role="group" aria-label="Chart period">
+              <button type="button" data-period="1M" data-value="$12,480" data-path="M0 70 C 30 66 45 50 70 54 S 110 30 140 40 S 190 22 220 26 S 260 12 280 18" data-change="+4.1%" aria-pressed="false" class="rounded-full px-2 py-1 transition aria-pressed:bg-zest aria-pressed:text-pine">1M</button>
+              <button type="button" data-period="6M" data-value="$196,000" data-path="M0 78 C 25 80 30 40 55 44 S 85 28 105 42 S 140 30 160 34 S 200 10 225 18 S 260 30 280 26" data-change="+18.6%" aria-pressed="true" class="rounded-full px-2 py-1 transition aria-pressed:bg-zest aria-pressed:text-pine">6M</button>
+              <button type="button" data-period="1Y" data-value="$342,900" data-path="M0 84 C 30 82 50 70 80 62 S 130 50 160 36 S 210 30 240 14 S 270 8 280 6" data-change="+32.4%" aria-pressed="false" class="rounded-full px-2 py-1 transition aria-pressed:bg-zest aria-pressed:text-pine">1Y</button>
+          </div>
+        </div>
+        <svg viewBox="0 0 280 90" class="mt-4 w-full" role="img" aria-label="Portfolio value trend">
+          <g stroke="rgba(255,255,255,.12)"><line x1="0" y1="20" x2="280" y2="20"/><line x1="0" y1="45" x2="280" y2="45"/><line x1="0" y1="70" x2="280" y2="70"/></g>
+          <path data-chart-line class="chart-line" d="M0 78 C 25 80 30 40 55 44 S 85 28 105 42 S 140 30 160 34 S 200 10 225 18 S 260 30 280 26" fill="none" stroke="#e6e04a" stroke-width="3" stroke-linecap="round" style="filter: drop-shadow(0 4px 6px rgba(230,224,74,.35))"/>
+        </svg>
+        <div class="mt-1 flex justify-between text-[9px] text-white/50" aria-hidden="true"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span></div>
+      </div>
+    </div>
+    <div>
+      <h1 class="text-5xl font-medium leading-[1.05] tracking-tight md:text-6xl xl:text-7xl">Building Your Wealth, Protecting Your Tomorrow</h1>
+      <p class="mt-6 max-w-md leading-relaxed text-pine/80">From the coffee you buy today to the home you'll buy in ten years, Fernwise helps every dollar you earn work a little harder for you.</p>
+      <a href="signup.html" class="mt-8 inline-block rounded-full bg-pine px-7 py-3 font-medium text-white transition hover:bg-pine-light">Get started now</a>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start clients -->
+  <section class="overflow-hidden py-10" aria-label="Partners">
+    <ul class="marquee flex w-max items-center gap-20 pr-20">
+        <li class="flex items-center gap-3 whitespace-nowrap font-brand text-3xl font-bold text-pine/35" ><i class="fa-solid fa-leaf" aria-hidden="true"></i>Acrewood</li>
+        <li class="flex items-center gap-3 whitespace-nowrap font-brand text-3xl font-bold text-pine/35" ><i class="fa-solid fa-wallet" aria-hidden="true"></i>Northwind Pay</li>
+        <li class="flex items-center gap-3 whitespace-nowrap font-brand text-3xl font-bold text-pine/35" ><i class="fa-solid fa-feather" aria-hidden="true"></i>Lumio</li>
+        <li class="flex items-center gap-3 whitespace-nowrap font-brand text-3xl font-bold text-pine/35" ><i class="fa-solid fa-kiwi-bird" aria-hidden="true"></i>Kitepoint</li>
+        <li class="flex items-center gap-3 whitespace-nowrap font-brand text-3xl font-bold text-pine/35" ><i class="fa-solid fa-book" aria-hidden="true"></i>Brightledger</li>
+        <li class="flex items-center gap-3 whitespace-nowrap font-brand text-3xl font-bold text-pine/35" ><i class="fa-solid fa-cube" aria-hidden="true"></i>Quanta</li>
+        <li class="flex items-center gap-3 whitespace-nowrap font-brand text-3xl font-bold text-pine/35" ><i class="fa-solid fa-anchor" aria-hidden="true"></i>Harbor &amp; Co</li>
+        <li class="flex items-center gap-3 whitespace-nowrap font-brand text-3xl font-bold text-pine/35" aria-hidden="true"><i class="fa-solid fa-leaf" aria-hidden="true"></i>Acrewood</li>
+        <li class="flex items-center gap-3 whitespace-nowrap font-brand text-3xl font-bold text-pine/35" aria-hidden="true"><i class="fa-solid fa-wallet" aria-hidden="true"></i>Northwind Pay</li>
+        <li class="flex items-center gap-3 whitespace-nowrap font-brand text-3xl font-bold text-pine/35" aria-hidden="true"><i class="fa-solid fa-feather" aria-hidden="true"></i>Lumio</li>
+        <li class="flex items-center gap-3 whitespace-nowrap font-brand text-3xl font-bold text-pine/35" aria-hidden="true"><i class="fa-solid fa-kiwi-bird" aria-hidden="true"></i>Kitepoint</li>
+        <li class="flex items-center gap-3 whitespace-nowrap font-brand text-3xl font-bold text-pine/35" aria-hidden="true"><i class="fa-solid fa-book" aria-hidden="true"></i>Brightledger</li>
+        <li class="flex items-center gap-3 whitespace-nowrap font-brand text-3xl font-bold text-pine/35" aria-hidden="true"><i class="fa-solid fa-cube" aria-hidden="true"></i>Quanta</li>
+        <li class="flex items-center gap-3 whitespace-nowrap font-brand text-3xl font-bold text-pine/35" aria-hidden="true"><i class="fa-solid fa-anchor" aria-hidden="true"></i>Harbor &amp; Co</li>
+    </ul>
+  </section>
+  <!-- block:end clients -->
+
+  <!-- block:start about -->
+  <section class="mx-auto max-w-5xl px-5 py-20 text-center md:px-10" data-word-reveal>
+    <p class="text-sm text-pine/40">[ About Fernwise ]</p>
+    <h2 class="mt-5 text-3xl font-medium leading-snug md:text-5xl md:leading-[1.2]">
+          <span data-word class="text-pine/35">Fernwise</span> 
+          <span data-word class="text-pine">helps</span> <span data-word class="text-pine">grow</span> <span data-word class="text-pine">and</span> 
+          <span class="inline-grid h-10 w-10 place-items-center rounded-full bg-cream align-middle text-base md:h-12 md:w-12" aria-hidden="true"><i class="fa-solid fa-chart-line"></i></span>
+          <span data-word class="text-pine">protect</span> 
+          <span data-word class="text-pine/35">wealth</span> 
+          <span data-word class="text-pine">with</span> <span data-word class="text-pine">strategic</span> <span data-word class="text-pine">finance</span> 
+          <span class="inline-grid h-10 w-10 place-items-center rounded-full bg-pine align-middle text-base text-white md:h-12 md:w-12" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></span>
+          <span data-word class="text-pine">and</span> 
+          <span data-word class="text-pine/35">investment,</span> <span data-word class="text-pine/35">providing</span> <span data-word class="text-pine/35">data-driven</span> 
+          <span data-word class="text-pine">solutions</span> <span data-word class="text-pine">for</span> <span data-word class="text-pine">lasting</span> <span data-word class="text-pine">security</span> 
+    </h2>
+    <a href="about.html" class="mt-10 inline-block rounded-full bg-pine px-7 py-3 text-sm font-medium text-white transition hover:bg-pine-light">Learn more</a>
+  </section>
+  <!-- block:end about -->
+
+  <!-- block:start cta -->
+  <section class="mx-auto max-w-7xl px-5 pb-20 pt-16 md:px-10">
+    <div class="arches-dark relative grid rounded-[2rem] text-white md:grid-cols-2">
+      <div class="relative z-10 p-8 md:p-14">
+        <h2 class="text-4xl font-medium leading-tight md:text-5xl">Made for Growth, Grounded in Trust</h2>
+        <p class="mt-5 max-w-md leading-relaxed text-white/85">So we built a platform that makes money simpler: bank-grade security, live insights and plans that adapt as your life does.</p>
+        <a href="signup.html" class="mt-8 inline-block rounded-full bg-white px-7 py-3 font-medium text-pine transition hover:bg-cream">Get started now</a>
+      </div>
+      <div class="relative min-h-[18rem] overflow-hidden rounded-b-[2rem] md:overflow-visible md:rounded-none">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.35&w=800&h=900&q=80" alt="Young woman in a striped top smiling with confidence" class="absolute bottom-0 right-6 h-[115%] w-[85%] rounded-t-[10rem] object-cover md:h-[128%] md:w-[70%]">
+      </div>
+    </div>
+  </section>
+  <!-- block:end cta -->
+
+  <!-- block:start features -->
+  <section class="mx-auto max-w-7xl px-5 py-16 md:px-10" data-draw-group>
+    <div class="mx-auto max-w-xl text-center">
+      <p class="text-sm text-pine/40">[ Our values ]</p>
+      <h2 class="mt-3 text-4xl font-medium md:text-5xl">Why choose us?</h2>
+      <p class="mt-4 text-pine/80">Sound financial guidance whenever and wherever you need it. Your next chapter with Fernwise starts today.</p>
+    </div>
+    <div class="mt-12 grid gap-5 md:grid-cols-3">
+      <article class="arches flex flex-col items-center rounded-[1.75rem] bg-stone p-8 text-center" data-reveal>
+        <h3 class="text-2xl font-medium">Plans That Fit You</h3>
+        <p class="mt-3 max-w-[16rem] text-pine/80">Strategies shaped around your goals, not a template.</p>
+        <div class="relative mt-8 h-40 w-40">
+          <svg viewBox="0 0 120 120" class="h-full w-full -rotate-90" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="none" stroke="#d9d9d5" stroke-width="10"/><circle data-ring cx="60" cy="60" r="50" fill="none" stroke="#1e3d36" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="22" class="ring-fill"/></svg>
+          <p class="absolute inset-0 grid place-content-center"><span class="text-3xl font-semibold">78%</span><span class="text-[10px]">goals reached early</span></p>
+        </div>
+      </article>
+      <article class="flex flex-col items-center overflow-hidden rounded-[1.75rem] bg-pine pt-8 text-center text-white" data-reveal style="--reveal-delay: 90ms">
+        <h3 class="text-2xl font-medium">Long-Term Thinking</h3>
+        <p class="mt-3 max-w-[16rem] px-8 text-white/75">A patient approach that compounds into lasting wealth.</p>
+        <svg viewBox="0 0 300 140" class="mt-auto w-full pt-6" aria-hidden="true"><path class="draw" d="M10 40 C 50 40 60 120 110 110 S 170 40 200 90 S 260 40 300 20" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="3"/><path class="draw" d="M30 110 C 70 110 80 60 120 70 S 180 110 220 60 S 280 30 300 50" fill="none" stroke="#fff" stroke-width="3"/><circle cx="30" cy="110" r="6" fill="#fff"/><circle cx="10" cy="40" r="6" fill="#fff"/></svg>
+      </article>
+      <article class="arches flex flex-col items-center rounded-[1.75rem] bg-stone p-8 text-center" data-reveal style="--reveal-delay: 180ms">
+        <h3 class="text-2xl font-medium">Integrity Always</h3>
+        <p class="mt-3 max-w-[16rem] text-pine/80">Advisers with decades in the industry, and no hidden incentives.</p>
+        <span class="mt-8 grid h-28 w-28 place-items-center rounded-full bg-pine text-5xl text-white" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></span>
+        <p class="mt-3 text-xs">Honesty and openness come first.</p>
+      </article>
+    </div>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start stats -->
+  <section class="mx-auto max-w-7xl px-5 py-16 md:px-10">
+    <div class="mx-auto max-w-xl text-center">
+      <h2 class="text-4xl font-medium leading-tight md:text-5xl">Take Charge of Your Money Story</h2>
+      <p class="mt-4 text-pine/80">Smarter ways to manage, grow and protect what you earn, all in one place built around you.</p>
+    </div>
+    <div class="relative mt-12 overflow-hidden rounded-[2rem]">
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1600&q=80" alt="Financial adviser and client celebrating a plan at a desk" class="aspect-[4/3] w-full object-cover md:aspect-[21/9]" loading="lazy">
+        <div class="absolute left-4 top-4 md:left-8 md:top-8 rounded-2xl bg-white/90 px-4 py-3 shadow-lg backdrop-blur" data-reveal>
+          <p class="text-xl font-semibold md:text-2xl">$<span data-count-to="2.4">2.4</span>B</p>
+          <p class="text-xs text-pine/70">assets guided</p>
+        </div>
+        <div class="absolute right-4 top-1/3 md:right-8 rounded-2xl bg-white/90 px-4 py-3 shadow-lg backdrop-blur" data-reveal>
+          <p class="text-xl font-semibold md:text-2xl"><span data-count-to="4.9">4.9</span> <i class="fa-solid fa-star text-sm text-zest" aria-hidden="true"></i></p>
+          <p class="text-xs text-pine/70">average app rating</p>
+        </div>
+        <div class="absolute bottom-4 left-1/3 md:bottom-8 rounded-2xl bg-white/90 px-4 py-3 shadow-lg backdrop-blur" data-reveal>
+          <p class="text-xl font-semibold md:text-2xl"><span data-count-to="120">120</span>k+</p>
+          <p class="text-xs text-pine/70">members in 56 countries</p>
+        </div>
+    </div>
+  </section>
+  <!-- block:end stats -->
+
+  <!-- block:start process -->
+  <section class="mx-auto max-w-7xl px-5 py-16 md:px-10">
+    <div class="arches rounded-[2rem] bg-stone p-6 md:p-10">
+      <div class="flex flex-col justify-between gap-6 md:flex-row md:items-start">
+        <h2 class="text-4xl font-medium leading-tight md:text-5xl"><span class="text-pine/45">Change</span> The Way <span class="text-pine/45">You</span><br><span class="text-pine/45">Use</span> Your Money</h2>
+        <div class="max-w-xs">
+          <p class="text-pine/80">Reach financial freedom with Fernwise, the clear and clever way to plan your money.</p>
+          <a href="signup.html" class="mt-4 inline-block rounded-full bg-pine px-6 py-2.5 text-sm font-medium text-white transition hover:bg-pine-light">Get started now</a>
+        </div>
+      </div>
+      <div class="mt-12 grid items-center gap-10 lg:grid-cols-[1fr_1.25fr]">
+        <div class="relative mx-auto aspect-square w-full max-w-md">
+          <div class="absolute right-[8%] top-[4%] h-[64%] w-[58%] rounded-3xl bg-white/70 p-4 shadow-sm">
+            <p class="text-xs font-semibold">Recent activity</p>
+            <svg viewBox="0 0 160 90" class="mt-6 w-full" aria-hidden="true"><path d="M0 70 L20 40 L35 60 L50 30 L70 70 L90 45 L110 55 L130 10 L160 60 V90 H0 Z" fill="rgba(79,165,149,.25)"/><path d="M0 70 L20 40 L35 60 L50 30 L70 70 L90 45 L110 55 L130 10 L160 60" fill="none" stroke="#1e3d36" stroke-width="2"/></svg>
+          </div>
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&crop=focalpoint&fp-x=0.45&fp-y=0.45&w=600&h=800&q=80" alt="Smiling woman in a denim jacket" class="absolute bottom-[6%] left-[16%] h-[78%] w-[52%] rounded-[2rem] object-cover shadow-lg" loading="lazy">
+          <div class="absolute left-0 top-[30%] rounded-2xl bg-pine/70 px-4 py-3 text-white backdrop-blur" data-reveal>
+            <p class="text-[9px] text-white/70">Mar 26, 12:00</p>
+            <p class="text-xl font-semibold">122,637</p>
+            <p class="mt-1 w-fit rounded-full bg-white/20 px-2 text-[10px]">▲ 21.4%</p>
+          </div>
+          <div class="absolute right-0 top-[64%] w-44 rounded-2xl bg-white px-4 py-3 shadow-lg" data-reveal style="--reveal-delay: 120ms">
+            <p class="text-[10px] text-pine/70">Active members</p>
+            <p class="flex items-center justify-between font-semibold">56,990 <span class="text-[10px] font-medium"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i> 8.46%</span></p>
+            <span class="mt-2 block h-1.5 rounded-full bg-stone"><span class="block h-full w-3/5 rounded-full bg-pine"></span></span>
+          </div>
+          <div class="absolute bottom-0 left-[4%] w-36 rounded-2xl bg-white px-3 py-2 shadow-lg" data-reveal style="--reveal-delay: 240ms">
+            <p class="text-[10px] font-semibold">Total balance</p>
+            <p class="text-xs">$4,200 <span class="text-pine/60">+14%</span></p>
+            <div class="mt-2 flex h-8 items-end gap-1" aria-hidden="true"><span class="w-3 rounded-sm bg-mist" style="height: 30%"></span><span class="w-3 rounded-sm bg-mist" style="height: 45%"></span><span class="w-3 rounded-sm bg-mist" style="height: 25%"></span><span class="w-3 rounded-sm bg-pine" style="height: 80%"></span><span class="w-3 rounded-sm bg-pine" style="height: 100%"></span><span class="w-3 rounded-sm bg-mist" style="height: 40%"></span><span class="w-3 rounded-sm bg-pine" style="height: 70%"></span></div>
+          </div>
+        </div>
+        <ol class="grid gap-4 sm:grid-cols-2">
+            <li class="flex flex-col rounded-3xl bg-paper p-7" data-reveal style="--reveal-delay: 0ms">
+              <p class="text-sm text-pine/50">Step 1</p>
+              <h3 class="mt-3 flex items-center gap-3 text-lg font-medium"><span class="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-pine/40 text-sm" aria-hidden="true"><i class="fa-solid fa-hand-holding-dollar"></i></span>Start From Anywhere</h3>
+              <p class="mt-5 text-pine/80">Open an account in minutes, from any of 56 countries.</p>
+              <a href="services.html" class="mt-6 w-fit border-b border-pine pb-0.5 text-sm">Read more</a>
+            </li>
+            <li class="flex flex-col rounded-3xl bg-paper p-7" data-reveal style="--reveal-delay: 80ms">
+              <p class="text-sm text-pine/50">Step 2</p>
+              <h3 class="mt-3 flex items-center gap-3 text-lg font-medium"><span class="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-pine/40 text-sm" aria-hidden="true"><i class="fa-solid fa-hand-holding-dollar"></i></span>Keep Funds Safe</h3>
+              <p class="mt-5 text-pine/80">99.9% uptime and the same encryption banks rely on.</p>
+              <a href="services.html" class="mt-6 w-fit border-b border-pine pb-0.5 text-sm">Read more</a>
+            </li>
+            <li class="flex flex-col rounded-3xl bg-paper p-7" data-reveal style="--reveal-delay: 160ms">
+              <p class="text-sm text-pine/50">Step 3</p>
+              <h3 class="mt-3 flex items-center gap-3 text-lg font-medium"><span class="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-pine/40 text-sm" aria-hidden="true"><i class="fa-solid fa-hand-holding-dollar"></i></span>Track Every Gain</h3>
+              <p class="mt-5 text-pine/80">AI-powered insights on your spending and savings, around the clock.</p>
+              <a href="services.html" class="mt-6 w-fit border-b border-pine pb-0.5 text-sm">Read more</a>
+            </li>
+            <li class="flex flex-col rounded-3xl bg-paper p-7" data-reveal style="--reveal-delay: 240ms">
+              <p class="text-sm text-pine/50">Step 4</p>
+              <h3 class="mt-3 flex items-center gap-3 text-lg font-medium"><span class="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-pine/40 text-sm" aria-hidden="true"><i class="fa-solid fa-hand-holding-dollar"></i></span>Feel the Difference</h3>
+              <p class="mt-5 text-pine/80">95% of members say they feel clearer about money within three months.</p>
+              <a href="services.html" class="mt-6 w-fit border-b border-pine pb-0.5 text-sm">Read more</a>
+            </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <!-- block:end process -->
+
+  <!-- block:start products -->
+  <section class="py-16" data-rail>
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-6 px-5 md:flex-row md:items-end md:px-10">
+      <div>
+        <h2 class="text-4xl font-medium">Services That Work for You</h2>
+        <p class="mt-4 max-w-md text-pine/80">Expert advice, investment strategy and wealth management to help you grow, protect and make the most of your financial future.</p>
+      </div>
+      <a href="contact.html" class="w-fit rounded-full bg-pine px-6 py-2.5 text-sm font-medium text-white transition hover:bg-pine-light">Let's talk</a>
+    </div>
+    <ul data-rail-track class="mt-10 flex snap-x snap-mandatory gap-5 overflow-x-auto px-5 pb-6 pt-4 [scrollbar-width:none] md:px-[max(2.5rem,calc((100vw-80rem)/2+2.5rem))]" tabindex="0" aria-label="Services">
+        <li data-rail-item data-active="false" class="rail-card flex w-[82%] shrink-0 snap-center flex-col rounded-[1.75rem] bg-stone p-8 sm:w-[24rem]">
+          <h3 class="flex items-center gap-4 text-lg font-medium"><i class="fa-solid fa-building-columns text-2xl" aria-hidden="true"></i>Retirement &amp; Estate Planning</h3>
+          <p class="rail-muted mt-5 text-pine/80">Plan for retirement and the legacy you leave, with tax-smart strategies.</p>
+          <a href="services.html" class="mt-6 w-fit border-b border-current pb-0.5 text-sm">Read more</a>
+        </li>
+        <li data-rail-item data-active="true" class="rail-card flex w-[82%] shrink-0 snap-center flex-col rounded-[1.75rem] bg-stone p-8 sm:w-[24rem]">
+          <h3 class="flex items-center gap-4 text-lg font-medium"><i class="fa-solid fa-hand-holding-dollar text-2xl" aria-hidden="true"></i>Investment Advisory</h3>
+          <p class="rail-muted mt-5 text-pine/80">Research-backed recommendations that help your portfolio grow steadily.</p>
+          <a href="services.html" class="mt-6 w-fit border-b border-current pb-0.5 text-sm">Read more</a>
+        </li>
+        <li data-rail-item data-active="false" class="rail-card flex w-[82%] shrink-0 snap-center flex-col rounded-[1.75rem] bg-stone p-8 sm:w-[24rem]">
+          <h3 class="flex items-center gap-4 text-lg font-medium"><i class="fa-solid fa-sack-dollar text-2xl" aria-hidden="true"></i>Wealth Management</h3>
+          <p class="rail-muted mt-5 text-pine/80">End-to-end care for your assets, so they&#39;re protected and keep growing.</p>
+          <a href="services.html" class="mt-6 w-fit border-b border-current pb-0.5 text-sm">Read more</a>
+        </li>
+        <li data-rail-item data-active="false" class="rail-card flex w-[82%] shrink-0 snap-center flex-col rounded-[1.75rem] bg-stone p-8 sm:w-[24rem]">
+          <h3 class="flex items-center gap-4 text-lg font-medium"><i class="fa-solid fa-piggy-bank text-2xl" aria-hidden="true"></i>Smart Savings</h3>
+          <p class="rail-muted mt-5 text-pine/80">Automatic round-ups and goal pots that save without you thinking about it.</p>
+          <a href="services.html" class="mt-6 w-fit border-b border-current pb-0.5 text-sm">Read more</a>
+        </li>
+        <li data-rail-item data-active="false" class="rail-card flex w-[82%] shrink-0 snap-center flex-col rounded-[1.75rem] bg-stone p-8 sm:w-[24rem]">
+          <h3 class="flex items-center gap-4 text-lg font-medium"><i class="fa-solid fa-credit-card text-2xl" aria-hidden="true"></i>Everyday Banking</h3>
+          <p class="rail-muted mt-5 text-pine/80">A free account and card with instant alerts and zero foreign fees.</p>
+          <a href="services.html" class="mt-6 w-fit border-b border-current pb-0.5 text-sm">Read more</a>
+        </li>
+        <li data-rail-item data-active="false" class="rail-card flex w-[82%] shrink-0 snap-center flex-col rounded-[1.75rem] bg-stone p-8 sm:w-[24rem]">
+          <h3 class="flex items-center gap-4 text-lg font-medium"><i class="fa-solid fa-umbrella text-2xl" aria-hidden="true"></i>Insurance Review</h3>
+          <p class="rail-muted mt-5 text-pine/80">We check your cover every year so you never pay for what you don&#39;t need.</p>
+          <a href="services.html" class="mt-6 w-fit border-b border-current pb-0.5 text-sm">Read more</a>
+        </li>
+    </ul>
+    <div class="mt-4 flex justify-center gap-6">
+      <button type="button" data-rail-prev aria-label="Previous service" class="grid h-10 w-10 place-items-center rounded-full transition hover:bg-stone"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+      <button type="button" data-rail-next aria-label="Next service" class="grid h-10 w-10 place-items-center rounded-full transition hover:bg-stone"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
+  </section>
+  <!-- block:end products -->
+
+  <!-- block:start newsletter -->
+  <section class="mx-auto max-w-7xl px-5 py-16 md:px-10">
+    <div class="arches-dark rounded-[2rem] px-6 py-20 text-center text-white md:py-24">
+      <h2 class="mx-auto max-w-2xl text-4xl font-medium leading-tight md:text-5xl">Become a Member and Meet the Whole Community</h2>
+      <p class="mx-auto mt-5 max-w-md text-white/80">Learn to make the right call when it matters most, and how to ride out the hard months.</p>
+      <form data-contact-form data-error="Please enter a valid email address." data-success="Welcome aboard! Check your inbox to confirm." class="mx-auto mt-10 flex max-w-md items-center gap-2 rounded-full bg-cream p-1.5 pl-6" novalidate>
+        <label class="sr-only" for="member-email">Email address</label>
+        <input id="member-email" type="email" name="email" required autocomplete="email" placeholder="Enter your email here" class="min-w-0 flex-1 bg-transparent text-pine placeholder:text-pine/50 focus:outline-none">
+        <button type="submit" aria-label="Join" class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-white text-pine transition hover:bg-pine hover:text-white"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+      </form>
+      <p data-form-status class="mt-4 text-sm text-white/90" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+  <!-- block:end newsletter -->
+
+  <!-- block:start footer -->
+  <footer class="arches mt-10 bg-stone">
+    <div class="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:px-10 lg:grid-cols-[1fr_1.6fr]">
+      <div>
+        <a href="index.html" class="inline-block leading-none" aria-label="Fernwise Finance home">
+          <span class="block font-brand text-6xl font-extrabold tracking-tight">Fernwise</span>
+          <span class="mt-1 block font-brand text-2xl font-bold uppercase tracking-[0.3em] text-pine/90">Finance</span>
+        </a>
+        <ul class="mt-8 flex gap-6 text-2xl">
+          <li><a href="mailto:hello@fernwise.finance" aria-label="Email"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.whatsapp.com" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
+          <div>
+            <p class="font-medium">Account</p>
+            <ul class="mt-4 grid gap-3 text-pine/60">
+              <li><a href="services.html" class="transition hover:text-pine">Savings</a></li><li><a href="services.html" class="transition hover:text-pine">Joint accounts</a></li><li><a href="services.html" class="transition hover:text-pine">Investing</a></li><li><a href="pricing.html" class="transition hover:text-pine">Freelancers</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-medium">Help</p>
+            <ul class="mt-4 grid gap-3 text-pine/60">
+              <li><a href="faq.html" class="transition hover:text-pine">Help center</a></li><li><a href="contact.html" class="transition hover:text-pine">Contact</a></li><li><a href="signup.html" class="transition hover:text-pine">Sign up</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-medium">Finance</p>
+            <ul class="mt-4 grid gap-3 text-pine/60">
+              <li><a href="services.html" class="transition hover:text-pine">Cards</a></li><li><a href="pricing.html" class="transition hover:text-pine">Plans</a></li><li><a href="services.html" class="transition hover:text-pine">Payments</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-medium">Company</p>
+            <ul class="mt-4 grid gap-3 text-pine/60">
+              <li><a href="about.html" class="transition hover:text-pine">About us</a></li><li><a href="services.html" class="transition hover:text-pine">Services</a></li><li><a href="about.html" class="transition hover:text-pine">Careers</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="mx-auto flex max-w-7xl flex-wrap justify-between gap-4 border-t border-pine/15 px-5 py-6 text-sm text-pine/60 md:px-10">
+      <p><span class="text-pine">&copy; Fernwise Finance <span data-current-year>2026</span></span> | All rights reserved.</p>
+      <ul class="flex gap-8"><li><a href="faq.html" class="hover:text-pine">Privacy</a></li><li><a href="faq.html" class="hover:text-pine">Terms of use</a></li><li><a href="faq.html" class="hover:text-pine">Disclosures</a></li></ul>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      if (!menu) return;
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const watchMotion = !reducedMotion && !navigator.webdriver && 'IntersectionObserver' in window;
+
+    document.querySelectorAll('[data-chart]').forEach((chart) => {
+      const line = chart.querySelector('[data-chart-line]');
+      chart.querySelectorAll('[data-period]').forEach((button) => {
+        button.addEventListener('click', () => {
+          chart.querySelectorAll('[data-period]').forEach((other) => other.setAttribute('aria-pressed', String(other === button)));
+          line.setAttribute('d', button.dataset.path);
+          chart.querySelector('[data-chart-value]').textContent = button.dataset.value;
+          chart.querySelector('[data-chart-change]').textContent = button.dataset.change;
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-word-reveal]').forEach((root) => {
+      const words = [...root.querySelectorAll('[data-word]')];
+      if (!watchMotion) return;
+      const muted = words.map((word) => word.classList.contains('text-pine/35'));
+      const paint = () => {
+        const rect = root.getBoundingClientRect();
+        const progress = Math.min(Math.max((innerHeight * 0.85 - rect.top) / (rect.height + innerHeight * 0.3), 0), 1);
+        const lit = Math.round(progress * words.length);
+        words.forEach((word, index) => {
+          if (!muted[index]) return;
+          word.classList.toggle('text-pine', index < lit);
+          word.classList.toggle('text-pine/35', index >= lit);
+        });
+      };
+      addEventListener('scroll', paint, { passive: true });
+      paint();
+    });
+
+    (() => {
+      if (!watchMotion) return;
+      const rings = document.querySelectorAll('[data-ring]');
+      const draws = document.querySelectorAll('.draw');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.querySelectorAll('[data-ring]').forEach((ring) => { ring.style.strokeDashoffset = ring.dataset.offset; });
+          entry.target.querySelectorAll('.draw').forEach((path) => path.classList.add('is-drawn'));
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.3 });
+      rings.forEach((ring) => { ring.dataset.offset = ring.getAttribute('stroke-dashoffset'); ring.style.strokeDashoffset = 100; });
+      document.querySelectorAll('[data-draw-group]').forEach((group) => observer.observe(group));
+      if (draws.length) document.documentElement.classList.add('reveal-ready');
+    })();
+
+    (() => {
+      const counters = document.querySelectorAll('[data-count-to]');
+      if (!counters.length || !watchMotion) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const target = Number(el.dataset.countTo);
+          const decimals = (el.dataset.countTo.split('.')[1] || '').length;
+          const start = performance.now();
+          const tick = (now) => {
+            const progress = Math.min((now - start) / 700, 1);
+            el.textContent = (target * progress).toFixed(decimals);
+            if (progress < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+          observer.unobserve(el);
+        });
+      }, { threshold: 0.6 });
+      counters.forEach((el) => observer.observe(el));
+    })();
+
+    document.querySelectorAll('[data-rail]').forEach((rail) => {
+      const track = rail.querySelector('[data-rail-track]');
+      const items = [...track.querySelectorAll('[data-rail-item]')];
+      const step = () => (items[0]?.getBoundingClientRect().width || 300) + 20;
+      const mark = () => {
+        const center = track.getBoundingClientRect().left + track.clientWidth / 2;
+        let best = items[0];
+        items.forEach((item) => {
+          const rect = item.getBoundingClientRect();
+          if (Math.abs(rect.left + rect.width / 2 - center) < Math.abs(best.getBoundingClientRect().left + best.getBoundingClientRect().width / 2 - center)) best = item;
+        });
+        items.forEach((item) => { item.dataset.active = String(item === best); });
+      };
+      let frame;
+      track.addEventListener('scroll', () => { cancelAnimationFrame(frame); frame = requestAnimationFrame(mark); }, { passive: true });
+      rail.querySelector('[data-rail-prev]')?.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: reducedMotion ? 'auto' : 'smooth' }));
+      rail.querySelector('[data-rail-next]')?.addEventListener('click', () => track.scrollBy({ left: step(), behavior: reducedMotion ? 'auto' : 'smooth' }));
+    });
+
+    document.querySelectorAll('[data-billing]').forEach((root) => {
+      root.addEventListener('change', (event) => {
+        if (event.target.name !== 'billing') return;
+        const yearly = event.target.value === 'yearly';
+        root.querySelectorAll('[data-monthly]').forEach((price) => { price.textContent = yearly ? price.dataset.yearly : price.dataset.monthly; });
+        root.querySelectorAll('[data-billing-note]').forEach((note) => { note.textContent = yearly ? 'per month, billed yearly' : 'per month'; });
+      });
+    });
+
+    document.querySelectorAll('[data-faq-search]').forEach((root) => {
+      const input = root.querySelector('[data-faq-input]');
+      const items = [...root.querySelectorAll('[data-faq-item]')];
+      const empty = root.querySelector('[data-faq-empty]');
+      const count = root.querySelector('[data-faq-count]');
+      let topic = 'all';
+      const apply = () => {
+        const query = String(input.value || '').trim().toLowerCase();
+        let shown = 0;
+        items.forEach((item) => {
+          const match = (topic === 'all' || item.dataset.topic === topic) && (!query || item.textContent.toLowerCase().includes(query));
+          item.hidden = !match;
+          if (match) shown += 1;
+        });
+        empty.hidden = shown > 0;
+        count.textContent = shown;
+      };
+      input.addEventListener('input', apply);
+      root.querySelectorAll('[data-faq-topic]').forEach((chip) => {
+        chip.addEventListener('click', () => {
+          topic = chip.dataset.faqTopic;
+          root.querySelectorAll('[data-faq-topic]').forEach((other) => { other.setAttribute('aria-pressed', String(other === chip)); other.selected = other === chip; });
+          apply();
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-accordion]').forEach((accordion) => {
+      accordion.addEventListener('click', (event) => {
+        const trigger = event.target.closest('[data-accordion-trigger]');
+        if (!trigger) return;
+        const open = trigger.getAttribute('aria-expanded') !== 'true';
+        trigger.setAttribute('aria-expanded', String(open));
+        document.getElementById(trigger.getAttribute('aria-controls')).hidden = !open;
+      });
+    });
+
+    document.querySelectorAll('[data-service-tabs]').forEach((root) => {
+      const tabs = [...root.querySelectorAll('[role="tab"]')];
+      const select = (tab) => tabs.forEach((other) => {
+        const active = other === tab;
+        other.setAttribute('aria-selected', String(active));
+        other.tabIndex = active ? 0 : -1;
+        document.getElementById(other.getAttribute('aria-controls')).hidden = !active;
+      });
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => select(tab));
+        tab.addEventListener('keydown', (event) => {
+          const move = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[event.key];
+          if (!move) return;
+          event.preventDefault();
+          const next = tabs[(index + move + tabs.length) % tabs.length];
+          next.focus();
+          select(next);
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-timeline]').forEach((timeline) => {
+      const fill = timeline.querySelector('[data-timeline-fill]');
+      if (!fill) return;
+      const update = () => {
+        const rect = timeline.getBoundingClientRect();
+        const progress = Math.min(Math.max((innerHeight * 0.6 - rect.top) / rect.height, 0), 1);
+        fill.style.transform = `scaleY(${watchMotion ? progress : 1})`;
+      };
+      addEventListener('scroll', update, { passive: true });
+      update();
+    });
+
+    document.querySelectorAll('[data-wizard]').forEach((wizard) => {
+      const steps = [...wizard.querySelectorAll('[data-wizard-step]')];
+      const bar = wizard.querySelector('[data-wizard-bar]');
+      const label = wizard.querySelector('[data-wizard-label]');
+      const status = wizard.querySelector('[data-form-status]');
+      let current = 0;
+      const show = (index) => {
+        current = index;
+        steps.forEach((step, i) => { step.hidden = i !== index; });
+        bar.style.width = `${((index + 1) / steps.length) * 100}%`;
+        bar.value = (index + 1) / steps.length;
+        label.textContent = `Step ${index + 1} of ${steps.length}`;
+        wizard.querySelectorAll('[data-wizard-dot]').forEach((dot, i) => dot.classList.toggle('step-primary', i <= index));
+      };
+      const valid = () => {
+        const fields = [...steps[current].querySelectorAll('[required]')];
+        const bad = fields.find((field) => !field.checkValidity());
+        if (bad) { status.textContent = wizard.dataset.error; bad.focus(); return false; }
+        status.textContent = '';
+        return true;
+      };
+      wizard.addEventListener('click', (event) => {
+        if (event.target.closest('[data-wizard-next]') && valid()) show(Math.min(current + 1, steps.length - 1));
+        if (event.target.closest('[data-wizard-back]')) show(Math.max(current - 1, 0));
+      });
+      wizard.addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (!valid()) return;
+        const plan = wizard.querySelector('[name="plan"]:checked')?.value || 'Starter';
+        status.textContent = `Account created on the ${plan} plan. Check your inbox to verify your email.`;
+      });
+      show(0);
+    });
+
+    document.querySelectorAll('[data-contact-form]').forEach((form) => {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const status = form.parentElement.querySelector('[data-form-status]');
+        if (!form.checkValidity()) {
+          status.textContent = form.dataset.error;
+          form.querySelector(':invalid')?.focus();
+          return;
+        }
+        status.textContent = form.dataset.success;
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    (() => {
+      const items = document.querySelectorAll('[data-reveal]');
+      if (!items.length || !watchMotion) return;
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=fernwise&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

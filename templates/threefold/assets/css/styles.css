@@ -1,0 +1,14 @@
+@view-transition { navigation: auto; }
+    html { scroll-behavior: smooth; }
+    [hidden] { display: none !important; }
+    .hatch { background-image: repeating-linear-gradient(-55deg, #ee4c58 0 1px, transparent 1px 6px); }
+    .hatch-mint { background-image: repeating-linear-gradient(-55deg, #3fbf98 0 1px, transparent 1px 6px); }
+    .strand { fill: none; stroke: #c4c4bf; stroke-width: 1.5; transition: stroke-width .5s ease; }
+    [data-strand-active="strategy"] .strand-strategy,
+    [data-strand-active="craft"] .strand-craft,
+    [data-strand-active="experience"] .strand-experience { stroke: url(#strand-hatch); stroke-width: 54; }
+    .bar-fill { transform-origin: left; }
+    .reveal-ready [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; transition-delay: var(--reveal-delay, 0ms); }
+    .reveal-ready [data-reveal].is-visible { opacity: 1; transform: none; }
+    .reveal-ready [data-reveal] .bar-fill { transform: scaleX(0); transition: transform .7s ease .2s; }
+    .reveal-ready [data-reveal].is-visible .bar-fill { transform: none; }

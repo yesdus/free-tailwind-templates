@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fees | Mintry</title>
+  <meta name="description" content="Every fee at Mintry Dental Practice in one list, from a £45 check-up to implants, with the monthly plan that covers check-ups, hygiene visits and emergencies.">
+  <meta name="keywords" content="Mintry, Tailwind CSS template, HTML website template, dentist template, dental clinic website, dental practice template, treatments and fees page, appointment request form, health template">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Fees | Mintry">
+  <meta property="og:description" content="Every fee at Mintry Dental Practice in one list, from a £45 check-up to implants, with the monthly plan that covers check-ups, hygiene visits and emergencies.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Mintry template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Fees | Mintry">
+  <meta name="twitter:description" content="Every fee at Mintry Dental Practice in one list, from a £45 check-up to implants, with the monthly plan that covers check-ups, hygiene visits and emergencies.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Mintry template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: { DEFAULT: '#1d2327', soft: '#4a545b', mute: '#69747b' },
+            mist: { DEFAULT: '#f1f2f4', deep: '#e3e5e8' },
+            mint: { DEFAULT: '#d4ece5', deep: '#a9d6ca', dark: '#1f5b50' },
+            coral: { DEFAULT: '#e8607c', deep: '#c9415f' },
+            line: '#dfe2e5'
+          },
+          fontFamily: {
+            sans: ['Hind', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white font-sans text-ink antialiased">
+  <header class="relative z-40">
+    <div class="mx-auto flex max-w-[1500px] items-center justify-between gap-6 px-5 py-5 md:px-10 md:py-8">
+      <a href="index.html" class="flex items-center gap-3 text-2xl font-bold leading-none">
+        <span class="relative block h-8 w-8" aria-hidden="true"><span class="absolute left-0 top-0 h-5 w-5 rounded-full bg-coral"></span><span class="absolute bottom-0 right-0 h-5 w-5 rounded-full bg-mint-deep mix-blend-multiply"></span></span>
+        Mintry
+      </a>
+      <nav aria-label="Main" class="hidden items-center gap-9 lg:flex">
+          <a href="treatments.html"  class="border-b-2 pb-1 font-medium transition hover:border-coral border-transparent">Treatments</a>
+          <a href="fees.html" aria-current="page" class="border-b-2 pb-1 font-medium transition hover:border-coral border-coral">Fees</a>
+          <a href="about.html"  class="border-b-2 pb-1 font-medium transition hover:border-coral border-transparent">The practice</a>
+          <a href="contact.html"  class="border-b-2 pb-1 font-medium transition hover:border-coral border-transparent">Contact</a>
+        <a href="tel:+441225555014" class="font-semibold"><i class="fa-solid fa-phone mr-2 text-sm text-coral"></i>01225 555 014</a>
+      </nav>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open the menu" class="flex h-11 w-11 items-center justify-center rounded-full bg-ink text-white lg:hidden"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu" hidden class="mx-5 rounded-2xl bg-white p-6 shadow-xl lg:hidden">
+      <nav aria-label="Mobile" class="flex flex-col">
+          <a href="index.html"  class="border-b border-line py-3 text-lg font-semibold ">Home</a>
+          <a href="treatments.html"  class="border-b border-line py-3 text-lg font-semibold ">Treatments</a>
+          <a href="fees.html" aria-current="page" class="border-b border-line py-3 text-lg font-semibold text-coral-deep">Fees</a>
+          <a href="about.html"  class="border-b border-line py-3 text-lg font-semibold ">The practice</a>
+          <a href="contact.html"  class="border-b border-line py-3 text-lg font-semibold ">Contact</a>
+        <a href="tel:+441225555014" class="mt-4 font-semibold"><i class="fa-solid fa-phone mr-2 text-sm text-coral"></i>01225 555 014</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+
+  <section class="relative overflow-hidden">
+    <div class="absolute bottom-0 left-0 h-24 w-[60%] bg-mint" aria-hidden="true"></div>
+    <p class="outline-word pointer-events-none absolute -bottom-2 left-0 text-[13.5vw]" aria-hidden="true">Clear fees</p>
+    <div class="relative mx-auto max-w-[1500px] px-5 pb-32 pt-10 md:px-10 lg:pb-44 lg:pl-[5%] lg:pt-16">
+      <p class="slash">Fees</p>
+      <h1 class="mt-3 max-w-4xl text-5xl font-bold leading-[1.02] tracking-tight md:text-6xl xl:text-7xl">The price is the price, <span class="underlined">written down first</span></h1>
+      <p class="mt-6 max-w-lg text-lg leading-relaxed text-ink-soft">Nothing is started until you have a plan with a total on it. If a treatment turns out simpler than we thought, you pay less.</p>
+    </div>
+  </section>
+
+  <section class="px-5 py-16 md:px-10 md:py-24">
+    <div class="mx-auto grid max-w-[1320px] gap-14 lg:grid-cols-[1.25fr_.75fr] lg:gap-20">
+      <div class="space-y-12">
+          <div data-reveal>
+            <h2 class="border-b-2 border-ink pb-3 text-2xl font-bold md:text-3xl">Looking and cleaning</h2>
+            <dl>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">New patient check-up and clean</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">£45</dd>
+                </div>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">Routine check-up</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">£38</dd>
+                </div>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">Hygienist visit, 30 minutes</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">£62</dd>
+                </div>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">Small X-rays, each</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">£12</dd>
+                </div>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">Emergency visit, same day</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">£60</dd>
+                </div>
+            </dl>
+          </div>
+          <div data-reveal>
+            <h2 class="border-b-2 border-ink pb-3 text-2xl font-bold md:text-3xl">Mending</h2>
+            <dl>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">White filling</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">from £95</dd>
+                </div>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">Root canal treatment</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">from £340</dd>
+                </div>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">Porcelain crown</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">£620</dd>
+                </div>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">Simple extraction</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">£110</dd>
+                </div>
+            </dl>
+          </div>
+          <div data-reveal>
+            <h2 class="border-b-2 border-ink pb-3 text-2xl font-bold md:text-3xl">Brightening and straightening</h2>
+            <dl>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">Home whitening, both arches</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">£290</dd>
+                </div>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">Composite bonding, per tooth</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">£210</dd>
+                </div>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">Clear aligners</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">from £1,900</dd>
+                </div>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">Smile consultation</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">Free</dd>
+                </div>
+            </dl>
+          </div>
+          <div data-reveal>
+            <h2 class="border-b-2 border-ink pb-3 text-2xl font-bold md:text-3xl">Replacing</h2>
+            <dl>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">Single implant with crown</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">£2,200</dd>
+                </div>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">Bridge, per tooth</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">£580</dd>
+                </div>
+                <div class="flex items-baseline gap-3 border-b border-line py-3.5">
+                  <dt class="text-lg">Full denture</dt>
+                  <span class="mb-1 min-w-6 flex-1 border-b border-dotted border-ink-mute/50" aria-hidden="true"></span>
+                  <dd class="text-lg font-bold">from £780</dd>
+                </div>
+            </dl>
+          </div>
+      </div>
+
+      <aside class="h-fit bg-mint p-8 md:p-10 lg:sticky lg:top-8">
+        <p class="slash">The Mintry plan</p>
+        <p class="mt-3 text-6xl font-bold tracking-tight">&pound;16<span class="text-xl font-medium text-ink-soft"> a month</span></p>
+        <p class="mt-3 text-ink-soft">For people who would rather not think about it. Cancel whenever you like.</p>
+        <ul class="mt-7 space-y-3">
+            <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-xs text-coral"><i class="fa-solid fa-check"></i></span>Two check-ups a year</li>
+            <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-xs text-coral"><i class="fa-solid fa-check"></i></span>Two hygienist visits a year</li>
+            <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-xs text-coral"><i class="fa-solid fa-check"></i></span>All routine X-rays</li>
+            <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-xs text-coral"><i class="fa-solid fa-check"></i></span>Emergency visits at no charge</li>
+            <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-xs text-coral"><i class="fa-solid fa-check"></i></span>10% off everything else</li>
+            <li class="flex items-center gap-3"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-xs text-coral"><i class="fa-solid fa-check"></i></span>Children under 12 seen free</li>
+        </ul>
+        <a href="contact.html?visit=Joining%20the%20Mintry%20plan" class="mt-9 inline-flex items-center gap-4 font-semibold">Ask about the plan <span class="disc h-12 w-12"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="bg-mist px-5 py-16 md:px-10 md:py-20">
+    <div class="mx-auto grid max-w-[1320px] gap-10 md:grid-cols-3">
+        <div data-reveal>
+          <span class="flex h-12 w-12 items-center justify-center rounded-full bg-white text-coral"><i class="fa-solid fa-credit-card"></i></span>
+          <h2 class="mt-5 text-2xl font-bold">Pay as you go</h2>
+          <p class="mt-2 text-ink-soft">Card, cash or phone at the desk after each visit. No deposits for ordinary appointments.</p>
+        </div>
+        <div data-reveal>
+          <span class="flex h-12 w-12 items-center justify-center rounded-full bg-white text-coral"><i class="fa-solid fa-calendar-days"></i></span>
+          <h2 class="mt-5 text-2xl font-bold">Spread it out</h2>
+          <p class="mt-2 text-ink-soft">Anything over £300 can be split over six or twelve months, with no interest and no forms on paper.</p>
+        </div>
+        <div data-reveal>
+          <span class="flex h-12 w-12 items-center justify-center rounded-full bg-white text-coral"><i class="fa-solid fa-rotate-left"></i></span>
+          <h2 class="mt-5 text-2xl font-bold">Changed your mind?</h2>
+          <p class="mt-2 text-ink-soft">Move or cancel up to a day before, free. We would rather you came next week than not at all.</p>
+        </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="bg-ink px-5 py-14 text-white md:px-10 md:py-16">
+    <div class="mx-auto flex max-w-[1320px] flex-wrap items-start justify-between gap-10">
+      <div>
+        <a href="index.html" class="flex items-center gap-3 text-2xl font-bold leading-none">
+          <span class="relative block h-8 w-8" aria-hidden="true"><span class="absolute left-0 top-0 h-5 w-5 rounded-full bg-coral"></span><span class="absolute bottom-0 right-0 h-5 w-5 rounded-full bg-mint-deep/80"></span></span>
+          Mintry
+        </a>
+        <p class="mt-4 max-w-xs text-white/70">Family and cosmetic dentistry at 12 Quiet Street, Bath.</p>
+      </div>
+      <nav aria-label="Footer" class="flex flex-wrap gap-x-9 gap-y-3 font-medium">
+        <a href="index.html" class="hover:text-mint-deep">Home</a>
+          <a href="treatments.html" class="hover:text-mint-deep">Treatments</a>
+          <a href="fees.html" class="hover:text-mint-deep">Fees</a>
+          <a href="about.html" class="hover:text-mint-deep">The practice</a>
+          <a href="contact.html" class="hover:text-mint-deep">Contact</a>
+      </nav>
+      <p class="text-2xl font-bold"><a href="tel:+441225555014" class="hover:text-mint-deep">01225 555 014</a><span class="mt-1 block text-base font-normal text-white/70">Emergencies: ring before 10 am</span></p>
+    </div>
+    <div class="mx-auto mt-12 flex max-w-[1320px] flex-wrap items-center justify-between gap-4 border-t border-white/15 pt-6 text-sm text-white/60">
+      <p>&copy; 2026 Mintry Dental Practice. Regulated by the General Dental Council.</p>
+      <p class="flex gap-5 text-base"><a href="https://www.instagram.com/" aria-label="Instagram" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a><a href="https://www.facebook.com/" aria-label="Facebook" class="hover:text-white"><i class="fa-brands fa-facebook-f"></i></a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll("[data-menu-toggle]").forEach((toggle) => {
+      const menu = document.getElementById(toggle.getAttribute("aria-controls"));
+      if (!menu) return;
+      toggle.addEventListener("click", () => {
+        const open = toggle.getAttribute("aria-expanded") !== "true";
+        toggle.setAttribute("aria-expanded", String(open));
+        menu.hidden = !open;
+      });
+    });
+
+    document.querySelectorAll("[data-hours]").forEach((list) => {
+      const row = list.querySelector(`[data-day="${new Date().getDay()}"]`);
+      if (!row) return;
+      row.style.color = "#1d2327";
+      row.style.fontWeight = "700";
+    });
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=mintry&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

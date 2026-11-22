@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | Solstra</title>
+  <meta name="description" content="Solstra is free for one person and 6 euros per reader a month for teams, with a 14-day trial, yearly billing and volume discounts.">
+  <meta name="keywords" content="Solstra, Tailwind CSS template, HTML website template, SaaS template, software landing page, startup template, dark template, geometric design, pricing page, free template">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Pricing | Solstra">
+  <meta property="og:description" content="Solstra is free for one person and 6 euros per reader a month for teams, with a 14-day trial, yearly billing and volume discounts.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Solstra template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Pricing | Solstra">
+  <meta name="twitter:description" content="Solstra is free for one person and 6 euros per reader a month for teams, with a 14-day trial, yearly billing and volume discounts.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Solstra template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            coal: { DEFAULT: '#1b1b1b', soft: '#242424', line: '#343434' },
+            pitch: '#000000',
+            bone: { DEFAULT: '#ece8df', dim: '#9a968d' },
+            sun: { DEFAULT: '#d42027', deep: '#8f1318' },
+            leaf: { DEFAULT: '#86b92c', deep: '#0f8a5f' }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['Jost', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-coal font-sans font-light text-bone antialiased">
+  <header class="absolute inset-x-0 top-0 z-40">
+    <div class="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-7 md:px-14">
+      <a href="index.html" class="flex items-center gap-4" aria-label="Solstra home">
+        <span class="h-px w-6 bg-bone"></span>
+        <span class="font-serif text-xl tracking-wide">Solstra</span>
+      </a>
+      <nav class="hidden items-center gap-10 md:flex" aria-label="Main">
+        <a href="index.html" class="label border-b border-transparent pb-1 text-bone/60 hover:text-bone">Index</a>
+          <a href="features.html"  class="label border-b pb-1 border-transparent text-bone/60 hover:text-bone">Features</a>
+          <a href="pricing.html" aria-current="page" class="label border-b pb-1 border-sun text-bone">Pricing</a>
+          <a href="contact.html"  class="label border-b pb-1 border-transparent text-bone/60 hover:text-bone">Contact</a>
+        <a href="pricing.html" class="label rounded-full border border-bone/40 px-5 py-2.5 hover:border-bone hover:bg-bone hover:text-coal">Start free</a>
+      </nav>
+      <button type="button" class="label flex items-center gap-3 md:hidden" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">
+        <span data-menu-label>Menu</span><span class="h-px w-6 bg-bone"></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="border-y border-coal-line bg-pitch px-6 py-8 md:hidden" hidden>
+      <nav class="grid gap-3 font-serif text-4xl" aria-label="Mobile">
+        <a href="index.html" class="text-bone/60 hover:text-bone">Index</a>
+          <a href="features.html"  class="text-bone/60 hover:text-bone">Features</a>
+          <a href="pricing.html" aria-current="page" class="text-bone">Pricing</a>
+          <a href="contact.html"  class="text-bone/60 hover:text-bone">Contact</a>
+      </nav>
+      <a href="pricing.html" class="label mt-8 inline-block rounded-full border border-bone/40 px-5 py-3">Start free</a>
+    </div>
+  </header>
+
+  <main>
+
+  <section class="relative overflow-hidden">
+    <div class="plane-a absolute inset-0 bg-pitch" aria-hidden="true"></div>
+    <div class="disc absolute left-[12%] top-[34%] h-16 w-16 md:left-[14%] md:top-[30%] md:h-28 md:w-28" aria-hidden="true"></div>
+    <div class="relative mx-auto max-w-[1500px] px-6 pb-20 pt-56 md:px-14 md:pb-28 md:pl-[48%] md:pt-48">
+      <p class="label text-bone/50">Pricing</p>
+      <h1 class="mt-6 max-w-2xl font-serif text-5xl font-light leading-[1.05] md:text-7xl">Priced per reader, not per alert.</h1>
+    </div>
+  </section>
+
+  <section class="border-t border-coal-line">
+    <div class="mx-auto max-w-[1500px] md:px-14">
+    <div class="grid gap-px bg-coal-line lg:grid-cols-12">
+      <div class="bg-coal px-6 py-14 md:px-10 lg:col-span-4">
+        <p class="label text-bone/50">Solo</p>
+        <p class="mt-6 font-serif text-7xl font-light">€0</p>
+        <p class="mt-2 text-bone/60">For one person, for as long as you like.</p>
+        <ul class="mt-10 grid gap-4">
+            <li class="flex items-center gap-4"><span class="h-px w-5 bg-bone/40"></span>One daily brief</li>
+            <li class="flex items-center gap-4"><span class="h-px w-5 bg-bone/40"></span>Three sources</li>
+            <li class="flex items-center gap-4"><span class="h-px w-5 bg-bone/40"></span>Email delivery</li>
+            <li class="flex items-center gap-4"><span class="h-px w-5 bg-bone/40"></span>Seven days of history</li>
+        </ul>
+        <a href="contact.html" class="label mt-12 inline-block rounded-full border border-bone/40 px-7 py-4 hover:border-bone hover:bg-bone hover:text-coal">Start solo</a>
+      </div>
+
+      <div class="bg-pitch px-6 py-14 md:px-10 lg:col-span-8" data-calculator>
+        <div class="flex flex-wrap items-start justify-between gap-6">
+          <p class="label text-sun">Team</p>
+          <div class="flex items-center gap-4" role="group" aria-label="Billing period">
+            <button type="button" data-billing="monthly" aria-pressed="false" class="label border-b border-transparent pb-1 text-bone/50 aria-pressed:border-sun aria-pressed:text-bone">Monthly</button>
+            <button type="button" data-billing="yearly" aria-pressed="true" class="label border-b border-transparent pb-1 text-bone/50 aria-pressed:border-sun aria-pressed:text-bone">Yearly, two months free</button>
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-end gap-x-10 gap-y-4">
+          <p class="font-serif text-7xl font-light md:text-8xl"><span data-total>€125</span><span class="ml-3 font-sans text-base text-bone/50">a month</span></p>
+          <p class="pb-3 text-bone/70"><span data-per-seat>€5.00</span> per reader · <span data-note>billed €1,500 yearly</span></p>
+        </div>
+        <label for="seats" class="mt-10 flex items-baseline justify-between"><span class="label text-bone/50">Readers</span><span class="font-serif text-4xl"><span data-seats-label>25</span></span></label>
+        <input id="seats" type="range" min="2" max="200" value="25" class="mt-4 w-full" data-seats>
+        <div class="mt-1 flex justify-between text-xs text-bone/40"><span>2</span><span>50: −10%</span><span>100: −20%</span><span>200</span></div>
+        <ul class="mt-10 grid gap-4 sm:grid-cols-2">
+            <li class="flex items-center gap-4"><span class="h-2 w-2 rounded-full bg-leaf"></span>A personal brief for every reader</li>
+            <li class="flex items-center gap-4"><span class="h-2 w-2 rounded-full bg-leaf"></span>All sixty sources</li>
+            <li class="flex items-center gap-4"><span class="h-2 w-2 rounded-full bg-leaf"></span>Email, Slack and mobile</li>
+            <li class="flex items-center gap-4"><span class="h-2 w-2 rounded-full bg-leaf"></span>A year of history, searchable</li>
+            <li class="flex items-center gap-4"><span class="h-2 w-2 rounded-full bg-leaf"></span>Team digest on Mondays</li>
+            <li class="flex items-center gap-4"><span class="h-2 w-2 rounded-full bg-leaf"></span>SSO and audit log</li>
+        </ul>
+        <a href="contact.html" class="label mt-12 inline-block rounded-full bg-bone px-8 py-4 font-normal text-coal hover:bg-sun hover:text-bone">Start 14 days free</a>
+        <p class="mt-4 text-sm text-bone/50">No card needed. Over 200 readers? <a href="contact.html" class="border-b border-bone/40 text-bone">Talk to us</a>.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-[1500px] px-6 py-24 md:px-14 md:py-32">
+    <h2 class="font-serif text-4xl font-light leading-tight md:text-6xl">Before you ask.</h2>
+    <div class="mt-12 border-t border-coal-line" data-accordion>
+        <div class="border-b border-coal-line">
+          <h3>
+            <button type="button" aria-expanded="true" aria-controls="faq-0" class="group flex w-full items-center justify-between gap-6 py-7 text-left font-serif text-2xl font-light md:text-3xl">
+              Who counts as a reader?
+              <span class="relative h-4 w-4 shrink-0"><span class="absolute left-0 top-1/2 h-px w-4 bg-bone"></span><span class="absolute left-1/2 top-0 h-4 w-px bg-bone transition group-aria-expanded:rotate-90 group-aria-expanded:opacity-0"></span></span>
+            </button>
+          </h3>
+          <p id="faq-0" class="max-w-2xl pb-8 leading-relaxed text-bone/70" >Anyone who receives a brief. People whose work appears in a brief but who do not receive one are free.</p>
+        </div>
+        <div class="border-b border-coal-line">
+          <h3>
+            <button type="button" aria-expanded="false" aria-controls="faq-1" class="group flex w-full items-center justify-between gap-6 py-7 text-left font-serif text-2xl font-light md:text-3xl">
+              What happens after the trial?
+              <span class="relative h-4 w-4 shrink-0"><span class="absolute left-0 top-1/2 h-px w-4 bg-bone"></span><span class="absolute left-1/2 top-0 h-4 w-px bg-bone transition group-aria-expanded:rotate-90 group-aria-expanded:opacity-0"></span></span>
+            </button>
+          </h3>
+          <p id="faq-1" class="max-w-2xl pb-8 leading-relaxed text-bone/70" hidden>If you do nothing, the team drops to Solo for its owner and the other briefs stop. Nothing is charged and nothing is deleted for 30 days.</p>
+        </div>
+        <div class="border-b border-coal-line">
+          <h3>
+            <button type="button" aria-expanded="false" aria-controls="faq-2" class="group flex w-full items-center justify-between gap-6 py-7 text-left font-serif text-2xl font-light md:text-3xl">
+              Can we pay by invoice?
+              <span class="relative h-4 w-4 shrink-0"><span class="absolute left-0 top-1/2 h-px w-4 bg-bone"></span><span class="absolute left-1/2 top-0 h-4 w-px bg-bone transition group-aria-expanded:rotate-90 group-aria-expanded:opacity-0"></span></span>
+            </button>
+          </h3>
+          <p id="faq-2" class="max-w-2xl pb-8 leading-relaxed text-bone/70" hidden>Yes, on yearly plans of ten readers or more. Monthly plans are paid by card.</p>
+        </div>
+        <div class="border-b border-coal-line">
+          <h3>
+            <button type="button" aria-expanded="false" aria-controls="faq-3" class="group flex w-full items-center justify-between gap-6 py-7 text-left font-serif text-2xl font-light md:text-3xl">
+              Do you offer discounts?
+              <span class="relative h-4 w-4 shrink-0"><span class="absolute left-0 top-1/2 h-px w-4 bg-bone"></span><span class="absolute left-1/2 top-0 h-4 w-px bg-bone transition group-aria-expanded:rotate-90 group-aria-expanded:opacity-0"></span></span>
+            </button>
+          </h3>
+          <p id="faq-3" class="max-w-2xl pb-8 leading-relaxed text-bone/70" hidden>Half price for charities and schools, and free for open-source projects with a public repository.</p>
+        </div>
+        <div class="border-b border-coal-line">
+          <h3>
+            <button type="button" aria-expanded="false" aria-controls="faq-4" class="group flex w-full items-center justify-between gap-6 py-7 text-left font-serif text-2xl font-light md:text-3xl">
+              Can we cancel at any time?
+              <span class="relative h-4 w-4 shrink-0"><span class="absolute left-0 top-1/2 h-px w-4 bg-bone"></span><span class="absolute left-1/2 top-0 h-4 w-px bg-bone transition group-aria-expanded:rotate-90 group-aria-expanded:opacity-0"></span></span>
+            </button>
+          </h3>
+          <p id="faq-4" class="max-w-2xl pb-8 leading-relaxed text-bone/70" hidden>Yes. Monthly plans end with the current month. Yearly plans are refunded for the unused full months.</p>
+        </div>
+    </div>
+  </section>
+
+  <script>
+    // Seat calculator
+    (() => {
+      const box = document.querySelector("[data-calculator]");
+      if (!box) return;
+      const seats = box.querySelector("[data-seats]");
+      let billing = "yearly";
+      const euro = (value, digits = 0) => "€" + value.toLocaleString("en-GB", { minimumFractionDigits: digits, maximumFractionDigits: digits });
+      const update = () => {
+        const count = Number(seats.value);
+        const volume = count >= 100 ? 0.8 : count >= 50 ? 0.9 : 1;
+        const seat = 6 * volume * (billing === "yearly" ? 10 / 12 : 1);
+        const total = Math.round(seat * count);
+        box.querySelector("[data-seats-label]").textContent = count;
+        box.querySelector("[data-total]").textContent = euro(total);
+        box.querySelector("[data-per-seat]").textContent = euro(seat, 2);
+        box.querySelector("[data-note]").textContent = billing === "yearly" ? `billed ${euro(total * 12)} yearly` : "billed monthly";
+      };
+      box.querySelectorAll("[data-billing]").forEach((button) => button.addEventListener("click", () => {
+        billing = button.dataset.billing;
+        box.querySelectorAll("[data-billing]").forEach((other) => other.setAttribute("aria-pressed", String(other === button)));
+        update();
+      }));
+      seats.addEventListener("input", update);
+      update();
+    })();
+
+    // FAQ accordion
+    document.querySelectorAll("[data-accordion] button").forEach((button) => {
+      button.addEventListener("click", () => {
+        const open = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!open));
+        document.getElementById(button.getAttribute("aria-controls")).hidden = open;
+      });
+    });
+  </script>
+
+  </main>
+
+  <footer class="border-t border-coal-line bg-pitch">
+    <div class="mx-auto max-w-[1500px] px-6 pt-16 md:px-14">
+      <div class="flex flex-wrap items-start justify-between gap-10">
+        <p class="max-w-xs text-bone/60">One calm page each morning, written overnight from the tools your team already uses.</p>
+        <nav class="flex flex-wrap gap-x-10 gap-y-4" aria-label="Footer">
+            <a href="index.html" class="label text-bone/60 hover:text-bone">Index</a>
+            <a href="features.html" class="label text-bone/60 hover:text-bone">Features</a>
+            <a href="pricing.html" class="label text-bone/60 hover:text-bone">Pricing</a>
+            <a href="contact.html" class="label text-bone/60 hover:text-bone">Contact</a>
+        </nav>
+        <a href="mailto:hello@solstra.example" class="label text-bone/60 hover:text-bone">hello@solstra.example</a>
+      </div>
+      <p class="mt-14 select-none font-serif text-[23vw] font-light leading-[0.8] tracking-tight text-bone/90 md:text-[20vw]" aria-hidden="true">Solstra</p>
+    </div>
+    <div class="border-t border-coal-line">
+      <div class="mx-auto flex max-w-[1500px] flex-wrap justify-between gap-3 px-6 py-6 text-xs text-bone/40 md:px-14">
+        <p>© 2026 Solstra Software BV, Amsterdam</p>
+        <p>Read-only by design. SOC 2 Type II.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    (() => {
+      const toggle = document.querySelector("[data-menu-toggle]");
+      const menu = document.getElementById("mobile-menu");
+      if (!toggle || !menu) return;
+      toggle.addEventListener("click", () => {
+        const open = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!open));
+        toggle.querySelector("[data-menu-label]").textContent = open ? "Menu" : "Close";
+        menu.hidden = open;
+        document.querySelector("header").classList.toggle("bg-pitch", !open);
+      });
+    })();
+
+    // Scroll reveal
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=solstra&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

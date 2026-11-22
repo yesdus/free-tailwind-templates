@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniGlobe | Tailwind CSS Study Abroad Template</title>
+    <meta name="description" content="UniGlobe is a modern Tailwind CSS study-abroad template for universities, international courses, destinations, applications, and student guidance.">
+    <meta name="keywords" content="UniGlobe, Tailwind CSS template, HTML website template, study abroad template, university landing page, international education, responsive student website">
+    <meta name="author" content="Let's templates">
+    <link rel="canonical" href="">
+
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Let's templates">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="UniGlobe | Tailwind CSS Study Abroad Template">
+    <meta property="og:description" content="A modern Tailwind CSS study-abroad template for universities, international courses, destinations, applications, and student guidance.">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="UniGlobe template preview">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="UniGlobe | Tailwind CSS Study Abroad Template">
+    <meta name="twitter:description" content="A modern Tailwind CSS study-abroad template for universities, international courses, destinations, applications, and student guidance.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:image:alt" content="UniGlobe template preview">
+<!-- Scripts & Styles -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff4d8d',
+                        secondary: '#7ee09e',
+                        accent: '#d896ff',
+                        bgSoft: '#fdf6ed',
+                        dark: '#1a1a1a'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-[#fcf9f4] text-dark font-sans overflow-x-hidden">
+
+    <!-- block:start navbar -->
+    <header id="header" class="w-full bg-white py-4 px-6 md:px-12 flex items-center justify-between shadow-sm sticky top-0 z-50">
+        <div class="flex items-center gap-12">
+            <a href="#" class="flex items-center gap-2">
+                <span class="text-2xl font-extrabold tracking-tight text-primary uppercase italic">UniGlobe</span>
+            </a>
+            
+            <div class="hidden lg:flex items-center bg-bgSoft px-4 py-2 rounded-full border border-gray-100">
+                <i class="fa-solid fa-magnifying-glass text-gray-400 mr-3"></i>
+                <input type="text" placeholder="Search for courses..." class="bg-transparent border-none outline-none text-sm w-48 font-medium">
+            </div>
+        </div>
+
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-bold text-gray-600">
+            <div class="flex items-center gap-1 cursor-pointer hover:text-primary">Courses <i class="fa-solid fa-chevron-down text-[10px]"></i></div>
+            <div class="flex items-center gap-1 cursor-pointer hover:text-primary">Destinations <i class="fa-solid fa-chevron-down text-[10px]"></i></div>
+            <div class="flex items-center gap-1 cursor-pointer hover:text-primary">About <i class="fa-solid fa-chevron-down text-[10px]"></i></div>
+        </nav>
+
+        <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2 cursor-pointer border border-gray-100 px-3 py-1.5 rounded-full hover:bg-bgSoft transition">
+                <img src="https://flagcdn.com/w20/gb.png" alt="UK" class="w-5 h-3.5 rounded-sm">
+                <i class="fa-solid fa-chevron-down text-[10px] text-gray-400"></i>
+            </div>
+            <button class="bg-primary text-white px-6 py-2.5 rounded-full text-xs font-black uppercase tracking-widest hover:shadow-lg transition">Contact Us</button>
+        </div>
+    </header>
+    <!-- block:end navbar -->
+
+    <!-- block:start hero -->
+    <section id="hero" class="p-4 md:p-8">
+        <div class="max-w-7xl mx-auto rounded-[3rem] overflow-hidden hero-gradient h-[500px] flex flex-col items-center justify-center text-center text-white px-6 relative" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+            <!-- Floating Country Icons -->
+            <div class="absolute top-10 left-10 animate-bounce delay-100"><img src="https://flagcdn.com/w40/us.png" class="w-10 rounded shadow-xl"></div>
+            <div class="absolute top-24 right-20 animate-bounce delay-300"><img src="https://flagcdn.com/w40/ca.png" class="w-10 rounded shadow-xl"></div>
+            <div class="absolute bottom-20 left-20 animate-bounce delay-500"><img src="https://flagcdn.com/w40/au.png" class="w-10 rounded shadow-xl"></div>
+            <div class="absolute bottom-10 right-32 animate-bounce delay-200"><img src="https://flagcdn.com/w40/de.png" class="w-10 rounded shadow-xl"></div>
+
+            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight max-w-4xl">
+                Embark on Your Global<br>Academic Adventure Today
+            </h1>
+            <p class="text-white/80 font-medium max-w-2xl mx-auto mb-10 text-sm md:text-base">
+                Discover a world of opportunities. Compare top-tier universities, find the perfect program, and get personalized support for your international education journey.
+            </p>
+            <button class="bg-primary text-white px-10 py-4 rounded-full text-sm font-black uppercase tracking-widest hover:scale-105 transition shadow-2xl">
+                Start Your Journey
+            </button>
+        </div>
+    </section>
+    <!-- block:end hero -->
+
+    <!-- block:start products -->
+    <section id="destinations" class="py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-lg font-black text-gray-800 mb-10 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-graduation-cap text-primary"></i> Explore Top Study Destinations
+            </h2>
+            
+            <div class="flex flex-wrap justify-center gap-6 md:gap-10">
+                <div class="flex flex-col items-center gap-3 group cursor-pointer">
+                    <div class="w-16 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center group-hover:shadow-md transition">
+                        <img src="https://flagcdn.com/w40/in.png" class="w-8 rounded-sm">
+                    </div>
+                    <span class="text-[11px] font-black uppercase tracking-widest text-gray-500 group-hover:text-primary">India</span>
+                </div>
+                <div class="flex flex-col items-center gap-3 group cursor-pointer">
+                    <div class="w-16 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center group-hover:shadow-md transition">
+                        <img src="https://flagcdn.com/w40/ie.png" class="w-8 rounded-sm">
+                    </div>
+                    <span class="text-[11px] font-black uppercase tracking-widest text-gray-500 group-hover:text-primary">Ireland</span>
+                </div>
+                <div class="flex flex-col items-center gap-3 group cursor-pointer">
+                    <div class="w-16 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center group-hover:shadow-md transition">
+                        <img src="https://flagcdn.com/w40/gb.png" class="w-8 rounded-sm">
+                    </div>
+                    <span class="text-[11px] font-black uppercase tracking-widest text-gray-500 group-hover:text-primary">UK</span>
+                </div>
+                <div class="flex flex-col items-center gap-3 group cursor-pointer">
+                    <div class="w-16 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center group-hover:shadow-md transition">
+                        <img src="https://flagcdn.com/w40/my.png" class="w-8 rounded-sm">
+                    </div>
+                    <span class="text-[11px] font-black uppercase tracking-widest text-gray-500 group-hover:text-primary">Malaysia</span>
+                </div>
+                <div class="flex flex-col items-center gap-3 group cursor-pointer">
+                    <div class="w-16 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center group-hover:shadow-md transition">
+                        <img src="https://flagcdn.com/w40/ge.png" class="w-8 rounded-sm">
+                    </div>
+                    <span class="text-[11px] font-black uppercase tracking-widest text-gray-500 group-hover:text-primary">Georgia</span>
+                </div>
+                <div class="flex flex-col items-center gap-3 group cursor-pointer">
+                    <div class="w-16 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center group-hover:shadow-md transition">
+                        <img src="https://flagcdn.com/w40/ae.png" class="w-8 rounded-sm">
+                    </div>
+                    <span class="text-[11px] font-black uppercase tracking-widest text-gray-500 group-hover:text-primary">UAE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end products -->
+
+    <!-- block:start stats -->
+    <section id="stats" class="py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-black text-center mb-12">Our Global Reach</h2>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm relative group overflow-hidden">
+                    <div class="absolute top-4 right-6 text-gray-100 text-3xl font-black">01</div>
+                    <div class="w-10 h-10 bg-bgSoft text-primary rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-calendar"></i></div>
+                    <div class="text-3xl font-black mb-1">16+</div>
+                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Years of Experience</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm relative group overflow-hidden">
+                    <div class="absolute top-4 right-6 text-gray-100 text-3xl font-black">02</div>
+                    <div class="w-10 h-10 bg-bgSoft text-primary rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-building"></i></div>
+                    <div class="text-3xl font-black mb-1">230+</div>
+                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">University Partners</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm relative group overflow-hidden">
+                    <div class="absolute top-4 right-6 text-gray-100 text-3xl font-black">03</div>
+                    <div class="w-10 h-10 bg-bgSoft text-primary rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-users"></i></div>
+                    <div class="text-3xl font-black mb-1">1600+</div>
+                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Students Guided</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm relative group overflow-hidden">
+                    <div class="absolute top-4 right-6 text-gray-100 text-3xl font-black">04</div>
+                    <div class="w-10 h-10 bg-bgSoft text-primary rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-book-open"></i></div>
+                    <div class="text-3xl font-black mb-1">180+</div>
+                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Courses Provided</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end stats -->
+
+    <!-- block:start process -->
+    <section id="process" class="py-20 bg-bgSoft/30">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-black mb-4 flex items-center justify-center gap-3">
+                Admission Pathway <i class="fa-solid fa-user-graduate text-primary"></i>
+            </h2>
+            <p class="text-gray-500 font-medium text-sm mb-16 max-w-2xl mx-auto">Explore global opportunities, find programs aligned with your career goals, compare options, and receive end-to-end guidance.</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto mb-8 relative">
+                        <div class="absolute inset-0 bg-primary/10 rounded-full scale-110 blur group-hover:scale-125 transition"></div>
+                        <i class="fa-solid fa-book-open text-xl text-primary relative"></i>
+                    </div>
+                    <h4 class="font-black mb-3">Study Planner</h4>
+                    <p class="text-xs text-gray-500 leading-relaxed font-medium">Strategic planning to map your academic goals with professional success.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto mb-8 relative">
+                        <div class="absolute inset-0 bg-secondary/10 rounded-full scale-110 blur group-hover:scale-125 transition"></div>
+                        <i class="fa-solid fa-file-pen text-xl text-secondary relative"></i>
+                    </div>
+                    <h4 class="font-black mb-3">Test Prep</h4>
+                    <p class="text-xs text-gray-500 leading-relaxed font-medium">Expert training for IELTS, TOEFL, GRE, and other key entrance exams.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto mb-8 relative">
+                        <div class="absolute inset-0 bg-sky-100 rounded-full scale-110 blur group-hover:scale-125 transition"></div>
+                        <i class="fa-solid fa-folder-open text-xl text-sky-500 relative"></i>
+                    </div>
+                    <h4 class="font-black mb-3">Document Tracker</h4>
+                    <p class="text-xs text-gray-500 leading-relaxed font-medium">A centralized system to manage your transcripts, SOPs, and LORs.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto mb-8 relative">
+                        <div class="absolute inset-0 bg-emerald-100 rounded-full scale-110 blur group-hover:scale-125 transition"></div>
+                        <i class="fa-solid fa-comments text-xl text-emerald-500 relative"></i>
+                    </div>
+                    <h4 class="font-black mb-3">Expert Chat</h4>
+                    <p class="text-xs text-gray-500 leading-relaxed font-medium">Direct access to certified advisors for real-time application support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end process -->
+
+    <!-- block:start products-2 -->
+    <section id="universities" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-black mb-3 flex items-center gap-3">Top-Tier Partner Institutions <i class="fa-solid fa-building-columns text-primary"></i></h2>
+                    <p class="text-gray-500 text-sm font-medium">Partnering with world-class universities to offer you premium educational opportunities.</p>
+                </div>
+                <a href="#" class="text-xs font-black uppercase tracking-widest text-primary border-b border-primary pb-1">View All <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+
+            <div class="flex gap-8 overflow-x-auto pb-8 scroll-hide -mx-6 px-6">
+                <!-- University 1 -->
+                <div class="bg-white border border-gray-100 rounded-[2.5rem] p-6 shadow-sm min-w-[320px] relative shrink-0">
+                    <div class="absolute top-4 right-6 bg-red-50 text-red-500 text-[10px] font-black px-3 py-1 rounded-full uppercase">Most Popular</div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-bgSoft rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-university text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-black flex items-center gap-2">Global Institute London <i class="fa-solid fa-circle-check text-blue-500 text-[10px]"></i></h4>
+                            <p class="text-[10px] font-bold text-gray-400 uppercase flex items-center gap-1"><img src="https://flagcdn.com/w20/gb.png" class="w-3"> United Kingdom, London</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 mb-8 bg-bgSoft/50 p-4 rounded-2xl">
+                        <div class="text-center">
+                            <p class="text-[10px] font-bold text-gray-400 uppercase">Courses</p>
+                            <p class="text-xs font-black">1000+</p>
+                        </div>
+                        <div class="text-center border-x border-gray-200">
+                            <p class="text-[10px] font-bold text-gray-400 uppercase">Scholarships</p>
+                            <p class="text-xs font-black">Available</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-[10px] font-bold text-gray-400 uppercase">Intake</p>
+                            <p class="text-xs font-black">July 2025</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <button class="flex-1 bg-primary text-white py-3 rounded-2xl text-[10px] font-black uppercase tracking-widest">Apply Now</button>
+                        <button class="flex-1 bg-white border border-gray-100 py-3 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-bgSoft transition">Learn More</button>
+                    </div>
+                </div>
+                <!-- University 2 -->
+                <div class="bg-white border border-gray-100 rounded-[2.5rem] p-6 shadow-sm min-w-[320px] relative shrink-0">
+                    <div class="absolute top-4 right-6 bg-red-50 text-red-500 text-[10px] font-black px-3 py-1 rounded-full uppercase">Most Popular</div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-bgSoft rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-building-columns text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-black flex items-center gap-2">Pacific Coast Univ <i class="fa-solid fa-circle-check text-blue-500 text-[10px]"></i></h4>
+                            <p class="text-[10px] font-bold text-gray-400 uppercase flex items-center gap-1"><img src="https://flagcdn.com/w20/us.png" class="w-3"> United States, CA</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 mb-8 bg-bgSoft/50 p-4 rounded-2xl">
+                        <div class="text-center">
+                            <p class="text-[10px] font-bold text-gray-400 uppercase">Courses</p>
+                            <p class="text-xs font-black">800+</p>
+                        </div>
+                        <div class="text-center border-x border-gray-200">
+                            <p class="text-[10px] font-bold text-gray-400 uppercase">Scholarships</p>
+                            <p class="text-xs font-black">50% Off</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-[10px] font-bold text-gray-400 uppercase">Intake</p>
+                            <p class="text-xs font-black">Sept 2025</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <button class="flex-1 bg-primary text-white py-3 rounded-2xl text-[10px] font-black uppercase tracking-widest">Apply Now</button>
+                        <button class="flex-1 bg-white border border-gray-100 py-3 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-bgSoft transition">Learn More</button>
+                    </div>
+                </div>
+                <!-- University 3 -->
+                <div class="bg-white border border-gray-100 rounded-[2.5rem] p-6 shadow-sm min-w-[320px] relative shrink-0">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-bgSoft rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-graduation-cap text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-black flex items-center gap-2">Dublin Tech Academy <i class="fa-solid fa-circle-check text-blue-500 text-[10px]"></i></h4>
+                            <p class="text-[10px] font-bold text-gray-400 uppercase flex items-center gap-1"><img src="https://flagcdn.com/w20/ie.png" class="w-3"> Ireland, Dublin</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 mb-8 bg-bgSoft/50 p-4 rounded-2xl">
+                        <div class="text-center">
+                            <p class="text-[10px] font-bold text-gray-400 uppercase">Courses</p>
+                            <p class="text-xs font-black">450+</p>
+                        </div>
+                        <div class="text-center border-x border-gray-200">
+                            <p class="text-[10px] font-bold text-gray-400 uppercase">Scholarships</p>
+                            <p class="text-xs font-black">Full Ride</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-[10px] font-bold text-gray-400 uppercase">Intake</p>
+                            <p class="text-xs font-black">Feb 2025</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <button class="flex-1 bg-primary text-white py-3 rounded-2xl text-[10px] font-black uppercase tracking-widest">Apply Now</button>
+                        <button class="flex-1 bg-white border border-gray-100 py-3 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-bgSoft transition">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end products-2 -->
+
+    <!-- block:start products-3 -->
+    <section id="courses" class="py-24 bg-white rounded-t-[5rem]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-3xl font-black mb-3">Discover Specialized Programs <i class="fa-solid fa-book text-primary"></i></h2>
+                    <p class="text-gray-500 text-sm font-medium">Curated courses to help you achieve your career milestones.</p>
+                </div>
+                <a href="#" class="text-xs font-black uppercase tracking-widest text-primary border-b border-primary pb-1">View All <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Course 1 -->
+                <div class="bg-secondary p-8 rounded-[3rem] text-white relative overflow-hidden group">
+                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center absolute top-6 right-6">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </div>
+                    <div class="h-40 rounded-3xl overflow-hidden mb-8 shadow-inner">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1584697964328-b1e7f63dca95?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHN0dWRlbnQlMjBsaWJyYXJ5JTIwc3R1ZHlpbmclMjBjb21wdXRlciUyMHNjaWVuY2UlMjBsYXB0b3B8ZW58MXx8fHwxNzk1Mzg2MTAyfDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="student in library studying computer science, modern laptop, vibrant green background" />
+                    </div>
+                    <h4 class="text-xl font-extrabold mb-2">Advanced Data Science</h4>
+                    <p class="text-xs text-white/80 font-medium mb-4">Master AI and ML at Global Institute London</p>
+                    <p class="text-2xl font-black">$500.00 <span class="text-xs font-bold opacity-60">/ semester</span></p>
+                </div>
+                <!-- Course 2 -->
+                <div class="bg-primary/90 p-8 rounded-[3rem] text-white relative overflow-hidden group">
+                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center absolute top-6 right-6">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </div>
+                    <div class="h-40 rounded-3xl overflow-hidden mb-8 shadow-inner">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1714976326729-1ffbddfc1c2e?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGdyb3VwJTIwZGl2ZXJzZSUyMGJ1c2luZXNzJTIwc3R1ZGVudHMlMjBkaXNjdXNzaW9uJTIwY3JlYXRpdmV8ZW58MXx8fHwxNzk1Mzg2MTAzfDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="group of diverse business students in discussion, creative workspace, vibrant pink background" />
+                    </div>
+                    <h4 class="text-xl font-extrabold mb-2">Global MBA Strategy</h4>
+                    <p class="text-xs text-white/80 font-medium mb-4">Leadership and innovation at Pacific Coast Univ</p>
+                    <p class="text-2xl font-black">$750.00 <span class="text-xs font-bold opacity-60">/ semester</span></p>
+                </div>
+                <!-- Course 3 -->
+                <div class="bg-accent p-8 rounded-[3rem] text-white relative overflow-hidden group">
+                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center absolute top-6 right-6">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </div>
+                    <div class="h-40 rounded-3xl overflow-hidden mb-8 shadow-inner">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://images.unsplash.com/photo-1612544409025-e1f6a56c1152?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGRpZ2l0YWwlMjBtZWRpYSUyMHN0dWRlbnQlMjB3b3JraW5nJTIwcHJvZHVjdGlvbiUyMHNldHxlbnwxfHx8fDE3OTUzODYxMDR8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="digital media student working on production set, professional camera equipment, vibrant purple backg" />
+                    </div>
+                    <h4 class="text-xl font-extrabold mb-2">Creative Media Arts</h4>
+                    <p class="text-xs text-white/80 font-medium mb-4">Design and film at Dublin Tech Academy</p>
+                    <p class="text-2xl font-black">$450.00 <span class="text-xs font-bold opacity-60">/ semester</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end products-3 -->
+
+    <!-- block:start products-4 -->
+    <section id="search-filter" class="py-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="bg-white p-10 rounded-[3rem] shadow-2xl border border-gray-100 flex flex-col md:flex-row items-end gap-6 relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/5 rounded-full blur-3xl"></div>
+                <div class="flex-1 space-y-4">
+                    <label class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 ml-1">Study Level</label>
+                    <select class="w-full bg-bgSoft border border-gray-100 rounded-2xl px-6 py-4 text-sm font-bold focus:ring-2 focus:ring-primary/10 outline-none transition appearance-none">
+                        <option>Undergraduate</option>
+                        <option>Postgraduate</option>
+                        <option>Doctoral</option>
+                    </select>
+                </div>
+                <div class="flex-1 space-y-4">
+                    <label class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 ml-1">Subject Preference</label>
+                    <select class="w-full bg-bgSoft border border-gray-100 rounded-2xl px-6 py-4 text-sm font-bold focus:ring-2 focus:ring-primary/10 outline-none transition appearance-none">
+                        <option>Computer Science</option>
+                        <option>Business Management</option>
+                        <option>Medicine</option>
+                    </select>
+                </div>
+                <button class="bg-primary text-white h-[60px] px-12 rounded-2xl text-xs font-black uppercase tracking-widest hover:shadow-xl transition flex items-center justify-center">
+                    Find Courses
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- block:end products-4 -->
+
+    <!-- block:start blog -->
+    <section id="blog" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-3xl font-black mb-3">Insights for Global Students <i class="fa-solid fa-newspaper text-primary"></i></h2>
+                    <p class="text-gray-500 text-sm font-medium">Expert tips, destination guides, and student experiences.</p>
+                </div>
+                <a href="#" class="text-xs font-black uppercase tracking-widest text-primary border-b border-primary pb-1">Read All <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Blog 1 -->
+                <div class="bg-white rounded-[2.5rem] p-4 shadow-sm border border-gray-100 group cursor-pointer hover:shadow-xl transition">
+                    <div class="h-48 bg-yellow-400 rounded-3xl overflow-hidden mb-6 relative">
+                        <img class="w-full h-full object-contain p-4 group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1762028895843-8bb154ab0917?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGlsbHVzdHJhdGlvbiUyMGdyYWR1YXRpb24lMjBjYXAlMjBkaXBsb21hJTIwZWR1Y2F0aW9uYWwlMjB5ZWxsb3d8ZW58MXx8fHwxNzk1Mzg2MTA0fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="3D illustration of a graduation cap and diploma, educational concept, bright yellow background" />
+                        <div class="absolute bottom-4 left-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[9px] font-black text-white uppercase tracking-widest">Scholarships</div>
+                    </div>
+                    <span class="text-[9px] font-black text-primary uppercase tracking-widest mb-2 block">Study in Australia</span>
+                    <h4 class="font-extrabold text-sm mb-6 leading-tight">Mastering Scholarship Applications for 2025</h4>
+                    <p class="text-[10px] text-gray-400 font-bold flex items-center gap-2"><i class="fa-solid fa-calendar"></i> 17 March 2024</p>
+                </div>
+                <!-- Blog 2 -->
+                <div class="bg-white rounded-[2.5rem] p-4 shadow-sm border border-gray-100 group cursor-pointer hover:shadow-xl transition">
+                    <div class="h-48 bg-secondary rounded-3xl overflow-hidden mb-6 relative">
+                        <img class="w-full h-full object-contain p-4 group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1487637419635-a2a471ff5c7b?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGlsbHVzdHJhdGlvbiUyMGdsb2JlJTIwcGFzc3BvcnQlMjB0cmF2ZWwlMjBncmVlbnxlbnwxfHx8fDE3OTUzODYxMDV8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="3D illustration of a globe and passport, travel concept, bright green background" />
+                        <div class="absolute bottom-4 left-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[9px] font-black text-white uppercase tracking-widest">Visa Tips</div>
+                    </div>
+                    <span class="text-[9px] font-black text-primary uppercase tracking-widest mb-2 block">Study in Europe</span>
+                    <h4 class="font-extrabold text-sm mb-6 leading-tight">Navigating Student Visas Across the EU</h4>
+                    <p class="text-[10px] text-gray-400 font-bold flex items-center gap-2"><i class="fa-solid fa-calendar"></i> 15 March 2024</p>
+                </div>
+                <!-- Blog 3 -->
+                <div class="bg-white rounded-[2.5rem] p-4 shadow-sm border border-gray-100 group cursor-pointer hover:shadow-xl transition">
+                    <div class="h-48 bg-primary rounded-3xl overflow-hidden mb-6 relative">
+                        <img class="w-full h-full object-contain p-4 group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGlsbHVzdHJhdGlvbiUyMHN0YWNrJTIwYm9va3MlMjBwZW5jaWwlMjBsZWFybmluZ3xlbnwxfHx8fDE3OTUzODYxODh8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="3D illustration of a stack of books and pencil, learning concept, bright pink background" />
+                        <div class="absolute bottom-4 left-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[9px] font-black text-white uppercase tracking-widest">Guide</div>
+                    </div>
+                    <span class="text-[9px] font-black text-primary uppercase tracking-widest mb-2 block">Study in USA</span>
+                    <h4 class="font-extrabold text-sm mb-6 leading-tight">Top US Universities for STEM Degrees</h4>
+                    <p class="text-[10px] text-gray-400 font-bold flex items-center gap-2"><i class="fa-solid fa-calendar"></i> 12 March 2024</p>
+                </div>
+                <!-- Blog 4 -->
+                <div class="bg-white rounded-[2.5rem] p-4 shadow-sm border border-gray-100 group cursor-pointer hover:shadow-xl transition">
+                    <div class="h-48 bg-accent rounded-3xl overflow-hidden mb-6 relative">
+                        <img class="w-full h-full object-contain p-4 group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1734562566882-f135555edda9?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGlsbHVzdHJhdGlvbiUyMGxpZ2h0YnVsYiUyMGdlYXIlMjBpbm5vdmF0aW9ufGVufDF8fHx8MTc5NTM4NjE4OXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="3D illustration of a lightbulb and gear, innovation concept, bright purple background" />
+                        <div class="absolute bottom-4 left-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[9px] font-black text-white uppercase tracking-widest">Career</div>
+                    </div>
+                    <span class="text-[9px] font-black text-primary uppercase tracking-widest mb-2 block">Global Insights</span>
+                    <h4 class="font-extrabold text-sm mb-6 leading-tight">Future-Proofing Your Career with an MBA</h4>
+                    <p class="text-[10px] text-gray-400 font-bold flex items-center gap-2"><i class="fa-solid fa-calendar"></i> 10 March 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end blog -->
+
+    <!-- block:start cta -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto bg-primary rounded-[4rem] p-12 md:p-24 text-center text-white relative overflow-hidden">
+            <div class="absolute inset-0 bg-black/10"></div>
+            <div class="relative z-10">
+                <h2 class="text-4xl md:text-5xl font-black mb-8 leading-tight">
+                    Take Your Education to the<br>Next Level Abroad
+                </h2>
+                <p class="text-white/80 font-medium max-w-xl mx-auto mb-12">
+                    Our advisors are ready to help you navigate the complexities of international applications. Your future starts with a single click.
+                </p>
+                <button class="bg-white text-primary px-12 py-5 rounded-full text-sm font-black uppercase tracking-widest hover:scale-105 transition shadow-2xl">
+                    Get Free Counseling
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- block:end cta -->
+
+    <!-- block:start footer -->
+    <footer id="footer" class="bg-white pt-24 pb-12 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-12 mb-20">
+                <div class="col-span-1 md:col-span-1">
+                    <span class="text-2xl font-black tracking-tight text-primary uppercase italic block mb-6">UniGlobe</span>
+                    <p class="text-gray-400 text-xs font-bold leading-relaxed mb-10">Stay updated on all things UniGlobe by subscribing to our newsletter.</p>
+                    <div class="relative max-w-xs">
+                        <input type="email" placeholder="Your Email Here" class="w-full bg-bgSoft border border-gray-100 rounded-full px-6 py-4 text-xs font-bold outline-none pr-14">
+                        <button class="absolute right-2 top-2 bottom-2 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:block"></div> <!-- Spacer -->
+
+                <div>
+                    <h5 class="text-[11px] font-black uppercase tracking-[0.2em] text-gray-800 mb-8">Universities</h5>
+                    <ul class="space-y-4 text-xs font-bold text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition">Oxford University</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Daffodil University</a></li>
+                        <li><a href="#" class="hover:text-primary transition">International University</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-[11px] font-black uppercase tracking-[0.2em] text-gray-800 mb-8">Countries</h5>
+                    <ul class="space-y-4 text-xs font-bold text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition">England</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Canada</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Germany</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-[11px] font-black uppercase tracking-[0.2em] text-gray-800 mb-8">Quick Links</h5>
+                    <ul class="space-y-4 text-xs font-bold text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-[10px] font-black uppercase tracking-widest text-gray-300">Copyright © 2024 UniGlobe. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="text-gray-400 hover:text-primary transition"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- block:end footer -->
+
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=uniglobe&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumière | Tailwind CSS Fine Dining Restaurant Template</title>
+    <meta name="description" content="Lumière is an elegant Tailwind CSS restaurant template for fine dining venues, artisan cuisine, wine collections, and online reservations.">
+    <meta name="keywords" content="Lumière, Tailwind CSS template, HTML website template, fine dining restaurant, artisan cuisine, wine list, responsive restaurant design">
+    <meta name="author" content="Let's templates">
+    <link rel="canonical" href="">
+
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Let's templates">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Lumière | Tailwind CSS Fine Dining Restaurant Template">
+    <meta property="og:description" content="An elegant Tailwind CSS restaurant template for fine dining venues, artisan cuisine, wine collections, and online reservations.">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="Lumière template preview">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Lumière | Tailwind CSS Fine Dining Restaurant Template">
+    <meta name="twitter:description" content="An elegant Tailwind CSS restaurant template for fine dining venues, artisan cuisine, wine collections, and online reservations.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:image:alt" content="Lumière template preview">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-[#F2EBE3] text-[#1A1A1A] overflow-x-hidden">
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 w-full z-50 px-8 py-8 flex justify-between items-start pointer-events-none">
+        <div class="pointer-events-auto">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-black">
+                <path d="M12 8V24M12 8C12 6 13 4 15 4V8M12 8C12 6 11 4 9 4V8M15 4V16M9 4V16M28 4V36M28 4C32 4 34 8 34 16C34 24 30 28 28 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="pointer-events-auto">
+            <button id="menu-open" class="flex flex-col gap-1.5 group p-3 -m-3" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation">
+                <div class="w-8 h-0.5 bg-black group-hover:w-6 transition-all"></div>
+                <div class="w-8 h-0.5 bg-black"></div>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[60] hidden" role="dialog" aria-modal="true" aria-labelledby="mobile-menu-title">
+        <button class="absolute inset-0 w-full h-full bg-black/50 backdrop-blur-sm" type="button" data-menu-close aria-label="Close navigation"></button>
+        <div class="absolute inset-y-0 right-0 flex w-full max-w-md flex-col bg-[#1A1A1A] px-8 py-8 text-white shadow-2xl">
+            <div class="flex items-center justify-between">
+                <h2 id="mobile-menu-title" class="serif-text text-3xl">Lumière</h2>
+                <button id="menu-close" class="grid h-12 w-12 place-items-center rounded-full border border-white/20 transition-colors hover:bg-white hover:text-black" type="button" data-menu-close aria-label="Close navigation">
+                    <i class="fa-solid fa-xmark text-xl" aria-hidden="true"></i>
+                </button>
+            </div>
+            <nav class="my-auto flex flex-col gap-4" aria-label="Main navigation">
+                <a class="serif-text text-5xl leading-none transition-colors hover:text-stone-400" href="#wine-list" data-menu-close>Wine List</a>
+                <a class="serif-text text-5xl leading-none transition-colors hover:text-stone-400" href="#chef-story" data-menu-close>Chef's Story</a>
+                <a class="serif-text text-5xl leading-none transition-colors hover:text-stone-400" href="#reservations" data-menu-close>Reservations</a>
+                <a class="serif-text text-5xl leading-none transition-colors hover:text-stone-400" href="#gallery" data-menu-close>Gallery</a>
+            </nav>
+            <a class="self-start rounded-full bg-white px-7 py-4 font-semibold text-black transition-colors hover:bg-stone-200" href="#reservations" data-menu-close>Reserve a table</a>
+        </div>
+    </div>
+
+    <!-- block:start hero -->
+    <section id="hero" class="relative min-h-[800px] lg:h-screen">
+        <div class="hero-split h-full">
+            <!-- Left Side: Content -->
+            <div class="bg-[#F2EBE3] flex flex-col justify-between p-8 lg:p-16 pt-32 lg:pt-32">
+                <div class="relative z-20 max-w-2xl lg:translate-x-1/4">
+                    <h1 class="serif-text text-7xl lg:text-[140px] leading-[0.8] tracking-tight font-light mb-8 lg:text-[#1A1A1A]">
+                        Artisan<br>Flavors
+                    </h1>
+                    <p class="text-lg lg:text-xl font-light text-gray-600 max-w-sm">
+                        Experience the harmony of traditional techniques and modern flair.
+                    </p>
+                </div>
+
+                <!-- Vertical Navigation -->
+                <nav class="flex flex-col gap-4 text-sm font-medium mt-20 lg:mt-0">
+                    <a href="#wine-list" class="flex items-center gap-2 hover:opacity-50 transition-all">/ Wine List</a>
+                    <a href="#chef-story" class="hover:opacity-50 transition-all ml-3">Chef's Story</a>
+                    <a href="#reservations" class="hover:opacity-50 transition-all ml-3">Reservations</a>
+                    <a href="#gallery" class="hover:opacity-50 transition-all ml-3">Gallery</a>
+                </nav>
+            </div>
+
+            <!-- Right Side: Visuals -->
+            <div class="relative overflow-hidden h-[500px] lg:h-full">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1663530761401-15eefb544889?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGdvdXJtZXQlMjByZXN0YXVyYW50JTIwcGxhdGluZyUyMHNlYXJlZCUyMHNjYWxsb3BzJTIwYmxhY2t8ZW58MXx8fHwxNzk1Mzg2MTE4fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="gourmet restaurant plating, seared scallops on black risotto with edible flowers, dramatic side ligh" />
+
+                <!-- Floating Card -->
+                <div class="absolute bottom-8 right-8 lg:bottom-12 lg:right-12 z-30 max-w-sm">
+                    <div class="bg-white/95 backdrop-blur-md rounded-[32px] p-6 lg:p-8 shadow-2xl flex flex-col md:flex-row gap-6">
+                        <div class="w-full md:w-40 h-32 rounded-2xl overflow-hidden flex-shrink-0">
+                            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1543508185-225c92847541?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGxlbW9uJTIwdGFydCUyMGRlc3NlcnQlMjBtZXJpbmd1ZSUyMHBlYWtzJTIwcGxhdGV8ZW58MXx8fHwxNzk1Mzg2MTE5fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="elegant lemon tart dessert with meringue peaks, minimalist plate, professional culinary presentation" />
+                        </div>
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">Signature</h3>
+                                <p class="text-xs text-gray-500 leading-relaxed mb-4">
+                                    Our curated seasonal tasting menu.
+                                </p>
+                            </div>
+                            <button class="bg-[#1A1A1A] text-white text-xs font-semibold px-6 py-3 rounded-full hover:bg-black transition-all self-start">
+                                Reserve Table
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end hero -->
+
+    <!-- block:start products -->
+    <section id="wine-list" class="py-24 px-8 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="serif-text text-6xl lg:text-8xl leading-none mb-10">The Cellar Selection</h2>
+                <div class="space-y-8">
+                    <div class="flex justify-between items-end border-b border-gray-100 pb-4">
+                        <div>
+                            <h4 class="font-semibold italic">Domaine de la Romanée-Conti</h4>
+                            <p class="text-sm text-gray-500">Burgundy, France • 2015</p>
+                        </div>
+                        <span class="text-lg font-light">$1,250</span>
+                    </div>
+                    <div class="flex justify-between items-end border-b border-gray-100 pb-4">
+                        <div>
+                            <h4 class="font-semibold italic">Sassicaia Tenuta San Guido</h4>
+                            <p class="text-sm text-gray-500">Tuscany, Italy • 2018</p>
+                        </div>
+                        <span class="text-lg font-light">$450</span>
+                    </div>
+                    <div class="flex justify-between items-end border-b border-gray-100 pb-4">
+                        <div>
+                            <h4 class="font-semibold italic">Penfolds Grange Bin 95</h4>
+                            <p class="text-sm text-gray-500">South Australia • 2017</p>
+                        </div>
+                        <span class="text-lg font-light">$850</span>
+                    </div>
+                </div>
+                <button class="mt-12 text-sm font-bold uppercase tracking-widest border-b border-black pb-2 hover:opacity-50 transition-all">Download Full List</button>
+            </div>
+            <div class="rounded-[40px] overflow-hidden h-[600px]">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1723013824329-58e636ce9650?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHdpbmUlMjBjZWxsYXIlMjBpbnRlcmlvciUyMGdsYXNzJTIwc2hlbHZlcyUyMHdpbmV8ZW58MXx8fHwxNzk1Mzg2MTE5fDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="elegant wine cellar interior, glass shelves with wine bottles, warm ambient lighting, luxury atmosph" />
+            </div>
+        </div>
+    </section>
+    <!-- block:end products -->
+
+    <!-- block:start about -->
+    <section id="chef-story" class="py-24 px-8 bg-[#F2EBE3]">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse gap-20 items-center">
+            <div class="w-full lg:w-1/2">
+                <span class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6 block">The Visionary</span>
+                <h2 class="serif-text text-6xl lg:text-8xl leading-none mb-10">Chef Julian Rossi</h2>
+                <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                    With a philosophy rooted in the soil, Chef Julian spent a decade traversing the Mediterranean before returning to establish Lumière. His approach is simple: respect the ingredient, honor the tradition, and surprise the palate.
+                </p>
+                <div class="italic text-2xl font-light text-gray-500 serif-text">
+                    "Nature provides the palette; I simply hold the brush."
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div class="relative">
+                    <div class="rounded-[40px] overflow-hidden h-[700px] grayscale hover:grayscale-0 transition-all duration-700">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1635139883265-2fe4bccce747?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBvcnRyYWl0JTIwY2hlZiUyMHdoaXRlJTIwdW5pZm9ybSUyMGZvY3VzZWQlMjBleHByZXNzaW9ufGVufDF8fHx8MTc5NTM4NjEyMHww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="portrait of a professional chef in white uniform, focused expression, rustic kitchen background, moo" />
+                    </div>
+                    <div class="absolute -bottom-10 -right-10 w-64 h-64 rounded-full border-8 border-[#F2EBE3] overflow-hidden hidden md:block">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1514986888952-8cd320577b68?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGhhbmRzJTIwcHJlcGFyaW5nJTIwZnJlc2glMjBoZXJicyUyMGFydGlzYW5hbCUyMGNvb2tpbmd8ZW58MXx8fHwxNzk1Mzg2MTIwfDA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="close up of hands preparing fresh herbs, artisanal cooking, culinary detail" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end about -->
+
+    <!-- block:start gallery -->
+    <section id="gallery" class="py-24 px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-16">
+                <h2 class="serif-text text-6xl lg:text-8xl leading-none">The Ateliers</h2>
+                <a href="#" class="text-sm font-bold uppercase tracking-widest border-b border-black pb-1 mb-4">View All</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-[800px]">
+                <div class="md:col-span-8 h-full rounded-[32px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1782983595362-f42243ecb2fc?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fGludGVyaW9yJTIwZmluZSUyMGRpbmluZyUyMHJlc3RhdXJhbnQlMjBkZXNpZ25lciUyMGZ1cm5pdHVyZXxlbnwxfHx8fDE3OTUzODYxMjF8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="interior of a luxury fine dining restaurant, minimal aesthetic, warm lighting, designer furniture" />
+                </div>
+                <div class="md:col-span-4 flex flex-col gap-6 h-full">
+                    <div class="flex-1 rounded-[32px] overflow-hidden">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1574966739987-65e38db0f7ce?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fHBlcmZlY3RseSUyMHNldCUyMHJlc3RhdXJhbnQlMjB0YWJsZSUyMGNyeXN0YWwlMjBnbGFzc2VzfGVufDF8fHx8MTc5NTM4NjEyMXww&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="detail of a perfectly set restaurant table, crystal glasses, white linen, elegant atmosphere" />
+                    </div>
+                    <div class="flex-1 rounded-[32px] overflow-hidden">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1786644720490-052bf21ed1eb?ixid=M3wxOTQ2OXwwfDF8c2VhcmNofDF8fG91dGRvb3IlMjB0ZXJyYWNlJTIwaGlnaC1lbmQlMjByZXN0YXVyYW50JTIwc3Vuc2V0JTIwbHVzaHxlbnwxfHx8fDE3OTUzODYxMjJ8MA&ixlib=rb-4.1.0&w=1600&q=80&auto=format&fit=crop" alt="beautiful outdoor terrace of a high-end restaurant, sunset view, lush greenery" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- block:end gallery -->
+
+    <!-- block:start contact -->
+    <section id="reservations" class="py-24 px-8 bg-[#1A1A1A] text-white">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="serif-text text-6xl lg:text-[100px] leading-tight mb-12">Secure your table</h2>
+            <form class="space-y-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <input type="text" placeholder="Date" class="bg-transparent border-b border-white/20 py-4 focus:border-white outline-none transition-all w-full serif-text text-2xl">
+                    <input type="text" placeholder="Guests" class="bg-transparent border-b border-white/20 py-4 focus:border-white outline-none transition-all w-full serif-text text-2xl">
+                </div>
+                <input type="email" placeholder="Email Address" class="bg-transparent border-b border-white/20 py-4 focus:border-white outline-none transition-all w-full serif-text text-2xl">
+                <button class="bg-white text-black px-12 py-5 rounded-full font-bold hover:bg-gray-200 transition-all mt-10">Book Reservation</button>
+            </form>
+        </div>
+    </section>
+    <!-- block:end contact -->
+
+    <footer id="footer" class="bg-[#1A1A1A] text-white py-16 px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+            <div>
+                <h2 class="text-3xl font-light mb-6 tracking-tight">Lumière</h2>
+                <p class="text-gray-400 max-w-xs text-sm">Fine dining redefined through the lens of local heritage and artisan craftsmanship.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-12 text-sm">
+                <div class="flex flex-col gap-4">
+                    <span class="text-gray-500">Contact</span>
+                    <a href="#" class="hover:text-gray-300">hello@lumiere.com</a>
+                    <p>+1 234 567 890</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <span class="text-gray-500">Location</span>
+                    <p>123 Culinary Ave<br>Gourmet City, GC 12345</p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/10 text-[10px] text-gray-500 uppercase tracking-widest flex justify-between">
+            <span>&copy; 2024 Lumière Restaurant Group</span>
+            <div class="flex gap-6">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menu = document.getElementById('mobile-menu');
+        const menuOpen = document.getElementById('menu-open');
+        const closeMenu = () => {
+            menu.classList.add('hidden');
+            menuOpen.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('overflow-hidden');
+            menuOpen.focus();
+        };
+
+        menuOpen.addEventListener('click', () => {
+            menu.classList.remove('hidden');
+            menuOpen.setAttribute('aria-expanded', 'true');
+            document.body.classList.add('overflow-hidden');
+            document.getElementById('menu-close').focus();
+        });
+        menu.querySelectorAll('[data-menu-close]').forEach((element) => element.addEventListener('click', closeMenu));
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !menu.classList.contains('hidden')) closeMenu();
+        });
+    </script>
+
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=lumiere&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>
