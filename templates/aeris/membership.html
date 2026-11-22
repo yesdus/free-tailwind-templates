@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership | Aeris</title>
+  <meta name="description" content="Aeris membership plans for individuals, families and companies: scans, blood panels, monitoring and doctor access, billed monthly or yearly.">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Membership | Aeris">
+  <meta property="og:description" content="Aeris membership plans for individuals, families and companies: scans, blood panels, monitoring and doctor access, billed monthly or yearly.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Aeris template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Membership | Aeris">
+  <meta name="twitter:description" content="Aeris membership plans for individuals, families and companies: scans, blood panels, monitoring and doctor access, billed monthly or yearly.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Aeris template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink: '#111312', shell: '#f4f4f2', frame: '#a9c0c2', sage: { DEFAULT: '#7fa0a3', deep: '#5c7f82' }, lime: '#e1f36b', iris: '#5b5bd6' },
+          fontFamily: { sans: ['Geist', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="min-h-screen p-2 font-sans text-ink antialiased md:p-6">
+  <div class="mx-auto max-w-[1440px] overflow-hidden rounded-[28px] bg-shell">
+  <header class="relative z-30">
+    <nav class="flex items-center justify-between gap-6 px-5 py-6 md:px-10" aria-label="Main">
+      <a href="index.html" class="flex items-center"><span class="text-[1.7rem] font-semibold leading-none tracking-[-.04em]" aria-hidden="true">aeris<span class="ml-0.5 inline-block h-2 w-2 rounded-full bg-lime ring-1 ring-ink/30"></span></span><span class="sr-only">Aeris home</span></a>
+      <ul class="hidden items-center gap-8 text-[17px] lg:flex">
+          <li><a href="technology.html"  class="transition text-ink/60 hover:text-ink">Technology</a></li>
+          <li><a href="programs.html"  class="transition text-ink/60 hover:text-ink">Programs<sup class="ml-0.5 text-[10px]">(New)</sup></a></li>
+          <li><a href="doctors.html"  class="transition text-ink/60 hover:text-ink">Doctors<sup class="ml-0.5 text-[10px]">(48)</sup></a></li>
+          <li><a href="membership.html" aria-current="page" class="transition text-ink">Membership</a></li>
+        <li><a href="contact.html" class="text-ink/60 transition hover:text-ink">Contact <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a></li>
+      </ul>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="grid h-11 w-11 place-items-center rounded-full transition hover:bg-white" aria-label="Open menu"><span class="grid gap-1.5" aria-hidden="true"><span class="block h-0.5 w-6 bg-ink"></span><span class="block h-0.5 w-6 bg-ink"></span></span></button>
+    </nav>
+    <div id="mobile-menu" class="frost absolute inset-x-3 top-[5.5rem] hidden rounded-3xl bg-white/80 p-6 shadow-xl md:inset-x-10">
+      <ul class="grid gap-1 md:grid-cols-3">
+          <li><a href="index.html"  class="flex items-baseline justify-between rounded-2xl px-4 py-3 text-2xl transition hover:bg-white ">Home</a></li>
+          <li><a href="technology.html"  class="flex items-baseline justify-between rounded-2xl px-4 py-3 text-2xl transition hover:bg-white ">Technology</a></li>
+          <li><a href="programs.html"  class="flex items-baseline justify-between rounded-2xl px-4 py-3 text-2xl transition hover:bg-white ">Programs<span class="text-xs text-ink/50">(New)</span></a></li>
+          <li><a href="doctors.html"  class="flex items-baseline justify-between rounded-2xl px-4 py-3 text-2xl transition hover:bg-white ">Doctors<span class="text-xs text-ink/50">(48)</span></a></li>
+          <li><a href="membership.html" aria-current="page" class="flex items-baseline justify-between rounded-2xl px-4 py-3 text-2xl transition hover:bg-white bg-lime">Membership</a></li>
+          <li><a href="contact.html"  class="flex items-baseline justify-between rounded-2xl px-4 py-3 text-2xl transition hover:bg-white ">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    
+  <section class="px-5 pb-10 pt-16 md:px-10 md:pt-24">
+    <p class="flex items-center gap-2 text-sm"><span class="h-1 w-1 rounded-full bg-ink" aria-hidden="true"></span>Membership</p>
+    <h1 class="mt-6 max-w-4xl text-5xl leading-[1.02] tracking-tight md:text-7xl">Preventive care, priced like a gym</h1>
+  </section>
+
+  <section class="px-5 pb-24 md:px-10" data-plans>
+    <div class="inline-flex rounded-full bg-white p-1" role="tablist" aria-label="Who is it for">
+        <button type="button" role="tab" id="plans-tab-individuals" aria-controls="plans-individuals" aria-selected="true" tabindex="0" class="rounded-full px-5 py-2.5 text-sm transition hover:bg-shell aria-selected:bg-ink aria-selected:text-white">Individuals</button>
+        <button type="button" role="tab" id="plans-tab-families" aria-controls="plans-families" aria-selected="false" tabindex="-1" class="rounded-full px-5 py-2.5 text-sm transition hover:bg-shell aria-selected:bg-ink aria-selected:text-white">Families</button>
+        <button type="button" role="tab" id="plans-tab-companies" aria-controls="plans-companies" aria-selected="false" tabindex="-1" class="rounded-full px-5 py-2.5 text-sm transition hover:bg-shell aria-selected:bg-ink aria-selected:text-white">Companies</button>
+    </div>
+      <div id="plans-individuals" role="tabpanel" aria-labelledby="plans-tab-individuals" class="mt-8 grid gap-3 md:grid-cols-3" >
+          <article class="flex min-h-[20rem] flex-col rounded-3xl p-6 md:p-8 bg-white">
+            <p class="flex items-center justify-between text-sm"><span>Essential</span></p>
+            <p class="mt-6 text-5xl tracking-tight">€39<span class="text-base text-ink/50"> / month</span></p>
+            <p class="mt-4 text-ink/70">One scan and one blood panel a year, app monitoring.</p>
+            <a href="contact.html" class="mt-auto w-fit rounded-full px-5 py-2.5 text-sm transition border border-ink hover:bg-ink hover:text-white">Choose Essential</a>
+          </article>
+          <article class="flex min-h-[20rem] flex-col rounded-3xl p-6 md:p-8 bg-lime">
+            <p class="flex items-center justify-between text-sm"><span>Complete</span><span class="rounded-full bg-ink px-2.5 py-1 text-xs text-white">Most chosen</span></p>
+            <p class="mt-6 text-5xl tracking-tight">€89<span class="text-base text-ink/50"> / month</span></p>
+            <p class="mt-4 text-ink/70">Two scans, two panels, wristband and unlimited doctor chat.</p>
+            <a href="contact.html" class="mt-auto w-fit rounded-full px-5 py-2.5 text-sm transition bg-ink text-white hover:bg-sage-deep">Choose Complete</a>
+          </article>
+          <article class="flex min-h-[20rem] flex-col rounded-3xl p-6 md:p-8 bg-white">
+            <p class="flex items-center justify-between text-sm"><span>Programme</span></p>
+            <p class="mt-6 text-5xl tracking-tight">€149<span class="text-base text-ink/50"> / month</span></p>
+            <p class="mt-4 text-ink/70">Complete plus one 12-week programme of your choice.</p>
+            <a href="contact.html" class="mt-auto w-fit rounded-full px-5 py-2.5 text-sm transition border border-ink hover:bg-ink hover:text-white">Choose Programme</a>
+          </article>
+      </div>
+      <div id="plans-families" role="tabpanel" aria-labelledby="plans-tab-families" class="mt-8 grid gap-3 md:grid-cols-3" hidden>
+          <article class="flex min-h-[20rem] flex-col rounded-3xl p-6 md:p-8 bg-lime">
+            <p class="flex items-center justify-between text-sm"><span>Duo</span><span class="rounded-full bg-ink px-2.5 py-1 text-xs text-white">Most chosen</span></p>
+            <p class="mt-6 text-5xl tracking-tight">€159<span class="text-base text-ink/50"> / month</span></p>
+            <p class="mt-4 text-ink/70">Complete for two adults, shared family dashboard.</p>
+            <a href="contact.html" class="mt-auto w-fit rounded-full px-5 py-2.5 text-sm transition bg-ink text-white hover:bg-sage-deep">Choose Duo</a>
+          </article>
+          <article class="flex min-h-[20rem] flex-col rounded-3xl p-6 md:p-8 bg-white">
+            <p class="flex items-center justify-between text-sm"><span>Family</span></p>
+            <p class="mt-6 text-5xl tracking-tight">€219<span class="text-base text-ink/50"> / month</span></p>
+            <p class="mt-4 text-ink/70">Two adults and up to three children&#39;s check-ups.</p>
+            <a href="contact.html" class="mt-auto w-fit rounded-full px-5 py-2.5 text-sm transition border border-ink hover:bg-ink hover:text-white">Choose Family</a>
+          </article>
+      </div>
+      <div id="plans-companies" role="tabpanel" aria-labelledby="plans-tab-companies" class="mt-8 grid gap-3 md:grid-cols-3" hidden>
+          <article class="flex min-h-[20rem] flex-col rounded-3xl p-6 md:p-8 bg-white">
+            <p class="flex items-center justify-between text-sm"><span>Team</span></p>
+            <p class="mt-6 text-5xl tracking-tight">€59<span class="text-base text-ink/50"> / month</span></p>
+            <p class="mt-4 text-ink/70">Per employee, minimum 10. Anonymous team insights.</p>
+            <a href="contact.html" class="mt-auto w-fit rounded-full px-5 py-2.5 text-sm transition border border-ink hover:bg-ink hover:text-white">Choose Team</a>
+          </article>
+          <article class="flex min-h-[20rem] flex-col rounded-3xl p-6 md:p-8 bg-lime">
+            <p class="flex items-center justify-between text-sm"><span>Enterprise</span><span class="rounded-full bg-ink px-2.5 py-1 text-xs text-white">Most chosen</span></p>
+            <p class="mt-6 text-5xl tracking-tight">Custom</p>
+            <p class="mt-4 text-ink/70">On-site pods, dedicated doctor and HR reporting.</p>
+            <a href="contact.html" class="mt-auto w-fit rounded-full px-5 py-2.5 text-sm transition bg-ink text-white hover:bg-sage-deep">Talk to us</a>
+          </article>
+      </div>
+    <p class="mt-8 text-sm text-ink/60">Cancel anytime after three months. Some insurers refund part of the fee; we send the paperwork.</p>
+  </section>
+
+  <script>
+    document.querySelectorAll('[data-plans]').forEach((root) => {
+      const tabs = [...root.querySelectorAll('[role="tab"]')];
+      const select = (tab, focus) => {
+        tabs.forEach((other) => { const on = other === tab; other.setAttribute('aria-selected', String(on)); other.tabIndex = on ? 0 : -1; document.getElementById(other.getAttribute('aria-controls')).hidden = !on; });
+        if (focus) tab.focus();
+      };
+      tabs.forEach((tab, i) => {
+        tab.addEventListener('click', () => select(tab));
+        tab.addEventListener('keydown', (event) => {
+          if (event.key === 'ArrowRight') select(tabs[(i + 1) % tabs.length], true);
+          if (event.key === 'ArrowLeft') select(tabs[(i - 1 + tabs.length) % tabs.length], true);
+        });
+      });
+    });
+  </script>
+
+  </main>
+
+  <footer class="px-5 pb-8 pt-16 md:px-10">
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <div><a href="index.html" class="inline-flex items-center gap-1"><span class="text-[1.7rem] font-semibold leading-none tracking-[-.04em]" aria-hidden="true">aeris<span class="ml-0.5 inline-block h-2 w-2 rounded-full bg-lime ring-1 ring-ink/30"></span></span><span class="sr-only">Aeris home</span></a><p class="mt-4 max-w-xs text-sm text-ink/60">AI-assisted preventive care, led by doctors. Clinics in Amsterdam, Berlin and Vienna.</p></div>
+        <div><h3 class="text-sm text-ink/50">Care</h3><ul class="mt-4 grid gap-2 text-sm"><li><a href="technology.html" class="hover:text-sage-deep">Technology</a></li><li><a href="programs.html" class="hover:text-sage-deep">Programs</a></li><li><a href="doctors.html" class="hover:text-sage-deep">Doctors</a></li></ul></div>
+        <div><h3 class="text-sm text-ink/50">Members</h3><ul class="mt-4 grid gap-2 text-sm"><li><a href="membership.html" class="hover:text-sage-deep">Membership</a></li><li><a href="membership.html" class="hover:text-sage-deep">Book a scan</a></li><li><a href="contact.html" class="hover:text-sage-deep">Contact</a></li></ul></div>
+        <div><h3 class="text-sm text-ink/50">Visit</h3><ul class="mt-4 grid gap-2 text-sm"><li><a href="contact.html" class="hover:text-sage-deep">Keizersgracht 210, Amsterdam</a></li><li><a href="contact.html" class="hover:text-sage-deep">+31 20 555 0190</a></li><li><a href="contact.html" class="hover:text-sage-deep">care@aeris.health</a></li></ul></div>
+    </div>
+    <p class="mt-14 flex flex-wrap justify-between gap-4 border-t border-ink/10 pt-6 text-xs text-ink/50"><span>&copy; 2026 Aeris Health B.V.</span><span>Not for emergencies. In an emergency call 112.</span></p>
+  </footer>
+  </div>
+
+  <script>
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const watchMotion = !reducedMotion && !navigator.webdriver && 'IntersectionObserver' in window;
+
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-scan]').forEach((root) => {
+      const data = JSON.parse(root.querySelector('[data-scan-data]').textContent);
+      const types = [...root.querySelectorAll('[data-scan-type]')];
+      const stage = root.querySelector('[data-scan-stage]');
+      const instant = reducedMotion || navigator.webdriver;
+      let current = 'heart';
+      let timer;
+      const reset = () => {
+        clearInterval(timer);
+        stage.classList.remove('scanning');
+        data[current][2].forEach(([label, , unit], i) => {
+          root.querySelector(`[data-metric-label="${i}"]`).textContent = label;
+          root.querySelector(`[data-metric-unit="${i}"]`).textContent = unit;
+          root.querySelector(`[data-metric="${i}"]`).textContent = '—';
+        });
+        root.querySelector('[data-scan-progress]').style.width = '0%';
+        root.querySelector('[data-scan-state]').textContent = 'Ready';
+        root.querySelector('[data-scan-note]').textContent = 'Choose a system and start a demo scan.';
+      };
+      const finish = () => {
+        clearInterval(timer);
+        stage.classList.remove('scanning');
+        data[current][2].forEach(([, value], i) => { root.querySelector(`[data-metric="${i}"]`).textContent = value; });
+        root.querySelector('[data-scan-progress]').style.width = '100%';
+        root.querySelector('[data-scan-state]').textContent = 'Scan complete';
+        root.querySelector('[data-scan-note]').textContent = data[current][3];
+      };
+      types.forEach((type) => type.addEventListener('click', () => {
+        types.forEach((other) => other.setAttribute('aria-pressed', String(other === type)));
+        current = type.dataset.scanType;
+        reset();
+      }));
+      root.querySelector('[data-scan-start]').addEventListener('click', () => {
+        reset();
+        if (instant) { finish(); return; }
+        stage.classList.add('scanning');
+        root.querySelector('[data-scan-state]').textContent = 'Scanning…';
+        let step = 0;
+        timer = setInterval(() => {
+          step += 1;
+          const share = step / 20;
+          root.querySelector('[data-scan-progress]').style.width = `${share * 100}%`;
+          data[current][2].forEach(([, value], i) => { root.querySelector(`[data-metric="${i}"]`).textContent = Math.round(value * share); });
+          if (step >= 20) finish();
+        }, 90);
+      });
+    });
+
+    document.querySelectorAll('[data-spotlight]').forEach((root) => {
+      const buttons = [...root.querySelectorAll('[data-doctor-button]')];
+      buttons.forEach((button) => button.addEventListener('click', () => {
+        buttons.forEach((other) => other.setAttribute('aria-pressed', String(other === button)));
+        root.querySelectorAll('[data-doctor]').forEach((card) => { card.hidden = card.dataset.doctor !== button.dataset.doctorButton; });
+      }));
+    });
+
+    document.querySelectorAll('[data-flip]').forEach((card) => card.addEventListener('click', () => {
+      card.setAttribute('aria-pressed', String(card.getAttribute('aria-pressed') !== 'true'));
+    }));
+
+    if (watchMotion) {
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+      }), { threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach((el) => observer.observe(el));
+    }
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=aeris&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

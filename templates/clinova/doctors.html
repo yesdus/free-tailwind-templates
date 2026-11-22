@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Doctors | Clinova</title>
+  <meta name="description" content="Meet the Clinova care team: GPs, specialists, nutrition and physio experts who know your name, not just your chart.">
+  <meta name="keywords" content="Clinova, Tailwind CSS template, HTML website template, health template, medical clinic, family doctor, preventive care, doctor profiles, responsive healthcare design">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Our Doctors | Clinova">
+  <meta property="og:description" content="Meet the Clinova care team: GPs, specialists, nutrition and physio experts who know your name, not just your chart.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Clinova template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Our Doctors | Clinova">
+  <meta name="twitter:description" content="Meet the Clinova care team: GPs, specialists, nutrition and physio experts who know your name, not just your chart.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Clinova template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0e1a3a',
+            teal: '#4b7b8a',
+            mist: '#f4f4f3',
+            frame: '#eeeff1',
+            ash: '#9b9b9b'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['Archivo', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-frame font-sans text-navy antialiased overflow-x-hidden">
+  <div class="mx-auto max-w-[1320px] bg-white sm:mt-4 lg:my-[92px]">
+    <header id="top" class="relative z-40">
+      <nav class="flex items-center justify-between px-5 py-4 md:px-10 md:py-5" aria-label="Main">
+        <ul class="hidden items-center gap-7 text-sm lg:flex">
+            <li><a href="services.html" aria-current="false" class="transition hover:text-teal">Services</a></li>
+            <li><a href="doctors.html" aria-current="page" class="transition font-semibold underline decoration-teal decoration-2 underline-offset-8">Doctors</a></li>
+            <li><a href="health-programs.html" aria-current="false" class="transition hover:text-teal">Health Programs</a></li>
+            <li><a href="blog.html" aria-current="false" class="transition hover:text-teal">Blog</a></li>
+        </ul>
+        <a href="index.html" class="font-display text-lg font-semibold lg:absolute lg:left-1/2 lg:-translate-x-1/2">Clinova</a>
+        <div class="flex items-center gap-2">
+          <a href="membership.html" aria-current="false" class="hidden text-sm md:inline hover:text-teal mr-3">Membership</a>
+          <a href="contact.html" aria-current="false" class="rounded-full px-5 py-3 text-sm font-medium shadow-sm transition bg-mist hover:bg-navy hover:text-white">Book Visit</a>
+          <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-mist lg:hidden" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <div id="mobile-menu" class="hidden border-t border-navy/10 px-5 pb-6 lg:hidden">
+        <ul class="flex flex-col pt-2 font-display text-2xl">
+            <li><a href="index.html" aria-current="false" class="block border-b border-navy/10 py-3 text-navy/70">Home</a></li>
+            <li><a href="services.html" aria-current="false" class="block border-b border-navy/10 py-3 text-navy/70">Services</a></li>
+            <li><a href="doctors.html" aria-current="page" class="block border-b border-navy/10 py-3 font-semibold text-navy">Doctors</a></li>
+            <li><a href="health-programs.html" aria-current="false" class="block border-b border-navy/10 py-3 text-navy/70">Health Programs</a></li>
+            <li><a href="blog.html" aria-current="false" class="block border-b border-navy/10 py-3 text-navy/70">Blog</a></li>
+            <li><a href="membership.html" aria-current="false" class="block border-b border-navy/10 py-3 text-navy/70">Membership</a></li>
+            <li><a href="contact.html" aria-current="false" class="block border-b border-navy/10 py-3 text-navy/70">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      
+  <section class="px-5 pt-14 md:px-[74px] md:pt-20">
+    <p class="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.12em]"><i class="fa-solid fa-star text-[9px]"></i> Our doctors</p>
+    <div class="mt-6 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+      <h1 class="max-w-[12ch] font-display text-5xl font-medium leading-[1.02] md:text-7xl">Meet your care team</h1>
+      <p class="max-w-sm text-ash">Clinicians with time to listen, working together on one shared record.</p>
+    </div>
+  </section>
+
+  <section class="px-5 py-14 md:px-[74px] md:pb-28">
+    <div data-filter-group role="group" aria-label="Filter doctors" class="flex flex-wrap gap-2">
+        <button type="button" data-filter="all" aria-pressed="true" class="rounded-full bg-mist px-5 py-2.5 text-sm transition hover:bg-navy/10 aria-pressed:bg-navy aria-pressed:text-white">All</button>
+        <button type="button" data-filter="gp" aria-pressed="false" class="rounded-full bg-mist px-5 py-2.5 text-sm transition hover:bg-navy/10 aria-pressed:bg-navy aria-pressed:text-white">General practice</button>
+        <button type="button" data-filter="specialist" aria-pressed="false" class="rounded-full bg-mist px-5 py-2.5 text-sm transition hover:bg-navy/10 aria-pressed:bg-navy aria-pressed:text-white">Specialists</button>
+        <button type="button" data-filter="wellbeing" aria-pressed="false" class="rounded-full bg-mist px-5 py-2.5 text-sm transition hover:bg-navy/10 aria-pressed:bg-navy aria-pressed:text-white">Wellbeing</button>
+    </div>
+    <div data-filter-items class="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <article id="selin-hart" data-category="gp" class="scroll-mt-8" data-reveal style="--reveal-delay: 0ms">
+          <div class="relative overflow-hidden rounded-2xl bg-mist aspect-[383/440]">
+            <img src="https://images.unsplash.com/photo-1643297654416-05795d62e39c?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Smiling doctor in a white coat holding a stethoscope" loading="lazy" class="h-full w-full object-cover">
+            <span class="absolute bottom-5 right-5 rounded-full bg-navy/40 px-4 py-2 text-xs text-white backdrop-blur">General Practitioner</span>
+          </div>
+          <div class="px-1 pt-5">
+            <h2 class="font-display text-2xl font-medium">Dr. Selin Hart</h2>
+            <p class="mt-2 text-sm leading-relaxed text-navy/70">Selin leads our preventive programme and believes a good check-up starts with a long conversation.</p>
+            <dl class="mt-4 flex gap-6 text-xs text-ash">
+              <div><dt class="sr-only">Experience</dt><dd><i class="fa-regular fa-clock mr-1"></i>14 years</dd></div>
+              <div><dt class="sr-only">Languages</dt><dd><i class="fa-solid fa-language mr-1"></i>English, Turkish</dd></div>
+            </dl>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-mist px-5 py-2.5 text-sm font-medium transition hover:bg-navy hover:text-white">Book with Hart</a>
+          </div>
+        </article>
+        <article id="marcus-oyelaran" data-category="specialist" class="scroll-mt-8" data-reveal style="--reveal-delay: 100ms">
+          <div class="relative overflow-hidden rounded-2xl bg-mist aspect-[383/440]">
+            <img src="https://images.unsplash.com/photo-1758691463582-11aea602cd4a?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Smiling doctor with glasses and stethoscope standing with arms crossed" loading="lazy" class="h-full w-full object-cover">
+            <span class="absolute bottom-5 right-5 rounded-full bg-navy/40 px-4 py-2 text-xs text-white backdrop-blur">Cardiologist</span>
+          </div>
+          <div class="px-1 pt-5">
+            <h2 class="font-display text-2xl font-medium">Dr. Marcus Oyelaran</h2>
+            <p class="mt-2 text-sm leading-relaxed text-navy/70">Marcus helps patients understand their heart numbers and change them through small, steady habits.</p>
+            <dl class="mt-4 flex gap-6 text-xs text-ash">
+              <div><dt class="sr-only">Experience</dt><dd><i class="fa-regular fa-clock mr-1"></i>18 years</dd></div>
+              <div><dt class="sr-only">Languages</dt><dd><i class="fa-solid fa-language mr-1"></i>English, Yoruba</dd></div>
+            </dl>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-mist px-5 py-2.5 text-sm font-medium transition hover:bg-navy hover:text-white">Book with Oyelaran</a>
+          </div>
+        </article>
+        <article id="lucia-ferreira" data-category="wellbeing" class="scroll-mt-8" data-reveal style="--reveal-delay: 200ms">
+          <div class="relative overflow-hidden rounded-2xl bg-mist aspect-[383/440]">
+            <img src="https://images.unsplash.com/photo-1623854767648-e7bb8009f0db?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Smiling clinician in a white coat with a stethoscope outdoors" loading="lazy" class="h-full w-full object-cover">
+            <span class="absolute bottom-5 right-5 rounded-full bg-navy/40 px-4 py-2 text-xs text-white backdrop-blur">Nutritionist</span>
+          </div>
+          <div class="px-1 pt-5">
+            <h2 class="font-display text-2xl font-medium">Lucía Ferreira</h2>
+            <p class="mt-2 text-sm leading-relaxed text-navy/70">Lucía builds food plans around real schedules, family meals and the foods you actually enjoy.</p>
+            <dl class="mt-4 flex gap-6 text-xs text-ash">
+              <div><dt class="sr-only">Experience</dt><dd><i class="fa-regular fa-clock mr-1"></i>9 years</dd></div>
+              <div><dt class="sr-only">Languages</dt><dd><i class="fa-solid fa-language mr-1"></i>English, Spanish, Portuguese</dd></div>
+            </dl>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-mist px-5 py-2.5 text-sm font-medium transition hover:bg-navy hover:text-white">Book with Ferreira</a>
+          </div>
+        </article>
+        <article id="arjun-mehta" data-category="specialist" class="scroll-mt-8" data-reveal style="--reveal-delay: 0ms">
+          <div class="relative overflow-hidden rounded-2xl bg-mist aspect-[383/440]">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Doctor in glasses and a white coat with arms crossed against a grey wall" loading="lazy" class="h-full w-full object-cover">
+            <span class="absolute bottom-5 right-5 rounded-full bg-navy/40 px-4 py-2 text-xs text-white backdrop-blur">Pediatrician</span>
+          </div>
+          <div class="px-1 pt-5">
+            <h2 class="font-display text-2xl font-medium">Dr. Arjun Mehta</h2>
+            <p class="mt-2 text-sm leading-relaxed text-navy/70">Arjun cares for children from newborn checks to teenage sports physicals, with plenty of patience.</p>
+            <dl class="mt-4 flex gap-6 text-xs text-ash">
+              <div><dt class="sr-only">Experience</dt><dd><i class="fa-regular fa-clock mr-1"></i>11 years</dd></div>
+              <div><dt class="sr-only">Languages</dt><dd><i class="fa-solid fa-language mr-1"></i>English, Hindi</dd></div>
+            </dl>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-mist px-5 py-2.5 text-sm font-medium transition hover:bg-navy hover:text-white">Book with Mehta</a>
+          </div>
+        </article>
+        <article id="daniel-reyes" data-category="wellbeing" class="scroll-mt-8" data-reveal style="--reveal-delay: 100ms">
+          <div class="relative overflow-hidden rounded-2xl bg-mist aspect-[383/440]">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Smiling clinician in blue scrubs with a stethoscope around his neck" loading="lazy" class="h-full w-full object-cover">
+            <span class="absolute bottom-5 right-5 rounded-full bg-navy/40 px-4 py-2 text-xs text-white backdrop-blur">Physiotherapist</span>
+          </div>
+          <div class="px-1 pt-5">
+            <h2 class="font-display text-2xl font-medium">Daniel Reyes</h2>
+            <p class="mt-2 text-sm leading-relaxed text-navy/70">Daniel gets people moving again after injury, surgery or years spent at a desk.</p>
+            <dl class="mt-4 flex gap-6 text-xs text-ash">
+              <div><dt class="sr-only">Experience</dt><dd><i class="fa-regular fa-clock mr-1"></i>8 years</dd></div>
+              <div><dt class="sr-only">Languages</dt><dd><i class="fa-solid fa-language mr-1"></i>English, Spanish</dd></div>
+            </dl>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-mist px-5 py-2.5 text-sm font-medium transition hover:bg-navy hover:text-white">Book with Reyes</a>
+          </div>
+        </article>
+        <article id="amara-cole" data-category="gp" class="scroll-mt-8" data-reveal style="--reveal-delay: 200ms">
+          <div class="relative overflow-hidden rounded-2xl bg-mist aspect-[383/440]">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Clinician with curly hair in teal scrubs standing with arms crossed" loading="lazy" class="h-full w-full object-cover">
+            <span class="absolute bottom-5 right-5 rounded-full bg-navy/40 px-4 py-2 text-xs text-white backdrop-blur">General Practitioner</span>
+          </div>
+          <div class="px-1 pt-5">
+            <h2 class="font-display text-2xl font-medium">Dr. Amara Cole</h2>
+            <p class="mt-2 text-sm leading-relaxed text-navy/70">Amara runs our telehealth service and makes sure online visits feel as personal as in-person ones.</p>
+            <dl class="mt-4 flex gap-6 text-xs text-ash">
+              <div><dt class="sr-only">Experience</dt><dd><i class="fa-regular fa-clock mr-1"></i>7 years</dd></div>
+              <div><dt class="sr-only">Languages</dt><dd><i class="fa-solid fa-language mr-1"></i>English, French</dd></div>
+            </dl>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-mist px-5 py-2.5 text-sm font-medium transition hover:bg-navy hover:text-white">Book with Cole</a>
+          </div>
+        </article>
+    </div>
+  </section>
+
+    </main>
+
+    <footer id="footer" class="px-5 pb-6 md:px-10">
+      <div class="flex items-center justify-between gap-6 pb-10">
+        <p class="text-xs font-medium leading-tight">Follow us<br>on social media</p>
+        <ul class="flex flex-wrap justify-end gap-2">
+            <li><a href="https://www.facebook.com/" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy text-xs text-white transition hover:bg-teal" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.youtube.com/" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy text-xs text-white transition hover:bg-teal" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy text-xs text-white transition hover:bg-teal" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://twitter.com/" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy text-xs text-white transition hover:bg-teal" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy text-xs text-white transition hover:bg-teal" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.tiktok.com/" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy text-xs text-white transition hover:bg-teal" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+        </ul>
+      </div>
+      <div class="grid border border-navy/10 md:grid-cols-12">
+        <div class="border-b border-navy/10 p-8 md:col-span-4 md:border-b-0 md:border-r md:p-10">
+          <h2 class="font-display text-3xl font-medium leading-[1.15]">Modern preventive care that keeps you ahead of illness.</h2>
+          <p class="mt-6 text-sm text-ash">All services delivered by licensed clinicians.</p>
+          <form data-callback class="mt-10 flex rounded-full bg-mist p-1.5 shadow-sm">
+            <label for="callback-email" class="sr-only">Email</label>
+            <input id="callback-email" type="email" required placeholder="Enter email" class="w-0 min-w-0 flex-1 bg-transparent px-5 text-sm outline-none">
+            <button type="submit" class="inline-flex items-center gap-3 rounded-full bg-navy py-2 pl-5 pr-2 text-sm font-medium text-white"><span class="hidden sm:inline">Request a </span>Callback <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white text-navy"><i class="fa-solid fa-arrow-right text-xs"></i></span></button>
+          </form>
+          <p data-callback-note hidden class="mt-3 text-sm text-teal" role="status">Thanks! A nurse will call you within one working day.</p>
+        </div>
+        <div class="grid grid-cols-3 gap-6 p-8 text-[11px] uppercase tracking-[0.08em] text-ash md:col-span-8 md:p-10">
+            <ul class="space-y-4 md:text-right md:pr-8">
+                <li><a href="services.html#checkups" class="hover:text-navy">Check-ups</a></li>
+                <li><a href="services.html#telehealth" class="hover:text-navy">Telehealth</a></li>
+                <li><a href="services.html#vaccination" class="hover:text-navy">Vaccination</a></li>
+                <li><a href="services.html#labs" class="hover:text-navy">Lab tests</a></li>
+            </ul>
+            <ul class="space-y-4 ">
+                <li><a href="index.html#approach" class="hover:text-navy">About</a></li>
+                <li><a href="doctors.html" class="hover:text-navy">Doctors</a></li>
+                <li><a href="health-programs.html" class="hover:text-navy">Programs</a></li>
+                <li><a href="blog.html" class="hover:text-navy">Blog</a></li>
+            </ul>
+            <ul class="space-y-4 ">
+                <li><a href="membership.html" class="hover:text-navy">Membership</a></li>
+                <li><a href="contact.html" class="hover:text-navy">Contact</a></li>
+                <li><a href="index.html#faq" class="hover:text-navy">FAQs</a></li>
+                <li><a href="contact.html" class="hover:text-navy">Book a visit</a></li>
+            </ul>
+        </div>
+        <p class="border-t border-navy/10 py-6 text-center text-[11px] uppercase leading-relaxed text-ash md:col-span-12">&copy;2026 Clinova<br>All rights reserved</p>
+        <p class="overflow-hidden border-t border-navy/10 text-center font-display text-[22vw] font-extrabold uppercase leading-[0.8] tracking-[-0.04em] text-frame md:col-span-12 lg:text-[270px]" aria-hidden="true">Clinova</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-menu-toggle]").forEach((button) => {
+      const menu = document.getElementById(button.getAttribute("aria-controls"));
+      if (!menu) return;
+      button.addEventListener("click", () => {
+        const open = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!open));
+        menu.classList.toggle("hidden", open);
+      });
+    });
+
+    document.querySelectorAll("details").forEach((item) => {
+      const summary = item.querySelector("summary");
+      item.addEventListener("toggle", () => summary?.setAttribute("aria-expanded", String(item.open)));
+    });
+
+    document.querySelectorAll("[data-word-reveal]").forEach((paragraph) => {
+      const words = [...paragraph.querySelectorAll("[data-word]")];
+      if (navigator.webdriver || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      const paint = () => {
+        const rect = paragraph.getBoundingClientRect();
+        const progress = Math.min(1, Math.max(0, (innerHeight * 0.85 - rect.top) / (rect.height + innerHeight * 0.35)));
+        const lit = Math.round(words.length * progress);
+        words.forEach((word, index) => {
+          word.classList.toggle("text-navy", index < Math.max(lit, 17));
+          word.classList.toggle("text-ash", index >= Math.max(lit, 17));
+        });
+      };
+      addEventListener("scroll", paint, { passive: true });
+      paint();
+    });
+
+    document.querySelectorAll("[data-values]").forEach((section) => {
+      const images = [...section.querySelectorAll("[data-value-image]")];
+      const panels = [...section.querySelectorAll("[data-value-panel]")];
+      const tabs = [...section.querySelectorAll("[data-value-tab]")];
+      let index = 0;
+      const show = (next) => {
+        index = (next + panels.length) % panels.length;
+        images.forEach((image, i) => image.classList.toggle("opacity-0", i !== index));
+        panels.forEach((panel, i) => { panel.hidden = i !== index; });
+        tabs.forEach((tab, i) => tab.setAttribute("aria-selected", String(i === index)));
+      };
+      tabs.forEach((tab) => tab.addEventListener("click", () => show(Number(tab.dataset.valueTab))));
+      section.querySelector("[data-value-prev]")?.addEventListener("click", () => show(index - 1));
+      section.querySelector("[data-value-next]")?.addEventListener("click", () => show(index + 1));
+    });
+
+    document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+      const track = carousel.querySelector("[data-carousel-track]");
+      const slides = [...track.children];
+      let index = 0;
+      const perView = () => Math.max(1, Math.round(track.clientWidth / slides[0].clientWidth));
+      const maxIndex = () => Math.max(0, slides.length - perView());
+      const render = () => { track.style.transform = `translateX(-${index * slides[0].clientWidth}px)`; };
+      const go = (next) => { const max = maxIndex(); index = next > max ? 0 : next < 0 ? max : next; render(); };
+      carousel.querySelector("[data-carousel-prev]")?.addEventListener("click", () => go(index - 1));
+      carousel.querySelector("[data-carousel-next]")?.addEventListener("click", () => go(index + 1));
+      addEventListener("resize", () => go(Math.min(index, maxIndex())));
+    });
+
+    document.querySelectorAll("[data-callback]").forEach((form) => {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const note = form.parentElement.querySelector("[data-callback-note]");
+        if (note) note.hidden = false;
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll("[data-filter-group]").forEach((group) => {
+      const scope = group.closest("section") || group.parentElement;
+      const items = scope.querySelectorAll("[data-filter-items] [data-category]");
+      group.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-filter]");
+        if (!button) return;
+        const filter = button.dataset.filter;
+        group.querySelectorAll("[data-filter]").forEach((chip) => chip.setAttribute("aria-pressed", String(chip === button)));
+        items.forEach((item) => { item.hidden = !(filter === "all" || item.dataset.category.split(" ").includes(filter)); });
+      });
+    });
+
+    document.querySelectorAll("[data-billing-toggle]").forEach((toggle) => {
+      toggle.addEventListener("click", () => {
+        const yearly = toggle.getAttribute("aria-checked") !== "true";
+        toggle.setAttribute("aria-checked", String(yearly));
+        document.querySelectorAll("[data-price-monthly]").forEach((price) => {
+          price.textContent = `$${yearly ? price.dataset.priceYearly : price.dataset.priceMonthly}`;
+        });
+        document.querySelectorAll("[data-billing-label]").forEach((label) => { label.textContent = yearly ? "/ month, billed yearly" : "/ month"; });
+      });
+    });
+
+    document.querySelectorAll("[data-contact-form]").forEach((form) => {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const note = form.querySelector("[data-form-note]");
+        if (note) note.hidden = false;
+        form.reset();
+      });
+    });
+
+    (() => {
+      const counters = document.querySelectorAll("[data-count-to]");
+      if (!counters.length || navigator.webdriver || matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(({ isIntersecting, target }) => {
+          if (!isIntersecting) return;
+          observer.unobserve(target);
+          const end = Number(target.dataset.countTo);
+          const suffix = target.dataset.countSuffix || "";
+          const start = performance.now();
+          const tick = (now) => {
+            const progress = Math.min((now - start) / 1200, 1);
+            target.textContent = Math.round(end * progress).toLocaleString() + suffix;
+            if (progress < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        });
+      });
+      counters.forEach((counter) => observer.observe(counter));
+    })();
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=clinova&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

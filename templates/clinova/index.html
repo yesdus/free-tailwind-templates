@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinova | Tailwind CSS Health Clinic Template</title>
+  <meta name="description" content="Clinova is a calm, editorial Tailwind CSS health template for clinics, family practices, and preventive care providers with doctor profiles, health programs, membership pricing, and online booking.">
+  <meta name="keywords" content="Clinova, Tailwind CSS template, HTML website template, health template, medical clinic, family doctor, preventive care, doctor profiles, responsive healthcare design">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Clinova | Tailwind CSS Health Clinic Template">
+  <meta property="og:description" content="A calm, editorial Tailwind CSS health template for clinics, family practices, and preventive care providers with doctor profiles, health programs, membership pricing, and online booking.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Clinova template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Clinova | Tailwind CSS Health Clinic Template">
+  <meta name="twitter:description" content="A calm, editorial Tailwind CSS health template for clinics, family practices, and preventive care providers with doctor profiles, health programs, membership pricing, and online booking.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Clinova template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0e1a3a',
+            teal: '#4b7b8a',
+            mist: '#f4f4f3',
+            frame: '#eeeff1',
+            ash: '#9b9b9b'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['Archivo', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-frame font-sans text-navy antialiased overflow-x-hidden">
+
+  <div class="mx-auto max-w-[1320px] bg-white sm:mt-4 lg:my-[92px]">
+    <!-- block:start navbar -->
+    <header id="top" class="relative z-40">
+      <nav class="flex items-center justify-between px-5 py-4 md:px-10 md:py-5" aria-label="Main" data-nav>
+        <ul class="hidden items-center gap-7 text-sm lg:flex">
+            <li><a href="services.html" class="transition hover:text-teal">Services</a></li>
+            <li><a href="doctors.html" class="transition hover:text-teal">Doctors</a></li>
+            <li><a href="health-programs.html" class="transition hover:text-teal">Health Programs</a></li>
+            <li><a href="blog.html" class="transition hover:text-teal">Blog</a></li>
+        </ul>
+        <a href="index.html" aria-current="page" class="font-display text-lg font-semibold lg:absolute lg:left-1/2 lg:-translate-x-1/2">Clinova</a>
+        <div class="flex items-center gap-2">
+          <a href="contact.html" class="rounded-full bg-mist px-5 py-3 text-sm font-medium shadow-sm transition hover:bg-navy hover:text-white">Book Visit</a>
+          <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-mist lg:hidden" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <div id="mobile-menu" class="hidden border-t border-navy/10 px-5 pb-6 lg:hidden">
+        <ul class="flex flex-col pt-2 font-display text-2xl">
+          <li><a href="index.html" aria-current="page" class="block border-b border-navy/10 py-3 font-semibold">Home</a></li>
+            <li><a href="services.html" class="block border-b border-navy/10 py-3 text-navy/70">Services</a></li>
+            <li><a href="doctors.html" class="block border-b border-navy/10 py-3 text-navy/70">Doctors</a></li>
+            <li><a href="health-programs.html" class="block border-b border-navy/10 py-3 text-navy/70">Health Programs</a></li>
+            <li><a href="blog.html" class="block border-b border-navy/10 py-3 text-navy/70">Blog</a></li>
+          <li><a href="membership.html" class="block border-b border-navy/10 py-3 text-navy/70">Membership</a></li>
+          <li><a href="contact.html" class="block py-3 text-navy/70">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- block:end navbar -->
+
+    <main>
+      <!-- block:start hero -->
+      <section id="hero" class="px-2 md:px-2.5">
+        <div class="relative overflow-hidden rounded-2xl md:rounded-3xl aspect-[3/4] sm:aspect-[4/3] lg:aspect-[1298/730]">
+          <img src="https://images.unsplash.com/photo-1762343941824-85b9676249a4?auto=format&fit=crop&w=2000&q=80" alt="Two young women smiling down at the camera against a clear blue sky" class="absolute inset-0 h-full w-full object-cover object-[60%_center]">
+          <div class="absolute inset-0 bg-gradient-to-r from-navy/35 via-transparent to-transparent"></div>
+          <div class="absolute left-6 top-[26%] max-w-[260px] text-white md:left-16">
+            <p class="font-display text-3xl font-semibold">Since 2018</p>
+            <p class="mt-4 text-sm leading-relaxed text-white/90">From yearly check-ups to everyday wellbeing, we make healthcare feel personal, easy and close to home.</p>
+          </div>
+          <h1 class="absolute bottom-6 left-5 font-display text-[17vw] font-bold leading-[0.85] tracking-[-0.05em] text-white md:bottom-10 md:left-16 md:text-[12vw] lg:text-[150px]">live well<span class="text-white/80">.</span></h1>
+        </div>
+      </section>
+      <!-- block:end hero -->
+
+      <!-- block:start about -->
+      <section id="approach" class="grid gap-8 px-5 pt-20 md:grid-cols-12 md:px-[74px] md:pt-28">
+        <p class="text-[11px] uppercase tracking-[0.15em] text-ash md:col-span-5">Our approach</p>
+        <div class="md:col-span-7">
+          <p class="font-display text-[26px] font-medium leading-[1.2] md:text-[34px]" data-word-reveal>
+            <span data-word class="text-navy">Lasting</span> <span data-word class="text-navy">health</span> <span data-word class="text-navy">stands</span> <span data-word class="text-navy">on</span> <span data-word class="text-navy">three</span> <span data-word class="text-navy">things:</span> <span data-word class="text-navy">understanding</span> <span data-word class="text-navy">your</span> <span data-word class="text-navy">body</span> <span data-word class="text-navy">through</span> <span data-word class="text-navy">regular</span> <span data-word class="text-navy">screening,</span> <span data-word class="text-navy">building</span> <span data-word class="text-navy">everyday</span> <span data-word class="text-navy">habits</span> <span data-word class="text-navy">that</span> <span data-word class="text-navy">protect</span> <span data-word class="text-ash">it,</span> <span data-word class="text-ash">and</span> <span data-word class="text-ash">having</span> <span data-word class="text-ash">a</span> <span data-word class="text-ash">care</span> <span data-word class="text-ash">team</span> <span data-word class="text-ash">you</span> <span data-word class="text-ash">can</span> <span data-word class="text-ash">reach</span> <span data-word class="text-ash">whenever</span> <span data-word class="text-ash">you</span> <span data-word class="text-ash">need</span> <span data-word class="text-ash">them.</span> <span data-word class="text-ash">Our</span> <span data-word class="text-ash">promise</span> <span data-word class="text-ash">is</span> <span data-word class="text-ash">simple:</span> <span data-word class="text-ash">check,</span> <span data-word class="text-ash">prevent,</span> <span data-word class="text-ash">thrive,</span> <span data-word class="text-ash">a</span> <span data-word class="text-ash">clear</span> <span data-word class="text-ash">path</span> <span data-word class="text-ash">to</span> <span data-word class="text-ash">a</span> <span data-word class="text-ash">longer,</span> <span data-word class="text-ash">healthier</span> <span data-word class="text-ash">life.</span> 
+          </p>
+        </div>
+      </section>
+      <div class="px-5 pt-12 text-center">
+        <a href="services.html" class="inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] hover:text-teal">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
+      </div>
+      <!-- block:end about -->
+
+      <!-- block:start process -->
+      <section id="pillars" class="px-5 py-24 md:px-[74px] md:py-36">
+        <ol class="relative grid grid-cols-1 justify-items-center gap-10 sm:grid-cols-3 sm:gap-0">
+            <li class="relative flex w-full justify-center" data-reveal style="--reveal-delay: 0ms">
+                <span class="absolute left-1/2 top-1/2 hidden aspect-square w-[60%] max-w-[265px] -translate-y-1/2 translate-x-[35%] rounded-full border-2 border-dashed border-navy/10 sm:block" aria-hidden="true"></span>
+              <a href="health-programs.html#check" class="group relative block aspect-square w-[70%] max-w-[265px] overflow-hidden rounded-full">
+                <img src="https://images.unsplash.com/photo-1666887360388-93e684b6474a?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Doctor in a white coat holding a stethoscope chest piece" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-110">
+                <span class="absolute inset-0 flex items-center justify-center bg-black/25 font-display text-2xl font-medium text-white">Check</span>
+              </a>
+            </li>
+            <li class="relative flex w-full justify-center" data-reveal style="--reveal-delay: 120ms">
+                <span class="absolute left-1/2 top-1/2 hidden aspect-square w-[60%] max-w-[265px] -translate-y-1/2 translate-x-[35%] rounded-full border-2 border-dashed border-navy/10 sm:block" aria-hidden="true"></span>
+              <a href="health-programs.html#prevent" class="group relative block aspect-square w-[70%] max-w-[265px] overflow-hidden rounded-full">
+                <img src="https://images.unsplash.com/photo-1761315600943-d8a5bb0c499f?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Grilled chicken salad with avocado and tomatoes in a dark bowl" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-110">
+                <span class="absolute inset-0 flex items-center justify-center bg-black/25 font-display text-2xl font-medium text-white">Prevent</span>
+              </a>
+            </li>
+            <li class="relative flex w-full justify-center" data-reveal style="--reveal-delay: 240ms">
+              <a href="health-programs.html#thrive" class="group relative block aspect-square w-[70%] max-w-[265px] overflow-hidden rounded-full">
+                <img src="https://images.unsplash.com/photo-1742522450616-a2cf0cba1274?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Three generations of a family embracing in an autumn park" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-110">
+                <span class="absolute inset-0 flex items-center justify-center bg-black/25 font-display text-2xl font-medium text-white">Thrive</span>
+              </a>
+            </li>
+        </ol>
+      </section>
+      <!-- block:end process -->
+
+      <!-- block:start features -->
+      <section id="values" class="px-5 pb-24 md:px-[80px] md:pb-32" data-values>
+        <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+          <div class="flex flex-col">
+            <p class="text-[11px] uppercase tracking-[0.15em] text-ash">Core values</p>
+            <h2 class="mt-6 max-w-[14ch] font-display text-4xl font-medium leading-[1.05] md:text-5xl">Principles that put every patient first</h2>
+            <a href="services.html" class="mt-8 w-fit rounded-full bg-mist px-7 py-4 text-sm font-medium shadow-sm transition hover:bg-navy hover:text-white">Learn More</a>
+            <div class="mt-auto hidden gap-12 pt-16 lg:flex" role="tablist" aria-label="Core values">
+                <button type="button" role="tab" data-value-tab="0" aria-selected="true" class="group text-left">
+                  <span class="block h-28 w-28 overflow-hidden rounded-xl ring-2 ring-transparent ring-offset-2 transition group-aria-selected:ring-navy">
+                    <img src="https://images.unsplash.com/photo-1758691462123-8a17ae95d203?auto=format&amp;fit=crop&amp;w=300&amp;q=80" alt="" class="h-full w-full object-cover">
+                  </span>
+                  <span class="mt-3 flex items-center gap-2 text-sm text-ash group-aria-selected:text-navy"><i class="fa-solid fa-gear text-xs"></i> Evidence-led</span>
+                </button>
+                <button type="button" role="tab" data-value-tab="1" aria-selected="false" class="group text-left">
+                  <span class="block h-28 w-28 overflow-hidden rounded-xl ring-2 ring-transparent ring-offset-2 transition group-aria-selected:ring-navy">
+                    <img src="https://images.unsplash.com/photo-1780461159717-04ebb5eb3293?auto=format&amp;fit=crop&amp;w=300&amp;q=80" alt="" class="h-full w-full object-cover">
+                  </span>
+                  <span class="mt-3 flex items-center gap-2 text-sm text-ash group-aria-selected:text-navy"><i class="fa-solid fa-hand-holding-heart text-xs"></i> Compassion</span>
+                </button>
+                <button type="button" role="tab" data-value-tab="2" aria-selected="false" class="group text-left">
+                  <span class="block h-28 w-28 overflow-hidden rounded-xl ring-2 ring-transparent ring-offset-2 transition group-aria-selected:ring-navy">
+                    <img src="https://images.unsplash.com/photo-1606206591513-adbfbdd7a177?auto=format&amp;fit=crop&amp;w=300&amp;q=80" alt="" class="h-full w-full object-cover">
+                  </span>
+                  <span class="mt-3 flex items-center gap-2 text-sm text-ash group-aria-selected:text-navy"><i class="fa-solid fa-circle-half-stroke text-xs"></i> Accuracy</span>
+                </button>
+            </div>
+          </div>
+          <div>
+            <div class="relative overflow-hidden rounded-2xl aspect-[576/396]">
+                <img data-value-image src="https://images.unsplash.com/photo-1758691462123-8a17ae95d203?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Doctor checking a patient&#39;s blood pressure with a stethoscope" loading="lazy" class="absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ">
+                <img data-value-image src="https://images.unsplash.com/photo-1780461159717-04ebb5eb3293?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Medical professional gently holding a patient&#39;s hand" loading="lazy" class="absolute inset-0 h-full w-full object-cover transition-opacity duration-500 opacity-0">
+                <img data-value-image src="https://images.unsplash.com/photo-1606206591513-adbfbdd7a177?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Rows of blood collection tubes with colourful caps in a lab rack" loading="lazy" class="absolute inset-0 h-full w-full object-cover transition-opacity duration-500 opacity-0">
+              <div class="absolute right-4 top-4 rounded-xl bg-white/25 px-4 py-3 text-sm text-white backdrop-blur-md">
+                <p>Wellness score</p>
+                <p class="mt-1 tracking-[-0.2em] opacity-90" aria-hidden="true">||||||||||||||||</p>
+              </div>
+              <div class="absolute bottom-4 left-4 rounded-xl bg-navy/40 px-4 py-3 text-sm leading-relaxed text-white backdrop-blur-md">
+                <p>Blood pressure: 118/76</p>
+                <p>Heart rate: Normal</p>
+              </div>
+            </div>
+              <div data-value-panel role="tabpanel" class="mt-8" >
+                <h3 class="flex items-center gap-3 font-display text-2xl font-medium"><i class="fa-solid fa-gear text-sm"></i> Evidence-led</h3>
+                <p class="mt-4 max-w-[52ch] leading-relaxed text-navy/70">Each recommendation follows current clinical guidelines, so the care you get is proven, measured and suited to you.</p>
+              </div>
+              <div data-value-panel role="tabpanel" class="mt-8" hidden>
+                <h3 class="flex items-center gap-3 font-display text-2xl font-medium"><i class="fa-solid fa-hand-holding-heart text-sm"></i> Compassion</h3>
+                <p class="mt-4 max-w-[52ch] leading-relaxed text-navy/70">Longer appointments, plain language and a team that remembers your story from one visit to the next.</p>
+              </div>
+              <div data-value-panel role="tabpanel" class="mt-8" hidden>
+                <h3 class="flex items-center gap-3 font-display text-2xl font-medium"><i class="fa-solid fa-circle-half-stroke text-sm"></i> Accuracy</h3>
+                <p class="mt-4 max-w-[52ch] leading-relaxed text-navy/70">In-house labs and calibrated equipment mean results you can trust, usually back within a day.</p>
+              </div>
+            <div class="mt-8 flex gap-3 border-t border-navy/10 pt-6">
+              <button type="button" data-value-prev class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-mist shadow-sm transition hover:bg-navy hover:text-white" aria-label="Previous value"><i class="fa-solid fa-arrow-left-long"></i></button>
+              <button type="button" data-value-next class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-mist shadow-sm transition hover:bg-navy hover:text-white" aria-label="Next value"><i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- block:end features -->
+
+      <!-- block:start reviews -->
+      <section id="patients" class="px-2 md:px-2.5">
+        <div class="grid gap-3 rounded-3xl bg-navy p-4 text-white md:grid-cols-2 md:p-10">
+          <div class="flex flex-col justify-between gap-16 p-2">
+            <ul class="font-display text-4xl font-medium leading-[1.12] md:text-5xl" aria-label="What patients say">
+                <li data-reveal style="--reveal-delay: 0ms">A doctor who hears me!</li>
+                <li data-reveal style="--reveal-delay: 80ms">Quick and thorough!</li>
+                <li data-reveal style="--reveal-delay: 160ms">I felt looked after</li>
+                <li data-reveal style="--reveal-delay: 240ms">Honestly life-changing!</li>
+                <li data-reveal style="--reveal-delay: 320ms">No waiting room</li>
+                <li data-reveal style="--reveal-delay: 400ms">Trusted</li>
+            </ul>
+            <div>
+              <p class="font-display text-3xl font-semibold">Since 2018</p>
+              <p class="mt-3 text-xs leading-relaxed text-white/80">More than a clinic, more than treatment.<br>Care that fits the way you live.</p>
+            </div>
+          </div>
+          <div class="grid gap-2">
+            <div class="overflow-hidden rounded-2xl aspect-[612/344]">
+              <img src="https://images.unsplash.com/photo-1643582158005-0cd0294a89a0?auto=format&fit=crop&w=1200&q=80" alt="Hand holding a clear water bottle up against a bright blue sky" loading="lazy" class="h-full w-full object-cover">
+            </div>
+            <a href="health-programs.html#prevent" class="group relative flex min-h-[240px] flex-col rounded-2xl bg-teal p-8 transition hover:bg-teal/90">
+              <h2 class="font-display text-3xl font-medium">Preventive</h2>
+              <p class="mt-2 max-w-[36ch] text-xs leading-relaxed text-white/85">Spot problems early with screening plans built around your age, family history and daily routine.</p>
+              <i class="fa-regular fa-snowflake absolute bottom-7 right-8 text-5xl text-white/90 transition group-hover:rotate-45"></i>
+            </a>
+            <div class="rounded-2xl bg-mist p-8 text-navy">
+              <p class="font-display text-3xl font-semibold"><span data-count-to="167000" data-count-suffix="+">167,000+</span> patients</p>
+              <p class="mt-2 text-sm text-navy/60">Rated 4.9 across 12,000 verified reviews</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- block:end reviews -->
+
+      <!-- block:start faq -->
+      <section id="faq" class="px-2 pt-3 md:px-2.5">
+        <div class="grid gap-10 rounded-3xl bg-mist px-6 py-14 md:grid-cols-2 md:px-12 md:py-20">
+          <div class="flex flex-col justify-between gap-12">
+            <div>
+              <p class="text-[11px] uppercase tracking-[0.15em] text-ash">FAQ</p>
+              <h2 class="mt-8 max-w-[12ch] font-display text-4xl font-medium leading-[1.05] md:text-6xl">A few things you may be asking.</h2>
+            </div>
+            <div class="h-44 w-full max-w-[370px] overflow-hidden rounded-full md:h-[220px]">
+              <img src="https://images.unsplash.com/photo-1567866090540-3630e49207e4?auto=format&fit=crop&w=900&q=80" alt="Woman drinking from a bottle against a blue sky" loading="lazy" class="h-full w-full object-cover">
+            </div>
+          </div>
+          <div class="border-t border-navy/10">
+              <details class="group border-b border-navy/10 py-7">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-6 font-display text-xl leading-snug md:text-[28px]" aria-expanded="false">
+                  Do I need a referral to book?
+                  <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-navy/20 bg-white transition group-open:rotate-45"><i class="fa-solid fa-plus text-sm"></i></span>
+                </summary>
+                <p class="mt-4 max-w-[52ch] leading-relaxed text-navy/70">No. You can book any general appointment directly online or by phone. Specialist visits may need a note from one of our GPs, which we arrange for you.</p>
+              </details>
+              <details class="group border-b border-navy/10 py-7">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-6 font-display text-xl leading-snug md:text-[28px]" aria-expanded="false">
+                  Does my insurance cover Clinova?
+                  <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-navy/20 bg-white transition group-open:rotate-45"><i class="fa-solid fa-plus text-sm"></i></span>
+                </summary>
+                <p class="mt-4 max-w-[52ch] leading-relaxed text-navy/70">We work with most major insurers and offer direct billing. If your plan is not listed, we provide itemised receipts for reimbursement.</p>
+              </details>
+              <details class="group border-b border-navy/10 py-7">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-6 font-display text-xl leading-snug md:text-[28px]" aria-expanded="false">
+                  How do you protect my medical records?
+                  <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-navy/20 bg-white transition group-open:rotate-45"><i class="fa-solid fa-plus text-sm"></i></span>
+                </summary>
+                <p class="mt-4 max-w-[52ch] leading-relaxed text-navy/70">Records are encrypted, stored in certified data centres and only visible to the clinicians treating you. You can download or delete your data any time.</p>
+              </details>
+              <details class="group border-b border-navy/10 py-7">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-6 font-display text-xl leading-snug md:text-[28px]" aria-expanded="false">
+                  Can I speak to a doctor online first?
+                  <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-navy/20 bg-white transition group-open:rotate-45"><i class="fa-solid fa-plus text-sm"></i></span>
+                </summary>
+                <p class="mt-4 max-w-[52ch] leading-relaxed text-navy/70">Yes. Video consults run from 8am to 9pm, and the doctor can book any tests you need before your in-person visit.</p>
+              </details>
+              <details class="group border-b border-navy/10 py-7">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-6 font-display text-xl leading-snug md:text-[28px]" aria-expanded="false">
+                  What does the yearly check-up include?
+                  <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-navy/20 bg-white transition group-open:rotate-45"><i class="fa-solid fa-plus text-sm"></i></span>
+                </summary>
+                <p class="mt-4 max-w-[52ch] leading-relaxed text-navy/70">Blood work, heart and blood pressure screening, body composition, a lifestyle review and a 30-minute results consult with your doctor.</p>
+              </details>
+          </div>
+        </div>
+      </section>
+      <!-- block:end faq -->
+
+      <!-- block:start team -->
+      <section id="doctors" class="px-5 pt-24 md:px-[74px] md:pt-28" data-carousel>
+        <p class="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.12em]"><i class="fa-solid fa-star text-[9px]"></i> Our doctors</p>
+        <div class="mt-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <h2 class="font-display text-4xl font-medium md:text-5xl">Meet your care team</h2>
+          <p class="text-sm text-ash">People who know your name, not just your file</p>
+          <div class="flex gap-2">
+            <button type="button" data-carousel-prev class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-mist text-xs transition hover:bg-navy hover:text-white" aria-label="Previous doctor"><i class="fa-solid fa-chevron-left"></i></button>
+            <button type="button" data-carousel-next class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-mist text-xs transition hover:bg-navy hover:text-white" aria-label="Next doctor"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+        <div class="mt-12 overflow-hidden">
+          <div data-carousel-track class="-mx-1.5 flex transition-transform duration-500">
+              <article class="w-full shrink-0 px-1.5 sm:w-1/2 lg:w-1/3">
+                <div class="group relative overflow-hidden rounded-2xl bg-mist aspect-[383/490]">
+                  <img src="https://images.unsplash.com/photo-1643297654416-05795d62e39c?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Smiling doctor in a white coat holding a stethoscope" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+                  <span class="absolute left-6 top-6 rounded-full bg-navy/40 px-4 py-2 text-xs text-white backdrop-blur">Dr. Selin Hart</span>
+                  <a href="doctors.html#selin-hart" class="absolute right-6 top-6 inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy/40 text-white backdrop-blur transition hover:bg-navy" aria-label="View profile of Dr. Selin Hart"><i class="fa-solid fa-plus text-xs"></i></a>
+                  <span class="absolute bottom-6 right-6 rounded-full bg-navy/40 px-4 py-2 text-xs text-white backdrop-blur">General Practitioner</span>
+                </div>
+              </article>
+              <article class="w-full shrink-0 px-1.5 sm:w-1/2 lg:w-1/3">
+                <div class="group relative overflow-hidden rounded-2xl bg-mist aspect-[383/490]">
+                  <img src="https://images.unsplash.com/photo-1758691463582-11aea602cd4a?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Smiling doctor with glasses and stethoscope standing with arms crossed" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+                  <span class="absolute left-6 top-6 rounded-full bg-navy/40 px-4 py-2 text-xs text-white backdrop-blur">Dr. Marcus Oyelaran</span>
+                  <a href="doctors.html#marcus-oyelaran" class="absolute right-6 top-6 inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy/40 text-white backdrop-blur transition hover:bg-navy" aria-label="View profile of Dr. Marcus Oyelaran"><i class="fa-solid fa-plus text-xs"></i></a>
+                  <span class="absolute bottom-6 right-6 rounded-full bg-navy/40 px-4 py-2 text-xs text-white backdrop-blur">Cardiologist</span>
+                </div>
+              </article>
+              <article class="w-full shrink-0 px-1.5 sm:w-1/2 lg:w-1/3">
+                <div class="group relative overflow-hidden rounded-2xl bg-mist aspect-[383/490]">
+                  <img src="https://images.unsplash.com/photo-1623854767648-e7bb8009f0db?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Smiling clinician in a white coat with a stethoscope outdoors" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+                  <span class="absolute left-6 top-6 rounded-full bg-navy/40 px-4 py-2 text-xs text-white backdrop-blur">Lucía Ferreira</span>
+                  <a href="doctors.html#lucia-ferreira" class="absolute right-6 top-6 inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy/40 text-white backdrop-blur transition hover:bg-navy" aria-label="View profile of Lucía Ferreira"><i class="fa-solid fa-plus text-xs"></i></a>
+                  <span class="absolute bottom-6 right-6 rounded-full bg-navy/40 px-4 py-2 text-xs text-white backdrop-blur">Nutritionist</span>
+                </div>
+              </article>
+              <article class="w-full shrink-0 px-1.5 sm:w-1/2 lg:w-1/3">
+                <div class="group relative overflow-hidden rounded-2xl bg-mist aspect-[383/490]">
+                  <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Doctor in glasses and a white coat with arms crossed against a grey wall" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+                  <span class="absolute left-6 top-6 rounded-full bg-navy/40 px-4 py-2 text-xs text-white backdrop-blur">Dr. Arjun Mehta</span>
+                  <a href="doctors.html#arjun-mehta" class="absolute right-6 top-6 inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy/40 text-white backdrop-blur transition hover:bg-navy" aria-label="View profile of Dr. Arjun Mehta"><i class="fa-solid fa-plus text-xs"></i></a>
+                  <span class="absolute bottom-6 right-6 rounded-full bg-navy/40 px-4 py-2 text-xs text-white backdrop-blur">Pediatrician</span>
+                </div>
+              </article>
+          </div>
+        </div>
+        <div class="mt-14 flex justify-between text-xs text-ash">
+          <p>Mon – Sat, 08:00 – 21:00</p>
+          <p>Portland, Pearl District</p>
+        </div>
+      </section>
+      <!-- block:end team -->
+
+      <!-- block:start cta -->
+      <section id="book" class="relative px-5 py-24 text-center md:py-32">
+        <span class="mx-auto mb-12 inline-flex h-12 w-12 items-center justify-center rounded-full bg-mist" aria-hidden="true"><i class="fa-solid fa-stethoscope"></i></span>
+        <div class="relative mx-auto max-w-[1180px]">
+          <figure class="absolute left-0 top-0 hidden w-[19%] -rotate-[8deg] lg:block" data-reveal>
+            <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=600&q=80" alt="Smiling doctor in a white coat talking with a patient in a clinic" loading="lazy" class="aspect-[4/5] w-full rounded-2xl object-cover shadow-xl">
+            <span class="absolute -right-3 -top-3 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-md"><i class="fa-solid fa-heart"></i></span>
+          </figure>
+          <figure class="absolute right-0 top-8 hidden w-[20%] rotate-[8deg] lg:block" data-reveal style="--reveal-delay: 120ms">
+            <img src="https://images.unsplash.com/photo-1758691462878-6edc3d3da1be?auto=format&fit=crop&w=600&q=80" alt="Doctor in a white coat consulting with a patient at her desk" loading="lazy" class="aspect-[4/5] w-full rounded-2xl object-cover shadow-xl">
+          </figure>
+          <h2 class="mx-auto max-w-[18ch] font-display text-4xl font-medium leading-[1.08] md:text-[52px]"><span class="text-ash">Ready</span><br>to look after your health?</h2>
+          <p class="mt-6 text-sm text-ash">Clinova. Small changes today, a stronger you tomorrow.</p>
+          <a href="contact.html" class="mt-8 inline-flex rounded-full bg-navy px-9 py-4 text-sm font-medium text-white transition hover:bg-teal">Book a Check-Up</a>
+        </div>
+      </section>
+      <!-- block:end cta -->
+    </main>
+
+    <!-- block:start footer -->
+    <footer id="footer" class="px-5 pb-6 md:px-10">
+      <div class="flex items-center justify-between gap-6 pb-10">
+        <p class="text-xs font-medium leading-tight">Follow us<br>on social media</p>
+        <ul class="flex flex-wrap justify-end gap-2">
+            <li><a href="https://www.facebook.com/" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy text-xs text-white transition hover:bg-teal" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.youtube.com/" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy text-xs text-white transition hover:bg-teal" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy text-xs text-white transition hover:bg-teal" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://twitter.com/" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy text-xs text-white transition hover:bg-teal" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy text-xs text-white transition hover:bg-teal" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.tiktok.com/" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy text-xs text-white transition hover:bg-teal" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+        </ul>
+      </div>
+      <div class="grid border border-navy/10 md:grid-cols-12">
+        <div class="border-b border-navy/10 p-8 md:col-span-4 md:border-b-0 md:border-r md:p-10">
+          <h2 class="font-display text-3xl font-medium leading-[1.15]">Modern preventive care that keeps you ahead of illness.</h2>
+          <p class="mt-6 text-sm text-ash">All services delivered by licensed clinicians.</p>
+          <form data-callback class="mt-10 flex rounded-full bg-mist p-1.5 shadow-sm">
+            <label for="callback-email" class="sr-only">Email</label>
+            <input id="callback-email" type="email" required placeholder="Enter email" class="w-0 min-w-0 flex-1 bg-transparent px-5 text-sm outline-none">
+            <button type="submit" class="inline-flex items-center gap-3 rounded-full bg-navy py-2 pl-5 pr-2 text-sm font-medium text-white"><span class="hidden sm:inline">Request a </span>Callback <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white text-navy"><i class="fa-solid fa-arrow-right text-xs"></i></span></button>
+          </form>
+          <p data-callback-note hidden class="mt-3 text-sm text-teal" role="status">Thanks! A nurse will call you within one working day.</p>
+        </div>
+        <div class="grid grid-cols-3 gap-6 p-8 text-[11px] uppercase tracking-[0.08em] text-ash md:col-span-8 md:p-10">
+            <ul class="space-y-4 md:text-right md:pr-8">
+                <li><a href="services.html#checkups" class="hover:text-navy">Check-ups</a></li>
+                <li><a href="services.html#telehealth" class="hover:text-navy">Telehealth</a></li>
+                <li><a href="services.html#vaccination" class="hover:text-navy">Vaccination</a></li>
+                <li><a href="services.html#labs" class="hover:text-navy">Lab tests</a></li>
+            </ul>
+            <ul class="space-y-4 ">
+                <li><a href="index.html#approach" class="hover:text-navy">About</a></li>
+                <li><a href="doctors.html" class="hover:text-navy">Doctors</a></li>
+                <li><a href="health-programs.html" class="hover:text-navy">Programs</a></li>
+                <li><a href="blog.html" class="hover:text-navy">Blog</a></li>
+            </ul>
+            <ul class="space-y-4 ">
+                <li><a href="membership.html" class="hover:text-navy">Membership</a></li>
+                <li><a href="contact.html" class="hover:text-navy">Contact</a></li>
+                <li><a href="index.html#faq" class="hover:text-navy">FAQs</a></li>
+                <li><a href="contact.html" class="hover:text-navy">Book a visit</a></li>
+            </ul>
+        </div>
+        <p class="border-t border-navy/10 py-6 text-center text-[11px] uppercase leading-relaxed text-ash md:col-span-12">&copy;2026 Clinova<br>All rights reserved</p>
+        <p class="overflow-hidden border-t border-navy/10 text-center font-display text-[22vw] font-extrabold uppercase leading-[0.8] tracking-[-0.04em] text-frame md:col-span-12 lg:text-[270px]" aria-hidden="true">Clinova</p>
+      </div>
+    </footer>
+    <!-- block:end footer -->
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-menu-toggle]").forEach((button) => {
+      const menu = document.getElementById(button.getAttribute("aria-controls"));
+      if (!menu) return;
+      button.addEventListener("click", () => {
+        const open = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!open));
+        menu.classList.toggle("hidden", open);
+      });
+    });
+
+    document.querySelectorAll("details").forEach((item) => {
+      const summary = item.querySelector("summary");
+      item.addEventListener("toggle", () => summary?.setAttribute("aria-expanded", String(item.open)));
+    });
+
+    document.querySelectorAll("[data-word-reveal]").forEach((paragraph) => {
+      const words = [...paragraph.querySelectorAll("[data-word]")];
+      if (navigator.webdriver || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      const paint = () => {
+        const rect = paragraph.getBoundingClientRect();
+        const progress = Math.min(1, Math.max(0, (innerHeight * 0.85 - rect.top) / (rect.height + innerHeight * 0.35)));
+        const lit = Math.round(words.length * progress);
+        words.forEach((word, index) => {
+          word.classList.toggle("text-navy", index < Math.max(lit, 17));
+          word.classList.toggle("text-ash", index >= Math.max(lit, 17));
+        });
+      };
+      addEventListener("scroll", paint, { passive: true });
+      paint();
+    });
+
+    document.querySelectorAll("[data-values]").forEach((section) => {
+      const images = [...section.querySelectorAll("[data-value-image]")];
+      const panels = [...section.querySelectorAll("[data-value-panel]")];
+      const tabs = [...section.querySelectorAll("[data-value-tab]")];
+      let index = 0;
+      const show = (next) => {
+        index = (next + panels.length) % panels.length;
+        images.forEach((image, i) => image.classList.toggle("opacity-0", i !== index));
+        panels.forEach((panel, i) => { panel.hidden = i !== index; });
+        tabs.forEach((tab, i) => tab.setAttribute("aria-selected", String(i === index)));
+      };
+      tabs.forEach((tab) => tab.addEventListener("click", () => show(Number(tab.dataset.valueTab))));
+      section.querySelector("[data-value-prev]")?.addEventListener("click", () => show(index - 1));
+      section.querySelector("[data-value-next]")?.addEventListener("click", () => show(index + 1));
+    });
+
+    document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+      const track = carousel.querySelector("[data-carousel-track]");
+      const slides = [...track.children];
+      let index = 0;
+      const perView = () => Math.max(1, Math.round(track.clientWidth / slides[0].clientWidth));
+      const maxIndex = () => Math.max(0, slides.length - perView());
+      const render = () => { track.style.transform = `translateX(-${index * slides[0].clientWidth}px)`; };
+      const go = (next) => { const max = maxIndex(); index = next > max ? 0 : next < 0 ? max : next; render(); };
+      carousel.querySelector("[data-carousel-prev]")?.addEventListener("click", () => go(index - 1));
+      carousel.querySelector("[data-carousel-next]")?.addEventListener("click", () => go(index + 1));
+      addEventListener("resize", () => go(Math.min(index, maxIndex())));
+    });
+
+    document.querySelectorAll("[data-callback]").forEach((form) => {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const note = form.parentElement.querySelector("[data-callback-note]");
+        if (note) note.hidden = false;
+        form.reset();
+      });
+    });
+
+    (() => {
+      const counters = document.querySelectorAll("[data-count-to]");
+      if (!counters.length || navigator.webdriver || matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(({ isIntersecting, target }) => {
+          if (!isIntersecting) return;
+          observer.unobserve(target);
+          const end = Number(target.dataset.countTo);
+          const suffix = target.dataset.countSuffix || "";
+          const start = performance.now();
+          const tick = (now) => {
+            const progress = Math.min((now - start) / 1200, 1);
+            target.textContent = Math.round(end * progress).toLocaleString() + suffix;
+            if (progress < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        });
+      });
+      counters.forEach((counter) => observer.observe(counter));
+    })();
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=clinova&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

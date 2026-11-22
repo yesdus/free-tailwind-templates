@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Brassmoor Barbers</title>
+  <meta name="description" content="Fresh cuts, beards and the shops themselves. Browse the Brassmoor gallery by category.">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Gallery | Brassmoor Barbers">
+  <meta property="og:description" content="Fresh cuts, beards and the shops themselves. Browse the Brassmoor gallery by category.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Brassmoor template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Gallery | Brassmoor Barbers">
+  <meta name="twitter:description" content="Fresh cuts, beards and the shops themselves. Browse the Brassmoor gallery by category.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Brassmoor template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { coal: { DEFAULT: '#121416', card: '#1e2023', soft: '#26292d', line: '#34383d' }, ember: { DEFAULT: '#e85a3d', dark: '#c9452b' }, gold: '#f2a541' },
+          fontFamily: { sans: ['Hind', 'sans-serif'], display: ['Teko', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-coal font-sans text-white antialiased">
+  <header class="relative z-40">
+    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-5 pt-4 text-xs text-white/70 md:px-10">
+      <p class="flex flex-wrap gap-6"><span><i class="fa-solid fa-clock mr-2 text-ember" aria-hidden="true"></i>09:00 – 19:00</span><span class="hidden sm:inline"><i class="fa-solid fa-calendar-days mr-2 text-ember" aria-hidden="true"></i>Tuesday – Saturday</span></p>
+      <a href="tel:+16175550142" class="hover:text-ember"><i class="fa-solid fa-phone mr-2 text-ember" aria-hidden="true"></i>(617) 555-0142</a>
+    </div>
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-5 md:px-10" aria-label="Main">
+      <a href="index.html" class="font-display text-3xl font-semibold uppercase leading-none tracking-wide">Brass<span class="text-ember">moor</span>.</a>
+      <ul class="hidden items-center gap-8 text-sm md:flex">
+          <li><a href="index.html"  class="transition text-white/70 hover:text-ember">Home</a></li>
+          <li><a href="about.html"  class="transition text-white/70 hover:text-ember">About Us</a></li>
+          <li><a href="services.html"  class="transition text-white/70 hover:text-ember">Services</a></li>
+          <li><a href="gallery.html" aria-current="page" class="transition font-semibold text-white">Gallery</a></li>
+          <li><a href="contact.html"  class="transition text-white/70 hover:text-ember">Contact</a></li>
+      </ul>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="grid h-10 w-10 place-items-center border border-white/30 md:hidden" aria-label="Open menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-y border-coal-line bg-coal-card px-5 py-4 md:hidden">
+      <ul class="grid gap-1 font-display text-3xl">
+          <li><a href="index.html"  class="block py-1 hover:text-ember">Home</a></li>
+          <li><a href="about.html"  class="block py-1 hover:text-ember">About Us</a></li>
+          <li><a href="services.html"  class="block py-1 hover:text-ember">Services</a></li>
+          <li><a href="gallery.html" aria-current="page" class="block py-1 text-ember">Gallery</a></li>
+          <li><a href="contact.html"  class="block py-1 hover:text-ember">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    
+  <section class="mx-auto max-w-7xl px-5 py-16 md:px-10 md:py-20">
+    <p class="font-display text-2xl text-ember">Gallery</p>
+    <h1 class="mt-2 font-display text-6xl font-medium leading-[1.02] md:text-7xl">Fresh from the <span class="mark">chair</span></h1>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-5 pb-20 md:px-10 md:pb-28" data-gallery>
+    <div class="flex flex-wrap gap-2" role="group" aria-label="Filter photos">
+        <button type="button" data-filter="all" aria-pressed="true" class="border border-coal-line px-5 py-2.5 font-display text-xl transition hover:border-ember aria-pressed:border-ember aria-pressed:bg-ember">All</button>
+        <button type="button" data-filter="cuts" aria-pressed="false" class="border border-coal-line px-5 py-2.5 font-display text-xl transition hover:border-ember aria-pressed:border-ember aria-pressed:bg-ember">Cuts</button>
+        <button type="button" data-filter="beards" aria-pressed="false" class="border border-coal-line px-5 py-2.5 font-display text-xl transition hover:border-ember aria-pressed:border-ember aria-pressed:bg-ember">Beards</button>
+        <button type="button" data-filter="shop" aria-pressed="false" class="border border-coal-line px-5 py-2.5 font-display text-xl transition hover:border-ember aria-pressed:border-ember aria-pressed:bg-ember">The shops</button>
+    </div>
+    <ul class="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3">
+        <li data-category="cuts" data-reveal><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=700&h=700&q=75" alt="Barber styling a textured crop" class="aspect-square w-full object-cover transition duration-500 hover:scale-[1.02]" loading="lazy"></li>
+        <li data-category="cuts" data-reveal><img src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?auto=format&fit=crop&w=700&h=700&q=75" alt="Fresh skin fade from the side" class="aspect-square w-full object-cover transition duration-500 hover:scale-[1.02]" loading="lazy"></li>
+        <li data-category="beards" data-reveal><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=700&h=700&q=75" alt="Beard trim with scissors in black and white" class="aspect-square w-full object-cover transition duration-500 hover:scale-[1.02]" loading="lazy"></li>
+        <li data-category="shop" data-reveal><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=700&h=700&q=75" alt="Row of barber chairs and mirrors" class="aspect-square w-full object-cover transition duration-500 hover:scale-[1.02]" loading="lazy"></li>
+        <li data-category="cuts" data-reveal><img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?auto=format&fit=crop&w=700&h=700&q=75" alt="Barber tapering curly hair" class="aspect-square w-full object-cover transition duration-500 hover:scale-[1.02]" loading="lazy"></li>
+        <li data-category="beards" data-reveal><img src="https://images.unsplash.com/photo-1532710093739-9470acff878f?auto=format&fit=crop&w=700&h=700&q=75" alt="Shaving foam brushed onto a beard" class="aspect-square w-full object-cover transition duration-500 hover:scale-[1.02]" loading="lazy"></li>
+        <li data-category="shop" data-reveal><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=700&h=700&q=75" alt="Vintage leather barber chair" class="aspect-square w-full object-cover transition duration-500 hover:scale-[1.02]" loading="lazy"></li>
+        <li data-category="beards" data-reveal><img src="https://images.unsplash.com/photo-1596728325488-58c87691e9af?auto=format&fit=crop&w=700&h=700&q=75" alt="Straight-razor shave close-up" class="aspect-square w-full object-cover transition duration-500 hover:scale-[1.02]" loading="lazy"></li>
+        <li data-category="shop" data-reveal><img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=700&h=700&q=75" alt="Barber at work in a colourful shop" class="aspect-square w-full object-cover transition duration-500 hover:scale-[1.02]" loading="lazy"></li>
+    </ul>
+  </section>
+
+  <script>
+    document.querySelectorAll('[data-gallery]').forEach((root) => {
+      const chips = [...root.querySelectorAll('[data-filter]')];
+      chips.forEach((chip) => chip.addEventListener('click', () => {
+        chips.forEach((other) => other.setAttribute('aria-pressed', String(other === chip)));
+        root.querySelectorAll('[data-category]').forEach((item) => { item.hidden = chip.dataset.filter !== 'all' && item.dataset.category !== chip.dataset.filter; });
+      }));
+    });
+  </script>
+
+  </main>
+
+  <footer class="bg-coal">
+    <div class="mx-auto max-w-7xl px-5 pt-16 md:px-10">
+      <a href="index.html" class="block text-center font-display text-4xl font-semibold uppercase">Brass<span class="text-ember">moor</span>.</a>
+      <div class="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <h2 class="font-display text-2xl">Pages</h2>
+          <ul class="mt-4 grid gap-2 text-sm text-white/70">
+            <li><a href="index.html" class="hover:text-ember">Home</a></li><li><a href="about.html" class="hover:text-ember">About Us</a></li><li><a href="services.html" class="hover:text-ember">Services</a></li><li><a href="gallery.html" class="hover:text-ember">Gallery</a></li><li><a href="contact.html" class="hover:text-ember">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-display text-2xl">Services</h2>
+          <ul class="mt-4 grid gap-2 text-sm text-white/70">
+            <li><a href="services.html" class="hover:text-ember">Shaving</a></li><li><a href="services.html" class="hover:text-ember">Styling</a></li><li><a href="services.html" class="hover:text-ember">Trimming</a></li><li><a href="services.html" class="hover:text-ember">Haircut</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-display text-2xl">Contact</h2>
+          <ul class="mt-4 grid gap-2 text-sm text-white/70">
+            <li><i class="fa-solid fa-phone mr-2 text-ember" aria-hidden="true"></i>(617) 555-0142</li>
+            <li><i class="fa-solid fa-envelope mr-2 text-ember" aria-hidden="true"></i><a href="mailto:chair@brassmoor.com" class="hover:text-ember">chair@brassmoor.com</a></li>
+            <li><i class="fa-solid fa-clock mr-2 text-ember" aria-hidden="true"></i>Tue – Sat, 09:00 – 19:00</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-display text-2xl">Stay in the loop</h2>
+          <p class="mt-4 text-sm text-white/70">Offers and new barbers, once a month.</p>
+          <form class="mt-4 flex" data-subscribe novalidate>
+            <label for="footer-email" class="sr-only">Email</label>
+            <input id="footer-email" name="email" type="email" required placeholder="Email address" class="min-w-0 flex-1 bg-coal-soft px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-ember">
+            <button type="submit" class="grid w-12 place-items-center bg-ember transition hover:bg-white hover:text-coal" aria-label="Subscribe"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+          </form>
+          <p class="mt-2 text-xs text-white/70" data-subscribe-status role="status"></p>
+        </div>
+      </div>
+      <ul class="mt-14 grid gap-6 border-t border-coal-line pt-10 text-sm text-white/70 md:grid-cols-3">
+          <li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 text-ember" aria-hidden="true"></i><span><span class="block font-display text-xl text-white">Downtown chair</span>212 Hanover St, Boston, MA 02113</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 text-ember" aria-hidden="true"></i><span><span class="block font-display text-xl text-white">Southside studio</span>48 Dorchester Ave, Boston, MA 02127</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 text-ember" aria-hidden="true"></i><span><span class="block font-display text-xl text-white">Harbor corner</span>9 Seaport Blvd, Boston, MA 02210</span></li>
+      </ul>
+    </div>
+    <p class="mt-10 border-t border-coal-line px-5 py-6 text-center text-xs text-white/50">&copy; 2026 Brassmoor Barbers. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const watchMotion = !reducedMotion && !navigator.webdriver && 'IntersectionObserver' in window;
+
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-hero]').forEach((root) => {
+      const slides = [...root.querySelectorAll('[data-slide]')];
+      const dots = [...root.querySelectorAll('[data-slide-dot]')];
+      let current = 0;
+      const show = (index) => {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => {
+          const on = i === current;
+          slide.classList.toggle('opacity-100', on); slide.classList.toggle('opacity-0', !on); slide.classList.toggle('pointer-events-none', !on);
+          slide.setAttribute('aria-hidden', String(!on));
+          slide.querySelectorAll('a').forEach((link) => { link.tabIndex = on ? 0 : -1; });
+        });
+        dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === current)));
+        root.querySelector('[data-slide-index]').textContent = String(current + 1).padStart(2, '0');
+      };
+      dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
+      root.addEventListener('keydown', (event) => { if (event.key === 'ArrowDown') show(current + 1); if (event.key === 'ArrowUp') show(current - 1); });
+    });
+
+    document.querySelectorAll('[data-team]').forEach((root) => {
+      const members = [...root.querySelectorAll('[data-member]')];
+      const photos = [...root.querySelectorAll('[data-member-photo]')];
+      let current = 0;
+      const show = (index) => {
+        current = (index + members.length) % members.length;
+        members.forEach((member, i) => { member.hidden = i !== current; });
+        photos.forEach((photo, i) => { photo.classList.toggle('opacity-100', i === current); photo.classList.toggle('opacity-0', i !== current); });
+      };
+      root.querySelector('[data-member-prev]').addEventListener('click', () => show(current - 1));
+      root.querySelector('[data-member-next]').addEventListener('click', () => show(current + 1));
+    });
+
+    document.querySelectorAll('[data-carousel]').forEach((root) => {
+      const slides = [...root.querySelectorAll('[data-slide]')];
+      const dots = [...root.querySelectorAll('[data-carousel-dot]')];
+      let current = 0;
+      const show = (index) => {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => { slide.hidden = i !== current; });
+        dots.forEach((dot, i) => dot.setAttribute('aria-current', String(i === current)));
+      };
+      root.querySelector('[data-carousel-prev]').addEventListener('click', () => show(current - 1));
+      root.querySelector('[data-carousel-next]').addEventListener('click', () => show(current + 1));
+      dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
+    });
+
+    document.querySelectorAll('[data-lightbox-root]').forEach((root) => {
+      const dialog = root.querySelector('[data-lightbox]');
+      root.querySelectorAll('[data-lightbox-open]').forEach((button) => button.addEventListener('click', () => {
+        const image = dialog.querySelector('[data-lightbox-image]');
+        image.src = `https://images.unsplash.com/photo-${button.dataset.lightboxOpen}?auto=format&fit=crop&w=1400&h=900&q=80`;
+        image.alt = button.dataset.alt;
+        dialog.querySelector('[data-lightbox-caption]').textContent = button.dataset.alt;
+        dialog.showModal();
+      }));
+      dialog.querySelector('[data-lightbox-close]').addEventListener('click', () => dialog.close());
+      dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+    });
+
+    document.querySelectorAll('[data-booking]').forEach((form) => {
+      const status = form.parentElement.querySelector('[data-form-status]');
+      const date = form.querySelector('[name="date"]');
+      if (date) date.min = new Date().toISOString().slice(0, 10);
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const missing = [...form.querySelectorAll('[required]')].find((input) => !input.checkValidity());
+        if (missing) { status.textContent = 'Please add your name, phone and a date from today onwards.'; missing.focus(); return; }
+        status.textContent = `Thanks, ${form.elements.name.value}! Your chair is held for ${new Date(date.value).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}.`;
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-subscribe]').forEach((form) => {
+      const status = form.parentElement.querySelector('[data-subscribe-status]');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (!form.elements.email.checkValidity()) { status.textContent = 'Please enter a valid email.'; return; }
+        status.textContent = 'Subscribed — see you next month.';
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-count]').forEach((el) => {
+      if (!watchMotion) return;
+      const target = Number(el.dataset.count);
+      const pad = el.dataset.count.length;
+      const observer = new IntersectionObserver(([entry]) => {
+        if (!entry.isIntersecting) return;
+        observer.disconnect();
+        const start = performance.now();
+        const tick = (now) => { const t = Math.min(1, (now - start) / 700); el.textContent = String(Math.round(target * t)).padStart(pad > 2 ? 0 : pad, '0'); if (t < 1) requestAnimationFrame(tick); };
+        requestAnimationFrame(tick);
+      });
+      observer.observe(el);
+    });
+
+    if (watchMotion) {
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+      }), { threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach((el) => observer.observe(el));
+    }
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=brassmoor&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

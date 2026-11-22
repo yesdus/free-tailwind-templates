@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aeris | Tailwind CSS Health Template</title>
+  <meta name="description" content="Aeris is a calm, futuristic Tailwind CSS health template for an AI-assisted clinic, with frosted-glass photo tiles, a bento of services, an interactive scan pod, a doctor spotlight, myth-or-fact cards and technology, programs, doctors, membership and contact pages.">
+  <meta name="keywords" content="Aeris, Tailwind CSS template, HTML website template, health template, medical clinic, AI healthcare, health check, telehealth, preventive care, doctors">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Aeris | Tailwind CSS Health Template">
+  <meta property="og:description" content="A calm, futuristic Tailwind CSS clinic template with frosted photo tiles, an interactive scan pod, a doctor spotlight and membership plans.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Aeris template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Aeris | Tailwind CSS Health Template">
+  <meta name="twitter:description" content="A calm, futuristic Tailwind CSS clinic template with frosted photo tiles, an interactive scan pod, a doctor spotlight and membership plans.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Aeris template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink: '#111312', shell: '#f4f4f2', frame: '#a9c0c2', sage: { DEFAULT: '#7fa0a3', deep: '#5c7f82' }, lime: '#e1f36b', iris: '#5b5bd6' },
+          fontFamily: { sans: ['Geist', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="min-h-screen p-2 font-sans text-ink antialiased md:p-6">
+  <div class="mx-auto max-w-[1440px] overflow-hidden rounded-[28px] bg-shell">
+  <!-- block:start navbar -->
+  <header class="relative z-30">
+    <nav class="flex items-center justify-between gap-6 px-5 py-6 md:px-10" aria-label="Main">
+      <a href="index.html" class="flex items-center"><span class="text-[1.7rem] font-semibold leading-none tracking-[-.04em]" aria-hidden="true">aeris<span class="ml-0.5 inline-block h-2 w-2 rounded-full bg-lime ring-1 ring-ink/30"></span></span><span class="sr-only">Aeris home</span></a>
+      <ul class="hidden items-center gap-8 text-[17px] lg:flex">
+          <li><a href="technology.html"  class="transition text-ink/60 hover:text-ink">Technology</a></li>
+          <li><a href="programs.html"  class="transition text-ink/60 hover:text-ink">Programs<sup class="ml-0.5 text-[10px]">(New)</sup></a></li>
+          <li><a href="doctors.html"  class="transition text-ink/60 hover:text-ink">Doctors<sup class="ml-0.5 text-[10px]">(48)</sup></a></li>
+          <li><a href="membership.html"  class="transition text-ink/60 hover:text-ink">Membership</a></li>
+        <li><a href="contact.html" class="text-ink/60 transition hover:text-ink">Contact <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></a></li>
+      </ul>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="grid h-11 w-11 place-items-center rounded-full transition hover:bg-white" aria-label="Open menu"><span class="grid gap-1.5" aria-hidden="true"><span class="block h-0.5 w-6 bg-ink"></span><span class="block h-0.5 w-6 bg-ink"></span></span></button>
+    </nav>
+    <div id="mobile-menu" class="frost absolute inset-x-3 top-[5.5rem] hidden rounded-3xl bg-white/80 p-6 shadow-xl md:inset-x-10">
+      <ul class="grid gap-1 md:grid-cols-3">
+          <li><a href="index.html" aria-current="page" class="flex items-baseline justify-between rounded-2xl px-4 py-3 text-2xl transition hover:bg-white bg-lime">Home</a></li>
+          <li><a href="technology.html"  class="flex items-baseline justify-between rounded-2xl px-4 py-3 text-2xl transition hover:bg-white ">Technology</a></li>
+          <li><a href="programs.html"  class="flex items-baseline justify-between rounded-2xl px-4 py-3 text-2xl transition hover:bg-white ">Programs<span class="text-xs text-ink/50">(New)</span></a></li>
+          <li><a href="doctors.html"  class="flex items-baseline justify-between rounded-2xl px-4 py-3 text-2xl transition hover:bg-white ">Doctors<span class="text-xs text-ink/50">(48)</span></a></li>
+          <li><a href="membership.html"  class="flex items-baseline justify-between rounded-2xl px-4 py-3 text-2xl transition hover:bg-white ">Membership</a></li>
+          <li><a href="contact.html"  class="flex items-baseline justify-between rounded-2xl px-4 py-3 text-2xl transition hover:bg-white ">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section class="pt-16 md:pt-28">
+    <div class="grid gap-10 px-5 md:px-10 lg:grid-cols-[1.4fr_1fr] lg:items-end">
+      <div>
+        <p class="flex items-center gap-2 text-sm"><span class="h-1 w-1 rounded-full bg-ink" aria-hidden="true"></span>AI-assisted, doctor-led</p>
+        <h1 class="mt-6 text-5xl font-normal leading-[1.02] tracking-tight md:text-7xl">Care that notices <br class="hidden md:block">before you have to ask</h1>
+      </div>
+      <div class="lg:pb-2">
+        <p class="max-w-sm text-ink/70">Twenty-minute body scans, an AI that watches the trends and a doctor who calls you when something changes. Prevention, finally made practical.</p>
+        <div class="mt-6 flex flex-wrap items-center gap-2">
+          <a href="contact.html" class="rounded-full bg-sage px-5 py-2.5 text-sm text-white transition hover:bg-sage-deep">Ask a question</a>
+          <a href="membership.html" class="rounded-full bg-lime px-5 py-2.5 text-sm transition hover:bg-ink hover:text-white">Book a scan</a>
+          <a href="#scan" class="ml-3 grid h-10 w-10 place-items-center rounded-full border border-ink transition hover:bg-ink hover:text-white" aria-label="Scroll to the scan pod"><i class="fa-solid fa-arrow-down text-sm" aria-hidden="true"></i></a>
+          <a href="programs.html" class="grid h-10 w-10 place-items-center rounded-full border border-ink/20 text-ink/40 transition hover:border-ink hover:text-ink" aria-label="See programs"><i class="fa-solid fa-arrow-up rotate-45 text-sm" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 grid grid-cols-2 gap-2 md:grid-cols-[1.9fr_1fr_1fr_1.3fr]">
+      <figure class="relative col-span-2 h-72 overflow-hidden rounded-tr-2xl md:col-span-1 md:h-80">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&h=700&q=75" alt="Portrait of a woman lit in soft blue and violet light" class="h-full w-full object-cover">
+        <span class="ribbed absolute inset-y-0 left-[38%] w-[30%] border-x border-lime/60" aria-hidden="true"></span>
+        <span class="absolute bottom-5 left-5 grid h-14 w-14 place-items-center rounded-xl bg-lime text-2xl" aria-hidden="true"><i class="fa-solid fa-qrcode"></i></span>
+        <svg viewBox="0 0 60 20" class="absolute bottom-6 right-6 h-5 w-auto" aria-hidden="true"><circle cx="4" cy="16" r="2" fill="#5b5bd6"/><circle cx="4" cy="18" r="2" fill="#5b5bd6"/><circle cx="12" cy="12" r="2" fill="#5b5bd6"/><circle cx="12" cy="18" r="2" fill="#5b5bd6"/><circle cx="20" cy="16" r="2" fill="#5b5bd6"/><circle cx="20" cy="18" r="2" fill="#5b5bd6"/><circle cx="28" cy="8" r="2" fill="#5b5bd6"/><circle cx="28" cy="18" r="2" fill="#5b5bd6"/><circle cx="36" cy="12" r="2" fill="#5b5bd6"/><circle cx="36" cy="18" r="2" fill="#5b5bd6"/><circle cx="44" cy="4" r="2" fill="#5b5bd6"/><circle cx="44" cy="18" r="2" fill="#5b5bd6"/><circle cx="52" cy="12" r="2" fill="#5b5bd6"/><circle cx="52" cy="18" r="2" fill="#5b5bd6"/></svg>
+      </figure>
+      <figure class="relative h-60 overflow-hidden rounded-2xl md:h-80">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&h=800&q=75" alt="Portrait of a bearded man in a knitted sweater" class="h-full w-full object-cover">
+        <span class="ribbed absolute inset-0" aria-hidden="true"></span>
+        <figcaption class="absolute bottom-5 left-5 flex items-center gap-3 text-xs uppercase leading-tight text-white"><span class="grid h-8 w-8 place-items-center rounded-full border border-white"><i class="fa-solid fa-play text-[10px]" aria-hidden="true"></i></span>Watch a scan<br>Member file 0428</figcaption>
+      </figure>
+      <figure class="relative h-60 overflow-hidden rounded-2xl md:h-80">
+        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=600&h=800&q=75" alt="Bright, empty clinic room with a treatment chair and lamp" class="h-full w-full object-cover">
+        <span class="absolute left-4 top-4 flex gap-1.5 text-[10px]"><span class="grid h-8 w-8 place-items-center rounded-full bg-lime"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span><span class="frost grid h-8 w-8 place-items-center rounded-full bg-white/50"><i class="fa-solid fa-brain" aria-hidden="true"></i></span><span class="frost grid h-8 place-items-center rounded-full bg-white/50 px-2.5">BPM</span></span>
+      </figure>
+      <figure class="relative col-span-2 h-60 overflow-hidden rounded-tl-2xl md:col-span-1 md:h-80">
+        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=800&h=800&q=75" alt="Close portrait of a young woman looking at the camera" class="h-full w-full object-cover">
+        <span class="frost absolute inset-0 bg-sage/20 [mask-image:linear-gradient(to_bottom,black_0,black_28%,transparent_28%,transparent_42%,black_42%)]" aria-hidden="true"></span>
+        <span class="absolute bottom-5 left-5 flex items-center gap-2" aria-hidden="true"><span class="grid h-10 w-10 place-items-center rounded-full border-2 border-white/80"><span class="h-5 w-5 rounded-full bg-white/80"></span></span><span class="h-10 w-10 rounded-full bg-lime"></span></span>
+      </figure>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start features -->
+  <section class="px-5 py-20 md:px-10 md:py-28">
+    <div class="flex flex-wrap items-end justify-between gap-6">
+      <h2 class="max-w-xl text-4xl tracking-tight md:text-5xl">One membership, every check that matters</h2>
+      <a href="technology.html" class="rounded-full border border-ink px-5 py-2.5 text-sm transition hover:bg-ink hover:text-white">How it works</a>
+    </div>
+    <div class="mt-12 grid auto-rows-[13rem] gap-3 md:grid-cols-4">
+      <article class="relative overflow-hidden rounded-3xl md:col-span-2 md:row-span-2" data-reveal>
+        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&h=900&q=75" alt="Smiling woman with dark hair against a light background" class="absolute inset-0 h-full w-full object-cover">
+        <div class="ribbed absolute inset-x-0 bottom-0 bg-ink/35 p-6 text-white md:p-8"><h3 class="text-3xl tracking-tight">Continuous monitoring</h3><p class="mt-2 max-w-sm text-white/85">A wristband and a phone app keep watch between scans, flagging changes to your care team.</p></div>
+      </article>
+      <article class="flex flex-col justify-between rounded-3xl bg-white p-6" data-reveal style="--reveal-delay: 80ms">
+        <i class="fa-solid fa-heart-pulse text-2xl text-sage" aria-hidden="true"></i>
+        <div><p class="text-5xl tracking-tight">24/7</p><p class="text-sm text-ink/60">Trend alerts reviewed by a doctor</p></div>
+      </article>
+      <article class="flex flex-col justify-between rounded-3xl bg-lime p-6" data-reveal style="--reveal-delay: 160ms">
+        <i class="fa-solid fa-wand-magic-sparkles text-2xl" aria-hidden="true"></i>
+        <div><p class="text-5xl tracking-tight">90 s</p><p class="text-sm text-ink/70">AI triage before a human calls back</p></div>
+      </article>
+      <article class="relative overflow-hidden rounded-3xl" data-reveal style="--reveal-delay: 80ms">
+        <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=700&h=500&q=75" alt="X-ray images of a hand on a light board" class="absolute inset-0 h-full w-full object-cover">
+        <span class="frost absolute bottom-4 left-4 rounded-full bg-white/60 px-3 py-1.5 text-xs">Imaging · same day</span>
+      </article>
+      <article class="flex flex-col justify-between rounded-3xl bg-white p-6" data-reveal style="--reveal-delay: 160ms">
+        <p class="text-sm text-ink/60">Blood panels</p>
+        <div class="flex h-20 items-end gap-1.5" aria-hidden="true"><span class="flex-1 rounded-full bg-iris/80" style="height: 40%"></span><span class="flex-1 rounded-full bg-iris/80" style="height: 65%"></span><span class="flex-1 rounded-full bg-iris/80" style="height: 50%"></span><span class="flex-1 rounded-full bg-iris/80" style="height: 80%"></span><span class="flex-1 rounded-full bg-iris/80" style="height: 60%"></span><span class="flex-1 rounded-full bg-iris/80" style="height: 90%"></span><span class="flex-1 rounded-full bg-iris/80" style="height: 72%"></span></div>
+        <p class="text-lg">68 markers, twice a year</p>
+      </article>
+    </div>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start demo -->
+  <section id="scan" class="bg-white px-5 py-20 md:px-10 md:py-28" data-scan>
+    <div class="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+      <div class="relative h-[28rem] overflow-hidden rounded-3xl" data-scan-stage>
+        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1000&h=900&q=75" alt="Bright clinic room with a treatment chair under a surgical lamp" class="h-full w-full object-cover">
+        <span class="absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-transparent via-lime/60 to-transparent" data-scan-line aria-hidden="true"></span>
+        <p class="frost absolute left-5 top-5 flex items-center gap-2 rounded-full bg-white/60 px-3 py-1.5 text-xs"><span class="h-2 w-2 rounded-full bg-iris" aria-hidden="true"></span><span data-scan-state>Ready</span></p>
+      </div>
+      <div>
+        <p class="flex items-center gap-2 text-sm"><span class="h-1 w-1 rounded-full bg-ink" aria-hidden="true"></span>The scan pod</p>
+        <h2 class="mt-4 text-4xl tracking-tight md:text-5xl">Twenty minutes, three systems, one clear readout</h2>
+        <div class="mt-8 flex flex-wrap gap-2" role="group" aria-label="Choose a scan">
+            <button type="button" data-scan-type="heart" aria-pressed="true" class="flex items-center gap-2 rounded-full border border-ink/15 px-4 py-2 text-sm transition hover:border-ink aria-pressed:border-ink aria-pressed:bg-ink aria-pressed:text-white"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>Heart</button>
+            <button type="button" data-scan-type="sleep" aria-pressed="false" class="flex items-center gap-2 rounded-full border border-ink/15 px-4 py-2 text-sm transition hover:border-ink aria-pressed:border-ink aria-pressed:bg-ink aria-pressed:text-white"><i class="fa-solid fa-moon" aria-hidden="true"></i>Sleep</button>
+            <button type="button" data-scan-type="skin" aria-pressed="false" class="flex items-center gap-2 rounded-full border border-ink/15 px-4 py-2 text-sm transition hover:border-ink aria-pressed:border-ink aria-pressed:bg-ink aria-pressed:text-white"><i class="fa-solid fa-sun" aria-hidden="true"></i>Skin</button>
+        </div>
+        <dl class="mt-8 grid grid-cols-3 gap-3" aria-live="polite">
+            <div class="rounded-2xl bg-shell p-4"><dt class="text-xs text-ink/60" data-metric-label="0">Resting BPM</dt><dd class="mt-2 text-3xl tracking-tight md:text-4xl"><span data-metric="0">—</span><span class="text-base text-ink/50" data-metric-unit="0"></span></dd></div>
+            <div class="rounded-2xl bg-shell p-4"><dt class="text-xs text-ink/60" data-metric-label="1">HRV</dt><dd class="mt-2 text-3xl tracking-tight md:text-4xl"><span data-metric="1">—</span><span class="text-base text-ink/50" data-metric-unit="1"> ms</span></dd></div>
+            <div class="rounded-2xl bg-shell p-4"><dt class="text-xs text-ink/60" data-metric-label="2">SpO₂</dt><dd class="mt-2 text-3xl tracking-tight md:text-4xl"><span data-metric="2">—</span><span class="text-base text-ink/50" data-metric-unit="2">%</span></dd></div>
+        </dl>
+        <div class="mt-4 h-1.5 overflow-hidden rounded-full bg-shell"><span class="block h-full w-0 bg-sage transition-[width] duration-500" data-scan-progress></span></div>
+        <p class="mt-4 min-h-[3rem] text-ink/70" data-scan-note>Choose a system and start a demo scan.</p>
+        <button type="button" data-scan-start class="mt-2 rounded-full bg-lime px-6 py-3 text-sm transition hover:bg-ink hover:text-white">Start demo scan</button>
+      </div>
+    </div>
+    <script type="application/json" data-scan-data>{"heart":["Heart","fa-heart-pulse",[["Resting BPM",62,""],["HRV",58," ms"],["SpO₂",98,"%"]],"Rhythm regular. HRV above your 30-day average."],"sleep":["Sleep","fa-moon",[["Deep sleep",21,"%"],["Latency",14," min"],["Resp. rate",15,"/min"]],"Deep sleep up 4%. Late screens still shorten night one."],"skin":["Skin","fa-sun",[["Hydration",71,"%"],["UV damage",12,"%"],["Moles mapped",34,""]],"No changes in mapped moles since your last visit."]}</script>
+  </section>
+  <!-- block:end demo -->
+
+  <!-- block:start team -->
+  <section class="px-5 py-20 md:px-10 md:py-28" data-spotlight>
+    <div class="flex flex-wrap items-end justify-between gap-6">
+      <h2 class="max-w-xl text-4xl tracking-tight md:text-5xl">The doctors behind the data</h2>
+      <a href="doctors.html" class="rounded-full border border-ink px-5 py-2.5 text-sm transition hover:bg-ink hover:text-white">All 48 doctors</a>
+    </div>
+    <div class="mt-12 grid gap-6 lg:grid-cols-[1.2fr_1fr]">
+        <article class="grid overflow-hidden rounded-3xl bg-white md:grid-cols-2" data-doctor="0" >
+          <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=700&h=800&q=75" alt="Doctor in blue scrubs with a stethoscope, smiling" class="h-80 w-full object-cover md:h-full">
+          <div class="flex flex-col p-6 md:p-8">
+            <p class="text-sm text-sage-deep">Preventive cardiology</p>
+            <h3 class="mt-2 text-3xl tracking-tight">Dr. Leona Varga</h3>
+            <p class="mt-4 text-ink/70">Fifteen years in cardiac imaging. Reads every Aeris heart scan flagged by the model.</p>
+            <dl class="mt-auto grid grid-cols-2 gap-3 pt-8 text-sm"><div><dt class="text-ink/50">Experience</dt><dd>15 yrs</dd></div><div><dt class="text-ink/50">Languages</dt><dd>EN · HU · DE</dd></div></dl>
+          </div>
+        </article>
+        <article class="grid overflow-hidden rounded-3xl bg-white md:grid-cols-2" data-doctor="1" hidden>
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=700&h=800&q=75" alt="Doctor in a white coat with arms crossed" class="h-80 w-full object-cover md:h-full">
+          <div class="flex flex-col p-6 md:p-8">
+            <p class="text-sm text-sage-deep">Internal medicine</p>
+            <h3 class="mt-2 text-3xl tracking-tight">Dr. Samir Qadri</h3>
+            <p class="mt-4 text-ink/70">Leads the blood panel team and turns 68 markers into a plan you can follow.</p>
+            <dl class="mt-auto grid grid-cols-2 gap-3 pt-8 text-sm"><div><dt class="text-ink/50">Experience</dt><dd>11 yrs</dd></div><div><dt class="text-ink/50">Languages</dt><dd>EN · UR · AR</dd></div></dl>
+          </div>
+        </article>
+        <article class="grid overflow-hidden rounded-3xl bg-white md:grid-cols-2" data-doctor="2" hidden>
+          <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=700&h=800&q=75" alt="Doctor in a white coat holding a clipboard with a patient" class="h-80 w-full object-cover md:h-full">
+          <div class="flex flex-col p-6 md:p-8">
+            <p class="text-sm text-sage-deep">General practice</p>
+            <h3 class="mt-2 text-3xl tracking-tight">Dr. Ruth Albers</h3>
+            <p class="mt-4 text-ink/70">Your first call after a scan. Twenty years of family medicine, zero rushed appointments.</p>
+            <dl class="mt-auto grid grid-cols-2 gap-3 pt-8 text-sm"><div><dt class="text-ink/50">Experience</dt><dd>20 yrs</dd></div><div><dt class="text-ink/50">Languages</dt><dd>EN · NL</dd></div></dl>
+          </div>
+        </article>
+        <article class="grid overflow-hidden rounded-3xl bg-white md:grid-cols-2" data-doctor="3" hidden>
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=700&h=800&q=75" alt="Doctor in a white coat using a phone" class="h-80 w-full object-cover md:h-full">
+          <div class="flex flex-col p-6 md:p-8">
+            <p class="text-sm text-sage-deep">Sleep medicine</p>
+            <h3 class="mt-2 text-3xl tracking-tight">Dr. Kwame Asante</h3>
+            <p class="mt-4 text-ink/70">Runs the overnight studies and the sleep programme for shift workers.</p>
+            <dl class="mt-auto grid grid-cols-2 gap-3 pt-8 text-sm"><div><dt class="text-ink/50">Experience</dt><dd>9 yrs</dd></div><div><dt class="text-ink/50">Languages</dt><dd>EN · FR · TW</dd></div></dl>
+          </div>
+        </article>
+      <div class="grid grid-cols-2 gap-3" role="group" aria-label="Choose a doctor">
+          <button type="button" data-doctor-button="0" aria-pressed="true" class="group relative h-40 overflow-hidden rounded-2xl text-left md:h-auto">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&h=400&q=70" alt="" class="absolute inset-0 h-full w-full object-cover opacity-60 grayscale transition group-hover:opacity-100 group-hover:grayscale-0 group-aria-pressed:opacity-100 group-aria-pressed:grayscale-0">
+            <span class="frost absolute inset-x-2 bottom-2 rounded-xl bg-white/70 px-3 py-2 text-sm group-aria-pressed:bg-lime">Dr. Leona Varga</span>
+          </button>
+          <button type="button" data-doctor-button="1" aria-pressed="false" class="group relative h-40 overflow-hidden rounded-2xl text-left md:h-auto">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&h=400&q=70" alt="" class="absolute inset-0 h-full w-full object-cover opacity-60 grayscale transition group-hover:opacity-100 group-hover:grayscale-0 group-aria-pressed:opacity-100 group-aria-pressed:grayscale-0">
+            <span class="frost absolute inset-x-2 bottom-2 rounded-xl bg-white/70 px-3 py-2 text-sm group-aria-pressed:bg-lime">Dr. Samir Qadri</span>
+          </button>
+          <button type="button" data-doctor-button="2" aria-pressed="false" class="group relative h-40 overflow-hidden rounded-2xl text-left md:h-auto">
+            <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=400&h=400&q=70" alt="" class="absolute inset-0 h-full w-full object-cover opacity-60 grayscale transition group-hover:opacity-100 group-hover:grayscale-0 group-aria-pressed:opacity-100 group-aria-pressed:grayscale-0">
+            <span class="frost absolute inset-x-2 bottom-2 rounded-xl bg-white/70 px-3 py-2 text-sm group-aria-pressed:bg-lime">Dr. Ruth Albers</span>
+          </button>
+          <button type="button" data-doctor-button="3" aria-pressed="false" class="group relative h-40 overflow-hidden rounded-2xl text-left md:h-auto">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=400&h=400&q=70" alt="" class="absolute inset-0 h-full w-full object-cover opacity-60 grayscale transition group-hover:opacity-100 group-hover:grayscale-0 group-aria-pressed:opacity-100 group-aria-pressed:grayscale-0">
+            <span class="frost absolute inset-x-2 bottom-2 rounded-xl bg-white/70 px-3 py-2 text-sm group-aria-pressed:bg-lime">Dr. Kwame Asante</span>
+          </button>
+      </div>
+    </div>
+  </section>
+  <!-- block:end team -->
+
+  <!-- block:start stats -->
+  <section class="bg-white px-5 py-20 md:px-10 md:py-28">
+    <div class="relative mx-auto max-w-5xl">
+      <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1400&h=800&q=75" alt="Anatomical model of a human brain on a grey surface" class="h-[26rem] w-full rounded-3xl object-cover md:h-[32rem]">
+        <div class="frost absolute top-6 left-6 max-w-[14rem] rounded-2xl bg-white/70 p-4" data-reveal style="--reveal-delay: 0ms"><p class="text-3xl tracking-tight md:text-4xl">97.8%</p><p class="text-sm text-ink/70">of AI flags confirmed by a doctor</p></div>
+        <div class="frost absolute top-1/3 right-6 max-w-[14rem] rounded-2xl bg-white/70 p-4" data-reveal style="--reveal-delay: 100ms"><p class="text-3xl tracking-tight md:text-4xl">11 min</p><p class="text-sm text-ink/70">average wait for a call back</p></div>
+        <div class="frost absolute bottom-6 left-1/4 max-w-[14rem] rounded-2xl bg-white/70 p-4" data-reveal style="--reveal-delay: 200ms"><p class="text-3xl tracking-tight md:text-4xl">4.9</p><p class="text-sm text-ink/70">member rating, 6,200 reviews</p></div>
+    </div>
+  </section>
+  <!-- block:end stats -->
+
+  <!-- block:start faq -->
+  <section class="px-5 py-20 md:px-10 md:py-28">
+    <h2 class="max-w-xl text-4xl tracking-tight md:text-5xl">Myth or fact? <span class="text-ink/40">Tap a card.</span></h2>
+    <div class="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div data-reveal style="--reveal-delay: 0ms"><button type="button" data-flip aria-pressed="false" class="flip relative grid h-64 w-full text-left [&>*]:[grid-area:1/1]">
+          <span class="flex flex-col justify-between rounded-3xl bg-white p-6"><span class="text-xs uppercase tracking-widest text-ink/50">Myth</span><span class="text-2xl tracking-tight">A normal blood test means I&#39;m healthy.</span><span class="text-sm text-sage-deep">Tap to see the fact <i class="fa-solid fa-rotate" aria-hidden="true"></i></span></span>
+          <span class="flex flex-col justify-between rounded-3xl bg-ink p-6 text-white"><span class="text-xs uppercase tracking-widest text-lime">Fact</span><span class="text-xl">A single panel is a snapshot. Trends over months catch what one result misses.</span><span class="text-sm text-white/60">Tap to flip back</span></span>
+        </button></div>
+        <div data-reveal style="--reveal-delay: 80ms"><button type="button" data-flip aria-pressed="false" class="flip relative grid h-64 w-full text-left [&>*]:[grid-area:1/1]">
+          <span class="flex flex-col justify-between rounded-3xl bg-white p-6"><span class="text-xs uppercase tracking-widest text-ink/50">Myth</span><span class="text-2xl tracking-tight">AI decides my diagnosis.</span><span class="text-sm text-sage-deep">Tap to see the fact <i class="fa-solid fa-rotate" aria-hidden="true"></i></span></span>
+          <span class="flex flex-col justify-between rounded-3xl bg-ink p-6 text-white"><span class="text-xs uppercase tracking-widest text-lime">Fact</span><span class="text-xl">The model only flags. A doctor reviews every flag and makes every call.</span><span class="text-sm text-white/60">Tap to flip back</span></span>
+        </button></div>
+        <div data-reveal style="--reveal-delay: 160ms"><button type="button" data-flip aria-pressed="false" class="flip relative grid h-64 w-full text-left [&>*]:[grid-area:1/1]">
+          <span class="flex flex-col justify-between rounded-3xl bg-white p-6"><span class="text-xs uppercase tracking-widest text-ink/50">Myth</span><span class="text-2xl tracking-tight">Scans expose me to radiation.</span><span class="text-sm text-sage-deep">Tap to see the fact <i class="fa-solid fa-rotate" aria-hidden="true"></i></span></span>
+          <span class="flex flex-col justify-between rounded-3xl bg-ink p-6 text-white"><span class="text-xs uppercase tracking-widest text-lime">Fact</span><span class="text-xl">Our pod uses light, sound and electrical signals; there is no X-ray inside.</span><span class="text-sm text-white/60">Tap to flip back</span></span>
+        </button></div>
+        <div data-reveal style="--reveal-delay: 240ms"><button type="button" data-flip aria-pressed="false" class="flip relative grid h-64 w-full text-left [&>*]:[grid-area:1/1]">
+          <span class="flex flex-col justify-between rounded-3xl bg-white p-6"><span class="text-xs uppercase tracking-widest text-ink/50">Myth</span><span class="text-2xl tracking-tight">Prevention is only for older people.</span><span class="text-sm text-sage-deep">Tap to see the fact <i class="fa-solid fa-rotate" aria-hidden="true"></i></span></span>
+          <span class="flex flex-col justify-between rounded-3xl bg-ink p-6 text-white"><span class="text-xs uppercase tracking-widest text-lime">Fact</span><span class="text-xl">Most members are 30 to 45. Habits set now shape the next forty years.</span><span class="text-sm text-white/60">Tap to flip back</span></span>
+        </button></div>
+    </div>
+  </section>
+  <!-- block:end faq -->
+
+  <!-- block:start cta -->
+  <section class="overflow-hidden bg-lime py-16">
+    <div class="band flex w-max gap-10 whitespace-nowrap text-6xl tracking-tight md:text-8xl" aria-hidden="true">
+      <span>Book your first scan</span><span class="text-ink/30">✦</span><span>Know your baseline</span><span class="text-ink/30">✦</span><span>Book your first scan</span><span class="text-ink/30">✦</span><span>Know your baseline</span><span class="text-ink/30">✦</span><span>Book your first scan</span><span class="text-ink/30">✦</span><span>Know your baseline</span><span class="text-ink/30">✦</span><span>Book your first scan</span><span class="text-ink/30">✦</span><span>Know your baseline</span><span class="text-ink/30">✦</span>
+    </div>
+    <div class="mt-10 flex flex-wrap items-center justify-center gap-4 px-5">
+      <p class="text-lg">First scan, blood panel and doctor call from €190.</p>
+      <a href="membership.html" class="rounded-full bg-ink px-6 py-3 text-sm text-white transition hover:bg-sage-deep">See membership</a>
+    </div>
+  </section>
+  <!-- block:end cta -->
+
+  <!-- block:start footer -->
+  <footer class="px-5 pb-8 pt-16 md:px-10">
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <div><a href="index.html" class="inline-flex items-center gap-1"><span class="text-[1.7rem] font-semibold leading-none tracking-[-.04em]" aria-hidden="true">aeris<span class="ml-0.5 inline-block h-2 w-2 rounded-full bg-lime ring-1 ring-ink/30"></span></span><span class="sr-only">Aeris home</span></a><p class="mt-4 max-w-xs text-sm text-ink/60">AI-assisted preventive care, led by doctors. Clinics in Amsterdam, Berlin and Vienna.</p></div>
+        <div><h3 class="text-sm text-ink/50">Care</h3><ul class="mt-4 grid gap-2 text-sm"><li><a href="technology.html" class="hover:text-sage-deep">Technology</a></li><li><a href="programs.html" class="hover:text-sage-deep">Programs</a></li><li><a href="doctors.html" class="hover:text-sage-deep">Doctors</a></li></ul></div>
+        <div><h3 class="text-sm text-ink/50">Members</h3><ul class="mt-4 grid gap-2 text-sm"><li><a href="membership.html" class="hover:text-sage-deep">Membership</a></li><li><a href="membership.html" class="hover:text-sage-deep">Book a scan</a></li><li><a href="contact.html" class="hover:text-sage-deep">Contact</a></li></ul></div>
+        <div><h3 class="text-sm text-ink/50">Visit</h3><ul class="mt-4 grid gap-2 text-sm"><li><a href="contact.html" class="hover:text-sage-deep">Keizersgracht 210, Amsterdam</a></li><li><a href="contact.html" class="hover:text-sage-deep">+31 20 555 0190</a></li><li><a href="contact.html" class="hover:text-sage-deep">care@aeris.health</a></li></ul></div>
+    </div>
+    <p class="mt-14 flex flex-wrap justify-between gap-4 border-t border-ink/10 pt-6 text-xs text-ink/50"><span>&copy; 2026 Aeris Health B.V.</span><span>Not for emergencies. In an emergency call 112.</span></p>
+  </footer>
+  <!-- block:end footer -->
+  </div>
+
+  <script>
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const watchMotion = !reducedMotion && !navigator.webdriver && 'IntersectionObserver' in window;
+
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-scan]').forEach((root) => {
+      const data = JSON.parse(root.querySelector('[data-scan-data]').textContent);
+      const types = [...root.querySelectorAll('[data-scan-type]')];
+      const stage = root.querySelector('[data-scan-stage]');
+      const instant = reducedMotion || navigator.webdriver;
+      let current = 'heart';
+      let timer;
+      const reset = () => {
+        clearInterval(timer);
+        stage.classList.remove('scanning');
+        data[current][2].forEach(([label, , unit], i) => {
+          root.querySelector(`[data-metric-label="${i}"]`).textContent = label;
+          root.querySelector(`[data-metric-unit="${i}"]`).textContent = unit;
+          root.querySelector(`[data-metric="${i}"]`).textContent = '—';
+        });
+        root.querySelector('[data-scan-progress]').style.width = '0%';
+        root.querySelector('[data-scan-state]').textContent = 'Ready';
+        root.querySelector('[data-scan-note]').textContent = 'Choose a system and start a demo scan.';
+      };
+      const finish = () => {
+        clearInterval(timer);
+        stage.classList.remove('scanning');
+        data[current][2].forEach(([, value], i) => { root.querySelector(`[data-metric="${i}"]`).textContent = value; });
+        root.querySelector('[data-scan-progress]').style.width = '100%';
+        root.querySelector('[data-scan-state]').textContent = 'Scan complete';
+        root.querySelector('[data-scan-note]').textContent = data[current][3];
+      };
+      types.forEach((type) => type.addEventListener('click', () => {
+        types.forEach((other) => other.setAttribute('aria-pressed', String(other === type)));
+        current = type.dataset.scanType;
+        reset();
+      }));
+      root.querySelector('[data-scan-start]').addEventListener('click', () => {
+        reset();
+        if (instant) { finish(); return; }
+        stage.classList.add('scanning');
+        root.querySelector('[data-scan-state]').textContent = 'Scanning…';
+        let step = 0;
+        timer = setInterval(() => {
+          step += 1;
+          const share = step / 20;
+          root.querySelector('[data-scan-progress]').style.width = `${share * 100}%`;
+          data[current][2].forEach(([, value], i) => { root.querySelector(`[data-metric="${i}"]`).textContent = Math.round(value * share); });
+          if (step >= 20) finish();
+        }, 90);
+      });
+    });
+
+    document.querySelectorAll('[data-spotlight]').forEach((root) => {
+      const buttons = [...root.querySelectorAll('[data-doctor-button]')];
+      buttons.forEach((button) => button.addEventListener('click', () => {
+        buttons.forEach((other) => other.setAttribute('aria-pressed', String(other === button)));
+        root.querySelectorAll('[data-doctor]').forEach((card) => { card.hidden = card.dataset.doctor !== button.dataset.doctorButton; });
+      }));
+    });
+
+    document.querySelectorAll('[data-flip]').forEach((card) => card.addEventListener('click', () => {
+      card.setAttribute('aria-pressed', String(card.getAttribute('aria-pressed') !== 'true'));
+    }));
+
+    if (watchMotion) {
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+      }), { threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach((el) => observer.observe(el));
+    }
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=aeris&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Say hello | Kontur</title>
+  <meta name="description" content="Start a project with Noa Lindqvist, art director and designer. Booking identity, campaign and interface work from March.">
+  <meta name="keywords" content="Kontur, Tailwind CSS template, HTML website template, portfolio template, art director portfolio, designer portfolio, personal website, case study, dark portfolio, free template">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Say hello | Kontur">
+  <meta property="og:description" content="Start a project with Noa Lindqvist, art director and designer. Booking identity, campaign and interface work from March.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Kontur template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Say hello | Kontur">
+  <meta name="twitter:description" content="Start a project with Noa Lindqvist, art director and designer. Booking identity, campaign and interface work from March.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Kontur template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            night: { DEFAULT: '#0a0a0a', soft: '#161616', line: '#2a2a2a' },
+            chalk: { DEFAULT: '#f4f4f0', dim: '#a3a3a0' },
+            volt: { DEFAULT: '#d6ff3c', deep: '#b5dc1f' }
+          },
+          fontFamily: {
+            display: ['Unbounded', 'sans-serif'],
+            sans: ['"DM Sans"', 'sans-serif'],
+            serif: ['"Instrument Serif"', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-night font-sans text-chalk antialiased">
+  <header class="relative z-40">
+    <nav class="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-8 md:px-16" aria-label="Main">
+      <a href="index.html" class="font-display text-sm font-bold uppercase tracking-[0.35em]">Kontur</a>
+      <ul class="hidden items-center gap-16 text-sm font-medium uppercase tracking-[0.12em] md:flex">
+          <li><a href="work.html"  class="text-chalk/80 hover:text-volt">Work</a></li>
+          <li><a href="about.html"  class="text-chalk/80 hover:text-volt">About</a></li>
+          <li><a href="contact.html" aria-current="page" class="border-b border-volt pb-1 text-volt">Say hello</a></li>
+      </ul>
+      <button type="button" class="grid h-11 w-11 place-items-center rounded-full border border-chalk/30 md:hidden" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-night-line px-6 pb-8 md:hidden">
+      <ul class="grid gap-4 pt-6 font-display text-3xl font-bold uppercase">
+          <li><a href="work.html"  class="hover:text-volt">Work</a></li>
+          <li><a href="about.html"  class="hover:text-volt">About</a></li>
+          <li><a href="contact.html" aria-current="page" class="text-volt">Say hello</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    
+  <section class="mx-auto max-w-[1500px] px-6 pb-12 pt-8 md:px-16">
+    <h1 class="font-display text-[clamp(3.5rem,12vw,11rem)] font-black uppercase leading-[0.9]">Say <span class="outline-type">hello</span></h1>
+    <div class="mt-10 flex flex-wrap items-center gap-4">
+      <a href="mailto:hello@example.com" class="font-serif text-3xl italic underline decoration-volt underline-offset-8 hover:text-volt md:text-5xl">hello@example.com</a>
+      <button type="button" class="rounded-full border border-chalk/30 px-5 py-2 text-sm uppercase tracking-[0.15em] hover:border-volt hover:text-volt" data-copy="hello@example.com"><i class="fa-regular fa-copy mr-2" aria-hidden="true"></i><span data-copy-label>Copy</span></button>
+    </div>
+  </section>
+
+  <section class="mx-auto grid max-w-[1500px] gap-12 px-6 pb-24 md:px-16 lg:grid-cols-12">
+    <form class="grid gap-8 text-2xl leading-relaxed md:text-3xl lg:col-span-8" data-contact-form>
+      <p>
+        Hi Noa, I&rsquo;m
+        <label class="sr-only" for="contact-name">Your name</label>
+        <input id="contact-name" type="text" required placeholder="your name" class="mx-1 w-56 border-b border-chalk/40 bg-transparent px-1 text-volt placeholder:text-chalk/30 focus:border-volt focus:outline-none">
+        from
+        <label class="sr-only" for="contact-company">Company</label>
+        <input id="contact-company" type="text" placeholder="company" class="mx-1 w-48 border-b border-chalk/40 bg-transparent px-1 text-volt placeholder:text-chalk/30 focus:border-volt focus:outline-none">
+        and I need help with
+        <label class="sr-only" for="contact-need">Project type</label>
+        <select id="contact-need" class="mx-1 border-b border-chalk/40 bg-night px-1 text-volt focus:border-volt focus:outline-none">
+          <option>a brand identity</option>
+          <option>a campaign</option>
+          <option>a website</option>
+          <option>motion or illustration</option>
+        </select>.
+        You can reach me at
+        <label class="sr-only" for="contact-email">Email</label>
+        <input id="contact-email" type="email" required placeholder="email address" class="mx-1 w-72 max-w-full border-b border-chalk/40 bg-transparent px-1 text-volt placeholder:text-chalk/30 focus:border-volt focus:outline-none">.
+      </p>
+      <div class="flex flex-wrap items-center gap-6">
+        <button type="submit" class="rounded-full bg-volt px-8 py-3 text-sm font-bold uppercase tracking-[0.15em] text-night hover:bg-chalk">Send message</button>
+        <p class="hidden text-base text-volt" role="status" data-contact-done>Thanks, I will reply within two working days.</p>
+      </div>
+    </form>
+    <aside class="grid content-start gap-6 text-sm lg:col-span-4">
+      <div class="rounded-lg border border-night-line p-6">
+        <p class="text-xs uppercase tracking-[0.25em] text-chalk/40">Studio</p>
+        <p class="mt-3 text-chalk/80">Islands Brygge 12<br>Copenhagen</p>
+      </div>
+      <div class="rounded-lg border border-night-line p-6">
+        <p class="text-xs uppercase tracking-[0.25em] text-chalk/40">Availability</p>
+        <p class="mt-3 text-chalk/80">Booking new projects from March. Short sprints of two to six weeks.</p>
+      </div>
+    </aside>
+  </section>
+
+  <script>
+    document.querySelectorAll("[data-copy]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const label = button.querySelector("[data-copy-label]");
+        try { await navigator.clipboard.writeText(button.dataset.copy); if (label) label.textContent = "Copied"; } catch (error) { if (label) label.textContent = button.dataset.copy; }
+      });
+    });
+    document.querySelectorAll("[data-contact-form]").forEach((form) => {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        form.querySelector("[data-contact-done]")?.classList.remove("hidden");
+      });
+    });
+  </script>
+
+  </main>
+
+  <footer class="border-t border-night-line">
+    <div class="mx-auto grid max-w-[1500px] gap-10 px-6 py-14 md:grid-cols-3 md:px-16">
+      <div>
+        <a href="index.html" class="font-display text-sm font-bold uppercase tracking-[0.35em]">Kontur</a>
+        <p class="mt-4 max-w-xs text-sm text-chalk/60">Independent art direction and design by Noa Lindqvist.</p>
+      </div>
+      <div class="text-sm">
+        <p class="text-xs uppercase tracking-[0.25em] text-chalk/40">Pages</p>
+        <ul class="mt-4 grid gap-2">
+          <li><a href="work.html" class="hover:text-volt">Work</a></li>
+          <li><a href="halden-identity.html" class="hover:text-volt">Case study</a></li>
+          <li><a href="about.html" class="hover:text-volt">About</a></li>
+          <li><a href="contact.html" class="hover:text-volt">Say hello</a></li>
+        </ul>
+      </div>
+      <div class="text-sm">
+        <p class="text-xs uppercase tracking-[0.25em] text-chalk/40">Elsewhere</p>
+        <ul class="mt-4 grid gap-2">
+          <li><a href="contact.html" class="hover:text-volt">Instagram</a></li>
+          <li><a href="contact.html" class="hover:text-volt">Behance</a></li>
+          <li><a href="contact.html" class="hover:text-volt">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="border-t border-night-line px-6 py-6 text-center text-xs uppercase tracking-[0.3em] text-chalk/40">&copy; 2026 Kontur. All rights reserved.</p>
+  </footer>
+
+  <div class="cursor-ring hidden" aria-hidden="true" data-cursor-ring></div>
+  <script>
+    document.querySelectorAll("[data-menu-toggle]").forEach((button) => {
+      const menu = document.getElementById(button.getAttribute("aria-controls"));
+      if (!menu) return;
+      button.addEventListener("click", () => {
+        const open = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!open));
+        menu.classList.toggle("hidden", open);
+      });
+    });
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+
+    (() => {
+      const ring = document.querySelector("[data-cursor-ring]");
+      if (!ring || navigator.webdriver || !matchMedia("(pointer: fine)").matches || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      ring.classList.remove("hidden");
+      document.addEventListener("pointermove", (event) => { ring.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`; });
+      document.querySelectorAll("a, button, [data-cursor]").forEach((el) => {
+        el.addEventListener("pointerenter", () => ring.classList.add("is-hover"));
+        el.addEventListener("pointerleave", () => ring.classList.remove("is-hover"));
+      });
+    })();
+
+    (() => {
+      const dialog = document.getElementById("lightbox");
+      if (!dialog || !dialog.showModal) return;
+      const img = dialog.querySelector("[data-lightbox-img]");
+      const title = dialog.querySelector("[data-lightbox-title]");
+      document.querySelectorAll("[data-lightbox]").forEach((button) => {
+        button.addEventListener("click", () => {
+          img.src = button.dataset.src;
+          img.alt = button.querySelector("img")?.alt || "";
+          title.innerHTML = button.dataset.title;
+          dialog.showModal();
+        });
+      });
+      dialog.querySelector("[data-lightbox-close]")?.addEventListener("click", () => dialog.close());
+      dialog.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=kontur&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

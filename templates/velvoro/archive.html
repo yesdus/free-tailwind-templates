@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archive | Velvoro</title>
+  <meta name="description" content="Every Velvoro story since 2011 in one index. Sort by year, photographer, city or house.">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Archive | Velvoro">
+  <meta property="og:description" content="Every Velvoro story since 2011 in one index. Sort by year, photographer, city or house.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Velvoro template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Archive | Velvoro">
+  <meta name="twitter:description" content="Every Velvoro story since 2011 in one index. Sort by year, photographer, city or house.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Velvoro template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { olive: { DEFAULT: '#6f7550', deep: '#4e5338' }, rust: '#b8382c', cream: '#efe7dd', ink: '#1c1f1d', slate: '#2d3430' },
+          fontFamily: { sans: ['Inter', 'sans-serif'], wide: ['Jost', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-slate font-sans font-light text-cream antialiased">
+  <header class="absolute inset-x-0 top-0 z-40">
+    <nav class="flex items-center justify-between px-5 py-6 md:px-10" aria-label="Main">
+      <a href="index.html" class="border border-cream px-2 py-1 font-wide text-[11px] font-medium uppercase tracking-[0.3em]">Velvoro</a>
+      <button type="button" data-overlay-toggle aria-controls="site-menu" aria-expanded="false" class="flex items-center gap-3 font-wide text-[11px] uppercase tracking-[0.3em]"><span data-overlay-label>Menu</span><span class="grid h-9 w-9 place-items-center rounded-full border border-cream/60"><i class="fa-solid fa-plus text-xs" aria-hidden="true"></i></span></button>
+    </nav>
+    <div id="site-menu" class="menu-overlay fixed inset-0 -z-10 grid bg-ink/95 backdrop-blur md:grid-cols-[1.2fr_1fr]" data-overlay>
+      <ul class="flex flex-col justify-center gap-2 px-6 pt-24 md:px-16">
+          <li><a href="index.html"  class="group flex items-baseline gap-6 font-wide text-5xl font-extralight uppercase tracking-[0.15em] transition hover:text-rust md:text-7xl "><span class="text-xs tracking-[0.3em] text-cream/40">01</span>Home</a></li>
+          <li><a href="archive.html" aria-current="page" class="group flex items-baseline gap-6 font-wide text-5xl font-extralight uppercase tracking-[0.15em] transition hover:text-rust md:text-7xl text-rust"><span class="text-xs tracking-[0.3em] text-cream/40">02</span>Archive</a></li>
+          <li><a href="the-red-room.html"  class="group flex items-baseline gap-6 font-wide text-5xl font-extralight uppercase tracking-[0.15em] transition hover:text-rust md:text-7xl "><span class="text-xs tracking-[0.3em] text-cream/40">03</span>Stories</a></li>
+          <li><a href="about.html"  class="group flex items-baseline gap-6 font-wide text-5xl font-extralight uppercase tracking-[0.15em] transition hover:text-rust md:text-7xl "><span class="text-xs tracking-[0.3em] text-cream/40">04</span>About</a></li>
+          <li><a href="contact.html"  class="group flex items-baseline gap-6 font-wide text-5xl font-extralight uppercase tracking-[0.15em] transition hover:text-rust md:text-7xl "><span class="text-xs tracking-[0.3em] text-cream/40">05</span>Contact</a></li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&w=900&q=80" alt="" class="hidden h-full w-full object-cover opacity-70 md:block">
+    </div>
+  </header>
+
+  <main>
+    
+  <section class="relative overflow-hidden bg-ink">
+    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1900&q=80" alt="" class="absolute inset-0 h-full w-full object-cover opacity-40">
+    <div class="gridlines absolute inset-0" aria-hidden="true"></div>
+    <div class="relative px-5 pb-20 pt-40 text-center md:px-10">
+      <h1 class="spaced font-wide text-4xl font-extralight uppercase md:text-6xl">Archive</h1>
+      <p class="mx-auto mt-6 max-w-lg text-sm text-cream/75">One hundred and forty stories, fifteen years. Tap a column to sort.</p>
+    </div>
+  </section>
+
+  <section class="bg-cream text-ink">
+    <div class="mx-auto max-w-7xl px-5 py-16 md:px-10 md:py-24">
+      <div class="relative overflow-x-auto">
+        <table class="w-full min-w-[46rem] text-left" data-sort-table>
+          <caption class="sr-only">Archive of stories, sortable by column</caption>
+          <thead class="border-b border-ink">
+            <tr>
+                <th scope="col" class="py-4 pr-4"><button type="button" data-sort="year" class="group flex items-center gap-2 font-wide text-[11px] font-normal uppercase tracking-[0.3em] hover:text-rust aria-[sort]:text-rust">Year<i class="fa-solid fa-sort text-[10px] opacity-40" aria-hidden="true"></i></button></th>
+                <th scope="col" class="py-4 pr-4"><button type="button" data-sort="title" class="group flex items-center gap-2 font-wide text-[11px] font-normal uppercase tracking-[0.3em] hover:text-rust aria-[sort]:text-rust">Story<i class="fa-solid fa-sort text-[10px] opacity-40" aria-hidden="true"></i></button></th>
+                <th scope="col" class="py-4 pr-4"><button type="button" data-sort="photographer" class="group flex items-center gap-2 font-wide text-[11px] font-normal uppercase tracking-[0.3em] hover:text-rust aria-[sort]:text-rust">Photographer<i class="fa-solid fa-sort text-[10px] opacity-40" aria-hidden="true"></i></button></th>
+                <th scope="col" class="py-4 pr-4"><button type="button" data-sort="city" class="group flex items-center gap-2 font-wide text-[11px] font-normal uppercase tracking-[0.3em] hover:text-rust aria-[sort]:text-rust">City<i class="fa-solid fa-sort text-[10px] opacity-40" aria-hidden="true"></i></button></th>
+                <th scope="col" class="py-4 pr-4"><button type="button" data-sort="house" class="group flex items-center gap-2 font-wide text-[11px] font-normal uppercase tracking-[0.3em] hover:text-rust aria-[sort]:text-rust">House<i class="fa-solid fa-sort text-[10px] opacity-40" aria-hidden="true"></i></button></th>
+              <th scope="col" class="w-20"><span class="sr-only">Preview</span></th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr data-year="2026" data-title="Red Room" data-photographer="Lena Marsh" data-city="Milan" data-house="Maison Orrel" class="group border-b border-ink/15 transition hover:bg-ink hover:text-cream">
+                <td class="py-5 pr-4 font-mono text-sm">2026</td>
+                <th scope="row" class="py-5 pr-4 font-wide text-xl font-light uppercase tracking-[0.1em]"><a href="the-red-room.html" class="hover:text-rust">Red Room</a></th>
+                <td class="py-5 pr-4 text-sm">Lena Marsh</td>
+                <td class="py-5 pr-4 text-sm">Milan</td>
+                <td class="py-5 pr-4 text-sm">Maison Orrel</td>
+                <td class="py-3"><img src="https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?auto=format&fit=crop&w=200&q=70" alt="" class="h-16 w-12 object-cover grayscale transition group-hover:grayscale-0" loading="lazy"></td>
+              </tr>
+              <tr data-year="2025" data-title="Night Study" data-photographer="Oskar Feld" data-city="Copenhagen" data-house="Castellane" class="group border-b border-ink/15 transition hover:bg-ink hover:text-cream">
+                <td class="py-5 pr-4 font-mono text-sm">2025</td>
+                <th scope="row" class="py-5 pr-4 font-wide text-xl font-light uppercase tracking-[0.1em]"><a href="the-red-room.html" class="hover:text-rust">Night Study</a></th>
+                <td class="py-5 pr-4 text-sm">Oskar Feld</td>
+                <td class="py-5 pr-4 text-sm">Copenhagen</td>
+                <td class="py-5 pr-4 text-sm">Castellane</td>
+                <td class="py-3"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=70" alt="" class="h-16 w-12 object-cover grayscale transition group-hover:grayscale-0" loading="lazy"></td>
+              </tr>
+              <tr data-year="2025" data-title="Violet Hour" data-photographer="Amaya Ruiz" data-city="Lisbon" data-house="Ivo Brask" class="group border-b border-ink/15 transition hover:bg-ink hover:text-cream">
+                <td class="py-5 pr-4 font-mono text-sm">2025</td>
+                <th scope="row" class="py-5 pr-4 font-wide text-xl font-light uppercase tracking-[0.1em]"><a href="the-red-room.html" class="hover:text-rust">Violet Hour</a></th>
+                <td class="py-5 pr-4 text-sm">Amaya Ruiz</td>
+                <td class="py-5 pr-4 text-sm">Lisbon</td>
+                <td class="py-5 pr-4 text-sm">Ivo Brask</td>
+                <td class="py-3"><img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&w=200&q=70" alt="" class="h-16 w-12 object-cover grayscale transition group-hover:grayscale-0" loading="lazy"></td>
+              </tr>
+              <tr data-year="2024" data-title="Low Light" data-photographer="Theo Achebe" data-city="Paris" data-house="Atelier Senne" class="group border-b border-ink/15 transition hover:bg-ink hover:text-cream">
+                <td class="py-5 pr-4 font-mono text-sm">2024</td>
+                <th scope="row" class="py-5 pr-4 font-wide text-xl font-light uppercase tracking-[0.1em]"><a href="the-red-room.html" class="hover:text-rust">Low Light</a></th>
+                <td class="py-5 pr-4 text-sm">Theo Achebe</td>
+                <td class="py-5 pr-4 text-sm">Paris</td>
+                <td class="py-5 pr-4 text-sm">Atelier Senne</td>
+                <td class="py-3"><img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=200&q=70" alt="" class="h-16 w-12 object-cover grayscale transition group-hover:grayscale-0" loading="lazy"></td>
+              </tr>
+              <tr data-year="2023" data-title="Pink Wall" data-photographer="Lena Marsh" data-city="Marrakesh" data-house="Maison Orrel" class="group border-b border-ink/15 transition hover:bg-ink hover:text-cream">
+                <td class="py-5 pr-4 font-mono text-sm">2023</td>
+                <th scope="row" class="py-5 pr-4 font-wide text-xl font-light uppercase tracking-[0.1em]"><a href="the-red-room.html" class="hover:text-rust">Pink Wall</a></th>
+                <td class="py-5 pr-4 text-sm">Lena Marsh</td>
+                <td class="py-5 pr-4 text-sm">Marrakesh</td>
+                <td class="py-5 pr-4 text-sm">Maison Orrel</td>
+                <td class="py-3"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=200&q=70" alt="" class="h-16 w-12 object-cover grayscale transition group-hover:grayscale-0" loading="lazy"></td>
+              </tr>
+              <tr data-year="2021" data-title="Freckles" data-photographer="Ines Kader" data-city="Berlin" data-house="Castellane" class="group border-b border-ink/15 transition hover:bg-ink hover:text-cream">
+                <td class="py-5 pr-4 font-mono text-sm">2021</td>
+                <th scope="row" class="py-5 pr-4 font-wide text-xl font-light uppercase tracking-[0.1em]"><a href="the-red-room.html" class="hover:text-rust">Freckles</a></th>
+                <td class="py-5 pr-4 text-sm">Ines Kader</td>
+                <td class="py-5 pr-4 text-sm">Berlin</td>
+                <td class="py-5 pr-4 text-sm">Castellane</td>
+                <td class="py-3"><img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?auto=format&fit=crop&w=200&q=70" alt="" class="h-16 w-12 object-cover grayscale transition group-hover:grayscale-0" loading="lazy"></td>
+              </tr>
+              <tr data-year="2019" data-title="Teal Study" data-photographer="Oskar Feld" data-city="Seoul" data-house="Ivo Brask" class="group border-b border-ink/15 transition hover:bg-ink hover:text-cream">
+                <td class="py-5 pr-4 font-mono text-sm">2019</td>
+                <th scope="row" class="py-5 pr-4 font-wide text-xl font-light uppercase tracking-[0.1em]"><a href="the-red-room.html" class="hover:text-rust">Teal Study</a></th>
+                <td class="py-5 pr-4 text-sm">Oskar Feld</td>
+                <td class="py-5 pr-4 text-sm">Seoul</td>
+                <td class="py-5 pr-4 text-sm">Ivo Brask</td>
+                <td class="py-3"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=200&q=70" alt="" class="h-16 w-12 object-cover grayscale transition group-hover:grayscale-0" loading="lazy"></td>
+              </tr>
+              <tr data-year="2016" data-title="Round Window" data-photographer="Theo Achebe" data-city="Valencia" data-house="Atelier Senne" class="group border-b border-ink/15 transition hover:bg-ink hover:text-cream">
+                <td class="py-5 pr-4 font-mono text-sm">2016</td>
+                <th scope="row" class="py-5 pr-4 font-wide text-xl font-light uppercase tracking-[0.1em]"><a href="the-red-room.html" class="hover:text-rust">Round Window</a></th>
+                <td class="py-5 pr-4 text-sm">Theo Achebe</td>
+                <td class="py-5 pr-4 text-sm">Valencia</td>
+                <td class="py-5 pr-4 text-sm">Atelier Senne</td>
+                <td class="py-3"><img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&w=200&q=70" alt="" class="h-16 w-12 object-cover grayscale transition group-hover:grayscale-0" loading="lazy"></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="bg-slate">
+    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 md:grid-cols-4 md:px-10">
+      <div>
+        <a href="index.html" class="border border-cream px-2 py-1 font-wide text-[11px] font-medium uppercase tracking-[0.3em]">Velvoro</a>
+        <p class="mt-6 max-w-xs text-sm leading-relaxed text-cream/60">A fashion photography archive, publishing stories from the edit since 2011.</p>
+      </div>
+      <div>
+        <p class="font-wide text-[11px] uppercase tracking-[0.3em] text-cream/50">Explore</p>
+        <ul class="mt-4 grid gap-2 text-sm">
+          <li><a href="archive.html" class="text-cream/80 transition hover:text-rust">Archive</a></li><li><a href="the-red-room.html" class="text-cream/80 transition hover:text-rust">Stories</a></li><li><a href="about.html" class="text-cream/80 transition hover:text-rust">About</a></li><li><a href="contact.html" class="text-cream/80 transition hover:text-rust">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-wide text-[11px] uppercase tracking-[0.3em] text-cream/50">Studio</p>
+        <p class="mt-4 text-sm leading-relaxed text-cream/80">Via Tortona 18<br>20144 Milan<br><a href="mailto:archive@velvoro.studio" class="underline">archive@velvoro.studio</a></p>
+      </div>
+      <div>
+        <p class="font-wide text-[11px] uppercase tracking-[0.3em] text-cream/50">Follow</p>
+        <ul class="mt-4 flex gap-4">
+            <li><a href="https://www.instagram.com" aria-label="Instagram" class="grid h-10 w-10 place-items-center rounded-full border border-cream/30 transition hover:border-rust hover:text-rust"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.pinterest.com" aria-label="Pinterest" class="grid h-10 w-10 place-items-center rounded-full border border-cream/30 transition hover:border-rust hover:text-rust"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a href="https://vimeo.com" aria-label="Vimeo" class="grid h-10 w-10 place-items-center rounded-full border border-cream/30 transition hover:border-rust hover:text-rust"><i class="fa-brands fa-vimeo-v" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="border-t border-cream/10 px-5 py-6 text-center font-wide text-[10px] uppercase tracking-[0.3em] text-cream/40 md:px-10">&copy; <span data-current-year>2026</span> Velvoro Archive</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('[data-overlay-toggle]').forEach((button) => {
+      const overlay = document.getElementById(button.getAttribute('aria-controls'));
+      const label = button.querySelector('[data-overlay-label]');
+      const set = (open) => {
+        button.setAttribute('aria-expanded', String(open));
+        overlay.classList.toggle('is-open', open);
+        if (label) label.textContent = open ? 'Close' : 'Menu';
+        button.querySelector('svg, i')?.classList.toggle('rotate-45', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      };
+      button.addEventListener('click', () => set(button.getAttribute('aria-expanded') !== 'true'));
+      document.addEventListener('keydown', (event) => { if (event.key === 'Escape') set(false); });
+    });
+
+    document.querySelectorAll('[data-house-swap]').forEach((root) => {
+      const images = [...root.querySelectorAll('[data-house-image]')];
+      const links = [...root.querySelectorAll('[data-house]')];
+      const show = (index) => {
+        images.forEach((image) => {
+          const on = image.dataset.houseImage === index;
+          image.classList.toggle('opacity-0', !on);
+          image.toggleAttribute('aria-hidden', !on);
+        });
+        links.forEach((link) => link.classList.toggle('border-cream', link.dataset.house === index));
+        links.forEach((link) => link.classList.toggle('text-cream', link.dataset.house === index));
+      };
+      links.forEach((link) => {
+        link.addEventListener('mouseenter', () => show(link.dataset.house));
+        link.addEventListener('focus', () => show(link.dataset.house));
+      });
+    });
+
+    document.querySelectorAll('[data-look-switch]').forEach((root) => {
+      root.querySelectorAll('[data-look-view]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const view = button.dataset.lookView;
+          root.querySelectorAll('[data-look-view]').forEach((other) => other.setAttribute('aria-pressed', String(other === button)));
+          root.querySelectorAll('[data-look]').forEach((image) => {
+            const on = image.dataset.look === view;
+            image.classList.toggle('opacity-0', !on);
+            image.toggleAttribute('aria-hidden', !on);
+          });
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-contact-sheet]').forEach((sheet) => {
+      const frames = [...sheet.querySelectorAll('[data-pick]')];
+      const count = sheet.querySelector('[data-pick-count]');
+      const update = () => { count.textContent = frames.filter((frame) => frame.getAttribute('aria-pressed') === 'true').length; };
+      frames.forEach((frame) => frame.addEventListener('click', () => {
+        frame.setAttribute('aria-pressed', String(frame.getAttribute('aria-pressed') !== 'true'));
+        update();
+      }));
+      sheet.querySelector('[data-pick-editors]')?.addEventListener('click', () => {
+        frames.forEach((frame) => frame.setAttribute('aria-pressed', frame.dataset.editor));
+        update();
+      });
+      sheet.querySelector('[data-pick-clear]')?.addEventListener('click', () => {
+        frames.forEach((frame) => frame.setAttribute('aria-pressed', 'false'));
+        update();
+      });
+    });
+
+    document.querySelectorAll('[data-accordion]').forEach((accordion) => {
+      accordion.querySelectorAll('[data-accordion-trigger]').forEach((trigger) => {
+        const panel = document.getElementById(trigger.getAttribute('aria-controls'));
+        trigger.addEventListener('click', () => {
+          const open = trigger.getAttribute('aria-expanded') !== 'true';
+          trigger.setAttribute('aria-expanded', String(open));
+          panel.hidden = !open;
+          (trigger.querySelector('svg') || trigger.querySelector('i'))?.classList.toggle('rotate-45', open);
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-sort-table]').forEach((table) => {
+      const body = table.querySelector('tbody');
+      table.querySelectorAll('[data-sort]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const key = button.dataset.sort;
+          const ascending = button.getAttribute('aria-sort') !== 'ascending';
+          table.querySelectorAll('[data-sort]').forEach((other) => other.removeAttribute('aria-sort'));
+          button.setAttribute('aria-sort', ascending ? 'ascending' : 'descending');
+          [...body.rows]
+            .sort((a, b) => a.dataset[key].localeCompare(b.dataset[key], undefined, { numeric: true }) * (ascending ? 1 : -1))
+            .forEach((row) => body.append(row));
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-chat-form]').forEach((form) => {
+      const steps = [...form.querySelectorAll('[data-chat-step]')];
+      const log = form.querySelector('[data-chat-log]');
+      const status = form.querySelector('[data-form-status]');
+      let current = 0;
+      const show = (index) => steps.forEach((step, i) => { step.hidden = i !== index; });
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const field = steps[current].querySelector('[name]');
+        if (!field.checkValidity() || !String(field.value || '').trim()) {
+          status.textContent = 'Could you answer that one first?';
+          field.focus();
+          return;
+        }
+        status.textContent = '';
+        const bubble = document.createElement('li');
+        bubble.className = 'ml-auto max-w-[80%] rounded-2xl rounded-br-sm bg-rust px-4 py-3 text-cream';
+        bubble.textContent = field.value;
+        log.append(bubble);
+        current += 1;
+        if (current < steps.length) {
+          const question = document.createElement('li');
+          question.className = 'max-w-[80%] rounded-2xl rounded-bl-sm bg-cream/10 px-4 py-3';
+          question.textContent = steps[current].dataset.question;
+          log.append(question);
+          show(current);
+          steps[current].querySelector('[name]').focus();
+        } else {
+          show(-1);
+          const done = document.createElement('li');
+          done.className = 'max-w-[80%] rounded-2xl rounded-bl-sm bg-cream/10 px-4 py-3';
+          done.textContent = form.dataset.success;
+          log.append(done);
+          status.textContent = form.dataset.success;
+        }
+      });
+      show(0);
+    });
+
+    document.querySelectorAll('[data-contact-form]').forEach((form) => {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const status = form.parentElement.querySelector('[data-form-status]');
+        if (!form.checkValidity()) {
+          status.textContent = form.dataset.error;
+          form.querySelector(':invalid')?.focus();
+          return;
+        }
+        status.textContent = form.dataset.success;
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    (() => {
+      const items = document.querySelectorAll('[data-reveal]');
+      const skip = navigator.webdriver || !('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=velvoro&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

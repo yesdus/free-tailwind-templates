@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Quoin</title>
+  <meta name="description" content="Tell Quoin about a site, a building or an idea, book a walk round it, or find the studio at Granary Wharf in Leeds with its opening hours and who to write to.">
+  <meta name="keywords" content="Quoin, Tailwind CSS template, HTML website template, architecture studio template, architect portfolio website, property developer template, project case study page, real estate development, portfolio template">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Contact | Quoin">
+  <meta property="og:description" content="Tell Quoin about a site, a building or an idea, book a walk round it, or find the studio at Granary Wharf in Leeds with its opening hours and who to write to.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Quoin template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Contact | Quoin">
+  <meta name="twitter:description" content="Tell Quoin about a site, a building or an idea, book a walk round it, or find the studio at Granary Wharf in Leeds with its opening hours and who to write to.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Quoin template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            slate: { DEFAULT: '#3a3d3f', deep: '#26282a' },
+            oxide: { DEFAULT: '#a6492f', deep: '#863823' },
+            paper: { DEFAULT: '#ffffff', warm: '#f3efea' },
+            line: '#ddd7ce',
+            ink: { DEFAULT: '#1c1b1a', soft: '#4a4744', mute: '#6b6763' }
+          },
+          fontFamily: {
+            display: ['"Josefin Sans"', 'sans-serif'],
+            sans: ['"DM Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-paper font-sans text-ink antialiased">
+  <header class="absolute inset-x-0 top-0 z-30 text-white">
+    <div class="flex items-start justify-between px-5 py-6 md:px-10 md:py-8">
+      <a href="index.html" aria-label="Quoin, home" class="grid grid-cols-3 gap-x-5 gap-y-1 font-display text-2xl font-light leading-none md:gap-x-7 md:text-3xl">
+        <span>Q</span><span>U</span><span>O</span><span>I</span><span>N</span>
+      </a>
+      <div class="flex items-center gap-10">
+        <nav aria-label="Main" class="hidden items-center gap-10 md:flex">
+            <a href="projects.html"  class="font-display text-lg uppercase tracking-wide transition hover:text-white text-white/80">Projects</a>
+            <a href="about.html"  class="font-display text-lg uppercase tracking-wide transition hover:text-white text-white/80">About</a>
+            <a href="contact.html" aria-current="page" class="font-display text-lg uppercase tracking-wide transition hover:text-white border-b border-white text-white">Contact</a>
+        </nav>
+        <button type="button" data-menu-toggle aria-controls="project-index" aria-expanded="false" class="flex items-center gap-3 font-display text-lg uppercase tracking-wide">
+          <span>Index</span>
+          <span class="flex flex-col gap-[6px]" aria-hidden="true"><span class="block h-px w-7 bg-current"></span><span class="block h-px w-7 bg-current"></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div data-menu-backdrop class="fixed inset-0 z-40 bg-ink/50" hidden></div>
+  <aside id="project-index" class="panel fixed inset-y-0 right-0 z-50 flex w-full max-w-[34rem] flex-col overflow-y-auto bg-paper" aria-label="Menu and project index">
+    <div class="flex items-center justify-between gap-6 px-6 py-7 md:px-9">
+      <nav aria-label="Menu" class="flex flex-wrap gap-x-8 gap-y-2">
+          <a href="projects.html"  class="font-display text-lg uppercase tracking-wide transition hover:text-ink text-ink-mute">Projects</a>
+          <a href="about.html"  class="font-display text-lg uppercase tracking-wide transition hover:text-ink text-ink-mute">About</a>
+          <a href="contact.html" aria-current="page" class="font-display text-lg uppercase tracking-wide transition hover:text-ink text-ink">Contact</a>
+      </nav>
+      <button type="button" data-menu-close aria-label="Close the index" class="text-2xl leading-none"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="mt-6 border-t border-line md:mt-12">
+        <li class="border-b border-line">
+          <a href="the-kiln-yard.html" class="group grid grid-cols-[7.5rem_1fr] items-center gap-6 p-6 md:grid-cols-[13rem_1fr] md:p-7">
+            <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Apartment blocks with steel balconies in blue and orange render" class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-80">
+            <span class="text-center">
+              <span class="block text-sm text-ink-mute">Leeds</span>
+              <span class="caps mt-2 block text-xl md:text-2xl">Eighty-four homes on a brickworks</span>
+              <span class="mt-3 block text-xs text-ink-mute">The Kiln Yard, 2025</span>
+            </span>
+          </a>
+        </li>
+        <li class="border-b border-line">
+          <a href="the-kiln-yard.html" class="group grid grid-cols-[7.5rem_1fr] items-center gap-6 p-6 md:grid-cols-[13rem_1fr] md:p-7">
+            <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="The corner of a dark brick building with deep-set windows" class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-80">
+            <span class="text-center">
+              <span class="block text-sm text-ink-mute">Sheffield</span>
+              <span class="caps mt-2 block text-xl md:text-2xl">A steel mill turned workplace</span>
+              <span class="mt-3 block text-xs text-ink-mute">Harrow Works, 2024</span>
+            </span>
+          </a>
+        </li>
+        <li class="border-b border-line">
+          <a href="the-kiln-yard.html" class="group grid grid-cols-[7.5rem_1fr] items-center gap-6 p-6 md:grid-cols-[13rem_1fr] md:p-7">
+            <img src="https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Black and white townhouses with tall framed windows" class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-80">
+            <span class="text-center">
+              <span class="block text-sm text-ink-mute">York</span>
+              <span class="caps mt-2 block text-xl md:text-2xl">Twenty-two timber townhouses</span>
+              <span class="mt-3 block text-xs text-ink-mute">Alder Court, 2023</span>
+            </span>
+          </a>
+        </li>
+        <li class="border-b border-line">
+          <a href="the-kiln-yard.html" class="group grid grid-cols-[7.5rem_1fr] items-center gap-6 p-6 md:grid-cols-[13rem_1fr] md:p-7">
+            <img src="https://images.unsplash.com/photo-1496564203457-11bb12075d90?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="A curved building with a planted roof and glass walls" class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-80">
+            <span class="text-center">
+              <span class="block text-sm text-ink-mute">Hull</span>
+              <span class="caps mt-2 block text-xl md:text-2xl">A library under a green roof</span>
+              <span class="mt-3 block text-xs text-ink-mute">Fenn Library, 2022</span>
+            </span>
+          </a>
+        </li>
+    </ul>
+    <a href="projects.html" class="label m-7 inline-flex items-center gap-3">All twenty-six projects <i class="fa-solid fa-arrow-right"></i></a>
+  </aside>
+  <main>
+    
+
+  <section class="washed flex min-h-[62svh] flex-col justify-end text-white">
+    <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&amp;fit=crop&amp;w=1800&amp;q=80" alt="An open studio with a long table, concrete ceiling and full-height glazing">
+    <div class="px-5 pb-8 pt-40 md:px-10 md:pb-10">
+      <p class="label mb-6 text-white/70">We answer within two working days</p>
+      <h1 class="giant text-[clamp(3.1rem,12.5vw,13rem)] text-white/90">Contact</h1>
+    </div>
+  </section>
+
+  <section class="px-5 py-16 md:px-10 md:py-24">
+    <div class="mx-auto grid max-w-[1400px] gap-16 md:grid-cols-[1.2fr_.8fr] md:gap-24">
+      <form data-enquiry novalidate>
+        <h2 class="caps text-3xl md:text-5xl">Tell us what you have</h2>
+        <fieldset class="mt-10">
+          <legend class="label text-ink-mute">I have</legend>
+          <div class="mt-4 flex flex-wrap gap-2">
+              <label class="cursor-pointer">
+                <input type="radio" name="have" value="A site" class="peer sr-only" checked>
+                <span class="block border border-ink/30 px-5 py-3 font-display uppercase tracking-wide transition hover:border-ink peer-checked:border-ink peer-checked:bg-ink peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-ink peer-focus-visible:ring-offset-2">A site</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="have" value="An old building" class="peer sr-only" >
+                <span class="block border border-ink/30 px-5 py-3 font-display uppercase tracking-wide transition hover:border-ink peer-checked:border-ink peer-checked:bg-ink peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-ink peer-focus-visible:ring-offset-2">An old building</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="have" value="A brief" class="peer sr-only" >
+                <span class="block border border-ink/30 px-5 py-3 font-display uppercase tracking-wide transition hover:border-ink peer-checked:border-ink peer-checked:bg-ink peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-ink peer-focus-visible:ring-offset-2">A brief</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="have" value="Only an idea" class="peer sr-only" >
+                <span class="block border border-ink/30 px-5 py-3 font-display uppercase tracking-wide transition hover:border-ink peer-checked:border-ink peer-checked:bg-ink peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-ink peer-focus-visible:ring-offset-2">Only an idea</span>
+              </label>
+          </div>
+        </fieldset>
+        <div class="mt-10 grid gap-8 sm:grid-cols-2">
+          <label class="block"><span class="label text-ink-mute">Name</span><input type="text" name="name" required autocomplete="name" class="mt-2 w-full border-0 border-b border-ink/40 bg-transparent px-0 py-3 text-lg focus:border-ink focus:outline-none focus:ring-0"></label>
+          <label class="block"><span class="label text-ink-mute">Email</span><input type="email" name="email" required autocomplete="email" class="mt-2 w-full border-0 border-b border-ink/40 bg-transparent px-0 py-3 text-lg focus:border-ink focus:outline-none focus:ring-0"></label>
+          <label class="block"><span class="label text-ink-mute">Where is it?</span><input type="text" name="place" placeholder="Town or postcode" class="mt-2 w-full border-0 border-b border-ink/40 bg-transparent px-0 py-3 text-lg placeholder:text-ink-mute/70 focus:border-ink focus:outline-none focus:ring-0"></label>
+          <label class="block"><span class="label text-ink-mute">What should it become?</span>
+            <select name="kind" class="mt-2 w-full border-0 border-b border-ink/40 bg-transparent px-0 py-3 text-lg focus:border-ink focus:outline-none focus:ring-0">
+              <option>Homes</option>
+              <option>A workplace</option>
+              <option>A public building</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+          <label class="block sm:col-span-2"><span class="label text-ink-mute">Anything else</span><textarea name="message" rows="4" class="mt-2 w-full border-0 border-b border-ink/40 bg-transparent px-0 py-3 text-lg focus:border-ink focus:outline-none focus:ring-0"></textarea></label>
+        </div>
+        <label class="mt-8 flex items-center gap-3"><input type="checkbox" name="visit" checked class="h-5 w-5 accent-[#1c1b1a]"> I would like someone to walk round it with me</label>
+        <button type="submit" class="mt-10 inline-flex items-center gap-4 bg-ink px-9 py-5 font-display text-lg uppercase tracking-wide text-white transition hover:bg-oxide">Send it over <i class="fa-solid fa-arrow-right"></i></button>
+        <p class="mt-6 text-lg" data-enquiry-done role="status" hidden>Thank you. Ines or Tobias will write back within two working days.</p>
+      </form>
+
+      <aside class="h-fit space-y-10 border-t border-line pt-10 md:border-l md:border-t-0 md:pl-16 md:pt-0">
+        <div>
+          <p class="label text-ink-mute">Studio</p>
+          <address class="mt-3 font-display text-2xl uppercase not-italic leading-snug tracking-wide">4 Granary Wharf<br>Leeds LS1 4BR</address>
+          <p class="mt-3 text-ink-mute">Five minutes from the station's south entrance. Ring the bell marked Q.</p>
+        </div>
+        <div>
+          <p class="label text-ink-mute">Hours</p>
+          <ul class="mt-3 border-t border-line">
+              <li class="flex justify-between gap-6 border-b border-line py-3"><span>Monday to Thursday</span><span class="text-right text-ink-mute">8.30 to 5.30</span></li>
+              <li class="flex justify-between gap-6 border-b border-line py-3"><span>Friday</span><span class="text-right text-ink-mute">8.30 to 1</span></li>
+              <li class="flex justify-between gap-6 border-b border-line py-3"><span>Weekend</span><span class="text-right text-ink-mute">Site visits by arrangement</span></li>
+          </ul>
+        </div>
+        <div>
+          <p class="label text-ink-mute">Write to</p>
+          <ul class="mt-3 space-y-2">
+            <li>New projects: <a href="mailto:studio@quoin.example" class="underline">studio@quoin.example</a></li>
+            <li>Residents: <a href="mailto:care@quoin.example" class="underline">care@quoin.example</a></li>
+            <li>Telephone: <a href="tel:+441135550147" class="underline">0113 555 0147</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="bg-paper-warm px-5 py-16 md:px-10 md:py-24">
+    <div class="mx-auto max-w-[1400px]">
+      <p class="label text-ink-mute">What happens next</p>
+      <ol class="mt-8 grid gap-8 md:grid-cols-3 md:gap-12">
+          <li class="border-t border-ink pt-6" data-reveal style="--reveal-delay: 0ms">
+            <span class="font-display text-5xl font-extralight">1</span>
+            <h3 class="caps mt-4 text-3xl">A reply</h3>
+            <p class="mt-3 text-ink-soft">Within two working days, from a partner, not a form.</p>
+          </li>
+          <li class="border-t border-ink pt-6" data-reveal style="--reveal-delay: 100ms">
+            <span class="font-display text-5xl font-extralight">2</span>
+            <h3 class="caps mt-4 text-3xl">A walk</h3>
+            <p class="mt-3 text-ink-soft">We come to you and look at it together. It costs nothing.</p>
+          </li>
+          <li class="border-t border-ink pt-6" data-reveal style="--reveal-delay: 200ms">
+            <span class="font-display text-5xl font-extralight">3</span>
+            <h3 class="caps mt-4 text-3xl">A letter</h3>
+            <p class="mt-3 text-ink-soft">Two pages on what we think it could be, and what we would not do.</p>
+          </li>
+      </ol>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll("[data-enquiry]").forEach((form) => {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (!form.reportValidity()) return;
+        form.querySelector("[data-enquiry-done]").hidden = false;
+      });
+    });
+  </script>
+
+  </main>
+
+  <footer class="bg-slate-deep px-5 py-14 text-white md:px-10 md:py-20">
+    <div class="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
+      <a href="index.html" aria-label="Quoin, home" class="grid h-fit w-fit grid-cols-3 gap-x-7 gap-y-1 font-display text-3xl font-light leading-none">
+        <span>Q</span><span>U</span><span>O</span><span>I</span><span>N</span>
+      </a>
+      <div>
+        <p class="label text-white/60">Studio</p>
+        <address class="mt-4 not-italic text-white/85">4 Granary Wharf<br>Leeds LS1 4BR</address>
+      </div>
+      <div>
+        <p class="label text-white/60">Say hello</p>
+        <p class="mt-4 text-white/85"><a href="mailto:studio@quoin.example" class="hover:underline">studio@quoin.example</a><br><a href="tel:+441135550147" class="hover:underline">0113 555 0147</a></p>
+      </div>
+      <nav aria-label="Footer">
+        <p class="label text-white/60">Pages</p>
+        <ul class="mt-4 space-y-2 text-white/85">
+            <li><a href="projects.html" class="hover:underline">Projects</a></li>
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="mx-auto mt-14 max-w-[1400px] border-t border-white/20 pt-6 text-sm text-white/60">&copy; 2026 Quoin Architecture and Development. Registered practice, Leeds.</p>
+  </footer>
+
+  <script>
+    (() => {
+      const panel = document.getElementById("project-index");
+      const toggle = document.querySelector("[data-menu-toggle]");
+      const backdrop = document.querySelector("[data-menu-backdrop]");
+      if (!panel || !toggle) return;
+      const setOpen = (open) => {
+        toggle.setAttribute("aria-expanded", String(open));
+        panel.classList.toggle("is-open", open);
+        if (backdrop) backdrop.hidden = !open;
+        document.body.style.overflow = open ? "hidden" : "";
+        if (open) panel.querySelector("[data-menu-close]")?.focus(); else toggle.focus();
+      };
+      toggle.addEventListener("click", () => setOpen(toggle.getAttribute("aria-expanded") !== "true"));
+      panel.querySelector("[data-menu-close]")?.addEventListener("click", () => setOpen(false));
+      backdrop?.addEventListener("click", () => setOpen(false));
+      document.addEventListener("keydown", (event) => { if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") setOpen(false); });
+    })();
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=quoin&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

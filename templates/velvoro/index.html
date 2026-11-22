@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvoro | Tailwind CSS Portfolio Template</title>
+  <meta name="description" content="Velvoro is an editorial Tailwind CSS portfolio template for fashion photographers, magazines and archives, with a split collage hero, a full-screen menu, a runway and backstage look switcher, a contact sheet you can mark up and a sortable archive index.">
+  <meta name="keywords" content="Velvoro, Tailwind CSS template, HTML website template, portfolio template, fashion photography portfolio, editorial magazine template, photo archive, lookbook website, creative studio">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Velvoro | Tailwind CSS Portfolio Template">
+  <meta property="og:description" content="An editorial Tailwind CSS portfolio template for fashion photographers, with a split collage hero, a look switcher and a contact sheet you can mark up.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Velvoro template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Velvoro | Tailwind CSS Portfolio Template">
+  <meta name="twitter:description" content="An editorial Tailwind CSS portfolio template for fashion photographers, with a split collage hero, a look switcher and a contact sheet you can mark up.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Velvoro template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { olive: { DEFAULT: '#6f7550', deep: '#4e5338' }, rust: '#b8382c', cream: '#efe7dd', ink: '#1c1f1d', slate: '#2d3430' },
+          fontFamily: { sans: ['Inter', 'sans-serif'], wide: ['Jost', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-slate font-sans font-light text-cream antialiased">
+  <!-- block:start navbar -->
+  <header class="absolute inset-x-0 top-0 z-40">
+    <nav class="flex items-center justify-between px-5 py-6 md:px-10" aria-label="Main">
+      <a href="index.html" class="border border-cream px-2 py-1 font-wide text-[11px] font-medium uppercase tracking-[0.3em]">Velvoro</a>
+      <button type="button" data-overlay-toggle aria-controls="site-menu" aria-expanded="false" class="flex items-center gap-3 font-wide text-[11px] uppercase tracking-[0.3em]"><span data-overlay-label>Menu</span><span class="grid h-9 w-9 place-items-center rounded-full border border-cream/60"><i class="fa-solid fa-plus text-xs" aria-hidden="true"></i></span></button>
+    </nav>
+    <div id="site-menu" class="menu-overlay fixed inset-0 -z-10 grid bg-ink/95 backdrop-blur md:grid-cols-[1.2fr_1fr]" data-overlay>
+      <ul class="flex flex-col justify-center gap-2 px-6 pt-24 md:px-16">
+          <li><a href="index.html" aria-current="page" class="group flex items-baseline gap-6 font-wide text-5xl font-extralight uppercase tracking-[0.15em] transition hover:text-rust md:text-7xl text-rust"><span class="text-xs tracking-[0.3em] text-cream/40">01</span>Home</a></li>
+          <li><a href="archive.html"  class="group flex items-baseline gap-6 font-wide text-5xl font-extralight uppercase tracking-[0.15em] transition hover:text-rust md:text-7xl "><span class="text-xs tracking-[0.3em] text-cream/40">02</span>Archive</a></li>
+          <li><a href="the-red-room.html"  class="group flex items-baseline gap-6 font-wide text-5xl font-extralight uppercase tracking-[0.15em] transition hover:text-rust md:text-7xl "><span class="text-xs tracking-[0.3em] text-cream/40">03</span>Stories</a></li>
+          <li><a href="about.html"  class="group flex items-baseline gap-6 font-wide text-5xl font-extralight uppercase tracking-[0.15em] transition hover:text-rust md:text-7xl "><span class="text-xs tracking-[0.3em] text-cream/40">04</span>About</a></li>
+          <li><a href="contact.html"  class="group flex items-baseline gap-6 font-wide text-5xl font-extralight uppercase tracking-[0.15em] transition hover:text-rust md:text-7xl "><span class="text-xs tracking-[0.3em] text-cream/40">05</span>Contact</a></li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&w=900&q=80" alt="" class="hidden h-full w-full object-cover opacity-70 md:block">
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section class="grid min-h-[min(100svh,62rem)] lg:grid-cols-2" data-house-swap>
+    <div class="relative min-h-[36rem] overflow-hidden bg-[#c9a28f]">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=1400&q=80" alt="Close-up of a red-haired model looking aside" class="absolute inset-0 h-full w-full scale-125 object-cover object-[60%_80%]">
+      <div class="gridlines absolute inset-0" aria-hidden="true"></div>
+      <svg class="absolute left-[18%] top-[22%] h-[42%] w-auto text-cream/50" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="98" fill="none" stroke="currentColor" stroke-width=".8"/></svg>
+      <p class="spaced absolute left-[12%] top-[36%] font-wide text-xs uppercase text-cream/90">Archive</p>
+      <div class="absolute bottom-0 left-0 h-[55%] w-[46%] bg-rust">
+        <img src="https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?auto=format&fit=crop&w=700&q=80" alt="Model in a white off-shoulder top leaning on a carved red door" class="h-full w-full object-cover mix-blend-multiply">
+      </div>
+      <div class="absolute bottom-0 right-0 h-[33%] w-[45%] border-l border-t border-cream/40">
+        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80" alt="Model in striped trousers posing against a teal wall" class="h-full w-full object-cover">
+      </div>
+      <span class="absolute bottom-[34%] right-[44%] font-wide text-[10px] tracking-[0.3em] text-cream/80">SS/26</span>
+    </div>
+    <div class="relative min-h-[36rem] overflow-hidden bg-olive">
+        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1400&q=80" alt="Woman with a nose ring against a dusty pink wall" data-house-image="0" class="swap-img absolute inset-0 h-full w-full object-cover " >
+        <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?auto=format&fit=crop&w=1400&q=80" alt="Black and white portrait with freckles and short curls" data-house-image="1" class="swap-img absolute inset-0 h-full w-full object-cover opacity-0" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&w=1400&q=80" alt="Profile of a woman bathed in violet light" data-house-image="2" class="swap-img absolute inset-0 h-full w-full object-cover opacity-0" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1400&q=80" alt="Bearded man in dramatic low light" data-house-image="3" class="swap-img absolute inset-0 h-full w-full object-cover opacity-0" aria-hidden="true">
+      <div class="absolute inset-0 bg-olive/35 mix-blend-multiply" aria-hidden="true"></div>
+      <div class="gridlines absolute inset-0 opacity-60" aria-hidden="true"></div>
+      <div class="relative flex h-full min-h-[36rem] flex-col justify-between px-6 pb-8 pt-28 md:px-10">
+        <span class="self-end text-2xl text-cream/80" aria-hidden="true">+</span>
+        <div class="text-center">
+          <h1 class="spaced font-wide text-4xl font-extralight uppercase md:text-6xl">Presents</h1>
+          <p class="spaced mt-3 font-wide text-[11px] uppercase text-cream/80">The archive</p>
+        </div>
+        <div>
+          <p class="font-wide text-sm uppercase tracking-[0.2em]">Best in show</p>
+          <ul class="mt-5 grid grid-cols-2 gap-3 text-sm text-cream/70 sm:flex sm:justify-between">
+              <li><a href="archive.html" data-house="0" class="border-b border-transparent pb-1 transition hover:border-cream hover:text-cream focus:border-cream focus:text-cream border-cream text-cream">Maison Orrel</a></li>
+              <li><a href="archive.html" data-house="1" class="border-b border-transparent pb-1 transition hover:border-cream hover:text-cream focus:border-cream focus:text-cream ">Castellane</a></li>
+              <li><a href="archive.html" data-house="2" class="border-b border-transparent pb-1 transition hover:border-cream hover:text-cream focus:border-cream focus:text-cream ">Ivo Brask</a></li>
+              <li><a href="archive.html" data-house="3" class="border-b border-transparent pb-1 transition hover:border-cream hover:text-cream focus:border-cream focus:text-cream ">Atelier Senne</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start about -->
+  <section class="bg-cream text-ink">
+    <div class="mx-auto max-w-5xl px-6 py-24 text-center md:py-36" data-reveal>
+      <p class="spaced font-wide text-[11px] uppercase text-olive">Since 2011</p>
+      <p class="mt-10 font-wide text-2xl font-extralight uppercase leading-relaxed tracking-[0.12em] md:text-4xl">We keep the pictures fashion forgets: the test shoots, the second takes, the frames between the frames.</p>
+      <a href="about.html" class="mt-12 inline-flex items-center gap-3 border-b border-ink pb-1 font-wide text-xs uppercase tracking-[0.3em] transition hover:gap-5">Our story <i class="fa-solid fa-arrow-right text-[10px]" aria-hidden="true"></i></a>
+    </div>
+  </section>
+  <!-- block:end about -->
+
+  <!-- block:start gallery -->
+  <section class="bg-slate" data-look-switch>
+    <div class="mx-auto max-w-7xl px-5 py-24 md:px-10">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <div>
+          <p class="spaced font-wide text-[11px] uppercase text-cream/60">Season 26</p>
+          <h2 class="mt-4 font-wide text-4xl font-extralight uppercase tracking-[0.15em] md:text-5xl">Looks</h2>
+        </div>
+        <div class="flex rounded-full border border-cream/30 p-1" role="group" aria-label="Choose a view">
+            <button type="button" data-look-view="runway" aria-pressed="true" class="rounded-full px-5 py-2 font-wide text-[11px] uppercase tracking-[0.25em] transition aria-pressed:bg-cream aria-pressed:text-ink">Runway</button>
+            <button type="button" data-look-view="backstage" aria-pressed="false" class="rounded-full px-5 py-2 font-wide text-[11px] uppercase tracking-[0.25em] transition aria-pressed:bg-cream aria-pressed:text-ink">Backstage</button>
+        </div>
+      </div>
+      <ul class="mt-12 grid gap-px bg-cream/15 sm:grid-cols-2 lg:grid-cols-4">
+          <li class="group bg-slate" data-reveal style="--reveal-delay: 0ms">
+            <a href="the-red-room.html" class="block p-4">
+              <span class="relative block aspect-[3/4] overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=700&q=80" alt="Red-haired model in a close portrait" data-look="runway" class="swap-img absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=700&q=80" alt="Model resting between takes against a pink wall" data-look="backstage" class="swap-img absolute inset-0 h-full w-full object-cover opacity-0 grayscale" loading="lazy" aria-hidden="true">
+              </span>
+              <span class="mt-4 flex items-baseline justify-between font-wide text-xs uppercase tracking-[0.25em]"><span>Look 01</span><span class="text-cream/60">Rust season</span></span>
+            </a>
+          </li>
+          <li class="group bg-slate" data-reveal style="--reveal-delay: 100ms">
+            <a href="the-red-room.html" class="block p-4">
+              <span class="relative block aspect-[3/4] overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=80" alt="Model in sheer black against a dark backdrop" data-look="runway" class="swap-img absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?auto=format&fit=crop&w=700&q=80" alt="Black and white portrait backstage" data-look="backstage" class="swap-img absolute inset-0 h-full w-full object-cover opacity-0 grayscale" loading="lazy" aria-hidden="true">
+              </span>
+              <span class="mt-4 flex items-baseline justify-between font-wide text-xs uppercase tracking-[0.25em]"><span>Look 02</span><span class="text-cream/60">Night study</span></span>
+            </a>
+          </li>
+          <li class="group bg-slate" data-reveal style="--reveal-delay: 200ms">
+            <a href="the-red-room.html" class="block p-4">
+              <span class="relative block aspect-[3/4] overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&w=700&q=80" alt="Profile of a model in violet light" data-look="runway" class="swap-img absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=700&q=80" alt="Model with lilac hair in soft daylight" data-look="backstage" class="swap-img absolute inset-0 h-full w-full object-cover opacity-0 grayscale" loading="lazy" aria-hidden="true">
+              </span>
+              <span class="mt-4 flex items-baseline justify-between font-wide text-xs uppercase tracking-[0.25em]"><span>Look 03</span><span class="text-cream/60">Violet hour</span></span>
+            </a>
+          </li>
+          <li class="group bg-slate" data-reveal style="--reveal-delay: 300ms">
+            <a href="the-red-room.html" class="block p-4">
+              <span class="relative block aspect-[3/4] overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=700&q=80" alt="Bearded model in dramatic shadow" data-look="runway" class="swap-img absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&w=700&q=80" alt="Model sitting below a round window" data-look="backstage" class="swap-img absolute inset-0 h-full w-full object-cover opacity-0 grayscale" loading="lazy" aria-hidden="true">
+              </span>
+              <span class="mt-4 flex items-baseline justify-between font-wide text-xs uppercase tracking-[0.25em]"><span>Look 04</span><span class="text-cream/60">Low light</span></span>
+            </a>
+          </li>
+      </ul>
+    </div>
+  </section>
+  <!-- block:end gallery -->
+
+  <!-- block:start demo -->
+  <section class="bg-ink" data-contact-sheet>
+    <div class="mx-auto grid max-w-7xl gap-12 px-5 py-24 md:px-10 lg:grid-cols-[1fr_2fr]">
+      <div>
+        <p class="spaced font-wide text-[11px] uppercase text-rust">Contact sheet</p>
+        <h2 class="mt-4 font-wide text-4xl font-extralight uppercase leading-tight tracking-[0.12em]">Make your picks</h2>
+        <p class="mt-6 max-w-sm text-sm leading-relaxed text-cream/70">This is how every story starts here: a roll of frames and a red pencil. Tap the frames you would print. We'll show you the ones our editors chose.</p>
+        <p class="mt-10 font-wide text-sm uppercase tracking-[0.2em]" aria-live="polite"><span data-pick-count>0</span> of 12 circled</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <button type="button" data-pick-editors class="border border-cream/40 px-5 py-2.5 font-wide text-[11px] uppercase tracking-[0.25em] transition hover:border-rust hover:text-rust">Editor's picks</button>
+          <button type="button" data-pick-clear class="px-5 py-2.5 font-wide text-[11px] uppercase tracking-[0.25em] text-cream/60 transition hover:text-cream">Clear</button>
+        </div>
+      </div>
+      <ol class="grid grid-cols-3 gap-2 rounded bg-[#151716] p-3 sm:grid-cols-4">
+          <li>
+            <button type="button" data-pick data-editor="false" aria-pressed="false" aria-label="Frame 01" class="relative block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-rust">
+              <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=70" alt="" class="aspect-[4/5] w-full object-cover grayscale-[.6] transition hover:grayscale-0" loading="lazy">
+              <span class="absolute bottom-1 left-1.5 font-mono text-[10px] text-[#e8b84a]">01A</span>
+              <svg class="pointer-events-none absolute -inset-1 h-[calc(100%+.5rem)] w-[calc(100%+.5rem)]" viewBox="0 0 100 120" preserveAspectRatio="none" aria-hidden="true"><path class="pick-ring" pathLength="100" d="M50 6C80 4 96 26 95 60s-18 56-48 55C17 114 4 92 5 60S20 8 54 7" fill="none" stroke="#b8382c" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-pick data-editor="true" aria-pressed="false" aria-label="Frame 02" class="relative block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-rust">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=70" alt="" class="aspect-[4/5] w-full object-cover grayscale-[.6] transition hover:grayscale-0" loading="lazy">
+              <span class="absolute bottom-1 left-1.5 font-mono text-[10px] text-[#e8b84a]">02A</span>
+              <svg class="pointer-events-none absolute -inset-1 h-[calc(100%+.5rem)] w-[calc(100%+.5rem)]" viewBox="0 0 100 120" preserveAspectRatio="none" aria-hidden="true"><path class="pick-ring" pathLength="100" d="M50 6C80 4 96 26 95 60s-18 56-48 55C17 114 4 92 5 60S20 8 54 7" fill="none" stroke="#b8382c" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-pick data-editor="false" aria-pressed="false" aria-label="Frame 03" class="relative block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-rust">
+              <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&q=70" alt="" class="aspect-[4/5] w-full object-cover grayscale-[.6] transition hover:grayscale-0" loading="lazy">
+              <span class="absolute bottom-1 left-1.5 font-mono text-[10px] text-[#e8b84a]">03A</span>
+              <svg class="pointer-events-none absolute -inset-1 h-[calc(100%+.5rem)] w-[calc(100%+.5rem)]" viewBox="0 0 100 120" preserveAspectRatio="none" aria-hidden="true"><path class="pick-ring" pathLength="100" d="M50 6C80 4 96 26 95 60s-18 56-48 55C17 114 4 92 5 60S20 8 54 7" fill="none" stroke="#b8382c" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-pick data-editor="false" aria-pressed="false" aria-label="Frame 04" class="relative block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-rust">
+              <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?auto=format&fit=crop&w=400&q=70" alt="" class="aspect-[4/5] w-full object-cover grayscale-[.6] transition hover:grayscale-0" loading="lazy">
+              <span class="absolute bottom-1 left-1.5 font-mono text-[10px] text-[#e8b84a]">04A</span>
+              <svg class="pointer-events-none absolute -inset-1 h-[calc(100%+.5rem)] w-[calc(100%+.5rem)]" viewBox="0 0 100 120" preserveAspectRatio="none" aria-hidden="true"><path class="pick-ring" pathLength="100" d="M50 6C80 4 96 26 95 60s-18 56-48 55C17 114 4 92 5 60S20 8 54 7" fill="none" stroke="#b8382c" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-pick data-editor="true" aria-pressed="false" aria-label="Frame 05" class="relative block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-rust">
+              <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&w=400&q=70" alt="" class="aspect-[4/5] w-full object-cover grayscale-[.6] transition hover:grayscale-0" loading="lazy">
+              <span class="absolute bottom-1 left-1.5 font-mono text-[10px] text-[#e8b84a]">05A</span>
+              <svg class="pointer-events-none absolute -inset-1 h-[calc(100%+.5rem)] w-[calc(100%+.5rem)]" viewBox="0 0 100 120" preserveAspectRatio="none" aria-hidden="true"><path class="pick-ring" pathLength="100" d="M50 6C80 4 96 26 95 60s-18 56-48 55C17 114 4 92 5 60S20 8 54 7" fill="none" stroke="#b8382c" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-pick data-editor="false" aria-pressed="false" aria-label="Frame 06" class="relative block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-rust">
+              <img src="https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?auto=format&fit=crop&w=400&q=70" alt="" class="aspect-[4/5] w-full object-cover grayscale-[.6] transition hover:grayscale-0" loading="lazy">
+              <span class="absolute bottom-1 left-1.5 font-mono text-[10px] text-[#e8b84a]">06A</span>
+              <svg class="pointer-events-none absolute -inset-1 h-[calc(100%+.5rem)] w-[calc(100%+.5rem)]" viewBox="0 0 100 120" preserveAspectRatio="none" aria-hidden="true"><path class="pick-ring" pathLength="100" d="M50 6C80 4 96 26 95 60s-18 56-48 55C17 114 4 92 5 60S20 8 54 7" fill="none" stroke="#b8382c" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-pick data-editor="true" aria-pressed="false" aria-label="Frame 07" class="relative block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-rust">
+              <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=400&q=70" alt="" class="aspect-[4/5] w-full object-cover grayscale-[.6] transition hover:grayscale-0" loading="lazy">
+              <span class="absolute bottom-1 left-1.5 font-mono text-[10px] text-[#e8b84a]">07A</span>
+              <svg class="pointer-events-none absolute -inset-1 h-[calc(100%+.5rem)] w-[calc(100%+.5rem)]" viewBox="0 0 100 120" preserveAspectRatio="none" aria-hidden="true"><path class="pick-ring" pathLength="100" d="M50 6C80 4 96 26 95 60s-18 56-48 55C17 114 4 92 5 60S20 8 54 7" fill="none" stroke="#b8382c" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-pick data-editor="false" aria-pressed="false" aria-label="Frame 08" class="relative block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-rust">
+              <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=400&q=70" alt="" class="aspect-[4/5] w-full object-cover grayscale-[.6] transition hover:grayscale-0" loading="lazy">
+              <span class="absolute bottom-1 left-1.5 font-mono text-[10px] text-[#e8b84a]">08A</span>
+              <svg class="pointer-events-none absolute -inset-1 h-[calc(100%+.5rem)] w-[calc(100%+.5rem)]" viewBox="0 0 100 120" preserveAspectRatio="none" aria-hidden="true"><path class="pick-ring" pathLength="100" d="M50 6C80 4 96 26 95 60s-18 56-48 55C17 114 4 92 5 60S20 8 54 7" fill="none" stroke="#b8382c" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-pick data-editor="false" aria-pressed="false" aria-label="Frame 09" class="relative block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-rust">
+              <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=400&q=70" alt="" class="aspect-[4/5] w-full object-cover grayscale-[.6] transition hover:grayscale-0" loading="lazy">
+              <span class="absolute bottom-1 left-1.5 font-mono text-[10px] text-[#e8b84a]">09A</span>
+              <svg class="pointer-events-none absolute -inset-1 h-[calc(100%+.5rem)] w-[calc(100%+.5rem)]" viewBox="0 0 100 120" preserveAspectRatio="none" aria-hidden="true"><path class="pick-ring" pathLength="100" d="M50 6C80 4 96 26 95 60s-18 56-48 55C17 114 4 92 5 60S20 8 54 7" fill="none" stroke="#b8382c" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-pick data-editor="false" aria-pressed="false" aria-label="Frame 10" class="relative block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-rust">
+              <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&w=400&q=70" alt="" class="aspect-[4/5] w-full object-cover grayscale-[.6] transition hover:grayscale-0" loading="lazy">
+              <span class="absolute bottom-1 left-1.5 font-mono text-[10px] text-[#e8b84a]">10A</span>
+              <svg class="pointer-events-none absolute -inset-1 h-[calc(100%+.5rem)] w-[calc(100%+.5rem)]" viewBox="0 0 100 120" preserveAspectRatio="none" aria-hidden="true"><path class="pick-ring" pathLength="100" d="M50 6C80 4 96 26 95 60s-18 56-48 55C17 114 4 92 5 60S20 8 54 7" fill="none" stroke="#b8382c" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-pick data-editor="true" aria-pressed="false" aria-label="Frame 11" class="relative block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-rust">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=70" alt="" class="aspect-[4/5] w-full object-cover grayscale-[.6] transition hover:grayscale-0" loading="lazy">
+              <span class="absolute bottom-1 left-1.5 font-mono text-[10px] text-[#e8b84a]">11A</span>
+              <svg class="pointer-events-none absolute -inset-1 h-[calc(100%+.5rem)] w-[calc(100%+.5rem)]" viewBox="0 0 100 120" preserveAspectRatio="none" aria-hidden="true"><path class="pick-ring" pathLength="100" d="M50 6C80 4 96 26 95 60s-18 56-48 55C17 114 4 92 5 60S20 8 54 7" fill="none" stroke="#b8382c" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-pick data-editor="false" aria-pressed="false" aria-label="Frame 12" class="relative block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-rust">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=400&q=70" alt="" class="aspect-[4/5] w-full object-cover grayscale-[.6] transition hover:grayscale-0" loading="lazy">
+              <span class="absolute bottom-1 left-1.5 font-mono text-[10px] text-[#e8b84a]">12A</span>
+              <svg class="pointer-events-none absolute -inset-1 h-[calc(100%+.5rem)] w-[calc(100%+.5rem)]" viewBox="0 0 100 120" preserveAspectRatio="none" aria-hidden="true"><path class="pick-ring" pathLength="100" d="M50 6C80 4 96 26 95 60s-18 56-48 55C17 114 4 92 5 60S20 8 54 7" fill="none" stroke="#b8382c" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </button>
+          </li>
+      </ol>
+    </div>
+  </section>
+  <!-- block:end demo -->
+
+  <!-- block:start events -->
+  <section class="bg-cream text-ink">
+    <div class="mx-auto max-w-6xl px-5 py-24 md:px-10">
+      <h2 class="font-wide text-4xl font-extralight uppercase tracking-[0.15em] md:text-5xl">Exhibitions</h2>
+      <ul class="mt-12 border-t border-ink/20" data-accordion>
+          <li class="border-b border-ink/20">
+            <button type="button" data-accordion-trigger aria-expanded="false" aria-controls="show-0" class="grid w-full items-center gap-2 py-7 text-left md:grid-cols-[12rem_10rem_1fr_auto] md:gap-6">
+              <span class="font-wide text-xs uppercase tracking-[0.2em] text-ink/60">14–28 Feb 2027</span>
+              <span class="font-wide text-xs uppercase tracking-[0.2em]">Milan</span>
+              <span class="font-wide text-2xl font-light uppercase tracking-[0.1em] md:text-3xl">The Second Take</span>
+              <span class="hidden h-10 w-10 place-items-center rounded-full border border-ink/30 md:grid"><i class="fa-solid fa-plus text-xs transition-transform" aria-hidden="true"></i></span>
+            </button>
+            <div id="show-0" hidden class="grid gap-6 pb-8 md:grid-cols-[12rem_10rem_1fr_auto] md:gap-6">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=80" alt="" class="aspect-[4/5] w-40 object-cover md:col-start-2 md:w-full" loading="lazy">
+              <div class="md:col-span-2">
+                <p class="max-w-md leading-relaxed text-ink/80">Outtakes from twenty years of spring collections, printed large for the first time.</p>
+                <a href="contact.html" class="mt-5 inline-flex border-b border-ink pb-1 font-wide text-xs uppercase tracking-[0.3em]">Book a private view</a>
+              </div>
+            </div>
+          </li>
+          <li class="border-b border-ink/20">
+            <button type="button" data-accordion-trigger aria-expanded="false" aria-controls="show-1" class="grid w-full items-center gap-2 py-7 text-left md:grid-cols-[12rem_10rem_1fr_auto] md:gap-6">
+              <span class="font-wide text-xs uppercase tracking-[0.2em] text-ink/60">3–19 Apr 2027</span>
+              <span class="font-wide text-xs uppercase tracking-[0.2em]">Copenhagen</span>
+              <span class="font-wide text-2xl font-light uppercase tracking-[0.1em] md:text-3xl">Red Room</span>
+              <span class="hidden h-10 w-10 place-items-center rounded-full border border-ink/30 md:grid"><i class="fa-solid fa-plus text-xs transition-transform" aria-hidden="true"></i></span>
+            </button>
+            <div id="show-1" hidden class="grid gap-6 pb-8 md:grid-cols-[12rem_10rem_1fr_auto] md:gap-6">
+              <img src="https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?auto=format&fit=crop&w=500&q=80" alt="" class="aspect-[4/5] w-40 object-cover md:col-start-2 md:w-full" loading="lazy">
+              <div class="md:col-span-2">
+                <p class="max-w-md leading-relaxed text-ink/80">One photographer, one colour, eighty portraits.</p>
+                <a href="contact.html" class="mt-5 inline-flex border-b border-ink pb-1 font-wide text-xs uppercase tracking-[0.3em]">Book a private view</a>
+              </div>
+            </div>
+          </li>
+          <li class="border-b border-ink/20">
+            <button type="button" data-accordion-trigger aria-expanded="false" aria-controls="show-2" class="grid w-full items-center gap-2 py-7 text-left md:grid-cols-[12rem_10rem_1fr_auto] md:gap-6">
+              <span class="font-wide text-xs uppercase tracking-[0.2em] text-ink/60">9–30 Jun 2027</span>
+              <span class="font-wide text-xs uppercase tracking-[0.2em]">Lisbon</span>
+              <span class="font-wide text-2xl font-light uppercase tracking-[0.1em] md:text-3xl">Between Frames</span>
+              <span class="hidden h-10 w-10 place-items-center rounded-full border border-ink/30 md:grid"><i class="fa-solid fa-plus text-xs transition-transform" aria-hidden="true"></i></span>
+            </button>
+            <div id="show-2" hidden class="grid gap-6 pb-8 md:grid-cols-[12rem_10rem_1fr_auto] md:gap-6">
+              <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?auto=format&fit=crop&w=500&q=80" alt="" class="aspect-[4/5] w-40 object-cover md:col-start-2 md:w-full" loading="lazy">
+              <div class="md:col-span-2">
+                <p class="max-w-md leading-relaxed text-ink/80">Contact sheets, notes and the pictures nobody chose.</p>
+                <a href="contact.html" class="mt-5 inline-flex border-b border-ink pb-1 font-wide text-xs uppercase tracking-[0.3em]">Book a private view</a>
+              </div>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </section>
+  <!-- block:end events -->
+
+  <!-- block:start newsletter -->
+  <section class="bg-olive">
+    <div class="mx-auto max-w-4xl px-5 py-24">
+      <div class="relative grid overflow-hidden bg-cream text-ink shadow-2xl md:grid-cols-[1fr_auto]">
+        <div class="p-8 md:p-12">
+          <p class="spaced font-wide text-[11px] uppercase text-rust">Invitation</p>
+          <h2 class="mt-5 font-wide text-3xl font-extralight uppercase leading-tight tracking-[0.12em] md:text-4xl">Opening nights, by letter</h2>
+          <p class="mt-4 max-w-md text-sm leading-relaxed text-ink/70">Four times a year we send a printed-feeling note with new stories and private views. No noise.</p>
+          <form data-contact-form data-error="Please enter a valid email address." data-success="You're on the list. Watch your inbox." class="mt-8 flex flex-col gap-3 sm:flex-row" novalidate>
+            <label class="sr-only" for="invite-email">Email address</label>
+            <input id="invite-email" type="email" name="email" required autocomplete="email" placeholder="your@email.com" class="min-w-0 flex-1 border-b border-ink/40 bg-transparent py-3 font-wide tracking-wider placeholder:text-ink/40 focus:border-ink focus:outline-none">
+            <button type="submit" class="bg-ink px-7 py-3 font-wide text-[11px] uppercase tracking-[0.3em] text-cream transition hover:bg-rust">Request</button>
+          </form>
+          <p data-form-status class="mt-3 text-sm text-olive-deep" role="status" aria-live="polite"></p>
+        </div>
+        <div class="flex items-center justify-between gap-4 border-t border-dashed border-ink/30 px-8 py-6 md:w-44 md:flex-col md:border-l md:border-t-0 md:py-10" aria-hidden="true">
+          <span class="font-wide text-[10px] uppercase tracking-[0.3em] text-ink/50 md:[writing-mode:vertical-rl]">Admit one</span>
+          <span class="grid h-20 w-20 place-items-center rounded-full border border-rust font-wide text-xs uppercase tracking-[0.2em] text-rust">VLV</span>
+          <span class="font-mono text-xs text-ink/50">No. 0412</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end newsletter -->
+
+  <!-- block:start footer -->
+  <footer class="bg-slate">
+    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 md:grid-cols-4 md:px-10">
+      <div>
+        <a href="index.html" class="border border-cream px-2 py-1 font-wide text-[11px] font-medium uppercase tracking-[0.3em]">Velvoro</a>
+        <p class="mt-6 max-w-xs text-sm leading-relaxed text-cream/60">A fashion photography archive, publishing stories from the edit since 2011.</p>
+      </div>
+      <div>
+        <p class="font-wide text-[11px] uppercase tracking-[0.3em] text-cream/50">Explore</p>
+        <ul class="mt-4 grid gap-2 text-sm">
+          <li><a href="archive.html" class="text-cream/80 transition hover:text-rust">Archive</a></li><li><a href="the-red-room.html" class="text-cream/80 transition hover:text-rust">Stories</a></li><li><a href="about.html" class="text-cream/80 transition hover:text-rust">About</a></li><li><a href="contact.html" class="text-cream/80 transition hover:text-rust">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-wide text-[11px] uppercase tracking-[0.3em] text-cream/50">Studio</p>
+        <p class="mt-4 text-sm leading-relaxed text-cream/80">Via Tortona 18<br>20144 Milan<br><a href="mailto:archive@velvoro.studio" class="underline">archive@velvoro.studio</a></p>
+      </div>
+      <div>
+        <p class="font-wide text-[11px] uppercase tracking-[0.3em] text-cream/50">Follow</p>
+        <ul class="mt-4 flex gap-4">
+            <li><a href="https://www.instagram.com" aria-label="Instagram" class="grid h-10 w-10 place-items-center rounded-full border border-cream/30 transition hover:border-rust hover:text-rust"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.pinterest.com" aria-label="Pinterest" class="grid h-10 w-10 place-items-center rounded-full border border-cream/30 transition hover:border-rust hover:text-rust"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a href="https://vimeo.com" aria-label="Vimeo" class="grid h-10 w-10 place-items-center rounded-full border border-cream/30 transition hover:border-rust hover:text-rust"><i class="fa-brands fa-vimeo-v" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="border-t border-cream/10 px-5 py-6 text-center font-wide text-[10px] uppercase tracking-[0.3em] text-cream/40 md:px-10">&copy; <span data-current-year>2026</span> Velvoro Archive</p>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    document.querySelectorAll('[data-overlay-toggle]').forEach((button) => {
+      const overlay = document.getElementById(button.getAttribute('aria-controls'));
+      const label = button.querySelector('[data-overlay-label]');
+      const set = (open) => {
+        button.setAttribute('aria-expanded', String(open));
+        overlay.classList.toggle('is-open', open);
+        if (label) label.textContent = open ? 'Close' : 'Menu';
+        button.querySelector('svg, i')?.classList.toggle('rotate-45', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      };
+      button.addEventListener('click', () => set(button.getAttribute('aria-expanded') !== 'true'));
+      document.addEventListener('keydown', (event) => { if (event.key === 'Escape') set(false); });
+    });
+
+    document.querySelectorAll('[data-house-swap]').forEach((root) => {
+      const images = [...root.querySelectorAll('[data-house-image]')];
+      const links = [...root.querySelectorAll('[data-house]')];
+      const show = (index) => {
+        images.forEach((image) => {
+          const on = image.dataset.houseImage === index;
+          image.classList.toggle('opacity-0', !on);
+          image.toggleAttribute('aria-hidden', !on);
+        });
+        links.forEach((link) => link.classList.toggle('border-cream', link.dataset.house === index));
+        links.forEach((link) => link.classList.toggle('text-cream', link.dataset.house === index));
+      };
+      links.forEach((link) => {
+        link.addEventListener('mouseenter', () => show(link.dataset.house));
+        link.addEventListener('focus', () => show(link.dataset.house));
+      });
+    });
+
+    document.querySelectorAll('[data-look-switch]').forEach((root) => {
+      root.querySelectorAll('[data-look-view]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const view = button.dataset.lookView;
+          root.querySelectorAll('[data-look-view]').forEach((other) => other.setAttribute('aria-pressed', String(other === button)));
+          root.querySelectorAll('[data-look]').forEach((image) => {
+            const on = image.dataset.look === view;
+            image.classList.toggle('opacity-0', !on);
+            image.toggleAttribute('aria-hidden', !on);
+          });
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-contact-sheet]').forEach((sheet) => {
+      const frames = [...sheet.querySelectorAll('[data-pick]')];
+      const count = sheet.querySelector('[data-pick-count]');
+      const update = () => { count.textContent = frames.filter((frame) => frame.getAttribute('aria-pressed') === 'true').length; };
+      frames.forEach((frame) => frame.addEventListener('click', () => {
+        frame.setAttribute('aria-pressed', String(frame.getAttribute('aria-pressed') !== 'true'));
+        update();
+      }));
+      sheet.querySelector('[data-pick-editors]')?.addEventListener('click', () => {
+        frames.forEach((frame) => frame.setAttribute('aria-pressed', frame.dataset.editor));
+        update();
+      });
+      sheet.querySelector('[data-pick-clear]')?.addEventListener('click', () => {
+        frames.forEach((frame) => frame.setAttribute('aria-pressed', 'false'));
+        update();
+      });
+    });
+
+    document.querySelectorAll('[data-accordion]').forEach((accordion) => {
+      accordion.querySelectorAll('[data-accordion-trigger]').forEach((trigger) => {
+        const panel = document.getElementById(trigger.getAttribute('aria-controls'));
+        trigger.addEventListener('click', () => {
+          const open = trigger.getAttribute('aria-expanded') !== 'true';
+          trigger.setAttribute('aria-expanded', String(open));
+          panel.hidden = !open;
+          (trigger.querySelector('svg') || trigger.querySelector('i'))?.classList.toggle('rotate-45', open);
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-sort-table]').forEach((table) => {
+      const body = table.querySelector('tbody');
+      table.querySelectorAll('[data-sort]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const key = button.dataset.sort;
+          const ascending = button.getAttribute('aria-sort') !== 'ascending';
+          table.querySelectorAll('[data-sort]').forEach((other) => other.removeAttribute('aria-sort'));
+          button.setAttribute('aria-sort', ascending ? 'ascending' : 'descending');
+          [...body.rows]
+            .sort((a, b) => a.dataset[key].localeCompare(b.dataset[key], undefined, { numeric: true }) * (ascending ? 1 : -1))
+            .forEach((row) => body.append(row));
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-chat-form]').forEach((form) => {
+      const steps = [...form.querySelectorAll('[data-chat-step]')];
+      const log = form.querySelector('[data-chat-log]');
+      const status = form.querySelector('[data-form-status]');
+      let current = 0;
+      const show = (index) => steps.forEach((step, i) => { step.hidden = i !== index; });
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const field = steps[current].querySelector('[name]');
+        if (!field.checkValidity() || !String(field.value || '').trim()) {
+          status.textContent = 'Could you answer that one first?';
+          field.focus();
+          return;
+        }
+        status.textContent = '';
+        const bubble = document.createElement('li');
+        bubble.className = 'ml-auto max-w-[80%] rounded-2xl rounded-br-sm bg-rust px-4 py-3 text-cream';
+        bubble.textContent = field.value;
+        log.append(bubble);
+        current += 1;
+        if (current < steps.length) {
+          const question = document.createElement('li');
+          question.className = 'max-w-[80%] rounded-2xl rounded-bl-sm bg-cream/10 px-4 py-3';
+          question.textContent = steps[current].dataset.question;
+          log.append(question);
+          show(current);
+          steps[current].querySelector('[name]').focus();
+        } else {
+          show(-1);
+          const done = document.createElement('li');
+          done.className = 'max-w-[80%] rounded-2xl rounded-bl-sm bg-cream/10 px-4 py-3';
+          done.textContent = form.dataset.success;
+          log.append(done);
+          status.textContent = form.dataset.success;
+        }
+      });
+      show(0);
+    });
+
+    document.querySelectorAll('[data-contact-form]').forEach((form) => {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const status = form.parentElement.querySelector('[data-form-status]');
+        if (!form.checkValidity()) {
+          status.textContent = form.dataset.error;
+          form.querySelector(':invalid')?.focus();
+          return;
+        }
+        status.textContent = form.dataset.success;
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    (() => {
+      const items = document.querySelectorAll('[data-reveal]');
+      const skip = navigator.webdriver || !('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=velvoro&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

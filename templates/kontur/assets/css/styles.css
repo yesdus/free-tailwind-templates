@@ -1,0 +1,16 @@
+@view-transition { navigation: auto; }
+    html { scroll-behavior: smooth; }
+    [hidden] { display: none !important; }
+    .outline-type { color: transparent; -webkit-text-stroke: 1.5px #f4f4f0; }
+    .outline-volt { color: transparent; -webkit-text-stroke: 1.5px #d6ff3c; }
+    .fill-hover { transition: color .3s ease; }
+    .fill-hover:hover, .fill-hover:focus-visible { color: #f4f4f0; }
+    .vertical { writing-mode: vertical-rl; transform: rotate(180deg); }
+    .marquee-track { animation: marquee 40s linear infinite; }
+    @keyframes marquee { to { transform: translateX(-50%); } }
+    .reveal-ready [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; transition-delay: var(--reveal-delay, 0ms); }
+    .reveal-ready [data-reveal].is-visible { opacity: 1; transform: none; }
+    .cursor-ring { position: fixed; left: 0; top: 0; width: 28px; height: 28px; margin: -14px 0 0 -14px; border: 1px solid #f4f4f0; border-radius: 9999px; pointer-events: none; z-index: 60; transition: width .2s, height .2s, margin .2s, background .2s; mix-blend-mode: difference; }
+    .cursor-ring.is-hover { width: 56px; height: 56px; margin: -28px 0 0 -28px; background: #f4f4f0; }
+    dialog::backdrop { background: rgba(10, 10, 10, .9); }
+    @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }

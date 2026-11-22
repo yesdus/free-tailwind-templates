@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velmora | Tailwind CSS Agency Template</title>
+  <meta name="description" content="Velmora is a calm Tailwind CSS interior design studio template with an organic photo hero, scrolling room gallery, service icons, project spotlights, a process map, material swatches and testimonials.">
+  <meta name="keywords" content="Velmora, Tailwind CSS template, HTML website template, interior design template, architecture studio, design agency, portfolio, case studies">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Velmora | Tailwind CSS Agency Template">
+  <meta property="og:description" content="A calm Tailwind CSS interior design studio template with an organic photo hero, scrolling room gallery, project spotlights, a process map and material swatches.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Velmora template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Velmora | Tailwind CSS Agency Template">
+  <meta name="twitter:description" content="A calm Tailwind CSS interior design studio template with an organic photo hero, scrolling room gallery, project spotlights, a process map and material swatches.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Velmora template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#121212',
+            stone: '#f4f4f4',
+            ember: '#e5483d'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white font-sans text-ink antialiased">
+  <!-- block:start navbar -->
+  <header class="relative z-30">
+    <div class="mx-auto flex max-w-[1680px] items-start justify-between px-6 py-6 lg:px-8">
+      <a href="index.html" class="text-2xl tracking-[0.18em]" aria-label="Velmora home">VELM<span class="relative">O<span class="absolute -top-1.5 left-0 right-0 h-px bg-current"></span></span>RA</a>
+      <nav class="hidden gap-24 text-lg md:flex" aria-label="Main">
+          <ul class="space-y-1.5">
+              <li><a href="resources.html"  class="transition hover:text-ember ">Resources</a></li>
+              <li><a href="enterprise.html"  class="transition hover:text-ember ">Enterprise</a></li>
+          </ul>
+          <ul class="space-y-1.5">
+              <li><a href="work.html"  class="transition hover:text-ember ">Work</a></li>
+              <li><a href="services.html"  class="transition hover:text-ember ">Services</a></li>
+              <li><a href="process.html"  class="transition hover:text-ember ">Process</a></li>
+          </ul>
+      </nav>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="flex h-10 w-10 items-center justify-center rounded-full border border-ink/20 md:hidden">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="absolute inset-x-4 top-full hidden rounded-2xl bg-white p-3 shadow-2xl md:hidden" aria-label="Mobile">
+      <ul class="flex flex-col">
+          <li><a href="index.html" aria-current="page" class="block rounded-xl px-4 py-3 text-lg bg-stone text-ember">Home</a></li>
+          <li><a href="work.html"  class="block rounded-xl px-4 py-3 text-lg hover:bg-stone">Work</a></li>
+          <li><a href="services.html"  class="block rounded-xl px-4 py-3 text-lg hover:bg-stone">Services</a></li>
+          <li><a href="process.html"  class="block rounded-xl px-4 py-3 text-lg hover:bg-stone">Process</a></li>
+          <li><a href="resources.html"  class="block rounded-xl px-4 py-3 text-lg hover:bg-stone">Resources</a></li>
+          <li><a href="enterprise.html"  class="block rounded-xl px-4 py-3 text-lg hover:bg-stone">Enterprise</a></li>
+          <li><a href="contact.html"  class="block rounded-xl px-4 py-3 text-lg hover:bg-stone">Start a space</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="fixed left-0 top-1/2 z-40 hidden -translate-y-1/2 rounded-r-lg bg-ink px-3 py-6 text-sm text-white transition hover:bg-ember md:block" style="writing-mode: vertical-rl">Start a space</a>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section id="intro" class="relative -mt-24 overflow-hidden px-6 pb-24 pt-40 md:pt-48">
+    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1800&q=70" alt="" aria-hidden="true" class="sketch pointer-events-none absolute inset-0 h-full w-full object-cover">
+    <div class="relative mx-auto max-w-6xl text-center">
+      <h1 data-reveal class="text-5xl font-medium leading-[1.05] tracking-tight md:text-7xl lg:text-[6.5rem]">Shaping how<br>a room feels.</h1>
+      <div class="relative mx-auto mt-4 max-w-4xl">
+        <div data-reveal class="blob mx-auto aspect-[4/3] w-full max-w-2xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80" alt="Open-plan living room with a timber feature wall and soft grey sofa" class="h-full w-full object-cover">
+        </div>
+        <div data-reveal style="--reveal-delay: 200ms" class="blob-small absolute -right-2 bottom-6 hidden aspect-square w-48 overflow-hidden md:block lg:-right-16">
+          <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=500&q=80" alt="Close up of a burnt orange sofa with a pink cushion" class="h-full w-full object-cover">
+        </div>
+      </div>
+      <p data-reveal class="mx-auto mt-10 max-w-xs text-lg leading-snug">We turn light, volume and quiet into rooms you actually want to live in.</p>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start marquee -->
+  <section class="marquee overflow-hidden" aria-label="Recent rooms">
+    <ul class="marquee-track flex w-max gap-3">
+        <li class="h-72 w-64 shrink-0 overflow-hidden rounded-2xl md:h-[26rem] md:w-[28rem]" >
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Bedroom with an upholstered headboard and soft linen" class="h-full w-full object-cover" loading="lazy">
+        </li>
+        <li class="h-72 w-64 shrink-0 overflow-hidden rounded-2xl md:h-[26rem] md:w-[28rem]" >
+          <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=80" alt="Grey sofa with teal cushions under a bright window" class="h-full w-full object-cover" loading="lazy">
+        </li>
+        <li class="h-72 w-64 shrink-0 overflow-hidden rounded-2xl md:h-[26rem] md:w-[28rem]" >
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80" alt="Yellow armchair beside a floor lamp and framed print" class="h-full w-full object-cover" loading="lazy">
+        </li>
+        <li class="h-72 w-64 shrink-0 overflow-hidden rounded-2xl md:h-[26rem] md:w-[28rem]" >
+          <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=900&q=80" alt="Living room with a deep green wall and leather sofa" class="h-full w-full object-cover" loading="lazy">
+        </li>
+        <li class="h-72 w-64 shrink-0 overflow-hidden rounded-2xl md:h-[26rem] md:w-[28rem]" >
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=900&q=80" alt="Pastel lounge with blush armchairs and a woven wall hanging" class="h-full w-full object-cover" loading="lazy">
+        </li>
+        <li class="h-72 w-64 shrink-0 overflow-hidden rounded-2xl md:h-[26rem] md:w-[28rem]" >
+          <img src="https://images.unsplash.com/photo-1617104678098-de229db51175?auto=format&fit=crop&w=900&q=80" alt="Dark bedroom with a garden view" class="h-full w-full object-cover" loading="lazy">
+        </li>
+        <li class="h-72 w-64 shrink-0 overflow-hidden rounded-2xl md:h-[26rem] md:w-[28rem]" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="" class="h-full w-full object-cover" loading="lazy">
+        </li>
+        <li class="h-72 w-64 shrink-0 overflow-hidden rounded-2xl md:h-[26rem] md:w-[28rem]" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=80" alt="" class="h-full w-full object-cover" loading="lazy">
+        </li>
+        <li class="h-72 w-64 shrink-0 overflow-hidden rounded-2xl md:h-[26rem] md:w-[28rem]" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80" alt="" class="h-full w-full object-cover" loading="lazy">
+        </li>
+        <li class="h-72 w-64 shrink-0 overflow-hidden rounded-2xl md:h-[26rem] md:w-[28rem]" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=900&q=80" alt="" class="h-full w-full object-cover" loading="lazy">
+        </li>
+        <li class="h-72 w-64 shrink-0 overflow-hidden rounded-2xl md:h-[26rem] md:w-[28rem]" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=900&q=80" alt="" class="h-full w-full object-cover" loading="lazy">
+        </li>
+        <li class="h-72 w-64 shrink-0 overflow-hidden rounded-2xl md:h-[26rem] md:w-[28rem]" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1617104678098-de229db51175?auto=format&fit=crop&w=900&q=80" alt="" class="h-full w-full object-cover" loading="lazy">
+        </li>
+    </ul>
+  </section>
+  <!-- block:end marquee -->
+
+  <!-- block:start about -->
+  <section id="philosophy" class="mx-auto max-w-[1680px] px-6 py-24 lg:px-14">
+    <div class="grid gap-12 lg:grid-cols-[minmax(0,1fr)_340px]">
+      <div>
+        <p data-reveal class="text-sm uppercase tracking-wide">[Philosophy]</p>
+        <h2 data-reveal class="mt-4 max-w-3xl text-4xl font-medium leading-tight tracking-tight md:text-6xl">We design how you move, rest, gather and slip away.</h2>
+        <div class="mt-16 grid gap-8 md:ml-[34%] md:grid-cols-2">
+          <p data-reveal><span class="text-ink/50">Mission:</span> To create rooms that quietly guide behaviour, where light, proportion and material work as one.</p>
+          <p data-reveal style="--reveal-delay: 90ms"><span class="text-ink/50">Vision:</span> To treat interiors as applied psychology, shaping how people feel, move and connect at home and at work.</p>
+        </div>
+      </div>
+      <ul class="relative mx-auto h-80 w-80" aria-hidden="true">
+          <li data-reveal style="--reveal-delay: 0ms" class="absolute h-16 w-16 overflow-hidden rounded-full left-[18%] top-[6%]"><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=200&h=200&q=70" alt="" class="h-full w-full object-cover"></li>
+          <li data-reveal style="--reveal-delay: 60ms" class="absolute h-16 w-16 overflow-hidden rounded-full left-[50%] top-0"><img src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?auto=format&fit=crop&w=200&h=200&q=70" alt="" class="h-full w-full object-cover"></li>
+          <li data-reveal style="--reveal-delay: 120ms" class="absolute h-16 w-16 overflow-hidden rounded-full left-[6%] top-[30%]"><img src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=200&h=200&q=70" alt="" class="h-full w-full object-cover"></li>
+          <li data-reveal style="--reveal-delay: 180ms" class="absolute h-16 w-16 overflow-hidden rounded-full right-[2%] top-[30%]"><img src="https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?auto=format&fit=crop&w=200&h=200&q=70" alt="" class="h-full w-full object-cover"></li>
+          <li data-reveal style="--reveal-delay: 240ms" class="absolute h-16 w-16 overflow-hidden rounded-full left-[38%] top-[44%]"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=200&h=200&q=70" alt="" class="h-full w-full object-cover"></li>
+          <li data-reveal style="--reveal-delay: 300ms" class="absolute h-16 w-16 overflow-hidden rounded-full right-[12%] top-[55%]"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=200&h=200&q=70" alt="" class="h-full w-full object-cover"></li>
+          <li data-reveal style="--reveal-delay: 360ms" class="absolute h-16 w-16 overflow-hidden rounded-full left-[16%] top-[62%]"><img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=200&h=200&q=70" alt="" class="h-full w-full object-cover"></li>
+          <li data-reveal style="--reveal-delay: 420ms" class="absolute h-16 w-16 overflow-hidden rounded-full left-[46%] top-[80%]"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=200&h=200&q=70" alt="" class="h-full w-full object-cover"></li>
+      </ul>
+    </div>
+  </section>
+  <figure class="mx-auto max-w-[1680px]">
+    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=2000&q=80" alt="Sunlit living room with plants, open shelving and a pink lounge chair" class="aspect-[16/9] w-full object-cover md:aspect-[21/10]">
+  </figure>
+  <!-- block:end about -->
+
+  <!-- block:start features -->
+  <section id="services" class="mx-auto max-w-[1680px] px-6 py-28 text-center lg:px-14">
+    <p data-reveal class="text-sm uppercase tracking-wide">[Services]</p>
+    <h2 data-reveal class="mt-4 text-4xl font-medium tracking-tight md:text-5xl">Shaping behaviour through space.</h2>
+    <div class="mt-20 grid gap-16 sm:grid-cols-2 lg:grid-cols-4">
+        <article data-reveal style="--reveal-delay: 0ms" class="flex flex-col items-center">
+          <div class="relative h-52 w-52">
+            <span class="absolute inset-6 rounded-xl bg-stone"></span>
+            <svg viewBox="0 0 200 200" class="absolute inset-0 h-full w-full" aria-hidden="true">
+              <path d="M100 8 L190 190 L12 150 Z" fill="none" stroke="#1f6fb2" stroke-width="1.6" stroke-linejoin="round"></path>
+              <path d="M86 70 C92 52 108 52 114 70 L124 84 C132 92 128 100 118 104 L124 122 C126 132 118 136 100 136 C82 136 74 132 76 122 L82 104 C72 100 68 92 76 84 Z" fill="#232323"></path>
+            </svg>
+          </div>
+          <h3 class="mt-6 text-2xl font-medium">Spatial Planning</h3>
+          <p class="mt-2 text-ink/70">Flow before finishes</p>
+        </article>
+        <article data-reveal style="--reveal-delay: 90ms" class="flex flex-col items-center">
+          <div class="relative h-52 w-52">
+            <span class="absolute inset-6 rounded-xl bg-stone"></span>
+            <svg viewBox="0 0 200 200" class="absolute inset-0 h-full w-full" aria-hidden="true">
+              <path d="M40 10 L120 28 L122 70 L176 96 L140 190 L50 182 L18 120 Z" fill="none" stroke="#d9443a" stroke-width="1.6" stroke-linejoin="round"></path>
+              <path d="M84 66 C96 56 110 66 112 80 C126 86 122 104 116 116 L104 136 C98 140 92 136 82 124 C76 112 78 96 80 84 Z" fill="#232323"></path>
+            </svg>
+          </div>
+          <h3 class="mt-6 text-2xl font-medium">Lighting Design</h3>
+          <p class="mt-2 text-ink/70">Shadows on purpose</p>
+        </article>
+        <article data-reveal style="--reveal-delay: 180ms" class="flex flex-col items-center">
+          <div class="relative h-52 w-52">
+            <span class="absolute inset-6 rounded-xl bg-stone"></span>
+            <svg viewBox="0 0 200 200" class="absolute inset-0 h-full w-full" aria-hidden="true">
+              <path d="M48 8 L96 60 L110 46 L172 58 L172 182 L118 156 L58 190 L20 104 Z" fill="none" stroke="#2fa53a" stroke-width="1.6" stroke-linejoin="round"></path>
+              <path d="M70 112 L86 74 C92 66 98 70 98 78 L104 92 L112 70 C116 62 126 64 126 72 L128 126 C128 132 120 134 116 128 L104 108 L90 128 C84 134 74 130 72 122 Z" fill="#232323"></path>
+            </svg>
+          </div>
+          <h3 class="mt-6 text-2xl font-medium">Custom Furniture</h3>
+          <p class="mt-2 text-ink/70">Pieces that belong</p>
+        </article>
+        <article data-reveal style="--reveal-delay: 270ms" class="flex flex-col items-center">
+          <div class="relative h-52 w-52">
+            <span class="absolute inset-6 rounded-xl bg-stone"></span>
+            <svg viewBox="0 0 200 200" class="absolute inset-0 h-full w-full" aria-hidden="true">
+              <path d="M54 8 L96 70 L180 14 L160 116 L120 186 L36 156 L12 96 Z" fill="none" stroke="#c58a10" stroke-width="1.6" stroke-linejoin="round"></path>
+              <path d="M66 88 L90 76 L108 88 L130 80 L156 88 C160 92 158 98 152 102 L108 136 C102 140 96 138 92 132 Z" fill="#232323"></path>
+            </svg>
+          </div>
+          <h3 class="mt-6 text-2xl font-medium">Material Direction</h3>
+          <p class="mt-2 text-ink/70">Texture you can feel</p>
+        </article>
+    </div>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start gallery -->
+  <section id="spaces" class="mx-auto max-w-[1680px] px-6 pb-28 lg:px-14">
+    <div class="text-center">
+      <p data-reveal class="text-sm uppercase tracking-wide">[Selected spaces]</p>
+      <h2 data-reveal class="mx-auto mt-4 max-w-3xl text-4xl font-medium tracking-tight md:text-5xl">Made for lazy Sundays and second cups of coffee.</h2>
+    </div>
+    <div class="mt-16 grid gap-3 lg:grid-cols-2">
+        <a href="sunday-loft.html" data-reveal style="--reveal-delay: 0ms" class="group relative block aspect-[4/3] overflow-hidden rounded-2xl">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=80" alt="Bright living room with a leather sofa and gallery wall" class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+          <div class="absolute right-4 top-4 w-[19rem] max-w-[calc(100%-2rem)] rounded-xl bg-neutral-600/40 p-6 text-white backdrop-blur-xl">
+            <div class="flex items-start justify-between gap-4">
+              <h3 class="text-3xl font-medium leading-tight">Sunday Loft</h3>
+              <i class="fa-solid fa-arrow-up rotate-45 transition group-hover:-translate-y-0.5" aria-hidden="true"></i>
+            </div>
+            <p class="mt-2 text-sm text-white/80">Lisbon, 2025</p>
+            <dl class="mt-8 divide-y divide-white/25 border-t border-white/25 text-sm">
+                <div class="flex justify-between py-2.5"><dt>Type:</dt><dd class="text-white/80">Residential</dd></div>
+                <div class="flex justify-between py-2.5"><dt>Size:</dt><dd class="text-white/80">96 m²</dd></div>
+                <div class="flex justify-between py-2.5"><dt>Scope:</dt><dd class="text-white/80">Interior Design</dd></div>
+            </dl>
+          </div>
+        </a>
+        <a href="ember-cafe.html" data-reveal style="--reveal-delay: 100ms" class="group relative block aspect-[4/3] overflow-hidden rounded-2xl">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=80" alt="Café with plants, rattan chairs and a chalkboard menu" class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+          <div class="absolute right-4 top-4 w-[19rem] max-w-[calc(100%-2rem)] rounded-xl bg-black/40 p-6 text-white backdrop-blur-xl">
+            <div class="flex items-start justify-between gap-4">
+              <h3 class="text-3xl font-medium leading-tight">Ember Corner Café</h3>
+              <i class="fa-solid fa-arrow-up rotate-45 transition group-hover:-translate-y-0.5" aria-hidden="true"></i>
+            </div>
+            <p class="mt-2 text-sm text-white/80">Porto, 2026</p>
+            <dl class="mt-8 divide-y divide-white/25 border-t border-white/25 text-sm">
+                <div class="flex justify-between py-2.5"><dt>Type:</dt><dd class="text-white/80">Hospitality</dd></div>
+                <div class="flex justify-between py-2.5"><dt>Size:</dt><dd class="text-white/80">150 m²</dd></div>
+                <div class="flex justify-between py-2.5"><dt>Scope:</dt><dd class="text-white/80">Material Direction</dd></div>
+            </dl>
+          </div>
+        </a>
+    </div>
+  </section>
+  <!-- block:end gallery -->
+
+  <!-- block:start process -->
+  <section id="process" class="mx-auto max-w-[1680px] px-6 pb-28 lg:px-14">
+    <div class="text-center">
+      <p data-reveal class="text-sm uppercase tracking-wide">[Process]</p>
+      <h2 data-reveal class="mt-4 text-4xl font-medium tracking-tight md:text-5xl">Teaching rooms to feel something.</h2>
+    </div>
+    <ol class="mt-14 space-y-6 md:hidden">
+        <li class="flex items-center gap-5"><span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-stone text-lg">01</span><span><span class="block text-2xl font-medium">Listen</span><span class="text-ink/70">We watch how you live</span></span></li>
+        <li class="flex items-center gap-5"><span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-stone text-lg">02</span><span><span class="block text-2xl font-medium">Interpret</span><span class="text-ink/70">Habits become geometry</span></span></li>
+        <li class="flex items-center gap-5"><span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-stone text-lg">03</span><span><span class="block text-2xl font-medium">Compose</span><span class="text-ink/70">The space finds its rhythm</span></span></li>
+        <li class="flex items-center gap-5"><span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-stone text-lg">04</span><span><span class="block text-2xl font-medium">Build</span><span class="text-ink/70">Makers follow the story</span></span></li>
+        <li class="flex items-center gap-5"><span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-stone text-lg">05</span><span><span class="block text-2xl font-medium">Live</span><span class="text-ink/70">The room grows with you</span></span></li>
+    </ol>
+    <div class="relative mx-auto mt-16 hidden h-[760px] max-w-6xl md:block" aria-hidden="false">
+      <svg viewBox="0 0 1000 760" preserveAspectRatio="none" class="absolute inset-0 h-full w-full" aria-hidden="true">
+        <g stroke="#e5483d" stroke-width="1.2" fill="none">
+          <line x1="40" y1="110" x2="320" y2="640"></line>
+          <line x1="280" y1="250" x2="320" y2="640"></line>
+          <line x1="700" y1="190" x2="320" y2="640"></line>
+          <line x1="560" y1="470" x2="320" y2="640"></line>
+          <line x1="860" y1="600" x2="320" y2="640"></line>
+        </g>
+      </svg>
+      <span class="absolute left-[32%] top-[84.2%] flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-ember text-white" aria-hidden="true"><i class="fa-solid fa-cube text-xs"></i></span>
+        <div data-reveal style="--reveal-delay: 0ms" class="absolute flex items-start gap-5 bg-white py-1 pr-2 left-[0%] top-[4%]">
+          <span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-stone text-xl">01</span>
+          <span><span class="block text-3xl font-medium">Listen</span><span class="mt-1 block text-lg">We watch how you live</span></span>
+        </div>
+        <div data-reveal style="--reveal-delay: 90ms" class="absolute flex items-start gap-5 bg-white py-1 pr-2 left-[24%] top-[25%]">
+          <span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-stone text-xl">02</span>
+          <span><span class="block text-3xl font-medium">Interpret</span><span class="mt-1 block text-lg">Habits become geometry</span></span>
+        </div>
+        <div data-reveal style="--reveal-delay: 180ms" class="absolute flex items-start gap-5 bg-white py-1 pr-2 left-[66%] top-[16%]">
+          <span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-stone text-xl">03</span>
+          <span><span class="block text-3xl font-medium">Compose</span><span class="mt-1 block text-lg">The space finds its rhythm</span></span>
+        </div>
+        <div data-reveal style="--reveal-delay: 270ms" class="absolute flex items-start gap-5 bg-white py-1 pr-2 left-[52%] top-[56%]">
+          <span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-stone text-xl">04</span>
+          <span><span class="block text-3xl font-medium">Build</span><span class="mt-1 block text-lg">Makers follow the story</span></span>
+        </div>
+        <div data-reveal style="--reveal-delay: 360ms" class="absolute flex items-start gap-5 bg-white py-1 pr-2 left-[80%] top-[72%]">
+          <span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-stone text-xl">05</span>
+          <span><span class="block text-3xl font-medium">Live</span><span class="mt-1 block text-lg">The room grows with you</span></span>
+        </div>
+        <img src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=500&q=75" alt="" class="absolute aspect-[4/3] rounded-xl object-cover shadow-lg left-[28%] top-[60%] w-52">
+        <img src="https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?auto=format&fit=crop&w=500&q=75" alt="" class="absolute aspect-[4/3] rounded-xl object-cover shadow-lg left-[56%] top-[36%] w-44">
+        <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=500&q=75" alt="" class="absolute aspect-[4/3] rounded-xl object-cover shadow-lg left-[64%] top-[78%] w-44">
+    </div>
+  </section>
+  <!-- block:end process -->
+
+  <!-- block:start products -->
+  <section id="materials" class="mx-auto max-w-[1680px] px-6 pb-28 lg:px-14">
+    <div class="text-center">
+      <p data-reveal class="text-sm uppercase tracking-wide">[Materials &amp; objects]</p>
+      <h2 data-reveal class="mx-auto mt-4 max-w-4xl text-4xl font-medium leading-tight tracking-tight md:text-5xl">Beyond the floor plan, surface, weight and warmth decide how comfortable a room feels.</h2>
+    </div>
+    <div class="mx-auto mt-16 grid max-w-6xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <article data-reveal style="--reveal-delay: 0ms" class="grid h-72 grid-cols-[1fr_80px] border-t-2 border-ink">
+          <div class="pr-6 pt-6">
+            <h3 class="text-2xl font-medium">Oak</h3>
+            <p class="mt-3 text-ink/60">Warm grain for built-in joinery and wall panelling.</p>
+          </div>
+          <div class="swatch swatch-wood border-l-2 border-ink" aria-hidden="true"></div>
+        </article>
+        <article data-reveal style="--reveal-delay: 80ms" class="grid h-72 grid-cols-[1fr_80px] border-t-2 border-ink">
+          <div class="pr-6 pt-6">
+            <h3 class="text-2xl font-medium">Brick</h3>
+            <p class="mt-3 text-ink/60">Reclaimed texture for feature walls and fireplaces.</p>
+          </div>
+          <div class="swatch swatch-brick border-l-2 border-ink" aria-hidden="true"></div>
+        </article>
+        <article data-reveal style="--reveal-delay: 160ms" class="grid h-72 grid-cols-[1fr_80px] border-t-2 border-ink">
+          <div class="pr-6 pt-6">
+            <h3 class="text-2xl font-medium">Concrete</h3>
+            <p class="mt-3 text-ink/60">Honest, cool surfaces for floors and counters.</p>
+          </div>
+          <div class="swatch swatch-concrete border-l-2 border-ink" aria-hidden="true"></div>
+        </article>
+        <article data-reveal style="--reveal-delay: 240ms" class="grid h-72 grid-cols-[1fr_80px] border-t-2 border-ink">
+          <div class="pr-6 pt-6">
+            <h3 class="text-2xl font-medium">Glass</h3>
+            <p class="mt-3 text-ink/60">Fluted screens that share light but keep privacy.</p>
+          </div>
+          <div class="swatch swatch-glass border-l-2 border-ink" aria-hidden="true"></div>
+        </article>
+    </div>
+  </section>
+  <!-- block:end products -->
+
+  <!-- block:start reviews -->
+  <section id="testimonials" class="mx-auto max-w-[1680px] px-6 pb-28 lg:px-14">
+    <p data-reveal class="text-center text-sm uppercase tracking-wide">[Testimonials]</p>
+    <div data-tabs class="mx-auto mt-14 grid max-w-5xl gap-8 md:grid-cols-[80px_1fr]">
+      <span class="text-8xl font-semibold leading-none" aria-hidden="true">&ldquo;</span>
+      <div>
+          <blockquote id="quote-0" role="tabpanel"  class="text-2xl leading-snug md:text-4xl">Before Velmora, our flat felt chopped up and smaller than it really was. We didn&#39;t want a big renovation, just something subtle, thoughtful and easy to live with.</blockquote>
+          <blockquote id="quote-1" role="tabpanel" hidden class="text-2xl leading-snug md:text-4xl">Guests stay longer and come back more often. The room does half the hospitality for us, and we never had to explain what we wanted twice.</blockquote>
+          <blockquote id="quote-2" role="tabpanel" hidden class="text-2xl leading-snug md:text-4xl">They listened for two full days before drawing anything. Every corner of our new office now has a reason to exist.</blockquote>
+        <div class="mt-8 flex flex-wrap items-center gap-3" role="tablist" aria-label="Choose a testimonial">
+            <button type="button" role="tab" aria-selected="true" aria-controls="quote-0" class="group flex items-center gap-3 rounded-full bg-stone p-1.5 transition aria-selected:pr-6">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&h=120&q=70" alt="Homeowner" class="h-11 w-11 rounded-full object-cover">
+              <span class="hidden text-left text-sm leading-tight group-aria-selected:block"><span class="block">Homeowner</span><span class="font-semibold">Lisbon · 2025</span></span>
+            </button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="quote-1" class="group flex items-center gap-3 rounded-full bg-stone p-1.5 transition aria-selected:pr-6">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=70" alt="Café owner" class="h-11 w-11 rounded-full object-cover">
+              <span class="hidden text-left text-sm leading-tight group-aria-selected:block"><span class="block">Café owner</span><span class="font-semibold">Porto · 2026</span></span>
+            </button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="quote-2" class="group flex items-center gap-3 rounded-full bg-stone p-1.5 transition aria-selected:pr-6">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&h=120&q=70" alt="Studio founder" class="h-11 w-11 rounded-full object-cover">
+              <span class="hidden text-left text-sm leading-tight group-aria-selected:block"><span class="block">Studio founder</span><span class="font-semibold">Madrid · 2025</span></span>
+            </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end reviews -->
+
+  <!-- block:start footer -->
+  <footer class="bg-ink text-white">
+    <div class="mx-auto max-w-[1680px] px-6 py-20 lg:px-14">
+      <div class="flex flex-col gap-6 border-b border-white/15 pb-12 md:flex-row md:items-center md:justify-between">
+        <a href="index.html" class="text-4xl tracking-[0.18em]">VELMORA</a>
+        <p class="text-xl">Blending light, proportion and material into calm environments.</p>
+      </div>
+      <div class="grid gap-12 py-14 sm:grid-cols-2 lg:grid-cols-[1fr_1.2fr_1fr_2fr]">
+        <div>
+          <h2 class="text-xl text-white/50">#Explore</h2>
+          <ul class="mt-4 space-y-2.5">
+              <li><a href="work.html" class="hover:text-ember">Work</a></li>
+              <li><a href="services.html" class="hover:text-ember">Services</a></li>
+              <li><a href="process.html" class="hover:text-ember">Process</a></li>
+              <li><a href="resources.html" class="hover:text-ember">Resources</a></li>
+              <li><a href="enterprise.html" class="hover:text-ember">Enterprise</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-xl text-white/50">#Projects</h2>
+          <ul class="mt-4 space-y-2.5">
+            <li><a href="sunday-loft.html" class="hover:text-ember">Sunday Loft</a></li>
+            <li><a href="ember-cafe.html" class="hover:text-ember">Ember Corner Café</a></li>
+            <li><a href="work.html" class="hover:text-ember">Slim House</a></li>
+            <li><a href="work.html" class="hover:text-ember">Saffron Kitchen</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-xl text-white/50">#Connect</h2>
+          <ul class="mt-4 space-y-2.5">
+              <li><a href="https://instagram.com" class="hover:text-ember">Instagram</a></li>
+              <li><a href="https://pinterest.com" class="hover:text-ember">Pinterest</a></li>
+              <li><a href="https://linkedin.com" class="hover:text-ember">LinkedIn</a></li>
+              <li><a href="https://behance.net" class="hover:text-ember">Behance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-xl text-white/50">#Newsletter</h2>
+          <p class="mt-4">Design notes and spatial thinking, once a month.</p>
+          <form data-newsletter class="mt-4 flex max-w-md flex-wrap gap-2" novalidate>
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input id="newsletter-email" type="email" required placeholder="Email address" class="min-w-0 flex-1 rounded-lg bg-white/10 px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/40">
+            <button type="submit" class="rounded-lg bg-white px-5 py-2.5 font-medium text-ink transition hover:bg-ember hover:text-white">Subscribe</button>
+            <p data-form-status class="w-full text-sm text-white/70" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+      <div class="flex flex-col gap-3 border-t border-white/15 pt-8 text-white/60 md:flex-row md:justify-between">
+        <p>&copy; <span data-current-year>2026</span> Velmora Studio</p>
+        <a href="mailto:hello@velmora.studio" class="hover:text-white">hello@velmora.studio</a>
+      </div>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      if (!menu) return;
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-tabs]').forEach((tabs) => {
+      const buttons = tabs.querySelectorAll('[role="tab"]');
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          buttons.forEach((other) => {
+            const active = other === button;
+            other.setAttribute('aria-selected', String(active));
+            document.getElementById(other.getAttribute('aria-controls')).hidden = !active;
+          });
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-accordion]').forEach((accordion) => {
+      const buttons = accordion.querySelectorAll('[data-accordion-button]');
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const open = button.getAttribute('aria-expanded') === 'true';
+          buttons.forEach((other) => {
+            other.setAttribute('aria-expanded', 'false');
+            document.getElementById(other.getAttribute('aria-controls')).hidden = true;
+          });
+          button.setAttribute('aria-expanded', String(!open));
+          document.getElementById(button.getAttribute('aria-controls')).hidden = open;
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-filter-group]').forEach((group) => {
+      const chips = group.querySelectorAll('[data-filter]');
+      chips.forEach((chip) => {
+        chip.addEventListener('click', () => {
+          chips.forEach((other) => {
+            const active = other === chip;
+            other.setAttribute('aria-pressed', String(active));
+            other.classList.toggle('bg-ink', active);
+            other.classList.toggle('text-white', active);
+          });
+          document.querySelectorAll('[data-filter-item]').forEach((item) => {
+            item.hidden = chip.dataset.filter !== 'all' && item.dataset.category !== chip.dataset.filter;
+          });
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-newsletter], [data-contact-form]').forEach((form) => {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const status = form.querySelector('[data-form-status]');
+        if (!form.checkValidity()) {
+          status.textContent = form.dataset.error || 'Please enter a valid email address.';
+          return;
+        }
+        status.textContent = form.dataset.success || 'Thank you! Your first letter is on its way.';
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    (() => {
+      const items = document.querySelectorAll('[data-reveal]');
+      const skip = navigator.webdriver || !('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=velmora&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

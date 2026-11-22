@@ -1,0 +1,19 @@
+@view-transition { navigation: auto; }
+    html { scroll-behavior: smooth; }
+    [hidden] { display: none !important; }
+    .neon { fill: none; stroke: #fff; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .neon .blue { stroke: #1a9cff; filter: drop-shadow(0 0 6px rgba(26, 156, 255, .9)); }
+    .neon .pink { stroke: #ff4fa3; filter: drop-shadow(0 0 6px rgba(255, 79, 163, .9)); }
+    .neon .dash { stroke-dasharray: 3 9; opacity: .7; }
+    .pulse { animation: pulse 2.4s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+    @keyframes pulse { 50% { transform: scale(1.6); opacity: .45; } }
+    .sideways { writing-mode: vertical-rl; }
+    .dot { width: 100%; aspect-ratio: 1; border-radius: 9999px; border: 2px solid #3a424d; transition: background-color .3s ease, border-color .3s ease, opacity .3s ease; }
+    .dot[data-state="online"] { border-color: #fff; }
+    .dot[data-state="low"] { border-color: #ff4fa3; box-shadow: 0 0 8px rgba(255, 79, 163, .7); }
+    .dot[data-state="offline"] { border-style: dashed; }
+    .dot[data-updated] { background: #1a9cff; border-color: #1a9cff; box-shadow: 0 0 10px rgba(26, 156, 255, .8); }
+    .dot[data-dim] { opacity: .15; }
+    .reveal-ready [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; transition-delay: var(--reveal-delay, 0ms); }
+    .reveal-ready [data-reveal].is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .pulse { animation: none; } .dot { transition: none; } }

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobs | Kindhire</title>
+  <meta name="description" content="Browse remote and flexible jobs from employers that passed the Kindhire accessibility check.">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Jobs | Kindhire">
+  <meta property="og:description" content="Browse remote and flexible jobs from employers that passed the Kindhire accessibility check.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Kindhire template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Jobs | Kindhire">
+  <meta name="twitter:description" content="Browse remote and flexible jobs from employers that passed the Kindhire accessibility check.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Kindhire template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { paper: '#f4f4f2', ink: '#141414', royal: { DEFAULT: '#0b4ea2', dark: '#083a7a', soft: '#dfe9f7' }, coral: { DEFAULT: '#f4846a', soft: '#fde3dc' }, leaf: { DEFAULT: '#3aa52a', soft: '#dff1db' }, sun: '#ffc928' },
+          fontFamily: { sans: ['Urbanist', 'sans-serif'], serif: ['Fraunces', 'serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-paper font-sans text-ink antialiased">
+  <header class="relative z-40">
+    <nav class="mx-auto grid max-w-7xl grid-cols-[1fr_auto_1fr] items-center gap-4 px-5 py-6 md:px-10 md:py-8" aria-label="Main">
+      <button type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="false" class="flex w-fit items-center gap-3 rounded-full py-2 pr-3 text-lg font-medium transition hover:text-royal"><i class="fa-solid fa-bars text-xl" aria-hidden="true"></i><span class="hidden sm:inline">Menu</span><span class="sr-only sm:hidden">Open menu</span></button>
+      <a href="index.html" class="flex items-center gap-1.5 text-xl font-bold tracking-tight md:text-2xl" aria-label="Kindhire home">
+        <svg class="h-8 w-9" viewBox="0 0 36 32" aria-hidden="true"><path d="M2 30 16 6l14 24Z" fill="#0b4ea2"/><path d="M14 30l9-15 11 15Z" fill="#0b4ea2" opacity=".75"/><path d="M8 4l1 2.4L11.5 7 9 7.6 8 10 7 7.6 4.5 7 7 6.4Z" fill="#f4846a"/></svg>
+        <span><span class="text-royal">KIND</span><span class="text-coral">HIRE</span></span>
+      </a>
+      <a href="platform.html" class="justify-self-end rounded-full border-2 border-royal px-5 py-2.5 font-semibold text-royal transition hover:bg-royal hover:text-white md:px-8 md:py-3">Platform</a>
+    </nav>
+    <div id="site-menu" hidden class="fixed inset-0 z-50 overflow-y-auto bg-royal text-white">
+      <div class="mx-auto flex min-h-full max-w-7xl flex-col px-5 py-6 md:px-10 md:py-8">
+        <button type="button" data-menu-close class="flex w-fit items-center gap-3 rounded-full py-2 pr-3 text-lg font-medium hover:text-sun"><i class="fa-solid fa-xmark text-xl" aria-hidden="true"></i>Close</button>
+        <div class="my-auto grid gap-12 py-12 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+          <ul class="grid gap-2">
+              <li><a href="index.html"  class="font-serif text-5xl font-bold transition md:text-7xl hover:text-sun">Home</a></li>
+              <li><a href="platform.html"  class="font-serif text-5xl font-bold transition md:text-7xl hover:text-sun">Platform</a></li>
+              <li><a href="jobs.html" aria-current="page" class="font-serif text-5xl font-bold transition md:text-7xl text-sun underline decoration-coral decoration-4 underline-offset-8">Jobs</a></li>
+              <li><a href="employers.html"  class="font-serif text-5xl font-bold transition md:text-7xl hover:text-sun">For employers</a></li>
+              <li><a href="stories.html"  class="font-serif text-5xl font-bold transition md:text-7xl hover:text-sun">Stories</a></li>
+              <li><a href="about.html"  class="font-serif text-5xl font-bold transition md:text-7xl hover:text-sun">About</a></li>
+              <li><a href="contact.html"  class="font-serif text-5xl font-bold transition md:text-7xl hover:text-sun">Contact</a></li>
+          </ul>
+          <div class="hidden rounded-[2rem] bg-white/10 p-8 lg:block">
+            <p class="font-serif text-3xl font-bold">Need help signing up?</p>
+            <p class="mt-3 text-lg text-white/80">Call us, text us or book a video call with sign language. We're here weekdays 8–20.</p>
+            <a href="contact.html" class="mt-6 inline-flex rounded-full bg-sun px-6 py-3 font-semibold text-ink">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+  <section class="mx-auto max-w-7xl px-5 pb-12 pt-6 md:px-10 md:pt-12">
+    <p class="font-semibold text-coral">Jobs</p>
+    <h1 class="mt-3 max-w-4xl font-serif text-5xl font-extrabold leading-[1.04] tracking-tight md:text-7xl">Roles that already fit</h1>
+    <p class="mt-6 max-w-xl text-xl text-ink/70">Every listing shows the hours, the setup and the adjustments the employer has in place.</p>
+  </section>
+  <section class="mx-auto max-w-7xl px-5 pb-24 md:px-10" data-job-board>
+    <div class="flex flex-col gap-4 rounded-[2rem] bg-white p-4 shadow-sm md:flex-row md:items-center">
+      <label class="relative flex-1"><span class="sr-only">Search jobs</span><i class="fa-solid fa-magnifying-glass pointer-events-none absolute left-5 top-1/2 -translate-y-1/2 text-ink/40" aria-hidden="true"></i><input data-board-search type="search" placeholder="Search by role, company or skill" class="w-full rounded-full border-2 border-ink/10 bg-paper py-3.5 pl-12 pr-5 text-lg focus:border-royal focus:outline-none"></label>
+      <div class="flex items-center gap-3">
+        <label for="board-sort" class="font-semibold">Sort</label>
+        <select id="board-sort" data-board-sort class="rounded-full border-2 border-ink/10 bg-paper px-5 py-3.5 text-lg focus:border-royal focus:outline-none">
+          <option value="new">Newest</option>
+          <option value="salary">Highest salary</option>
+          <option value="hours">Fewest hours</option>
+        </select>
+        <p class="whitespace-nowrap text-ink/60"><span data-board-count>8</span> jobs</p>
+      </div>
+    </div>
+    <ul data-board-list class="mt-8 grid gap-4 md:grid-cols-2">
+        <li data-salary="41000" data-hours="30" data-date="20261012">
+          <a href="contact.html" class="group flex items-start gap-5 rounded-[2rem] bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+            <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-royal-soft text-xl font-bold text-royal">B</span>
+            <span class="flex-1">
+              <span class="block text-xl font-bold group-hover:text-royal">Junior UI designer</span>
+              <span class="block text-ink/60">Brightfield Studio · Remote · 30 h</span>
+              <span class="mt-3 flex flex-wrap gap-2 text-sm"><span class="rounded-full bg-leaf-soft px-3 py-1 font-semibold text-leaf">$41K / year</span><span class="rounded-full bg-paper px-3 py-1 font-semibold">Design</span><span class="rounded-full bg-coral-soft px-3 py-1 font-semibold">Captions</span></span>
+            </span>
+            <i class="fa-solid fa-arrow-right mt-1 text-royal transition group-hover:translate-x-1" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li data-salary="34000" data-hours="20" data-date="20261015">
+          <a href="contact.html" class="group flex items-start gap-5 rounded-[2rem] bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+            <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-royal-soft text-xl font-bold text-royal">P</span>
+            <span class="flex-1">
+              <span class="block text-xl font-bold group-hover:text-royal">Support specialist</span>
+              <span class="block text-ink/60">Parcelpoint · Remote · 20 h</span>
+              <span class="mt-3 flex flex-wrap gap-2 text-sm"><span class="rounded-full bg-leaf-soft px-3 py-1 font-semibold text-leaf">$34K / year</span><span class="rounded-full bg-paper px-3 py-1 font-semibold">Support</span><span class="rounded-full bg-coral-soft px-3 py-1 font-semibold">Captions</span></span>
+            </span>
+            <i class="fa-solid fa-arrow-right mt-1 text-royal transition group-hover:translate-x-1" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li data-salary="44000" data-hours="40" data-date="20261009">
+          <a href="contact.html" class="group flex items-start gap-5 rounded-[2rem] bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+            <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-royal-soft text-xl font-bold text-royal">N</span>
+            <span class="flex-1">
+              <span class="block text-xl font-bold group-hover:text-royal">QA tester</span>
+              <span class="block text-ink/60">Northgate Apps · Remote · 40 h</span>
+              <span class="mt-3 flex flex-wrap gap-2 text-sm"><span class="rounded-full bg-leaf-soft px-3 py-1 font-semibold text-leaf">$44K / year</span><span class="rounded-full bg-paper px-3 py-1 font-semibold">Testing</span><span class="rounded-full bg-coral-soft px-3 py-1 font-semibold">Captions</span></span>
+            </span>
+            <i class="fa-solid fa-arrow-right mt-1 text-royal transition group-hover:translate-x-1" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li data-salary="32000" data-hours="16" data-date="20261016">
+          <a href="contact.html" class="group flex items-start gap-5 rounded-[2rem] bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+            <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-royal-soft text-xl font-bold text-royal">O</span>
+            <span class="flex-1">
+              <span class="block text-xl font-bold group-hover:text-royal">Content moderator</span>
+              <span class="block text-ink/60">Openstream · Remote · 16 h</span>
+              <span class="mt-3 flex flex-wrap gap-2 text-sm"><span class="rounded-full bg-leaf-soft px-3 py-1 font-semibold text-leaf">$32K / year</span><span class="rounded-full bg-paper px-3 py-1 font-semibold">Moderation</span><span class="rounded-full bg-coral-soft px-3 py-1 font-semibold">Captions</span></span>
+            </span>
+            <i class="fa-solid fa-arrow-right mt-1 text-royal transition group-hover:translate-x-1" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li data-salary="39000" data-hours="24" data-date="20261002">
+          <a href="contact.html" class="group flex items-start gap-5 rounded-[2rem] bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+            <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-royal-soft text-xl font-bold text-royal">H</span>
+            <span class="flex-1">
+              <span class="block text-xl font-bold group-hover:text-royal">Copywriter</span>
+              <span class="block text-ink/60">Hearthline · Remote · 24 h</span>
+              <span class="mt-3 flex flex-wrap gap-2 text-sm"><span class="rounded-full bg-leaf-soft px-3 py-1 font-semibold text-leaf">$39K / year</span><span class="rounded-full bg-paper px-3 py-1 font-semibold">Writing</span><span class="rounded-full bg-coral-soft px-3 py-1 font-semibold">Captions</span></span>
+            </span>
+            <i class="fa-solid fa-arrow-right mt-1 text-royal transition group-hover:translate-x-1" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li data-salary="31000" data-hours="20" data-date="20261011">
+          <a href="contact.html" class="group flex items-start gap-5 rounded-[2rem] bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+            <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-royal-soft text-xl font-bold text-royal">C</span>
+            <span class="flex-1">
+              <span class="block text-xl font-bold group-hover:text-royal">Data assistant</span>
+              <span class="block text-ink/60">Clearpath Health · Hybrid · 20 h</span>
+              <span class="mt-3 flex flex-wrap gap-2 text-sm"><span class="rounded-full bg-leaf-soft px-3 py-1 font-semibold text-leaf">$31K / year</span><span class="rounded-full bg-paper px-3 py-1 font-semibold">Data</span><span class="rounded-full bg-coral-soft px-3 py-1 font-semibold">Captions</span></span>
+            </span>
+            <i class="fa-solid fa-arrow-right mt-1 text-royal transition group-hover:translate-x-1" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li data-salary="46000" data-hours="32" data-date="20261014">
+          <a href="contact.html" class="group flex items-start gap-5 rounded-[2rem] bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+            <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-royal-soft text-xl font-bold text-royal">H</span>
+            <span class="flex-1">
+              <span class="block text-xl font-bold group-hover:text-royal">Accessibility tester</span>
+              <span class="block text-ink/60">Highbank · Remote · 32 h</span>
+              <span class="mt-3 flex flex-wrap gap-2 text-sm"><span class="rounded-full bg-leaf-soft px-3 py-1 font-semibold text-leaf">$46K / year</span><span class="rounded-full bg-paper px-3 py-1 font-semibold">Testing</span><span class="rounded-full bg-coral-soft px-3 py-1 font-semibold">Captions</span></span>
+            </span>
+            <i class="fa-solid fa-arrow-right mt-1 text-royal transition group-hover:translate-x-1" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li data-salary="37000" data-hours="25" data-date="20260930">
+          <a href="contact.html" class="group flex items-start gap-5 rounded-[2rem] bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+            <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-royal-soft text-xl font-bold text-royal">O</span>
+            <span class="flex-1">
+              <span class="block text-xl font-bold group-hover:text-royal">Community manager</span>
+              <span class="block text-ink/60">Openstream · Remote · 25 h</span>
+              <span class="mt-3 flex flex-wrap gap-2 text-sm"><span class="rounded-full bg-leaf-soft px-3 py-1 font-semibold text-leaf">$37K / year</span><span class="rounded-full bg-paper px-3 py-1 font-semibold">Support</span><span class="rounded-full bg-coral-soft px-3 py-1 font-semibold">Captions</span></span>
+            </span>
+            <i class="fa-solid fa-arrow-right mt-1 text-royal transition group-hover:translate-x-1" aria-hidden="true"></i>
+          </a>
+        </li>
+    </ul>
+    <p data-board-empty hidden class="mt-8 rounded-[2rem] border-2 border-dashed border-ink/20 p-8 text-center text-lg">Nothing yet. <a href="contact.html" class="font-semibold text-royal underline">Tell us what you're looking for</a></p>
+  </section>
+
+  </main>
+
+  <footer class="bg-ink text-white">
+    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:grid-cols-2 md:px-10 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
+      <div>
+        <a href="index.html" class="flex items-center gap-1.5 text-2xl font-bold" aria-label="Kindhire home"><svg class="h-8 w-9" viewBox="0 0 36 32" aria-hidden="true"><path d="M2 30 16 6l14 24Z" fill="#fff"/><path d="M14 30l9-15 11 15Z" fill="#fff" opacity=".7"/><path d="M8 4l1 2.4L11.5 7 9 7.6 8 10 7 7.6 4.5 7 7 6.4Z" fill="#f4846a"/></svg>KINDHIRE</a>
+        <p class="mt-4 max-w-xs text-white/70">An inclusive hiring platform. This site meets WCAG 2.2 AA.</p>
+      </div>
+        <div>
+          <p class="font-bold">Job seekers</p>
+          <ul class="mt-4 grid gap-2 text-white/70"><li><a href="jobs.html" class="hover:text-sun">Find a job</a></li><li><a href="platform.html" class="hover:text-sun">How it works</a></li><li><a href="stories.html" class="hover:text-sun">Stories</a></li></ul>
+        </div>
+        <div>
+          <p class="font-bold">Employers</p>
+          <ul class="mt-4 grid gap-2 text-white/70"><li><a href="employers.html" class="hover:text-sun">Hire with us</a></li><li><a href="employers.html" class="hover:text-sun">Pricing</a></li><li><a href="contact.html" class="hover:text-sun">Book a demo</a></li></ul>
+        </div>
+        <div>
+          <p class="font-bold">Kindhire</p>
+          <ul class="mt-4 grid gap-2 text-white/70"><li><a href="about.html" class="hover:text-sun">About us</a></li><li><a href="contact.html" class="hover:text-sun">Contact</a></li><li><a href="contact.html" class="hover:text-sun">Accessibility help</a></li></ul>
+        </div>
+    </div>
+    <p class="border-t border-white/10 px-5 py-6 text-center text-sm text-white/50">&copy; <span data-current-year>2026</span> Kindhire. Made with disabled designers and testers.</p>
+  </footer>
+
+  <script>
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const watchMotion = !reducedMotion && !navigator.webdriver && 'IntersectionObserver' in window;
+
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      const close = menu.querySelector('[data-menu-close]');
+      const set = (open) => { menu.hidden = !open; button.setAttribute('aria-expanded', String(open)); document.body.style.overflow = open ? 'hidden' : ''; (open ? close : button).focus(); };
+      button.addEventListener('click', () => set(menu.hidden));
+      close.addEventListener('click', () => set(false));
+      document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && !menu.hidden) set(false); });
+    });
+
+    document.querySelectorAll('[data-carousel]').forEach((root) => {
+      const slides = [...root.querySelectorAll('[data-slide]')];
+      const dots = [...root.querySelectorAll('[data-carousel-dot]')];
+      let current = 0;
+      const show = (index) => {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => { slide.hidden = i !== current; });
+        dots.forEach((dot, i) => dot.setAttribute('aria-current', String(i === current)));
+      };
+      root.querySelectorAll('[data-carousel-prev]').forEach((button) => button.addEventListener('click', () => show(current - 1)));
+      root.querySelectorAll('[data-carousel-next]').forEach((button) => button.addEventListener('click', () => show(current + 1)));
+      dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
+      root.addEventListener('keydown', (event) => { if (event.key === 'ArrowLeft') show(current - 1); if (event.key === 'ArrowRight') show(current + 1); });
+    });
+
+    document.querySelectorAll('[data-matcher]').forEach((root) => {
+      const jobs = [...root.querySelectorAll('[data-job]')];
+      const isOn = (el) => el.getAttribute('aria-pressed') === 'true' || el.selected === true || el.checked === true;
+      const paint = () => {
+        const skills = [...root.querySelectorAll('[data-skill]:not([data-job])')].filter(isOn).map((el) => el.dataset.skill);
+        const needs = [...root.querySelectorAll('[data-need]')].filter(isOn).map((el) => el.dataset.need);
+        let shown = 0;
+        jobs.forEach((job) => {
+          const match = (!skills.length || skills.includes(job.dataset.skill)) && needs.every((need) => job.dataset.needs.split(' ').includes(need));
+          job.hidden = !match;
+          if (match) shown += 1;
+        });
+        root.querySelector('[data-match-count]').textContent = shown;
+        root.querySelector('[data-match-empty]').hidden = shown > 0;
+      };
+      root.querySelectorAll('[data-skill]:not([data-job])').forEach((chip) => chip.addEventListener('click', () => { if (chip.hasAttribute('aria-pressed')) chip.setAttribute('aria-pressed', String(chip.getAttribute('aria-pressed') !== 'true')); requestAnimationFrame(paint); }));
+      root.addEventListener('change', paint);
+      if (window.customElements) customElements.whenDefined('md-filter-chip').then(() => requestAnimationFrame(paint));
+      paint();
+    });
+
+    document.querySelectorAll('[data-timeline]').forEach((root) => {
+      const fill = root.querySelector('[data-timeline-fill]');
+      if (!watchMotion) return;
+      const update = () => {
+        const box = root.getBoundingClientRect();
+        fill.style.transform = `scaleY(${Math.min(1, Math.max(0, (innerHeight * 0.6 - box.top) / box.height))})`;
+      };
+      update();
+      addEventListener('scroll', update, { passive: true });
+    });
+
+    document.querySelectorAll('[data-rings]').forEach((root) => {
+      const rings = root.querySelectorAll('[data-ring]');
+      if (!watchMotion) return;
+      rings.forEach((ring) => { ring.style.strokeDashoffset = 326.73; });
+      const observer = new IntersectionObserver((entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        rings.forEach((ring) => { ring.style.strokeDashoffset = 326.73 * (1 - Number(ring.dataset.ring) / 100); });
+        observer.disconnect();
+      }, { threshold: 0.3 });
+      observer.observe(root);
+    });
+
+    document.querySelectorAll('[data-chat]').forEach((root) => {
+      const log = root.querySelector('[data-chat-log]');
+      const add = (text, mine) => {
+        const item = document.createElement('li');
+        item.className = mine ? 'ml-auto max-w-[85%] rounded-3xl rounded-br-md bg-royal px-5 py-3 text-white' : 'max-w-[85%] rounded-3xl rounded-bl-md bg-paper px-5 py-3';
+        item.textContent = text;
+        log.append(item);
+        log.scrollTop = log.scrollHeight;
+      };
+      root.querySelectorAll('[data-chat-question]').forEach((button) => button.addEventListener('click', () => {
+        add(button.dataset.label || button.textContent.trim(), true);
+        setTimeout(() => add(button.dataset.answer, false), reducedMotion ? 0 : 450);
+      }));
+    });
+
+    document.querySelectorAll('[data-hover-list]').forEach((root) => {
+      const image = root.querySelector('[data-hover-image]');
+      root.querySelectorAll('[data-hover-row]').forEach((row) => {
+        const show = () => { image.src = row.dataset.image; image.alt = row.dataset.alt; root.querySelectorAll('[data-hover-row]').forEach((other) => other.setAttribute('aria-current', String(other === row))); };
+        row.addEventListener('mouseenter', show);
+        row.addEventListener('focus', show);
+        row.addEventListener('click', show);
+      });
+    });
+
+    document.querySelectorAll('[data-job-board]').forEach((root) => {
+      const list = root.querySelector('[data-board-list]');
+      const items = [...list.children];
+      const search = root.querySelector('[data-board-search]');
+      const sort = root.querySelector('[data-board-sort]');
+      const apply = () => {
+        const query = String(search.value || '').trim().toLowerCase();
+        const sorted = [...items].sort((a, b) => sort.value === 'salary' ? b.dataset.salary - a.dataset.salary : sort.value === 'hours' ? a.dataset.hours - b.dataset.hours : b.dataset.date - a.dataset.date);
+        let shown = 0;
+        sorted.forEach((item) => { const match = !query || item.textContent.toLowerCase().includes(query); item.hidden = !match; if (match) shown += 1; list.append(item); });
+        root.querySelector('[data-board-count]').textContent = shown;
+        root.querySelector('[data-board-empty]').hidden = shown > 0;
+      };
+      search.addEventListener('input', apply);
+      sort.addEventListener('change', apply);
+      const initial = new URLSearchParams(location.search).get('q');
+      if (initial) search.value = initial;
+      apply();
+    });
+
+    document.querySelectorAll('[data-calculator]').forEach((root) => {
+      const money = (value) => `$${Math.round(value).toLocaleString('en-US')}`;
+      const paint = () => {
+        const hires = Number(root.querySelector('[data-hires]').value);
+        const salary = Number(root.querySelector('[data-salary]').value);
+        const fee = hires * salary * 0.08;
+        const credit = hires * Math.min(salary * 0.25, 9600);
+        root.querySelector('[data-hires-label]').textContent = hires;
+        root.querySelector('[data-salary-label]').textContent = money(salary);
+        root.querySelector('[data-fee]').textContent = money(fee);
+        root.querySelector('[data-credit]').textContent = `−${money(credit)}`;
+        root.querySelector('[data-net]').textContent = money(Math.max(0, fee - credit));
+      };
+      root.addEventListener('input', paint);
+      paint();
+    });
+
+    document.querySelectorAll('[data-chat-form]').forEach((form) => {
+      const log = form.querySelector('[data-chat-log]');
+      const steps = [...form.querySelectorAll('[data-chat-step]')];
+      const status = form.querySelector('[data-form-status]');
+      let current = 0;
+      const say = (text, mine) => {
+        const bubble = document.createElement('li');
+        bubble.className = mine ? 'ml-auto max-w-[85%] rounded-3xl rounded-br-md bg-royal px-5 py-3 text-white' : 'max-w-[85%] rounded-3xl rounded-bl-md bg-paper px-5 py-3';
+        bubble.textContent = text;
+        log.append(bubble);
+        log.scrollTop = log.scrollHeight;
+      };
+      const show = (index) => steps.forEach((step, i) => { step.hidden = i !== index; });
+      const field = (step) => step.querySelector('input, select, textarea, md-outlined-text-field, md-outlined-select');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const input = field(steps[current]);
+        if (!input.checkValidity() || !String(input.value || '').trim()) { status.textContent = form.dataset.error; input.focus(); return; }
+        status.textContent = '';
+        say(String(input.value), true);
+        current += 1;
+        if (current < steps.length) { say(steps[current].dataset.question, false); show(current); field(steps[current]).focus(); }
+        else { say(form.dataset.success, false); show(-1); }
+      });
+      show(0);
+    });
+
+    document.querySelectorAll('[data-contact-form]').forEach((form) => {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const status = form.querySelector('[data-form-status]');
+        if (!form.checkValidity()) {
+          status.textContent = form.dataset.error;
+          form.querySelector(':invalid')?.focus();
+          return;
+        }
+        status.textContent = form.dataset.success;
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    (() => {
+      const items = document.querySelectorAll('[data-reveal]');
+      if (!items.length || !watchMotion) return;
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=kindhire&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

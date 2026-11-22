@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabela Rooke | Tailwind CSS Blog Template</title>
+  <meta name="description" content="Sabela Rooke is a quiet Tailwind CSS template for writers and personal blogs, where each entry has its own flat pastel page, a stacked date in the corner, a huge black title and one red serif word, with an archive, article pages, an about page, books and a monthly letter.">
+  <meta name="keywords" content="Sabela Rooke, Tailwind CSS template, HTML website template, writer website template, author blog template, personal blog, essay blog, newsletter signup, book page, blog template">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Sabela Rooke | Tailwind CSS Blog Template">
+  <meta property="og:description" content="A quiet Tailwind CSS template for writers and personal blogs: each entry has its own pastel page, a stacked date, a huge black title and one red serif word, with an archive, articles, an about page and a monthly letter.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Sabela Rooke template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Sabela Rooke | Tailwind CSS Blog Template">
+  <meta name="twitter:description" content="A quiet Tailwind CSS template for writers and personal blogs: each entry has its own pastel page, a stacked date, a huge black title and one red serif word, with an archive, articles, an about page and a monthly letter.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Sabela Rooke template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: { DEFAULT: '#1b2220', soft: '#414a47' },
+            paper: '#f6f1e7',
+            rose: '#d83a56',
+            sage: '#b9cbb7',
+            salmon: '#f5b39c',
+            butter: '#f0dca2',
+            lilac: '#cec5de'
+          },
+          fontFamily: {
+            heavy: ['"Bricolage Grotesque"', 'sans-serif'],
+            display: ['"Playfair Display"', 'serif'],
+            serif: ['Newsreader', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-paper font-serif text-ink antialiased">
+  <!-- block:start navbar -->
+  <header class="absolute inset-x-0 top-0 z-30">
+    <div class="flex items-center justify-between gap-6 px-5 py-5 md:px-10 md:py-7">
+      <a href="index.html" class="font-display text-xl font-medium md:text-2xl">Sabela Rooke</a>
+      <nav aria-label="Main" class="hidden items-center gap-9 md:flex">
+          <a href="writing.html" class="small-caps transition hover:text-rose">Writing</a>
+          <a href="about.html" class="small-caps transition hover:text-rose">About</a>
+          <a href="contact.html" class="small-caps transition hover:text-rose">Contact</a>
+      </nav>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="small-caps rounded-full border border-ink px-4 py-2 md:hidden">Menu</button>
+    </div>
+    <nav id="mobile-menu" aria-label="Mobile" class="hidden border-y border-ink bg-paper px-5 py-2 md:hidden">
+        <a href="writing.html" class="heavy block py-3 text-4xl">Writing</a>
+        <a href="about.html" class="heavy block py-3 text-4xl">About</a>
+        <a href="contact.html" class="heavy block py-3 text-4xl">Contact</a>
+    </nav>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section class="cover relative overflow-hidden" style="--ground: #b9cbb7" data-cover>
+    <h1 class="sr-only">Sabela Rooke, essays and notebooks</h1>
+    <div class="slides min-h-[100svh]">
+        <article class="flex flex-col px-5 pb-28 pt-24 md:px-10 md:pb-24 md:pt-28" data-slide data-ground="#b9cbb7" >
+          <p class="font-display leading-none">
+            <span class="block text-6xl font-medium md:text-7xl">14</span>
+            <span class="mt-2 block pl-7 text-lg italic md:pl-9">Mar</span>
+            <span class="block pl-7 text-lg font-medium md:pl-9">2026</span>
+          </p>
+          <p class="heavy my-auto py-10 text-[clamp(4.5rem,19vw,19rem)] md:pl-[6vw]" aria-hidden="true">The Ferry</p>
+          <div class="flex flex-col items-end gap-5 md:flex-row md:items-end md:justify-end md:gap-8 md:pr-[5vw]">
+            <div class="max-w-xs text-right">
+              <h2 class="font-display text-xl font-medium">The Long Way to the Ferry</h2>
+              <p class="mt-2 leading-snug text-ink-soft">The boat across the estuary takes eleven minutes. For thirty years my family has left the house an hour early to catch it.</p>
+              <a href="the-long-way-to-the-ferry.html" class="small-caps mt-4 inline-flex items-center gap-2 border-b border-ink pb-1 hover:border-rose hover:text-rose">Read, 9 minutes <i class="fa-solid fa-arrow-right text-[.65rem]"></i></a>
+            </div>
+            <p class="red-word text-[clamp(3rem,7.5vw,7.5rem)]" aria-hidden="true">Estuary</p>
+          </div>
+        </article>
+        <article class="flex flex-col px-5 pb-28 pt-24 md:px-10 md:pb-24 md:pt-28" data-slide data-ground="#f5b39c" aria-hidden="true">
+          <p class="font-display leading-none">
+            <span class="block text-6xl font-medium md:text-7xl">02</span>
+            <span class="mt-2 block pl-7 text-lg italic md:pl-9">Feb</span>
+            <span class="block pl-7 text-lg font-medium md:pl-9">2026</span>
+          </p>
+          <p class="heavy my-auto py-10 text-[clamp(4.5rem,19vw,19rem)] md:pl-[6vw]" aria-hidden="true">Salt</p>
+          <div class="flex flex-col items-end gap-5 md:flex-row md:items-end md:justify-end md:gap-8 md:pr-[5vw]">
+            <div class="max-w-xs text-right">
+              <h2 class="font-display text-xl font-medium">What My Grandmother Salted</h2>
+              <p class="mt-2 leading-snug text-ink-soft">She measured nothing and wasted nothing, and she believed a recipe written down was a recipe already half lost.</p>
+              <a href="what-my-grandmother-salted.html" class="small-caps mt-4 inline-flex items-center gap-2 border-b border-ink pb-1 hover:border-rose hover:text-rose">Read, 7 minutes <i class="fa-solid fa-arrow-right text-[.65rem]"></i></a>
+            </div>
+            <p class="red-word text-[clamp(3rem,7.5vw,7.5rem)]" aria-hidden="true">Kitchen</p>
+          </div>
+        </article>
+        <article class="flex flex-col px-5 pb-28 pt-24 md:px-10 md:pb-24 md:pt-28" data-slide data-ground="#f0dca2" aria-hidden="true">
+          <p class="font-display leading-none">
+            <span class="block text-6xl font-medium md:text-7xl">19</span>
+            <span class="mt-2 block pl-7 text-lg italic md:pl-9">Jan</span>
+            <span class="block pl-7 text-lg font-medium md:pl-9">2026</span>
+          </p>
+          <p class="heavy my-auto py-10 text-[clamp(4.5rem,19vw,19rem)] md:pl-[6vw]" aria-hidden="true">A Desk</p>
+          <div class="flex flex-col items-end gap-5 md:flex-row md:items-end md:justify-end md:gap-8 md:pr-[5vw]">
+            <div class="max-w-xs text-right">
+              <h2 class="font-display text-xl font-medium">Notes on a Borrowed Desk</h2>
+              <p class="mt-2 leading-snug text-ink-soft">Three weeks in a friend&#39;s flat, at a desk that still holds another person&#39;s pencils. A few things I wrote down.</p>
+              <a href="notes-on-a-borrowed-desk.html" class="small-caps mt-4 inline-flex items-center gap-2 border-b border-ink pb-1 hover:border-rose hover:text-rose">Read, 4 minutes <i class="fa-solid fa-arrow-right text-[.65rem]"></i></a>
+            </div>
+            <p class="red-word text-[clamp(3rem,7.5vw,7.5rem)]" aria-hidden="true">Notebook</p>
+          </div>
+        </article>
+    </div>
+    <div class="absolute bottom-6 left-5 z-10 flex items-center gap-3 md:bottom-9 md:left-10">
+      <button type="button" data-cover-prev aria-label="Newer entry" class="flex h-11 w-11 items-center justify-center rounded-full border border-ink transition hover:bg-ink hover:text-paper"><i class="fa-solid fa-arrow-left"></i></button>
+      <button type="button" data-cover-next aria-label="Older entry" class="flex h-11 w-11 items-center justify-center rounded-full border border-ink transition hover:bg-ink hover:text-paper"><i class="fa-solid fa-arrow-right"></i></button>
+      <p class="font-display ml-2 text-lg" aria-live="polite"><span data-cover-count>1</span> <span class="italic">of</span> 3</p>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start blog -->
+  <section id="writing" class="px-5 py-20 md:px-10 md:py-28" data-entries>
+    <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+      <h2 class="heavy text-6xl md:text-8xl">Lately <span class="red-word text-[.55em] italic">written</span></h2>
+      <div role="group" aria-label="Filter entries" class="flex flex-wrap gap-2">
+          <button type="button" data-entries-filter="All" aria-pressed="true" class="small-caps rounded-full border border-ink px-5 py-2.5 transition aria-pressed:bg-ink aria-pressed:text-paper">All</button>
+          <button type="button" data-entries-filter="Essay" aria-pressed="false" class="small-caps rounded-full border border-ink px-5 py-2.5 transition aria-pressed:bg-ink aria-pressed:text-paper">Essays</button>
+          <button type="button" data-entries-filter="Notebook" aria-pressed="false" class="small-caps rounded-full border border-ink px-5 py-2.5 transition aria-pressed:bg-ink aria-pressed:text-paper">Notebooks</button>
+      </div>
+    </div>
+    <ul class="mt-12 border-t border-ink md:mt-16">
+        <li class="entry-row border-b border-ink" style="--tint: #b9cbb7" data-kind="Essay" data-reveal>
+          <a href="the-long-way-to-the-ferry.html" class="grid grid-cols-[4.5rem_1fr] items-center gap-x-4 gap-y-2 px-2 py-7 md:grid-cols-[7rem_1fr_auto] md:gap-x-10 md:px-5 md:py-9">
+            <span class="font-display leading-none">
+              <span class="block text-4xl font-medium md:text-5xl">14</span>
+              <span class="mt-1 block text-sm italic">Mar 2026</span>
+            </span>
+            <span>
+              <span class="heavy block text-3xl md:text-6xl">The Long Way to the Ferry</span>
+              <span class="mt-3 block max-w-2xl text-lg leading-snug text-ink-soft">The boat across the estuary takes eleven minutes. For thirty years my family has left the house an hour early to catch it.</span>
+            </span>
+            <span class="col-start-2 flex items-baseline gap-4 md:col-start-auto md:flex-col md:items-end md:gap-1">
+              <span class="red-word text-2xl italic md:text-3xl">Essay</span>
+              <span class="small-caps">9 min</span>
+            </span>
+          </a>
+        </li>
+        <li class="entry-row border-b border-ink" style="--tint: #f5b39c" data-kind="Essay" data-reveal>
+          <a href="what-my-grandmother-salted.html" class="grid grid-cols-[4.5rem_1fr] items-center gap-x-4 gap-y-2 px-2 py-7 md:grid-cols-[7rem_1fr_auto] md:gap-x-10 md:px-5 md:py-9">
+            <span class="font-display leading-none">
+              <span class="block text-4xl font-medium md:text-5xl">02</span>
+              <span class="mt-1 block text-sm italic">Feb 2026</span>
+            </span>
+            <span>
+              <span class="heavy block text-3xl md:text-6xl">What My Grandmother Salted</span>
+              <span class="mt-3 block max-w-2xl text-lg leading-snug text-ink-soft">She measured nothing and wasted nothing, and she believed a recipe written down was a recipe already half lost.</span>
+            </span>
+            <span class="col-start-2 flex items-baseline gap-4 md:col-start-auto md:flex-col md:items-end md:gap-1">
+              <span class="red-word text-2xl italic md:text-3xl">Essay</span>
+              <span class="small-caps">7 min</span>
+            </span>
+          </a>
+        </li>
+        <li class="entry-row border-b border-ink" style="--tint: #f0dca2" data-kind="Notebook" data-reveal>
+          <a href="notes-on-a-borrowed-desk.html" class="grid grid-cols-[4.5rem_1fr] items-center gap-x-4 gap-y-2 px-2 py-7 md:grid-cols-[7rem_1fr_auto] md:gap-x-10 md:px-5 md:py-9">
+            <span class="font-display leading-none">
+              <span class="block text-4xl font-medium md:text-5xl">19</span>
+              <span class="mt-1 block text-sm italic">Jan 2026</span>
+            </span>
+            <span>
+              <span class="heavy block text-3xl md:text-6xl">Notes on a Borrowed Desk</span>
+              <span class="mt-3 block max-w-2xl text-lg leading-snug text-ink-soft">Three weeks in a friend&#39;s flat, at a desk that still holds another person&#39;s pencils. A few things I wrote down.</span>
+            </span>
+            <span class="col-start-2 flex items-baseline gap-4 md:col-start-auto md:flex-col md:items-end md:gap-1">
+              <span class="red-word text-2xl italic md:text-3xl">Notebook</span>
+              <span class="small-caps">4 min</span>
+            </span>
+          </a>
+        </li>
+        <li class="entry-row border-b border-ink" style="--tint: #cec5de" data-kind="Essay" data-reveal>
+          <a href="against-the-tidy-ending.html" class="grid grid-cols-[4.5rem_1fr] items-center gap-x-4 gap-y-2 px-2 py-7 md:grid-cols-[7rem_1fr_auto] md:gap-x-10 md:px-5 md:py-9">
+            <span class="font-display leading-none">
+              <span class="block text-4xl font-medium md:text-5xl">08</span>
+              <span class="mt-1 block text-sm italic">Dec 2025</span>
+            </span>
+            <span>
+              <span class="heavy block text-3xl md:text-6xl">Against the Tidy Ending</span>
+              <span class="mt-3 block max-w-2xl text-lg leading-snug text-ink-soft">Why the last page of a story should leave the door on the latch, and what readers do with the draught.</span>
+            </span>
+            <span class="col-start-2 flex items-baseline gap-4 md:col-start-auto md:flex-col md:items-end md:gap-1">
+              <span class="red-word text-2xl italic md:text-3xl">Essay</span>
+              <span class="small-caps">6 min</span>
+            </span>
+          </a>
+        </li>
+    </ul>
+    <a href="writing.html" class="small-caps mt-10 inline-flex items-center gap-2 border-b border-ink pb-1 hover:border-rose hover:text-rose">Everything I have published here <i class="fa-solid fa-arrow-right text-[.65rem]"></i></a>
+  </section>
+  <!-- block:end blog -->
+
+  <!-- block:start about -->
+  <section id="about" class="bg-salmon px-5 py-20 md:px-10 md:py-28">
+    <div class="grid gap-12 md:grid-cols-[.8fr_1.2fr] md:items-center md:gap-20">
+      <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Sabela Rooke, a woman with short red hair, standing by a lake" loading="lazy" class="aspect-[4/5] w-full max-w-md object-cover" data-reveal>
+      <div data-reveal>
+        <h2 class="heavy text-6xl md:text-8xl">Hello <span class="red-word text-[.55em] italic">reader</span></h2>
+        <p class="mt-8 max-w-xl font-display text-2xl leading-snug md:text-4xl md:leading-[1.2]">I write essays about tidal places, family kitchens and the things people keep in drawers.</p>
+        <p class="mt-6 max-w-lg text-lg leading-relaxed text-ink-soft">I grew up above a chandlery on the north coast and have been writing down what the harbour says ever since. Three books so far, and this page, where the shorter things go.</p>
+        <a href="about.html" class="small-caps mt-8 inline-flex items-center gap-2 border-b border-ink pb-1 hover:border-rose hover:text-rose">More about me <i class="fa-solid fa-arrow-right text-[.65rem]"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- block:end about -->
+
+  <!-- block:start demo -->
+  <section id="first-lines" class="cover px-5 py-20 md:px-10 md:py-32" style="--ground: #b9cbb7" data-lines>
+    <p class="small-caps">First lines</p>
+    <div class="mt-8 md:mt-12" aria-live="polite">
+      <p class="max-w-6xl font-display text-[clamp(2rem,5.2vw,5.2rem)] leading-[1.08]" data-lines-text>&ldquo;Nobody in my family has ever missed the ferry, and nobody has ever arrived on time for it either.&rdquo;</p>
+      <p class="mt-8 text-lg">From <a href="the-long-way-to-the-ferry.html" class="border-b border-ink italic hover:border-rose hover:text-rose" data-lines-link>The Long Way to the Ferry</a></p>
+    </div>
+    <button type="button" data-lines-next class="heavy mt-12 inline-flex items-center gap-4 rounded-full bg-ink px-8 py-4 text-xl tracking-normal text-paper transition hover:bg-rose">Another first line <i class="fa-solid fa-shuffle text-base"></i></button>
+    <script type="application/json" data-lines-data>[{"first":"Nobody in my family has ever missed the ferry, and nobody has ever arrived on time for it either.","title":"The Long Way to the Ferry","slug":"the-long-way-to-the-ferry","ground":"#b9cbb7"},{"first":"My grandmother salted the water, the cod, the doorstep in January and, once, a letter from the bank.","title":"What My Grandmother Salted","slug":"what-my-grandmother-salted","ground":"#f5b39c"},{"first":"The desk is not mine, which is the best thing about it.","title":"Notes on a Borrowed Desk","slug":"notes-on-a-borrowed-desk","ground":"#f0dca2"},{"first":"A story that ends too neatly has stopped trusting you.","title":"Against the Tidy Ending","slug":"against-the-tidy-ending","ground":"#cec5de"}]</script>
+  </section>
+  <!-- block:end demo -->
+
+  <!-- block:start products -->
+  <section id="books" class="px-5 py-20 md:px-10 md:py-28">
+    <h2 class="heavy text-6xl md:text-8xl">Books <span class="red-word text-[.55em] italic">so far</span></h2>
+    <ul class="mt-14 grid gap-12 md:grid-cols-3 md:gap-10">
+        <li data-reveal style="--reveal-delay: 0ms">
+          <div class="flex aspect-[2/3] max-w-[20rem] flex-col justify-between p-6 shadow-[8px_8px_0_#1b2220]" style="background: #b9cbb7" role="img" aria-label="Cover of Low Water">
+            <p class="font-display text-sm italic">Essays</p>
+            <p class="heavy text-5xl">Low Water</p>
+            <p class="small-caps">Sabela Rooke</p>
+          </div>
+          <h3 class="mt-8 font-display text-2xl font-medium">Low Water</h3>
+          <p class="small-caps mt-1">Marram Press, 2024</p>
+          <p class="mt-3 max-w-sm text-lg leading-snug text-ink-soft">Twelve essays about a tidal town, the people who leave it and the ones who keep the keys.</p>
+          <a href="contact.html" class="small-caps mt-4 inline-flex items-center gap-2 border-b border-ink pb-1 hover:border-rose hover:text-rose">Ask for a signed copy <i class="fa-solid fa-arrow-right text-[.65rem]"></i></a>
+        </li>
+        <li data-reveal style="--reveal-delay: 90ms">
+          <div class="flex aspect-[2/3] max-w-[20rem] flex-col justify-between p-6 shadow-[8px_8px_0_#1b2220]" style="background: #f5b39c" role="img" aria-label="Cover of The Salt Ledger">
+            <p class="font-display text-sm italic">A novel</p>
+            <p class="heavy text-5xl">The Salt Ledger</p>
+            <p class="small-caps">Sabela Rooke</p>
+          </div>
+          <h3 class="mt-8 font-display text-2xl font-medium">The Salt Ledger</h3>
+          <p class="small-caps mt-1">Marram Press, 2021</p>
+          <p class="mt-3 max-w-sm text-lg leading-snug text-ink-soft">A fish-curer&#39;s daughter inherits the accounts and finds the debts were never about money.</p>
+          <a href="contact.html" class="small-caps mt-4 inline-flex items-center gap-2 border-b border-ink pb-1 hover:border-rose hover:text-rose">Ask for a signed copy <i class="fa-solid fa-arrow-right text-[.65rem]"></i></a>
+        </li>
+        <li data-reveal style="--reveal-delay: 180ms">
+          <div class="flex aspect-[2/3] max-w-[20rem] flex-col justify-between p-6 shadow-[8px_8px_0_#1b2220]" style="background: #f0dca2" role="img" aria-label="Cover of Small Hours">
+            <p class="font-display text-sm italic">Notebooks</p>
+            <p class="heavy text-5xl">Small Hours</p>
+            <p class="small-caps">Sabela Rooke</p>
+          </div>
+          <h3 class="mt-8 font-display text-2xl font-medium">Small Hours</h3>
+          <p class="small-caps mt-1">Tern Editions, 2018</p>
+          <p class="mt-3 max-w-sm text-lg leading-snug text-ink-soft">A year of night pages, kept while working the late shift at a ferry terminal.</p>
+          <a href="contact.html" class="small-caps mt-4 inline-flex items-center gap-2 border-b border-ink pb-1 hover:border-rose hover:text-rose">Ask for a signed copy <i class="fa-solid fa-arrow-right text-[.65rem]"></i></a>
+        </li>
+    </ul>
+  </section>
+  <!-- block:end products -->
+
+  <!-- block:start newsletter -->
+  <section id="letters" class="bg-lilac px-5 py-20 md:px-10 md:py-28">
+    <div class="grid gap-10 md:grid-cols-2 md:items-end md:gap-20">
+      <div>
+        <p class="font-display leading-none">
+          <span class="block text-6xl font-medium md:text-7xl">01</span>
+          <span class="mt-2 block pl-7 text-lg italic md:pl-9">of every</span>
+          <span class="block pl-7 text-lg font-medium md:pl-9">month</span>
+        </p>
+        <h2 class="heavy mt-8 text-[clamp(4.5rem,13vw,12rem)]">Letters</h2>
+      </div>
+      <div>
+        <p class="max-w-md text-xl leading-snug">One letter on the first of the month: the new essay, a page from the notebook and one book I pressed on somebody. Nothing else, ever.</p>
+        <form class="mt-8 max-w-md" data-letter novalidate>
+          <label for="letter-email" class="small-caps">Your email</label>
+          <div class="mt-2 flex border-b-2 border-ink">
+            <input id="letter-email" type="email" required autocomplete="email" placeholder="you@example.com" class="min-w-0 flex-1 bg-transparent py-3 text-xl outline-none placeholder:text-ink/40">
+            <button type="submit" class="small-caps shrink-0 px-2 hover:text-rose">Send me letters</button>
+          </div>
+          <p class="mt-3 text-rose" data-letter-error hidden>That email does not look right.</p>
+          <p class="mt-3 font-display text-xl italic" data-letter-done hidden role="status">Thank you. The next letter leaves on the first.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- block:end newsletter -->
+
+  <!-- block:start footer -->
+  <footer class="px-5 py-12 md:px-10 md:py-16">
+    <div class="grid gap-10 border-t border-ink pt-10 md:grid-cols-[1.4fr_1fr_1fr]">
+      <div>
+        <a href="index.html" class="font-display text-2xl font-medium">Sabela Rooke</a>
+        <p class="mt-2 max-w-xs text-ink-soft">Essays and notebooks from a tidal town.</p>
+      </div>
+      <nav aria-label="Footer">
+        <p class="small-caps">Pages</p>
+        <ul class="mt-3 space-y-1.5 text-lg">
+          <li><a href="index.html" class="hover:text-rose">Home</a></li>
+            <li><a href="writing.html" class="hover:text-rose">Writing</a></li>
+            <li><a href="about.html" class="hover:text-rose">About</a></li>
+            <li><a href="contact.html" class="hover:text-rose">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="small-caps">Write to me</p>
+        <p class="mt-3 text-lg"><a href="mailto:hello@sabelarooke.example" class="hover:text-rose">hello@sabelarooke.example</a></p>
+        <p class="mt-4 flex gap-5 text-xl">
+          <a href="contact.html" aria-label="Instagram" class="hover:text-rose"><i class="fa-brands fa-instagram"></i></a>
+          <a href="contact.html" aria-label="Goodreads" class="hover:text-rose"><i class="fa-brands fa-goodreads"></i></a>
+          <a href="writing.html" aria-label="RSS feed" class="hover:text-rose"><i class="fa-solid fa-rss"></i></a>
+        </p>
+      </div>
+    </div>
+    <p class="mt-10 text-sm text-ink-soft">&copy; 2026 Sabela Rooke. Every word here is mine, so please ask before you reprint one.</p>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    document.querySelectorAll("[data-menu-toggle]").forEach((button) => {
+      const menu = document.getElementById(button.getAttribute("aria-controls"));
+      if (!menu) return;
+      button.addEventListener("click", () => {
+        const open = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!open));
+        menu.classList.toggle("hidden", open);
+      });
+    });
+
+    // Cover: one entry at a time, and the page takes that entry's colour.
+    document.querySelectorAll("[data-cover]").forEach((root) => {
+      const slides = [...root.querySelectorAll("[data-slide]")];
+      if (slides.length < 2) return;
+      let current = 0;
+      const show = (index) => {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => {
+          if (i === current) slide.removeAttribute("aria-hidden"); else slide.setAttribute("aria-hidden", "true");
+        });
+        root.style.setProperty("--ground", slides[current].dataset.ground);
+        root.querySelector("[data-cover-count]").textContent = current + 1;
+      };
+      root.querySelector("[data-cover-prev]")?.addEventListener("click", () => show(current - 1));
+      root.querySelector("[data-cover-next]")?.addEventListener("click", () => show(current + 1));
+      root.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") show(current - 1);
+        if (event.key === "ArrowRight") show(current + 1);
+      });
+    });
+
+    // Entry filter.
+    document.querySelectorAll("[data-entries]").forEach((root) => {
+      const buttons = [...root.querySelectorAll("[data-entries-filter]")];
+      buttons.forEach((button) => button.addEventListener("click", () => {
+        const kind = button.dataset.entriesFilter;
+        buttons.forEach((other) => other.setAttribute("aria-pressed", String(other === button)));
+        root.querySelectorAll("[data-kind]").forEach((row) => { row.hidden = kind !== "All" && row.dataset.kind !== kind; });
+      }));
+    });
+
+    // First lines: step through the opening sentence of each entry.
+    document.querySelectorAll("[data-lines]").forEach((root) => {
+      const lines = JSON.parse(root.querySelector("[data-lines-data]").textContent);
+      const text = root.querySelector("[data-lines-text]");
+      const link = root.querySelector("[data-lines-link]");
+      let current = 0;
+      root.querySelector("[data-lines-next]").addEventListener("click", () => {
+        current = (current + 1) % lines.length;
+        const line = lines[current];
+        text.textContent = `“${line.first}”`;
+        link.textContent = line.title;
+        link.href = `${line.slug}.html`;
+        root.style.setProperty("--ground", line.ground);
+      });
+    });
+
+    // Monthly letter sign-up.
+    document.querySelectorAll("[data-letter]").forEach((form) => {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const input = form.querySelector('input[type="email"]');
+        const ok = input.value.trim() !== "" && input.checkValidity();
+        form.querySelector("[data-letter-error]").hidden = ok;
+        form.querySelector("[data-letter-done]").hidden = !ok;
+        if (ok) input.value = "";
+      });
+    });
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=sabela-rooke&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brassmoor | Tailwind CSS Business Template</title>
+  <meta name="description" content="Brassmoor is a dark, masculine Tailwind CSS business template for barbershops and grooming studios, with a hero slider, cut styles, locations, services, a price list with opening hours, a team slider, testimonials, a gallery with lightbox and an appointment form.">
+  <meta name="keywords" content="Brassmoor, Tailwind CSS template, HTML website template, business template, barbershop website, barber template, grooming salon, haircut prices, booking form, men's hair studio">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Brassmoor | Tailwind CSS Business Template">
+  <meta property="og:description" content="A dark Tailwind CSS barbershop template with a hero slider, a price list with opening hours, a team slider, a gallery and an appointment form.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Brassmoor template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Brassmoor | Tailwind CSS Business Template">
+  <meta name="twitter:description" content="A dark Tailwind CSS barbershop template with a hero slider, a price list with opening hours, a team slider, a gallery and an appointment form.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Brassmoor template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { coal: { DEFAULT: '#121416', card: '#1e2023', soft: '#26292d', line: '#34383d' }, ember: { DEFAULT: '#e85a3d', dark: '#c9452b' }, gold: '#f2a541' },
+          fontFamily: { sans: ['Hind', 'sans-serif'], display: ['Teko', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-coal font-sans text-white antialiased">
+  <!-- block:start navbar -->
+  <header class="relative z-40">
+    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-5 pt-4 text-xs text-white/70 md:px-10">
+      <p class="flex flex-wrap gap-6"><span><i class="fa-solid fa-clock mr-2 text-ember" aria-hidden="true"></i>09:00 – 19:00</span><span class="hidden sm:inline"><i class="fa-solid fa-calendar-days mr-2 text-ember" aria-hidden="true"></i>Tuesday – Saturday</span></p>
+      <a href="tel:+16175550142" class="hover:text-ember"><i class="fa-solid fa-phone mr-2 text-ember" aria-hidden="true"></i>(617) 555-0142</a>
+    </div>
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-5 md:px-10" aria-label="Main">
+      <a href="index.html" class="font-display text-3xl font-semibold uppercase leading-none tracking-wide">Brass<span class="text-ember">moor</span>.</a>
+      <ul class="hidden items-center gap-8 text-sm md:flex">
+          <li><a href="index.html" aria-current="page" class="transition font-semibold text-white">Home</a></li>
+          <li><a href="about.html"  class="transition text-white/70 hover:text-ember">About Us</a></li>
+          <li><a href="services.html"  class="transition text-white/70 hover:text-ember">Services</a></li>
+          <li><a href="gallery.html"  class="transition text-white/70 hover:text-ember">Gallery</a></li>
+          <li><a href="contact.html"  class="transition text-white/70 hover:text-ember">Contact</a></li>
+      </ul>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="grid h-10 w-10 place-items-center border border-white/30 md:hidden" aria-label="Open menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-y border-coal-line bg-coal-card px-5 py-4 md:hidden">
+      <ul class="grid gap-1 font-display text-3xl">
+          <li><a href="index.html" aria-current="page" class="block py-1 text-ember">Home</a></li>
+          <li><a href="about.html"  class="block py-1 hover:text-ember">About Us</a></li>
+          <li><a href="services.html"  class="block py-1 hover:text-ember">Services</a></li>
+          <li><a href="gallery.html"  class="block py-1 hover:text-ember">Gallery</a></li>
+          <li><a href="contact.html"  class="block py-1 hover:text-ember">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section class="relative isolate -mt-32 pt-32" data-hero>
+    <svg class="pointer-events-none absolute inset-0 h-full w-full text-white/10" viewBox="0 0 1440 700" preserveAspectRatio="none" fill="none" aria-hidden="true"><path d="M0 420C260 300 420 520 720 380S1180 180 1440 260" stroke="currentColor"/><path d="M0 500C300 380 460 600 760 460S1200 260 1440 340" stroke="currentColor"/><path d="M0 120C320 220 560 40 860 140S1240 60 1440 120" stroke="currentColor"/></svg>
+    <div class="relative mx-auto max-w-7xl px-5 md:px-10">
+      <div class="relative grid min-h-[34rem] items-center lg:min-h-[38rem]">
+          <div class="slide absolute inset-0 grid items-center opacity-100" data-slide aria-hidden="false">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1100&h=900&q=80" alt="Man with tousled hair looking straight ahead" class="absolute bottom-0 right-0 -z-10 h-full w-full object-cover opacity-50 [mask-image:linear-gradient(to_left,black_45%,transparent)] md:w-3/4 md:opacity-80">
+            <div class="max-w-xl">
+              <h1 class="font-display text-5xl font-medium leading-[1.05] md:text-7xl">Sharp cuts &amp; hot shaves for <span class="mark">every gentleman</span></h1>
+              <p class="mt-6 max-w-md text-white/70">Precision cuts, hot towels and a proper conversation. Book your chair and leave looking like the best version of you.</p>
+              <a href="contact.html" class="mt-8 inline-block bg-ember px-7 py-4 text-xs font-semibold uppercase tracking-widest transition hover:bg-white hover:text-coal" tabindex="0">Book appointment</a>
+            </div>
+          </div>
+          <div class="slide absolute inset-0 grid items-center pointer-events-none opacity-0" data-slide aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?auto=format&fit=crop&w=1100&h=900&q=80" alt="Barber shaping a fade with clippers" class="absolute bottom-0 right-0 -z-10 h-full w-full object-cover opacity-50 [mask-image:linear-gradient(to_left,black_45%,transparent)] md:w-3/4 md:opacity-80">
+            <div class="max-w-xl">
+              <p class="font-display text-5xl font-medium leading-[1.05] md:text-7xl">Classic fades with a <span class="mark">modern edge</span></p>
+              <p class="mt-6 max-w-md text-white/70">Precision cuts, hot towels and a proper conversation. Book your chair and leave looking like the best version of you.</p>
+              <a href="contact.html" class="mt-8 inline-block bg-ember px-7 py-4 text-xs font-semibold uppercase tracking-widest transition hover:bg-white hover:text-coal" tabindex="-1">Book appointment</a>
+            </div>
+          </div>
+          <div class="slide absolute inset-0 grid items-center pointer-events-none opacity-0" data-slide aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=1100&h=900&q=80" alt="Barber trimming a full beard with scissors" class="absolute bottom-0 right-0 -z-10 h-full w-full object-cover opacity-50 [mask-image:linear-gradient(to_left,black_45%,transparent)] md:w-3/4 md:opacity-80">
+            <div class="max-w-xl">
+              <p class="font-display text-5xl font-medium leading-[1.05] md:text-7xl">Beards trimmed the <span class="mark">old-school way</span></p>
+              <p class="mt-6 max-w-md text-white/70">Precision cuts, hot towels and a proper conversation. Book your chair and leave looking like the best version of you.</p>
+              <a href="contact.html" class="mt-8 inline-block bg-ember px-7 py-4 text-xs font-semibold uppercase tracking-widest transition hover:bg-white hover:text-coal" tabindex="-1">Book appointment</a>
+            </div>
+          </div>
+          <div class="slide absolute inset-0 grid items-center pointer-events-none opacity-0" data-slide aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1100&h=900&q=80" alt="Row of leather barber chairs under warm lights" class="absolute bottom-0 right-0 -z-10 h-full w-full object-cover opacity-50 [mask-image:linear-gradient(to_left,black_45%,transparent)] md:w-3/4 md:opacity-80">
+            <div class="max-w-xl">
+              <p class="font-display text-5xl font-medium leading-[1.05] md:text-7xl">A chair, a coffee and <span class="mark">an hour for you</span></p>
+              <p class="mt-6 max-w-md text-white/70">Precision cuts, hot towels and a proper conversation. Book your chair and leave looking like the best version of you.</p>
+              <a href="contact.html" class="mt-8 inline-block bg-ember px-7 py-4 text-xs font-semibold uppercase tracking-widest transition hover:bg-white hover:text-coal" tabindex="-1">Book appointment</a>
+            </div>
+          </div>
+          <div class="slide absolute inset-0 grid items-center pointer-events-none opacity-0" data-slide aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1534297635766-a262cdcb8ee4?auto=format&fit=crop&w=1100&h=900&q=80" alt="Barber with glasses cutting a client&#39;s hair" class="absolute bottom-0 right-0 -z-10 h-full w-full object-cover opacity-50 [mask-image:linear-gradient(to_left,black_45%,transparent)] md:w-3/4 md:opacity-80">
+            <div class="max-w-xl">
+              <p class="font-display text-5xl font-medium leading-[1.05] md:text-7xl">Walk in tired, <span class="mark">walk out sharp</span></p>
+              <p class="mt-6 max-w-md text-white/70">Precision cuts, hot towels and a proper conversation. Book your chair and leave looking like the best version of you.</p>
+              <a href="contact.html" class="mt-8 inline-block bg-ember px-7 py-4 text-xs font-semibold uppercase tracking-widest transition hover:bg-white hover:text-coal" tabindex="-1">Book appointment</a>
+            </div>
+          </div>
+        <p class="absolute right-16 top-1/2 hidden -translate-y-1/2 font-display text-7xl font-semibold md:block" aria-live="polite"><span data-slide-index>01</span> <span class="text-3xl text-white/50">/ 05</span></p>
+        <div class="absolute right-0 top-1/2 flex -translate-y-1/2 flex-col gap-5" role="group" aria-label="Choose a slide">
+            <button type="button" data-slide-dot="0" aria-pressed="true" class="group grid h-5 w-5 place-items-center rounded-full transition aria-pressed:ring-2 aria-pressed:ring-white" aria-label="Show slide 1"><span class="h-2 w-2 rounded-full bg-white/50 group-aria-pressed:bg-ember"></span></button>
+            <button type="button" data-slide-dot="1" aria-pressed="false" class="group grid h-5 w-5 place-items-center rounded-full transition aria-pressed:ring-2 aria-pressed:ring-white" aria-label="Show slide 2"><span class="h-2 w-2 rounded-full bg-white/50 group-aria-pressed:bg-ember"></span></button>
+            <button type="button" data-slide-dot="2" aria-pressed="false" class="group grid h-5 w-5 place-items-center rounded-full transition aria-pressed:ring-2 aria-pressed:ring-white" aria-label="Show slide 3"><span class="h-2 w-2 rounded-full bg-white/50 group-aria-pressed:bg-ember"></span></button>
+            <button type="button" data-slide-dot="3" aria-pressed="false" class="group grid h-5 w-5 place-items-center rounded-full transition aria-pressed:ring-2 aria-pressed:ring-white" aria-label="Show slide 4"><span class="h-2 w-2 rounded-full bg-white/50 group-aria-pressed:bg-ember"></span></button>
+            <button type="button" data-slide-dot="4" aria-pressed="false" class="group grid h-5 w-5 place-items-center rounded-full transition aria-pressed:ring-2 aria-pressed:ring-white" aria-label="Show slide 5"><span class="h-2 w-2 rounded-full bg-white/50 group-aria-pressed:bg-ember"></span></button>
+        </div>
+      </div>
+      <ul class="relative grid grid-cols-2 gap-x-6 gap-y-4 bg-coal-soft/90 p-5 backdrop-blur md:grid-cols-4 md:p-6 lg:mx-10">
+          <li><a href="gallery.html" class="group flex items-center gap-4"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=200&h=200&q=70" alt="Barber styling a textured crop" class="h-16 w-16 object-cover transition group-hover:ring-2 group-hover:ring-ember md:h-20 md:w-20"><span class="text-sm transition group-hover:text-ember">Textured crop</span></a></li>
+          <li><a href="gallery.html" class="group flex items-center gap-4"><img src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?auto=format&fit=crop&w=200&h=200&q=70" alt="Fresh skin fade from the side" class="h-16 w-16 object-cover transition group-hover:ring-2 group-hover:ring-ember md:h-20 md:w-20"><span class="text-sm transition group-hover:text-ember">Skin fade</span></a></li>
+          <li><a href="gallery.html" class="group flex items-center gap-4"><img src="https://images.unsplash.com/photo-1508341591423-4347099e1f19?auto=format&fit=crop&w=200&h=200&q=70" alt="Young man with a neat side part" class="h-16 w-16 object-cover transition group-hover:ring-2 group-hover:ring-ember md:h-20 md:w-20"><span class="text-sm transition group-hover:text-ember">Side part</span></a></li>
+          <li><a href="gallery.html" class="group flex items-center gap-4"><img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?auto=format&fit=crop&w=200&h=200&q=70" alt="Barber tapering curly hair" class="h-16 w-16 object-cover transition group-hover:ring-2 group-hover:ring-ember md:h-20 md:w-20"><span class="text-sm transition group-hover:text-ember">Curly taper</span></a></li>
+      </ul>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start stats -->
+  <section class="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-24">
+    <div class="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+      <div data-reveal>
+        <h2 class="font-display text-5xl font-medium leading-[1.05] md:text-6xl">A barbershop is more than a trade, it's our <span class="mark">calling!</span></h2>
+        <p class="mt-6 max-w-lg text-white/70">Three generations of barbers taught us the same lesson: a good cut is a craft, and a good chair is a place where people feel heard.</p>
+      </div>
+      <dl class="grid gap-6">
+          <div class="flex items-center gap-5" data-reveal style="--reveal-delay: 0ms"><dt class="order-2 font-display text-2xl">Years in the chair</dt><dd class="font-display text-7xl font-semibold leading-none text-ember"><span data-count="18">18</span></dd></div>
+          <div class="flex items-center gap-5" data-reveal style="--reveal-delay: 100ms"><dt class="order-2 font-display text-2xl">Master barbers</dt><dd class="font-display text-7xl font-semibold leading-none text-ember"><span data-count="07">07</span></dd></div>
+      </dl>
+    </div>
+    <div class="mt-16 flex items-center gap-6">
+      <span class="h-px flex-1 bg-white/15"></span>
+      <div class="text-center">
+        <p class="flex justify-center gap-2 text-3xl text-gold"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><span class="sr-only">Rated 5 out of 5</span></p>
+        <p class="mt-2 font-display text-xl text-white/70"><span data-count="4280">4280</span> reviews</p>
+      </div>
+      <span class="h-px flex-1 bg-white/15"></span>
+    </div>
+  </section>
+  <!-- block:end stats -->
+
+  <!-- block:start about -->
+  <section class="mx-auto max-w-7xl px-5 md:px-10">
+    <div class="relative isolate overflow-hidden px-6 pb-8 pt-20 text-center md:px-12 md:pt-28">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&h=900&q=75" alt="Barber giving a straight-razor shave in a dim shop" class="absolute inset-0 -z-10 h-full w-full object-cover opacity-50">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-coal/40 to-coal/80"></div>
+      <h2 class="font-display text-5xl font-medium">Since 2008</h2>
+      <p class="mx-auto mt-3 max-w-xl text-white/80">What started as one chair in a borrowed basement is now three shops across the city — same clippers, same coffee, same welcome.</p>
+      <a href="about.html" class="mt-8 inline-block bg-ember px-7 py-4 text-xs font-semibold uppercase tracking-widest transition hover:bg-white hover:text-coal">Read our story</a>
+      <ul class="mt-16 grid gap-4 md:grid-cols-3">
+          <li class="bg-coal-soft/90 p-6 text-left backdrop-blur" data-reveal style="--reveal-delay: 0ms"><p class="flex items-center gap-3 font-display text-2xl"><i class="fa-solid fa-location-dot text-ember" aria-hidden="true"></i>Downtown chair</p><p class="mt-2 text-sm text-white/70">212 Hanover St, Boston, MA 02113</p></li>
+          <li class="bg-coal-soft/90 p-6 text-left backdrop-blur" data-reveal style="--reveal-delay: 100ms"><p class="flex items-center gap-3 font-display text-2xl"><i class="fa-solid fa-location-dot text-ember" aria-hidden="true"></i>Southside studio</p><p class="mt-2 text-sm text-white/70">48 Dorchester Ave, Boston, MA 02127</p></li>
+          <li class="bg-coal-soft/90 p-6 text-left backdrop-blur" data-reveal style="--reveal-delay: 200ms"><p class="flex items-center gap-3 font-display text-2xl"><i class="fa-solid fa-location-dot text-ember" aria-hidden="true"></i>Harbor corner</p><p class="mt-2 text-sm text-white/70">9 Seaport Blvd, Boston, MA 02210</p></li>
+      </ul>
+    </div>
+  </section>
+  <!-- block:end about -->
+
+  <!-- block:start features -->
+  <section class="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-28">
+    <h2 class="text-center font-display text-5xl font-medium md:text-6xl">Service beyond <span class="mark">expectations</span></h2>
+    <ul class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:items-center">
+        <li class="group border border-transparent bg-coal-card p-8 text-center transition hover:-translate-y-2 hover:border-ember " data-reveal style="--reveal-delay: 0ms">
+          <i class="fa-solid fa-pump-soap text-4xl text-ember" aria-hidden="true"></i>
+          <h3 class="mt-6 font-display text-3xl uppercase">Shaving</h3>
+          <p class="mt-2 text-sm text-white/70">Hot towel, straight razor and a cool balm to finish.</p>
+          <a href="services.html" class="mt-6 inline-block border border-ember px-4 py-2 text-xs font-semibold uppercase tracking-widest transition hover:bg-ember ">Read more</a>
+        </li>
+        <li class="group border border-transparent bg-coal-card p-8 text-center transition hover:-translate-y-2 hover:border-ember lg:-translate-y-6 border-ember" data-reveal style="--reveal-delay: 80ms">
+          <i class="fa-solid fa-wind text-4xl text-ember" aria-hidden="true"></i>
+          <h3 class="mt-6 font-display text-3xl uppercase">Styling</h3>
+          <p class="mt-2 text-sm text-white/70">Blow-dry, texture and the right product for your hair.</p>
+          <a href="services.html" class="mt-6 inline-block border border-ember px-4 py-2 text-xs font-semibold uppercase tracking-widest transition hover:bg-ember bg-ember">Read more</a>
+        </li>
+        <li class="group border border-transparent bg-coal-card p-8 text-center transition hover:-translate-y-2 hover:border-ember " data-reveal style="--reveal-delay: 160ms">
+          <i class="fa-solid fa-scissors text-4xl text-ember" aria-hidden="true"></i>
+          <h3 class="mt-6 font-display text-3xl uppercase">Trimming</h3>
+          <p class="mt-2 text-sm text-white/70">Beard shaping and line-ups to keep the edges clean.</p>
+          <a href="services.html" class="mt-6 inline-block border border-ember px-4 py-2 text-xs font-semibold uppercase tracking-widest transition hover:bg-ember ">Read more</a>
+        </li>
+        <li class="group border border-transparent bg-coal-card p-8 text-center transition hover:-translate-y-2 hover:border-ember " data-reveal style="--reveal-delay: 240ms">
+          <i class="fa-solid fa-user text-4xl text-ember" aria-hidden="true"></i>
+          <h3 class="mt-6 font-display text-3xl uppercase">Haircut</h3>
+          <p class="mt-2 text-sm text-white/70">From skin fades to long scissor cuts, done properly.</p>
+          <a href="services.html" class="mt-6 inline-block border border-ember px-4 py-2 text-xs font-semibold uppercase tracking-widest transition hover:bg-ember ">Read more</a>
+        </li>
+    </ul>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start pricing -->
+  <section class="mx-auto grid max-w-7xl gap-12 px-5 pb-20 md:px-10 md:pb-28 lg:grid-cols-[1fr_1.2fr] lg:items-center">
+    <div>
+      <h2 class="font-display text-5xl font-medium md:text-6xl">Price list</h2>
+      <ul class="mt-10 grid gap-2">
+          <li class="flex items-baseline gap-3 py-3" data-reveal style="--reveal-delay: 0ms"><span class="font-display text-2xl">Vintage cut</span><span class="flex-1 border-b-2 border-dashed border-white/20"></span><span class="font-display text-2xl text-ember">$32</span></li>
+          <li class="flex items-baseline gap-3 py-3" data-reveal style="--reveal-delay: 80ms"><span class="font-display text-2xl">Beard trim</span><span class="flex-1 border-b-2 border-dashed border-white/20"></span><span class="font-display text-2xl text-ember">$18</span></li>
+          <li class="flex items-baseline gap-3 py-3" data-reveal style="--reveal-delay: 160ms"><span class="font-display text-2xl">Cut + hot shave</span><span class="flex-1 border-b-2 border-dashed border-white/20"></span><span class="font-display text-2xl text-ember">$48</span></li>
+          <li class="flex items-baseline gap-3 py-3" data-reveal style="--reveal-delay: 240ms"><span class="font-display text-2xl">Modern fade</span><span class="flex-1 border-b-2 border-dashed border-white/20"></span><span class="font-display text-2xl text-ember">$36</span></li>
+      </ul>
+      <a href="services.html" class="mt-10 inline-block bg-ember px-7 py-4 text-xs font-semibold uppercase tracking-widest transition hover:bg-white hover:text-coal">View all</a>
+    </div>
+    <div class="relative pb-24 md:pb-0">
+      <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1000&h=750&q=80" alt="Row of leather barber chairs under warm lights" class="ml-auto aspect-[4/3] w-full object-cover md:w-[78%]">
+      <div class="absolute bottom-0 left-4 w-56 bg-coal-soft/95 p-7 text-center backdrop-blur md:bottom-auto md:left-0 md:top-1/4 md:w-60">
+        <h3 class="font-display text-4xl">Opening hours</h3>
+        <p class="mt-6 text-sm text-white/70">Tuesday – Saturday</p>
+        <p class="mt-1 border-b border-white/15 pb-5 text-sm">09:00 – 19:00</p>
+        <p class="mt-5 text-sm text-white/70">Sunday &amp; Monday closed</p>
+      </div>
+    </div>
+  </section>
+  <!-- block:end pricing -->
+
+  <!-- block:start team -->
+  <section class="pb-20 md:pb-28" data-team>
+    <h2 class="px-5 text-center font-display text-5xl font-medium md:text-6xl">Meet our master <span class="mark">barbers</span></h2>
+    <div class="mx-auto mt-14 grid max-w-7xl gap-8 px-5 md:px-10 lg:grid-cols-[1.3fr_1fr] lg:items-center">
+      <div aria-live="polite">
+          <div data-member="0" >
+            <p class="font-display text-xl text-white/60">Master barber</p>
+            <h3 class="font-display text-5xl">Marcus Hale</h3>
+            <p class="mt-4 max-w-xl text-white/70">Twenty years with the clippers and still the first one in every morning. Ask him about pompadours.</p>
+            <div class="mt-6 flex gap-4 text-white/70">
+              <a href="contact.html" class="hover:text-ember" aria-label="Marcus Hale on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              <a href="contact.html" class="hover:text-ember" aria-label="Marcus Hale on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div data-member="1" hidden>
+            <p class="font-display text-xl text-white/60">Beard specialist</p>
+            <h3 class="font-display text-5xl">Dario Vance</h3>
+            <p class="mt-4 max-w-xl text-white/70">Turns any beard into a plan. Known for hot towels and long, honest chats.</p>
+            <div class="mt-6 flex gap-4 text-white/70">
+              <a href="contact.html" class="hover:text-ember" aria-label="Dario Vance on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              <a href="contact.html" class="hover:text-ember" aria-label="Dario Vance on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div data-member="2" hidden>
+            <p class="font-display text-xl text-white/60">Fade expert</p>
+            <h3 class="font-display text-5xl">Leo Park</h3>
+            <p class="mt-4 max-w-xl text-white/70">Clean lines and zero-to-two fades in under thirty minutes, without rushing a thing.</p>
+            <div class="mt-6 flex gap-4 text-white/70">
+              <a href="contact.html" class="hover:text-ember" aria-label="Leo Park on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              <a href="contact.html" class="hover:text-ember" aria-label="Leo Park on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        <div class="mt-8 flex gap-3">
+          <button type="button" data-member-prev class="grid h-11 w-11 place-items-center bg-ember transition hover:bg-white hover:text-coal" aria-label="Previous barber"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+          <button type="button" data-member-next class="grid h-11 w-11 place-items-center bg-ember transition hover:bg-white hover:text-coal" aria-label="Next barber"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      <div class="relative aspect-[4/5] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1534297635766-a262cdcb8ee4?auto=format&fit=crop&w=800&h=1000&q=80" alt="Barber with glasses cutting hair" class="slide absolute inset-0 h-full w-full object-cover opacity-100" data-member-photo="0">
+          <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=800&h=1000&q=80" alt="Bearded barber working in a colourful shop" class="slide absolute inset-0 h-full w-full object-cover opacity-0" data-member-photo="1">
+          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800&h=1000&q=80" alt="Barber blow-drying a smiling client" class="slide absolute inset-0 h-full w-full object-cover opacity-0" data-member-photo="2">
+      </div>
+    </div>
+    <ul class="mx-auto mt-6 grid max-w-7xl grid-cols-3 gap-3 px-5 md:px-10 lg:w-[60%] lg:max-w-none lg:pr-0">
+        <li><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=400&h=420&q=70" alt="Beard trim in black and white" class="aspect-square w-full object-cover" loading="lazy"></li>
+        <li><img src="https://images.unsplash.com/photo-1532710093739-9470acff878f?auto=format&fit=crop&w=400&h=420&q=70" alt="Barber brushing shaving foam onto a beard" class="aspect-square w-full object-cover" loading="lazy"></li>
+        <li><img src="https://images.unsplash.com/photo-1596728325488-58c87691e9af?auto=format&fit=crop&w=400&h=420&q=70" alt="Barber shaving a client with a straight razor" class="aspect-square w-full object-cover" loading="lazy"></li>
+    </ul>
+  </section>
+  <!-- block:end team -->
+
+  <!-- block:start reviews -->
+  <section class="mx-auto max-w-7xl px-5 pb-20 md:px-10 md:pb-28" data-carousel>
+    <div class="relative isolate overflow-hidden px-6 py-20 text-center md:px-24 md:py-28">
+      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1600&h=900&q=75" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+      <div class="absolute inset-0 -z-10 bg-coal/70"></div>
+      <i class="fa-solid fa-quote-left absolute left-8 top-4 text-7xl text-white/80 md:left-16 md:text-8xl" aria-hidden="true"></i>
+        <figure data-slide >
+          <blockquote class="font-display text-3xl font-medium leading-tight md:text-5xl">The best cut I&#39;ve had in years — relaxed, sharp and the hot shave was quick too.</blockquote>
+          <figcaption class="mt-6"><span class="block font-display text-xl">Alex Moreno</span><span class="text-gold"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></span></figcaption>
+        </figure>
+        <figure data-slide hidden>
+          <blockquote class="font-display text-3xl font-medium leading-tight md:text-5xl">They listened, suggested something better and nailed it. I&#39;m not going anywhere else.</blockquote>
+          <figcaption class="mt-6"><span class="block font-display text-xl">Jordan Blake</span><span class="text-gold"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></span></figcaption>
+        </figure>
+        <figure data-slide hidden>
+          <blockquote class="font-display text-3xl font-medium leading-tight md:text-5xl">Proper old-school service with a modern eye. The beard trim alone is worth it.</blockquote>
+          <figcaption class="mt-6"><span class="block font-display text-xl">Sam Whitfield</span><span class="text-gold"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></span></figcaption>
+        </figure>
+      <button type="button" data-carousel-prev class="absolute left-4 top-1/2 grid h-10 w-10 -translate-y-1/2 place-items-center bg-ember transition hover:bg-white hover:text-coal md:left-8" aria-label="Previous review"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+      <button type="button" data-carousel-next class="absolute right-4 top-1/2 grid h-10 w-10 -translate-y-1/2 place-items-center bg-ember transition hover:bg-white hover:text-coal md:right-8" aria-label="Next review"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+      <div class="mt-8 flex justify-center gap-2">
+          <button type="button" data-carousel-dot aria-current="true" class="h-2 w-6 bg-white/30 transition aria-[current=true]:w-10 aria-[current=true]:bg-ember" aria-label="Show review 1"></button>
+          <button type="button" data-carousel-dot aria-current="false" class="h-2 w-6 bg-white/30 transition aria-[current=true]:w-10 aria-[current=true]:bg-ember" aria-label="Show review 2"></button>
+          <button type="button" data-carousel-dot aria-current="false" class="h-2 w-6 bg-white/30 transition aria-[current=true]:w-10 aria-[current=true]:bg-ember" aria-label="Show review 3"></button>
+      </div>
+    </div>
+  </section>
+  <!-- block:end reviews -->
+
+  <!-- block:start gallery -->
+  <section class="mx-auto max-w-7xl px-5 pb-20 md:px-10 md:pb-28" data-lightbox-root>
+    <h2 class="font-display text-5xl font-medium md:text-6xl">Barbershop gallery</h2>
+    <ul class="mt-10 grid auto-rows-[10rem] grid-cols-2 gap-3 md:auto-rows-[12rem] md:grid-cols-3">
+        <li class="row-span-2"><button type="button" class="group relative block h-full w-full overflow-hidden" data-lightbox-open="1585747860715-2ba37e788b70" data-alt="Long row of barber chairs and mirrors" aria-label="Open photo: Long row of barber chairs and mirrors"><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=700&h=800&q=70" alt="Long row of barber chairs and mirrors" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy"><span class="absolute inset-0 grid place-items-center bg-coal/60 opacity-0 transition group-hover:opacity-100"><i class="fa-solid fa-plus grid h-12 w-12 place-items-center bg-ember text-lg" aria-hidden="true"></i></span></button></li>
+        <li class="row-span-2"><button type="button" class="group relative block h-full w-full overflow-hidden" data-lightbox-open="1605497788044-5a32c7078486" data-alt="Barber blow-drying a client&#39;s hair" aria-label="Open photo: Barber blow-drying a client&#39;s hair"><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=700&h=800&q=70" alt="Barber blow-drying a client&#39;s hair" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy"><span class="absolute inset-0 grid place-items-center bg-coal/60 opacity-0 transition group-hover:opacity-100"><i class="fa-solid fa-plus grid h-12 w-12 place-items-center bg-ember text-lg" aria-hidden="true"></i></span></button></li>
+        <li class=""><button type="button" class="group relative block h-full w-full overflow-hidden" data-lightbox-open="1512690459411-b9245aed614b" data-alt="Vintage leather barber chair" aria-label="Open photo: Vintage leather barber chair"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=700&h=800&q=70" alt="Vintage leather barber chair" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy"><span class="absolute inset-0 grid place-items-center bg-coal/60 opacity-0 transition group-hover:opacity-100"><i class="fa-solid fa-plus grid h-12 w-12 place-items-center bg-ember text-lg" aria-hidden="true"></i></span></button></li>
+        <li class="row-span-2"><button type="button" class="group relative block h-full w-full overflow-hidden" data-lightbox-open="1622287162716-f311baa1a2b8" data-alt="Barber at work in a colourful shop" aria-label="Open photo: Barber at work in a colourful shop"><img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=700&h=800&q=70" alt="Barber at work in a colourful shop" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy"><span class="absolute inset-0 grid place-items-center bg-coal/60 opacity-0 transition group-hover:opacity-100"><i class="fa-solid fa-plus grid h-12 w-12 place-items-center bg-ember text-lg" aria-hidden="true"></i></span></button></li>
+        <li class=""><button type="button" class="group relative block h-full w-full overflow-hidden" data-lightbox-open="1503951914875-452162b0f3f1" data-alt="Straight-razor shave in a dim room" aria-label="Open photo: Straight-razor shave in a dim room"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=700&h=800&q=70" alt="Straight-razor shave in a dim room" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy"><span class="absolute inset-0 grid place-items-center bg-coal/60 opacity-0 transition group-hover:opacity-100"><i class="fa-solid fa-plus grid h-12 w-12 place-items-center bg-ember text-lg" aria-hidden="true"></i></span></button></li>
+        <li class=""><button type="button" class="group relative block h-full w-full overflow-hidden" data-lightbox-open="1596728325488-58c87691e9af" data-alt="Close-up of a beard being shaved" aria-label="Open photo: Close-up of a beard being shaved"><img src="https://images.unsplash.com/photo-1596728325488-58c87691e9af?auto=format&fit=crop&w=700&h=800&q=70" alt="Close-up of a beard being shaved" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy"><span class="absolute inset-0 grid place-items-center bg-coal/60 opacity-0 transition group-hover:opacity-100"><i class="fa-solid fa-plus grid h-12 w-12 place-items-center bg-ember text-lg" aria-hidden="true"></i></span></button></li>
+    </ul>
+    <dialog data-lightbox class="w-[min(60rem,92vw)] bg-coal-card p-0 text-white backdrop:bg-black/80">
+      <img data-lightbox-image src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1400&h=900&q=80" alt="" class="aspect-[14/9] w-full object-cover">
+      <div class="flex items-center justify-between gap-4 p-4"><p class="text-sm text-white/70" data-lightbox-caption></p><button type="button" data-lightbox-close class="grid h-10 w-10 place-items-center bg-ember" aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
+    </dialog>
+  </section>
+  <!-- block:end gallery -->
+
+  <!-- block:start contact -->
+  <section class="relative isolate overflow-hidden py-20 md:py-28">
+    <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=1800&h=900&q=70" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover opacity-30">
+    <div class="mx-auto max-w-7xl px-5 md:px-10">
+      <h2 class="font-display text-5xl font-medium md:text-6xl">Book an appointment</h2>
+      <p class="mt-3 max-w-lg text-white/70">Pick a day and we'll hold a chair for you. We'll text to confirm within the hour.</p>
+      <form class="mt-10 grid gap-3 md:grid-cols-[1fr_1fr_1fr_auto]" data-booking novalidate>
+        <label class="sr-only" for="book-name">Your name</label>
+        <input id="book-name" name="name" required autocomplete="name" placeholder="Your name" class="bg-white px-5 py-4 text-coal placeholder:text-coal/50 focus:outline-none focus:ring-4 focus:ring-ember/50">
+        <label class="sr-only" for="book-phone">Phone</label>
+        <input id="book-phone" name="phone" type="tel" required autocomplete="tel" placeholder="Phone number" class="bg-white px-5 py-4 text-coal placeholder:text-coal/50 focus:outline-none focus:ring-4 focus:ring-ember/50">
+        <label class="sr-only" for="book-date">Date</label>
+        <input id="book-date" name="date" type="date" required class="bg-white px-5 py-4 text-coal focus:outline-none focus:ring-4 focus:ring-ember/50">
+        <button type="submit" class="bg-ember px-8 py-4 text-xs font-semibold uppercase tracking-widest transition hover:bg-white hover:text-coal">Book now</button>
+      </form>
+      <p class="mt-4 text-sm text-white/80" data-form-status role="status"></p>
+    </div>
+  </section>
+  <!-- block:end contact -->
+
+  <!-- block:start footer -->
+  <footer class="bg-coal">
+    <div class="mx-auto max-w-7xl px-5 pt-16 md:px-10">
+      <a href="index.html" class="block text-center font-display text-4xl font-semibold uppercase">Brass<span class="text-ember">moor</span>.</a>
+      <div class="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <h2 class="font-display text-2xl">Pages</h2>
+          <ul class="mt-4 grid gap-2 text-sm text-white/70">
+            <li><a href="index.html" class="hover:text-ember">Home</a></li><li><a href="about.html" class="hover:text-ember">About Us</a></li><li><a href="services.html" class="hover:text-ember">Services</a></li><li><a href="gallery.html" class="hover:text-ember">Gallery</a></li><li><a href="contact.html" class="hover:text-ember">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-display text-2xl">Services</h2>
+          <ul class="mt-4 grid gap-2 text-sm text-white/70">
+            <li><a href="services.html" class="hover:text-ember">Shaving</a></li><li><a href="services.html" class="hover:text-ember">Styling</a></li><li><a href="services.html" class="hover:text-ember">Trimming</a></li><li><a href="services.html" class="hover:text-ember">Haircut</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-display text-2xl">Contact</h2>
+          <ul class="mt-4 grid gap-2 text-sm text-white/70">
+            <li><i class="fa-solid fa-phone mr-2 text-ember" aria-hidden="true"></i>(617) 555-0142</li>
+            <li><i class="fa-solid fa-envelope mr-2 text-ember" aria-hidden="true"></i><a href="mailto:chair@brassmoor.com" class="hover:text-ember">chair@brassmoor.com</a></li>
+            <li><i class="fa-solid fa-clock mr-2 text-ember" aria-hidden="true"></i>Tue – Sat, 09:00 – 19:00</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-display text-2xl">Stay in the loop</h2>
+          <p class="mt-4 text-sm text-white/70">Offers and new barbers, once a month.</p>
+          <form class="mt-4 flex" data-subscribe novalidate>
+            <label for="footer-email" class="sr-only">Email</label>
+            <input id="footer-email" name="email" type="email" required placeholder="Email address" class="min-w-0 flex-1 bg-coal-soft px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-ember">
+            <button type="submit" class="grid w-12 place-items-center bg-ember transition hover:bg-white hover:text-coal" aria-label="Subscribe"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+          </form>
+          <p class="mt-2 text-xs text-white/70" data-subscribe-status role="status"></p>
+        </div>
+      </div>
+      <ul class="mt-14 grid gap-6 border-t border-coal-line pt-10 text-sm text-white/70 md:grid-cols-3">
+          <li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 text-ember" aria-hidden="true"></i><span><span class="block font-display text-xl text-white">Downtown chair</span>212 Hanover St, Boston, MA 02113</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 text-ember" aria-hidden="true"></i><span><span class="block font-display text-xl text-white">Southside studio</span>48 Dorchester Ave, Boston, MA 02127</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 text-ember" aria-hidden="true"></i><span><span class="block font-display text-xl text-white">Harbor corner</span>9 Seaport Blvd, Boston, MA 02210</span></li>
+      </ul>
+    </div>
+    <p class="mt-10 border-t border-coal-line px-5 py-6 text-center text-xs text-white/50">&copy; 2026 Brassmoor Barbers. All rights reserved.</p>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const watchMotion = !reducedMotion && !navigator.webdriver && 'IntersectionObserver' in window;
+
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-hero]').forEach((root) => {
+      const slides = [...root.querySelectorAll('[data-slide]')];
+      const dots = [...root.querySelectorAll('[data-slide-dot]')];
+      let current = 0;
+      const show = (index) => {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => {
+          const on = i === current;
+          slide.classList.toggle('opacity-100', on); slide.classList.toggle('opacity-0', !on); slide.classList.toggle('pointer-events-none', !on);
+          slide.setAttribute('aria-hidden', String(!on));
+          slide.querySelectorAll('a').forEach((link) => { link.tabIndex = on ? 0 : -1; });
+        });
+        dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === current)));
+        root.querySelector('[data-slide-index]').textContent = String(current + 1).padStart(2, '0');
+      };
+      dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
+      root.addEventListener('keydown', (event) => { if (event.key === 'ArrowDown') show(current + 1); if (event.key === 'ArrowUp') show(current - 1); });
+    });
+
+    document.querySelectorAll('[data-team]').forEach((root) => {
+      const members = [...root.querySelectorAll('[data-member]')];
+      const photos = [...root.querySelectorAll('[data-member-photo]')];
+      let current = 0;
+      const show = (index) => {
+        current = (index + members.length) % members.length;
+        members.forEach((member, i) => { member.hidden = i !== current; });
+        photos.forEach((photo, i) => { photo.classList.toggle('opacity-100', i === current); photo.classList.toggle('opacity-0', i !== current); });
+      };
+      root.querySelector('[data-member-prev]').addEventListener('click', () => show(current - 1));
+      root.querySelector('[data-member-next]').addEventListener('click', () => show(current + 1));
+    });
+
+    document.querySelectorAll('[data-carousel]').forEach((root) => {
+      const slides = [...root.querySelectorAll('[data-slide]')];
+      const dots = [...root.querySelectorAll('[data-carousel-dot]')];
+      let current = 0;
+      const show = (index) => {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => { slide.hidden = i !== current; });
+        dots.forEach((dot, i) => dot.setAttribute('aria-current', String(i === current)));
+      };
+      root.querySelector('[data-carousel-prev]').addEventListener('click', () => show(current - 1));
+      root.querySelector('[data-carousel-next]').addEventListener('click', () => show(current + 1));
+      dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
+    });
+
+    document.querySelectorAll('[data-lightbox-root]').forEach((root) => {
+      const dialog = root.querySelector('[data-lightbox]');
+      root.querySelectorAll('[data-lightbox-open]').forEach((button) => button.addEventListener('click', () => {
+        const image = dialog.querySelector('[data-lightbox-image]');
+        image.src = `https://images.unsplash.com/photo-${button.dataset.lightboxOpen}?auto=format&fit=crop&w=1400&h=900&q=80`;
+        image.alt = button.dataset.alt;
+        dialog.querySelector('[data-lightbox-caption]').textContent = button.dataset.alt;
+        dialog.showModal();
+      }));
+      dialog.querySelector('[data-lightbox-close]').addEventListener('click', () => dialog.close());
+      dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+    });
+
+    document.querySelectorAll('[data-booking]').forEach((form) => {
+      const status = form.parentElement.querySelector('[data-form-status]');
+      const date = form.querySelector('[name="date"]');
+      if (date) date.min = new Date().toISOString().slice(0, 10);
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const missing = [...form.querySelectorAll('[required]')].find((input) => !input.checkValidity());
+        if (missing) { status.textContent = 'Please add your name, phone and a date from today onwards.'; missing.focus(); return; }
+        status.textContent = `Thanks, ${form.elements.name.value}! Your chair is held for ${new Date(date.value).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}.`;
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-subscribe]').forEach((form) => {
+      const status = form.parentElement.querySelector('[data-subscribe-status]');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (!form.elements.email.checkValidity()) { status.textContent = 'Please enter a valid email.'; return; }
+        status.textContent = 'Subscribed — see you next month.';
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-count]').forEach((el) => {
+      if (!watchMotion) return;
+      const target = Number(el.dataset.count);
+      const pad = el.dataset.count.length;
+      const observer = new IntersectionObserver(([entry]) => {
+        if (!entry.isIntersecting) return;
+        observer.disconnect();
+        const start = performance.now();
+        const tick = (now) => { const t = Math.min(1, (now - start) / 700); el.textContent = String(Math.round(target * t)).padStart(pad > 2 ? 0 : pad, '0'); if (t < 1) requestAnimationFrame(tick); };
+        requestAnimationFrame(tick);
+      });
+      observer.observe(el);
+    });
+
+    if (watchMotion) {
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+      }), { threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach((el) => observer.observe(el));
+    }
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=brassmoor&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

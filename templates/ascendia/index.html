@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ascendia | Tailwind CSS Blog Template</title>
+  <meta name="description" content="Ascendia is a bold salmon-and-teal Tailwind CSS blog template for an online magazine about women founders, with a vertical side navigation, an offset photo hero, a topic ticker, filterable stories, a day-rate calculator, columnists, events with RSVP and stories, events, about, contact and article pages.">
+  <meta name="keywords" content="Ascendia, Tailwind CSS template, HTML website template, blog template, online magazine, women founders, entrepreneurship blog, editorial, events, newsletter">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Ascendia | Tailwind CSS Blog Template">
+  <meta property="og:description" content="A bold editorial Tailwind CSS magazine template with a side navigation, filterable stories, a day-rate calculator and article pages.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Ascendia template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Ascendia | Tailwind CSS Blog Template">
+  <meta name="twitter:description" content="A bold editorial Tailwind CSS magazine template with a side navigation, filterable stories, a day-rate calculator and article pages.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Ascendia template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { salmon: { DEFAULT: '#f7979a', soft: '#fde3df' }, teal: { DEFAULT: '#06292c', soft: '#123c40' }, cream: '#fff6ef', mustard: '#f2b84b' },
+          fontFamily: { display: ['"League Spartan"', 'sans-serif'], sans: ['"DM Sans"', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-cream font-sans text-teal antialiased lg:pl-56">
+  <!-- block:start navbar -->
+  <header class="sticky top-0 z-40 bg-salmon lg:fixed lg:inset-y-0 lg:left-0 lg:w-56">
+    <nav class="flex h-full items-center justify-between gap-4 px-5 py-4 lg:flex-col lg:items-start lg:justify-start lg:px-8 lg:py-10" aria-label="Main">
+      <a href="index.html" class="font-display text-3xl font-extrabold uppercase leading-none tracking-tight text-white">Ascend<span class="text-teal">/</span>ia</a>
+      <ul class="hidden flex-col gap-3 font-display text-lg uppercase tracking-wide lg:mt-auto lg:flex">
+          <li><a href="index.html" aria-current="page" class="transition font-extrabold text-teal">Home</a></li>
+          <li><a href="stories.html"  class="transition font-medium text-white hover:text-teal">Stories</a></li>
+          <li><a href="events.html"  class="transition font-medium text-white hover:text-teal">Events</a></li>
+          <li><a href="about.html"  class="transition font-medium text-white hover:text-teal">About</a></li>
+          <li><a href="contact.html"  class="transition font-medium text-white hover:text-teal">Contact</a></li>
+      </ul>
+      <a href="index.html#newsletter" class="hidden w-full bg-teal px-4 py-3 text-center font-display text-sm font-bold uppercase tracking-wider text-white transition hover:bg-white hover:text-teal lg:mt-10 lg:block">Subscribe</a>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="grid h-11 w-11 place-items-center border-2 border-teal text-teal lg:hidden" aria-label="Open menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t-2 border-teal/20 bg-salmon px-5 pb-6 lg:hidden">
+      <ul class="grid gap-1 pt-3 font-display text-3xl uppercase">
+          <li><a href="index.html" aria-current="page" class="block py-2 font-extrabold text-teal">Home</a></li>
+          <li><a href="stories.html"  class="block py-2 font-medium text-white">Stories</a></li>
+          <li><a href="events.html"  class="block py-2 font-medium text-white">Events</a></li>
+          <li><a href="about.html"  class="block py-2 font-medium text-white">About</a></li>
+          <li><a href="contact.html"  class="block py-2 font-medium text-white">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section class="bg-salmon">
+    <div class="mx-auto grid max-w-6xl gap-12 px-5 pb-20 pt-10 md:px-10 lg:grid-cols-[1.2fr_1fr] lg:items-center lg:pt-20">
+      <div>
+        <p class="font-display text-sm font-bold uppercase tracking-[.2em] text-white" data-reveal>Issue 14 · Spring</p>
+        <h1 class="mt-5 font-display text-6xl font-extrabold uppercase leading-[.9] tracking-tight md:text-8xl" data-reveal style="--reveal-delay: 80ms">Look up.<br>Build up.</h1>
+        <p class="mt-8 max-w-lg text-lg leading-relaxed" data-reveal style="--reveal-delay: 160ms">Honest stories, playbooks and numbers from women building companies on their own terms. Fewer slogans, more spreadsheets.</p>
+        <div class="mt-8 flex flex-wrap gap-3" data-reveal style="--reveal-delay: 220ms">
+          <a href="stories.html" class="bg-teal px-7 py-4 font-display text-sm font-bold uppercase tracking-wider text-white transition hover:bg-white hover:text-teal">Read the issue</a>
+          <a href="#newsletter" class="border-2 border-teal px-7 py-4 font-display text-sm font-bold uppercase tracking-wider transition hover:bg-teal hover:text-white">Get it weekly</a>
+        </div>
+      </div>
+      <div class="relative mx-auto w-full max-w-md pr-6 pt-6">
+        <div class="absolute right-0 top-0 h-[85%] w-[85%] bg-teal" aria-hidden="true"></div>
+        <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&w=800&h=1000&q=80" alt="Woman looking up at the city skyline at dusk" class="relative aspect-[4/5] w-full object-cover">
+        <p class="absolute -bottom-5 left-4 bg-mustard px-4 py-2 font-display text-sm font-bold uppercase tracking-wider">Cover: Imani Cole, founder</p>
+      </div>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start marquee -->
+  <section class="overflow-hidden border-y-2 border-teal bg-cream py-5" aria-label="Topics">
+    <ul class="ticker flex w-max gap-10 whitespace-nowrap font-display text-3xl font-extrabold uppercase md:text-4xl">
+          <li class="flex items-center gap-10" ><a href="stories.html" class="transition hover:text-salmon" >Money</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+          <li class="flex items-center gap-10" ><a href="stories.html" class="transition hover:text-salmon" >Leadership</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+          <li class="flex items-center gap-10" ><a href="stories.html" class="transition hover:text-salmon" >First hires</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+          <li class="flex items-center gap-10" ><a href="stories.html" class="transition hover:text-salmon" >Pricing</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+          <li class="flex items-center gap-10" ><a href="stories.html" class="transition hover:text-salmon" >Fundraising</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+          <li class="flex items-center gap-10" ><a href="stories.html" class="transition hover:text-salmon" >Burnout</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+          <li class="flex items-center gap-10" ><a href="stories.html" class="transition hover:text-salmon" >Side projects</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+          <li class="flex items-center gap-10" ><a href="stories.html" class="transition hover:text-salmon" >Negotiation</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+          <li class="flex items-center gap-10" aria-hidden="true"><a href="stories.html" class="transition hover:text-salmon" tabindex="-1">Money</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+          <li class="flex items-center gap-10" aria-hidden="true"><a href="stories.html" class="transition hover:text-salmon" tabindex="-1">Leadership</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+          <li class="flex items-center gap-10" aria-hidden="true"><a href="stories.html" class="transition hover:text-salmon" tabindex="-1">First hires</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+          <li class="flex items-center gap-10" aria-hidden="true"><a href="stories.html" class="transition hover:text-salmon" tabindex="-1">Pricing</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+          <li class="flex items-center gap-10" aria-hidden="true"><a href="stories.html" class="transition hover:text-salmon" tabindex="-1">Fundraising</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+          <li class="flex items-center gap-10" aria-hidden="true"><a href="stories.html" class="transition hover:text-salmon" tabindex="-1">Burnout</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+          <li class="flex items-center gap-10" aria-hidden="true"><a href="stories.html" class="transition hover:text-salmon" tabindex="-1">Side projects</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+          <li class="flex items-center gap-10" aria-hidden="true"><a href="stories.html" class="transition hover:text-salmon" tabindex="-1">Negotiation</a><span class="text-salmon" aria-hidden="true">✳</span></li>
+    </ul>
+  </section>
+  <!-- block:end marquee -->
+
+  <!-- block:start blog -->
+  <section class="mx-auto max-w-6xl px-5 py-20 md:px-10 md:py-28" data-latest>
+    <div class="flex flex-wrap items-end justify-between gap-6">
+      <h2 class="font-display text-5xl font-extrabold uppercase leading-none md:text-6xl">This week</h2>
+      <div class="flex flex-wrap gap-2" role="tablist" aria-label="Story topics">
+          <button type="button" role="tab" id="latest-tab-all" aria-controls="latest-list" aria-selected="true" tabindex="0" data-topic="all" class="border-2 border-teal px-4 py-2 font-display text-sm font-bold uppercase tracking-wider transition hover:bg-salmon-soft aria-selected:bg-teal aria-selected:text-white">All</button>
+          <button type="button" role="tab" id="latest-tab-money" aria-controls="latest-list" aria-selected="false" tabindex="-1" data-topic="money" class="border-2 border-teal px-4 py-2 font-display text-sm font-bold uppercase tracking-wider transition hover:bg-salmon-soft aria-selected:bg-teal aria-selected:text-white">Money</button>
+          <button type="button" role="tab" id="latest-tab-pricing" aria-controls="latest-list" aria-selected="false" tabindex="-1" data-topic="pricing" class="border-2 border-teal px-4 py-2 font-display text-sm font-bold uppercase tracking-wider transition hover:bg-salmon-soft aria-selected:bg-teal aria-selected:text-white">Pricing</button>
+          <button type="button" role="tab" id="latest-tab-leadership" aria-controls="latest-list" aria-selected="false" tabindex="-1" data-topic="leadership" class="border-2 border-teal px-4 py-2 font-display text-sm font-bold uppercase tracking-wider transition hover:bg-salmon-soft aria-selected:bg-teal aria-selected:text-white">Leadership</button>
+      </div>
+    </div>
+    <ul id="latest-list" role="tabpanel" aria-label="Latest stories" class="mt-12 grid gap-10 md:grid-cols-3">
+        <li data-post-topic="money" data-reveal style="--reveal-delay: 0ms">
+          <a href="first-hire.html" class="group block">
+            <span class="relative block pb-3 pr-3"><span class="absolute bottom-0 right-0 h-[90%] w-[90%] bg-salmon transition group-hover:translate-x-1 group-hover:translate-y-1" aria-hidden="true"></span><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&h=520&q=75" alt="Smiling woman standing in a modern office" class="relative aspect-[4/3] w-full object-cover"></span>
+            <span class="mt-5 flex items-center gap-3 font-display text-xs font-bold uppercase tracking-[.2em]"><span class="bg-teal px-2 py-1 text-white">Money</span>6 min read</span>
+            <span class="mt-3 block font-display text-2xl font-bold uppercase leading-tight group-hover:underline group-hover:decoration-salmon group-hover:decoration-4 group-hover:underline-offset-4">The first hire nobody tells you to make</span>
+            <span class="mt-2 block text-teal/75">Why a part-time bookkeeper beat a marketer for three founders we spoke to.</span>
+          </a>
+        </li>
+        <li data-post-topic="pricing" data-reveal style="--reveal-delay: 80ms">
+          <a href="pricing-yourself.html" class="group block">
+            <span class="relative block pb-3 pr-3"><span class="absolute bottom-0 right-0 h-[90%] w-[90%] bg-salmon transition group-hover:translate-x-1 group-hover:translate-y-1" aria-hidden="true"></span><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=700&h=520&q=75" alt="Two women talking over a laptop at a wooden table" class="relative aspect-[4/3] w-full object-cover"></span>
+            <span class="mt-5 flex items-center gap-3 font-display text-xs font-bold uppercase tracking-[.2em]"><span class="bg-teal px-2 py-1 text-white">Pricing</span>8 min read</span>
+            <span class="mt-3 block font-display text-2xl font-bold uppercase leading-tight group-hover:underline group-hover:decoration-salmon group-hover:decoration-4 group-hover:underline-offset-4">Charge for the outcome, not the hour</span>
+            <span class="mt-2 block text-teal/75">A four-step script for raising your rates without losing your best clients.</span>
+          </a>
+        </li>
+        <li data-post-topic="leadership" data-reveal style="--reveal-delay: 160ms">
+          <a href="quiet-launch.html" class="group block">
+            <span class="relative block pb-3 pr-3"><span class="absolute bottom-0 right-0 h-[90%] w-[90%] bg-salmon transition group-hover:translate-x-1 group-hover:translate-y-1" aria-hidden="true"></span><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=700&h=520&q=75" alt="Three women working together at laptops" class="relative aspect-[4/3] w-full object-cover"></span>
+            <span class="mt-5 flex items-center gap-3 font-display text-xs font-bold uppercase tracking-[.2em]"><span class="bg-teal px-2 py-1 text-white">Leadership</span>5 min read</span>
+            <span class="mt-3 block font-display text-2xl font-bold uppercase leading-tight group-hover:underline group-hover:decoration-salmon group-hover:decoration-4 group-hover:underline-offset-4">The quiet launch: shipping without an audience</span>
+            <span class="mt-2 block text-teal/75">How a ceramicist sold out her first collection to forty email subscribers.</span>
+          </a>
+        </li>
+    </ul>
+    <p class="mt-8 text-sm text-teal/60" aria-live="polite"><span data-post-count>3</span> stories shown · <a href="stories.html" class="font-bold underline underline-offset-4">See the archive</a></p>
+  </section>
+  <!-- block:end blog -->
+
+  <!-- block:start demo -->
+  <section class="bg-teal text-white" data-rate>
+    <div class="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:px-10 md:py-28 lg:grid-cols-[1fr_1.1fr]">
+      <div>
+        <p class="font-display text-sm font-bold uppercase tracking-[.2em] text-salmon">Tool of the issue</p>
+        <h2 class="mt-4 font-display text-5xl font-extrabold uppercase leading-[.95] md:text-6xl">What should your day rate be?</h2>
+        <p class="mt-6 max-w-md text-white/75">Most of our readers undercharge by a third. Put in what you want to earn and how you really work; we will do the maths.</p>
+        <div class="mt-10 grid gap-7">
+            <label class="grid gap-2"><span class="flex justify-between font-display text-sm font-bold uppercase tracking-wider">Take-home goal<output class="text-mustard" data-rate-out="income">$72,500</output></span><input type="range" min="20000" max="200000" step="2500" value="72500" data-rate-input="income" data-prefix="$" class="accent-[#f7979a]"></label>
+            <label class="grid gap-2"><span class="flex justify-between font-display text-sm font-bold uppercase tracking-wider">Working weeks a year<output class="text-mustard" data-rate-out="weeks">44</output></span><input type="range" min="30" max="50" step="1" value="44" data-rate-input="weeks" data-prefix="" class="accent-[#f7979a]"></label>
+            <label class="grid gap-2"><span class="flex justify-between font-display text-sm font-bold uppercase tracking-wider">Billable days a week<output class="text-mustard" data-rate-out="days">3</output></span><input type="range" min="1" max="5" step="0.5" value="3" data-rate-input="days" data-prefix="" class="accent-[#f7979a]"></label>
+            <label class="grid gap-2"><span class="flex justify-between font-display text-sm font-bold uppercase tracking-wider">Yearly business costs<output class="text-mustard" data-rate-out="costs">$9,000</output></span><input type="range" min="0" max="40000" step="500" value="9000" data-rate-input="costs" data-prefix="$" class="accent-[#f7979a]"></label>
+        </div>
+      </div>
+      <div class="self-center">
+        <div class="relative pb-4 pr-4">
+          <div class="absolute bottom-0 right-0 h-full w-full translate-x-0 bg-salmon" aria-hidden="true"></div>
+          <div class="relative bg-cream p-8 text-teal md:p-10" aria-live="polite">
+            <p class="font-display text-sm font-bold uppercase tracking-[.2em]">Your day rate</p>
+            <p class="mt-2 font-display text-7xl font-extrabold md:text-8xl" data-rate-day>$801</p>
+            <dl class="mt-8 grid grid-cols-2 gap-6 border-t-2 border-teal pt-6">
+              <div><dt class="text-sm text-teal/60">Billable days a year</dt><dd class="font-display text-3xl font-bold" data-rate-days>132</dd></div>
+              <div><dt class="text-sm text-teal/60">Revenue needed</dt><dd class="font-display text-3xl font-bold" data-rate-revenue>$105,667</dd></div>
+            </dl>
+            <p class="mt-6 text-sm text-teal/70">Includes 25% set aside for tax. <a href="pricing-yourself.html" class="font-bold underline underline-offset-4">Read: charge for the outcome</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end demo -->
+
+  <!-- block:start team -->
+  <section class="mx-auto max-w-6xl px-5 py-20 md:px-10 md:py-28" data-writers>
+    <div class="flex flex-wrap items-end justify-between gap-6">
+      <h2 class="font-display text-5xl font-extrabold uppercase leading-none md:text-6xl">The columnists</h2>
+      <div class="flex flex-wrap items-center gap-2">
+        <div class="flex gap-2" role="group" aria-label="Filter columnists">
+            <button type="button" data-beat="all" aria-pressed="true" class="px-3 py-2 font-display text-sm font-bold uppercase tracking-wider underline-offset-8 transition hover:text-salmon aria-pressed:underline aria-pressed:decoration-4 aria-pressed:decoration-salmon">All</button>
+            <button type="button" data-beat="money" aria-pressed="false" class="px-3 py-2 font-display text-sm font-bold uppercase tracking-wider underline-offset-8 transition hover:text-salmon aria-pressed:underline aria-pressed:decoration-4 aria-pressed:decoration-salmon">Money</button>
+            <button type="button" data-beat="leadership" aria-pressed="false" class="px-3 py-2 font-display text-sm font-bold uppercase tracking-wider underline-offset-8 transition hover:text-salmon aria-pressed:underline aria-pressed:decoration-4 aria-pressed:decoration-salmon">Leadership</button>
+            <button type="button" data-beat="pricing" aria-pressed="false" class="px-3 py-2 font-display text-sm font-bold uppercase tracking-wider underline-offset-8 transition hover:text-salmon aria-pressed:underline aria-pressed:decoration-4 aria-pressed:decoration-salmon">Pricing</button>
+        </div>
+        <button type="button" data-writers-prev class="grid h-11 w-11 place-items-center border-2 border-teal transition hover:bg-teal hover:text-white" aria-label="Previous columnists"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+        <button type="button" data-writers-next class="grid h-11 w-11 place-items-center bg-teal text-white transition hover:bg-salmon" aria-label="Next columnists"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <ul class="mt-12 flex snap-x gap-5 overflow-x-auto pb-4" data-writers-track>
+        <li class="w-64 shrink-0 snap-start" data-writer-beat="money">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&h=620&q=75" alt="Smiling woman in a red top" class="aspect-[4/5] w-full object-cover grayscale transition hover:grayscale-0">
+          <p class="mt-4 font-display text-xl font-bold uppercase">Imani Cole</p>
+          <p class="text-sm text-teal/60">Money editor</p>
+        </li>
+        <li class="w-64 shrink-0 snap-start" data-writer-beat="leadership">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&h=620&q=75" alt="Woman with short hair by a lake" class="aspect-[4/5] w-full object-cover grayscale transition hover:grayscale-0">
+          <p class="mt-4 font-display text-xl font-bold uppercase">Sasha Brenner</p>
+          <p class="text-sm text-teal/60">Leadership</p>
+        </li>
+        <li class="w-64 shrink-0 snap-start" data-writer-beat="pricing">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=500&h=620&q=75" alt="Woman in a striped top in soft light" class="aspect-[4/5] w-full object-cover grayscale transition hover:grayscale-0">
+          <p class="mt-4 font-display text-xl font-bold uppercase">Marisol Vega</p>
+          <p class="text-sm text-teal/60">Pricing columnist</p>
+        </li>
+        <li class="w-64 shrink-0 snap-start" data-writer-beat="money">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=500&h=620&q=75" alt="Woman with dark hair against a dark wall" class="aspect-[4/5] w-full object-cover grayscale transition hover:grayscale-0">
+          <p class="mt-4 font-display text-xl font-bold uppercase">Noor Haddad</p>
+          <p class="text-sm text-teal/60">Money</p>
+        </li>
+        <li class="w-64 shrink-0 snap-start" data-writer-beat="leadership">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=500&h=620&q=75" alt="Woman with curly hair smiling in an office" class="aspect-[4/5] w-full object-cover grayscale transition hover:grayscale-0">
+          <p class="mt-4 font-display text-xl font-bold uppercase">Freya Lund</p>
+          <p class="text-sm text-teal/60">Leadership</p>
+        </li>
+    </ul>
+  </section>
+  <!-- block:end team -->
+
+  <!-- block:start events -->
+  <section class="bg-salmon-soft" data-rsvp>
+    <div class="mx-auto max-w-6xl px-5 py-20 md:px-10 md:py-28">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <h2 class="font-display text-5xl font-extrabold uppercase leading-none md:text-6xl">Meet the readers</h2>
+        <a href="events.html" class="font-display text-sm font-bold uppercase tracking-wider underline decoration-salmon decoration-4 underline-offset-8">All events</a>
+      </div>
+      <ul class="mt-12 border-t-2 border-teal">
+          <li class="grid gap-4 border-b-2 border-teal py-6 md:grid-cols-[8rem_1fr_auto_auto] md:items-center">
+            <span class="font-display text-3xl font-extrabold uppercase text-salmon">Apr 18</span>
+            <span><span class="block font-display text-2xl font-bold uppercase">Pricing clinic</span><span class="text-teal/70">Online · 18:00 CET</span></span>
+            <span class="text-sm font-bold" data-seats>7 seats left</span>
+            <button type="button" data-rsvp-button data-left="7" aria-pressed="false" class="w-fit border-2 border-teal px-5 py-2 font-display text-sm font-bold uppercase tracking-wider transition hover:bg-teal hover:text-white aria-pressed:bg-teal aria-pressed:text-white">RSVP</button>
+          </li>
+          <li class="grid gap-4 border-b-2 border-teal py-6 md:grid-cols-[8rem_1fr_auto_auto] md:items-center">
+            <span class="font-display text-3xl font-extrabold uppercase text-salmon">May 06</span>
+            <span><span class="block font-display text-2xl font-bold uppercase">Founders&#39; breakfast</span><span class="text-teal/70">Lisbon · 08:30</span></span>
+            <span class="text-sm font-bold" data-seats>3 seats left</span>
+            <button type="button" data-rsvp-button data-left="3" aria-pressed="false" class="w-fit border-2 border-teal px-5 py-2 font-display text-sm font-bold uppercase tracking-wider transition hover:bg-teal hover:text-white aria-pressed:bg-teal aria-pressed:text-white">RSVP</button>
+          </li>
+          <li class="grid gap-4 border-b-2 border-teal py-6 md:grid-cols-[8rem_1fr_auto_auto] md:items-center">
+            <span class="font-display text-3xl font-extrabold uppercase text-salmon">Jun 12</span>
+            <span><span class="block font-display text-2xl font-bold uppercase">Raise your first round</span><span class="text-teal/70">Online · 17:00 CET</span></span>
+            <span class="text-sm font-bold" data-seats>56 seats left</span>
+            <button type="button" data-rsvp-button data-left="56" aria-pressed="false" class="w-fit border-2 border-teal px-5 py-2 font-display text-sm font-bold uppercase tracking-wider transition hover:bg-teal hover:text-white aria-pressed:bg-teal aria-pressed:text-white">RSVP</button>
+          </li>
+      </ul>
+    </div>
+  </section>
+  <!-- block:end events -->
+
+  <!-- block:start reviews -->
+  <section class="mx-auto max-w-6xl px-5 py-20 md:px-10 md:py-28">
+    <h2 class="font-display text-5xl font-extrabold uppercase leading-none md:text-6xl">Readers say</h2>
+    <ul class="mt-12 grid gap-4 md:grid-cols-3">
+        <li class="flex flex-col justify-between gap-6 p-8 md:col-span-2 bg-teal text-white" data-reveal style="--reveal-delay: 0ms">
+          <p class="font-display text-2xl font-bold uppercase leading-tight md:text-3xl">“The only newsletter I read before my coffee is finished.”</p>
+          <p class="text-sm font-bold uppercase tracking-wider opacity-75">Dana, bakery owner</p>
+        </li>
+        <li class="flex flex-col justify-between gap-6 p-8 bg-mustard" data-reveal style="--reveal-delay: 70ms">
+          <p class="font-display text-2xl font-bold uppercase leading-tight md:text-3xl">“Raised my rates 40% after one issue.”</p>
+          <p class="text-sm font-bold uppercase tracking-wider opacity-75">Leah, designer</p>
+        </li>
+        <li class="flex flex-col justify-between gap-6 p-8 bg-salmon" data-reveal style="--reveal-delay: 140ms">
+          <p class="font-display text-2xl font-bold uppercase leading-tight md:text-3xl">“Practical, funny, never preachy.”</p>
+          <p class="text-sm font-bold uppercase tracking-wider opacity-75">Ama, agency founder</p>
+        </li>
+        <li class="flex flex-col justify-between gap-6 p-8 bg-white" data-reveal style="--reveal-delay: 0ms">
+          <p class="font-display text-2xl font-bold uppercase leading-tight md:text-3xl">“Their first-hire piece saved me a bad decision.”</p>
+          <p class="text-sm font-bold uppercase tracking-wider opacity-75">Yuki, e-commerce</p>
+        </li>
+        <li class="flex flex-col justify-between gap-6 p-8 bg-salmon-soft" data-reveal style="--reveal-delay: 70ms">
+          <p class="font-display text-2xl font-bold uppercase leading-tight md:text-3xl">“The events are worth the trip alone.”</p>
+          <p class="text-sm font-bold uppercase tracking-wider opacity-75">Mei, studio founder</p>
+        </li>
+        <li class="flex flex-col justify-between gap-6 p-8 md:col-span-3 bg-cream border-2 border-teal" data-reveal style="--reveal-delay: 140ms">
+          <p class="font-display text-2xl font-bold uppercase leading-tight md:text-3xl">“Feels like advice from a friend who has done it.”</p>
+          <p class="text-sm font-bold uppercase tracking-wider opacity-75">Rosa, consultant</p>
+        </li>
+    </ul>
+  </section>
+  <!-- block:end reviews -->
+
+  <!-- block:start newsletter -->
+  <section id="newsletter" class="bg-salmon">
+    <div class="mx-auto grid max-w-6xl gap-10 px-5 py-20 md:px-10 lg:grid-cols-[1fr_1.2fr] lg:items-center">
+      <h2 class="font-display text-5xl font-extrabold uppercase leading-[.9] md:text-7xl">One email. Sundays. Free.</h2>
+      <form data-newsletter novalidate>
+        <fieldset>
+          <legend class="font-display text-sm font-bold uppercase tracking-wider">I want more on</legend>
+          <div class="mt-3 flex flex-wrap gap-2">
+              <label class="cursor-pointer"><input type="checkbox" name="topics" value="Money" class="peer sr-only" checked><span class="block border-2 border-teal px-4 py-2 font-display text-sm font-bold uppercase tracking-wider transition hover:bg-salmon-soft peer-checked:bg-teal peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-white">Money</span></label>
+              <label class="cursor-pointer"><input type="checkbox" name="topics" value="Pricing" class="peer sr-only" checked><span class="block border-2 border-teal px-4 py-2 font-display text-sm font-bold uppercase tracking-wider transition hover:bg-salmon-soft peer-checked:bg-teal peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-white">Pricing</span></label>
+              <label class="cursor-pointer"><input type="checkbox" name="topics" value="Leadership" class="peer sr-only" ><span class="block border-2 border-teal px-4 py-2 font-display text-sm font-bold uppercase tracking-wider transition hover:bg-salmon-soft peer-checked:bg-teal peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-white">Leadership</span></label>
+              <label class="cursor-pointer"><input type="checkbox" name="topics" value="Fundraising" class="peer sr-only" ><span class="block border-2 border-teal px-4 py-2 font-display text-sm font-bold uppercase tracking-wider transition hover:bg-salmon-soft peer-checked:bg-teal peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-white">Fundraising</span></label>
+              <label class="cursor-pointer"><input type="checkbox" name="topics" value="Wellbeing" class="peer sr-only" ><span class="block border-2 border-teal px-4 py-2 font-display text-sm font-bold uppercase tracking-wider transition hover:bg-salmon-soft peer-checked:bg-teal peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-white">Wellbeing</span></label>
+          </div>
+        </fieldset>
+        <div class="mt-6 flex flex-col gap-2 sm:flex-row">
+          <label for="news-email" class="sr-only">Email address</label>
+          <input id="news-email" name="email" type="email" required autocomplete="email" placeholder="you@company.com" class="min-w-0 flex-1 border-2 border-teal bg-cream px-5 py-4 placeholder:text-teal/40 focus:outline-none focus:ring-4 focus:ring-white">
+          <button type="submit" class="bg-teal px-7 py-4 font-display text-sm font-bold uppercase tracking-wider text-white transition hover:bg-white hover:text-teal">Subscribe</button>
+        </div>
+        <p class="mt-3 min-h-[1.5rem] font-medium" data-form-status role="status"></p>
+      </form>
+    </div>
+  </section>
+  <!-- block:end newsletter -->
+
+  <!-- block:start footer -->
+  <footer class="overflow-hidden bg-teal text-white">
+    <div class="mx-auto max-w-6xl px-5 pt-16 md:px-10">
+      <div class="flex flex-wrap justify-between gap-8">
+        <ul class="flex flex-wrap gap-6 font-display text-sm font-bold uppercase tracking-wider">
+          <li><a href="stories.html" class="hover:text-salmon">Stories</a></li><li><a href="events.html" class="hover:text-salmon">Events</a></li><li><a href="about.html" class="hover:text-salmon">About</a></li><li><a href="contact.html" class="hover:text-salmon">Contact</a></li>
+          <li><a href="first-hire.html" class="hover:text-salmon">Latest story</a></li>
+        </ul>
+        <div class="flex gap-4">
+            <a href="contact.html" aria-label="Instagram" class="grid h-10 w-10 place-items-center border-2 border-white transition hover:border-salmon hover:bg-salmon"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="contact.html" aria-label="LinkedIn" class="grid h-10 w-10 place-items-center border-2 border-white transition hover:border-salmon hover:bg-salmon"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="contact.html" aria-label="Podcast" class="grid h-10 w-10 place-items-center border-2 border-white transition hover:border-salmon hover:bg-salmon"><i class="fa-brands fa-spotify" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <p class="mt-12 select-none font-display text-[19vw] font-extrabold uppercase leading-[.8] tracking-tight text-salmon lg:text-[11rem]" aria-hidden="true">Ascendia</p>
+      <p class="flex flex-wrap justify-between gap-4 border-t border-white/20 py-6 text-sm text-white/60"><span>&copy; 2026 Ascendia Media</span><span>Independent, reader-funded, ad-free.</span></p>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const watchMotion = !reducedMotion && !navigator.webdriver && 'IntersectionObserver' in window;
+
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-latest]').forEach((root) => {
+      const tabs = [...root.querySelectorAll('[role="tab"]')];
+      const items = [...root.querySelectorAll('[data-post-topic]')];
+      const select = (tab, focus) => {
+        tabs.forEach((other) => { const on = other === tab; other.setAttribute('aria-selected', String(on)); other.tabIndex = on ? 0 : -1; });
+        let shown = 0;
+        items.forEach((item) => { item.hidden = tab.dataset.topic !== 'all' && item.dataset.postTopic !== tab.dataset.topic; if (!item.hidden) shown += 1; });
+        root.querySelector('[data-post-count]').textContent = shown;
+        if (focus) tab.focus();
+      };
+      tabs.forEach((tab, i) => {
+        tab.addEventListener('click', () => select(tab));
+        tab.addEventListener('keydown', (event) => {
+          if (event.key === 'ArrowRight') select(tabs[(i + 1) % tabs.length], true);
+          if (event.key === 'ArrowLeft') select(tabs[(i - 1 + tabs.length) % tabs.length], true);
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-rate]').forEach((root) => {
+      const inputs = Object.fromEntries([...root.querySelectorAll('[data-rate-input]')].map((input) => [input.dataset.rateInput, input]));
+      const money = (value) => `$${Math.round(value).toLocaleString('en-US')}`;
+      const update = () => {
+        Object.values(inputs).forEach((input) => {
+          const value = Number(input.value);
+          root.querySelector(`[data-rate-out="${input.dataset.rateInput}"]`).textContent = input.dataset.prefix ? money(value) : value;
+        });
+        const days = Number(inputs.weeks.value) * Number(inputs.days.value);
+        const revenue = Number(inputs.income.value) / 0.75 + Number(inputs.costs.value);
+        root.querySelector('[data-rate-days]').textContent = days;
+        root.querySelector('[data-rate-revenue]').textContent = money(revenue);
+        root.querySelector('[data-rate-day]').textContent = money(revenue / days);
+      };
+      Object.values(inputs).forEach((input) => input.addEventListener('input', update));
+      update();
+    });
+
+    document.querySelectorAll('[data-writers]').forEach((root) => {
+      const track = root.querySelector('[data-writers-track]');
+      const chips = [...root.querySelectorAll('[data-beat]')];
+      const step = () => (track.firstElementChild?.getBoundingClientRect().width || 256) + 20;
+      const behavior = () => (reducedMotion ? 'auto' : 'smooth');
+      root.querySelector('[data-writers-prev]').addEventListener('click', () => track.scrollBy({ left: -step(), behavior: behavior() }));
+      root.querySelector('[data-writers-next]').addEventListener('click', () => track.scrollBy({ left: step(), behavior: behavior() }));
+      chips.forEach((chip) => chip.addEventListener('click', () => {
+        chips.forEach((other) => other.setAttribute('aria-pressed', String(other === chip)));
+        root.querySelectorAll('[data-writer-beat]').forEach((item) => { item.hidden = chip.dataset.beat !== 'all' && item.dataset.writerBeat !== chip.dataset.beat; });
+        track.scrollTo({ left: 0 });
+      }));
+    });
+
+    document.querySelectorAll('[data-rsvp]').forEach((root) => {
+      root.querySelectorAll('[data-rsvp-button]').forEach((button) => button.addEventListener('click', () => {
+        const going = button.getAttribute('aria-pressed') !== 'true';
+        button.setAttribute('aria-pressed', String(going));
+        button.textContent = going ? 'Going ✓' : 'RSVP';
+        button.closest('li').querySelector('[data-seats]').textContent = `${Number(button.dataset.left) - (going ? 1 : 0)} seats left`;
+      }));
+    });
+
+    document.querySelectorAll('[data-newsletter]').forEach((form) => {
+      const status = form.querySelector('[data-form-status]');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = form.querySelector('[name="email"]');
+        if (!email.value.trim() || !email.checkValidity()) { status.textContent = 'Please enter a valid email address.'; email.focus(); return; }
+        const topics = new FormData(form).getAll('topics');
+        status.textContent = `You're in. First issue this Sunday${topics.length ? `, with extra ${topics.join(' and ').toLowerCase()}` : ''}.`;
+        form.reset();
+      });
+    });
+
+    if (watchMotion) {
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+      }), { threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach((el) => observer.observe(el));
+    }
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=ascendia&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

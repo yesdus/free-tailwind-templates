@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sproutline | Tailwind CSS Agency Template</title>
+  <meta name="description" content="Sproutline is a dark, lime-accented Tailwind CSS agency template for web design studios, with a framed hero, a client logo marquee, a growth calculator, a project hover list, a single-plan pricing block and case study pages.">
+  <meta name="keywords" content="Sproutline, Tailwind CSS template, HTML website template, agency template, web design agency, dark website template, subscription design studio, growth calculator, case study page, pricing page">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Sproutline | Tailwind CSS Agency Template">
+  <meta property="og:description" content="A dark, lime-accented Tailwind CSS agency template for web design studios, with a growth calculator, project hover list and case study pages.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Sproutline template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Sproutline | Tailwind CSS Agency Template">
+  <meta name="twitter:description" content="A dark, lime-accented Tailwind CSS agency template for web design studios, with a growth calculator, project hover list and case study pages.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Sproutline template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { night: '#060d1a', deep: '#0a1528', ocean: '#12306b', lime: { DEFAULT: '#a3e635', dark: '#84cc16' }, haze: '#c5d0e2' },
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], serif: ['"DM Serif Display"', 'serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="font-sans text-white antialiased">
+  <!-- block:start navbar -->
+  <header class="relative z-40 px-3 pt-3 sm:px-6 sm:pt-10 lg:px-24 lg:pt-16">
+    <nav class="frame-plain mx-auto flex max-w-7xl items-center justify-between gap-6 border-white/10 px-5 py-6 md:px-12 rounded-t-[2rem] border-x-4 border-t-4" aria-label="Main">
+      <a href="index.html" class="flex items-center gap-2 font-serif text-2xl md:text-3xl" aria-label="Sproutline home">
+        <svg class="h-7 w-7" viewBox="0 0 28 28" aria-hidden="true"><circle cx="8" cy="8" r="5" fill="none" stroke="#a3e635" stroke-width="3"/><circle cx="8" cy="21" r="5" fill="none" stroke="#a3e635" stroke-width="3"/><circle cx="21" cy="14.5" r="5" fill="none" stroke="#a3e635" stroke-width="3"/></svg>
+        Sproutline
+      </a>
+      <ul class="hidden items-center gap-8 font-medium text-white/85 lg:flex">
+          <li><a href="projects.html"  class="transition hover:text-lime ">Projects</a></li>
+          <li><a href="benefits.html"  class="transition hover:text-lime ">Benefits</a></li>
+          <li><a href="services.html"  class="transition hover:text-lime ">Services</a></li>
+          <li><a href="pricing.html"  class="transition hover:text-lime ">Pricing</a></li>
+      </ul>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" class="hidden rounded-xl border-2 border-lime/70 bg-lime px-6 py-3 font-semibold text-night shadow-[0_0_24px_rgba(163,230,53,.35)] transition hover:bg-lime-dark sm:inline-block">Book a call</a>
+        <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="grid h-12 w-12 place-items-center rounded-xl border border-white/15 lg:hidden"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="frame-plain mx-auto hidden max-w-7xl border-x-4 border-white/10 px-5 pb-4 lg:hidden">
+      <ul class="grid gap-1 rounded-3xl border border-white/10 bg-deep p-3">
+          <li><a href="index.html" aria-current="page" class="block rounded-2xl px-4 py-3 font-medium bg-lime text-night">Home</a></li>
+          <li><a href="projects.html"  class="block rounded-2xl px-4 py-3 font-medium hover:bg-white/5">Projects</a></li>
+          <li><a href="benefits.html"  class="block rounded-2xl px-4 py-3 font-medium hover:bg-white/5">Benefits</a></li>
+          <li><a href="services.html"  class="block rounded-2xl px-4 py-3 font-medium hover:bg-white/5">Services</a></li>
+          <li><a href="pricing.html"  class="block rounded-2xl px-4 py-3 font-medium hover:bg-white/5">Pricing</a></li>
+          <li><a href="contact.html"  class="block rounded-2xl px-4 py-3 font-medium hover:bg-white/5">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section class="px-3 sm:px-6 lg:px-24">
+    <div class="frame-glow mx-auto max-w-7xl border-x-4 border-white/10 px-5 pb-16 pt-16 text-center md:px-12 md:pt-24">
+      <p class="flex items-center justify-center gap-3 text-xl font-semibold">Rated 4.9 <span class="flex gap-1 text-lime" aria-hidden="true"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></p>
+      <p class="mt-2 text-haze">by 300+ founders and marketing teams</p>
+      <h1 class="mx-auto mt-8 max-w-5xl text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl lg:text-7xl">A pretty site is a start. You need one that <span class="text-lime">grows.</span></h1>
+      <p class="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-haze">We design and build fast websites that turn visitors into customers. Unlimited requests, one flat monthly plan, zero hiring headaches.</p>
+      <div class="mt-9 flex flex-wrap justify-center gap-4">
+        <a href="contact.html" class="rounded-xl border-2 border-lime/70 bg-lime px-7 py-4 font-semibold text-night shadow-[0_0_30px_rgba(163,230,53,.35)] transition hover:bg-lime-dark">Book an intro call</a>
+        <a href="pricing.html" class="rounded-xl border-2 border-lime/70 px-7 py-4 font-semibold text-lime transition hover:bg-lime/10">See the plan</a>
+      </div>
+      <p class="mt-6 flex items-center justify-center gap-3 font-medium"><span class="relative flex h-2.5 w-2.5"><span class="absolute inset-0 animate-ping rounded-full bg-lime opacity-70 motion-reduce:animate-none"></span><span class="relative h-2.5 w-2.5 rounded-full bg-lime"></span></span>3 project slots open for next month</p>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start clients -->
+  <section class="px-3 sm:px-6 lg:px-24" aria-label="Clients">
+    <div class="frame-plain mx-auto max-w-7xl overflow-hidden rounded-b-[2rem] border-x-4 border-b-4 border-white/10 pb-16">
+      <p class="text-center text-lg font-medium">Trusted by 150+ founders around the world</p>
+      <div class="fade-edges mt-10 overflow-hidden">
+        <ul class="marquee flex w-max items-center gap-20 pr-20">
+            <li class="flex items-center gap-2 whitespace-nowrap text-xl font-semibold text-white/60" ><i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>Northwind</li>
+            <li class="flex items-center gap-2 whitespace-nowrap text-xl font-semibold text-white/60" ><i class="fa-solid fa-mountain" aria-hidden="true"></i>Peakform</li>
+            <li class="flex items-center gap-2 whitespace-nowrap text-xl font-semibold text-white/60" ><i class="fa-solid fa-wave-square" aria-hidden="true"></i>Signalry</li>
+            <li class="flex items-center gap-2 whitespace-nowrap text-xl font-semibold text-white/60" ><i class="fa-solid fa-cube" aria-hidden="true"></i>Blockhaus</li>
+            <li class="flex items-center gap-2 whitespace-nowrap text-xl font-semibold text-white/60" ><i class="fa-solid fa-leaf" aria-hidden="true"></i>Greenmark</li>
+            <li class="flex items-center gap-2 whitespace-nowrap text-xl font-semibold text-white/60" ><i class="fa-solid fa-star-of-life" aria-hidden="true"></i>Asteria</li>
+            <li class="flex items-center gap-2 whitespace-nowrap text-xl font-semibold text-white/60" ><i class="fa-solid fa-infinity" aria-hidden="true"></i>Loopwell</li>
+            <li class="flex items-center gap-2 whitespace-nowrap text-xl font-semibold text-white/60" aria-hidden="true"><i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>Northwind</li>
+            <li class="flex items-center gap-2 whitespace-nowrap text-xl font-semibold text-white/60" aria-hidden="true"><i class="fa-solid fa-mountain" aria-hidden="true"></i>Peakform</li>
+            <li class="flex items-center gap-2 whitespace-nowrap text-xl font-semibold text-white/60" aria-hidden="true"><i class="fa-solid fa-wave-square" aria-hidden="true"></i>Signalry</li>
+            <li class="flex items-center gap-2 whitespace-nowrap text-xl font-semibold text-white/60" aria-hidden="true"><i class="fa-solid fa-cube" aria-hidden="true"></i>Blockhaus</li>
+            <li class="flex items-center gap-2 whitespace-nowrap text-xl font-semibold text-white/60" aria-hidden="true"><i class="fa-solid fa-leaf" aria-hidden="true"></i>Greenmark</li>
+            <li class="flex items-center gap-2 whitespace-nowrap text-xl font-semibold text-white/60" aria-hidden="true"><i class="fa-solid fa-star-of-life" aria-hidden="true"></i>Asteria</li>
+            <li class="flex items-center gap-2 whitespace-nowrap text-xl font-semibold text-white/60" aria-hidden="true"><i class="fa-solid fa-infinity" aria-hidden="true"></i>Loopwell</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- block:end clients -->
+
+  <!-- block:start gallery -->
+  <section class="relative mx-auto max-w-7xl px-5 py-24 md:px-10" data-hover-list>
+    <div class="flex flex-wrap items-end justify-between gap-6">
+      <div>
+        <p class="font-semibold text-lime">Selected work</p>
+        <h2 class="mt-2 font-serif text-4xl md:text-6xl">Sites that moved the numbers</h2>
+      </div>
+      <a href="projects.html" class="inline-flex items-center gap-2 font-semibold text-lime hover:underline">All projects <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <ol class="mt-12 border-t border-white/10">
+        <li>
+          <a href="lumen-coffee.html" data-hover-row data-image="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=640&h=440&q=75" data-alt="Clean desk with a laptop and monitor showing a website" class="group grid items-center gap-3 border-b border-white/10 py-7 md:grid-cols-[4rem_1.4fr_1fr_auto] md:gap-8">
+            <span class="text-sm text-haze">01</span>
+            <span class="font-serif text-3xl transition group-hover:translate-x-2 group-hover:text-lime md:text-5xl">Lumen Coffee</span>
+            <span class="text-haze">Ecommerce redesign</span>
+            <span class="w-fit rounded-full bg-lime/10 px-4 py-2 text-sm font-semibold text-lime">+212% online orders</span>
+          </a>
+        </li>
+        <li>
+          <a href="projects.html" data-hover-row data-image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=640&h=440&q=75" data-alt="Analytics dashboard with charts on a dark screen" class="group grid items-center gap-3 border-b border-white/10 py-7 md:grid-cols-[4rem_1.4fr_1fr_auto] md:gap-8">
+            <span class="text-sm text-haze">02</span>
+            <span class="font-serif text-3xl transition group-hover:translate-x-2 group-hover:text-lime md:text-5xl">Arcfield Analytics</span>
+            <span class="text-haze">SaaS marketing site</span>
+            <span class="w-fit rounded-full bg-lime/10 px-4 py-2 text-sm font-semibold text-lime">3.1× demo requests</span>
+          </a>
+        </li>
+        <li>
+          <a href="projects.html" data-hover-row data-image="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=640&h=440&q=75" data-alt="Colour swatches and app screens on a tablet" class="group grid items-center gap-3 border-b border-white/10 py-7 md:grid-cols-[4rem_1.4fr_1fr_auto] md:gap-8">
+            <span class="text-sm text-haze">03</span>
+            <span class="font-serif text-3xl transition group-hover:translate-x-2 group-hover:text-lime md:text-5xl">Paperkite Studio</span>
+            <span class="text-haze">Brand and portfolio</span>
+            <span class="w-fit rounded-full bg-lime/10 px-4 py-2 text-sm font-semibold text-lime">Load time 4.8s → 0.9s</span>
+          </a>
+        </li>
+        <li>
+          <a href="projects.html" data-hover-row data-image="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=640&h=440&q=75" data-alt="Hand sketching a wireframe on a tablet" class="group grid items-center gap-3 border-b border-white/10 py-7 md:grid-cols-[4rem_1.4fr_1fr_auto] md:gap-8">
+            <span class="text-sm text-haze">04</span>
+            <span class="font-serif text-3xl transition group-hover:translate-x-2 group-hover:text-lime md:text-5xl">Fieldnote Health</span>
+            <span class="text-haze">Booking flow</span>
+            <span class="w-fit rounded-full bg-lime/10 px-4 py-2 text-sm font-semibold text-lime">−38% drop-off at checkout</span>
+          </a>
+        </li>
+    </ol>
+    <img data-hover-image src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=640&h=440&q=75" alt="" class="hover-image pointer-events-none fixed left-0 top-0 z-30 hidden w-80 rounded-2xl border-4 border-lime opacity-0 shadow-2xl md:block" style="aspect-ratio: 16 / 11; object-fit: cover">
+  </section>
+  <!-- block:end gallery -->
+
+  <!-- block:start demo -->
+  <section class="px-5 md:px-10" data-growth data-old-rate="1.2" data-new-rate="3.1">
+    <div class="mx-auto max-w-7xl rounded-[2.5rem] border border-white/10 bg-deep p-6 md:p-12">
+      <div class="grid gap-12 lg:grid-cols-[1fr_1.1fr]">
+        <div>
+          <p class="font-semibold text-lime">Growth calculator</p>
+          <h2 class="mt-2 font-serif text-4xl md:text-5xl">What would a better site be worth?</h2>
+          <p class="mt-4 text-haze">Our redesigns lift conversion from an average of 1.2% to 3.1%. Plug in your numbers.</p>
+          <div class="mt-10 grid gap-8">
+            <label class="block">
+              <span class="flex items-end justify-between gap-4"><span class="font-semibold">Monthly visitors</span><span class="text-2xl font-semibold text-lime" data-visitors-label>20,000</span></span>
+              <input type="range" data-visitors min="1000" max="200000" step="1000" value="20000" class="mt-4 w-full accent-lime">
+            </label>
+            <label class="block">
+              <span class="flex items-end justify-between gap-4"><span class="font-semibold">Average order or deal value</span><span class="text-2xl font-semibold text-lime" data-value-label>$80</span></span>
+              <input type="range" data-value min="10" max="2000" step="10" value="80" class="mt-4 w-full accent-lime">
+            </label>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between rounded-[2rem] bg-night p-6 md:p-8" aria-live="polite">
+          <div class="grid gap-6">
+            <div>
+              <p class="flex justify-between text-sm text-haze"><span>Your site today · 1.2%</span><span data-old-revenue>$19,200</span></p>
+              <div class="mt-2 h-10 overflow-hidden rounded-xl bg-white/5"><div data-old-bar class="grow-bar h-full rounded-xl bg-white/25" style="width: 39%"></div></div>
+            </div>
+            <div>
+              <p class="flex justify-between text-sm text-haze"><span>With Sproutline · 3.1%</span><span data-new-revenue class="font-semibold text-lime">$49,600</span></p>
+              <div class="mt-2 h-10 overflow-hidden rounded-xl bg-white/5"><div data-new-bar class="grow-bar h-full rounded-xl bg-lime shadow-[0_0_24px_rgba(163,230,53,.4)]" style="width: 100%"></div></div>
+            </div>
+          </div>
+          <div class="mt-10 border-t border-white/10 pt-6">
+            <p class="text-sm text-haze">Extra revenue every month</p>
+            <p class="mt-1 text-5xl font-semibold tracking-tight md:text-6xl" data-extra>+$30,400</p>
+            <p class="mt-2 text-sm text-haze">Plan pays for itself in <strong class="text-white" data-payback>4 days</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end demo -->
+
+  <!-- block:start features -->
+  <section class="mx-auto max-w-7xl px-5 py-24 md:px-10" data-tabs>
+    <div class="max-w-2xl">
+      <p class="font-semibold text-lime">What we do</p>
+      <h2 class="mt-2 font-serif text-4xl md:text-6xl">One team, four crafts</h2>
+    </div>
+    <div class="mt-12 grid gap-8 lg:grid-cols-[1fr_1.3fr]">
+      <div role="tablist" aria-label="Services" class="grid content-start gap-3">
+          <button type="button" role="tab" id="tab-web" aria-controls="panel-web" aria-selected="true" tabindex="0" class="group rounded-3xl border border-white/10 p-6 text-left transition hover:border-white/30 aria-selected:border-lime aria-selected:bg-lime/10">
+            <span class="flex items-center justify-between text-2xl font-semibold">Websites<i class="fa-solid fa-arrow-right -rotate-45 text-lime opacity-0 transition group-aria-selected:opacity-100" aria-hidden="true"></i></span>
+            <span class="mt-2 block text-haze">Marketing sites that load in under a second and are built to rank.</span>
+          </button>
+          <button type="button" role="tab" id="tab-brand" aria-controls="panel-brand" aria-selected="false" tabindex="-1" class="group rounded-3xl border border-white/10 p-6 text-left transition hover:border-white/30 aria-selected:border-lime aria-selected:bg-lime/10">
+            <span class="flex items-center justify-between text-2xl font-semibold">Brand<i class="fa-solid fa-arrow-right -rotate-45 text-lime opacity-0 transition group-aria-selected:opacity-100" aria-hidden="true"></i></span>
+            <span class="mt-2 block text-haze">Logos, type and colour systems that hold up from favicon to billboard.</span>
+          </button>
+          <button type="button" role="tab" id="tab-product" aria-controls="panel-product" aria-selected="false" tabindex="-1" class="group rounded-3xl border border-white/10 p-6 text-left transition hover:border-white/30 aria-selected:border-lime aria-selected:bg-lime/10">
+            <span class="flex items-center justify-between text-2xl font-semibold">Product UI<i class="fa-solid fa-arrow-right -rotate-45 text-lime opacity-0 transition group-aria-selected:opacity-100" aria-hidden="true"></i></span>
+            <span class="mt-2 block text-haze">Dashboards and app screens your users can figure out without a manual.</span>
+          </button>
+          <button type="button" role="tab" id="tab-growth" aria-controls="panel-growth" aria-selected="false" tabindex="-1" class="group rounded-3xl border border-white/10 p-6 text-left transition hover:border-white/30 aria-selected:border-lime aria-selected:bg-lime/10">
+            <span class="flex items-center justify-between text-2xl font-semibold">Growth<i class="fa-solid fa-arrow-right -rotate-45 text-lime opacity-0 transition group-aria-selected:opacity-100" aria-hidden="true"></i></span>
+            <span class="mt-2 block text-haze">Landing pages and A/B tests every sprint, tied to the metric you care about.</span>
+          </button>
+      </div>
+        <div role="tabpanel" id="panel-web" aria-labelledby="tab-web"  class="relative overflow-hidden rounded-[2.5rem] border border-white/10">
+          <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=1000&h=760&q=75" alt="Desk with a laptop and monitor showing a website" class="aspect-[4/3] h-full w-full object-cover">
+          <div class="absolute inset-x-4 bottom-4 rounded-3xl bg-night/90 p-6 backdrop-blur md:inset-x-6 md:bottom-6">
+            <p class="font-semibold">Included in websites</p>
+            <ul class="mt-3 flex flex-wrap gap-2">
+              <li class="rounded-full border border-lime/40 px-3 py-1 text-sm text-lime">Strategy &amp; sitemap</li><li class="rounded-full border border-lime/40 px-3 py-1 text-sm text-lime">Design in Figma</li><li class="rounded-full border border-lime/40 px-3 py-1 text-sm text-lime">Build in your CMS</li>
+            </ul>
+          </div>
+        </div>
+        <div role="tabpanel" id="panel-brand" aria-labelledby="tab-brand" hidden class="relative overflow-hidden rounded-[2.5rem] border border-white/10">
+          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1000&h=760&q=75" alt="Colour swatches next to a tablet" class="aspect-[4/3] h-full w-full object-cover">
+          <div class="absolute inset-x-4 bottom-4 rounded-3xl bg-night/90 p-6 backdrop-blur md:inset-x-6 md:bottom-6">
+            <p class="font-semibold">Included in brand</p>
+            <ul class="mt-3 flex flex-wrap gap-2">
+              <li class="rounded-full border border-lime/40 px-3 py-1 text-sm text-lime">Logo &amp; mark</li><li class="rounded-full border border-lime/40 px-3 py-1 text-sm text-lime">Visual identity</li><li class="rounded-full border border-lime/40 px-3 py-1 text-sm text-lime">Brand guidelines</li>
+            </ul>
+          </div>
+        </div>
+        <div role="tabpanel" id="panel-product" aria-labelledby="tab-product" hidden class="relative overflow-hidden rounded-[2.5rem] border border-white/10">
+          <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=1000&h=760&q=75" alt="Wireframe sketched on a tablet" class="aspect-[4/3] h-full w-full object-cover">
+          <div class="absolute inset-x-4 bottom-4 rounded-3xl bg-night/90 p-6 backdrop-blur md:inset-x-6 md:bottom-6">
+            <p class="font-semibold">Included in product ui</p>
+            <ul class="mt-3 flex flex-wrap gap-2">
+              <li class="rounded-full border border-lime/40 px-3 py-1 text-sm text-lime">User flows</li><li class="rounded-full border border-lime/40 px-3 py-1 text-sm text-lime">Design system</li><li class="rounded-full border border-lime/40 px-3 py-1 text-sm text-lime">Prototype &amp; tests</li>
+            </ul>
+          </div>
+        </div>
+        <div role="tabpanel" id="panel-growth" aria-labelledby="tab-growth" hidden class="relative overflow-hidden rounded-[2.5rem] border border-white/10">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&h=760&q=75" alt="Laptop showing an analytics dashboard" class="aspect-[4/3] h-full w-full object-cover">
+          <div class="absolute inset-x-4 bottom-4 rounded-3xl bg-night/90 p-6 backdrop-blur md:inset-x-6 md:bottom-6">
+            <p class="font-semibold">Included in growth</p>
+            <ul class="mt-3 flex flex-wrap gap-2">
+              <li class="rounded-full border border-lime/40 px-3 py-1 text-sm text-lime">Landing pages</li><li class="rounded-full border border-lime/40 px-3 py-1 text-sm text-lime">A/B testing</li><li class="rounded-full border border-lime/40 px-3 py-1 text-sm text-lime">Monthly report</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start process -->
+  <section class="border-y border-white/10 bg-deep/60 py-24" data-stepper>
+    <div class="mx-auto max-w-7xl px-5 md:px-10">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <h2 class="font-serif text-4xl md:text-6xl">Live in four weeks</h2>
+        <p class="max-w-sm text-haze">Click a step to see what happens and when.</p>
+      </div>
+      <div role="tablist" aria-label="Project steps" class="mt-12 flex gap-2 overflow-x-auto pb-2">
+          <button type="button" role="tab" id="step-tab-0" aria-controls="step-0" aria-selected="true" tabindex="0" class="flex shrink-0 items-center gap-3 rounded-full border border-white/15 py-2 pl-2 pr-5 font-semibold transition hover:border-white/40 aria-selected:border-lime aria-selected:bg-lime aria-selected:text-night">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-sm">1</span>Kick-off call
+          </button>
+          <button type="button" role="tab" id="step-tab-1" aria-controls="step-1" aria-selected="false" tabindex="-1" class="flex shrink-0 items-center gap-3 rounded-full border border-white/15 py-2 pl-2 pr-5 font-semibold transition hover:border-white/40 aria-selected:border-lime aria-selected:bg-lime aria-selected:text-night">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-sm">2</span>Strategy &amp; wireframes
+          </button>
+          <button type="button" role="tab" id="step-tab-2" aria-controls="step-2" aria-selected="false" tabindex="-1" class="flex shrink-0 items-center gap-3 rounded-full border border-white/15 py-2 pl-2 pr-5 font-semibold transition hover:border-white/40 aria-selected:border-lime aria-selected:bg-lime aria-selected:text-night">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-sm">3</span>Design
+          </button>
+          <button type="button" role="tab" id="step-tab-3" aria-controls="step-3" aria-selected="false" tabindex="-1" class="flex shrink-0 items-center gap-3 rounded-full border border-white/15 py-2 pl-2 pr-5 font-semibold transition hover:border-white/40 aria-selected:border-lime aria-selected:bg-lime aria-selected:text-night">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-sm">4</span>Build &amp; launch
+          </button>
+          <button type="button" role="tab" id="step-tab-4" aria-controls="step-4" aria-selected="false" tabindex="-1" class="flex shrink-0 items-center gap-3 rounded-full border border-white/15 py-2 pl-2 pr-5 font-semibold transition hover:border-white/40 aria-selected:border-lime aria-selected:bg-lime aria-selected:text-night">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-sm">5</span>Grow
+          </button>
+      </div>
+      <div class="mt-3 h-1 rounded-full bg-white/10"><div data-step-fill class="grow-bar h-full rounded-full bg-lime" style="width: 20%"></div></div>
+        <div role="tabpanel" id="step-0" aria-labelledby="step-tab-0"  class="mt-10 grid gap-6 md:grid-cols-[auto_1fr] md:items-center md:gap-12">
+          <p class="font-serif text-7xl text-lime md:text-8xl">01</p>
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.15em] text-haze">Day 1</p>
+            <h3 class="mt-2 text-3xl font-semibold">Kick-off call</h3>
+            <p class="mt-3 max-w-xl text-lg text-haze">45 minutes on your goals, audience and the one number that matters.</p>
+          </div>
+        </div>
+        <div role="tabpanel" id="step-1" aria-labelledby="step-tab-1" hidden class="mt-10 grid gap-6 md:grid-cols-[auto_1fr] md:items-center md:gap-12">
+          <p class="font-serif text-7xl text-lime md:text-8xl">02</p>
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.15em] text-haze">Week 1</p>
+            <h3 class="mt-2 text-3xl font-semibold">Strategy &amp; wireframes</h3>
+            <p class="mt-3 max-w-xl text-lg text-haze">Sitemap, messaging and grey-box layouts you can click through.</p>
+          </div>
+        </div>
+        <div role="tabpanel" id="step-2" aria-labelledby="step-tab-2" hidden class="mt-10 grid gap-6 md:grid-cols-[auto_1fr] md:items-center md:gap-12">
+          <p class="font-serif text-7xl text-lime md:text-8xl">03</p>
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.15em] text-haze">Week 2–3</p>
+            <h3 class="mt-2 text-3xl font-semibold">Design</h3>
+            <p class="mt-3 max-w-xl text-lg text-haze">Full designs in Figma with two rounds of feedback built in.</p>
+          </div>
+        </div>
+        <div role="tabpanel" id="step-3" aria-labelledby="step-tab-3" hidden class="mt-10 grid gap-6 md:grid-cols-[auto_1fr] md:items-center md:gap-12">
+          <p class="font-serif text-7xl text-lime md:text-8xl">04</p>
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.15em] text-haze">Week 4</p>
+            <h3 class="mt-2 text-3xl font-semibold">Build &amp; launch</h3>
+            <p class="mt-3 max-w-xl text-lg text-haze">Coded, tested on every device and shipped on your domain.</p>
+          </div>
+        </div>
+        <div role="tabpanel" id="step-4" aria-labelledby="step-tab-4" hidden class="mt-10 grid gap-6 md:grid-cols-[auto_1fr] md:items-center md:gap-12">
+          <p class="font-serif text-7xl text-lime md:text-8xl">05</p>
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.15em] text-haze">Ongoing</p>
+            <h3 class="mt-2 text-3xl font-semibold">Grow</h3>
+            <p class="mt-3 max-w-xl text-lg text-haze">Monthly tests and new pages while your plan is active.</p>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- block:end process -->
+
+  <!-- block:start stats -->
+  <section class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-24 md:px-10 lg:grid-cols-2">
+    <div class="relative">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&h=800&q=75" alt="Design team working together on laptops" class="aspect-[5/4] w-full rounded-[2.5rem] object-cover">
+      <p class="absolute -bottom-6 left-6 rounded-3xl border border-white/10 bg-night/90 px-6 py-4 backdrop-blur"><span class="block text-4xl font-semibold text-lime">0.9s</span><span class="text-sm text-haze">average load time</span></p>
+      <p class="absolute -top-6 right-6 rounded-3xl bg-lime px-6 py-4 text-night"><span class="block text-4xl font-semibold">98</span><span class="text-sm font-medium">Lighthouse score</span></p>
+    </div>
+    <div>
+      <p class="font-semibold text-lime">By the numbers</p>
+      <h2 class="mt-2 font-serif text-4xl md:text-6xl">Small team. Big output.</h2>
+      <dl class="mt-10 grid grid-cols-2 gap-x-6 gap-y-10">
+          <div class="border-l-2 border-lime pl-5" data-reveal><dt class="text-haze">sites launched</dt><dd class="text-4xl font-semibold">240+</dd></div>
+          <div class="border-l-2 border-lime pl-5" data-reveal><dt class="text-haze">average turnaround per request</dt><dd class="text-4xl font-semibold">48h</dd></div>
+          <div class="border-l-2 border-lime pl-5" data-reveal><dt class="text-haze">median conversion lift</dt><dd class="text-4xl font-semibold">2.6×</dd></div>
+          <div class="border-l-2 border-lime pl-5" data-reveal><dt class="text-haze">clients renewing after 3 months</dt><dd class="text-4xl font-semibold">96%</dd></div>
+      </dl>
+    </div>
+  </section>
+  <!-- block:end stats -->
+
+  <!-- block:start reviews -->
+  <section class="mx-auto max-w-7xl px-5 pb-24 md:px-10">
+    <h2 class="font-serif text-4xl md:text-6xl">Results first, quotes second</h2>
+    <ul class="mt-12 grid gap-5">
+        <li class="grid overflow-hidden rounded-[2rem] border border-white/10 md:grid-cols-[18rem_1fr]" data-reveal style="--reveal-delay: 0ms">
+          <div class="bg-lime p-8 text-night"><p class="text-5xl font-semibold tracking-tight">+212%</p><p class="mt-1 font-medium">online orders in 90 days</p></div>
+          <figure class="flex flex-col justify-center gap-5 bg-deep p-8">
+            <blockquote class="text-xl leading-relaxed">&ldquo;We&#39;d outgrown our template. Sproutline rebuilt the shop in a month and orders tripled by spring.&rdquo;</blockquote>
+            <figcaption class="flex items-center gap-3"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=96&h=96&q=70" alt="" class="h-11 w-11 rounded-full object-cover"><span><span class="block font-semibold">Ana Ribeiro</span><span class="text-sm text-haze">Founder, Lumen Coffee</span></span></figcaption>
+          </figure>
+        </li>
+        <li class="grid overflow-hidden rounded-[2rem] border border-white/10 md:grid-cols-[18rem_1fr]" data-reveal style="--reveal-delay: 90ms">
+          <div class="bg-lime p-8 text-night"><p class="text-5xl font-semibold tracking-tight">3.1×</p><p class="mt-1 font-medium">demo requests</p></div>
+          <figure class="flex flex-col justify-center gap-5 bg-deep p-8">
+            <blockquote class="text-xl leading-relaxed">&ldquo;The new site finally explains what we do. Sales calls start warmer and close faster.&rdquo;</blockquote>
+            <figcaption class="flex items-center gap-3"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=96&h=96&q=70" alt="" class="h-11 w-11 rounded-full object-cover"><span><span class="block font-semibold">Marcus Hale</span><span class="text-sm text-haze">CMO, Arcfield Analytics</span></span></figcaption>
+          </figure>
+        </li>
+        <li class="grid overflow-hidden rounded-[2rem] border border-white/10 md:grid-cols-[18rem_1fr]" data-reveal style="--reveal-delay: 180ms">
+          <div class="bg-lime p-8 text-night"><p class="text-5xl font-semibold tracking-tight">−38%</p><p class="mt-1 font-medium">checkout drop-off</p></div>
+          <figure class="flex flex-col justify-center gap-5 bg-deep p-8">
+            <blockquote class="text-xl leading-relaxed">&ldquo;They tested three booking flows and kept the one patients actually finished.&rdquo;</blockquote>
+            <figcaption class="flex items-center gap-3"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=96&h=96&q=70" alt="" class="h-11 w-11 rounded-full object-cover"><span><span class="block font-semibold">Priya Nair</span><span class="text-sm text-haze">Head of Product, Fieldnote</span></span></figcaption>
+          </figure>
+        </li>
+    </ul>
+  </section>
+  <!-- block:end reviews -->
+
+  <!-- block:start pricing -->
+  <section class="px-5 md:px-10" data-billing>
+    <div class="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[1.4fr_1fr]">
+      <div class="relative overflow-hidden rounded-[2.5rem] border-2 border-lime/60 bg-deep p-8 shadow-[0_0_60px_rgba(163,230,53,.12)] md:p-12">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <p class="rounded-full bg-lime px-4 py-1.5 text-sm font-semibold text-night">One simple plan</p>
+          <div class="flex rounded-full border border-white/15 p-1 text-sm font-semibold" role="group" aria-label="Billing period">
+            <button type="button" data-billing-option="monthly" aria-pressed="true" class="rounded-full px-4 py-2 aria-pressed:bg-white aria-pressed:text-night">Monthly</button>
+            <button type="button" data-billing-option="quarterly" aria-pressed="false" class="rounded-full px-4 py-2 aria-pressed:bg-white aria-pressed:text-night">Quarterly −10%</button>
+          </div>
+        </div>
+        <p class="mt-8 flex items-end gap-2"><span class="text-6xl font-semibold tracking-tight md:text-7xl" data-price data-monthly="$4,950" data-quarterly="$4,450">$4,950</span><span class="pb-2 text-haze">/ month</span></p>
+        <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+          <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-lime" aria-hidden="true"></i>Unlimited design requests</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-lime" aria-hidden="true"></i>One request at a time, 48h average</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-lime" aria-hidden="true"></i>Webflow or WordPress build</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-lime" aria-hidden="true"></i>Brand, web and product UI</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-lime" aria-hidden="true"></i>Weekly async updates</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-lime" aria-hidden="true"></i>Pause or cancel any time</li>
+        </ul>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="contact.html" class="rounded-xl bg-lime px-7 py-4 font-semibold text-night transition hover:bg-lime-dark">Start this month</a>
+          <a href="pricing.html" class="rounded-xl border-2 border-white/20 px-7 py-4 font-semibold transition hover:border-white/50">Compare options</a>
+        </div>
+      </div>
+      <div class="flex flex-col rounded-[2.5rem] border border-white/10 bg-deep/60 p-8 md:p-10">
+        <p class="font-semibold text-haze">Just need one thing?</p>
+        <h3 class="mt-2 font-serif text-3xl">Single landing page</h3>
+        <p class="mt-4 text-4xl font-semibold">$3,200 <span class="text-base font-normal text-haze">one-off</span></p>
+        <p class="mt-4 text-haze">Strategy, design and build of one high-converting page, live in ten days.</p>
+        <a href="contact.html" class="mt-auto inline-flex items-center gap-2 pt-8 font-semibold text-lime hover:underline">Ask about a sprint <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- block:end pricing -->
+
+  <!-- block:start cta -->
+  <section class="mx-auto max-w-7xl px-5 py-24 md:px-10">
+    <div class="grid overflow-hidden rounded-[2.5rem] border border-white/10 bg-deep lg:grid-cols-2">
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1000&h=760&q=75" alt="Two colleagues celebrating with a high five at a desk" class="aspect-[4/3] h-full w-full object-cover">
+      <div class="p-8 md:p-12">
+        <h2 class="font-serif text-4xl md:text-5xl">Grab one of this month's slots</h2>
+        <p class="mt-4 text-haze">Tell us where to send the calendar link. We reply within one working day.</p>
+        <form data-contact-form data-error="Please add a valid work email." data-success="Thanks! A calendar link is on its way." class="mt-8" novalidate>
+          <label for="cta-email" class="text-sm font-semibold">Work email</label>
+          <div class="mt-2 flex flex-col gap-3 sm:flex-row">
+            <input id="cta-email" type="email" name="email" required autocomplete="email" placeholder="you@company.com" class="min-w-0 flex-1 rounded-xl border border-white/15 bg-night px-4 py-4 placeholder:text-white/30 focus:border-lime focus:outline-none">
+            <button type="submit" class="rounded-xl bg-lime px-6 py-4 font-semibold text-night transition hover:bg-lime-dark">Book my call</button>
+          </div>
+          <p data-form-status class="mt-3 text-sm font-medium text-lime" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- block:end cta -->
+
+  <!-- block:start footer -->
+  <footer class="border-t border-white/10 bg-night/80">
+    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:grid-cols-2 md:px-10 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
+      <div>
+        <a href="index.html" class="flex items-center gap-2 font-serif text-3xl" aria-label="Sproutline home"><svg class="h-7 w-7" viewBox="0 0 28 28" aria-hidden="true"><circle cx="8" cy="8" r="5" fill="none" stroke="#a3e635" stroke-width="3"/><circle cx="8" cy="21" r="5" fill="none" stroke="#a3e635" stroke-width="3"/><circle cx="21" cy="14.5" r="5" fill="none" stroke="#a3e635" stroke-width="3"/></svg>Sproutline</a>
+        <p class="mt-4 max-w-xs text-haze">A design and development studio for founders who'd rather be selling.</p>
+      </div>
+        <div>
+          <p class="font-semibold">Studio</p>
+          <ul class="mt-4 grid gap-2 text-haze"><li><a href="projects.html" class="hover:text-lime">Projects</a></li><li><a href="lumen-coffee.html" class="hover:text-lime">Case study</a></li><li><a href="benefits.html" class="hover:text-lime">Benefits</a></li></ul>
+        </div>
+        <div>
+          <p class="font-semibold">Offer</p>
+          <ul class="mt-4 grid gap-2 text-haze"><li><a href="services.html" class="hover:text-lime">Services</a></li><li><a href="pricing.html" class="hover:text-lime">Pricing</a></li><li><a href="contact.html" class="hover:text-lime">Book a call</a></li></ul>
+        </div>
+      <div>
+        <p class="font-semibold">Follow</p>
+        <ul class="mt-4 flex gap-3">
+            <li><a href="https://www.linkedin.com" aria-label="LinkedIn" class="grid h-11 w-11 place-items-center rounded-xl border border-white/15 transition hover:border-lime hover:text-lime"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+            <li><a href="https://dribbble.com" aria-label="Dribbble" class="grid h-11 w-11 place-items-center rounded-xl border border-white/15 transition hover:border-lime hover:text-lime"><i class="fa-brands fa-dribbble" aria-hidden="true"></i></a></li>
+            <li><a href="https://x.com" aria-label="X" class="grid h-11 w-11 place-items-center rounded-xl border border-white/15 transition hover:border-lime hover:text-lime"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="border-t border-white/10 px-5 py-6 text-center text-sm text-haze">&copy; <span data-current-year>2026</span> Sproutline Studio. All rights reserved.</p>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const watchMotion = !reducedMotion && !navigator.webdriver && 'IntersectionObserver' in window;
+
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-hover-list]').forEach((root) => {
+      const image = root.querySelector('[data-hover-image]');
+      root.querySelectorAll('[data-hover-row]').forEach((row) => {
+        row.addEventListener('mouseenter', () => { image.src = row.dataset.image; image.alt = row.dataset.alt; image.style.opacity = '1'; });
+        row.addEventListener('mousemove', (event) => { image.style.transform = `translate(${event.clientX + 24}px, ${event.clientY - 110}px) rotate(-3deg)`; });
+        row.addEventListener('mouseleave', () => { image.style.opacity = '0'; });
+      });
+    });
+
+    document.querySelectorAll('[data-growth]').forEach((root) => {
+      const oldRate = Number(root.dataset.oldRate) / 100;
+      const newRate = Number(root.dataset.newRate) / 100;
+      const money = (value) => `$${Math.round(value).toLocaleString('en-US')}`;
+      const paint = () => {
+        const visitors = Number(root.querySelector('[data-visitors]').value);
+        const value = Number(root.querySelector('[data-value]').value);
+        const before = visitors * oldRate * value;
+        const after = visitors * newRate * value;
+        root.querySelector('[data-visitors-label]').textContent = visitors.toLocaleString('en-US');
+        root.querySelector('[data-value-label]').textContent = money(value);
+        root.querySelector('[data-old-revenue]').textContent = money(before);
+        root.querySelector('[data-new-revenue]').textContent = money(after);
+        root.querySelector('[data-old-bar]').style.width = `${(before / after) * 100}%`;
+        root.querySelector('[data-extra]').textContent = `+${money(after - before)}`;
+        const days = Math.max(1, Math.ceil(4950 / ((after - before) / 30)));
+        root.querySelector('[data-payback]').textContent = days > 90 ? 'about 3 months' : `${days} day${days === 1 ? '' : 's'}`;
+      };
+      root.addEventListener('input', paint);
+      paint();
+    });
+
+    document.querySelectorAll('[data-tabs], [data-stepper]').forEach((root) => {
+      const tabs = [...root.querySelectorAll('[role="tab"]')];
+      const fill = root.querySelector('[data-step-fill]');
+      const select = (tab) => {
+        tabs.forEach((other) => { const on = other === tab; other.setAttribute('aria-selected', String(on)); other.tabIndex = on ? 0 : -1; document.getElementById(other.getAttribute('aria-controls')).hidden = !on; });
+        if (fill) fill.style.width = `${((tabs.indexOf(tab) + 1) / tabs.length) * 100}%`;
+      };
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => select(tab));
+        tab.addEventListener('keydown', (event) => {
+          const move = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[event.key];
+          if (!move) return;
+          event.preventDefault();
+          const next = tabs[(index + move + tabs.length) % tabs.length];
+          select(next); next.focus();
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-billing]').forEach((root) => {
+      const price = root.querySelector('[data-price]');
+      root.querySelectorAll('[data-billing-option]').forEach((option) => option.addEventListener('click', () => {
+        root.querySelectorAll('[data-billing-option]').forEach((other) => other.setAttribute('aria-pressed', String(other === option)));
+        price.textContent = price.dataset[option.dataset.billingOption];
+      }));
+    });
+
+    document.querySelectorAll('[data-project-browser]').forEach((root) => {
+      const list = root.querySelector('[data-project-list]');
+      const items = [...list.children];
+      const search = root.querySelector('[data-project-search]');
+      const sort = root.querySelector('[data-project-sort]');
+      const count = root.querySelector('[data-project-count]');
+      const apply = () => {
+        const query = String(search.value || '').trim().toLowerCase();
+        const sorted = [...items].sort((a, b) => sort.value === 'lift' ? b.dataset.lift - a.dataset.lift : sort.value === 'az' ? a.dataset.name.localeCompare(b.dataset.name) : b.dataset.year - a.dataset.year);
+        let shown = 0;
+        sorted.forEach((item) => { const match = !query || item.textContent.toLowerCase().includes(query); item.hidden = !match; if (match) shown += 1; list.append(item); });
+        count.textContent = shown;
+        root.querySelector('[data-project-empty]').hidden = shown > 0;
+      };
+      search.addEventListener('input', apply);
+      sort.addEventListener('change', apply);
+      apply();
+    });
+
+    document.querySelectorAll('[data-faq-search]').forEach((root) => {
+      const input = root.querySelector('[data-faq-query]');
+      const items = [...root.querySelectorAll('[data-faq-item]')];
+      input.addEventListener('input', () => {
+        const query = String(input.value || '').trim().toLowerCase();
+        let shown = 0;
+        items.forEach((item) => { const match = !query || item.textContent.toLowerCase().includes(query); item.hidden = !match; if (match) shown += 1; });
+        root.querySelector('[data-faq-empty]').hidden = shown > 0;
+      });
+    });
+
+    document.querySelectorAll('[data-chip-form]').forEach((form) => {
+      form.querySelectorAll('[data-chip]').forEach((chip) => chip.addEventListener('click', () => {
+        const single = chip.closest('[data-single]');
+        if (single) single.querySelectorAll('[data-chip]').forEach((other) => other.setAttribute('aria-pressed', String(other === chip)));
+        else chip.setAttribute('aria-pressed', String(chip.getAttribute('aria-pressed') !== 'true'));
+        form.querySelector('[data-chip-summary]').textContent = [...form.querySelectorAll('[data-chip][aria-pressed="true"]')].map((c) => c.dataset.chip).join(' · ') || 'Nothing picked yet';
+      }));
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const status = form.querySelector('[data-form-status]');
+        const picked = form.querySelectorAll('[data-chip][aria-pressed="true"]').length;
+        if (!picked || !form.checkValidity()) { status.textContent = form.dataset.error; return; }
+        status.textContent = form.dataset.success;
+      });
+    });
+
+    document.querySelectorAll('[data-contact-form]').forEach((form) => {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const status = form.querySelector('[data-form-status]');
+        if (!form.checkValidity()) {
+          status.textContent = form.dataset.error;
+          form.querySelector(':invalid')?.focus();
+          return;
+        }
+        status.textContent = form.dataset.success;
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    (() => {
+      const items = document.querySelectorAll('[data-reveal]');
+      if (!items.length || !watchMotion) return;
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=sproutline&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

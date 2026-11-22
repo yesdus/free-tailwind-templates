@@ -1,0 +1,18 @@
+@view-transition { navigation: auto; }
+    html { scroll-behavior: smooth; }
+    [hidden] { display: none !important; }
+    .heavy { font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; letter-spacing: -.045em; line-height: .86; }
+    .red-word { font-family: "Playfair Display", serif; font-weight: 500; color: #d83a56; line-height: 1; letter-spacing: -.01em; }
+    .small-caps { font-family: "Playfair Display", serif; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; }
+
+    /* The cover takes the colour of the entry it shows. */
+    .cover { background: var(--ground, #b9cbb7); transition: background-color .7s ease; }
+    .slides { display: grid; }
+    .slides > * { grid-area: 1 / 1; transition: opacity .6s ease, visibility .6s; }
+    .slides > [aria-hidden="true"] { opacity: 0; visibility: hidden; }
+    .entry-row { transition: background-color .35s ease; }
+    .entry-row:hover, .entry-row:focus-within { background: var(--tint); }
+
+    .reveal-ready [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; transition-delay: var(--reveal-delay, 0ms); }
+    .reveal-ready [data-reveal].is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .cover, .slides > *, .entry-row { transition: none; } }

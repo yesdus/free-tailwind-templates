@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontur | Tailwind CSS Portfolio Template</title>
+  <meta name="description" content="Kontur is a bold black and white Tailwind CSS portfolio template for art directors, designers and illustrators, with giant solid and outline type, a masonry project wall with a lightbox, a capabilities list, client names, and work, case study, about and contact pages.">
+  <meta name="keywords" content="Kontur, Tailwind CSS template, HTML website template, portfolio template, art director portfolio, designer portfolio, personal website, case study, dark portfolio, free template">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Kontur | Tailwind CSS Portfolio Template">
+  <meta property="og:description" content="A bold black and white Tailwind CSS portfolio for art directors and designers, with outline type, a project wall, a case study and a contact page.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Kontur template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Kontur | Tailwind CSS Portfolio Template">
+  <meta name="twitter:description" content="A bold black and white Tailwind CSS portfolio for art directors and designers, with outline type, a project wall, a case study and a contact page.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Kontur template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            night: { DEFAULT: '#0a0a0a', soft: '#161616', line: '#2a2a2a' },
+            chalk: { DEFAULT: '#f4f4f0', dim: '#a3a3a0' },
+            volt: { DEFAULT: '#d6ff3c', deep: '#b5dc1f' }
+          },
+          fontFamily: {
+            display: ['Unbounded', 'sans-serif'],
+            sans: ['"DM Sans"', 'sans-serif'],
+            serif: ['"Instrument Serif"', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-night font-sans text-chalk antialiased">
+  <!-- block:start navbar -->
+  <header class="relative z-40">
+    <nav class="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-8 md:px-16" aria-label="Main">
+      <a href="index.html" class="font-display text-sm font-bold uppercase tracking-[0.35em]" aria-current="page">Kontur</a>
+      <ul class="hidden items-center gap-16 text-sm font-medium uppercase tracking-[0.12em] md:flex">
+          <li><a href="work.html" class="text-chalk/80 hover:text-volt">Work</a></li>
+          <li><a href="about.html" class="text-chalk/80 hover:text-volt">About</a></li>
+          <li><a href="contact.html" class="text-chalk/80 hover:text-volt">Say hello</a></li>
+      </ul>
+      <button type="button" class="grid h-11 w-11 place-items-center rounded-full border border-chalk/30 md:hidden" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-night-line px-6 pb-8 md:hidden">
+      <ul class="grid gap-4 pt-6 font-display text-3xl font-bold uppercase">
+          <li><a href="work.html" class="hover:text-volt">Work</a></li>
+          <li><a href="about.html" class="hover:text-volt">About</a></li>
+          <li><a href="contact.html" class="hover:text-volt">Say hello</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <main>
+    <!-- block:start hero -->
+    <section id="intro" class="relative overflow-hidden pb-16 md:pb-24">
+      <div class="mx-auto max-w-[1500px] px-6 md:px-16">
+        <div class="flex gap-6 md:ml-[42%]">
+          <p class="vertical shrink-0 font-serif text-lg italic text-chalk/70">Hello, this is Noa Lindqvist</p>
+          <p class="max-w-sm text-base leading-relaxed text-chalk/80">Art director and digital designer with a background in motion and interaction. I build identities, interfaces and campaigns that feel as good to use as they look, for studios and brands across Europe.</p>
+        </div>
+      </div>
+      <h1 class="mt-16 whitespace-nowrap px-4 font-display text-[clamp(1.6rem,7.6vw,9rem)] font-black uppercase leading-[0.98] md:mt-24 md:px-8">
+        <span class="block">Digital</span>
+        <span class="outline-type block">Art director</span>
+        <span class="block">&amp; designer</span>
+      </h1>
+      <div class="mx-auto mt-14 flex max-w-[1500px] items-end justify-between px-6 md:px-16">
+        <p class="vertical text-xs uppercase tracking-[0.3em] text-chalk/50">&copy; 2026 &middot; Based in Copenhagen</p>
+        <a href="work.html" class="group flex items-center gap-4 text-sm uppercase tracking-[0.2em]" aria-label="See selected work">
+          <span class="hidden sm:inline">Selected work</span>
+          <span class="grid h-14 w-14 place-items-center rounded-full border border-chalk/40 text-xl transition group-hover:rotate-90 group-hover:border-volt group-hover:text-volt"><i class="fa-solid fa-plus"></i></span>
+        </a>
+      </div>
+    </section>
+    <!-- block:end hero -->
+
+    <!-- block:start marquee -->
+    <section class="overflow-hidden border-y border-night-line py-6" aria-label="Disciplines">
+      <div class="marquee-track flex w-max gap-12 whitespace-nowrap font-display text-4xl font-bold uppercase md:text-6xl">
+            <span class="">Brand identity</span>
+            <span class="text-volt" aria-hidden="true">&#10033;</span>
+            <span class="outline-type">Art direction</span>
+            <span class="text-volt" aria-hidden="true">&#10033;</span>
+            <span class="">Interface design</span>
+            <span class="text-volt" aria-hidden="true">&#10033;</span>
+            <span class="outline-type">Motion</span>
+            <span class="text-volt" aria-hidden="true">&#10033;</span>
+            <span class="">Illustration</span>
+            <span class="text-volt" aria-hidden="true">&#10033;</span>
+            <span class="outline-type">Campaigns</span>
+            <span class="text-volt" aria-hidden="true">&#10033;</span>
+            <span class="">Brand identity</span>
+            <span class="text-volt" aria-hidden="true">&#10033;</span>
+            <span class="outline-type">Art direction</span>
+            <span class="text-volt" aria-hidden="true">&#10033;</span>
+            <span class="">Interface design</span>
+            <span class="text-volt" aria-hidden="true">&#10033;</span>
+            <span class="outline-type">Motion</span>
+            <span class="text-volt" aria-hidden="true">&#10033;</span>
+            <span class="">Illustration</span>
+            <span class="text-volt" aria-hidden="true">&#10033;</span>
+            <span class="outline-type">Campaigns</span>
+            <span class="text-volt" aria-hidden="true">&#10033;</span>
+      </div>
+    </section>
+    <!-- block:end marquee -->
+
+    <!-- block:start gallery -->
+    <section id="work" class="py-20 md:py-32">
+      <div class="mx-auto max-w-[1500px] px-6 md:px-16">
+        <div class="flex flex-wrap items-end justify-between gap-6">
+          <h2 class="font-display text-4xl font-black uppercase md:text-7xl">Selected <span class="outline-type">work</span></h2>
+          <a href="work.html" class="text-sm uppercase tracking-[0.2em] text-chalk/70 underline decoration-volt underline-offset-8 hover:text-volt">Full index</a>
+        </div>
+        <div class="mt-14 gap-6 sm:columns-2 lg:columns-3">
+            <figure class="mb-6 break-inside-avoid" data-reveal style="--reveal-delay: 0ms">
+              <button type="button" class="group relative block w-full overflow-hidden rounded-lg text-left" data-lightbox data-src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1600&q=80" data-title="Halden &middot; Identity" aria-label="Enlarge Halden" data-cursor>
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=900&q=80" alt="Flowing purple, blue and orange gradient waves" class="aspect-[4/5] w-full object-cover transition duration-500 group-hover:scale-105">
+                <span class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-night/70 text-sm opacity-0 transition group-hover:opacity-100"><i class="fa-solid fa-expand"></i></span>
+              </button>
+              <figcaption class="mt-3 flex items-baseline justify-between gap-4">
+                <a href="halden-identity.html" class="font-display text-lg font-bold uppercase hover:text-volt">Halden</a>
+                <span class="text-xs uppercase tracking-[0.2em] text-chalk/50">Identity &middot; 2026</span>
+              </figcaption>
+            </figure>
+            <figure class="mb-6 break-inside-avoid" data-reveal style="--reveal-delay: 100ms">
+              <button type="button" class="group relative block w-full overflow-hidden rounded-lg text-left" data-lightbox data-src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1600&q=80" data-title="Inkfall &middot; Campaign" aria-label="Enlarge Inkfall" data-cursor>
+                <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=900&q=80" alt="Clouds of blue and red ink colliding in water" class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105">
+                <span class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-night/70 text-sm opacity-0 transition group-hover:opacity-100"><i class="fa-solid fa-expand"></i></span>
+              </button>
+              <figcaption class="mt-3 flex items-baseline justify-between gap-4">
+                <a href="work.html" class="font-display text-lg font-bold uppercase hover:text-volt">Inkfall</a>
+                <span class="text-xs uppercase tracking-[0.2em] text-chalk/50">Campaign &middot; 2025</span>
+              </figcaption>
+            </figure>
+            <figure class="mb-6 break-inside-avoid" data-reveal style="--reveal-delay: 200ms">
+              <button type="button" class="group relative block w-full overflow-hidden rounded-lg text-left" data-lightbox data-src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1600&q=80" data-title="Swatchbook &middot; Editorial" aria-label="Enlarge Swatchbook" data-cursor>
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=80" alt="Printed colour swatches beside a tablet showing a palette" class="aspect-square w-full object-cover transition duration-500 group-hover:scale-105">
+                <span class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-night/70 text-sm opacity-0 transition group-hover:opacity-100"><i class="fa-solid fa-expand"></i></span>
+              </button>
+              <figcaption class="mt-3 flex items-baseline justify-between gap-4">
+                <a href="work.html" class="font-display text-lg font-bold uppercase hover:text-volt">Swatchbook</a>
+                <span class="text-xs uppercase tracking-[0.2em] text-chalk/50">Editorial &middot; 2025</span>
+              </figcaption>
+            </figure>
+            <figure class="mb-6 break-inside-avoid" data-reveal style="--reveal-delay: 0ms">
+              <button type="button" class="group relative block w-full overflow-hidden rounded-lg text-left" data-lightbox data-src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=1600&q=80" data-title="Afterglow &middot; Motion" aria-label="Enlarge Afterglow" data-cursor>
+                <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=900&q=80" alt="Dark purple 3D render with a soft pink glow" class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105">
+                <span class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-night/70 text-sm opacity-0 transition group-hover:opacity-100"><i class="fa-solid fa-expand"></i></span>
+              </button>
+              <figcaption class="mt-3 flex items-baseline justify-between gap-4">
+                <a href="work.html" class="font-display text-lg font-bold uppercase hover:text-volt">Afterglow</a>
+                <span class="text-xs uppercase tracking-[0.2em] text-chalk/50">Motion &middot; 2024</span>
+              </figcaption>
+            </figure>
+            <figure class="mb-6 break-inside-avoid" data-reveal style="--reveal-delay: 100ms">
+              <button type="button" class="group relative block w-full overflow-hidden rounded-lg text-left" data-lightbox data-src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=1600&q=80" data-title="Oil &amp;amp; Light &middot; Interface" aria-label="Enlarge Oil &amp;amp; Light" data-cursor>
+                <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=900&q=80" alt="Macro photo of colourful oil bubbles in water" class="aspect-[4/5] w-full object-cover transition duration-500 group-hover:scale-105">
+                <span class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-night/70 text-sm opacity-0 transition group-hover:opacity-100"><i class="fa-solid fa-expand"></i></span>
+              </button>
+              <figcaption class="mt-3 flex items-baseline justify-between gap-4">
+                <a href="work.html" class="font-display text-lg font-bold uppercase hover:text-volt">Oil &amp; Light</a>
+                <span class="text-xs uppercase tracking-[0.2em] text-chalk/50">Interface &middot; 2024</span>
+              </figcaption>
+            </figure>
+            <figure class="mb-6 break-inside-avoid" data-reveal style="--reveal-delay: 200ms">
+              <button type="button" class="group relative block w-full overflow-hidden rounded-lg text-left" data-lightbox data-src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1600&q=80" data-title="Drift &middot; Identity" aria-label="Enlarge Drift" data-cursor>
+                <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=900&q=80" alt="Rippling blue lines forming waves" class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105">
+                <span class="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-night/70 text-sm opacity-0 transition group-hover:opacity-100"><i class="fa-solid fa-expand"></i></span>
+              </button>
+              <figcaption class="mt-3 flex items-baseline justify-between gap-4">
+                <a href="work.html" class="font-display text-lg font-bold uppercase hover:text-volt">Drift</a>
+                <span class="text-xs uppercase tracking-[0.2em] text-chalk/50">Identity &middot; 2023</span>
+              </figcaption>
+            </figure>
+        </div>
+      </div>
+      <dialog id="lightbox" class="m-auto max-h-[90vh] w-[min(1100px,92vw)] bg-transparent p-0 text-chalk" aria-label="Project preview">
+        <figure>
+          <img src="" alt="" class="max-h-[78vh] w-full rounded-lg object-contain" data-lightbox-img>
+          <figcaption class="mt-4 flex items-center justify-between gap-4">
+            <span class="font-display text-sm font-bold uppercase tracking-[0.15em]" data-lightbox-title></span>
+            <button type="button" class="grid h-11 w-11 place-items-center rounded-full border border-chalk/40 hover:border-volt hover:text-volt" data-lightbox-close aria-label="Close preview"><i class="fa-solid fa-xmark"></i></button>
+          </figcaption>
+        </figure>
+      </dialog>
+    </section>
+    <!-- block:end gallery -->
+
+    <!-- block:start features -->
+    <section id="capabilities" class="border-t border-night-line py-20 md:py-32">
+      <div class="mx-auto grid max-w-[1500px] gap-12 px-6 md:px-16 lg:grid-cols-12">
+        <div class="lg:col-span-4">
+          <p class="font-serif text-2xl italic text-volt">What I do</p>
+          <p class="mt-4 max-w-sm text-chalk/70">Small teams hire me to set the direction and stay for the details, from the first sketch to the last export.</p>
+        </div>
+        <ol class="lg:col-span-8">
+            <li class="group border-b border-night-line py-8 first:pt-0">
+              <div class="flex items-baseline gap-6">
+                <span class="font-display text-sm text-volt">01</span>
+                <div>
+                  <h3 class="outline-type fill-hover font-display text-3xl font-black uppercase md:text-5xl" tabindex="0">Brand identity</h3>
+                  <p class="mt-3 max-w-xl text-chalk/70">Names, marks, type systems and the guidelines that keep them honest.</p>
+                </div>
+              </div>
+            </li>
+            <li class="group border-b border-night-line py-8 first:pt-0">
+              <div class="flex items-baseline gap-6">
+                <span class="font-display text-sm text-volt">02</span>
+                <div>
+                  <h3 class="outline-type fill-hover font-display text-3xl font-black uppercase md:text-5xl" tabindex="0">Art direction</h3>
+                  <p class="mt-3 max-w-xl text-chalk/70">Shoots, campaigns and launches with one clear visual idea.</p>
+                </div>
+              </div>
+            </li>
+            <li class="group border-b border-night-line py-8 first:pt-0">
+              <div class="flex items-baseline gap-6">
+                <span class="font-display text-sm text-volt">03</span>
+                <div>
+                  <h3 class="outline-type fill-hover font-display text-3xl font-black uppercase md:text-5xl" tabindex="0">Interface design</h3>
+                  <p class="mt-3 max-w-xl text-chalk/70">Websites and products, prototyped in motion before they are built.</p>
+                </div>
+              </div>
+            </li>
+            <li class="group border-b border-night-line py-8 first:pt-0">
+              <div class="flex items-baseline gap-6">
+                <span class="font-display text-sm text-volt">04</span>
+                <div>
+                  <h3 class="outline-type fill-hover font-display text-3xl font-black uppercase md:text-5xl" tabindex="0">Motion &amp; illustration</h3>
+                  <p class="mt-3 max-w-xl text-chalk/70">Logo animations, explainer loops and drawn worlds for brands.</p>
+                </div>
+              </div>
+            </li>
+        </ol>
+      </div>
+    </section>
+    <!-- block:end features -->
+
+    <!-- block:start clients -->
+    <section class="border-t border-night-line py-20" aria-labelledby="clients-title">
+      <div class="mx-auto max-w-[1500px] px-6 md:px-16">
+        <h2 id="clients-title" class="text-xs uppercase tracking-[0.3em] text-chalk/50">Trusted by studios and brands</h2>
+        <ul class="mt-10 grid grid-cols-2 gap-px overflow-hidden rounded-lg bg-night-line md:grid-cols-4">
+            <li class="grid h-28 place-items-center bg-night text-xl text-chalk/60 transition hover:text-chalk md:h-36"><span class="font-display font-black uppercase">Nordvik</span></li>
+            <li class="grid h-28 place-items-center bg-night text-xl text-chalk/60 transition hover:text-chalk md:h-36"><span class="font-serif italic text-3xl">atelier lune</span></li>
+            <li class="grid h-28 place-items-center bg-night text-xl text-chalk/60 transition hover:text-chalk md:h-36"><span class="font-sans font-bold tracking-[0.3em]">FERRO&amp;CO</span></li>
+            <li class="grid h-28 place-items-center bg-night text-xl text-chalk/60 transition hover:text-chalk md:h-36"><span class="font-display font-medium">Pallas</span></li>
+            <li class="grid h-28 place-items-center bg-night text-xl text-chalk/60 transition hover:text-chalk md:h-36"><span class="font-sans font-bold uppercase">Sundhaus</span></li>
+            <li class="grid h-28 place-items-center bg-night text-xl text-chalk/60 transition hover:text-chalk md:h-36"><span class="font-serif italic text-3xl">Morrow</span></li>
+            <li class="grid h-28 place-items-center bg-night text-xl text-chalk/60 transition hover:text-chalk md:h-36"><span class="font-display font-black tracking-[0.2em]">KIOSK</span></li>
+            <li class="grid h-28 place-items-center bg-night text-xl text-chalk/60 transition hover:text-chalk md:h-36"><span class="font-sans font-medium">Tidewell</span></li>
+        </ul>
+      </div>
+    </section>
+    <!-- block:end clients -->
+
+    <!-- block:start cta -->
+    <section class="overflow-hidden border-t border-night-line py-20 md:py-28">
+      <a href="contact.html" class="group block" data-cursor>
+        <div class="marquee-track flex w-max gap-10 whitespace-nowrap font-display text-[clamp(3rem,10vw,9rem)] font-black uppercase leading-none">
+            <span class="transition group-hover:text-volt">Say hello</span>
+            <span aria-hidden="true">&rarr;</span>
+            <span class="outline-volt">Say hello</span>
+            <span aria-hidden="true">&rarr;</span>
+            <span class="transition group-hover:text-volt">Say hello</span>
+            <span aria-hidden="true">&rarr;</span>
+            <span class="outline-volt">Say hello</span>
+            <span aria-hidden="true">&rarr;</span>
+        </div>
+      </a>
+      <div class="mx-auto mt-12 flex max-w-[1500px] flex-wrap items-center justify-between gap-6 px-6 md:px-16">
+        <p class="max-w-md text-chalk/70">Booking projects from March. Tell me what you are making and I will reply within two days.</p>
+        <a href="contact.html" class="rounded-full bg-volt px-7 py-3 text-sm font-bold uppercase tracking-[0.15em] text-night hover:bg-chalk">Start a project</a>
+      </div>
+    </section>
+    <!-- block:end cta -->
+  </main>
+
+  <!-- block:start footer -->
+  <footer class="border-t border-night-line">
+    <div class="mx-auto grid max-w-[1500px] gap-10 px-6 py-14 md:grid-cols-3 md:px-16">
+      <div>
+        <a href="index.html" class="font-display text-sm font-bold uppercase tracking-[0.35em]">Kontur</a>
+        <p class="mt-4 max-w-xs text-sm text-chalk/60">Independent art direction and design by Noa Lindqvist.</p>
+      </div>
+      <div class="text-sm">
+        <p class="text-xs uppercase tracking-[0.25em] text-chalk/40">Pages</p>
+        <ul class="mt-4 grid gap-2">
+          <li><a href="work.html" class="hover:text-volt">Work</a></li>
+          <li><a href="halden-identity.html" class="hover:text-volt">Case study</a></li>
+          <li><a href="about.html" class="hover:text-volt">About</a></li>
+          <li><a href="contact.html" class="hover:text-volt">Say hello</a></li>
+        </ul>
+      </div>
+      <div class="text-sm">
+        <p class="text-xs uppercase tracking-[0.25em] text-chalk/40">Elsewhere</p>
+        <ul class="mt-4 grid gap-2">
+          <li><a href="contact.html" class="hover:text-volt">Instagram</a></li>
+          <li><a href="contact.html" class="hover:text-volt">Behance</a></li>
+          <li><a href="contact.html" class="hover:text-volt">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="border-t border-night-line px-6 py-6 text-center text-xs uppercase tracking-[0.3em] text-chalk/40">&copy; 2026 Kontur. All rights reserved.</p>
+  </footer>
+  <!-- block:end footer -->
+
+  <div class="cursor-ring hidden" aria-hidden="true" data-cursor-ring></div>
+  <script>
+    document.querySelectorAll("[data-menu-toggle]").forEach((button) => {
+      const menu = document.getElementById(button.getAttribute("aria-controls"));
+      if (!menu) return;
+      button.addEventListener("click", () => {
+        const open = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!open));
+        menu.classList.toggle("hidden", open);
+      });
+    });
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+
+    (() => {
+      const ring = document.querySelector("[data-cursor-ring]");
+      if (!ring || navigator.webdriver || !matchMedia("(pointer: fine)").matches || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      ring.classList.remove("hidden");
+      document.addEventListener("pointermove", (event) => { ring.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`; });
+      document.querySelectorAll("a, button, [data-cursor]").forEach((el) => {
+        el.addEventListener("pointerenter", () => ring.classList.add("is-hover"));
+        el.addEventListener("pointerleave", () => ring.classList.remove("is-hover"));
+      });
+    })();
+
+    (() => {
+      const dialog = document.getElementById("lightbox");
+      if (!dialog || !dialog.showModal) return;
+      const img = dialog.querySelector("[data-lightbox-img]");
+      const title = dialog.querySelector("[data-lightbox-title]");
+      document.querySelectorAll("[data-lightbox]").forEach((button) => {
+        button.addEventListener("click", () => {
+          img.src = button.dataset.src;
+          img.alt = button.querySelector("img")?.alt || "";
+          title.innerHTML = button.dataset.title;
+          dialog.showModal();
+        });
+      });
+      dialog.querySelector("[data-lightbox-close]")?.addEventListener("click", () => dialog.close());
+      dialog.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=kontur&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

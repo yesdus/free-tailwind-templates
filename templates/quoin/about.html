@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Quoin</title>
+  <meta name="description" content="Quoin is a studio of thirty-one architects, builders and landlords in Leeds. Read how the practice works, the three things it refuses to do, who leads it and what it has been recognised for.">
+  <meta name="keywords" content="Quoin, Tailwind CSS template, HTML website template, architecture studio template, architect portfolio website, property developer template, project case study page, real estate development, portfolio template">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="About | Quoin">
+  <meta property="og:description" content="Quoin is a studio of thirty-one architects, builders and landlords in Leeds. Read how the practice works, the three things it refuses to do, who leads it and what it has been recognised for.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Quoin template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="About | Quoin">
+  <meta name="twitter:description" content="Quoin is a studio of thirty-one architects, builders and landlords in Leeds. Read how the practice works, the three things it refuses to do, who leads it and what it has been recognised for.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Quoin template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            slate: { DEFAULT: '#3a3d3f', deep: '#26282a' },
+            oxide: { DEFAULT: '#a6492f', deep: '#863823' },
+            paper: { DEFAULT: '#ffffff', warm: '#f3efea' },
+            line: '#ddd7ce',
+            ink: { DEFAULT: '#1c1b1a', soft: '#4a4744', mute: '#6b6763' }
+          },
+          fontFamily: {
+            display: ['"Josefin Sans"', 'sans-serif'],
+            sans: ['"DM Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-paper font-sans text-ink antialiased">
+  <header class="absolute inset-x-0 top-0 z-30 text-white">
+    <div class="flex items-start justify-between px-5 py-6 md:px-10 md:py-8">
+      <a href="index.html" aria-label="Quoin, home" class="grid grid-cols-3 gap-x-5 gap-y-1 font-display text-2xl font-light leading-none md:gap-x-7 md:text-3xl">
+        <span>Q</span><span>U</span><span>O</span><span>I</span><span>N</span>
+      </a>
+      <div class="flex items-center gap-10">
+        <nav aria-label="Main" class="hidden items-center gap-10 md:flex">
+            <a href="projects.html"  class="font-display text-lg uppercase tracking-wide transition hover:text-white text-white/80">Projects</a>
+            <a href="about.html" aria-current="page" class="font-display text-lg uppercase tracking-wide transition hover:text-white border-b border-white text-white">About</a>
+            <a href="contact.html"  class="font-display text-lg uppercase tracking-wide transition hover:text-white text-white/80">Contact</a>
+        </nav>
+        <button type="button" data-menu-toggle aria-controls="project-index" aria-expanded="false" class="flex items-center gap-3 font-display text-lg uppercase tracking-wide">
+          <span>Index</span>
+          <span class="flex flex-col gap-[6px]" aria-hidden="true"><span class="block h-px w-7 bg-current"></span><span class="block h-px w-7 bg-current"></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div data-menu-backdrop class="fixed inset-0 z-40 bg-ink/50" hidden></div>
+  <aside id="project-index" class="panel fixed inset-y-0 right-0 z-50 flex w-full max-w-[34rem] flex-col overflow-y-auto bg-paper" aria-label="Menu and project index">
+    <div class="flex items-center justify-between gap-6 px-6 py-7 md:px-9">
+      <nav aria-label="Menu" class="flex flex-wrap gap-x-8 gap-y-2">
+          <a href="projects.html"  class="font-display text-lg uppercase tracking-wide transition hover:text-ink text-ink-mute">Projects</a>
+          <a href="about.html" aria-current="page" class="font-display text-lg uppercase tracking-wide transition hover:text-ink text-ink">About</a>
+          <a href="contact.html"  class="font-display text-lg uppercase tracking-wide transition hover:text-ink text-ink-mute">Contact</a>
+      </nav>
+      <button type="button" data-menu-close aria-label="Close the index" class="text-2xl leading-none"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="mt-6 border-t border-line md:mt-12">
+        <li class="border-b border-line">
+          <a href="the-kiln-yard.html" class="group grid grid-cols-[7.5rem_1fr] items-center gap-6 p-6 md:grid-cols-[13rem_1fr] md:p-7">
+            <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Apartment blocks with steel balconies in blue and orange render" class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-80">
+            <span class="text-center">
+              <span class="block text-sm text-ink-mute">Leeds</span>
+              <span class="caps mt-2 block text-xl md:text-2xl">Eighty-four homes on a brickworks</span>
+              <span class="mt-3 block text-xs text-ink-mute">The Kiln Yard, 2025</span>
+            </span>
+          </a>
+        </li>
+        <li class="border-b border-line">
+          <a href="the-kiln-yard.html" class="group grid grid-cols-[7.5rem_1fr] items-center gap-6 p-6 md:grid-cols-[13rem_1fr] md:p-7">
+            <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="The corner of a dark brick building with deep-set windows" class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-80">
+            <span class="text-center">
+              <span class="block text-sm text-ink-mute">Sheffield</span>
+              <span class="caps mt-2 block text-xl md:text-2xl">A steel mill turned workplace</span>
+              <span class="mt-3 block text-xs text-ink-mute">Harrow Works, 2024</span>
+            </span>
+          </a>
+        </li>
+        <li class="border-b border-line">
+          <a href="the-kiln-yard.html" class="group grid grid-cols-[7.5rem_1fr] items-center gap-6 p-6 md:grid-cols-[13rem_1fr] md:p-7">
+            <img src="https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Black and white townhouses with tall framed windows" class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-80">
+            <span class="text-center">
+              <span class="block text-sm text-ink-mute">York</span>
+              <span class="caps mt-2 block text-xl md:text-2xl">Twenty-two timber townhouses</span>
+              <span class="mt-3 block text-xs text-ink-mute">Alder Court, 2023</span>
+            </span>
+          </a>
+        </li>
+        <li class="border-b border-line">
+          <a href="the-kiln-yard.html" class="group grid grid-cols-[7.5rem_1fr] items-center gap-6 p-6 md:grid-cols-[13rem_1fr] md:p-7">
+            <img src="https://images.unsplash.com/photo-1496564203457-11bb12075d90?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="A curved building with a planted roof and glass walls" class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-80">
+            <span class="text-center">
+              <span class="block text-sm text-ink-mute">Hull</span>
+              <span class="caps mt-2 block text-xl md:text-2xl">A library under a green roof</span>
+              <span class="mt-3 block text-xs text-ink-mute">Fenn Library, 2022</span>
+            </span>
+          </a>
+        </li>
+    </ul>
+    <a href="projects.html" class="label m-7 inline-flex items-center gap-3">All twenty-six projects <i class="fa-solid fa-arrow-right"></i></a>
+  </aside>
+  <main>
+    
+
+  <section class="washed flex min-h-[62svh] flex-col justify-end text-white">
+    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&amp;fit=crop&amp;w=1800&amp;q=80" alt="An architect drawing on a large plan at a wooden desk">
+    <div class="px-5 pb-8 pt-40 md:px-10 md:pb-10">
+      <p class="label mb-6 text-white/70">4 Granary Wharf, Leeds</p>
+      <h1 class="giant text-[clamp(3.1rem,12.5vw,13rem)] text-white/90">About</h1>
+    </div>
+  </section>
+
+  <section class="px-5 py-20 md:px-10 md:py-28">
+    <div class="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-[.3fr_1fr]">
+      <p class="label text-ink-mute" data-reveal>Why we exist</p>
+      <div data-reveal>
+        <h2 class="caps text-3xl md:text-5xl md:leading-[1.1]">An architect who never has to live with the building learns very little from it. So we became the developer and the landlord too.</h2>
+        <div class="mt-10 grid gap-8 text-lg text-ink-soft md:grid-cols-2">
+          <p>Quoin began in 2009 with two architects, a borrowed office and a terrace of four houses that no bank wanted to fund. We built them anyway, kept them, and still fix their gutters.</p>
+          <p>Sixteen years later the studio is thirty-one people: architects, site managers, a finance team of three and two caretakers who know more about how our buildings are used than anyone with a drawing board.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid md:grid-cols-2">
+    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="A site team in high-visibility jackets standing on a concrete slab" class="aspect-[4/3] h-full w-full object-cover" data-reveal>
+    <div class="bg-slate-deep px-5 py-16 text-white md:px-16 md:py-24">
+      <p class="label text-white/60">Three things we will not do</p>
+      <ol class="mt-8">
+          <li class="grid grid-cols-[3.5rem_1fr] gap-4 border-t border-white/25 py-7" data-reveal>
+            <span class="font-display text-4xl font-extralight">1</span>
+            <span>
+              <span class="caps block text-2xl md:text-3xl">Sell and leave</span>
+              <span class="mt-2 block text-white/75">Every building stays on our books for at least ten years.</span>
+            </span>
+          </li>
+          <li class="grid grid-cols-[3.5rem_1fr] gap-4 border-t border-white/25 py-7" data-reveal>
+            <span class="font-display text-4xl font-extralight">2</span>
+            <span>
+              <span class="caps block text-2xl md:text-3xl">Hide the cheap homes</span>
+              <span class="mt-2 block text-white/75">Social rent shares the same stairs, bricks and views.</span>
+            </span>
+          </li>
+          <li class="grid grid-cols-[3.5rem_1fr] gap-4 border-t border-white/25 py-7" data-reveal>
+            <span class="font-display text-4xl font-extralight">3</span>
+            <span>
+              <span class="caps block text-2xl md:text-3xl">Knock down what stands</span>
+              <span class="mt-2 block text-white/75">If a frame can carry another life, it gets one.</span>
+            </span>
+          </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- block:start team -->
+  <section class="px-5 py-20 md:px-10 md:py-28" data-team>
+    <div class="mx-auto max-w-[1400px]">
+      <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <h2 class="caps text-3xl md:text-5xl">Who you will meet</h2>
+        <div role="group" aria-label="Filter the team" data-filter-group class="flex flex-wrap gap-2">
+            <button type="button" data-filter="all" aria-pressed="true" class="border border-ink/30 px-5 py-3 font-display uppercase tracking-wide transition hover:border-ink aria-pressed:border-ink aria-pressed:bg-ink aria-pressed:text-white">Everyone</button>
+            <button type="button" data-filter="design" aria-pressed="false" class="border border-ink/30 px-5 py-3 font-display uppercase tracking-wide transition hover:border-ink aria-pressed:border-ink aria-pressed:bg-ink aria-pressed:text-white">Design</button>
+            <button type="button" data-filter="site" aria-pressed="false" class="border border-ink/30 px-5 py-3 font-display uppercase tracking-wide transition hover:border-ink aria-pressed:border-ink aria-pressed:bg-ink aria-pressed:text-white">Site</button>
+            <button type="button" data-filter="care" aria-pressed="false" class="border border-ink/30 px-5 py-3 font-display uppercase tracking-wide transition hover:border-ink aria-pressed:border-ink aria-pressed:bg-ink aria-pressed:text-white">Aftercare</button>
+        </div>
+      </div>
+      <ul class="mt-10 border-t border-line" data-filter-items>
+          <li data-category="design" class="grid gap-1 border-b border-line py-5 md:grid-cols-[1fr_1fr_1.2fr] md:items-baseline md:gap-10">
+            <span class="font-display text-2xl uppercase tracking-wide">Ines Halloran</span>
+            <span>Founding partner, architect</span>
+            <span class="text-ink-mute">Draws the first sketch of every project</span>
+          </li>
+          <li data-category="design" class="grid gap-1 border-b border-line py-5 md:grid-cols-[1fr_1fr_1.2fr] md:items-baseline md:gap-10">
+            <span class="font-display text-2xl uppercase tracking-wide">Tobias Wren</span>
+            <span>Founding partner, development</span>
+            <span class="text-ink-mute">Finds the sites and the money</span>
+          </li>
+          <li data-category="design" class="grid gap-1 border-b border-line py-5 md:grid-cols-[1fr_1fr_1.2fr] md:items-baseline md:gap-10">
+            <span class="font-display text-2xl uppercase tracking-wide">Priya Castellan</span>
+            <span>Associate, housing</span>
+            <span class="text-ink-mute">Led The Kiln Yard and Alder Court</span>
+          </li>
+          <li data-category="site" class="grid gap-1 border-b border-line py-5 md:grid-cols-[1fr_1fr_1.2fr] md:items-baseline md:gap-10">
+            <span class="font-display text-2xl uppercase tracking-wide">Dermot Ashby</span>
+            <span>Head of construction</span>
+            <span class="text-ink-mute">On site at seven, every day since 2011</span>
+          </li>
+          <li data-category="site" class="grid gap-1 border-b border-line py-5 md:grid-cols-[1fr_1fr_1.2fr] md:items-baseline md:gap-10">
+            <span class="font-display text-2xl uppercase tracking-wide">Marta Linde</span>
+            <span>Site manager</span>
+            <span class="text-ink-mute">Runs Wakefield and the Ouse boathouse</span>
+          </li>
+          <li data-category="care" class="grid gap-1 border-b border-line py-5 md:grid-cols-[1fr_1fr_1.2fr] md:items-baseline md:gap-10">
+            <span class="font-display text-2xl uppercase tracking-wide">Colm Everard</span>
+            <span>Head caretaker</span>
+            <span class="text-ink-mute">Holds the keys to all twenty-six buildings</span>
+          </li>
+      </ul>
+    </div>
+  </section>
+  <!-- block:end team -->
+
+  <section class="bg-paper-warm px-5 py-20 md:px-10 md:py-28">
+    <div class="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-[.3fr_1fr]">
+      <p class="label text-ink-mute">Recognition</p>
+      <ul class="border-t border-line">
+          <li class="grid gap-1 border-b border-line py-5 md:grid-cols-[6rem_1.4fr_1fr] md:items-baseline" data-reveal>
+            <span class="text-ink-mute">2025</span>
+            <span class="font-display text-xl uppercase tracking-wide md:text-2xl">Northern Housing Award</span>
+            <span class="md:text-right">The Kiln Yard</span>
+          </li>
+          <li class="grid gap-1 border-b border-line py-5 md:grid-cols-[6rem_1.4fr_1fr] md:items-baseline" data-reveal>
+            <span class="text-ink-mute">2024</span>
+            <span class="font-display text-xl uppercase tracking-wide md:text-2xl">Retrofit of the Year, shortlisted</span>
+            <span class="md:text-right">Harrow Works</span>
+          </li>
+          <li class="grid gap-1 border-b border-line py-5 md:grid-cols-[6rem_1.4fr_1fr] md:items-baseline" data-reveal>
+            <span class="text-ink-mute">2023</span>
+            <span class="font-display text-xl uppercase tracking-wide md:text-2xl">Civic Trust commendation</span>
+            <span class="md:text-right">Fenn Library</span>
+          </li>
+          <li class="grid gap-1 border-b border-line py-5 md:grid-cols-[6rem_1.4fr_1fr] md:items-baseline" data-reveal>
+            <span class="text-ink-mute">2021</span>
+            <span class="font-display text-xl uppercase tracking-wide md:text-2xl">Timber in Construction Prize</span>
+            <span class="md:text-right">Alder Court</span>
+          </li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll("[data-team]").forEach((section) => {
+      const group = section.querySelector("[data-filter-group]");
+      const items = section.querySelectorAll("[data-filter-items] [data-category]");
+      group.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-filter]");
+        if (!button) return;
+        group.querySelectorAll("[data-filter]").forEach((chip) => chip.setAttribute("aria-pressed", String(chip === button)));
+        items.forEach((item) => { item.hidden = button.dataset.filter !== "all" && item.dataset.category !== button.dataset.filter; });
+      });
+    });
+  </script>
+
+  </main>
+
+  <footer class="bg-slate-deep px-5 py-14 text-white md:px-10 md:py-20">
+    <div class="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
+      <a href="index.html" aria-label="Quoin, home" class="grid h-fit w-fit grid-cols-3 gap-x-7 gap-y-1 font-display text-3xl font-light leading-none">
+        <span>Q</span><span>U</span><span>O</span><span>I</span><span>N</span>
+      </a>
+      <div>
+        <p class="label text-white/60">Studio</p>
+        <address class="mt-4 not-italic text-white/85">4 Granary Wharf<br>Leeds LS1 4BR</address>
+      </div>
+      <div>
+        <p class="label text-white/60">Say hello</p>
+        <p class="mt-4 text-white/85"><a href="mailto:studio@quoin.example" class="hover:underline">studio@quoin.example</a><br><a href="tel:+441135550147" class="hover:underline">0113 555 0147</a></p>
+      </div>
+      <nav aria-label="Footer">
+        <p class="label text-white/60">Pages</p>
+        <ul class="mt-4 space-y-2 text-white/85">
+            <li><a href="projects.html" class="hover:underline">Projects</a></li>
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="mx-auto mt-14 max-w-[1400px] border-t border-white/20 pt-6 text-sm text-white/60">&copy; 2026 Quoin Architecture and Development. Registered practice, Leeds.</p>
+  </footer>
+
+  <script>
+    (() => {
+      const panel = document.getElementById("project-index");
+      const toggle = document.querySelector("[data-menu-toggle]");
+      const backdrop = document.querySelector("[data-menu-backdrop]");
+      if (!panel || !toggle) return;
+      const setOpen = (open) => {
+        toggle.setAttribute("aria-expanded", String(open));
+        panel.classList.toggle("is-open", open);
+        if (backdrop) backdrop.hidden = !open;
+        document.body.style.overflow = open ? "hidden" : "";
+        if (open) panel.querySelector("[data-menu-close]")?.focus(); else toggle.focus();
+      };
+      toggle.addEventListener("click", () => setOpen(toggle.getAttribute("aria-expanded") !== "true"));
+      panel.querySelector("[data-menu-close]")?.addEventListener("click", () => setOpen(false));
+      backdrop?.addEventListener("click", () => setOpen(false));
+      document.addEventListener("keydown", (event) => { if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") setOpen(false); });
+    })();
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=quoin&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

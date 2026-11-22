@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work | Kontur</title>
+  <meta name="description" content="Selected identity, campaign, editorial, motion and interface projects by art director and designer Noa Lindqvist.">
+  <meta name="keywords" content="Kontur, Tailwind CSS template, HTML website template, portfolio template, art director portfolio, designer portfolio, personal website, case study, dark portfolio, free template">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Work | Kontur">
+  <meta property="og:description" content="Selected identity, campaign, editorial, motion and interface projects by art director and designer Noa Lindqvist.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Kontur template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Work | Kontur">
+  <meta name="twitter:description" content="Selected identity, campaign, editorial, motion and interface projects by art director and designer Noa Lindqvist.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Kontur template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            night: { DEFAULT: '#0a0a0a', soft: '#161616', line: '#2a2a2a' },
+            chalk: { DEFAULT: '#f4f4f0', dim: '#a3a3a0' },
+            volt: { DEFAULT: '#d6ff3c', deep: '#b5dc1f' }
+          },
+          fontFamily: {
+            display: ['Unbounded', 'sans-serif'],
+            sans: ['"DM Sans"', 'sans-serif'],
+            serif: ['"Instrument Serif"', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-night font-sans text-chalk antialiased">
+  <header class="relative z-40">
+    <nav class="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-8 md:px-16" aria-label="Main">
+      <a href="index.html" class="font-display text-sm font-bold uppercase tracking-[0.35em]">Kontur</a>
+      <ul class="hidden items-center gap-16 text-sm font-medium uppercase tracking-[0.12em] md:flex">
+          <li><a href="work.html" aria-current="page" class="border-b border-volt pb-1 text-volt">Work</a></li>
+          <li><a href="about.html"  class="text-chalk/80 hover:text-volt">About</a></li>
+          <li><a href="contact.html"  class="text-chalk/80 hover:text-volt">Say hello</a></li>
+      </ul>
+      <button type="button" class="grid h-11 w-11 place-items-center rounded-full border border-chalk/30 md:hidden" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-night-line px-6 pb-8 md:hidden">
+      <ul class="grid gap-4 pt-6 font-display text-3xl font-bold uppercase">
+          <li><a href="work.html" aria-current="page" class="text-volt">Work</a></li>
+          <li><a href="about.html"  class="hover:text-volt">About</a></li>
+          <li><a href="contact.html"  class="hover:text-volt">Say hello</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    
+  <section class="mx-auto max-w-[1500px] px-6 pb-12 pt-8 md:px-16">
+    <h1 class="font-display text-[clamp(3rem,10vw,9rem)] font-black uppercase leading-none">Work <span class="outline-type">index</span></h1>
+    <p class="mt-8 max-w-xl text-lg text-chalk/70">Eight projects from the last five years. Filter by discipline, hover a row to preview it, open one to read the full story.</p>
+  </section>
+
+  <section class="mx-auto max-w-[1500px] px-6 pb-24 md:px-16" data-work>
+    <div class="flex flex-wrap gap-2 border-b border-night-line pb-6" role="group" aria-label="Filter by discipline">
+        <button type="button" class="rounded-full border border-chalk/30 px-5 py-2 text-sm aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="rounded-full border border-chalk/30 px-5 py-2 text-sm aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night" data-filter="identity" aria-pressed="false">Identity</button>
+        <button type="button" class="rounded-full border border-chalk/30 px-5 py-2 text-sm aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night" data-filter="campaign" aria-pressed="false">Campaign</button>
+        <button type="button" class="rounded-full border border-chalk/30 px-5 py-2 text-sm aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night" data-filter="editorial" aria-pressed="false">Editorial</button>
+        <button type="button" class="rounded-full border border-chalk/30 px-5 py-2 text-sm aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night" data-filter="motion" aria-pressed="false">Motion</button>
+        <button type="button" class="rounded-full border border-chalk/30 px-5 py-2 text-sm aria-pressed:border-volt aria-pressed:bg-volt aria-pressed:text-night" data-filter="interface" aria-pressed="false">Interface</button>
+    </div>
+    <div class="grid gap-10 lg:grid-cols-12">
+      <ol class="lg:col-span-7">
+          <li data-category="identity">
+            <a href="halden-identity.html" class="group grid grid-cols-[1fr_auto] items-baseline gap-x-6 gap-y-1 border-b border-night-line py-6 md:grid-cols-[1fr_10rem_4rem]" data-preview-src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=900&q=80" data-preview-alt="Flowing purple, blue and orange gradient waves">
+              <span class="font-display text-2xl font-bold uppercase transition group-hover:text-volt md:text-4xl">Halden</span>
+              <span class="text-sm text-chalk/50 md:order-none">2026</span>
+              <span class="text-sm uppercase tracking-[0.15em] text-chalk/60 md:col-start-2 md:row-start-1">Identity &middot; Halden Coffee</span>
+            </a>
+          </li>
+          <li data-category="campaign">
+            <a href="halden-identity.html" class="group grid grid-cols-[1fr_auto] items-baseline gap-x-6 gap-y-1 border-b border-night-line py-6 md:grid-cols-[1fr_10rem_4rem]" data-preview-src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=900&q=80" data-preview-alt="Clouds of blue and red ink colliding in water">
+              <span class="font-display text-2xl font-bold uppercase transition group-hover:text-volt md:text-4xl">Inkfall</span>
+              <span class="text-sm text-chalk/50 md:order-none">2025</span>
+              <span class="text-sm uppercase tracking-[0.15em] text-chalk/60 md:col-start-2 md:row-start-1">Campaign &middot; Ferro &amp; Co</span>
+            </a>
+          </li>
+          <li data-category="editorial">
+            <a href="halden-identity.html" class="group grid grid-cols-[1fr_auto] items-baseline gap-x-6 gap-y-1 border-b border-night-line py-6 md:grid-cols-[1fr_10rem_4rem]" data-preview-src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=80" data-preview-alt="Printed colour swatches beside a tablet showing a palette">
+              <span class="font-display text-2xl font-bold uppercase transition group-hover:text-volt md:text-4xl">Swatchbook</span>
+              <span class="text-sm text-chalk/50 md:order-none">2025</span>
+              <span class="text-sm uppercase tracking-[0.15em] text-chalk/60 md:col-start-2 md:row-start-1">Editorial &middot; Atelier Lune</span>
+            </a>
+          </li>
+          <li data-category="motion">
+            <a href="halden-identity.html" class="group grid grid-cols-[1fr_auto] items-baseline gap-x-6 gap-y-1 border-b border-night-line py-6 md:grid-cols-[1fr_10rem_4rem]" data-preview-src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=900&q=80" data-preview-alt="Dark purple 3D render with a soft pink glow">
+              <span class="font-display text-2xl font-bold uppercase transition group-hover:text-volt md:text-4xl">Afterglow</span>
+              <span class="text-sm text-chalk/50 md:order-none">2024</span>
+              <span class="text-sm uppercase tracking-[0.15em] text-chalk/60 md:col-start-2 md:row-start-1">Motion &middot; Morrow Records</span>
+            </a>
+          </li>
+          <li data-category="interface">
+            <a href="halden-identity.html" class="group grid grid-cols-[1fr_auto] items-baseline gap-x-6 gap-y-1 border-b border-night-line py-6 md:grid-cols-[1fr_10rem_4rem]" data-preview-src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=900&q=80" data-preview-alt="Macro photo of colourful oil bubbles in water">
+              <span class="font-display text-2xl font-bold uppercase transition group-hover:text-volt md:text-4xl">Oil &amp; Light</span>
+              <span class="text-sm text-chalk/50 md:order-none">2024</span>
+              <span class="text-sm uppercase tracking-[0.15em] text-chalk/60 md:col-start-2 md:row-start-1">Interface &middot; Pallas Bank</span>
+            </a>
+          </li>
+          <li data-category="identity">
+            <a href="halden-identity.html" class="group grid grid-cols-[1fr_auto] items-baseline gap-x-6 gap-y-1 border-b border-night-line py-6 md:grid-cols-[1fr_10rem_4rem]" data-preview-src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=900&q=80" data-preview-alt="Rippling blue lines forming waves">
+              <span class="font-display text-2xl font-bold uppercase transition group-hover:text-volt md:text-4xl">Drift</span>
+              <span class="text-sm text-chalk/50 md:order-none">2023</span>
+              <span class="text-sm uppercase tracking-[0.15em] text-chalk/60 md:col-start-2 md:row-start-1">Identity &middot; Tidewell</span>
+            </a>
+          </li>
+          <li data-category="campaign">
+            <a href="halden-identity.html" class="group grid grid-cols-[1fr_auto] items-baseline gap-x-6 gap-y-1 border-b border-night-line py-6 md:grid-cols-[1fr_10rem_4rem]" data-preview-src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?auto=format&fit=crop&w=900&q=80" data-preview-alt="Pink and blue marbled paint">
+              <span class="font-display text-2xl font-bold uppercase transition group-hover:text-volt md:text-4xl">Marble Week</span>
+              <span class="text-sm text-chalk/50 md:order-none">2023</span>
+              <span class="text-sm uppercase tracking-[0.15em] text-chalk/60 md:col-start-2 md:row-start-1">Campaign &middot; Sundhaus</span>
+            </a>
+          </li>
+          <li data-category="interface">
+            <a href="halden-identity.html" class="group grid grid-cols-[1fr_auto] items-baseline gap-x-6 gap-y-1 border-b border-night-line py-6 md:grid-cols-[1fr_10rem_4rem]" data-preview-src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=900&q=80" data-preview-alt="Hand sketching an app layout on a tablet">
+              <span class="font-display text-2xl font-bold uppercase transition group-hover:text-volt md:text-4xl">Field Notes</span>
+              <span class="text-sm text-chalk/50 md:order-none">2022</span>
+              <span class="text-sm uppercase tracking-[0.15em] text-chalk/60 md:col-start-2 md:row-start-1">Interface &middot; Nordvik</span>
+            </a>
+          </li>
+      </ol>
+      <figure class="hidden pt-6 lg:col-span-5 lg:block">
+        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=900&q=80" alt="Flowing purple, blue and orange gradient waves" class="sticky top-8 aspect-[4/5] w-full rounded-lg object-cover transition-opacity duration-300" data-preview-img>
+      </figure>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll("[data-work]").forEach((root) => {
+      const items = root.querySelectorAll("[data-category]");
+      const img = root.querySelector("[data-preview-img]");
+      root.querySelectorAll("[data-filter]").forEach((button) => {
+        button.addEventListener("click", () => {
+          root.querySelectorAll("[data-filter]").forEach((chip) => chip.setAttribute("aria-pressed", String(chip === button)));
+          items.forEach((item) => { item.hidden = button.dataset.filter !== "all" && item.dataset.category !== button.dataset.filter; });
+        });
+      });
+      if (!img) return;
+      root.querySelectorAll("[data-preview-src]").forEach((link) => {
+        const show = () => {
+          if (img.getAttribute("src") === link.dataset.previewSrc) return;
+          img.style.opacity = "0";
+          setTimeout(() => { img.src = link.dataset.previewSrc; img.alt = link.dataset.previewAlt; img.style.opacity = "1"; }, 150);
+        };
+        link.addEventListener("mouseenter", show);
+        link.addEventListener("focus", show);
+      });
+    });
+  </script>
+
+  </main>
+
+  <footer class="border-t border-night-line">
+    <div class="mx-auto grid max-w-[1500px] gap-10 px-6 py-14 md:grid-cols-3 md:px-16">
+      <div>
+        <a href="index.html" class="font-display text-sm font-bold uppercase tracking-[0.35em]">Kontur</a>
+        <p class="mt-4 max-w-xs text-sm text-chalk/60">Independent art direction and design by Noa Lindqvist.</p>
+      </div>
+      <div class="text-sm">
+        <p class="text-xs uppercase tracking-[0.25em] text-chalk/40">Pages</p>
+        <ul class="mt-4 grid gap-2">
+          <li><a href="work.html" class="hover:text-volt">Work</a></li>
+          <li><a href="halden-identity.html" class="hover:text-volt">Case study</a></li>
+          <li><a href="about.html" class="hover:text-volt">About</a></li>
+          <li><a href="contact.html" class="hover:text-volt">Say hello</a></li>
+        </ul>
+      </div>
+      <div class="text-sm">
+        <p class="text-xs uppercase tracking-[0.25em] text-chalk/40">Elsewhere</p>
+        <ul class="mt-4 grid gap-2">
+          <li><a href="contact.html" class="hover:text-volt">Instagram</a></li>
+          <li><a href="contact.html" class="hover:text-volt">Behance</a></li>
+          <li><a href="contact.html" class="hover:text-volt">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="border-t border-night-line px-6 py-6 text-center text-xs uppercase tracking-[0.3em] text-chalk/40">&copy; 2026 Kontur. All rights reserved.</p>
+  </footer>
+
+  <div class="cursor-ring hidden" aria-hidden="true" data-cursor-ring></div>
+  <script>
+    document.querySelectorAll("[data-menu-toggle]").forEach((button) => {
+      const menu = document.getElementById(button.getAttribute("aria-controls"));
+      if (!menu) return;
+      button.addEventListener("click", () => {
+        const open = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!open));
+        menu.classList.toggle("hidden", open);
+      });
+    });
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+
+    (() => {
+      const ring = document.querySelector("[data-cursor-ring]");
+      if (!ring || navigator.webdriver || !matchMedia("(pointer: fine)").matches || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      ring.classList.remove("hidden");
+      document.addEventListener("pointermove", (event) => { ring.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`; });
+      document.querySelectorAll("a, button, [data-cursor]").forEach((el) => {
+        el.addEventListener("pointerenter", () => ring.classList.add("is-hover"));
+        el.addEventListener("pointerleave", () => ring.classList.remove("is-hover"));
+      });
+    })();
+
+    (() => {
+      const dialog = document.getElementById("lightbox");
+      if (!dialog || !dialog.showModal) return;
+      const img = dialog.querySelector("[data-lightbox-img]");
+      const title = dialog.querySelector("[data-lightbox-title]");
+      document.querySelectorAll("[data-lightbox]").forEach((button) => {
+        button.addEventListener("click", () => {
+          img.src = button.dataset.src;
+          img.alt = button.querySelector("img")?.alt || "";
+          title.innerHTML = button.dataset.title;
+          dialog.showModal();
+        });
+      });
+      dialog.querySelector("[data-lightbox-close]")?.addEventListener("click", () => dialog.close());
+      dialog.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=kontur&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

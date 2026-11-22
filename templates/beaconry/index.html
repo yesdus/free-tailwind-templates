@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beaconry | Tailwind CSS SaaS Template</title>
+  <meta name="description" content="Beaconry is a bold Tailwind CSS template for SaaS products that manage connected devices, with an electric blue and black split hero, neon line drawings, a live fleet board you can filter and update, a price slider, integrations, a features page, a pricing page and a contact form.">
+  <meta name="keywords" content="Beaconry, Tailwind CSS template, HTML website template, SaaS landing page, IoT software template, device management website, pricing calculator, integrations grid, startup template">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Beaconry | Tailwind CSS SaaS Template">
+  <meta property="og:description" content="A bold Tailwind CSS template for SaaS products that manage connected devices, with a blue and black split hero, neon line drawings, a live fleet board, a price slider, integrations, features, pricing and contact pages.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Beaconry template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Beaconry | Tailwind CSS SaaS Template">
+  <meta name="twitter:description" content="A bold Tailwind CSS template for SaaS products that manage connected devices, with a blue and black split hero, neon line drawings, a live fleet board, a price slider, integrations, features, pricing and contact pages.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Beaconry template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            volt: { DEFAULT: '#1a9cff', deep: '#0b6fc2', pale: '#e6f4ff' },
+            coal: { DEFAULT: '#000000', soft: '#0d1117', line: '#252b33' },
+            flare: '#ff4fa3'
+          },
+          fontFamily: {
+            sans: ['Lexend', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-coal font-sans text-white antialiased">
+  <!-- block:start navbar -->
+  <header class="absolute inset-x-0 top-0 z-40">
+    <div class="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-7 md:px-16 md:py-10 xl:px-28">
+      <a href="index.html" class="text-2xl font-semibold uppercase tracking-tight">Beaconry</a>
+      <button type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="false" class="flex items-center gap-3 text-sm uppercase tracking-widest">
+        <span class="flex w-5 flex-col gap-1.5" aria-hidden="true"><span class="h-px bg-white"></span><span class="h-px bg-white"></span><span class="h-px bg-white"></span></span>
+        Menu
+      </button>
+    </div>
+  </header>
+  <div id="site-menu" hidden class="fixed inset-0 z-50 grid bg-volt lg:grid-cols-[55%_45%]">
+    <div class="flex flex-col px-6 py-7 md:px-16 md:py-10 xl:px-28">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="text-2xl font-semibold uppercase tracking-tight">Beaconry</a>
+        <button type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="true" class="flex items-center gap-3 text-sm uppercase tracking-widest lg:hidden"><i class="fa-solid fa-xmark text-lg"></i>Close</button>
+      </div>
+      <nav aria-label="Main" class="my-auto flex flex-col gap-2 py-10 text-5xl font-medium md:text-7xl">
+        <a href="index.html" aria-current="page" class="text-black">home</a>
+          <a href="features.html" class="transition hover:text-black">features</a>
+          <a href="pricing.html" class="transition hover:text-black">pricing</a>
+          <a href="contact.html" class="transition hover:text-black">say hello</a>
+      </nav>
+      <p class="text-sm"><a href="mailto:hello@beaconry.example" class="underline underline-offset-4">hello@beaconry.example</a> &middot; Rotterdam</p>
+    </div>
+    <div class="hidden flex-col items-end bg-coal px-16 py-10 lg:flex xl:px-28">
+      <button type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="true" class="flex items-center gap-3 text-sm uppercase tracking-widest"><i class="fa-solid fa-xmark text-lg"></i>Close</button>
+      <p class="my-auto max-w-xs self-start text-2xl font-light text-white/80">14,200 devices are talking to Beaconry right now. <span class="text-volt">12 of them</span> need someone.</p>
+    </div>
+  </div>
+  <!-- block:end navbar -->
+
+  <main>
+    <!-- block:start hero -->
+    <section class="grid min-h-screen lg:grid-cols-[55%_45%]">
+      <div class="flex flex-col bg-volt px-6 pb-10 pt-28 md:px-16 md:pt-36 xl:px-28">
+        <p class="text-lg font-medium leading-snug">hello!<br>we are beaconry.</p>
+        <h1 class="my-auto max-w-xl py-14 text-4xl font-medium leading-[1.15] md:text-5xl xl:text-[3.4rem]"><span class="text-black">beaconry</span><br>one calm place to watch, fix and update every connected thing you own.</h1>
+        <div class="flex items-end justify-between gap-6">
+          <a href="#fleet" class="flex flex-col items-center gap-3 text-xs tracking-wide"><span class="sideways">Scroll</span><span class="h-8 w-px bg-white"></span><i class="fa-solid fa-chevron-down -mt-4 text-[10px]"></i></a>
+          <p class="flex flex-wrap justify-end gap-3">
+            <a href="pricing.html" class="rounded-full bg-black px-7 py-3.5 font-medium transition hover:bg-white hover:text-black">start with 25 devices free</a>
+            <a href="features.html" class="rounded-full border border-white px-7 py-3.5 font-medium transition hover:bg-white hover:text-volt-deep">what it does</a>
+          </p>
+        </div>
+      </div>
+      <div class="relative flex min-h-[26rem] items-center justify-center overflow-hidden bg-coal px-6 py-12">
+        <svg viewBox="0 0 480 560" class="neon h-full max-h-[34rem] w-full" role="img" aria-label="Line drawing of a wireless gateway talking to three small sensors">
+          <path class="blue" d="M240 96a62 62 0 0 1 62 62M240 62a96 96 0 0 1 96 96M240 96a62 62 0 0 0-62 62M240 62a96 96 0 0 0-96 96"/>
+          <circle cx="240" cy="158" r="9"/>
+          <path d="M240 167v88"/>
+          <path d="M132 290l108-36 108 36v92l-108 38-108-38z"/>
+          <path d="M132 290l108 38 108-38M240 328v92"/>
+          <path class="blue" d="M160 322v44M178 328v44M196 335v44"/>
+          <circle class="pink" cx="312" cy="338" r="7"/>
+          <circle class="pink" cx="292" cy="345" r="4"/>
+          <path class="dash" d="M132 382L62 470M240 420v84M348 382l70 88"/>
+          <ellipse cx="58" cy="486" rx="34" ry="13"/>
+          <path d="M24 486v14c0 7 15 13 34 13s34-6 34-13v-14"/>
+          <ellipse cx="240" cy="520" rx="34" ry="13"/>
+          <path d="M206 520v14c0 7 15 13 34 13s34-6 34-13v-14"/>
+          <ellipse cx="422" cy="486" rx="34" ry="13"/>
+          <path d="M388 486v14c0 7 15 13 34 13s34-6 34-13v-14"/>
+          <circle class="blue" cx="58" cy="486" r="4"/>
+          <circle class="blue" cx="240" cy="520" r="4"/>
+          <circle class="pink pulse" cx="422" cy="486" r="4"/>
+        </svg>
+        <p class="absolute bottom-8 right-6 text-right text-sm text-white/70 md:right-16">sensor 3 &middot; battery 9%<br><span class="text-flare">someone should know</span></p>
+      </div>
+    </section>
+    <!-- block:end hero -->
+
+    <!-- block:start clients -->
+    <section class="border-b border-coal-line px-6 py-10 md:px-16 xl:px-28" aria-label="Teams that use Beaconry">
+      <div class="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-x-10 gap-y-4 text-xl font-medium text-white/50 md:text-2xl">
+        <span class="text-sm uppercase tracking-widest text-white/70">watching fleets for</span>
+          <span>coldharbour</span>
+          <span>velopark</span>
+          <span>meterly</span>
+          <span>greenroof</span>
+          <span>tidewater</span>
+          <span>lumen&amp;co</span>
+      </div>
+    </section>
+    <!-- block:end clients -->
+
+    <!-- block:start demo -->
+    <section id="fleet" class="px-6 py-20 md:px-16 md:py-28 xl:px-28" data-fleet>
+      <div class="mx-auto grid max-w-[1500px] gap-12 lg:grid-cols-[.9fr_1.1fr] lg:gap-20">
+        <div>
+          <p class="text-volt">try it</p>
+          <h2 class="mt-3 text-4xl font-medium leading-tight md:text-5xl">sixty devices.<br>one of them is yours to fix.</h2>
+          <p class="mt-5 max-w-md text-lg font-light text-white/75">This is the fleet board, shrunk. Filter it, then send an update and watch it roll out in waves, the way it does for real.</p>
+          <div class="mt-8 flex flex-wrap gap-2" role="group" aria-label="Show devices">
+              <button type="button" data-fleet-filter="all" aria-pressed="true" class="rounded-full border border-white/40 px-5 py-2.5 text-sm transition aria-pressed:border-volt aria-pressed:bg-volt hover:border-volt">all 60</button>
+              <button type="button" data-fleet-filter="online" aria-pressed="false" class="rounded-full border border-white/40 px-5 py-2.5 text-sm transition aria-pressed:border-volt aria-pressed:bg-volt hover:border-volt">online</button>
+              <button type="button" data-fleet-filter="low" aria-pressed="false" class="rounded-full border border-white/40 px-5 py-2.5 text-sm transition aria-pressed:border-volt aria-pressed:bg-volt hover:border-volt">low battery</button>
+              <button type="button" data-fleet-filter="offline" aria-pressed="false" class="rounded-full border border-white/40 px-5 py-2.5 text-sm transition aria-pressed:border-volt aria-pressed:bg-volt hover:border-volt">offline</button>
+          </div>
+          <dl class="mt-10 grid max-w-md grid-cols-3 gap-6 border-t border-coal-line pt-6">
+            <div><dt class="text-sm text-white/60">showing</dt><dd class="mt-1 text-4xl font-light" data-fleet-count>60</dd></div>
+            <div><dt class="text-sm text-white/60">updated</dt><dd class="mt-1 text-4xl font-light text-volt"><span data-fleet-updated>0</span>%</dd></div>
+            <div><dt class="text-sm text-white/60">need you</dt><dd class="mt-1 text-4xl font-light text-flare">10</dd></div>
+          </dl>
+          <button type="button" data-fleet-update aria-pressed="false" class="mt-8 rounded-full bg-white px-7 py-3.5 font-medium text-black transition hover:bg-volt hover:text-white"><i class="fa-solid fa-arrow-up-from-bracket mr-2 text-sm"></i><span data-fleet-update-label>send firmware 4.2</span></button>
+        </div>
+        <div class="rounded-3xl border border-coal-line bg-coal-soft p-6 md:p-10">
+          <div class="grid grid-cols-10 gap-2.5 md:gap-4" data-fleet-grid aria-hidden="true">
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="low"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="offline"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="low"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="low"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="offline"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="low"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="offline"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="low"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="offline"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="low"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+              <span class="dot" data-state="online"></span>
+          </div>
+          <p class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/70">
+            <span><span class="mr-2 inline-block h-3 w-3 rounded-full border-2 border-white align-middle"></span>online</span>
+            <span><span class="mr-2 inline-block h-3 w-3 rounded-full border-2 border-flare align-middle"></span>low battery</span>
+            <span><span class="mr-2 inline-block h-3 w-3 rounded-full border-2 border-dashed border-white/40 align-middle"></span>offline</span>
+            <span><span class="mr-2 inline-block h-3 w-3 rounded-full bg-volt align-middle"></span>on 4.2</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- block:end demo -->
+
+    <!-- block:start features -->
+    <section class="grid lg:grid-cols-[55%_45%]" data-hover-list>
+      <div class="bg-volt px-6 py-20 md:px-16 md:py-28 xl:px-28">
+        <p class="text-black">what it does</p>
+        <ul class="mt-6">
+            <li class="border-t border-white/40 last:border-b">
+              <button type="button" data-hover-item="map" aria-pressed="true" class="group w-full py-6 text-left">
+                <span class="block text-3xl font-medium transition group-aria-pressed:text-black md:text-5xl">see every device</span>
+                <span class="mt-3 block max-w-lg text-lg font-light " data-hover-text>One map and one list for the whole fleet, whoever made the hardware. Battery, signal and last word from each one, without opening four vendor portals.</span>
+              </button>
+            </li>
+            <li class="border-t border-white/40 last:border-b">
+              <button type="button" data-hover-item="bell" aria-pressed="false" class="group w-full py-6 text-left">
+                <span class="block text-3xl font-medium transition group-aria-pressed:text-black md:text-5xl">hear about it first</span>
+                <span class="mt-3 block max-w-lg text-lg font-light hidden" data-hover-text>Rules in plain words: tell me when a fridge is above 5° for ten minutes. The right person gets a message, not the whole company.</span>
+              </button>
+            </li>
+            <li class="border-t border-white/40 last:border-b">
+              <button type="button" data-hover-item="arrow" aria-pressed="false" class="group w-full py-6 text-left">
+                <span class="block text-3xl font-medium transition group-aria-pressed:text-black md:text-5xl">update without a van</span>
+                <span class="mt-3 block max-w-lg text-lg font-light hidden" data-hover-text>Push firmware to ten devices, check them, then the next thousand. A bad update stops itself and rolls back before breakfast.</span>
+              </button>
+            </li>
+            <li class="border-t border-white/40 last:border-b">
+              <button type="button" data-hover-item="stack" aria-pressed="false" class="group w-full py-6 text-left">
+                <span class="block text-3xl font-medium transition group-aria-pressed:text-black md:text-5xl">keep the receipts</span>
+                <span class="mt-3 block max-w-lg text-lg font-light hidden" data-hover-text>Every reading and every change is kept for seven years and exports to a spreadsheet when the auditor asks.</span>
+              </button>
+            </li>
+        </ul>
+        <a href="features.html" class="mt-10 inline-flex items-center gap-3 font-medium">all the features <span class="h-px w-10 bg-white"></span><i class="fa-solid fa-chevron-right -ml-4 text-[10px]"></i></a>
+      </div>
+      <div class="flex min-h-[22rem] items-center justify-center bg-coal px-6 py-12">
+        <svg viewBox="0 0 320 320" class="neon w-full max-w-[20rem]" data-hover-art="map" role="img" aria-label="Line drawing of a map with device pins">
+          <path d="M40 80l80-30 80 30 80-30v190l-80 30-80-30-80 30z"/><path class="dash" d="M120 50v190M200 80v190"/>
+          <circle class="blue" cx="92" cy="130" r="9"/><circle class="blue" cx="160" cy="190" r="9"/><circle class="pink pulse" cx="238" cy="120" r="9"/>
+        </svg>
+        <svg viewBox="0 0 320 320" class="neon w-full max-w-[20rem]" data-hover-art="bell" hidden role="img" aria-label="Line drawing of a bell with one alert">
+          <path d="M160 60c-44 0-70 34-70 78v52l-24 36h188l-24-36v-52c0-44-26-78-70-78z"/><path d="M134 244a26 26 0 0 0 52 0M160 40v20"/>
+          <circle class="pink pulse" cx="232" cy="84" r="14"/><path class="blue" d="M52 110c6-22 18-40 36-52M268 150c2 10 2 20 0 30"/>
+        </svg>
+        <svg viewBox="0 0 320 320" class="neon w-full max-w-[20rem]" data-hover-art="arrow" hidden role="img" aria-label="Line drawing of an update travelling to three devices">
+          <rect x="110" y="40" width="100" height="64" rx="14"/><path class="blue" d="M160 104v60M160 164L80 220M160 164l80 56M160 164v56"/>
+          <rect x="48" y="220" width="64" height="56" rx="12"/><rect x="128" y="220" width="64" height="56" rx="12"/><rect x="208" y="220" width="64" height="56" rx="12"/>
+          <path class="pink" d="M146 72l10 10 20-20"/>
+        </svg>
+        <svg viewBox="0 0 320 320" class="neon w-full max-w-[20rem]" data-hover-art="stack" hidden role="img" aria-label="Line drawing of a stack of stored records">
+          <ellipse cx="160" cy="84" rx="92" ry="32"/><path d="M68 84v52c0 18 41 32 92 32s92-14 92-32V84"/><path d="M68 136v52c0 18 41 32 92 32s92-14 92-32v-52"/>
+          <path class="blue" d="M68 188v48c0 18 41 32 92 32s92-14 92-32v-48"/><circle class="pink" cx="220" cy="130" r="5"/><circle class="pink" cx="220" cy="182" r="5"/>
+        </svg>
+      </div>
+    </section>
+    <!-- block:end features -->
+
+    <!-- block:start integrations -->
+    <section class="px-6 py-20 md:px-16 md:py-28 xl:px-28" data-filter-scope>
+      <div class="mx-auto max-w-[1500px]">
+        <div class="flex flex-wrap items-end justify-between gap-6">
+          <div>
+            <p class="text-volt">plays well with</p>
+            <h2 class="mt-3 max-w-2xl text-4xl font-medium leading-tight md:text-5xl">your radios, your data, your pager.</h2>
+          </div>
+          <div class="flex flex-wrap gap-2" role="group" aria-label="Kind of integration">
+              <button type="button" data-filter="all" aria-pressed="true" class="rounded-full border border-white/40 px-5 py-2.5 text-sm transition aria-pressed:border-white aria-pressed:bg-white aria-pressed:text-black hover:border-white">all</button>
+              <button type="button" data-filter="radio" aria-pressed="false" class="rounded-full border border-white/40 px-5 py-2.5 text-sm transition aria-pressed:border-white aria-pressed:bg-white aria-pressed:text-black hover:border-white">radio</button>
+              <button type="button" data-filter="data" aria-pressed="false" class="rounded-full border border-white/40 px-5 py-2.5 text-sm transition aria-pressed:border-white aria-pressed:bg-white aria-pressed:text-black hover:border-white">data</button>
+              <button type="button" data-filter="alerts" aria-pressed="false" class="rounded-full border border-white/40 px-5 py-2.5 text-sm transition aria-pressed:border-white aria-pressed:bg-white aria-pressed:text-black hover:border-white">alerts</button>
+          </div>
+        </div>
+        <ul class="mt-12 grid grid-cols-2 gap-px overflow-hidden rounded-3xl border border-coal-line bg-coal-line md:grid-cols-3 lg:grid-cols-4">
+            <li data-category="radio" class="flex min-h-[8.5rem] flex-col justify-between bg-coal p-6 transition hover:bg-coal-soft" data-reveal>
+              <span class="text-xs uppercase tracking-widest text-volt">radio</span>
+              <span class="text-2xl font-medium">LoRaWAN</span>
+            </li>
+            <li data-category="radio" class="flex min-h-[8.5rem] flex-col justify-between bg-coal p-6 transition hover:bg-coal-soft" data-reveal>
+              <span class="text-xs uppercase tracking-widest text-volt">radio</span>
+              <span class="text-2xl font-medium">NB-IoT</span>
+            </li>
+            <li data-category="radio" class="flex min-h-[8.5rem] flex-col justify-between bg-coal p-6 transition hover:bg-coal-soft" data-reveal>
+              <span class="text-xs uppercase tracking-widest text-volt">radio</span>
+              <span class="text-2xl font-medium">Bluetooth LE</span>
+            </li>
+            <li data-category="radio" class="flex min-h-[8.5rem] flex-col justify-between bg-coal p-6 transition hover:bg-coal-soft" data-reveal>
+              <span class="text-xs uppercase tracking-widest text-volt">radio</span>
+              <span class="text-2xl font-medium">Zigbee</span>
+            </li>
+            <li data-category="data" class="flex min-h-[8.5rem] flex-col justify-between bg-coal p-6 transition hover:bg-coal-soft" data-reveal>
+              <span class="text-xs uppercase tracking-widest text-white/60">data</span>
+              <span class="text-2xl font-medium">MQTT</span>
+            </li>
+            <li data-category="data" class="flex min-h-[8.5rem] flex-col justify-between bg-coal p-6 transition hover:bg-coal-soft" data-reveal>
+              <span class="text-xs uppercase tracking-widest text-white/60">data</span>
+              <span class="text-2xl font-medium">Webhooks</span>
+            </li>
+            <li data-category="data" class="flex min-h-[8.5rem] flex-col justify-between bg-coal p-6 transition hover:bg-coal-soft" data-reveal>
+              <span class="text-xs uppercase tracking-widest text-white/60">data</span>
+              <span class="text-2xl font-medium">Snowflake</span>
+            </li>
+            <li data-category="data" class="flex min-h-[8.5rem] flex-col justify-between bg-coal p-6 transition hover:bg-coal-soft" data-reveal>
+              <span class="text-xs uppercase tracking-widest text-white/60">data</span>
+              <span class="text-2xl font-medium">BigQuery</span>
+            </li>
+            <li data-category="alerts" class="flex min-h-[8.5rem] flex-col justify-between bg-coal p-6 transition hover:bg-coal-soft" data-reveal>
+              <span class="text-xs uppercase tracking-widest text-flare">alerts</span>
+              <span class="text-2xl font-medium">Slack</span>
+            </li>
+            <li data-category="alerts" class="flex min-h-[8.5rem] flex-col justify-between bg-coal p-6 transition hover:bg-coal-soft" data-reveal>
+              <span class="text-xs uppercase tracking-widest text-flare">alerts</span>
+              <span class="text-2xl font-medium">PagerDuty</span>
+            </li>
+            <li data-category="alerts" class="flex min-h-[8.5rem] flex-col justify-between bg-coal p-6 transition hover:bg-coal-soft" data-reveal>
+              <span class="text-xs uppercase tracking-widest text-flare">alerts</span>
+              <span class="text-2xl font-medium">Teams</span>
+            </li>
+            <li data-category="alerts" class="flex min-h-[8.5rem] flex-col justify-between bg-coal p-6 transition hover:bg-coal-soft" data-reveal>
+              <span class="text-xs uppercase tracking-widest text-flare">alerts</span>
+              <span class="text-2xl font-medium">SMS</span>
+            </li>
+        </ul>
+        <p class="mt-6 text-white/60">Not here? There is an open API, and we add the ones people ask for. <a href="contact.html" class="text-white underline underline-offset-4">Ask for yours.</a></p>
+      </div>
+    </section>
+    <!-- block:end integrations -->
+
+    <!-- block:start pricing -->
+    <section class="grid lg:grid-cols-[45%_55%]" data-price>
+      <div class="bg-coal-soft px-6 py-20 md:px-16 md:py-28 xl:pl-28">
+        <p class="text-volt">what it costs</p>
+        <h2 class="mt-3 text-4xl font-medium leading-tight md:text-5xl">pay for devices, not for seats.</h2>
+        <label class="mt-12 block">
+          <span class="flex items-baseline justify-between"><span class="text-white/70">devices</span><span class="text-4xl font-light" data-price-devices>500</span></span>
+          <input type="range" min="25" max="5000" step="25" value="500" data-price-range class="mt-4 w-full accent-volt">
+        </label>
+        <p class="mt-3 flex justify-between text-sm text-white/50"><span>25</span><span>5,000</span></p>
+        <p class="mt-8 text-white/70" data-price-note>The first 25 devices are free for good. After that it gets cheaper the more you add.</p>
+      </div>
+      <div class="bg-volt px-6 py-20 md:px-16 md:py-28 xl:pr-28">
+        <p class="text-black">every month</p>
+        <p class="mt-2 text-7xl font-light md:text-9xl">&euro;<span data-price-total>238</span></p>
+        <p class="mt-3 text-lg">about <span class="font-medium text-black">&euro;<span data-price-each>0.48</span></span> a device. Everyone on your team is included.</p>
+        <p class="mt-10 flex flex-wrap gap-3">
+          <a href="pricing.html" class="rounded-full bg-black px-7 py-3.5 font-medium transition hover:bg-white hover:text-black">see what is included</a>
+          <a href="contact.html" class="rounded-full border border-white px-7 py-3.5 font-medium transition hover:bg-white hover:text-volt-deep">more than 5,000?</a>
+        </p>
+      </div>
+    </section>
+    <!-- block:end pricing -->
+
+    <!-- block:start cta -->
+    <section class="px-6 py-24 md:px-16 md:py-36 xl:px-28">
+      <div class="mx-auto flex max-w-[1500px] flex-wrap items-end justify-between gap-10">
+        <h2 class="max-w-3xl text-5xl font-medium leading-[1.1] md:text-7xl">plug in the first one <span class="text-volt">this afternoon.</span></h2>
+        <a href="contact.html" class="group flex items-center gap-5 text-lg font-medium">
+          say hello
+          <span class="flex h-16 w-16 items-center justify-center rounded-full border border-white transition group-hover:border-volt group-hover:bg-volt"><i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </section>
+    <!-- block:end cta -->
+  </main>
+
+  <!-- block:start footer -->
+  <footer class="border-t border-coal-line px-6 py-10 md:px-16 xl:px-28">
+    <div class="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-6">
+      <a href="index.html" class="text-xl font-semibold uppercase tracking-tight">Beaconry</a>
+      <nav aria-label="Footer" class="flex flex-wrap gap-x-8 gap-y-2 text-white/70">
+          <a href="features.html" class="hover:text-white">features</a>
+          <a href="pricing.html" class="hover:text-white">pricing</a>
+          <a href="contact.html" class="hover:text-white">say hello</a>
+        <a href="https://www.linkedin.com/" class="hover:text-white">linkedin</a>
+        <a href="https://github.com/" class="hover:text-white">github</a>
+      </nav>
+      <p class="text-sm text-white/50">&copy; 2026 Beaconry B.V., Rotterdam</p>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    (() => {
+      const toggles = document.querySelectorAll("[data-menu-toggle]");
+      const menu = document.getElementById("site-menu");
+      if (!menu) return;
+      const set = (open) => {
+        menu.hidden = !open;
+        document.body.style.overflow = open ? "hidden" : "";
+        toggles.forEach((toggle) => toggle.setAttribute("aria-expanded", String(open)));
+      };
+      toggles.forEach((toggle) => toggle.addEventListener("click", () => set(menu.hidden)));
+      document.addEventListener("keydown", (event) => { if (event.key === "Escape") set(false); });
+      set(false);
+    })();
+
+    document.querySelectorAll("[data-fleet]").forEach((fleet) => {
+      const dots = [...fleet.querySelectorAll(".dot")];
+      const filters = fleet.querySelectorAll("[data-fleet-filter]");
+      const button = fleet.querySelector("[data-fleet-update]");
+      const label = fleet.querySelector("[data-fleet-update-label]");
+      let timer = null;
+      filters.forEach((filter) => filter.addEventListener("click", () => {
+        filters.forEach((other) => other.setAttribute("aria-pressed", String(other === filter)));
+        let shown = 0;
+        dots.forEach((dot) => {
+          const match = filter.dataset.fleetFilter === "all" || dot.dataset.state === filter.dataset.fleetFilter;
+          dot.toggleAttribute("data-dim", !match);
+          if (match) shown += 1;
+        });
+        fleet.querySelector("[data-fleet-count]").textContent = shown;
+      }));
+      const progress = () => {
+        const done = dots.filter((dot) => dot.hasAttribute("data-updated")).length;
+        fleet.querySelector("[data-fleet-updated]").textContent = Math.round(done / dots.length * 100);
+      };
+      button.addEventListener("click", () => {
+        clearInterval(timer);
+        if (button.getAttribute("aria-pressed") === "true") {
+          dots.forEach((dot) => dot.removeAttribute("data-updated"));
+          button.setAttribute("aria-pressed", "false");
+          label.textContent = "send firmware 4.2";
+          progress();
+          return;
+        }
+        button.setAttribute("aria-pressed", "true");
+        label.textContent = "roll it back";
+        const queue = dots.filter((dot) => dot.dataset.state !== "offline");
+        const wave = matchMedia("(prefers-reduced-motion: reduce)").matches ? queue.length : 6;
+        timer = setInterval(() => {
+          queue.splice(0, wave).forEach((dot) => dot.setAttribute("data-updated", ""));
+          progress();
+          if (!queue.length) clearInterval(timer);
+        }, 320);
+      });
+    });
+
+    document.querySelectorAll("[data-hover-list]").forEach((list) => {
+      const items = list.querySelectorAll("[data-hover-item]");
+      const show = (item) => {
+        items.forEach((other) => {
+          other.setAttribute("aria-pressed", String(other === item));
+          other.querySelector("[data-hover-text]").classList.toggle("hidden", other !== item);
+        });
+        list.querySelectorAll("[data-hover-art]").forEach((art) => { art.toggleAttribute("hidden", art.dataset.hoverArt !== item.dataset.hoverItem); });
+      };
+      items.forEach((item) => ["click", "mouseenter", "focus"].forEach((type) => item.addEventListener(type, () => show(item))));
+    });
+
+    document.querySelectorAll("[data-filter-scope]").forEach((scope) => {
+      const buttons = scope.querySelectorAll("[data-filter]");
+      buttons.forEach((button) => button.addEventListener("click", () => {
+        buttons.forEach((other) => other.setAttribute("aria-pressed", String(other === button)));
+        scope.querySelectorAll("[data-category]").forEach((item) => { item.hidden = button.dataset.filter !== "all" && item.dataset.category !== button.dataset.filter; });
+      }));
+    });
+
+    document.querySelectorAll("[data-price]").forEach((price) => {
+      const range = price.querySelector("[data-price-range]");
+      const update = () => {
+        const devices = Number(range.value);
+        const paid = Math.max(0, devices - 25);
+        const rate = devices > 2000 ? 0.38 : devices > 500 ? 0.44 : 0.5;
+        const total = Math.round(paid * rate);
+        price.querySelector("[data-price-devices]").textContent = devices.toLocaleString("en-GB");
+        price.querySelector("[data-price-total]").textContent = total.toLocaleString("en-GB");
+        price.querySelector("[data-price-each]").textContent = (total / devices).toFixed(2);
+        price.querySelector("[data-price-note]").textContent = devices <= 25
+          ? "That is the free plan. No card, no end date."
+          : "The first 25 devices are free for good. After that it gets cheaper the more you add.";
+      };
+      range.addEventListener("input", update);
+      update();
+    });
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=beaconry&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

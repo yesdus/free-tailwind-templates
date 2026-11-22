@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quoin | Tailwind CSS Portfolio Template</title>
+  <meta name="description" content="Quoin is a quiet Tailwind CSS template for architecture studios and property developers, with a full-bleed building photo under a dark wash, a giant light uppercase headline, a slide-in project index, a material switcher that tints the building, a project list with filters and a case study page.">
+  <meta name="keywords" content="Quoin, Tailwind CSS template, HTML website template, architecture studio template, architect portfolio website, property developer template, project case study page, real estate development, portfolio template">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Quoin | Tailwind CSS Portfolio Template">
+  <meta property="og:description" content="A quiet Tailwind CSS template for architecture studios and property developers, with a washed full-bleed building photo, a slide-in project index, a material switcher, a filtered project list and a case study page.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Quoin template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Quoin | Tailwind CSS Portfolio Template">
+  <meta name="twitter:description" content="A quiet Tailwind CSS template for architecture studios and property developers, with a washed full-bleed building photo, a slide-in project index, a material switcher, a filtered project list and a case study page.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Quoin template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            slate: { DEFAULT: '#3a3d3f', deep: '#26282a' },
+            oxide: { DEFAULT: '#a6492f', deep: '#863823' },
+            paper: { DEFAULT: '#ffffff', warm: '#f3efea' },
+            line: '#ddd7ce',
+            ink: { DEFAULT: '#1c1b1a', soft: '#4a4744', mute: '#6b6763' }
+          },
+          fontFamily: {
+            display: ['"Josefin Sans"', 'sans-serif'],
+            sans: ['"DM Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-paper font-sans text-ink antialiased">
+  <!-- block:start navbar -->
+  <header class="absolute inset-x-0 top-0 z-30 text-white">
+    <div class="flex items-start justify-between px-5 py-6 md:px-10 md:py-8">
+      <a href="index.html" aria-label="Quoin, home" class="grid grid-cols-3 gap-x-5 gap-y-1 font-display text-2xl font-light leading-none md:gap-x-7 md:text-3xl">
+        <span>Q</span><span>U</span><span>O</span><span>I</span><span>N</span>
+      </a>
+      <div class="flex items-center gap-10">
+        <nav aria-label="Main" class="hidden items-center gap-10 md:flex">
+            <a href="projects.html" class="font-display text-lg uppercase tracking-wide text-white/80 transition hover:text-white">Projects</a>
+            <a href="about.html" class="font-display text-lg uppercase tracking-wide text-white/80 transition hover:text-white">About</a>
+            <a href="contact.html" class="font-display text-lg uppercase tracking-wide text-white/80 transition hover:text-white">Contact</a>
+        </nav>
+        <button type="button" data-menu-toggle aria-controls="project-index" aria-expanded="false" class="flex items-center gap-3 font-display text-lg uppercase tracking-wide">
+          <span>Index</span>
+          <span class="flex flex-col gap-[6px]" aria-hidden="true"><span class="block h-px w-7 bg-current"></span><span class="block h-px w-7 bg-current"></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div data-menu-backdrop class="fixed inset-0 z-40 bg-ink/50" hidden></div>
+  <aside id="project-index" class="panel fixed inset-y-0 right-0 z-50 flex w-full max-w-[34rem] flex-col overflow-y-auto bg-paper" aria-label="Menu and project index">
+    <div class="flex items-center justify-between gap-6 px-6 py-7 md:px-9">
+      <nav aria-label="Menu" class="flex flex-wrap gap-x-8 gap-y-2">
+          <a href="projects.html" class="font-display text-lg uppercase tracking-wide text-ink-mute transition hover:text-ink">Projects</a>
+          <a href="about.html" class="font-display text-lg uppercase tracking-wide text-ink-mute transition hover:text-ink">About</a>
+          <a href="contact.html" class="font-display text-lg uppercase tracking-wide text-ink-mute transition hover:text-ink">Contact</a>
+      </nav>
+      <button type="button" data-menu-close aria-label="Close the index" class="text-2xl leading-none"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="mt-6 border-t border-line md:mt-12">
+        <li class="border-b border-line">
+          <a href="the-kiln-yard.html" class="group grid grid-cols-[7.5rem_1fr] items-center gap-6 p-6 md:grid-cols-[13rem_1fr] md:p-7">
+            <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Apartment blocks with steel balconies in blue and orange render" class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-80">
+            <span class="text-center">
+              <span class="block text-sm text-ink-mute">Leeds</span>
+              <span class="caps mt-2 block text-xl md:text-2xl">Eighty-four homes on a brickworks</span>
+              <span class="mt-3 block text-xs text-ink-mute">The Kiln Yard, 2025</span>
+            </span>
+          </a>
+        </li>
+        <li class="border-b border-line">
+          <a href="the-kiln-yard.html" class="group grid grid-cols-[7.5rem_1fr] items-center gap-6 p-6 md:grid-cols-[13rem_1fr] md:p-7">
+            <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="The corner of a dark brick building with deep-set windows" class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-80">
+            <span class="text-center">
+              <span class="block text-sm text-ink-mute">Sheffield</span>
+              <span class="caps mt-2 block text-xl md:text-2xl">A steel mill turned workplace</span>
+              <span class="mt-3 block text-xs text-ink-mute">Harrow Works, 2024</span>
+            </span>
+          </a>
+        </li>
+        <li class="border-b border-line">
+          <a href="the-kiln-yard.html" class="group grid grid-cols-[7.5rem_1fr] items-center gap-6 p-6 md:grid-cols-[13rem_1fr] md:p-7">
+            <img src="https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Black and white townhouses with tall framed windows" class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-80">
+            <span class="text-center">
+              <span class="block text-sm text-ink-mute">York</span>
+              <span class="caps mt-2 block text-xl md:text-2xl">Twenty-two timber townhouses</span>
+              <span class="mt-3 block text-xs text-ink-mute">Alder Court, 2023</span>
+            </span>
+          </a>
+        </li>
+        <li class="border-b border-line">
+          <a href="the-kiln-yard.html" class="group grid grid-cols-[7.5rem_1fr] items-center gap-6 p-6 md:grid-cols-[13rem_1fr] md:p-7">
+            <img src="https://images.unsplash.com/photo-1496564203457-11bb12075d90?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="A curved building with a planted roof and glass walls" class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-80">
+            <span class="text-center">
+              <span class="block text-sm text-ink-mute">Hull</span>
+              <span class="caps mt-2 block text-xl md:text-2xl">A library under a green roof</span>
+              <span class="mt-3 block text-xs text-ink-mute">Fenn Library, 2022</span>
+            </span>
+          </a>
+        </li>
+    </ul>
+    <a href="projects.html" class="label m-7 inline-flex items-center gap-3">All twenty-six projects <i class="fa-solid fa-arrow-right"></i></a>
+  </aside>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section class="washed flex min-h-[100svh] flex-col justify-end text-white">
+    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&amp;fit=crop&amp;w=1800&amp;q=80" alt="An apartment building in dark brick seen from the street below">
+    <div class="px-5 pb-8 pt-40 md:px-10 md:pb-10">
+      <p class="label mb-8 text-white/70 md:mb-10 md:text-center">Architecture and development, since 2009</p>
+      <h1 class="giant whitespace-nowrap text-[clamp(3.1rem,12.5vw,13rem)] text-white/90">
+        <span class="block md:pl-[18%]">Buildings</span>
+        <span class="block">that age</span>
+        <span class="block md:pl-[9%]">well</span>
+      </h1>
+      <div class="mt-8 flex flex-col gap-5 border-t border-white/30 pt-6 md:flex-row md:items-center md:justify-between">
+        <p class="max-w-md text-white/80">We design and build homes, workplaces and public rooms in the north of England, and we stay their landlord long enough to learn from them.</p>
+        <a href="the-kiln-yard.html" class="label inline-flex items-center gap-4">Latest: The Kiln Yard <span class="flex h-11 w-11 items-center justify-center rounded-full border border-white/60"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start about -->
+  <section id="studio" class="px-5 py-20 md:px-10 md:py-32">
+    <div class="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-[.3fr_1fr]">
+      <p class="label text-ink-mute" data-reveal>The studio</p>
+      <div data-reveal>
+        <h2 class="caps text-3xl md:text-[3.4rem] md:leading-[1.08]">Thirty-one people who draw a building, raise the money for it, stand on site while it goes up and answer the phone when the roof leaks.</h2>
+        <dl class="mt-14 grid gap-8 border-t border-line pt-10 sm:grid-cols-3">
+            <div>
+              <dt class="font-display text-6xl font-extralight md:text-7xl">26</dt>
+              <dd class="mt-2 max-w-[14rem] text-ink-mute">buildings finished, all still in our care</dd>
+            </div>
+            <div>
+              <dt class="font-display text-6xl font-extralight md:text-7xl">1,140</dt>
+              <dd class="mt-2 max-w-[14rem] text-ink-mute">homes, a third of them at social rent</dd>
+            </div>
+            <div>
+              <dt class="font-display text-6xl font-extralight md:text-7xl">100</dt>
+              <dd class="mt-2 max-w-[14rem] text-ink-mute">years, the life we design every frame for</dd>
+            </div>
+        </dl>
+        <a href="about.html" class="label mt-12 inline-flex items-center gap-3 border-b border-ink pb-2">How we work <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- block:end about -->
+
+  <!-- block:start gallery -->
+  <section id="work" class="border-t border-line">
+    <div class="flex items-end justify-between gap-6 px-5 py-10 md:px-10">
+      <h2 class="caps text-3xl md:text-5xl">Recent work</h2>
+      <a href="projects.html" class="label inline-flex shrink-0 items-center gap-3 whitespace-nowrap">All projects <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <ul>
+        <li class="border-t border-line" data-reveal>
+          <a href="the-kiln-yard.html" class="group grid items-center md:grid-cols-2">
+            <span class="block overflow-hidden ">
+              <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Apartment blocks with steel balconies in blue and orange render" class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-[1.03] md:aspect-[16/11]">
+            </span>
+            <span class="block px-5 py-12 text-center md:px-16">
+              <span class="block text-ink-mute">Leeds, 2025</span>
+              <span class="caps mx-auto mt-4 block max-w-md text-3xl md:text-5xl">Eighty-four homes on a brickworks</span>
+              <span class="label mt-6 inline-flex items-center gap-3 text-ink-mute transition group-hover:text-oxide">The Kiln Yard <i class="fa-solid fa-arrow-right"></i></span>
+            </span>
+          </a>
+        </li>
+        <li class="border-t border-line" data-reveal>
+          <a href="the-kiln-yard.html" class="group grid items-center md:grid-cols-2">
+            <span class="block overflow-hidden md:order-2">
+              <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="The corner of a dark brick building with deep-set windows" class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-[1.03] md:aspect-[16/11]">
+            </span>
+            <span class="block px-5 py-12 text-center md:px-16">
+              <span class="block text-ink-mute">Sheffield, 2024</span>
+              <span class="caps mx-auto mt-4 block max-w-md text-3xl md:text-5xl">A steel mill turned workplace</span>
+              <span class="label mt-6 inline-flex items-center gap-3 text-ink-mute transition group-hover:text-oxide">Harrow Works <i class="fa-solid fa-arrow-right"></i></span>
+            </span>
+          </a>
+        </li>
+        <li class="border-t border-line" data-reveal>
+          <a href="the-kiln-yard.html" class="group grid items-center md:grid-cols-2">
+            <span class="block overflow-hidden ">
+              <img src="https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Black and white townhouses with tall framed windows" class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-[1.03] md:aspect-[16/11]">
+            </span>
+            <span class="block px-5 py-12 text-center md:px-16">
+              <span class="block text-ink-mute">York, 2023</span>
+              <span class="caps mx-auto mt-4 block max-w-md text-3xl md:text-5xl">Twenty-two timber townhouses</span>
+              <span class="label mt-6 inline-flex items-center gap-3 text-ink-mute transition group-hover:text-oxide">Alder Court <i class="fa-solid fa-arrow-right"></i></span>
+            </span>
+          </a>
+        </li>
+    </ul>
+  </section>
+  <!-- block:end gallery -->
+
+  <!-- block:start features -->
+  <section id="materials" class="washed text-white" data-wash style="--wash: #a6492f">
+    <img src="https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?auto=format&amp;fit=crop&amp;w=1800&amp;q=80" alt="The folded metal balconies of an apartment building">
+    <div class="mx-auto grid max-w-[1400px] gap-12 px-5 py-20 md:grid-cols-2 md:gap-20 md:px-10 md:py-32">
+      <div>
+        <p class="label text-white/70">Four materials</p>
+        <h2 class="giant mt-6 text-5xl md:text-8xl">What we build with</h2>
+        <div role="radiogroup" aria-label="Choose a material" class="mt-10 flex flex-wrap gap-3">
+            <button type="button" role="radio" aria-checked="true" data-wash-chip="brick" data-wash-colour="#a6492f" class="border border-white/50 px-5 py-3 font-display uppercase tracking-wide transition hover:border-white aria-checked:border-white aria-checked:bg-white aria-checked:text-ink">Brick</button>
+            <button type="button" role="radio" aria-checked="false" data-wash-chip="timber" data-wash-colour="#94672f" class="border border-white/50 px-5 py-3 font-display uppercase tracking-wide transition hover:border-white aria-checked:border-white aria-checked:bg-white aria-checked:text-ink">Timber</button>
+            <button type="button" role="radio" aria-checked="false" data-wash-chip="stone" data-wash-colour="#7f7a63" class="border border-white/50 px-5 py-3 font-display uppercase tracking-wide transition hover:border-white aria-checked:border-white aria-checked:bg-white aria-checked:text-ink">Stone</button>
+            <button type="button" role="radio" aria-checked="false" data-wash-chip="steel" data-wash-colour="#4d5a63" class="border border-white/50 px-5 py-3 font-display uppercase tracking-wide transition hover:border-white aria-checked:border-white aria-checked:bg-white aria-checked:text-ink">Old steel</button>
+        </div>
+      </div>
+      <div class="md:pt-16">
+          <div data-wash-panel="brick" >
+            <p class="caps text-2xl md:text-4xl md:leading-[1.15]">Fired twelve miles from most of our sites. It needs nothing for sixty years and looks better for the weather.</p>
+            <dl class="mt-10 border-t border-white/30">
+                <div class="flex items-baseline justify-between gap-6 border-b border-white/30 py-4">
+                  <dt class="label text-white/70">Designed life</dt>
+                  <dd class="text-right font-display text-xl">150 years</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-6 border-b border-white/30 py-4">
+                  <dt class="label text-white/70">Carbon</dt>
+                  <dd class="text-right font-display text-xl">Reused where we can</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-6 border-b border-white/30 py-4">
+                  <dt class="label text-white/70">See it at</dt>
+                  <dd class="text-right font-display text-xl">The Kiln Yard</dd>
+                </div>
+            </dl>
+          </div>
+          <div data-wash-panel="timber" hidden>
+            <p class="caps text-2xl md:text-4xl md:leading-[1.15]">Cross-laminated frames go up in weeks, lock away carbon and make rooms that people describe as calm.</p>
+            <dl class="mt-10 border-t border-white/30">
+                <div class="flex items-baseline justify-between gap-6 border-b border-white/30 py-4">
+                  <dt class="label text-white/70">Designed life</dt>
+                  <dd class="text-right font-display text-xl">100 years</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-6 border-b border-white/30 py-4">
+                  <dt class="label text-white/70">Carbon</dt>
+                  <dd class="text-right font-display text-xl">Stores more than it costs</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-6 border-b border-white/30 py-4">
+                  <dt class="label text-white/70">See it at</dt>
+                  <dd class="text-right font-display text-xl">Alder Court</dd>
+                </div>
+            </dl>
+          </div>
+          <div data-wash-panel="stone" hidden>
+            <p class="caps text-2xl md:text-4xl md:leading-[1.15]">Millstone grit from the quarry that built the town halls. We use it thick, as a wall, not thin, as a costume.</p>
+            <dl class="mt-10 border-t border-white/30">
+                <div class="flex items-baseline justify-between gap-6 border-b border-white/30 py-4">
+                  <dt class="label text-white/70">Designed life</dt>
+                  <dd class="text-right font-display text-xl">300 years</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-6 border-b border-white/30 py-4">
+                  <dt class="label text-white/70">Carbon</dt>
+                  <dd class="text-right font-display text-xl">Lowest of the four</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-6 border-b border-white/30 py-4">
+                  <dt class="label text-white/70">See it at</dt>
+                  <dd class="text-right font-display text-xl">Fenn Library</dd>
+                </div>
+            </dl>
+          </div>
+          <div data-wash-panel="steel" hidden>
+            <p class="caps text-2xl md:text-4xl md:leading-[1.15]">When a frame is already standing we keep it. The greenest structure is the one somebody else paid for in 1962.</p>
+            <dl class="mt-10 border-t border-white/30">
+                <div class="flex items-baseline justify-between gap-6 border-b border-white/30 py-4">
+                  <dt class="label text-white/70">Designed life</dt>
+                  <dd class="text-right font-display text-xl">Another 80 years</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-6 border-b border-white/30 py-4">
+                  <dt class="label text-white/70">Carbon</dt>
+                  <dd class="text-right font-display text-xl">Already spent</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-6 border-b border-white/30 py-4">
+                  <dt class="label text-white/70">See it at</dt>
+                  <dd class="text-right font-display text-xl">Harrow Works</dd>
+                </div>
+            </dl>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end features -->
+
+  <!-- block:start process -->
+  <section id="process" class="px-5 py-20 md:px-10 md:py-32">
+    <div class="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-[.8fr_1.2fr] md:gap-24">
+      <div class="h-fit md:sticky md:top-12">
+        <p class="label text-ink-mute">From field to front door</p>
+        <h2 class="caps mt-6 text-3xl md:text-5xl">One team, five stages, no hand-offs</h2>
+        <p class="mt-6 max-w-sm text-ink-soft">Most buildings pass through four companies before anyone moves in. Ours pass through one.</p>
+      </div>
+      <ol class="relative border-l border-line pl-8 md:pl-12" data-timeline>
+        <span class="absolute -left-px top-0 h-full w-px origin-top bg-oxide" style="transform: scaleY(var(--fill, 0))" aria-hidden="true"></span>
+          <li class="relative pb-12 last:pb-0" data-reveal>
+            <span class="absolute -left-[calc(2rem+5px)] top-2 h-[9px] w-[9px] rounded-full bg-ink md:-left-[calc(3rem+5px)]" aria-hidden="true"></span>
+            <p class="label text-ink-mute">01 &middot; Month 1</p>
+            <h3 class="caps mt-3 text-3xl md:text-4xl">Find</h3>
+            <p class="mt-3 max-w-lg text-lg text-ink-soft">We walk the site with the people who live beside it, before a line is drawn.</p>
+          </li>
+          <li class="relative pb-12 last:pb-0" data-reveal>
+            <span class="absolute -left-[calc(2rem+5px)] top-2 h-[9px] w-[9px] rounded-full bg-ink md:-left-[calc(3rem+5px)]" aria-hidden="true"></span>
+            <p class="label text-ink-mute">02 &middot; Months 2 to 8</p>
+            <h3 class="caps mt-3 text-3xl md:text-4xl">Draw</h3>
+            <p class="mt-3 max-w-lg text-lg text-ink-soft">Sketch, model, test, repeat. Planning drawings go in when the neighbours have seen them.</p>
+          </li>
+          <li class="relative pb-12 last:pb-0" data-reveal>
+            <span class="absolute -left-[calc(2rem+5px)] top-2 h-[9px] w-[9px] rounded-full bg-ink md:-left-[calc(3rem+5px)]" aria-hidden="true"></span>
+            <p class="label text-ink-mute">03 &middot; Months 6 to 10</p>
+            <h3 class="caps mt-3 text-3xl md:text-4xl">Fund</h3>
+            <p class="mt-3 max-w-lg text-lg text-ink-soft">We raise the money ourselves, which is why nobody can ask us to make it cheaper later.</p>
+          </li>
+          <li class="relative pb-12 last:pb-0" data-reveal>
+            <span class="absolute -left-[calc(2rem+5px)] top-2 h-[9px] w-[9px] rounded-full bg-ink md:-left-[calc(3rem+5px)]" aria-hidden="true"></span>
+            <p class="label text-ink-mute">04 &middot; Months 11 to 30</p>
+            <h3 class="caps mt-3 text-3xl md:text-4xl">Build</h3>
+            <p class="mt-3 max-w-lg text-lg text-ink-soft">Our own site managers, the same four contractors for fifteen years.</p>
+          </li>
+          <li class="relative pb-12 last:pb-0" data-reveal>
+            <span class="absolute -left-[calc(2rem+5px)] top-2 h-[9px] w-[9px] rounded-full bg-ink md:-left-[calc(3rem+5px)]" aria-hidden="true"></span>
+            <p class="label text-ink-mute">05 &middot; Year 3 onwards</p>
+            <h3 class="caps mt-3 text-3xl md:text-4xl">Keep</h3>
+            <p class="mt-3 max-w-lg text-lg text-ink-soft">We manage what we build. Every complaint comes back to the desk that drew the detail.</p>
+          </li>
+      </ol>
+    </div>
+  </section>
+  <!-- block:end process -->
+
+  <!-- block:start clients -->
+  <section class="border-y border-line bg-paper-warm px-5 py-14 md:px-10">
+    <div class="mx-auto max-w-[1400px]">
+      <p class="label text-ink-mute">Built with and for</p>
+      <ul class="mt-8 grid grid-cols-2 gap-x-8 gap-y-6 font-display text-xl uppercase tracking-wide text-ink-soft sm:grid-cols-3 md:grid-cols-6 md:text-2xl">
+          <li>Aire Homes</li>
+          <li>Calder Trust</li>
+          <li>City of Hull</li>
+          <li>Northfold</li>
+          <li>Wharfe &amp; Co</li>
+          <li>Ridings Fund</li>
+      </ul>
+    </div>
+  </section>
+  <!-- block:end clients -->
+
+  <!-- block:start cta -->
+  <section class="px-5 py-24 text-center md:px-10 md:py-40">
+    <p class="label text-ink-mute" data-reveal>Have a site, a building or half an idea?</p>
+    <h2 class="giant mx-auto mt-8 max-w-5xl text-[clamp(2.6rem,9vw,8.5rem)]" data-reveal>Start with a walk round it</h2>
+    <a href="contact.html" class="mt-12 inline-flex items-center gap-4 bg-ink px-9 py-5 font-display text-lg uppercase tracking-wide text-white transition hover:bg-oxide" data-reveal>Book a site visit <i class="fa-solid fa-arrow-right"></i></a>
+  </section>
+  <!-- block:end cta -->
+
+  <!-- block:start footer -->
+  <footer class="bg-slate-deep px-5 py-14 text-white md:px-10 md:py-20">
+    <div class="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
+      <a href="index.html" aria-label="Quoin, home" class="grid h-fit w-fit grid-cols-3 gap-x-7 gap-y-1 font-display text-3xl font-light leading-none">
+        <span>Q</span><span>U</span><span>O</span><span>I</span><span>N</span>
+      </a>
+      <div>
+        <p class="label text-white/60">Studio</p>
+        <address class="mt-4 not-italic text-white/85">4 Granary Wharf<br>Leeds LS1 4BR</address>
+      </div>
+      <div>
+        <p class="label text-white/60">Say hello</p>
+        <p class="mt-4 text-white/85"><a href="mailto:studio@quoin.example" class="hover:underline">studio@quoin.example</a><br><a href="tel:+441135550147" class="hover:underline">0113 555 0147</a></p>
+      </div>
+      <nav aria-label="Footer">
+        <p class="label text-white/60">Pages</p>
+        <ul class="mt-4 space-y-2 text-white/85">
+            <li><a href="projects.html" class="hover:underline">Projects</a></li>
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="mx-auto mt-14 max-w-[1400px] border-t border-white/20 pt-6 text-sm text-white/60">&copy; 2026 Quoin Architecture and Development. Registered practice, Leeds.</p>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    (() => {
+      const panel = document.getElementById("project-index");
+      const toggle = document.querySelector("[data-menu-toggle]");
+      const backdrop = document.querySelector("[data-menu-backdrop]");
+      if (!panel || !toggle) return;
+      const setOpen = (open) => {
+        toggle.setAttribute("aria-expanded", String(open));
+        panel.classList.toggle("is-open", open);
+        if (backdrop) backdrop.hidden = !open;
+        document.body.style.overflow = open ? "hidden" : "";
+        if (open) panel.querySelector("[data-menu-close]")?.focus(); else toggle.focus();
+      };
+      toggle.addEventListener("click", () => setOpen(toggle.getAttribute("aria-expanded") !== "true"));
+      panel.querySelector("[data-menu-close]")?.addEventListener("click", () => setOpen(false));
+      backdrop?.addEventListener("click", () => setOpen(false));
+      document.addEventListener("keydown", (event) => { if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") setOpen(false); });
+    })();
+
+    document.querySelectorAll("[data-wash]").forEach((root) => {
+      root.addEventListener("click", (event) => {
+        const chip = event.target.closest("[data-wash-chip]");
+        if (!chip) return;
+        root.querySelectorAll("[data-wash-chip]").forEach((other) => other.setAttribute("aria-checked", String(other === chip)));
+        root.querySelectorAll("[data-wash-panel]").forEach((panel) => { panel.hidden = panel.dataset.washPanel !== chip.dataset.washChip; });
+        root.style.setProperty("--wash", chip.dataset.washColour);
+      });
+    });
+
+    document.querySelectorAll("[data-timeline]").forEach((timeline) => {
+      const update = () => {
+        const box = timeline.getBoundingClientRect();
+        const fill = Math.min(1, Math.max(0, (innerHeight * 0.6 - box.top) / box.height));
+        timeline.style.setProperty("--fill", fill.toFixed(3));
+      };
+      addEventListener("scroll", update, { passive: true });
+      addEventListener("resize", update);
+      update();
+    });
+
+    (() => {
+      const items = document.querySelectorAll("[data-reveal]");
+      const skip = navigator.webdriver || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -10% 0px" });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=quoin&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>

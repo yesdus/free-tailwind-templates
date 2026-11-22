@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emberlyn | Tailwind CSS Portfolio Template</title>
+  <meta name="description" content="Emberlyn is a quiet, editorial Tailwind CSS portfolio template for wedding and portrait photographers, with a black-and-white hero slider, a handwritten about section, a staggered journal, a hover-preview collections list and a wedding date availability calendar.">
+  <meta name="keywords" content="Emberlyn, Tailwind CSS template, HTML website template, portfolio template, wedding photographer website, photography portfolio, elopement photographer, photo studio template, editorial portfolio">
+  <meta name="author" content="Let's templates">
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Let's templates">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Emberlyn | Tailwind CSS Portfolio Template">
+  <meta property="og:description" content="A quiet, editorial Tailwind CSS portfolio template for wedding photographers, with a black-and-white hero slider, a staggered journal and a date availability calendar.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Emberlyn template preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Emberlyn | Tailwind CSS Portfolio Template">
+  <meta name="twitter:description" content="A quiet, editorial Tailwind CSS portfolio template for wedding photographers, with a black-and-white hero slider, a staggered journal and a date availability calendar.">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:alt" content="Emberlyn template preview">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Mrs+Saint+Delafield&family=Playfair+Display:wght@400;500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { paper: '#f7f6f2', sand: '#efede8', sage: { DEFAULT: '#5f6c5f', deep: '#4b564b' }, ink: '#232323', mute: '#707070' },
+          fontFamily: { sans: ['Poppins', 'sans-serif'], serif: ['Playfair Display', 'serif'], caps: ['Cormorant Garamond', 'serif'], script: ['Mrs Saint Delafield', 'cursive'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-paper font-sans font-light text-ink antialiased">
+  <!-- block:start navbar -->
+  <header class="absolute inset-x-0 top-0 z-40 text-white">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-6 md:px-10 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:gap-16" aria-label="Main">
+      <ul class="hidden items-center justify-end gap-12 text-[13px] lg:flex">
+          <li><a href="about.html"  class="border-b pb-1 transition border-transparent text-white/80 hover:text-white">meet us</a></li>
+          <li><a href="story.html"  class="border-b pb-1 transition border-transparent text-white/80 hover:text-white">our story</a></li>
+          <li><a href="services.html"  class="border-b pb-1 transition border-transparent text-white/80 hover:text-white">services</a></li>
+      </ul>
+      <a href="index.html" class="grid h-16 w-16 place-items-center rounded-full border border-white/70 font-serif text-2xl italic tracking-tight" aria-label="Emberlyn home">EM</a>
+      <ul class="hidden items-center gap-12 text-[13px] lg:flex">
+          <li><a href="portfolio.html"  class="border-b pb-1 transition border-transparent text-white/80 hover:text-white">portfolio</a></li>
+          <li><a href="blog.html"  class="border-b pb-1 transition border-transparent text-white/80 hover:text-white">the journal</a></li>
+          <li><a href="contact.html"  class="border-b pb-1 transition border-transparent text-white/80 hover:text-white">hire us</a></li>
+      </ul>
+      <button type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="grid h-11 w-11 place-items-center border border-white/60 lg:hidden"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+    </nav>
+    <div id="mobile-menu" class="hidden px-5 pb-6 lg:hidden">
+      <ul class="grid gap-1 bg-paper p-4 text-ink shadow-xl">
+          <li><a href="index.html" aria-current="page" class="block px-3 py-2.5 font-caps text-xl bg-sand font-semibold">home</a></li>
+          <li><a href="about.html"  class="block px-3 py-2.5 font-caps text-xl hover:bg-sand">meet us</a></li>
+          <li><a href="story.html"  class="block px-3 py-2.5 font-caps text-xl hover:bg-sand">our story</a></li>
+          <li><a href="services.html"  class="block px-3 py-2.5 font-caps text-xl hover:bg-sand">services</a></li>
+          <li><a href="portfolio.html"  class="block px-3 py-2.5 font-caps text-xl hover:bg-sand">portfolio</a></li>
+          <li><a href="blog.html"  class="block px-3 py-2.5 font-caps text-xl hover:bg-sand">the journal</a></li>
+          <li><a href="contact.html"  class="block px-3 py-2.5 font-caps text-xl hover:bg-sand">hire us</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- block:end navbar -->
+
+  <!-- block:start hero -->
+  <section class="notch relative h-[92vh] max-h-[52rem] min-h-[34rem] overflow-hidden bg-ink text-white" data-slider aria-roledescription="carousel" aria-label="Featured weddings">
+      <img src="https://images.unsplash.com/photo-1460978812857-470ed1c77af0?auto=format&fit=crop&w=1900&q=80" alt="Couple kissing on a windy shore, the bride&#39;s veil lifting in black and white" data-slide class="slide absolute inset-0 h-full w-full object-cover grayscale is-active" >
+      <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1900&q=80" alt="Bride and groom embracing by the sea, her long veil trailing on the pebbles" data-slide class="slide absolute inset-0 h-full w-full object-cover grayscale " aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=1900&q=80" alt="Newlyweds walking hand in hand across a hilltop at dusk" data-slide class="slide absolute inset-0 h-full w-full object-cover grayscale " aria-hidden="true">
+    <div class="absolute inset-0 bg-black/45" aria-hidden="true"></div>
+    <div class="relative flex h-full flex-col items-center justify-center px-6 text-center">
+      <p class="text-[11px] uppercase tracking-[0.6em] text-white/85">wedding photography</p>
+      <h1 class="mt-4 font-serif text-5xl md:text-7xl">Elias Marlowe</h1>
+      <p class="mt-6 max-w-md text-sm leading-relaxed text-white/85 md:text-base">Keep the brightest days of your life in more than memory. Keep them in print.</p>
+      <a href="portfolio.html" class="mt-9 border border-white/50 bg-white/15 px-7 py-2.5 text-[11px] uppercase tracking-[0.4em] backdrop-blur transition hover:bg-white hover:text-ink">Discover</a>
+    </div>
+    <button type="button" data-slider-prev class="group absolute left-0 top-1/2 hidden w-40 -translate-y-1/2 text-left text-[11px] tracking-widest text-white/80 md:block" aria-label="Previous wedding"><span class="block h-px w-full bg-white/70 transition-all group-hover:w-32"></span><span class="mt-2 block pl-16">Prev</span></button>
+    <button type="button" data-slider-next class="group absolute right-0 top-1/2 hidden w-40 -translate-y-1/2 text-right text-[11px] tracking-widest text-white/80 md:block" aria-label="Next wedding"><span class="ml-auto block h-px w-full bg-white/70 transition-all group-hover:w-32"></span><span class="mt-2 block pr-16">Next</span></button>
+    <div class="absolute inset-x-0 bottom-10 flex items-end justify-between px-5 text-[11px] md:px-10">
+      <div class="flex gap-2" role="group" aria-label="Choose a slide">
+          <button type="button" data-slider-dot="0" aria-label="Show wedding 1" aria-pressed="true" class="h-px w-8 bg-white/40 transition aria-pressed:w-14 aria-pressed:bg-white"></button>
+          <button type="button" data-slider-dot="1" aria-label="Show wedding 2" aria-pressed="false" class="h-px w-8 bg-white/40 transition aria-pressed:w-14 aria-pressed:bg-white"></button>
+          <button type="button" data-slider-dot="2" aria-label="Show wedding 3" aria-pressed="false" class="h-px w-8 bg-white/40 transition aria-pressed:w-14 aria-pressed:bg-white"></button>
+      </div>
+      <a href="#welcome" class="hidden text-white/80 md:block">Scroll down</a>
+      <div class="flex items-center gap-5">
+        <span class="text-white/80">Follow</span>
+          <a href="https://www.instagram.com" aria-label="Instagram" class="text-sm transition hover:text-white/60"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com" aria-label="Facebook" class="text-sm transition hover:text-white/60"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="https://www.pinterest.com" aria-label="Pinterest" class="text-sm transition hover:text-white/60"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- block:end hero -->
+
+  <!-- block:start about -->
+  <section id="welcome" class="relative">
+    <div class="mx-auto h-24 w-px bg-ink/60 md:h-28" aria-hidden="true"></div>
+    <p class="mx-auto max-w-3xl px-6 pb-20 pt-12 text-center font-caps text-base font-medium uppercase leading-relaxed tracking-[0.25em] md:pb-28 md:text-lg" data-reveal>
+      We exist to share the joy of a celebration. Every story we tell is shaped around yours: tender or playful, wild or quietly classic. We look after every small detail so you can stay inside the moments that matter.
+    </p>
+    <div class="relative">
+      <div class="absolute inset-x-0 bottom-0 top-28 bg-white md:top-36" aria-hidden="true"></div>
+      <div class="relative mx-auto grid max-w-6xl gap-10 px-5 pb-20 md:grid-cols-[0.8fr_1fr] md:gap-16 md:px-10 md:pb-28">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80" alt="Portrait of photographer Elias Marlowe in black and white" class="aspect-[3/4] w-full object-cover grayscale" loading="lazy" data-reveal>
+        <div class="md:pt-6">
+          <h2 class="font-script text-6xl leading-none md:text-8xl">Hi, I'm Elias</h2>
+          <div class="relative mt-16 border-l border-ink/60 pb-10 pl-8 md:ml-10 md:mt-24 md:pl-12">
+            <p class="max-w-md text-sm leading-[2] text-ink/80">For ten years I worked in newsrooms, chasing deadlines across three countries. A friend's wedding in Porto changed the plan: I came home with four hundred photos and a new job. Today I photograph around thirty weddings a year, mostly couples who want honest pictures that still feel like them in thirty years.</p>
+            <a href="contact.html" class="absolute -bottom-5 -left-5 bg-sage px-9 py-3 text-[11px] uppercase tracking-[0.4em] text-white transition hover:bg-sage-deep md:-left-14">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- block:end about -->
+
+  <!-- block:start blog -->
+  <section class="bg-sand">
+    <div class="mx-auto max-w-6xl px-5 py-20 md:px-10 md:py-28">
+      <div class="text-center">
+        <p class="text-[11px] uppercase tracking-[0.5em] text-mute">the journal</p>
+        <h2 class="mt-3 font-serif text-4xl md:text-5xl">Recent stories</h2>
+      </div>
+      <div class="mt-14 grid gap-10 md:grid-cols-2 md:gap-x-16">
+          <article class="group  " data-reveal style="--reveal-delay: 0ms">
+            <a href="amelia-and-noah.html" class="block">
+              <span class="block overflow-hidden"><img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=1000&q=80" alt="Couple embracing on a hilltop at golden hour" class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy"></span>
+              <span class="relative -mt-10 ml-6 block bg-white p-7 shadow-sm md:ml-10">
+                <span class="flex flex-wrap justify-between gap-2 text-[10px] uppercase tracking-[0.3em] text-mute"><span>03 · 02 · 2026</span><span><b class="font-medium text-ink">categories</b> Engagement</span></span>
+                <span class="mt-4 block font-serif text-xl">Lena and Tomas, sunset session</span>
+                <span class="mt-3 block text-xs leading-[1.9] text-ink/70">A breezy evening on the cliffs of the Algarve: four hours, one picnic and more than six hundred frames of pure, easy joy.</span>
+              </span>
+            </a>
+          </article>
+          <article class="group md:mt-24 " data-reveal style="--reveal-delay: 120ms">
+            <a href="amelia-and-noah.html" class="block">
+              <span class="block overflow-hidden"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=80" alt="Bride and groom backlit by the evening sun" class="aspect-[4/5] w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy"></span>
+              <span class="relative -mt-10 ml-6 block bg-white p-7 shadow-sm md:ml-10">
+                <span class="flex flex-wrap justify-between gap-2 text-[10px] uppercase tracking-[0.3em] text-mute"><span>14 · 06 · 2025</span><span><b class="font-medium text-ink">categories</b> Wedding</span></span>
+                <span class="mt-4 block font-serif text-xl">Amelia and Noah</span>
+                <span class="mt-3 block text-xs leading-[1.9] text-ink/70">A June wedding on a vineyard terrace. They decided to marry three months after meeting, and every photo shows why.</span>
+              </span>
+            </a>
+          </article>
+          <article class="group  md:-mt-24" data-reveal style="--reveal-delay: 0ms">
+            <a href="amelia-and-noah.html" class="block">
+              <span class="block overflow-hidden"><img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1000&q=80" alt="Guests throwing confetti as the couple kisses" class="aspect-[4/5] w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy"></span>
+              <span class="relative -mt-10 ml-6 block bg-white p-7 shadow-sm md:ml-10">
+                <span class="flex flex-wrap justify-between gap-2 text-[10px] uppercase tracking-[0.3em] text-mute"><span>21 · 09 · 2025</span><span><b class="font-medium text-ink">categories</b> Wedding</span></span>
+                <span class="mt-4 block font-serif text-xl">Love is in the air</span>
+                <span class="mt-3 block text-xs leading-[1.9] text-ink/70">I never feel like I&#39;m at work at a wedding. Here&#39;s a celebration that turned strangers into one big family by midnight.</span>
+              </span>
+            </a>
+          </article>
+          <article class="group md:mt-24 " data-reveal style="--reveal-delay: 120ms">
+            <a href="amelia-and-noah.html" class="block">
+              <span class="block overflow-hidden"><img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=1000&q=80" alt="Couple smiling together beside an autumn lake" class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy"></span>
+              <span class="relative -mt-10 ml-6 block bg-white p-7 shadow-sm md:ml-10">
+                <span class="flex flex-wrap justify-between gap-2 text-[10px] uppercase tracking-[0.3em] text-mute"><span>28 · 02 · 2026</span><span><b class="font-medium text-ink">categories</b> Couples · Engagement</span></span>
+                <span class="mt-4 block font-serif text-xl">Inès and Rafael</span>
+                <span class="mt-3 block text-xs leading-[1.9] text-ink/70">What a wonderfully easy-going pair these two are.</span>
+              </span>
+            </a>
+          </article>
+      </div>
+      <div class="mt-16 text-center"><a href="blog.html" class="inline-block bg-sage px-10 py-3 text-[11px] uppercase tracking-[0.4em] text-white transition hover:bg-sage-deep">View more</a></div>
+    </div>
+  </section>
+  <!-- block:end blog -->
+
+  <!-- block:start gallery -->
+  <section class="relative bg-white" data-hover-list>
+    <div class="mx-auto max-w-6xl px-5 py-20 md:px-10 md:py-28">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <h2 class="font-serif text-4xl md:text-5xl">Collections</h2>
+        <a href="portfolio.html" class="text-[11px] uppercase tracking-[0.4em] text-mute hover:text-ink">full portfolio</a>
+      </div>
+      <ol class="mt-12 border-t border-ink/15">
+          <li class="border-b border-ink/15" data-hover-item data-image="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80">
+            <a href="portfolio.html" class="group grid items-center gap-4 py-7 md:grid-cols-[4rem_1fr_1fr_auto] md:py-9">
+              <span class="font-caps text-lg text-mute">01</span>
+              <span class="font-serif text-3xl transition group-hover:translate-x-2 md:text-4xl">Weddings</span>
+              <span class="text-sm text-ink/70">Full days, from getting ready to the last dance</span>
+              <span class="text-[11px] uppercase tracking-[0.3em] text-mute">48 stories</span>
+              <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" alt="" class="aspect-[16/9] w-full object-cover md:hidden" loading="lazy">
+            </a>
+          </li>
+          <li class="border-b border-ink/15" data-hover-item data-image="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=600&q=80">
+            <a href="portfolio.html" class="group grid items-center gap-4 py-7 md:grid-cols-[4rem_1fr_1fr_auto] md:py-9">
+              <span class="font-caps text-lg text-mute">02</span>
+              <span class="font-serif text-3xl transition group-hover:translate-x-2 md:text-4xl">Elopements</span>
+              <span class="text-sm text-ink/70">Just the two of you, somewhere wild</span>
+              <span class="text-[11px] uppercase tracking-[0.3em] text-mute">21 stories</span>
+              <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=600&q=80" alt="" class="aspect-[16/9] w-full object-cover md:hidden" loading="lazy">
+            </a>
+          </li>
+          <li class="border-b border-ink/15" data-hover-item data-image="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=600&q=80">
+            <a href="portfolio.html" class="group grid items-center gap-4 py-7 md:grid-cols-[4rem_1fr_1fr_auto] md:py-9">
+              <span class="font-caps text-lg text-mute">03</span>
+              <span class="font-serif text-3xl transition group-hover:translate-x-2 md:text-4xl">Engagements</span>
+              <span class="text-sm text-ink/70">Easy sessions before the big day</span>
+              <span class="text-[11px] uppercase tracking-[0.3em] text-mute">33 stories</span>
+              <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=600&q=80" alt="" class="aspect-[16/9] w-full object-cover md:hidden" loading="lazy">
+            </a>
+          </li>
+          <li class="border-b border-ink/15" data-hover-item data-image="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=600&q=80">
+            <a href="portfolio.html" class="group grid items-center gap-4 py-7 md:grid-cols-[4rem_1fr_1fr_auto] md:py-9">
+              <span class="font-caps text-lg text-mute">04</span>
+              <span class="font-serif text-3xl transition group-hover:translate-x-2 md:text-4xl">Details</span>
+              <span class="text-sm text-ink/70">Rings, flowers, tables and handwritten vows</span>
+              <span class="text-[11px] uppercase tracking-[0.3em] text-mute">60+ sets</span>
+              <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=600&q=80" alt="" class="aspect-[16/9] w-full object-cover md:hidden" loading="lazy">
+            </a>
+          </li>
+      </ol>
+    </div>
+    <img data-hover-preview src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" alt="" aria-hidden="true" class="pointer-events-none fixed left-0 top-0 z-30 hidden w-64 opacity-0 shadow-2xl transition-opacity duration-300 md:block">
+  </section>
+  <!-- block:end gallery -->
+
+  <!-- block:start contact -->
+  <section class="bg-paper" data-availability>
+    <div class="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:px-10 md:py-28 lg:grid-cols-[1fr_1.15fr] lg:items-center">
+      <div>
+        <p class="text-[11px] uppercase tracking-[0.5em] text-mute">season 2027</p>
+        <h2 class="mt-3 font-serif text-4xl leading-tight md:text-5xl">Is your date still free?</h2>
+        <p class="mt-6 max-w-md text-sm leading-[2] text-ink/75">I take one wedding a day and around thirty a year. Pick your date to see if it's open, then hold it for seven days while we talk.</p>
+        <div class="mt-10 border-l border-ink/40 pl-6" aria-live="polite">
+          <p data-availability-summary class="font-serif text-2xl">Choose a day in the calendar</p>
+          <p data-availability-note class="mt-2 text-sm text-mute">Saturdays go first, so book early for summer.</p>
+        </div>
+        <a href="contact.html" data-availability-cta class="mt-8 inline-block bg-sage px-9 py-3 text-[11px] uppercase tracking-[0.4em] text-white transition hover:bg-sage-deep">Hold my date</a>
+      </div>
+      <div class="bg-white p-6 shadow-sm md:p-10">
+        <div class="flex items-center justify-between">
+          <button type="button" data-month-prev class="grid h-10 w-10 place-items-center border border-ink/20 transition hover:border-ink disabled:opacity-30" aria-label="Previous month"><i class="fa-solid fa-chevron-left text-xs" aria-hidden="true"></i></button>
+          <p class="font-caps text-2xl font-medium" data-month-label aria-live="polite">April 2027</p>
+          <button type="button" data-month-next class="grid h-10 w-10 place-items-center border border-ink/20 transition hover:border-ink disabled:opacity-30" aria-label="Next month"><i class="fa-solid fa-chevron-right text-xs" aria-hidden="true"></i></button>
+        </div>
+          <div data-month="April 2027"  class="mt-8">
+            <div class="grid grid-cols-7 gap-1 text-center text-[10px] uppercase tracking-[0.2em] text-mute" aria-hidden="true">
+              <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+            </div>
+            <div class="mt-3 grid grid-cols-7 gap-1">
+              <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+                <button type="button" data-day="Thursday, 1 April 2027"  aria-pressed="false" aria-label="Thursday 1 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">1</button>
+                <button type="button" data-day="Friday, 2 April 2027"  aria-pressed="false" aria-label="Friday 2 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">2</button>
+                <button type="button" data-day="Saturday, 3 April 2027"  aria-pressed="false" aria-label="Saturday 3 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white font-medium">3</button>
+                <button type="button" data-day="Sunday, 4 April 2027"  aria-pressed="false" aria-label="Sunday 4 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">4</button>
+                <button type="button" data-day="Monday, 5 April 2027"  aria-pressed="false" aria-label="Monday 5 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">5</button>
+                <button type="button" data-day="Tuesday, 6 April 2027"  aria-pressed="false" aria-label="Tuesday 6 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">6</button>
+                <button type="button" data-day="Wednesday, 7 April 2027"  aria-pressed="false" aria-label="Wednesday 7 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">7</button>
+                <button type="button" data-day="Thursday, 8 April 2027"  aria-pressed="false" aria-label="Thursday 8 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">8</button>
+                <button type="button" data-day="Friday, 9 April 2027"  aria-pressed="false" aria-label="Friday 9 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">9</button>
+                <button type="button" data-day="Saturday, 10 April 2027" disabled aria-pressed="false" aria-label="Saturday 10 April, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">10</button>
+                <button type="button" data-day="Sunday, 11 April 2027" disabled aria-pressed="false" aria-label="Sunday 11 April, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">11</button>
+                <button type="button" data-day="Monday, 12 April 2027"  aria-pressed="false" aria-label="Monday 12 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">12</button>
+                <button type="button" data-day="Tuesday, 13 April 2027"  aria-pressed="false" aria-label="Tuesday 13 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">13</button>
+                <button type="button" data-day="Wednesday, 14 April 2027"  aria-pressed="false" aria-label="Wednesday 14 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">14</button>
+                <button type="button" data-day="Thursday, 15 April 2027"  aria-pressed="false" aria-label="Thursday 15 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">15</button>
+                <button type="button" data-day="Friday, 16 April 2027"  aria-pressed="false" aria-label="Friday 16 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">16</button>
+                <button type="button" data-day="Saturday, 17 April 2027" disabled aria-pressed="false" aria-label="Saturday 17 April, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">17</button>
+                <button type="button" data-day="Sunday, 18 April 2027"  aria-pressed="false" aria-label="Sunday 18 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">18</button>
+                <button type="button" data-day="Monday, 19 April 2027"  aria-pressed="false" aria-label="Monday 19 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">19</button>
+                <button type="button" data-day="Tuesday, 20 April 2027"  aria-pressed="false" aria-label="Tuesday 20 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">20</button>
+                <button type="button" data-day="Wednesday, 21 April 2027"  aria-pressed="false" aria-label="Wednesday 21 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">21</button>
+                <button type="button" data-day="Thursday, 22 April 2027" disabled aria-pressed="false" aria-label="Thursday 22 April, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">22</button>
+                <button type="button" data-day="Friday, 23 April 2027"  aria-pressed="false" aria-label="Friday 23 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">23</button>
+                <button type="button" data-day="Saturday, 24 April 2027"  aria-pressed="false" aria-label="Saturday 24 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white font-medium">24</button>
+                <button type="button" data-day="Sunday, 25 April 2027"  aria-pressed="false" aria-label="Sunday 25 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">25</button>
+                <button type="button" data-day="Monday, 26 April 2027"  aria-pressed="false" aria-label="Monday 26 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">26</button>
+                <button type="button" data-day="Tuesday, 27 April 2027"  aria-pressed="false" aria-label="Tuesday 27 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">27</button>
+                <button type="button" data-day="Wednesday, 28 April 2027"  aria-pressed="false" aria-label="Wednesday 28 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">28</button>
+                <button type="button" data-day="Thursday, 29 April 2027"  aria-pressed="false" aria-label="Thursday 29 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">29</button>
+                <button type="button" data-day="Friday, 30 April 2027"  aria-pressed="false" aria-label="Friday 30 April, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">30</button>
+            </div>
+          </div>
+          <div data-month="May 2027" hidden class="mt-8">
+            <div class="grid grid-cols-7 gap-1 text-center text-[10px] uppercase tracking-[0.2em] text-mute" aria-hidden="true">
+              <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+            </div>
+            <div class="mt-3 grid grid-cols-7 gap-1">
+              <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+                <button type="button" data-day="Saturday, 1 May 2027" disabled aria-pressed="false" aria-label="Saturday 1 May, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">1</button>
+                <button type="button" data-day="Sunday, 2 May 2027"  aria-pressed="false" aria-label="Sunday 2 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">2</button>
+                <button type="button" data-day="Monday, 3 May 2027"  aria-pressed="false" aria-label="Monday 3 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">3</button>
+                <button type="button" data-day="Tuesday, 4 May 2027"  aria-pressed="false" aria-label="Tuesday 4 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">4</button>
+                <button type="button" data-day="Wednesday, 5 May 2027"  aria-pressed="false" aria-label="Wednesday 5 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">5</button>
+                <button type="button" data-day="Thursday, 6 May 2027"  aria-pressed="false" aria-label="Thursday 6 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">6</button>
+                <button type="button" data-day="Friday, 7 May 2027"  aria-pressed="false" aria-label="Friday 7 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">7</button>
+                <button type="button" data-day="Saturday, 8 May 2027" disabled aria-pressed="false" aria-label="Saturday 8 May, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">8</button>
+                <button type="button" data-day="Sunday, 9 May 2027"  aria-pressed="false" aria-label="Sunday 9 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">9</button>
+                <button type="button" data-day="Monday, 10 May 2027"  aria-pressed="false" aria-label="Monday 10 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">10</button>
+                <button type="button" data-day="Tuesday, 11 May 2027" disabled aria-pressed="false" aria-label="Tuesday 11 May, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">11</button>
+                <button type="button" data-day="Wednesday, 12 May 2027"  aria-pressed="false" aria-label="Wednesday 12 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">12</button>
+                <button type="button" data-day="Thursday, 13 May 2027"  aria-pressed="false" aria-label="Thursday 13 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">13</button>
+                <button type="button" data-day="Friday, 14 May 2027"  aria-pressed="false" aria-label="Friday 14 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">14</button>
+                <button type="button" data-day="Saturday, 15 May 2027"  aria-pressed="false" aria-label="Saturday 15 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white font-medium">15</button>
+                <button type="button" data-day="Sunday, 16 May 2027"  aria-pressed="false" aria-label="Sunday 16 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">16</button>
+                <button type="button" data-day="Monday, 17 May 2027"  aria-pressed="false" aria-label="Monday 17 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">17</button>
+                <button type="button" data-day="Tuesday, 18 May 2027"  aria-pressed="false" aria-label="Tuesday 18 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">18</button>
+                <button type="button" data-day="Wednesday, 19 May 2027"  aria-pressed="false" aria-label="Wednesday 19 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">19</button>
+                <button type="button" data-day="Thursday, 20 May 2027"  aria-pressed="false" aria-label="Thursday 20 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">20</button>
+                <button type="button" data-day="Friday, 21 May 2027"  aria-pressed="false" aria-label="Friday 21 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">21</button>
+                <button type="button" data-day="Saturday, 22 May 2027" disabled aria-pressed="false" aria-label="Saturday 22 May, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">22</button>
+                <button type="button" data-day="Sunday, 23 May 2027"  aria-pressed="false" aria-label="Sunday 23 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">23</button>
+                <button type="button" data-day="Monday, 24 May 2027"  aria-pressed="false" aria-label="Monday 24 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">24</button>
+                <button type="button" data-day="Tuesday, 25 May 2027"  aria-pressed="false" aria-label="Tuesday 25 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">25</button>
+                <button type="button" data-day="Wednesday, 26 May 2027"  aria-pressed="false" aria-label="Wednesday 26 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">26</button>
+                <button type="button" data-day="Thursday, 27 May 2027"  aria-pressed="false" aria-label="Thursday 27 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">27</button>
+                <button type="button" data-day="Friday, 28 May 2027"  aria-pressed="false" aria-label="Friday 28 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">28</button>
+                <button type="button" data-day="Saturday, 29 May 2027" disabled aria-pressed="false" aria-label="Saturday 29 May, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">29</button>
+                <button type="button" data-day="Sunday, 30 May 2027"  aria-pressed="false" aria-label="Sunday 30 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">30</button>
+                <button type="button" data-day="Monday, 31 May 2027"  aria-pressed="false" aria-label="Monday 31 May, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">31</button>
+            </div>
+          </div>
+          <div data-month="June 2027" hidden class="mt-8">
+            <div class="grid grid-cols-7 gap-1 text-center text-[10px] uppercase tracking-[0.2em] text-mute" aria-hidden="true">
+              <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+            </div>
+            <div class="mt-3 grid grid-cols-7 gap-1">
+              <span aria-hidden="true"></span>
+                <button type="button" data-day="Tuesday, 1 June 2027"  aria-pressed="false" aria-label="Tuesday 1 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">1</button>
+                <button type="button" data-day="Wednesday, 2 June 2027"  aria-pressed="false" aria-label="Wednesday 2 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">2</button>
+                <button type="button" data-day="Thursday, 3 June 2027"  aria-pressed="false" aria-label="Thursday 3 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">3</button>
+                <button type="button" data-day="Friday, 4 June 2027"  aria-pressed="false" aria-label="Friday 4 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">4</button>
+                <button type="button" data-day="Saturday, 5 June 2027" disabled aria-pressed="false" aria-label="Saturday 5 June, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">5</button>
+                <button type="button" data-day="Sunday, 6 June 2027"  aria-pressed="false" aria-label="Sunday 6 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">6</button>
+                <button type="button" data-day="Monday, 7 June 2027"  aria-pressed="false" aria-label="Monday 7 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">7</button>
+                <button type="button" data-day="Tuesday, 8 June 2027"  aria-pressed="false" aria-label="Tuesday 8 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">8</button>
+                <button type="button" data-day="Wednesday, 9 June 2027"  aria-pressed="false" aria-label="Wednesday 9 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">9</button>
+                <button type="button" data-day="Thursday, 10 June 2027"  aria-pressed="false" aria-label="Thursday 10 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">10</button>
+                <button type="button" data-day="Friday, 11 June 2027" disabled aria-pressed="false" aria-label="Friday 11 June, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">11</button>
+                <button type="button" data-day="Saturday, 12 June 2027"  aria-pressed="false" aria-label="Saturday 12 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white font-medium">12</button>
+                <button type="button" data-day="Sunday, 13 June 2027"  aria-pressed="false" aria-label="Sunday 13 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">13</button>
+                <button type="button" data-day="Monday, 14 June 2027"  aria-pressed="false" aria-label="Monday 14 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">14</button>
+                <button type="button" data-day="Tuesday, 15 June 2027"  aria-pressed="false" aria-label="Tuesday 15 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">15</button>
+                <button type="button" data-day="Wednesday, 16 June 2027"  aria-pressed="false" aria-label="Wednesday 16 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">16</button>
+                <button type="button" data-day="Thursday, 17 June 2027"  aria-pressed="false" aria-label="Thursday 17 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">17</button>
+                <button type="button" data-day="Friday, 18 June 2027"  aria-pressed="false" aria-label="Friday 18 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">18</button>
+                <button type="button" data-day="Saturday, 19 June 2027" disabled aria-pressed="false" aria-label="Saturday 19 June, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">19</button>
+                <button type="button" data-day="Sunday, 20 June 2027"  aria-pressed="false" aria-label="Sunday 20 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">20</button>
+                <button type="button" data-day="Monday, 21 June 2027"  aria-pressed="false" aria-label="Monday 21 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">21</button>
+                <button type="button" data-day="Tuesday, 22 June 2027" disabled aria-pressed="false" aria-label="Tuesday 22 June, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">22</button>
+                <button type="button" data-day="Wednesday, 23 June 2027"  aria-pressed="false" aria-label="Wednesday 23 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">23</button>
+                <button type="button" data-day="Thursday, 24 June 2027"  aria-pressed="false" aria-label="Thursday 24 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">24</button>
+                <button type="button" data-day="Friday, 25 June 2027"  aria-pressed="false" aria-label="Friday 25 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">25</button>
+                <button type="button" data-day="Saturday, 26 June 2027" disabled aria-pressed="false" aria-label="Saturday 26 June, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">26</button>
+                <button type="button" data-day="Sunday, 27 June 2027"  aria-pressed="false" aria-label="Sunday 27 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">27</button>
+                <button type="button" data-day="Monday, 28 June 2027"  aria-pressed="false" aria-label="Monday 28 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">28</button>
+                <button type="button" data-day="Tuesday, 29 June 2027"  aria-pressed="false" aria-label="Tuesday 29 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">29</button>
+                <button type="button" data-day="Wednesday, 30 June 2027"  aria-pressed="false" aria-label="Wednesday 30 June, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">30</button>
+            </div>
+          </div>
+          <div data-month="July 2027" hidden class="mt-8">
+            <div class="grid grid-cols-7 gap-1 text-center text-[10px] uppercase tracking-[0.2em] text-mute" aria-hidden="true">
+              <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+            </div>
+            <div class="mt-3 grid grid-cols-7 gap-1">
+              <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+                <button type="button" data-day="Thursday, 1 July 2027"  aria-pressed="false" aria-label="Thursday 1 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">1</button>
+                <button type="button" data-day="Friday, 2 July 2027"  aria-pressed="false" aria-label="Friday 2 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">2</button>
+                <button type="button" data-day="Saturday, 3 July 2027"  aria-pressed="false" aria-label="Saturday 3 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white font-medium">3</button>
+                <button type="button" data-day="Sunday, 4 July 2027"  aria-pressed="false" aria-label="Sunday 4 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">4</button>
+                <button type="button" data-day="Monday, 5 July 2027"  aria-pressed="false" aria-label="Monday 5 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">5</button>
+                <button type="button" data-day="Tuesday, 6 July 2027"  aria-pressed="false" aria-label="Tuesday 6 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">6</button>
+                <button type="button" data-day="Wednesday, 7 July 2027"  aria-pressed="false" aria-label="Wednesday 7 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">7</button>
+                <button type="button" data-day="Thursday, 8 July 2027"  aria-pressed="false" aria-label="Thursday 8 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">8</button>
+                <button type="button" data-day="Friday, 9 July 2027"  aria-pressed="false" aria-label="Friday 9 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">9</button>
+                <button type="button" data-day="Saturday, 10 July 2027" disabled aria-pressed="false" aria-label="Saturday 10 July, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">10</button>
+                <button type="button" data-day="Sunday, 11 July 2027" disabled aria-pressed="false" aria-label="Sunday 11 July, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">11</button>
+                <button type="button" data-day="Monday, 12 July 2027"  aria-pressed="false" aria-label="Monday 12 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">12</button>
+                <button type="button" data-day="Tuesday, 13 July 2027"  aria-pressed="false" aria-label="Tuesday 13 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">13</button>
+                <button type="button" data-day="Wednesday, 14 July 2027"  aria-pressed="false" aria-label="Wednesday 14 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">14</button>
+                <button type="button" data-day="Thursday, 15 July 2027"  aria-pressed="false" aria-label="Thursday 15 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">15</button>
+                <button type="button" data-day="Friday, 16 July 2027"  aria-pressed="false" aria-label="Friday 16 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">16</button>
+                <button type="button" data-day="Saturday, 17 July 2027" disabled aria-pressed="false" aria-label="Saturday 17 July, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">17</button>
+                <button type="button" data-day="Sunday, 18 July 2027"  aria-pressed="false" aria-label="Sunday 18 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">18</button>
+                <button type="button" data-day="Monday, 19 July 2027"  aria-pressed="false" aria-label="Monday 19 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">19</button>
+                <button type="button" data-day="Tuesday, 20 July 2027"  aria-pressed="false" aria-label="Tuesday 20 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">20</button>
+                <button type="button" data-day="Wednesday, 21 July 2027"  aria-pressed="false" aria-label="Wednesday 21 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">21</button>
+                <button type="button" data-day="Thursday, 22 July 2027" disabled aria-pressed="false" aria-label="Thursday 22 July, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">22</button>
+                <button type="button" data-day="Friday, 23 July 2027"  aria-pressed="false" aria-label="Friday 23 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">23</button>
+                <button type="button" data-day="Saturday, 24 July 2027"  aria-pressed="false" aria-label="Saturday 24 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white font-medium">24</button>
+                <button type="button" data-day="Sunday, 25 July 2027"  aria-pressed="false" aria-label="Sunday 25 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">25</button>
+                <button type="button" data-day="Monday, 26 July 2027"  aria-pressed="false" aria-label="Monday 26 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">26</button>
+                <button type="button" data-day="Tuesday, 27 July 2027"  aria-pressed="false" aria-label="Tuesday 27 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">27</button>
+                <button type="button" data-day="Wednesday, 28 July 2027"  aria-pressed="false" aria-label="Wednesday 28 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">28</button>
+                <button type="button" data-day="Thursday, 29 July 2027"  aria-pressed="false" aria-label="Thursday 29 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">29</button>
+                <button type="button" data-day="Friday, 30 July 2027"  aria-pressed="false" aria-label="Friday 30 July, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">30</button>
+                <button type="button" data-day="Saturday, 31 July 2027" disabled aria-pressed="false" aria-label="Saturday 31 July, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">31</button>
+            </div>
+          </div>
+          <div data-month="August 2027" hidden class="mt-8">
+            <div class="grid grid-cols-7 gap-1 text-center text-[10px] uppercase tracking-[0.2em] text-mute" aria-hidden="true">
+              <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+            </div>
+            <div class="mt-3 grid grid-cols-7 gap-1">
+              <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+                <button type="button" data-day="Sunday, 1 August 2027"  aria-pressed="false" aria-label="Sunday 1 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">1</button>
+                <button type="button" data-day="Monday, 2 August 2027"  aria-pressed="false" aria-label="Monday 2 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">2</button>
+                <button type="button" data-day="Tuesday, 3 August 2027"  aria-pressed="false" aria-label="Tuesday 3 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">3</button>
+                <button type="button" data-day="Wednesday, 4 August 2027"  aria-pressed="false" aria-label="Wednesday 4 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">4</button>
+                <button type="button" data-day="Thursday, 5 August 2027"  aria-pressed="false" aria-label="Thursday 5 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">5</button>
+                <button type="button" data-day="Friday, 6 August 2027"  aria-pressed="false" aria-label="Friday 6 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">6</button>
+                <button type="button" data-day="Saturday, 7 August 2027" disabled aria-pressed="false" aria-label="Saturday 7 August, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">7</button>
+                <button type="button" data-day="Sunday, 8 August 2027"  aria-pressed="false" aria-label="Sunday 8 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">8</button>
+                <button type="button" data-day="Monday, 9 August 2027"  aria-pressed="false" aria-label="Monday 9 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">9</button>
+                <button type="button" data-day="Tuesday, 10 August 2027"  aria-pressed="false" aria-label="Tuesday 10 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">10</button>
+                <button type="button" data-day="Wednesday, 11 August 2027" disabled aria-pressed="false" aria-label="Wednesday 11 August, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">11</button>
+                <button type="button" data-day="Thursday, 12 August 2027"  aria-pressed="false" aria-label="Thursday 12 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">12</button>
+                <button type="button" data-day="Friday, 13 August 2027"  aria-pressed="false" aria-label="Friday 13 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">13</button>
+                <button type="button" data-day="Saturday, 14 August 2027" disabled aria-pressed="false" aria-label="Saturday 14 August, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">14</button>
+                <button type="button" data-day="Sunday, 15 August 2027"  aria-pressed="false" aria-label="Sunday 15 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">15</button>
+                <button type="button" data-day="Monday, 16 August 2027"  aria-pressed="false" aria-label="Monday 16 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">16</button>
+                <button type="button" data-day="Tuesday, 17 August 2027"  aria-pressed="false" aria-label="Tuesday 17 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">17</button>
+                <button type="button" data-day="Wednesday, 18 August 2027"  aria-pressed="false" aria-label="Wednesday 18 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">18</button>
+                <button type="button" data-day="Thursday, 19 August 2027"  aria-pressed="false" aria-label="Thursday 19 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">19</button>
+                <button type="button" data-day="Friday, 20 August 2027"  aria-pressed="false" aria-label="Friday 20 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">20</button>
+                <button type="button" data-day="Saturday, 21 August 2027"  aria-pressed="false" aria-label="Saturday 21 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white font-medium">21</button>
+                <button type="button" data-day="Sunday, 22 August 2027" disabled aria-pressed="false" aria-label="Sunday 22 August, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">22</button>
+                <button type="button" data-day="Monday, 23 August 2027"  aria-pressed="false" aria-label="Monday 23 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">23</button>
+                <button type="button" data-day="Tuesday, 24 August 2027"  aria-pressed="false" aria-label="Tuesday 24 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">24</button>
+                <button type="button" data-day="Wednesday, 25 August 2027"  aria-pressed="false" aria-label="Wednesday 25 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">25</button>
+                <button type="button" data-day="Thursday, 26 August 2027"  aria-pressed="false" aria-label="Thursday 26 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">26</button>
+                <button type="button" data-day="Friday, 27 August 2027"  aria-pressed="false" aria-label="Friday 27 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">27</button>
+                <button type="button" data-day="Saturday, 28 August 2027" disabled aria-pressed="false" aria-label="Saturday 28 August, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">28</button>
+                <button type="button" data-day="Sunday, 29 August 2027"  aria-pressed="false" aria-label="Sunday 29 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">29</button>
+                <button type="button" data-day="Monday, 30 August 2027"  aria-pressed="false" aria-label="Monday 30 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">30</button>
+                <button type="button" data-day="Tuesday, 31 August 2027"  aria-pressed="false" aria-label="Tuesday 31 August, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">31</button>
+            </div>
+          </div>
+          <div data-month="September 2027" hidden class="mt-8">
+            <div class="grid grid-cols-7 gap-1 text-center text-[10px] uppercase tracking-[0.2em] text-mute" aria-hidden="true">
+              <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+            </div>
+            <div class="mt-3 grid grid-cols-7 gap-1">
+              <span aria-hidden="true"></span><span aria-hidden="true"></span>
+                <button type="button" data-day="Wednesday, 1 September 2027"  aria-pressed="false" aria-label="Wednesday 1 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">1</button>
+                <button type="button" data-day="Thursday, 2 September 2027"  aria-pressed="false" aria-label="Thursday 2 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">2</button>
+                <button type="button" data-day="Friday, 3 September 2027"  aria-pressed="false" aria-label="Friday 3 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">3</button>
+                <button type="button" data-day="Saturday, 4 September 2027" disabled aria-pressed="false" aria-label="Saturday 4 September, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">4</button>
+                <button type="button" data-day="Sunday, 5 September 2027"  aria-pressed="false" aria-label="Sunday 5 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">5</button>
+                <button type="button" data-day="Monday, 6 September 2027"  aria-pressed="false" aria-label="Monday 6 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">6</button>
+                <button type="button" data-day="Tuesday, 7 September 2027"  aria-pressed="false" aria-label="Tuesday 7 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">7</button>
+                <button type="button" data-day="Wednesday, 8 September 2027"  aria-pressed="false" aria-label="Wednesday 8 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">8</button>
+                <button type="button" data-day="Thursday, 9 September 2027"  aria-pressed="false" aria-label="Thursday 9 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">9</button>
+                <button type="button" data-day="Friday, 10 September 2027"  aria-pressed="false" aria-label="Friday 10 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">10</button>
+                <button type="button" data-day="Saturday, 11 September 2027" disabled aria-pressed="false" aria-label="Saturday 11 September, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">11</button>
+                <button type="button" data-day="Sunday, 12 September 2027"  aria-pressed="false" aria-label="Sunday 12 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">12</button>
+                <button type="button" data-day="Monday, 13 September 2027"  aria-pressed="false" aria-label="Monday 13 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">13</button>
+                <button type="button" data-day="Tuesday, 14 September 2027"  aria-pressed="false" aria-label="Tuesday 14 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">14</button>
+                <button type="button" data-day="Wednesday, 15 September 2027"  aria-pressed="false" aria-label="Wednesday 15 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">15</button>
+                <button type="button" data-day="Thursday, 16 September 2027"  aria-pressed="false" aria-label="Thursday 16 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">16</button>
+                <button type="button" data-day="Friday, 17 September 2027"  aria-pressed="false" aria-label="Friday 17 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">17</button>
+                <button type="button" data-day="Saturday, 18 September 2027"  aria-pressed="false" aria-label="Saturday 18 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white font-medium">18</button>
+                <button type="button" data-day="Sunday, 19 September 2027"  aria-pressed="false" aria-label="Sunday 19 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">19</button>
+                <button type="button" data-day="Monday, 20 September 2027"  aria-pressed="false" aria-label="Monday 20 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">20</button>
+                <button type="button" data-day="Tuesday, 21 September 2027"  aria-pressed="false" aria-label="Tuesday 21 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">21</button>
+                <button type="button" data-day="Wednesday, 22 September 2027" disabled aria-pressed="false" aria-label="Wednesday 22 September, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">22</button>
+                <button type="button" data-day="Thursday, 23 September 2027"  aria-pressed="false" aria-label="Thursday 23 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">23</button>
+                <button type="button" data-day="Friday, 24 September 2027"  aria-pressed="false" aria-label="Friday 24 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">24</button>
+                <button type="button" data-day="Saturday, 25 September 2027" disabled aria-pressed="false" aria-label="Saturday 25 September, booked" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">25</button>
+                <button type="button" data-day="Sunday, 26 September 2027"  aria-pressed="false" aria-label="Sunday 26 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">26</button>
+                <button type="button" data-day="Monday, 27 September 2027"  aria-pressed="false" aria-label="Monday 27 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">27</button>
+                <button type="button" data-day="Tuesday, 28 September 2027"  aria-pressed="false" aria-label="Tuesday 28 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">28</button>
+                <button type="button" data-day="Wednesday, 29 September 2027"  aria-pressed="false" aria-label="Wednesday 29 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">29</button>
+                <button type="button" data-day="Thursday, 30 September 2027"  aria-pressed="false" aria-label="Thursday 30 September, available" class="aspect-square text-sm transition enabled:hover:bg-sand disabled:cursor-not-allowed disabled:text-ink/25 disabled:line-through aria-pressed:bg-ink aria-pressed:text-white ">30</button>
+            </div>
+          </div>
+        <p class="mt-6 flex flex-wrap gap-6 text-xs text-mute"><span class="flex items-center gap-2"><span class="h-3 w-3 bg-ink"></span>your pick</span><span class="flex items-center gap-2"><span class="text-ink/25 line-through">12</span>booked</span></p>
+      </div>
+    </div>
+  </section>
+  <!-- block:end contact -->
+
+  <!-- block:start reviews -->
+  <section class="bg-white" data-carousel aria-roledescription="carousel" aria-label="Kind words from couples">
+    <div class="mx-auto grid max-w-6xl items-center px-5 py-20 md:grid-cols-[1fr_1.1fr] md:px-10 md:py-28">
+      <img src="https://images.unsplash.com/photo-1550005809-91ad75fb315f?auto=format&fit=crop&w=1000&q=80" alt="Bride holding a soft peach bouquet beside the groom" class="aspect-[4/5] w-full object-cover md:aspect-[5/6]" loading="lazy">
+      <div class="relative -mt-16 mx-4 bg-paper px-7 pb-10 pt-6 shadow-sm md:-ml-24 md:mt-24 md:px-12">
+        <h2 class="-mt-16 text-right font-script text-6xl md:-mt-24 md:text-7xl">Kind words</h2>
+        <div class="mt-6">
+            <figure data-carousel-slide  class="text-center">
+              <span class="font-serif text-4xl text-ink/40" aria-hidden="true">&ldquo;</span>
+              <blockquote class="mt-2 text-sm leading-[2] text-ink/80">I genuinely can&#39;t find the words for how wonderful Elias was. He put us at ease from our first coffee, and on the day he caught every moment we missed. Our photos are out of this world and tell our story perfectly.</blockquote>
+              <figcaption class="mt-6 text-[11px] uppercase tracking-[0.4em]">– Jessa &amp; Ethan</figcaption>
+            </figure>
+            <figure data-carousel-slide hidden class="text-center">
+              <span class="font-serif text-4xl text-ink/40" aria-hidden="true">&ldquo;</span>
+              <blockquote class="mt-2 text-sm leading-[2] text-ink/80">We hate being photographed. Somehow we forgot the camera was there within ten minutes, and the pictures look like us on our best day.</blockquote>
+              <figcaption class="mt-6 text-[11px] uppercase tracking-[0.4em]">– Priya &amp; Daniel</figcaption>
+            </figure>
+            <figure data-carousel-slide hidden class="text-center">
+              <span class="font-serif text-4xl text-ink/40" aria-hidden="true">&ldquo;</span>
+              <blockquote class="mt-2 text-sm leading-[2] text-ink/80">Our album arrived on our first anniversary. We both cried at page three. Worth every cent and then some.</blockquote>
+              <figcaption class="mt-6 text-[11px] uppercase tracking-[0.4em]">– Marta &amp; Joaquim</figcaption>
+            </figure>
+        </div>
+        <div class="mt-8 flex items-center justify-center gap-6">
+          <button type="button" data-carousel-prev class="grid h-10 w-10 place-items-center transition hover:bg-sand" aria-label="Previous review"><i class="fa-solid fa-caret-left" aria-hidden="true"></i></button>
+          <span class="h-12 w-px rotate-[25deg] bg-ink/40" aria-hidden="true"></span>
+          <button type="button" data-carousel-next class="grid h-10 w-10 place-items-center transition hover:bg-sand" aria-label="Next review"><i class="fa-solid fa-caret-right" aria-hidden="true"></i></button>
+        </div>
+        <p class="mt-4 text-center text-xs text-mute"><span data-carousel-index>1</span> / 3</p>
+      </div>
+    </div>
+  </section>
+  <!-- block:end reviews -->
+
+  <!-- block:start footer -->
+  <footer class="bg-sand">
+    <ul class="grid grid-cols-3 md:grid-cols-6" aria-label="Recent photos on Instagram">
+        <li><a href="https://www.instagram.com" class="group relative block overflow-hidden" aria-label="Open on Instagram"><img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=400&q=80" alt="" class="aspect-square w-full object-cover transition duration-500 group-hover:scale-110" loading="lazy"><span class="absolute inset-0 grid place-items-center bg-ink/40 text-white opacity-0 transition group-hover:opacity-100"><i class="fa-brands fa-instagram text-xl" aria-hidden="true"></i></span></a></li>
+        <li><a href="https://www.instagram.com" class="group relative block overflow-hidden" aria-label="Open on Instagram"><img src="https://images.unsplash.com/photo-1525258946800-98cfd641d0de?auto=format&fit=crop&w=400&q=80" alt="" class="aspect-square w-full object-cover transition duration-500 group-hover:scale-110" loading="lazy"><span class="absolute inset-0 grid place-items-center bg-ink/40 text-white opacity-0 transition group-hover:opacity-100"><i class="fa-brands fa-instagram text-xl" aria-hidden="true"></i></span></a></li>
+        <li><a href="https://www.instagram.com" class="group relative block overflow-hidden" aria-label="Open on Instagram"><img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=400&q=80" alt="" class="aspect-square w-full object-cover transition duration-500 group-hover:scale-110" loading="lazy"><span class="absolute inset-0 grid place-items-center bg-ink/40 text-white opacity-0 transition group-hover:opacity-100"><i class="fa-brands fa-instagram text-xl" aria-hidden="true"></i></span></a></li>
+        <li><a href="https://www.instagram.com" class="group relative block overflow-hidden" aria-label="Open on Instagram"><img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=400&q=80" alt="" class="aspect-square w-full object-cover transition duration-500 group-hover:scale-110" loading="lazy"><span class="absolute inset-0 grid place-items-center bg-ink/40 text-white opacity-0 transition group-hover:opacity-100"><i class="fa-brands fa-instagram text-xl" aria-hidden="true"></i></span></a></li>
+        <li><a href="https://www.instagram.com" class="group relative block overflow-hidden" aria-label="Open on Instagram"><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=400&q=80" alt="" class="aspect-square w-full object-cover transition duration-500 group-hover:scale-110" loading="lazy"><span class="absolute inset-0 grid place-items-center bg-ink/40 text-white opacity-0 transition group-hover:opacity-100"><i class="fa-brands fa-instagram text-xl" aria-hidden="true"></i></span></a></li>
+        <li><a href="https://www.instagram.com" class="group relative block overflow-hidden" aria-label="Open on Instagram"><img src="https://images.unsplash.com/photo-1494955870715-979ca4f13bf0?auto=format&fit=crop&w=400&q=80" alt="" class="aspect-square w-full object-cover transition duration-500 group-hover:scale-110" loading="lazy"><span class="absolute inset-0 grid place-items-center bg-ink/40 text-white opacity-0 transition group-hover:opacity-100"><i class="fa-brands fa-instagram text-xl" aria-hidden="true"></i></span></a></li>
+    </ul>
+    <div class="mx-auto max-w-6xl px-5 pt-16 md:px-10">
+      <p class="select-none text-center font-script text-[24vw] leading-[0.9] text-ink md:text-[11rem]" aria-hidden="true">Emberlyn</p>
+      <div class="mt-10 flex flex-col items-center gap-6 border-t border-ink/15 py-8 text-xs md:flex-row md:justify-between">
+        <ul class="flex flex-wrap justify-center gap-x-8 gap-y-2 uppercase tracking-[0.3em]">
+          <li><a href="about.html" class="hover:text-sage">meet us</a></li><li><a href="story.html" class="hover:text-sage">our story</a></li><li><a href="services.html" class="hover:text-sage">services</a></li><li><a href="portfolio.html" class="hover:text-sage">portfolio</a></li><li><a href="blog.html" class="hover:text-sage">the journal</a></li><li><a href="contact.html" class="hover:text-sage">hire us</a></li>
+        </ul>
+        <p class="text-mute">&copy; <span data-current-year>2026</span> Emberlyn Studio · Porto &amp; everywhere</p>
+      </div>
+    </div>
+  </footer>
+  <!-- block:end footer -->
+
+  <script>
+    document.querySelectorAll('[data-menu-toggle]').forEach((button) => {
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      if (!menu) return;
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('hidden', open);
+      });
+    });
+
+    document.querySelectorAll('[data-slider]').forEach((slider) => {
+      const slides = [...slider.querySelectorAll('[data-slide]')];
+      const dots = [...slider.querySelectorAll('[data-slider-dot]')];
+      let current = 0;
+      let timer;
+      const show = (index) => {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => {
+          slide.classList.toggle('is-active', i === current);
+          slide.toggleAttribute('aria-hidden', i !== current);
+        });
+        dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === current)));
+      };
+      const restart = () => {
+        clearInterval(timer);
+        if (!matchMedia('(prefers-reduced-motion: reduce)').matches) timer = setInterval(() => show(current + 1), 6000);
+      };
+      slider.querySelector('[data-slider-prev]')?.addEventListener('click', () => { show(current - 1); restart(); });
+      slider.querySelector('[data-slider-next]')?.addEventListener('click', () => { show(current + 1); restart(); });
+      dots.forEach((dot, i) => dot.addEventListener('click', () => { show(i); restart(); }));
+      restart();
+    });
+
+    document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+      const slides = [...carousel.querySelectorAll('[data-carousel-slide]')];
+      const index = carousel.querySelector('[data-carousel-index]');
+      let current = 0;
+      const show = (next) => {
+        current = (next + slides.length) % slides.length;
+        slides.forEach((slide, i) => { slide.hidden = i !== current; });
+        if (index) index.textContent = current + 1;
+      };
+      carousel.querySelector('[data-carousel-prev]')?.addEventListener('click', () => show(current - 1));
+      carousel.querySelector('[data-carousel-next]')?.addEventListener('click', () => show(current + 1));
+    });
+
+    document.querySelectorAll('[data-hover-list]').forEach((list) => {
+      const preview = list.querySelector('[data-hover-preview]');
+      if (!preview || !matchMedia('(hover: hover)').matches) return;
+      list.querySelectorAll('[data-hover-item]').forEach((item) => {
+        item.addEventListener('mouseenter', () => { preview.src = item.dataset.image; preview.style.opacity = '1'; });
+        item.addEventListener('mouseleave', () => { preview.style.opacity = '0'; });
+        item.addEventListener('mousemove', (event) => { preview.style.transform = `translate(${event.clientX + 28}px, ${event.clientY - 90}px) rotate(-3deg)`; });
+      });
+    });
+
+    document.querySelectorAll('[data-availability]').forEach((root) => {
+      const months = [...root.querySelectorAll('[data-month]')];
+      const label = root.querySelector('[data-month-label]');
+      const prev = root.querySelector('[data-month-prev]');
+      const next = root.querySelector('[data-month-next]');
+      const summary = root.querySelector('[data-availability-summary]');
+      const note = root.querySelector('[data-availability-note]');
+      let current = 0;
+      const showMonth = (index) => {
+        current = Math.max(0, Math.min(months.length - 1, index));
+        months.forEach((month, i) => { month.hidden = i !== current; });
+        label.textContent = months[current].dataset.month;
+        prev.disabled = current === 0;
+        next.disabled = current === months.length - 1;
+      };
+      prev.addEventListener('click', () => showMonth(current - 1));
+      next.addEventListener('click', () => showMonth(current + 1));
+      root.addEventListener('click', (event) => {
+        const day = event.target.closest('[data-day]');
+        if (!day || day.disabled) return;
+        root.querySelectorAll('[data-day]').forEach((other) => other.setAttribute('aria-pressed', String(other === day)));
+        summary.textContent = `${day.dataset.day} is free`;
+        note.textContent = 'Lovely choice. Hold it now and I will keep it for you for seven days.';
+      });
+      showMonth(0);
+    });
+
+    document.querySelectorAll('[data-filter-group]').forEach((group) => {
+      const items = document.querySelectorAll(group.dataset.filterGroup);
+      group.querySelectorAll('[data-filter]').forEach((chip) => {
+        chip.addEventListener('click', () => {
+          group.querySelectorAll('[data-filter]').forEach((other) => other.setAttribute('aria-pressed', String(other === chip)));
+          items.forEach((item) => { item.hidden = chip.dataset.filter !== 'all' && item.dataset.role !== chip.dataset.filter; });
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-lightbox]').forEach((dialog) => {
+      const image = dialog.querySelector('img');
+      const caption = dialog.querySelector('[data-lightbox-caption]');
+      document.querySelectorAll('[data-lightbox-open]').forEach((button) => {
+        button.addEventListener('click', () => {
+          image.src = button.dataset.full;
+          image.alt = button.querySelector('img')?.alt || '';
+          caption.textContent = button.dataset.caption;
+          dialog.showModal();
+        });
+      });
+      dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+    });
+
+    document.querySelectorAll('[data-contact-form]').forEach((form) => {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const status = form.querySelector('[data-form-status]');
+        if (!form.checkValidity()) {
+          status.textContent = form.dataset.error;
+          form.querySelector(':invalid')?.focus();
+          return;
+        }
+        status.textContent = form.dataset.success;
+        form.reset();
+      });
+    });
+
+    document.querySelectorAll('[data-current-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+    (() => {
+      const items = document.querySelectorAll('[data-reveal]');
+      const skip = navigator.webdriver || !('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!items.length || skip) return;
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
+<p class="lt-built-with" style="margin:0;padding:12px 16px;text-align:center;font:500 11px/1.4 system-ui,-apple-system,sans-serif;color:#9ca3af;">Built with <a href="https://letstemplates.com/?utm_campaign=free-templates&utm_content=emberlyn&utm_medium=credit&utm_source=github" style="color:#059669;text-decoration:none;">Let's templates</a></p>
+</body>
+</html>
